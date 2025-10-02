@@ -1712,9 +1712,9 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "Overvoltage Protection: 29.03V\nVovr = (R2 * Vov)/(R1 + R2)\nVov = Vovr * (R1 + R2) / R2\n29.03 = 1.25 * (200k + 9k) / 9k"
+	(text "Overvoltage Protection: 29.03V\nVovr = (R2 * Vov)/(R1 + R2)\nVov = Vovr * (R1 + R2) / R2\n30.319 = 1.25 ((100k+4.3k)/4.3k)"
 		(exclude_from_sim no)
-		(at 166.37 80.01 0)
+		(at 146.812 97.282 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3119,7 +3119,7 @@
 		(fields_autoplaced yes)
 		(uuid "44e6bbf0-0f5f-4c28-9770-5192754a5582")
 		(property "Reference" "R2"
-			(at 132.715 74.9299 0)
+			(at 133.35 74.9299 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3127,8 +3127,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "200k"
-			(at 132.715 77.4699 0)
+		(property "Value" "100k"
+			(at 133.35 77.4699 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4396,7 +4396,7 @@
 				)
 			)
 		)
-		(property "Value" "9k"
+		(property "Value" "4.3k"
 			(at 140.97 78.74 90)
 			(effects
 				(font
