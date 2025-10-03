@@ -635,20 +635,12 @@
       "Input_PP"
     ],
     [
-      "a726c99c-0972-4d1d-b6b5-228c7976a500",
-      "SpeakerAmp1"
-    ],
-    [
-      "a77fb47b-7ef2-4af5-acb2-fac4bd94b913",
-      "SpeakerAmp"
-    ],
-    [
       "099ee54e-acf8-4217-9443-d32b055f2668",
       "Output_PP"
     ],
     [
-      "3dbfa5d4-bfac-4653-964a-c32783f92b9a",
-      "EStop"
+      "5a3494bd-2769-4cc7-96c1-4c8c29abb5e6",
+      "Buzzer"
     ],
     [
       "eaa01ebb-42bc-4c5b-a5da-d0a713cda722",

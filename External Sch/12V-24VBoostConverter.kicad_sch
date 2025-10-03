@@ -2803,7 +2803,7 @@
 			(uuid "bc92e51d-6cdf-4b4e-bf0a-4f77684f265b")
 		)
 		(instances
-			(project ""
+			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
 					(reference "#PWR038")
 					(unit 1)

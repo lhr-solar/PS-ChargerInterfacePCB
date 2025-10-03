@@ -1234,6 +1234,131 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:+12V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+12V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+12V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+12V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+12V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+24V"
 			(power)
 			(pin_numbers
@@ -1586,6 +1711,36 @@
 			(embedded_fonts no)
 		)
 	)
+	(text "ask craig for BPS AUX pins, put 0 ohm resistor for one and another conn for buttons"
+		(exclude_from_sim no)
+		(at 80.518 69.85 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "1d29fd91-c761-4cbd-9e41-65b4468eb63d")
+	)
+	(text "no need for switch, just connect to SOM"
+		(exclude_from_sim no)
+		(at 245.364 34.036 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "5ec8ed1c-05d0-4c54-bb83-d2d15657d43c")
+	)
+	(text "- cut it off in software with MOSFET in estop (OR gate logic)"
+		(exclude_from_sim no)
+		(at 244.348 29.718 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "96364a89-a9ff-4353-9bb9-f83d0c8ba580")
+	)
 	(text "HV+\nContactor\nIndicator\nLED"
 		(exclude_from_sim no)
 		(at 183.134 110.744 0)
@@ -1621,6 +1776,18 @@
 		(uuid "36ceb0f5-1840-4a65-b61a-27d507cd64ee")
 	)
 	(junction
+		(at 87.63 31.75)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "50eea6ce-7ffb-4f74-9c1d-29d82657296c")
+	)
+	(junction
+		(at 77.47 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6dabd2bd-50ca-46dd-a942-1fba349df382")
+	)
+	(junction
 		(at 176.53 90.17)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1631,6 +1798,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9c3869db-88a2-44a5-b47b-95b67538f459")
+	)
+	(junction
+		(at 87.63 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a1ec655d-7f85-4130-8c49-e780a0261f5a")
 	)
 	(junction
 		(at 191.77 128.27)
@@ -1649,6 +1822,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a3d15b8e-aa2d-4445-8b67-8fa08a51de5a")
+	)
+	(junction
+		(at 87.63 36.83)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a5ab9721-1649-4a00-a957-fdc3d1db09fa")
 	)
 	(junction
 		(at 176.53 72.39)
@@ -1788,6 +1967,16 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 25.4) (xy 87.63 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1ec5284c-8955-430d-8adf-24fd68a49c1a")
+	)
+	(wire
+		(pts
 			(xy 204.47 106.68) (xy 204.47 109.22)
 		)
 		(stroke
@@ -1848,6 +2037,16 @@
 	)
 	(wire
 		(pts
+			(xy 92.71 44.45) (xy 87.63 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "36d553af-212b-45b2-bb16-004950fa3a4c")
+	)
+	(wire
+		(pts
 			(xy 189.23 90.17) (xy 176.53 90.17)
 		)
 		(stroke
@@ -1865,6 +2064,16 @@
 			(type default)
 		)
 		(uuid "433ccf67-eb2f-4fee-98fe-f19b779fc0fa")
+	)
+	(wire
+		(pts
+			(xy 87.63 35.56) (xy 87.63 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4629029e-09b6-49af-8feb-1d7794730301")
 	)
 	(wire
 		(pts
@@ -1948,6 +2157,16 @@
 	)
 	(wire
 		(pts
+			(xy 77.47 44.45) (xy 87.63 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bb2b8d4-749a-4463-8c74-26c8f0cfc322")
+	)
+	(wire
+		(pts
 			(xy 191.77 38.1) (xy 204.47 38.1)
 		)
 		(stroke
@@ -1955,6 +2174,26 @@
 			(type default)
 		)
 		(uuid "7fda4a2a-a56d-4300-b9a8-34f7267c6b80")
+	)
+	(wire
+		(pts
+			(xy 77.47 53.34) (xy 77.47 54.61)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "857f2828-f3ca-47fb-ae26-cbdef61ff05a")
+	)
+	(wire
+		(pts
+			(xy 81.28 35.56) (xy 87.63 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "858c9612-d520-48b5-821b-d7d8819ca542")
 	)
 	(wire
 		(pts
@@ -2028,6 +2267,16 @@
 	)
 	(wire
 		(pts
+			(xy 77.47 45.72) (xy 77.47 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4879a7c-8861-46f0-a3e8-8096c4e47c10")
+	)
+	(wire
+		(pts
 			(xy 203.2 72.39) (xy 204.47 72.39)
 		)
 		(stroke
@@ -2035,6 +2284,16 @@
 			(type default)
 		)
 		(uuid "aadeaa3d-47b1-4eeb-9da2-c8c60fe71a7a")
+	)
+	(wire
+		(pts
+			(xy 71.12 44.45) (xy 77.47 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "afb24c6f-70ef-4080-bcbc-1f0e72716669")
 	)
 	(wire
 		(pts
@@ -2065,6 +2324,16 @@
 			(type default)
 		)
 		(uuid "b71bf648-74a1-4ae2-80dd-4be4b7cc0de9")
+	)
+	(wire
+		(pts
+			(xy 87.63 31.75) (xy 91.44 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b7262d8d-0e0d-4e4d-b10c-c071519b1bec")
 	)
 	(wire
 		(pts
@@ -2138,6 +2407,16 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 36.83) (xy 91.44 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c14747f9-6664-4966-9345-875ee176f668")
+	)
+	(wire
+		(pts
 			(xy 204.47 41.91) (xy 207.01 41.91)
 		)
 		(stroke
@@ -2188,6 +2467,16 @@
 	)
 	(wire
 		(pts
+			(xy 87.63 36.83) (xy 87.63 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d364f7a2-d397-4041-9ebe-6a91843f6b56")
+	)
+	(wire
+		(pts
 			(xy 189.23 106.68) (xy 189.23 109.22)
 		)
 		(stroke
@@ -2195,6 +2484,16 @@
 			(type default)
 		)
 		(uuid "dbb3ea14-b33e-45ba-b483-027f48faf1f5")
+	)
+	(wire
+		(pts
+			(xy 87.63 31.75) (xy 87.63 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dffad4cd-11e8-4a81-92a6-33d6f0aa67a5")
 	)
 	(wire
 		(pts
@@ -2278,6 +2577,16 @@
 	)
 	(wire
 		(pts
+			(xy 81.28 33.02) (xy 87.63 33.02)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f7ef9a95-8371-49d2-84d3-f7e8563d1574")
+	)
+	(wire
+		(pts
 			(xy 176.53 90.17) (xy 163.83 90.17)
 		)
 		(stroke
@@ -2347,17 +2656,6 @@
 		)
 		(uuid "1046f89c-bfd0-4460-9dfc-28bf6fc3daae")
 	)
-	(hierarchical_label "ESTOP_1"
-		(shape output)
-		(at 167.64 54.61 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right)
-		)
-		(uuid "340f099a-19bd-4c45-b597-4e946518464b")
-	)
 	(hierarchical_label "ESTOP_3"
 		(shape output)
 		(at 163.83 90.17 180)
@@ -2369,6 +2667,17 @@
 		)
 		(uuid "78e1a006-c373-43fa-8ac9-c63462788632")
 	)
+	(hierarchical_label "ESTOP_1"
+		(shape input)
+		(at 71.12 44.45 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "c17b0b4b-e480-469e-a982-30c0de6dab83")
+	)
 	(hierarchical_label "HV+_CONTROL"
 		(shape input)
 		(at 176.53 128.27 180)
@@ -2379,6 +2688,78 @@
 			(justify right)
 		)
 		(uuid "f0933efb-2578-4dea-bd35-35de25aaabec")
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 76.2 33.02 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "00c66843-e32d-4b38-b446-369af37b23de")
+		(property "Reference" "J1"
+			(at 74.422 30.226 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Value" "EStop Conn"
+			(at 73.152 30.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 76.2 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 76.2 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "3f838551-7f4e-42c2-bdae-69357a41dd60")
+		)
+		(pin "2"
+			(uuid "2d433abb-321e-424a-a815-a64b055e593d")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/3dbfa5d4-bfac-4653-964a-c32783f92b9a"
+					(reference "J1")
+					(unit 1)
+				)
+			)
+		)
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -2520,6 +2901,73 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/3dbfa5d4-bfac-4653-964a-c32783f92b9a"
 					(reference "HV+1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 77.47 54.61 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "15718f01-8013-4933-9a7e-360573e7d65c")
+		(property "Reference" "#PWR045"
+			(at 77.47 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 77.47 59.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 77.47 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 77.47 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 77.47 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "ae55a440-1595-48ed-8aeb-b02e9ed41d94")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/3dbfa5d4-bfac-4653-964a-c32783f92b9a"
+					(reference "#PWR045")
 					(unit 1)
 				)
 			)
@@ -2809,6 +3257,72 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/3dbfa5d4-bfac-4653-964a-c32783f92b9a"
 					(reference "TP10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 87.63 25.4 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "3cb71ed5-d996-4ace-b634-31e5f56d0e3a")
+		(property "Reference" "#PWR044"
+			(at 87.63 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+12V"
+			(at 87.63 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 87.63 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 87.63 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 87.63 25.4 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d4ef57e6-8b3d-41aa-abd8-8659b10db317")
+		)
+		(instances
+			(project ""
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/3dbfa5d4-bfac-4653-964a-c32783f92b9a"
+					(reference "#PWR044")
 					(unit 1)
 				)
 			)
@@ -3382,6 +3896,77 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_US")
+		(at 77.47 49.53 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "89c44065-9ef0-4cfb-8a08-0956170333e5")
+		(property "Reference" "R25"
+			(at 74.93 48.2599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "10k"
+			(at 74.93 50.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 76.454 49.784 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 77.47 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 77.47 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "4565d7e4-14b5-4bce-85cc-92cb855536a1")
+		)
+		(pin "1"
+			(uuid "bf82a501-42c1-47f1-a8e7-31b5a19a25ac")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/3dbfa5d4-bfac-4653-964a-c32783f92b9a"
+					(reference "R25")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 176.53 81.28 0)
 		(mirror y)
@@ -3588,6 +4173,76 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_Small_US")
+		(at 91.44 34.29 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "af32e827-7586-411a-b5a0-4fd12aa72af9")
+		(property "Reference" "R24"
+			(at 93.98 33.0199 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "0"
+			(at 93.98 35.5599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 91.44 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 91.44 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor, small US symbol"
+			(at 91.44 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cfb59f85-8e20-4238-acfc-cbd139fc786e")
+		)
+		(pin "1"
+			(uuid "69897165-ace0-404d-8b34-f9222fb4adae")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/3dbfa5d4-bfac-4653-964a-c32783f92b9a"
+					(reference "R24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+3.3V")
 		(at 189.23 40.64 0)
 		(mirror y)
@@ -3731,6 +4386,73 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/3dbfa5d4-bfac-4653-964a-c32783f92b9a"
 					(reference "Q7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 92.71 44.45 270)
+		(mirror x)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "c335aca4-5848-439f-93d7-506ae3ce3af5")
+		(property "Reference" "TP15"
+			(at 98.298 42.926 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 98.298 45.466 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 92.71 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 92.71 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7f4e4c87-fe72-4d09-ac35-8ffdad16b0f8")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/3dbfa5d4-bfac-4653-964a-c32783f92b9a"
+					(reference "TP15")
 					(unit 1)
 				)
 			)
