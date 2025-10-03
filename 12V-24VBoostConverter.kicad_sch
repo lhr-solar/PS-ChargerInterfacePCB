@@ -1038,16 +1038,6 @@
 		)
 		(uuid "444f0b7e-aadb-44a9-8b94-0a251e1805da")
 	)
-	(text "change 56uF into 22u"
-		(exclude_from_sim no)
-		(at 176.276 73.152 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "8a7a96ee-dc05-4cad-92ac-e02ce52c777e")
-	)
 	(text "Vin = Vuvlo (1+R1/R2)\nVin = 0.813 (1+R1/R2)\n8.943 = 0.813 (1+R1/R2)\nR1=10,000\nR2=1,000\n\n\nVuvlo = 0.813V"
 		(exclude_from_sim no)
 		(at 28.194 124.46 0)
@@ -1075,10 +1065,10 @@
 		(uuid "08d23fe1-e4b8-497c-afee-96b0c51b8bba")
 	)
 	(junction
-		(at 161.29 58.42)
+		(at 175.26 58.42)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "104dcbfe-a046-4e42-9073-894a893069c8")
+		(uuid "217e8746-beea-40e5-8aa5-fec43023d99c")
 	)
 	(junction
 		(at 124.46 96.52)
@@ -1097,6 +1087,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4349f5bc-d350-419c-ad18-d9c863ef5752")
+	)
+	(junction
+		(at 165.1 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "47a9e25e-9364-4315-a61d-1ced14a78242")
 	)
 	(junction
 		(at 119.38 96.52)
@@ -1123,6 +1119,12 @@
 		(uuid "73f23807-7f0f-4412-b357-8bf9de9317d7")
 	)
 	(junction
+		(at 175.26 71.12)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8033618f-0b04-4eab-9dea-59b43ead6115")
+	)
+	(junction
 		(at 81.28 38.1)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1135,22 +1137,34 @@
 		(uuid "87ae7863-29ab-45b0-92e4-c80d598d4368")
 	)
 	(junction
+		(at 165.1 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "8ca3b543-ed26-4f36-8a96-8bee2136ea28")
+	)
+	(junction
 		(at 161.29 71.12)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8eb69b9a-2859-41da-8beb-b8dbc90beba5")
 	)
 	(junction
-		(at 161.29 52.07)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "94d7d340-b0e1-4f49-850b-22a6aec167d4")
-	)
-	(junction
 		(at 119.38 76.2)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a39aab7f-958d-45b4-82c8-7fcfe905139b")
+	)
+	(junction
+		(at 154.94 52.07)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "d963d67c-5593-4d9f-8317-7992cd906d89")
+	)
+	(junction
+		(at 154.94 58.42)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "da706438-0cf9-491c-93ad-9535243cd67e")
 	)
 	(junction
 		(at 130.81 96.52)
@@ -1190,7 +1204,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 71.12) (xy 167.64 71.12)
+			(xy 161.29 71.12) (xy 165.1 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1207,6 +1221,16 @@
 			(type default)
 		)
 		(uuid "1e8d1cd8-22e6-430c-851a-2e08b86a43a1")
+	)
+	(wire
+		(pts
+			(xy 185.42 68.58) (xy 185.42 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "202c06dc-172f-47bf-8afd-2e30244e2560")
 	)
 	(wire
 		(pts
@@ -1227,6 +1251,16 @@
 			(type default)
 		)
 		(uuid "2e2d2250-c8c0-49f9-a2a1-295007a995a0")
+	)
+	(wire
+		(pts
+			(xy 185.42 71.12) (xy 175.26 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2f4ffdeb-273c-4946-b6d1-c1f9660bb130")
 	)
 	(wire
 		(pts
@@ -1260,7 +1294,7 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 58.42) (xy 167.64 58.42)
+			(xy 154.94 58.42) (xy 165.1 58.42)
 		)
 		(stroke
 			(width 0)
@@ -1390,13 +1424,13 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 52.07) (xy 168.91 52.07)
+			(xy 175.26 58.42) (xy 175.26 60.96)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "78d4d1ac-cf05-46e0-b940-e1a1daa9907d")
+		(uuid "6eb3a0eb-bb77-4c40-bdfe-c1f99789efb6")
 	)
 	(wire
 		(pts
@@ -1410,17 +1444,17 @@
 	)
 	(wire
 		(pts
-			(xy 161.29 52.07) (xy 161.29 58.42)
+			(xy 175.26 58.42) (xy 185.42 58.42)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "873e0611-1578-4358-add8-ae1b2cb354dc")
+		(uuid "821270e9-a237-4d88-a1e6-07729e6bb55b")
 	)
 	(wire
 		(pts
-			(xy 167.64 58.42) (xy 167.64 60.96)
+			(xy 165.1 58.42) (xy 165.1 60.96)
 		)
 		(stroke
 			(width 0)
@@ -1440,7 +1474,27 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 68.58) (xy 167.64 71.12)
+			(xy 154.94 52.07) (xy 154.94 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "912a9f3b-b71b-4dfd-80d6-1b341c547cf0")
+	)
+	(wire
+		(pts
+			(xy 154.94 52.07) (xy 168.91 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9bf6e836-905b-4d94-96d6-109d7c8adfd9")
+	)
+	(wire
+		(pts
+			(xy 165.1 68.58) (xy 165.1 71.12)
 		)
 		(stroke
 			(width 0)
@@ -1510,13 +1564,23 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 52.07) (xy 161.29 52.07)
+			(xy 146.05 52.07) (xy 154.94 52.07)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "acdc053d-c5ac-473e-a3f3-e1849dec5276")
+	)
+	(wire
+		(pts
+			(xy 185.42 58.42) (xy 185.42 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "acfc8c6e-a666-4a1c-a0f3-73f9ad918e09")
 	)
 	(wire
 		(pts
@@ -1527,6 +1591,16 @@
 			(type default)
 		)
 		(uuid "b142ba64-330b-4bc2-90a9-e3b9abcb2fa6")
+	)
+	(wire
+		(pts
+			(xy 175.26 71.12) (xy 165.1 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b169b09d-eabc-4523-8f2c-102d9f4a4f25")
 	)
 	(wire
 		(pts
@@ -1567,6 +1641,16 @@
 			(type default)
 		)
 		(uuid "b7d4068e-0f6f-4cc2-bacb-bcb6ce9d859b")
+	)
+	(wire
+		(pts
+			(xy 165.1 58.42) (xy 175.26 58.42)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bbecc055-403f-4976-8026-d54e777f9431")
 	)
 	(wire
 		(pts
@@ -1627,6 +1711,16 @@
 			(type default)
 		)
 		(uuid "d3a84342-5833-44a8-bd05-a255278d918e")
+	)
+	(wire
+		(pts
+			(xy 175.26 68.58) (xy 175.26 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d408c841-819d-4379-858b-fa346fbbefd7")
 	)
 	(wire
 		(pts
@@ -1697,16 +1791,6 @@
 			(type default)
 		)
 		(uuid "e7708d46-a565-4d11-9747-4f7338081150")
-	)
-	(wire
-		(pts
-			(xy 154.94 58.42) (xy 161.29 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f5b050fa-a1f2-47c4-ab01-1e5f0bf44891")
 	)
 	(wire
 		(pts
@@ -2803,7 +2887,7 @@
 			(uuid "bc92e51d-6cdf-4b4e-bf0a-4f77684f265b")
 		)
 		(instances
-			(project ""
+			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
 					(reference "#PWR038")
 					(unit 1)
@@ -3916,7 +4000,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 167.64 64.77 0)
+		(at 165.1 64.77 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -3924,7 +4008,7 @@
 		(dnp no)
 		(uuid "aa5e576e-1710-41e3-93f5-6ef1e246bfd5")
 		(property "Reference" "C41"
-			(at 170.18 63.5 0)
+			(at 167.64 63.5 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3933,7 +4017,7 @@
 			)
 		)
 		(property "Value" "22u"
-			(at 170.18 66.04 0)
+			(at 167.64 66.04 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3942,7 +4026,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 168.6052 68.58 0)
+			(at 166.0652 68.58 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3951,7 +4035,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 167.64 64.77 0)
+			(at 165.1 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3960,7 +4044,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 167.64 64.77 0)
+			(at 165.1 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4137,7 +4221,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "56u"
+		(property "Value" "22u"
 			(at 157.48 66.04 0)
 			(effects
 				(font
@@ -4183,6 +4267,75 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
 					(reference "C12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 175.26 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "bfc6e94f-528d-4872-8c64-2e0aa8c9a547")
+		(property "Reference" "C22"
+			(at 177.8 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22u"
+			(at 177.8 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 176.2252 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 175.26 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 175.26 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c5ac80b8-d415-48c3-a16f-f9c6f1294c57")
+		)
+		(pin "2"
+			(uuid "c2046c32-752c-4314-9c40-2aa1981c45bb")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
+					(reference "C22")
 					(unit 1)
 				)
 			)
@@ -4317,6 +4470,75 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C")
+		(at 185.42 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "e84e2535-0592-4699-ab5d-a91d7b966d0f")
+		(property "Reference" "C23"
+			(at 187.96 63.5 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "22u"
+			(at 187.96 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 186.3852 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 185.42 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Unpolarized capacitor"
+			(at 185.42 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0642733d-34b6-4694-adf9-6b054524abe0")
+		)
+		(pin "2"
+			(uuid "e2f95f3e-ec33-4480-a893-8af87a3e793f")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
+					(reference "C23")
 					(unit 1)
 				)
 			)

@@ -414,16 +414,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "add heartbeat leds"
-		(exclude_from_sim no)
-		(at 71.628 37.846 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "b5e55ff4-279b-4e4c-ab6c-ed189a15defd")
-	)
 	(text "R = (3.3V- Vf)/I\n590 = (3.3V - 2.12)/0.002\nI = 2mA (port limit?)\n\nVf = 2.2V (red leds?)\n"
 		(exclude_from_sim no)
 		(at 62.992 30.48 0)

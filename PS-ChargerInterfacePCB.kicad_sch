@@ -3640,17 +3640,6 @@
 		)
 		(uuid cf6fc490-f9bf-44d9-bb26-2e946ff18e61)
 	)
-	(text "Notes:\n- PWM to sirens\n- MOSFET\n- 24V speaker"
-		(exclude_from_sim no)
-		(at 82.55 191.262 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "1896762a-3a17-4024-b5ca-a6e041b74478")
-	)
 	(text "BPS Connector"
 		(exclude_from_sim no)
 		(at 274.066 30.988 0)
@@ -3670,17 +3659,6 @@
 			)
 		)
 		(uuid "2981abc7-90ae-440c-ac84-3eb4029729ab")
-	)
-	(text "TO DOS:\n- new buzzer/speaker\n- estop design (Estop1 IN and ESTOP 1 OUT are in series)\n- pwm speaker tone\n"
-		(exclude_from_sim no)
-		(at 14.224 190.246 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "757c3e3d-add7-4cf8-a422-70f26fe11402")
 	)
 	(text "EStop\n"
 		(exclude_from_sim no)
@@ -4542,7 +4520,7 @@
 	)
 	(wire
 		(pts
-			(xy 194.31 73.66) (xy 201.93 73.66)
+			(xy 194.31 81.28) (xy 201.93 81.28)
 		)
 		(stroke
 			(width 0)
@@ -4671,7 +4649,7 @@
 		(uuid "fe42fa1d-4946-471c-91ee-a60025b4292a")
 	)
 	(label "BuzzPWM"
-		(at 194.31 73.66 0)
+		(at 194.31 81.28 0)
 		(effects
 			(font
 				(size 1.016 1.016)
@@ -7304,7 +7282,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "External Sch/Input_PP.kicad_sch"
+		(property "Sheetfile" "Input_PP.kicad_sch"
 			(at 62.23 49.022 0)
 			(effects
 				(font
@@ -7342,7 +7320,7 @@
 		)
 	)
 	(sheet
-		(at 201.93 68.58)
+		(at 201.93 76.2)
 		(size 20.32 19.05)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -7358,7 +7336,7 @@
 		)
 		(uuid "5a3494bd-2769-4cc7-96c1-4c8c29abb5e6")
 		(property "Sheetname" "Buzzer"
-			(at 201.93 67.8684 0)
+			(at 201.93 75.4884 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7367,7 +7345,7 @@
 			)
 		)
 		(property "Sheetfile" "Buzzer.kicad_sch"
-			(at 201.93 88.2146 0)
+			(at 201.93 95.8346 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7376,7 +7354,7 @@
 			)
 		)
 		(pin "BuzzPWM" input
-			(at 201.93 73.66 180)
+			(at 201.93 81.28 180)
 			(uuid "304cf532-a529-4fb8-a48a-517f7990c16c")
 			(effects
 				(font
@@ -7417,7 +7395,7 @@
 				(justify left bottom)
 			)
 		)
-		(property "Sheetfile" "External Sch/12V-24VBoostConverter.kicad_sch"
+		(property "Sheetfile" "12V-24VBoostConverter.kicad_sch"
 			(at 106.934 49.022 0)
 			(effects
 				(font
