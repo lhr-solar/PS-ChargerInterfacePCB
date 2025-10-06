@@ -631,12 +631,12 @@
       "12V-24V Boost Converter"
     ],
     [
-      "46b370b2-cde3-4d11-ba0c-685c830d3c33",
-      "Input_PP"
+      "f4ec1410-3a5f-45f2-a31b-30d8be6fbeab",
+      "Power12V"
     ],
     [
-      "099ee54e-acf8-4217-9443-d32b055f2668",
-      "Output_PP"
+      "ac7656e7-8ca1-4189-8850-b703de13aef3",
+      "Power24V"
     ],
     [
       "5a3494bd-2769-4cc7-96c1-4c8c29abb5e6",

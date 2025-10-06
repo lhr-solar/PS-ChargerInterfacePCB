@@ -1722,6 +1722,16 @@
 		)
 		(uuid "1372e00e-2752-4d48-963b-db7fa8208a2b")
 	)
+	(text "Overvoltage Protection: 29.03V\nVovr = (R2 * Vov)/(R1 + R2)\nVov = Vovr * (R1 + R2) / R2\n29.03 = 1.25 * (200k + 9k) / 9k"
+		(exclude_from_sim no)
+		(at 184.404 96.52 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "199cc125-6ba9-4698-b01f-42f1c4bea425")
+	)
 	(text "24V Input\nBypass Cap"
 		(exclude_from_sim no)
 		(at 229.87 77.47 0)

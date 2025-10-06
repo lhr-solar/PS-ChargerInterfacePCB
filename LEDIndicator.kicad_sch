@@ -414,6 +414,18 @@
 			(embedded_fonts no)
 		)
 	)
+	(rectangle
+		(start 15.24 15.24)
+		(end 81.28 50.8)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid 8c6a04c7-6eba-4e9a-94c3-9a24dd623343)
+	)
 	(text "R = (3.3V- Vf)/I\n590 = (3.3V - 2.12)/0.002\nI = 2mA (port limit?)\n\nVf = 2.2V (red leds?)\n"
 		(exclude_from_sim no)
 		(at 62.992 30.48 0)
