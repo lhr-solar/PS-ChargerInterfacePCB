@@ -2816,6 +2816,107 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "power:PWR_FLAG"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#FLG"
+				(at 0 1.905 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "PWR_FLAG"
+				(at 0 3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Special symbol for telling ERC where power comes from"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "flag power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "PWR_FLAG_0_0"
+				(pin power_out line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(symbol "PWR_FLAG_0_1"
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 1.27) (xy -1.016 1.905) (xy 0 2.54) (xy 1.016 1.905) (xy 0 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "utsvt_connectors2:LSOM_DaughterConn"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -4378,6 +4479,12 @@
 		(uuid "53e518ca-bf08-4eff-b621-dba60039ebe9")
 	)
 	(junction
+		(at 83.82 44.45)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "612e903b-a524-4256-ae67-905b1517fe77")
+	)
+	(junction
 		(at 48.26 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -4443,6 +4550,12 @@
 		(color 0 0 0 0)
 		(uuid "eb01bbd3-78be-4fb4-bed7-bba9a1026642")
 	)
+	(junction
+		(at 48.26 93.98)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "edd10f0e-8101-4cec-97ba-5cd2fe3a27ac")
+	)
 	(no_connect
 		(at 152.4 86.36)
 		(uuid "0c3bf774-76d0-4e8a-9c8b-a0ee50f2407c")
@@ -4452,8 +4565,16 @@
 		(uuid "1274fa2c-000b-4d15-87c2-e76d6d104951")
 	)
 	(no_connect
+		(at 95.25 106.68)
+		(uuid "1ef187a6-95e7-4477-b102-4f458cf8b434")
+	)
+	(no_connect
 		(at 114.3 72.39)
 		(uuid "23337093-29c6-4d3d-aaf3-0574dcb1fe86")
+	)
+	(no_connect
+		(at 95.25 114.3)
+		(uuid "37e58bda-3a2f-47b5-b031-7d62f8f35111")
 	)
 	(no_connect
 		(at 114.3 93.98)
@@ -4462,6 +4583,10 @@
 	(no_connect
 		(at 95.25 101.6)
 		(uuid "4217fd1d-3016-4db5-bf1b-7b085b0a3beb")
+	)
+	(no_connect
+		(at 95.25 109.22)
+		(uuid "755a9078-c823-41df-9704-b2a5971d7dac")
 	)
 	(no_connect
 		(at 95.25 80.01)
@@ -4478,6 +4603,10 @@
 	(no_connect
 		(at 152.4 91.44)
 		(uuid "8353b346-18a3-48b7-8756-830dccb8e5e3")
+	)
+	(no_connect
+		(at 95.25 111.76)
+		(uuid "8d2bdfda-7e74-4bd6-8af4-c834982c6ec6")
 	)
 	(no_connect
 		(at 152.4 97.79)
@@ -4873,7 +5002,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 92.71) (xy 48.26 95.25)
+			(xy 48.26 92.71) (xy 48.26 93.98)
 		)
 		(stroke
 			(width 0)
@@ -5220,6 +5349,16 @@
 			(type default)
 		)
 		(uuid "9177417c-c318-425f-a444-787236ad027a")
+	)
+	(wire
+		(pts
+			(xy 48.26 93.98) (xy 48.26 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9255cff9-33f2-46e4-97b5-db11ddd1bcbc")
 	)
 	(wire
 		(pts
@@ -5603,6 +5742,16 @@
 	)
 	(wire
 		(pts
+			(xy 83.82 44.45) (xy 90.17 44.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de607093-56dd-4624-9036-03ef9bc8e4b8")
+	)
+	(wire
+		(pts
 			(xy 152.4 81.28) (xy 158.75 81.28)
 		)
 		(stroke
@@ -5613,7 +5762,7 @@
 	)
 	(wire
 		(pts
-			(xy 82.55 44.45) (xy 90.17 44.45)
+			(xy 82.55 44.45) (xy 83.82 44.45)
 		)
 		(stroke
 			(width 0)
@@ -13393,6 +13542,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 83.82 44.45 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "066a7eef-f84e-4869-8943-6c27da21acbd")
+		(property "Reference" "#FLG02"
+			(at 83.82 42.545 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 83.82 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 83.82 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 83.82 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 83.82 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0ae20998-cd6b-4a86-b514-d85e4279c711")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244"
+					(reference "#FLG02")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "UTSVT_Power:SMAF4749A-TP")
 		(at 222.25 27.94 270)
 		(unit 1)
@@ -16463,6 +16678,73 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244"
 					(reference "TP8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:PWR_FLAG")
+		(at 48.26 93.98 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "ce6abed6-7a97-4e92-ab4f-b1c44e23f6fe")
+		(property "Reference" "#FLG01"
+			(at 46.355 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "PWR_FLAG"
+			(at 44.45 94.996 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" ""
+			(at 48.26 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 48.26 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Special symbol for telling ERC where power comes from"
+			(at 48.26 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9f16234c-b141-46b8-9119-2196b086af60")
+		)
+		(instances
+			(project ""
+				(path "/d45494af-ff47-4110-bed2-dd613b557244"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
