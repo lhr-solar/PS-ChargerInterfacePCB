@@ -1744,7 +1744,7 @@
 	)
 	(text "Resistor 1"
 		(exclude_from_sim no)
-		(at 110.744 69.342 0)
+		(at 122.174 68.58 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1766,7 +1766,7 @@
 	)
 	(text "Resistor 2"
 		(exclude_from_sim no)
-		(at 132.08 74.676 0)
+		(at 132.08 72.644 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2698,6 +2698,16 @@
 			"zqgwhAAEIOCHAMLshzNeIAABCDgT+A+XdWW8YDH/QQAAAABJRU5ErkJggg=="
 		)
 	)
+	(label "LV+"
+		(at 115.57 67.31 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "73b264f3-b9c9-4427-9c73-7976cb2a4ae3")
+	)
 	(label "RPP_EN"
 		(at 75.565 73.025 0)
 		(effects
@@ -2739,17 +2749,6 @@
 			(justify left)
 		)
 		(uuid "3ad4e48d-7378-4bd0-8fe5-5b8eceb60d33")
-	)
-	(hierarchical_label "12V_IN"
-		(shape input)
-		(at 115.57 67.31 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "4b8be0e3-9d05-4b94-b4e0-5d125654e352")
 	)
 	(hierarchical_label "12V_IN"
 		(shape input)

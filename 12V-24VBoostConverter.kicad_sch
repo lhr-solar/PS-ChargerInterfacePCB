@@ -144,6 +144,156 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:D_Schottky"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "D"
+				(at 0 2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "D_Schottky"
+				(at 0 -2.54 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Schottky diode"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "diode Schottky"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "D_Schottky_0_1"
+				(polyline
+					(pts
+						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy -1.27 0)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "D_Schottky_1_1"
+				(pin passive line
+					(at -3.81 0 0)
+					(length 2.54)
+					(name "K"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.81 0 180)
+					(length 2.54)
+					(name "A"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:Fuse"
 			(pin_numbers
 				(hide yes)
@@ -1040,9 +1190,9 @@
 		)
 		(uuid "0db3eefd-8074-4c07-8dbf-fadd375946ea")
 	)
-	(text "Ipeak = I(avg input) + I(L)/2 = 5+ 0.75 = 5.75 --> 6A\nI(L) = 0.3 * 5 = 1.5\nIpeak = 6A\n6 = 0.54 * 160k/Rlim\nRlim = 14.4k\n\nor\n\nIpeak = 0.54 * 160k/15k (standard component)\nIpeak = 5.76A"
+	(text "Ipeak = 0.54 * 160k/29.4k (standard component)\nIpeak = 2.938 A"
 		(exclude_from_sim no)
-		(at 101.6 117.094 0)
+		(at 101.854 109.728 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1069,6 +1219,17 @@
 			)
 		)
 		(uuid "bd645579-fa65-43c4-b6e0-d33c61d32da2")
+	)
+	(text "find new diode w low voltage drop"
+		(exclude_from_sim no)
+		(at 127.254 27.178 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ef592252-df8a-4e3b-82a1-9f8a6a245733")
 	)
 	(junction
 		(at 86.36 29.21)
@@ -1256,6 +1417,16 @@
 	)
 	(wire
 		(pts
+			(xy 128.27 43.18) (xy 132.08 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b324397-d6f7-4a72-9fd0-1aef9736f4ba")
+	)
+	(wire
+		(pts
 			(xy 54.61 52.07) (xy 54.61 54.61)
 		)
 		(stroke
@@ -1283,6 +1454,16 @@
 			(type default)
 		)
 		(uuid "308fe5d2-3d3e-44d7-90a0-1046353938bb")
+	)
+	(wire
+		(pts
+			(xy 152.4 43.18) (xy 162.56 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "31895641-30bf-4914-a99b-bba514b06c7d")
 	)
 	(wire
 		(pts
@@ -1396,16 +1577,6 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 43.18) (xy 162.56 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "60858022-4017-4bba-9cf6-713160c68c5b")
-	)
-	(wire
-		(pts
 			(xy 93.98 29.21) (xy 95.25 29.21)
 		)
 		(stroke
@@ -1493,16 +1664,6 @@
 			(type default)
 		)
 		(uuid "912a9f3b-b71b-4dfd-80d6-1b341c547cf0")
-	)
-	(wire
-		(pts
-			(xy 128.27 43.18) (xy 142.24 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9bf6e836-905b-4d94-96d6-109d7c8adfd9")
 	)
 	(wire
 		(pts
@@ -1803,6 +1964,16 @@
 			(type default)
 		)
 		(uuid "e7708d46-a565-4d11-9747-4f7338081150")
+	)
+	(wire
+		(pts
+			(xy 139.7 43.18) (xy 144.78 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ec0e82dc-c58e-4fcd-8b80-70a4c90f2d78")
 	)
 	(wire
 		(pts
@@ -2783,7 +2954,7 @@
 		(dnp no)
 		(uuid "01dbd5a1-6e8a-45cf-9c08-302efaa742b5")
 		(property "Reference" "C10"
-			(at 99.314 80.518 0)
+			(at 100.076 80.264 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2798,7 +2969,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 96.8248 78.74 0)
 			(effects
 				(font
@@ -2932,7 +3103,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 86.6648 69.85 0)
 			(effects
 				(font
@@ -2999,7 +3170,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 91.7448 69.85 0)
 			(effects
 				(font
@@ -3126,7 +3297,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "884.946"
+		(property "Value" "1k"
 			(at 55.88 49.784 0)
 			(effects
 				(font
@@ -3135,7 +3306,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 52.832 48.26 90)
 			(effects
 				(font
@@ -3204,7 +3375,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 52.832 38.1 90)
 			(effects
 				(font
@@ -3339,7 +3510,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 117.602 50.8 90)
 			(effects
 				(font
@@ -3406,7 +3577,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
 			(at 90.17 29.21 0)
 			(effects
 				(font
@@ -3475,7 +3646,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 68.2752 38.1 0)
 			(effects
 				(font
@@ -3696,7 +3867,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 117.602 67.31 90)
 			(effects
 				(font
@@ -3830,7 +4001,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
 			(at 104.14 28.2448 0)
 			(effects
 				(font
@@ -3899,7 +4070,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 96.012 73.66 90)
 			(effects
 				(font
@@ -3959,7 +4130,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "15k"
+		(property "Value" "29.4k"
 			(at 68.834 58.42 0)
 			(effects
 				(font
@@ -3968,7 +4139,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 65.532 57.15 90)
 			(effects
 				(font
@@ -4011,6 +4182,74 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:D_Schottky")
+		(at 135.89 43.18 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "9fd14b9a-6d87-4d73-89ae-7d6f357b4250")
+		(property "Reference" "D6"
+			(at 136.2075 36.83 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "D_Schottky"
+			(at 136.2075 39.37 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "SK34A-LTP"
+			(at 135.89 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.mouser.com/datasheet/3/225/1/SK32A-L-SK310A-L(SMA).pdf"
+			(at 135.89 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Schottky diode"
+			(at 135.89 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "499ba073-2003-41da-ad9b-22234689a000")
+		)
+		(pin "2"
+			(uuid "b9496c76-cc9c-4e70-a2c2-ead7f83931ff")
+		)
+		(instances
+			(project ""
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
+					(reference "D6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 138.43 55.88 0)
 		(unit 1)
@@ -4037,7 +4276,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 139.3952 59.69 0)
 			(effects
 				(font
@@ -4081,7 +4320,7 @@
 	)
 	(symbol
 		(lib_id "Device:Fuse")
-		(at 146.05 43.18 90)
+		(at 148.59 43.18 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4089,7 +4328,7 @@
 		(dnp no)
 		(uuid "b54459c1-f4e8-4621-88da-36b27cd9f889")
 		(property "Reference" "F3"
-			(at 147.066 41.148 90)
+			(at 149.606 41.148 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4098,7 +4337,7 @@
 			)
 		)
 		(property "Value" "5"
-			(at 146.558 45.466 90)
+			(at 149.098 45.466 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4106,8 +4345,8 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
-			(at 146.05 44.958 90)
+		(property "Footprint" "Fuse:Fuse_0805_2012Metric"
+			(at 148.59 44.958 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4116,7 +4355,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 146.05 43.18 0)
+			(at 148.59 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4125,7 +4364,7 @@
 			)
 		)
 		(property "Description" "Fuse"
-			(at 146.05 43.18 0)
+			(at 148.59 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4242,7 +4481,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 129.2352 59.69 0)
 			(effects
 				(font
@@ -4311,7 +4550,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 149.5552 59.69 0)
 			(effects
 				(font
@@ -4514,7 +4753,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
 			(at 159.7152 59.69 0)
 			(effects
 				(font
