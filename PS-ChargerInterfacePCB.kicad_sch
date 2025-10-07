@@ -4535,12 +4535,6 @@
 		(uuid "53e518ca-bf08-4eff-b621-dba60039ebe9")
 	)
 	(junction
-		(at 64.77 39.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "612e903b-a524-4256-ae67-905b1517fe77")
-	)
-	(junction
 		(at 27.94 93.98)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -5344,7 +5338,7 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 30.48) (xy 130.81 30.48)
+			(xy 125.73 30.48) (xy 133.35 30.48)
 		)
 		(stroke
 			(width 0)
@@ -5624,16 +5618,6 @@
 	)
 	(wire
 		(pts
-			(xy 130.81 30.48) (xy 130.81 29.21)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c40a0071-2cfb-4600-8aaa-8a0acba2f141")
-	)
-	(wire
-		(pts
 			(xy 218.44 39.37) (xy 219.71 39.37)
 		)
 		(stroke
@@ -5724,7 +5708,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 39.37) (xy 71.12 39.37)
+			(xy 63.5 39.37) (xy 68.58 39.37)
 		)
 		(stroke
 			(width 0)
@@ -5741,16 +5725,6 @@
 			(type default)
 		)
 		(uuid "df01e7cc-9693-4a18-8785-be93adff4bac")
-	)
-	(wire
-		(pts
-			(xy 63.5 39.37) (xy 64.77 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e0bdaf0c-9adb-4cea-b019-3f3e14591ddb")
 	)
 	(wire
 		(pts
@@ -8227,6 +8201,16 @@
 		)
 		(uuid "54885d50-2874-4844-884e-0ce5fd3dcd47")
 	)
+	(label "24V_OUT"
+		(at 133.35 30.48 180)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify right bottom)
+		)
+		(uuid "56a4fc02-452f-46c3-9bc4-e9bf885344c8")
+	)
 	(label "Display_SCLK"
 		(at 38.1 142.24 0)
 		(effects
@@ -8356,16 +8340,6 @@
 			(justify right bottom)
 		)
 		(uuid "af91e800-79ad-4230-8db2-716564693fda")
-	)
-	(label "24V_OUT"
-		(at 71.12 39.37 180)
-		(effects
-			(font
-				(size 0.889 0.889)
-			)
-			(justify right bottom)
-		)
-		(uuid "b0a5ff96-2b0e-4c1d-b10f-268b07d4bb53")
 	)
 	(label "Display_NSS"
 		(at 229.87 124.46 0)
@@ -8776,17 +8750,16 @@
 		)
 	)
 	(symbol
-		(lib_id "power:PWR_FLAG")
-		(at 64.77 39.37 0)
+		(lib_id "power:+24V")
+		(at 68.58 39.37 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "066a7eef-f84e-4869-8943-6c27da21acbd")
-		(property "Reference" "#FLG02"
-			(at 64.77 37.465 0)
+		(uuid "0dd397b1-3e5a-463a-bd9a-32a48e9ec739")
+		(property "Reference" "#PWR016"
+			(at 68.58 43.18 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8794,8 +8767,8 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "PWR_FLAG"
-			(at 64.77 34.29 0)
+		(property "Value" "+24V"
+			(at 68.58 35.56 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8803,7 +8776,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 64.77 39.37 0)
+			(at 68.58 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8811,8 +8784,8 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 64.77 39.37 0)
+		(property "Datasheet" ""
+			(at 68.58 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8820,8 +8793,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Special symbol for telling ERC where power comes from"
-			(at 64.77 39.37 0)
+		(property "Description" "Power symbol creates a global label with name \"+24V\""
+			(at 68.58 39.37 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -8830,12 +8803,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "0ae20998-cd6b-4a86-b514-d85e4279c711")
+			(uuid "0dc7bf92-d99c-45c0-8dfe-f97ce87a13fc")
 		)
 		(instances
-			(project "PS-ChargerInterfacePCB"
+			(project ""
 				(path "/d45494af-ff47-4110-bed2-dd613b557244"
-					(reference "#FLG02")
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -9358,7 +9331,7 @@
 		(dnp no)
 		(uuid "3585286f-aaba-44a4-8caf-9d92b48aba97")
 		(property "Reference" "J2"
-			(at 25.4 34.544 0)
+			(at 24.892 33.274 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -9367,14 +9340,14 @@
 			)
 		)
 		(property "Value" "LV_Elcon_Connector"
-			(at 34.544 36.576 0)
+			(at 34.29 35.306 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "0334722006"
 			(at 25.4 41.91 0)
 			(effects
 				(font
@@ -9383,7 +9356,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://tools.molex.com/pdm_docs/as/AS-33611-001.pdf"
 			(at 25.4 41.91 0)
 			(effects
 				(font
@@ -10987,72 +10960,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+24V")
-		(at 130.81 29.21 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "d85110a0-5a58-4251-a03d-c3103538319f")
-		(property "Reference" "#PWR062"
-			(at 130.81 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+24V"
-			(at 130.81 24.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 130.81 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 130.81 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+24V\""
-			(at 130.81 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "12b4d611-b2d8-4559-bd80-ce58d3d7eecc")
-		)
-		(instances
-			(project ""
-				(path "/d45494af-ff47-4110-bed2-dd613b557244"
-					(reference "#PWR062")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R_US")
 		(at 261.62 33.02 0)
 		(unit 1)
@@ -11146,7 +11053,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "1053091202"
 			(at 274.32 82.55 0)
 			(effects
 				(font
@@ -11155,7 +11062,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail/1053091202?display=pdf"
 			(at 274.32 82.55 0)
 			(effects
 				(font

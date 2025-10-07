@@ -1800,7 +1800,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "1053091202"
 			(at 135.89 49.53 0)
 			(effects
 				(font
@@ -1809,7 +1809,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "https://www.amazon.com/Stemedu-Decibel-Sounder-Electronic-Continuous/dp/B096P5K9W1"
+		(property "Datasheet" "https://www.molex.com/en-us/products/part-detail/1053091202?display=pdf"
 			(at 135.89 49.53 0)
 			(effects
 				(font
