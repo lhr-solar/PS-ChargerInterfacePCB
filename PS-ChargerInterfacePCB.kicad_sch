@@ -8061,7 +8061,7 @@
 		)
 		(uuid "10dc962e-b611-4783-8bbc-e97700e411ac")
 	)
-	(label "Elcon_CAN_H"
+	(label "CAN_H_Elcon"
 		(at 38.1 41.91 180)
 		(effects
 			(font
@@ -8081,17 +8081,7 @@
 		)
 		(uuid "1445143e-1f8f-4dcf-8631-b2066ed7cce2")
 	)
-	(label "Elcon_CAN_H"
-		(at 29.21 82.55 0)
-		(effects
-			(font
-				(size 0.889 0.889)
-			)
-			(justify left bottom)
-		)
-		(uuid "1a0d780f-752d-4331-9f51-6239b2a59284")
-	)
-	(label "CarCAN_L"
+	(label "CAN_L_Car"
 		(at 71.12 44.45 180)
 		(effects
 			(font
@@ -8101,7 +8091,7 @@
 		)
 		(uuid "1babe114-6cda-4359-b237-2211978823df")
 	)
-	(label "CarCAN_H"
+	(label "CAN_H_Car"
 		(at 78.74 134.62 180)
 		(effects
 			(font
@@ -8151,7 +8141,7 @@
 		)
 		(uuid "2f4f0c3b-cc30-41e1-92fb-30b0aff7847e")
 	)
-	(label "CarCAN_L"
+	(label "CAN_L_Car"
 		(at 78.74 137.16 180)
 		(effects
 			(font
@@ -8171,7 +8161,7 @@
 		)
 		(uuid "444c0620-8846-495c-86a8-be5bbc955bae")
 	)
-	(label "Elcon_CAN_L"
+	(label "CAN_L_Elcon"
 		(at 38.1 147.32 0)
 		(effects
 			(font
@@ -8211,6 +8201,16 @@
 		)
 		(uuid "56a4fc02-452f-46c3-9bc4-e9bf885344c8")
 	)
+	(label "CAN_H_Car"
+		(at 71.12 41.91 180)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify right bottom)
+		)
+		(uuid "5700a980-9e9e-45ad-a19d-73aca31fdc51")
+	)
 	(label "Display_SCLK"
 		(at 38.1 142.24 0)
 		(effects
@@ -8221,7 +8221,7 @@
 		)
 		(uuid "5af3d173-236b-40a1-b047-2189586b0173")
 	)
-	(label "CarCAN_H"
+	(label "CAN_H_Car"
 		(at 86.36 74.93 0)
 		(effects
 			(font
@@ -8261,6 +8261,16 @@
 		)
 		(uuid "7902df7d-3cf2-432b-9e5e-807568a50d72")
 	)
+	(label "CAN_H_Elcon"
+		(at 29.21 82.55 0)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify left bottom)
+		)
+		(uuid "79e1200a-dd62-45e8-8875-d1392e4b7c23")
+	)
 	(label "Display_MISO"
 		(at 142.24 102.87 180)
 		(effects
@@ -8291,7 +8301,7 @@
 		)
 		(uuid "88c0b5d4-4995-410e-a95e-867968b20f0b")
 	)
-	(label "Elcon_CAN_H"
+	(label "CAN_H_Elcon"
 		(at 38.1 149.86 0)
 		(effects
 			(font
@@ -8321,7 +8331,7 @@
 		)
 		(uuid "a1acd46a-9931-4289-8d4d-ff52de684f7f")
 	)
-	(label "Elcon_CAN_L"
+	(label "CAN_L_Elcon"
 		(at 38.1 44.45 180)
 		(effects
 			(font
@@ -8421,16 +8431,6 @@
 		)
 		(uuid "e79e641a-9322-448b-8736-74424aff1b31")
 	)
-	(label "CarCAN_H"
-		(at 71.12 41.91 180)
-		(effects
-			(font
-				(size 0.889 0.889)
-			)
-			(justify right bottom)
-		)
-		(uuid "eb29d9f1-d094-404a-ac32-ea330e33c42f")
-	)
 	(label "Display_MISO"
 		(at 38.1 139.7 0)
 		(effects
@@ -8451,7 +8451,7 @@
 		)
 		(uuid "ee7a3e72-5285-4cf9-b9e7-ff5fb5cac818")
 	)
-	(label "Elcon_CAN_L"
+	(label "CAN_L_Elcon"
 		(at 29.21 80.01 0)
 		(effects
 			(font
@@ -8481,7 +8481,7 @@
 		)
 		(uuid "f4baa099-2e70-4f3d-8e4c-3fea0698a863")
 	)
-	(label "CarCAN_L"
+	(label "CAN_L_Car"
 		(at 86.36 72.39 0)
 		(effects
 			(font
