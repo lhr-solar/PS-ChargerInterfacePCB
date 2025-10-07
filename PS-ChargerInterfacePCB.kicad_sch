@@ -10689,7 +10689,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "UTSVT_Special:LeaderSOM"
 			(at 113.03 49.53 0)
 			(effects
 				(font
@@ -11479,7 +11479,7 @@
 				)
 			)
 		)
-		(property "Footprint" "0334722006"
+		(property "Footprint" "334722006:Molex-33472-2006-MFG"
 			(at 25.4 41.91 0)
 			(effects
 				(font
@@ -12282,7 +12282,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SSW-107-21-G-D:SAMTEC_SSW-107-21-G-D"
+		(property "Footprint" "SSW-107-21-G-D:CON14_2X7_TU_SSQ"
 			(at 58.42 142.24 0)
 			(effects
 				(font
@@ -12683,7 +12683,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "UTSVT_Special:LeaderSOM"
 			(at 55.88 49.53 0)
 			(effects
 				(font
@@ -13185,7 +13185,7 @@
 				)
 			)
 		)
-		(property "Footprint" "1053091202"
+		(property "Footprint" "153091202:1053091202"
 			(at 274.32 82.55 0)
 			(effects
 				(font

@@ -1,0 +1,16 @@
+.TPS613771RYHR :1 ;Switching Voltage Regulators FINISH GOODS FOR TPS613771
+TPS61376RYHR
+*STM IC
+*NGS
+*PLB 1="VIN_1" 2="EN/UVLO" 3="MODE" 4="VSENSE_1" 5="VOUT" 6="SW" 7="PGND" 8="FB_1" 9="COMP" 10="ILIM" 11="VCC_1" 12="AGND" 13="BOOT" 14="VSENSE_2" 15="FB_2" 16="VCC_2" 17="VIN_2"
+*MXP 17
+*DFN TPS613771RYHR
+~!Mouser Part Number (595-TPS613771RYHR)
+~!Link Mouser Price/Stock (https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS613771RYHR?qs=Z%252BL2brAPG1K06hytL05E4w%3D%3D)
+~!Manufacturer_Name (Texas Instruments)
+~!Manufacturer_Part_Number (TPS613771RYHR)
+~!Link Datasheet (https://www.ti.com/lit/ds/symlink/tps61377.pdf)
+~!Height (1mm)
+~!3D_Model (TPS613771RYHR)
+TPS613771RYHR
+1.1!U 2.1!U 3.1!U 4.1!U 5.1!U 6.1!U 7.1!U 8.1!U 9.1!U 10.1!U 11.1!U 12.1!U 13.1!U 14.1!U 15.1!U 16.1!U 17.1!U 

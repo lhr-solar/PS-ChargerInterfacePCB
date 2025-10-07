@@ -155,8 +155,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "D"
-				(at 0 2.54 0)
+			(property "Reference" "D6"
+				(at -0.3175 6.35 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -164,14 +164,14 @@
 				)
 			)
 			(property "Value" "D_Schottky"
-				(at 0 -2.54 0)
+				(at -0.3175 3.81 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" ""
+			(property "Footprint" "SK32A_LTP:SDO_DO-214AC-SMA_MCE"
 				(at 0 0 0)
 				(effects
 					(font
@@ -180,7 +180,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "~"
+			(property "Datasheet" "https://www.mouser.com/datasheet/3/225/1/SK32A-L-SK310A-L(SMA).pdf"
 				(at 0 0 0)
 				(effects
 					(font
@@ -195,7 +195,6 @@
 					(font
 						(size 1.27 1.27)
 					)
-					(hide yes)
 				)
 			)
 			(property "ki_keywords" "diode Schottky"
@@ -3702,14 +3701,13 @@
 				)
 			)
 		)
-		(property "Footprint" "TPS61376RYHR"
+		(property "Footprint" "TPS613771RYHR:TPS61376RYHR"
 			(at 110.49 133.02 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify left top)
-				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps61377.pdf"
@@ -4196,7 +4194,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SK34A-LTP"
+		(property "Footprint" "SK32A_LTP:SDO_DO-214AC-SMA_MCE"
 			(at 135.89 43.18 0)
 			(effects
 				(font

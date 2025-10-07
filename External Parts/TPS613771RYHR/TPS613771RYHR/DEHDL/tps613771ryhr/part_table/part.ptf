@@ -1,0 +1,11 @@
+FILE_TYPE = MULTI_PHYS_TABLE;
+
+PART 'TPS613771RYHR'
+CLASS = IC
+{========================================================================================}
+:"MANUFACTURER_NAME", "MANUFACTURER_PART_NUMBER"= "PART_NUMBER", "JEDEC_TYPE", "PACK_TYPE", "MOUSER_PART_NUMBER", "MOUSER_PRICE/STOCK", "DESCRIPTION", "DATASHEET", "HEIGHT";
+{========================================================================================}
+ "Texas Instruments", "TPS613771RYHR" (!) = "", "TPS61376RYHR", "Other", "595-TPS613771RYHR", "https://www.mouser.co.uk/ProductDetail/Texas-Instruments/TPS613771RYHR?qs=Z%252BL2brAPG1K06hytL05E4w%3D%3D", "Switching Voltage Regulators FINISH GOODS FOR TPS613771", "https://www.ti.com/lit/ds/symlink/tps61377.pdf", "1 mm"
+END_PART
+
+END.

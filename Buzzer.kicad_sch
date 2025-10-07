@@ -1800,7 +1800,7 @@
 				)
 			)
 		)
-		(property "Footprint" "1053091202"
+		(property "Footprint" "153091202:1053091202"
 			(at 135.89 49.53 0)
 			(effects
 				(font
@@ -2069,7 +2069,7 @@
 				)
 			)
 		)
-		(property "Footprint" "BUK7M1780EX"
+		(property "Footprint" "UTSVT_Power:PSMN8R5-40MSDX"
 			(at 93.98 146.99 0)
 			(effects
 				(font
