@@ -1233,9 +1233,9 @@
 		)
 		(uuid "60d06a60-b1cf-4ff5-b937-97e39b7b7779")
 	)
-	(text "24 Input\nBypass Cap"
+	(text "Bypass Cap"
 		(exclude_from_sim no)
-		(at 117.094 59.436 0)
+		(at 117.094 58.674 0)
 		(effects
 			(font
 				(size 1.27 1.27)
