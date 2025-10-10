@@ -6,7 +6,7 @@
   (lib (name "utsvt_misc")(type "KiCad")(uri "${KIPRJMOD}/KiCAD-Sharepoint/utsvt_misc.kicad_sym")(options "")(descr ""))
   (lib (name "utsvt_power")(type "KiCad")(uri "${KIPRJMOD}/KiCAD-Sharepoint/utsvt_power.kicad_sym")(options "")(descr ""))
   (lib (name "utsvt_special")(type "KiCad")(uri "${KIPRJMOD}/KiCAD-Sharepoint/utsvt_special.kicad_sym")(options "")(descr ""))
-  (lib (name "NHD-C12832A1Z-FSB-FBW-3V3")(type "KiCad")(uri "${KIPRJMOD}/External Parts/LIB_NHD-C12832A1Z-FSB-FBW-3V3/KiCad/NHD-C12832A1Z-FSB-FBW-3V3.kicad_sym")(options "")(descr ""))
+  (lib (name "NHD-C12832A1Z-FSB-FBW-3V3")(type "KiCad")(uri "${KIPRJMOD}/External Parts/NHD-C12832A1Z-FSB-FBW-3V3/KiCad/NHD-C12832A1Z-FSB-FBW-3V3.kicad_sym")(options "")(descr ""))
   (lib (name "CMS14(TE12L,Q,M)")(type "KiCad")(uri "/Users/shampoo/Downloads/KiCADv6 2/2025-10-07_00-12-31.kicad_sym")(options "")(descr ""))
   (lib (name "SSW-107-21-G-D")(type "KiCad")(uri "${KIPRJMOD}/External Parts/SSW-107-21-G-D/SSW-107-21-G-D.kicad_sym")(options "")(descr ""))
 )

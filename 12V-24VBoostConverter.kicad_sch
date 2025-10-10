@@ -3701,7 +3701,7 @@
 				)
 			)
 		)
-		(property "Footprint" "TPS613771RYHR:TPS61376RYHR"
+		(property "Footprint" "TPS613771RYHR:VQFN-HR13_RYH_TEX"
 			(at 110.49 133.02 0)
 			(effects
 				(font
