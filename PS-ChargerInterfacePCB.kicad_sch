@@ -4908,16 +4908,6 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 54.61) (xy 261.62 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "13b14ded-25c9-4080-b335-73d3a9e79b4c")
-	)
-	(wire
-		(pts
 			(xy 209.55 27.94) (xy 209.55 29.21)
 		)
 		(stroke
@@ -4958,16 +4948,6 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 44.45) (xy 261.62 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ab0f6cf-23a6-485c-9d7f-9e838f6cd05a")
-	)
-	(wire
-		(pts
 			(xy 63.5 44.45) (xy 71.12 44.45)
 		)
 		(stroke
@@ -4975,16 +4955,6 @@
 			(type default)
 		)
 		(uuid "1d8c98b5-5f0b-4145-8468-ed8bb77320c3")
-	)
-	(wire
-		(pts
-			(xy 200.66 44.45) (xy 209.55 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1ee1e333-7bdd-4fa5-9069-e9c9d505f072")
 	)
 	(wire
 		(pts
@@ -5035,16 +5005,6 @@
 			(type default)
 		)
 		(uuid "30aa6046-d453-4910-80bb-dc5279a97434")
-	)
-	(wire
-		(pts
-			(xy 209.55 54.61) (xy 219.71 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "31448bfe-11be-419d-b884-ad80923e9de4")
 	)
 	(wire
 		(pts
@@ -5498,16 +5458,6 @@
 	)
 	(wire
 		(pts
-			(xy 252.73 44.45) (xy 261.62 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "882d30d9-570b-4a3b-a6bb-22de17d8a20f")
-	)
-	(wire
-		(pts
 			(xy 196.85 114.3) (xy 204.47 114.3)
 		)
 		(stroke
@@ -5898,16 +5848,6 @@
 	)
 	(wire
 		(pts
-			(xy 261.62 54.61) (xy 271.78 54.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e3e5ac96-858a-479a-821e-ea2867976bf7")
-	)
-	(wire
-		(pts
 			(xy 91.44 96.52) (xy 91.44 99.06)
 		)
 		(stroke
@@ -5935,16 +5875,6 @@
 			(type default)
 		)
 		(uuid "e89dc0b0-3484-4d42-b989-2149646be921")
-	)
-	(wire
-		(pts
-			(xy 209.55 54.61) (xy 209.55 53.34)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e9991eca-14f2-43c7-8ccf-486ea37a4579")
 	)
 	(wire
 		(pts
@@ -5995,16 +5925,6 @@
 			(type default)
 		)
 		(uuid "f7045ce9-68c4-4230-950d-f5a29ecc6688")
-	)
-	(wire
-		(pts
-			(xy 209.55 44.45) (xy 209.55 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f7551a47-0bd0-44ae-bc56-b22074c11cdd")
 	)
 	(wire
 		(pts
@@ -10314,7 +10234,7 @@
 		)
 	)
 	(label "LED_HV"
-		(at 66.04 139.7 180)
+		(at 66.04 144.78 180)
 		(effects
 			(font
 				(size 0.889 0.889)
@@ -10384,7 +10304,7 @@
 		(uuid "27e9838e-dd83-4512-8bf1-ae5e58459d5e")
 	)
 	(label "LED_HEART"
-		(at 66.04 134.62 180)
+		(at 66.04 149.86 180)
 		(effects
 			(font
 				(size 0.889 0.889)
@@ -10422,16 +10342,6 @@
 			(justify left bottom)
 		)
 		(uuid "444c0620-8846-495c-86a8-be5bbc955bae")
-	)
-	(label "RPP_EN24"
-		(at 200.66 44.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "526b3b8b-0566-4629-a800-6695096285aa")
 	)
 	(label "Display_NSS"
 		(at 85.09 102.87 180)
@@ -10624,7 +10534,7 @@
 		(uuid "b6eefed9-3a72-4774-9991-8e717e2d66a0")
 	)
 	(label "LED_CHARGE"
-		(at 66.04 144.78 180)
+		(at 66.04 134.62 180)
 		(effects
 			(font
 				(size 0.889 0.889)
@@ -10704,7 +10614,7 @@
 		(uuid "df66a2bc-7b95-43cd-9ad4-df94e54b008e")
 	)
 	(label "LED_FAULT"
-		(at 66.04 149.86 180)
+		(at 66.04 139.7 180)
 		(effects
 			(font
 				(size 0.889 0.889)
@@ -10792,16 +10702,6 @@
 			(justify left bottom)
 		)
 		(uuid "fc2d9490-4a9a-4d94-8891-0bd9338ba7e9")
-	)
-	(label "RPP_EN12"
-		(at 252.73 44.45 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "fd3c7f37-3f1d-4f6c-8540-14318e5346ec")
 	)
 	(label "LED_CHARGE"
 		(at 138.43 72.39 180)
@@ -11477,127 +11377,6 @@
 			(project ""
 				(path "/d45494af-ff47-4110-bed2-dd613b557244"
 					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "UTSVT_Power:SMAF4749A-TP")
-		(at 209.55 43.18 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "32e3f3a2-2316-453b-b250-c4e9ad633045")
-		(property "Reference" "Z5"
-			(at 207.518 58.42 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SMAF4751A-TP"
-			(at 199.898 56.515 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "UTSVT_Passives:SODFL5026X125N"
-			(at 115.9 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mccsemi.com/pdf/Products/SMAF4735A_SMAF4764A(DO-221AC).pdf"
-			(at 15.9 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "1.0 Watt Zener Diodes 6.2V to 100V"
-			(at 209.55 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.25"
-			(at -184.1 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "833-SMAF4749A-TP"
-			(at -284.1 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Micro-Commercial-Components-MCC/SMAF4749A-TP?qs=%252BXxaIXUDbq1bdSZ3Ebik%2FA%3D%3D"
-			(at -384.1 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "MCC"
-			(at -484.1 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "SMAF4749A-TP"
-			(at -584.1 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "cc535423-c0de-4327-81a3-296126817d78")
-		)
-		(pin "2"
-			(uuid "c3adbcdc-13a3-423b-aa05-847619c2b2d7")
-		)
-		(instances
-			(project "PS-ChargerInterfacePCB"
-				(path "/d45494af-ff47-4110-bed2-dd613b557244"
-					(reference "Z5")
 					(unit 1)
 				)
 			)
@@ -13671,127 +13450,6 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "UTSVT_Power:SMAF4749A-TP")
-		(at 261.62 43.18 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "fedf2a4d-29ae-450c-bfc3-7c3467cc9a69")
-		(property "Reference" "Z7"
-			(at 262.128 58.42 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "SMAF4744A"
-			(at 254.254 56.134 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "UTSVT_Passives:SODFL5026X125N"
-			(at 167.97 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mccsemi.com/pdf/Products/SMAF4735A_SMAF4764A(DO-221AC).pdf"
-			(at 67.97 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Description" "1.0 Watt Zener Diodes 6.2V to 100V"
-			(at 261.62 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Height" "1.25"
-			(at -132.03 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Part Number" "833-SMAF4749A-TP"
-			(at -232.03 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Micro-Commercial-Components-MCC/SMAF4749A-TP?qs=%252BXxaIXUDbq1bdSZ3Ebik%2FA%3D%3D"
-			(at -332.03 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Name" "MCC"
-			(at -432.03 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer_Part_Number" "SMAF4749A-TP"
-			(at -532.03 53.34 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "65512693-335b-41e0-b3bf-ec8fa0b3d2b9")
-		)
-		(pin "2"
-			(uuid "5e62e1e5-9b84-41a1-a544-1223495c8a0a")
-		)
-		(instances
-			(project "PS-ChargerInterfacePCB"
-				(path "/d45494af-ff47-4110-bed2-dd613b557244"
-					(reference "Z7")
-					(unit 1)
-				)
-			)
-		)
-	)
 	(sheet
 		(at 201.93 73.66)
 		(size 20.32 19.05)
@@ -13961,16 +13619,6 @@
 		(pin "OV" input
 			(at 200.66 39.37 0)
 			(uuid "61f5b31d-efd8-4b67-9cf5-e518f6aa4bcc")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RPP_EN" input
-			(at 200.66 44.45 0)
-			(uuid "10088a85-3969-41ef-85e1-63cc8d9f24f3")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -14215,16 +13863,6 @@
 		(pin "OV" input
 			(at 252.73 39.37 0)
 			(uuid "64e88367-5799-41c7-be3b-50b3c3760aba")
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(pin "RPP_EN" input
-			(at 252.73 44.45 0)
-			(uuid "517aede4-8d17-4fff-8a4c-f9d490350f94")
 			(effects
 				(font
 					(size 1.27 1.27)
