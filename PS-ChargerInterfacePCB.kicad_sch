@@ -10343,16 +10343,6 @@
 		)
 		(uuid "10dc962e-b611-4783-8bbc-e97700e411ac")
 	)
-	(label "CAN_Elcon_-"
-		(at 39.37 41.91 180)
-		(effects
-			(font
-				(size 0.889 0.889)
-			)
-			(justify right bottom)
-		)
-		(uuid "10ded877-b073-447a-baea-29c05b17074e")
-	)
 	(label "Display_RES"
 		(at 138.43 77.47 180)
 		(effects
@@ -10584,12 +10574,12 @@
 		(uuid "8dd4fe38-4575-46ed-94a2-e244526ef17b")
 	)
 	(label "12V_IN"
-		(at 33.02 48.26 0)
+		(at 38.1 39.37 180)
 		(effects
 			(font
 				(size 0.889 0.889)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "9289f2d4-9757-488d-8317-5ced745337e4")
 	)
@@ -10604,7 +10594,7 @@
 		(uuid "a1acd46a-9931-4289-8d4d-ff52de684f7f")
 	)
 	(label "CAN_Elcon_+"
-		(at 39.37 44.45 180)
+		(at 39.37 41.91 180)
 		(effects
 			(font
 				(size 0.889 0.889)
@@ -10702,6 +10692,16 @@
 			(justify left bottom)
 		)
 		(uuid "de026c58-649b-4953-8efc-265a6e5587a7")
+	)
+	(label "CAN_Elcon_-"
+		(at 39.37 44.45 180)
+		(effects
+			(font
+				(size 0.889 0.889)
+			)
+			(justify right bottom)
+		)
+		(uuid "df66a2bc-7b95-43cd-9ad4-df94e54b008e")
 	)
 	(label "LED_FAULT"
 		(at 66.04 149.86 180)
@@ -11286,7 +11286,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 38.1 39.37 180)
+		(at 33.02 48.26 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -11295,7 +11295,7 @@
 		(fields_autoplaced yes)
 		(uuid "16c322cf-32e5-4e9c-a105-b305ed96f43e")
 		(property "Reference" "#PWR06"
-			(at 38.1 33.02 0)
+			(at 33.02 54.61 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11304,7 +11304,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 38.1 34.29 0)
+			(at 33.02 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11313,7 +11313,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 38.1 39.37 0)
+			(at 33.02 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11322,7 +11322,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 39.37 0)
+			(at 33.02 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -11331,7 +11331,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 38.1 39.37 0)
+			(at 33.02 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
