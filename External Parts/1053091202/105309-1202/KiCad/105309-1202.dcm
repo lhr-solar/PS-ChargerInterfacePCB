@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 105309-1202
+D Molex Nano-Fit 105309, 2.5mm Pitch, 2 Way, 1 Row, Vertical PCB Header, Through Hole
+K
+F https://www.molex.com/pdm_docs/sd/1053091202_sd.pdf
+$ENDCMP
+#
+#End Doc Library
