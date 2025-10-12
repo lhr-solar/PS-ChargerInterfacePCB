@@ -10,7 +10,7 @@
   (lib (name "PSMN8R5-40MSDX")(type "KiCad")(uri "${KIPRJMOD}/External Parts/PSMN8R5-40MSDX/PSMN8R5-40MSDX/KiCad")(options "")(descr ""))
   (lib (name "153091202")(type "KiCad")(uri "${KIPRJMOD}/External Parts/1053091202/105309-1202/KiCad")(options "")(descr ""))
   (lib (name "334722006")(type "KiCad")(uri "${KIPRJMOD}/External Parts/334722006/eec.pretty")(options "")(descr ""))
-  (lib (name "NHD-C12832A1Z-FSB-FBW-3V3")(type "KiCad")(uri "${KIPRJMOD}/External Parts/LIB_NHD-C12832A1Z-FSB-FBW-3V3/KiCad")(options "")(descr ""))
+  (lib (name "NHD-C12832A1Z-FSB-FBW-3V3")(type "KiCad")(uri "${KIPRJMOD}/External Parts/NHD-C12832A1Z-FSB-FBW-3V3/KiCad")(options "")(descr ""))
   (lib (name "SK32A_LTP")(type "KiCad")(uri "${KIPRJMOD}/External Parts/SK32A_LTP/KiCADv6/footprints.pretty")(options "")(descr ""))
   (lib (name "TPS613771RYHR")(type "KiCad")(uri "${KIPRJMOD}/External Parts/TPS613771RYHR/footprints.pretty")(options "")(descr ""))
   (lib (name "Conn_1x4_1053091304")(type "KiCad")(uri "${KIPRJMOD}/External Parts/Conn_1x4_1053091304/KiCADv6/footprints.pretty")(options "")(descr ""))
