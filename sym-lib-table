@@ -8,4 +8,5 @@
   (lib (name "NHD-C12832A1Z-FSB-FBW-3V3")(type "KiCad")(uri "${KIPRJMOD}/External Parts/NHD-C12832A1Z-FSB-FBW-3V3/KiCad/NHD-C12832A1Z-FSB-FBW-3V3.kicad_sym")(options "")(descr ""))
   (lib (name "CMS14(TE12L,Q,M)")(type "KiCad")(uri "/Users/shampoo/Downloads/KiCADv6 2/2025-10-07_00-12-31.kicad_sym")(options "")(descr ""))
   (lib (name "SSW-107-21-G-D")(type "KiCad")(uri "${KIPRJMOD}/External Parts/SSW-107-21-G-D/SSW-107-21-G-D.kicad_sym")(options "")(descr ""))
+  (lib (name "3568")(type "KiCad")(uri "${KIPRJMOD}/External Parts/3568/3568/KiCad/3568.kicad_sym")(options "")(descr ""))
 )
