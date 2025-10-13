@@ -681,7 +681,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/YAGEO/RC0402FR-0722RL?qs=V1yeUXFNrkkRg6zf08ADKQ%3D%3D&srsltid=AfmBOor2cctyaIBQ_jqcS6bpD20PEk7e4pkUfEXfcnBnOJxoQq0CeGeb"
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Vishay/CRCW0402590RFKED?qs=sGAEpiMZZMvdGkrng054txEw7b1YnvGup5OXobtv2Yw%3D"
 			(at 50.8 45.72 90)
 			(effects
 				(font
@@ -690,7 +690,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
+		(property "Manufacturer" "Vishay"
 			(at 50.8 45.72 90)
 			(effects
 				(font
@@ -727,6 +727,15 @@
 			)
 		)
 		(property "STANDARD" ""
+			(at 50.8 45.72 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW0402590RFKED"
 			(at 50.8 45.72 90)
 			(effects
 				(font
@@ -844,7 +853,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
+		(property "Footprint" "LED_SMD:LED_0201_0603Metric"
 			(at 43.18 22.86 0)
 			(effects
 				(font
@@ -880,7 +889,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Wurth-Elektronik/150040RS73240?qs=sGAEpiMZZMv0DJfhVcWlKzXaUAZs%252BSGNmIzZWRrMt9JQwN0vgp7biA%3D%3D"
+		(property "Distrbutor Link" "https://jlcpcb.com/partdetail/85432-NCD0603R1/C84263"
 			(at 43.18 22.86 0)
 			(effects
 				(font
@@ -889,7 +898,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Wurth Elektronik"
+		(property "Manufacturer" "Foshan NationStar Optoelectronics"
 			(at 43.18 22.86 0)
 			(effects
 				(font
@@ -926,6 +935,15 @@
 			)
 		)
 		(property "STANDARD" ""
+			(at 43.18 22.86 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "NCD0603R1"
 			(at 43.18 22.86 0)
 			(effects
 				(font
@@ -1002,7 +1020,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/YAGEO/RC0402FR-0722RL?qs=V1yeUXFNrkkRg6zf08ADKQ%3D%3D&srsltid=AfmBOor2cctyaIBQ_jqcS6bpD20PEk7e4pkUfEXfcnBnOJxoQq0CeGeb"
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Vishay/CRCW0402590RFKED?qs=sGAEpiMZZMvdGkrng054txEw7b1YnvGup5OXobtv2Yw%3D"
 			(at 50.8 30.48 90)
 			(effects
 				(font
@@ -1011,7 +1029,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
+		(property "Manufacturer" "Vishay"
 			(at 50.8 30.48 90)
 			(effects
 				(font
@@ -1048,6 +1066,15 @@
 			)
 		)
 		(property "STANDARD" ""
+			(at 50.8 30.48 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW0402590RFKED"
 			(at 50.8 30.48 90)
 			(effects
 				(font
@@ -1098,7 +1125,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
+		(property "Footprint" "LED_SMD:LED_0201_0603Metric"
 			(at 43.18 38.1 0)
 			(effects
 				(font
@@ -1134,7 +1161,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Wurth-Elektronik/150040RS73240?qs=sGAEpiMZZMv0DJfhVcWlKzXaUAZs%252BSGNmIzZWRrMt9JQwN0vgp7biA%3D%3D"
+		(property "Distrbutor Link" "https://jlcpcb.com/partdetail/85432-NCD0603R1/C84263"
 			(at 43.18 38.1 0)
 			(effects
 				(font
@@ -1143,7 +1170,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Wurth Elektronik"
+		(property "Manufacturer" "Foshan NationStar Optoelectronics"
 			(at 43.18 38.1 0)
 			(effects
 				(font
@@ -1180,6 +1207,15 @@
 			)
 		)
 		(property "STANDARD" ""
+			(at 43.18 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "NCD0603R1"
 			(at 43.18 38.1 0)
 			(effects
 				(font
@@ -1297,7 +1333,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
+		(property "Footprint" "LED_SMD:LED_0201_0603Metric"
 			(at 43.18 45.72 0)
 			(effects
 				(font
@@ -1333,7 +1369,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Wurth-Elektronik/150040RS73240?qs=sGAEpiMZZMv0DJfhVcWlKzXaUAZs%252BSGNmIzZWRrMt9JQwN0vgp7biA%3D%3D"
+		(property "Distrbutor Link" "https://jlcpcb.com/partdetail/85432-NCD0603R1/C84263"
 			(at 43.18 45.72 0)
 			(effects
 				(font
@@ -1342,7 +1378,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Wurth Elektronik"
+		(property "Manufacturer" "Foshan NationStar Optoelectronics"
 			(at 43.18 45.72 0)
 			(effects
 				(font
@@ -1379,6 +1415,15 @@
 			)
 		)
 		(property "STANDARD" ""
+			(at 43.18 45.72 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "NCD0603R1"
 			(at 43.18 45.72 0)
 			(effects
 				(font
@@ -1455,7 +1500,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/YAGEO/RC0402FR-0722RL?qs=V1yeUXFNrkkRg6zf08ADKQ%3D%3D&srsltid=AfmBOor2cctyaIBQ_jqcS6bpD20PEk7e4pkUfEXfcnBnOJxoQq0CeGeb"
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Vishay/CRCW0402590RFKED?qs=sGAEpiMZZMvdGkrng054txEw7b1YnvGup5OXobtv2Yw%3D"
 			(at 50.8 22.86 90)
 			(effects
 				(font
@@ -1464,7 +1509,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
+		(property "Manufacturer" "Vishay"
 			(at 50.8 22.86 90)
 			(effects
 				(font
@@ -1501,6 +1546,15 @@
 			)
 		)
 		(property "STANDARD" ""
+			(at 50.8 22.86 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW0402590RFKED"
 			(at 50.8 22.86 90)
 			(effects
 				(font
@@ -1577,7 +1631,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/YAGEO/RC0402FR-0722RL?qs=V1yeUXFNrkkRg6zf08ADKQ%3D%3D&srsltid=AfmBOor2cctyaIBQ_jqcS6bpD20PEk7e4pkUfEXfcnBnOJxoQq0CeGeb"
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Vishay/CRCW0402590RFKED?qs=sGAEpiMZZMvdGkrng054txEw7b1YnvGup5OXobtv2Yw%3D"
 			(at 50.8 38.1 90)
 			(effects
 				(font
@@ -1586,7 +1640,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "YAGEO"
+		(property "Manufacturer" "Vishay"
 			(at 50.8 38.1 90)
 			(effects
 				(font
@@ -1623,6 +1677,15 @@
 			)
 		)
 		(property "STANDARD" ""
+			(at 50.8 38.1 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW0402590RFKED"
 			(at 50.8 38.1 90)
 			(effects
 				(font
@@ -1740,7 +1803,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0402_1005Metric"
+		(property "Footprint" "LED_SMD:LED_0201_0603Metric"
 			(at 43.18 30.48 0)
 			(effects
 				(font
@@ -1776,7 +1839,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Wurth-Elektronik/150040RS73240?qs=sGAEpiMZZMv0DJfhVcWlKzXaUAZs%252BSGNmIzZWRrMt9JQwN0vgp7biA%3D%3D"
+		(property "Distrbutor Link" "https://jlcpcb.com/partdetail/85432-NCD0603R1/C84263"
 			(at 43.18 30.48 0)
 			(effects
 				(font
@@ -1785,7 +1848,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Wurth Elektronik"
+		(property "Manufacturer" "Foshan NationStar Optoelectronics"
 			(at 43.18 30.48 0)
 			(effects
 				(font
@@ -1822,6 +1885,15 @@
 			)
 		)
 		(property "STANDARD" ""
+			(at 43.18 30.48 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "NCD0603R1"
 			(at 43.18 30.48 0)
 			(effects
 				(font

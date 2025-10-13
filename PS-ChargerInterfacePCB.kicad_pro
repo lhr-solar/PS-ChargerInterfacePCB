@@ -63,16 +63,7 @@
           "width": 0.22
         }
       ],
-      "drc_exclusions": [
-        [
-          "hole_clearance|126355000|75551000|f5c66b95-bb03-404a-a204-52672c4555e2|a6c7f7f5-99f0-413d-a383-bd308da7faac",
-          ""
-        ],
-        [
-          "hole_clearance|126355000|78051000|f5c66b95-bb03-404a-a204-52672c4555e2|61193f91-4593-462f-9ef8-0dffff65fd49",
-          ""
-        ]
-      ],
+      "drc_exclusions": [],
       "meta": {
         "version": 2
       },
@@ -695,18 +686,18 @@
           "group_by": true,
           "label": "Footprint",
           "name": "Footprint",
-          "show": false
+          "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Part_Number",
+          "name": "Manufacturer_Part_Number",
+          "show": true
         },
         {
           "group_by": false,
           "label": "Datasheet",
           "name": "Datasheet",
-          "show": false
-        },
-        {
-          "group_by": false,
-          "label": "Description",
-          "name": "Description",
           "show": false
         },
         {
@@ -723,15 +714,15 @@
         },
         {
           "group_by": false,
-          "label": "Manufacturer_Part_Number",
-          "name": "Manufacturer_Part_Number",
-          "show": true
-        },
-        {
-          "group_by": false,
           "label": "Mouser Part Number",
           "name": "Mouser Part Number",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer",
+          "name": "Manufacturer",
+          "show": true
         },
         {
           "group_by": false,
@@ -765,14 +756,14 @@
         },
         {
           "group_by": false,
-          "label": "Height",
-          "name": "Height",
-          "show": false
+          "label": "Description",
+          "name": "Description",
+          "show": true
         },
         {
           "group_by": false,
-          "label": "Manufacturer",
-          "name": "Manufacturer",
+          "label": "Height",
+          "name": "Height",
           "show": false
         },
         {

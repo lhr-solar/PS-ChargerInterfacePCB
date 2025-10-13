@@ -15,4 +15,7 @@
   (lib (name "TPS613771RYHR")(type "KiCad")(uri "${KIPRJMOD}/External Parts/TPS613771RYHR/footprints.pretty")(options "")(descr ""))
   (lib (name "Conn_1x4_1053091304")(type "KiCad")(uri "${KIPRJMOD}/External Parts/Conn_1x4_1053091304/KiCADv6/footprints.pretty")(options "")(descr ""))
   (lib (name "SSW-107-21-G-D")(type "KiCad")(uri "${KIPRJMOD}/External Parts/SSW-107-21-G-D/updated KiCad")(options "")(descr ""))
+  (lib (name "XGL5050_472MEC")(type "KiCad")(uri "${KIPRJMOD}/External Parts/XGL5050_472MEC/footprints.pretty")(options "")(descr ""))
+  (lib (name "XGL6060-103ME")(type "KiCad")(uri "${KIPRJMOD}/External Parts/XGL6060-103ME/eec.pretty")(options "")(descr ""))
+  (lib (name "XGL4020-472MEC")(type "KiCad")(uri "${KIPRJMOD}/External Parts/XGL4020_472MEC/KiCADv6/footprints.pretty")(options "")(descr ""))
 )

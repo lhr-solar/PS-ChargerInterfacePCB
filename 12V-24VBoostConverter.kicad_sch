@@ -2959,8 +2959,8 @@
 				)
 			)
 		)
-		(property "Value" "2n2"
-			(at 100.33 84.836 0)
+		(property "Value" "2200p"
+			(at 97.79 85.09 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3013,6 +3013,33 @@
 			)
 		)
 		(property "STANDARD" ""
+			(at 97.79 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Murata-Electronics/GCJ188R71E222KA01D?qs=QzBtWTOodeXIICLk9d5wYQ%3D%3D"
+			(at 97.79 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 97.79 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GCJ188R71E222KA01D"
 			(at 97.79 82.55 0)
 			(effects
 				(font
@@ -3182,6 +3209,33 @@
 				(hide yes)
 			)
 		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/KYOCERA-AVX/08055D475KAT4A?qs=PzGy0jfpSMuyn0pbDu%252BoOA%3D%3D&srsltid=AfmBOorXZcETH66axENnwQCcTWAxvbA4rmjMqlUnDtfS739X24-feZjL"
+			(at 87.63 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 87.63 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "08055D475KAT4A"
+			(at 87.63 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "579c1d30-7f7c-446f-90c3-76554dd8cc9b")
 		)
@@ -3268,6 +3322,33 @@
 			)
 		)
 		(property "STANDARD" ""
+			(at 92.71 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Walsin/0603N150J250CT?qs=ZrPdAQfJ6DNJ9UegzKeFrA%3D%3D"
+			(at 92.71 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Walsin"
+			(at 92.71 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "0603N150J250CT"
 			(at 92.71 73.66 0)
 			(effects
 				(font
@@ -3439,6 +3520,33 @@
 				(hide yes)
 			)
 		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Vishay/CRCW06031K00FKEI?qs=%252B6g0mu59x7LmDUigK4duvw%3D%3D&srsltid=AfmBOoqFLZjZBeFlb2a8dyfopFSVqD-UkvKNMbKRWgMcf0_a9Uus5eeP"
+			(at 54.61 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 54.61 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW06031K00FKEI"
+			(at 54.61 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "996e0bd1-d01c-437b-8390-584eb2f16e3b")
 		)
@@ -3527,6 +3635,33 @@
 			)
 		)
 		(property "STANDARD" ""
+			(at 54.61 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Vishay/CRCW060310K0FKEI?qs=3qWEzBg5KnKofE%252B8acPBRA%3D%3D&srsltid=AfmBOopeC-KWud4lBTFtge_WyCoVbALtqYG1UPN_QCfpWzcG6F3pAdmo"
+			(at 54.61 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 54.61 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW060310K0FKEI"
 			(at 54.61 38.1 0)
 			(effects
 				(font
@@ -3697,6 +3832,33 @@
 				(hide yes)
 			)
 		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Vishay/CRCW06031M50JNTA?qs=czl%252Bji18KsH0lCira66LHA%3D%3D"
+			(at 119.38 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 119.38 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW06031M50JNTA"
+			(at 119.38 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7e2dc7c0-b3b7-470b-b73a-c72283b5f6b4")
 		)
@@ -3729,7 +3891,7 @@
 				)
 			)
 		)
-		(property "Value" "10uH"
+		(property "Value" "4.7uH"
 			(at 90.17 30.226 90)
 			(effects
 				(font
@@ -3737,7 +3899,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Inductor_SMD:L_0603_1608Metric"
+		(property "Footprint" "XGL4020-472MEC:IND_XGL4020_COC"
 			(at 90.17 29.21 0)
 			(effects
 				(font
@@ -3783,6 +3945,33 @@
 			)
 		)
 		(property "STANDARD" ""
+			(at 90.17 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distrbutor Link" "https://www.digikey.com/en/products/detail/coilcraft/XGL4020-472MEC/12714544"
+			(at 90.17 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Coilcraft"
+			(at 90.17 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "XGL4020-472MEC"
 			(at 90.17 29.21 90)
 			(effects
 				(font
@@ -3879,6 +4068,33 @@
 			)
 		)
 		(property "STANDARD" ""
+			(at 67.31 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Murata-Electronics/GRM21BR61E226ME44L?qs=07yfQVYDK7vCPbMhLHi95g%3D%3D"
+			(at 67.31 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 67.31 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM21BR61E226ME44L "
 			(at 67.31 34.29 0)
 			(effects
 				(font
@@ -4032,6 +4248,24 @@
 				(hide yes)
 			)
 		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Texas-Instruments/TPS613771RYHR?qs=Z%252BL2brAPG1K06hytL05E4w%3D%3D&srsltid=AfmBOopRG9FSuIkG8aRGtD9y3C2MnlqA_JyaTyIMpIRJlodECmrX_EUj"
+			(at 76.2 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Texas Instruments"
+			(at 76.2 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "10"
 			(uuid "c5414746-4ea5-46a1-9864-9d06853e023a")
 		)
@@ -4161,6 +4395,33 @@
 				(hide yes)
 			)
 		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Vishay/CRCW060364K9FKEA?qs=sGAEpiMZZMvdGkrng054twELr3Rvz7OUddohN3pI9oI%3D"
+			(at 119.38 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 119.38 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW060364K9FKEA"
+			(at 119.38 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "496728f6-8591-401f-ba00-c60987efaf93")
 		)
@@ -4260,8 +4521,8 @@
 				)
 			)
 		)
-		(property "Value" "470nF"
-			(at 104.902 28.194 90)
+		(property "Value" "0.47u"
+			(at 104.902 27.94 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4314,6 +4575,33 @@
 			)
 		)
 		(property "STANDARD" ""
+			(at 100.33 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Walsin/0603B474K500CT?qs=ZrPdAQfJ6DN5wvrdyNYhkQ%3D%3D"
+			(at 100.33 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Walsin"
+			(at 100.33 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "0603B474K500CT"
 			(at 100.33 29.21 90)
 			(effects
 				(font
@@ -4418,6 +4706,33 @@
 				(hide yes)
 			)
 		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Vishay/CRCW060380K6FKEA?qs=t%2Fk8jExiEqsJYtrwWOy5SA%3D%3D"
+			(at 97.79 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 97.79 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW060380K6FKEA"
+			(at 97.79 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ea3836d7-af29-4cfb-a3fe-43c8507c297d")
 		)
@@ -4506,6 +4821,33 @@
 			)
 		)
 		(property "STANDARD" ""
+			(at 67.31 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Vishay/CRCW060329K4FKEAC?qs=E3Y5ESvWgWNsZ03w1dJqpA%3D%3D"
+			(at 67.31 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 67.31 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW060329K4FKEAC"
 			(at 67.31 57.15 0)
 			(effects
 				(font
@@ -4609,6 +4951,33 @@
 				(hide yes)
 			)
 		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Micro-Commercial-Components-MCC/SK32A-LTP?qs=JeAkOuORR2U5XhGW5SLK2g%3D%3D&srsltid=AfmBOoqFiyx6irMBt28Q3Vo65pAmn7yAO98wOsjACKNj2Ab_fSU83u8p"
+			(at 135.89 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Micro Commercial Components (MCC)"
+			(at 135.89 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "SK32A-LTP"
+			(at 135.89 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "499ba073-2003-41da-ad9b-22234689a000")
 		)
@@ -4697,6 +5066,33 @@
 			)
 		)
 		(property "STANDARD" ""
+			(at 138.43 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Murata-Electronics/GRM21BR61E226ME44L?qs=07yfQVYDK7vCPbMhLHi95g%3D%3D"
+			(at 138.43 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 138.43 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM21BR61E226ME44L "
 			(at 138.43 55.88 0)
 			(effects
 				(font
@@ -4964,6 +5360,33 @@
 				(hide yes)
 			)
 		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Murata-Electronics/GRM21BR61E226ME44L?qs=07yfQVYDK7vCPbMhLHi95g%3D%3D"
+			(at 128.27 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 128.27 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM21BR61E226ME44L "
+			(at 128.27 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5b83799d-0973-4365-a9c5-f9ba13ddd765")
 		)
@@ -5052,6 +5475,33 @@
 			)
 		)
 		(property "STANDARD" ""
+			(at 148.59 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Murata-Electronics/GRM21BR61E226ME44L?qs=07yfQVYDK7vCPbMhLHi95g%3D%3D"
+			(at 148.59 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 148.59 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM21BR61E226ME44L "
 			(at 148.59 55.88 0)
 			(effects
 				(font
@@ -5282,6 +5732,33 @@
 			)
 		)
 		(property "STANDARD" ""
+			(at 158.75 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Murata-Electronics/GRM21BR61E226ME44L?qs=07yfQVYDK7vCPbMhLHi95g%3D%3D"
+			(at 158.75 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Murata Electronics"
+			(at 158.75 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "GRM21BR61E226ME44L "
 			(at 158.75 55.88 0)
 			(effects
 				(font

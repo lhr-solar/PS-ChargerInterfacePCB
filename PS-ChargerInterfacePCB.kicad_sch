@@ -10210,6 +10210,24 @@
 				(hide yes)
 			)
 		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Micro-Commercial-Components-MCC/SMAF4751A-TP?qs=%252BXxaIXUDbq1ALr%2FHKc55sw%3D%3D&srsltid=AfmBOoq-fxsRpMrPgjaYJFcuzuq5dx6TtlAD-Z8qCmgiRFQ_Mvge0Nf_"
+			(at 222.25 27.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Micro Commercial Components (MCC)"
+			(at 222.25 27.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "f6e5c8c1-057d-49b4-9f04-1d92e6f01167")
 		)
@@ -10230,7 +10248,7 @@
 		(at 82.55 127 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "15f829be-d957-475d-a83a-a3d0c229d1f1")
@@ -10677,7 +10695,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Conn_1x4_1053091304:CONN_SD-105309-100_04_MOL"
+		(property "Footprint" "UTSVT_Connectors:Molex_Nano-Fit_105309-xx04_1x04_P2.50mm_Vertical"
 			(at 25.4 41.91 0)
 			(effects
 				(font
@@ -10723,6 +10741,33 @@
 			)
 		)
 		(property "STANDARD" ""
+			(at 25.4 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Molex/105309-1304?qs=PqFvFmEiOr7pRuIhRt3FvA%3D%3D&srsltid=AfmBOoqGbnYpB4rV_-g4Kx8ykx5tTRTFVOg5uGEKGY3ZnnEpMhCm8XoN"
+			(at 25.4 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 25.4 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "105309-1304"
 			(at 25.4 41.91 0)
 			(effects
 				(font
@@ -11182,6 +11227,33 @@
 				(hide yes)
 			)
 		)
+		(property "Manufacturer" "Vishay / Beyschlag"
+			(at 246.38 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Vishay-Beyschlag/MCS0402MZ0000ZE000?qs=sGAEpiMZZMtlubZbdhIBIK0blYVDHbSttawLWQLsRnM%3D"
+			(at 246.38 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MCS0402MZ0000ZE000"
+			(at 246.38 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "a38ae46a-95b3-440c-b55d-08d1a8b527ba")
 		)
@@ -11268,7 +11340,7 @@
 		(at 88.9 127 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "4c0bb7d4-216a-4940-a90c-70cb926c4bdd")
@@ -11493,6 +11565,33 @@
 			)
 		)
 		(property "STANDARD" ""
+			(at 266.7 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Vishay/CRCW06034K30FKEA?qs=1ghF3ZI8kS%252BhxcgBxz%2F4yQ%3D%3D&srsltid=AfmBOooGDxdUf0ca1My_gTXe7egerjZn-Af-f653yPj3knX9z7sxclup"
+			(at 266.7 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 266.7 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW06034K30FKEA"
 			(at 266.7 39.37 90)
 			(effects
 				(font
@@ -11785,7 +11884,7 @@
 		(at 29.21 127 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "8aa8c3d6-a668-44a1-9ecc-9478df343a57")
@@ -12010,7 +12109,7 @@
 		(at 35.56 127 180)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "b87756ef-5442-4e57-8fc8-c1573d8563a2")
@@ -12178,6 +12277,33 @@
 				(hide yes)
 			)
 		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Vishay/CRCW06034K30FKEA?qs=1ghF3ZI8kS%252BhxcgBxz%2F4yQ%3D%3D&srsltid=AfmBOooGDxdUf0ca1My_gTXe7egerjZn-Af-f653yPj3knX9z7sxclup"
+			(at 214.63 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 214.63 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW06034K30FKEA"
+			(at 214.63 39.37 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "0cb0384b-20d7-44bf-83f3-1d53db03144e")
 		)
@@ -12247,160 +12373,160 @@
 			)
 		)
 		(pin "2"
-			(uuid "1225e6dc-79b3-45d3-abe4-77d182ccf475")
+			(uuid "1225e6dc-79b3-45d3-abe4-77d182ccf476")
 		)
 		(pin "6"
-			(uuid "12d9fef9-873a-44a5-8128-adb7166b672d")
+			(uuid "12d9fef9-873a-44a5-8128-adb7166b672e")
 		)
 		(pin "21"
-			(uuid "9404795a-18b5-4c25-949d-cb12cff05c3b")
+			(uuid "9404795a-18b5-4c25-949d-cb12cff05c3c")
 		)
 		(pin "1"
-			(uuid "e31853d3-6b60-4fdf-86b0-06a9cc02b9b0")
+			(uuid "e31853d3-6b60-4fdf-86b0-06a9cc02b9b1")
 		)
 		(pin "22"
-			(uuid "78666008-3711-481f-a95a-f6a68c20f05f")
+			(uuid "78666008-3711-481f-a95a-f6a68c20f060")
 		)
 		(pin "23"
-			(uuid "dbc6ce11-7206-47df-83ba-9a3c45ecfbe9")
+			(uuid "dbc6ce11-7206-47df-83ba-9a3c45ecfbea")
 		)
 		(pin "8"
-			(uuid "584ca184-db67-49da-a61f-7aa9d3eb3d31")
+			(uuid "584ca184-db67-49da-a61f-7aa9d3eb3d32")
 		)
 		(pin "4"
-			(uuid "326f967e-2f98-453e-b73f-027f6cc8aace")
+			(uuid "326f967e-2f98-453e-b73f-027f6cc8aacf")
 		)
 		(pin "49"
-			(uuid "3054b5c5-038c-43fc-8b8b-a0568d5b8fd8")
+			(uuid "3054b5c5-038c-43fc-8b8b-a0568d5b8fd9")
 		)
 		(pin "3"
-			(uuid "67aea443-3bc7-4b7d-83de-82876f945b7f")
+			(uuid "67aea443-3bc7-4b7d-83de-82876f945b80")
 		)
 		(pin "39"
-			(uuid "d5d0baf6-9fd0-4d05-ac80-8f1f785c8679")
+			(uuid "d5d0baf6-9fd0-4d05-ac80-8f1f785c867a")
 		)
 		(pin "40"
-			(uuid "0f9c49a0-bd7d-41fd-a961-9bbb98bd47ab")
+			(uuid "0f9c49a0-bd7d-41fd-a961-9bbb98bd47ac")
 		)
 		(pin "41"
-			(uuid "db858e58-2d3f-4ec3-8de1-cbf3c81ebcd3")
+			(uuid "db858e58-2d3f-4ec3-8de1-cbf3c81ebcd4")
 		)
 		(pin "43"
-			(uuid "5e029142-13cd-48f0-bdcf-15d5573c1a01")
+			(uuid "5e029142-13cd-48f0-bdcf-15d5573c1a02")
 		)
 		(pin "45"
-			(uuid "d594b9d5-04cd-4f91-800e-0ab8eca06ef3")
+			(uuid "d594b9d5-04cd-4f91-800e-0ab8eca06ef4")
 		)
 		(pin "47"
-			(uuid "26fc65fc-ab9f-4036-91eb-03a04dbf1a89")
+			(uuid "26fc65fc-ab9f-4036-91eb-03a04dbf1a8a")
 		)
 		(pin "34"
-			(uuid "a39779a8-d778-4828-9892-56d20db34e79")
+			(uuid "a39779a8-d778-4828-9892-56d20db34e7a")
 		)
 		(pin "36"
-			(uuid "6a2df451-8c23-4f68-a7b0-893387f7d604")
+			(uuid "6a2df451-8c23-4f68-a7b0-893387f7d605")
 		)
 		(pin "42"
-			(uuid "a3848770-a579-42f0-af30-fecb9d78ced2")
+			(uuid "a3848770-a579-42f0-af30-fecb9d78ced3")
 		)
 		(pin "44"
-			(uuid "a177028d-1036-478f-86bd-18b60dc707dd")
+			(uuid "a177028d-1036-478f-86bd-18b60dc707de")
 		)
 		(pin "46"
-			(uuid "0872bd8d-6ee8-4e8b-9f32-597d226c578a")
+			(uuid "0872bd8d-6ee8-4e8b-9f32-597d226c578b")
 		)
 		(pin "48"
-			(uuid "5056010c-1b0f-4be2-9638-c5c0bf4cf8ee")
+			(uuid "5056010c-1b0f-4be2-9638-c5c0bf4cf8ef")
 		)
 		(pin "13"
-			(uuid "9dc2b0a2-8eac-41cb-baed-049e242e28b0")
+			(uuid "9dc2b0a2-8eac-41cb-baed-049e242e28b1")
 		)
 		(pin "15"
-			(uuid "994c8f2b-95a7-4164-9d38-f3bb1a0ad0dd")
+			(uuid "994c8f2b-95a7-4164-9d38-f3bb1a0ad0de")
 		)
 		(pin "17"
-			(uuid "b4793928-f120-494a-b3e2-6f4f9a9a2292")
+			(uuid "b4793928-f120-494a-b3e2-6f4f9a9a2293")
 		)
 		(pin "19"
-			(uuid "94572dbf-f2f7-451d-9daf-59988858ecc7")
+			(uuid "94572dbf-f2f7-451d-9daf-59988858ecc8")
 		)
 		(pin "5"
-			(uuid "8a176b0e-b9f6-4677-b848-f6124d6c6c88")
+			(uuid "8a176b0e-b9f6-4677-b848-f6124d6c6c89")
 		)
 		(pin "7"
-			(uuid "0d31496d-cfe6-475e-a6a9-96accad8f19c")
+			(uuid "0d31496d-cfe6-475e-a6a9-96accad8f19d")
 		)
 		(pin "9"
-			(uuid "0107a773-4032-425a-aef2-9d377780f74c")
+			(uuid "0107a773-4032-425a-aef2-9d377780f74d")
 		)
 		(pin "11"
-			(uuid "44a28ef9-93ec-4dde-a4ae-f17ad4ce95a3")
+			(uuid "44a28ef9-93ec-4dde-a4ae-f17ad4ce95a4")
 		)
 		(pin "14"
-			(uuid "aaec74df-56f7-4b8a-8a89-c8d026857031")
+			(uuid "aaec74df-56f7-4b8a-8a89-c8d026857032")
 		)
 		(pin "16"
-			(uuid "63356435-0cf5-4cf0-82ce-ce7fd1a07d51")
+			(uuid "63356435-0cf5-4cf0-82ce-ce7fd1a07d52")
 		)
 		(pin "18"
-			(uuid "2eb2a9ec-459c-4281-a537-235f60e98916")
+			(uuid "2eb2a9ec-459c-4281-a537-235f60e98917")
 		)
 		(pin "20"
-			(uuid "ea6233fc-e5cc-4185-8577-6e06cd9b6a5a")
+			(uuid "ea6233fc-e5cc-4185-8577-6e06cd9b6a5b")
 		)
 		(pin "37"
-			(uuid "54cefa80-6ae5-4bec-adb3-3c8118232caa")
+			(uuid "54cefa80-6ae5-4bec-adb3-3c8118232cab")
 		)
 		(pin "32"
-			(uuid "0e65f330-2417-435f-89a2-486327940291")
+			(uuid "0e65f330-2417-435f-89a2-486327940292")
 		)
 		(pin "30"
-			(uuid "57732337-3b48-47f1-9a0f-582e260970f4")
+			(uuid "57732337-3b48-47f1-9a0f-582e260970f5")
 		)
 		(pin "38"
-			(uuid "878724e4-468e-4f46-a4b1-e5121003b2d5")
+			(uuid "878724e4-468e-4f46-a4b1-e5121003b2d6")
 		)
 		(pin "25"
-			(uuid "b810355e-c38c-4a48-a733-3b354c49fe2f")
+			(uuid "b810355e-c38c-4a48-a733-3b354c49fe30")
 		)
 		(pin "24"
-			(uuid "59199df4-e990-4079-a34b-0ad633436dfe")
+			(uuid "59199df4-e990-4079-a34b-0ad633436dff")
 		)
 		(pin "26"
-			(uuid "d7260106-92ac-4bf1-84c7-257005641fdd")
+			(uuid "d7260106-92ac-4bf1-84c7-257005641fde")
 		)
 		(pin "27"
-			(uuid "d9c6ae3d-af8d-4f08-8df9-409356fd773f")
+			(uuid "d9c6ae3d-af8d-4f08-8df9-409356fd7740")
 		)
 		(pin "28"
-			(uuid "51892056-84ca-4f6b-a212-721df5ce8817")
+			(uuid "51892056-84ca-4f6b-a212-721df5ce8818")
 		)
 		(pin "29"
-			(uuid "adc0f2af-61f8-446f-b7b5-a14c7e1c1453")
+			(uuid "adc0f2af-61f8-446f-b7b5-a14c7e1c1454")
 		)
 		(pin "31"
-			(uuid "6bdc551c-af25-4ae3-8dea-2e7235c57da6")
+			(uuid "6bdc551c-af25-4ae3-8dea-2e7235c57da7")
 		)
 		(pin "33"
-			(uuid "e1ea3fd0-9f16-4f07-a957-5cf006e41cc5")
+			(uuid "e1ea3fd0-9f16-4f07-a957-5cf006e41cc6")
 		)
 		(pin "35"
-			(uuid "8ce6fb97-4fd9-4761-8edb-9d021e2e2638")
+			(uuid "8ce6fb97-4fd9-4761-8edb-9d021e2e2639")
 		)
 		(pin "50"
-			(uuid "df4ebd7f-e07b-410a-b86d-ecee2267ecbb")
+			(uuid "df4ebd7f-e07b-410a-b86d-ecee2267ecbc")
 		)
 		(pin "51"
-			(uuid "b526f3ce-d5dd-44fb-9b03-e3593f9df8ac")
+			(uuid "b526f3ce-d5dd-44fb-9b03-e3593f9df8ad")
 		)
 		(pin "52"
-			(uuid "d4f1f1c4-c67b-4893-80eb-7c8a88ce363a")
+			(uuid "d4f1f1c4-c67b-4893-80eb-7c8a88ce363b")
 		)
 		(pin "10"
-			(uuid "ea107dc4-cf06-4698-a866-01b0fbd0074d")
+			(uuid "ea107dc4-cf06-4698-a866-01b0fbd0074e")
 		)
 		(pin "12"
-			(uuid "033bd067-a5cb-425b-a132-64c56c84330a")
+			(uuid "033bd067-a5cb-425b-a132-64c56c84330b")
 		)
 		(instances
 			(project ""
@@ -12566,6 +12692,33 @@
 				(hide yes)
 			)
 		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Molex/105309-1304?qs=PqFvFmEiOr7pRuIhRt3FvA%3D%3D&srsltid=AfmBOoqGbnYpB4rV_-g4Kx8ykx5tTRTFVOg5uGEKGY3ZnnEpMhCm8XoN"
+			(at 53.34 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 53.34 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "105309-1304"
+			(at 53.34 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "1f063589-8344-499a-b68e-e9fd5db1d6b8")
 		)
@@ -12668,6 +12821,33 @@
 				(hide yes)
 			)
 		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Vishay/CRCW060347K0FKECC?qs=wd5RIQLrsJhZ%252BAw%2FUwL2SA%3D%3D&srsltid=AfmBOopg8wrZFZZBA61SJ91W64_G5JVRG1qMX-30T2ST5vqCv43Fsog6"
+			(at 261.62 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 261.62 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW060347K0FKECC"
+			(at 261.62 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "2fe58dee-6f69-410e-a911-d5e128766ffc")
 		)
@@ -12762,6 +12942,33 @@
 				(hide yes)
 			)
 		)
+		(property "Distrbutor Link" "https://www.digikey.com/en/products/detail/molex/1053091202/6131607"
+			(at 274.32 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Molex"
+			(at 274.32 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "1053091202"
+			(at 274.32 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "1a8271ab-47ac-45ef-9821-f3f7f5f864de")
 		)
@@ -12832,6 +13039,33 @@
 			)
 		)
 		(property "P/N" "SFH11-PBPC-D05-ST-BK"
+			(at 48.26 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distrbutor Link" "https://www.digikey.com/en/products/detail/sullins-connector-solutions/SFH11-PBPC-D05-ST-BK/1990087"
+			(at 48.26 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sullins Connector Solutions"
+			(at 48.26 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "SFH11-PBPC-D05-ST-BK"
 			(at 48.26 186.69 0)
 			(effects
 				(font
@@ -13029,6 +13263,33 @@
 				(hide yes)
 			)
 		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Vishay/CRCW0603100KFKEE?qs=%252B6g0mu59x7I1D%252BO0qMg%252Bjg%3D%3D&srsltid=AfmBOopUoX5SRH4kgw3t3NsysWvdNpHKSQXbyiBR5Kri4fiJTbfEazFl"
+			(at 209.55 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Vishay"
+			(at 209.55 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "CRCW0603100KFKEE"
+			(at 209.55 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "9a8777d5-254f-48b3-8908-b2c489769582")
 		)
@@ -13099,6 +13360,33 @@
 			)
 		)
 		(property "P/N" "SFH11-PBPC-D05-ST-BK"
+			(at 80.01 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distrbutor Link" "https://www.digikey.com/en/products/detail/sullins-connector-solutions/SFH11-PBPC-D05-ST-BK/1990087"
+			(at 80.01 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Sullins Connector Solutions"
+			(at 80.01 186.69 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "SFH11-PBPC-D05-ST-BK"
 			(at 80.01 186.69 0)
 			(effects
 				(font
@@ -13242,7 +13530,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "SMAF4749A-TP"
+		(property "Manufacturer_Part_Number" "SMAF4744A"
 			(at -519.33 38.1 0)
 			(effects
 				(font
@@ -13271,6 +13559,24 @@
 			)
 		)
 		(property "STANDARD" ""
+			(at 274.32 27.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distrbutor Link" "https://www.mccsemi.com/products/diodes/zener-diodes/SMAF4744A"
+			(at 274.32 27.94 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Micro Commercial Components (MCC)"
 			(at 274.32 27.94 90)
 			(effects
 				(font

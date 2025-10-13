@@ -1877,6 +1877,33 @@
 				(hide yes)
 			)
 		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/TAIYO-YUDEN/MLASU168SB5105KTNA01?qs=tlsG%2FOw5FFhPjKzzJZMnOQ%3D%3D&srsltid=AfmBOorcMlsFle3SkG0XtJIKbOuFrpMRrEVUmZYMN7uFvSiB2BlKWNRY"
+			(at 148.59 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TAIYO YUDEN"
+			(at 148.59 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MLASU168SB5105KTNA01"
+			(at 148.59 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ea9f333d-2b79-4a2a-9f44-d05701efde1b")
 		)
@@ -1964,6 +1991,33 @@
 			)
 		)
 		(property "STANDARD" ""
+			(at 140.97 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/TAIYO-YUDEN/MLASU168SB5105KTNA01?qs=tlsG%2FOw5FFhPjKzzJZMnOQ%3D%3D&srsltid=AfmBOorcMlsFle3SkG0XtJIKbOuFrpMRrEVUmZYMN7uFvSiB2BlKWNRY"
+			(at 140.97 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TAIYO YUDEN"
+			(at 140.97 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MLASU168SB5105KTNA01"
 			(at 140.97 48.26 0)
 			(effects
 				(font
@@ -2067,6 +2121,33 @@
 				(hide yes)
 			)
 		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/TAIYO-YUDEN/MCJCT21GCB7225MTPA1J?qs=tlsG%2FOw5FFibxYyppCjHtg%3D%3D"
+			(at 124.46 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TAIYO YUDEN"
+			(at 124.46 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MCJCT21GCB7225MTPA1J"
+			(at 124.46 41.91 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "18432b04-48f1-43ec-a4eb-daf12307e8f8")
 		)
@@ -2162,6 +2243,33 @@
 				(hide yes)
 			)
 		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/TAIYO-YUDEN/MLASU168SB5105KTNA01?qs=tlsG%2FOw5FFhPjKzzJZMnOQ%3D%3D&srsltid=AfmBOorcMlsFle3SkG0XtJIKbOuFrpMRrEVUmZYMN7uFvSiB2BlKWNRY"
+			(at 144.78 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TAIYO YUDEN"
+			(at 144.78 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MLASU168SB5105KTNA01"
+			(at 144.78 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "84211907-2b5c-4287-8888-a4ada7e38d8a")
 		)
@@ -2195,7 +2303,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 78.994 68.58 0)
 			(effects
 				(font
@@ -2258,6 +2366,33 @@
 				(hide yes)
 			)
 		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/TAIYO-YUDEN/MLASH168SB7104KTNA01?qs=tlsG%2FOw5FFi7JK68L1DgIQ%3D%3D&srsltid=AfmBOorVpJ3mcbZ5tis8ztDksE2XqfTExs2YzjOUm6_fYjixjAtIEVC5"
+			(at 76.2 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TAIYO YUDEN"
+			(at 76.2 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MLASH168SB7104KTNA01"
+			(at 76.2 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5e638a1a-3d94-4c91-8f44-708d1166f513")
 		)
@@ -2291,7 +2426,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "100n"
+		(property "Value" "0.1u"
 			(at 44.704 68.58 0)
 			(effects
 				(font
@@ -2346,6 +2481,33 @@
 			)
 		)
 		(property "STANDARD" ""
+			(at 41.91 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/TAIYO-YUDEN/MLASH168SB7104KTNA01?qs=tlsG%2FOw5FFi7JK68L1DgIQ%3D%3D&srsltid=AfmBOorVpJ3mcbZ5tis8ztDksE2XqfTExs2YzjOUm6_fYjixjAtIEVC5"
+			(at 41.91 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TAIYO YUDEN"
+			(at 41.91 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MLASH168SB7104KTNA01"
 			(at 41.91 68.58 0)
 			(effects
 				(font
@@ -2450,6 +2612,33 @@
 				(hide yes)
 			)
 		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/KYOCERA-AVX/08055D475KAT4A?qs=PzGy0jfpSMuyn0pbDu%252BoOA%3D%3D&srsltid=AfmBOorXZcETH66axENnwQCcTWAxvbA4rmjMqlUnDtfS739X24-feZjL"
+			(at 63.5 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 63.5 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "08055D475KAT4A"
+			(at 63.5 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "187134ed-b714-4a9f-9333-da48d0441053")
 		)
@@ -2537,6 +2726,33 @@
 			)
 		)
 		(property "STANDARD" ""
+			(at 153.67 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/TAIYO-YUDEN/MLASU168SB5105KTNA01?qs=tlsG%2FOw5FFhPjKzzJZMnOQ%3D%3D&srsltid=AfmBOorcMlsFle3SkG0XtJIKbOuFrpMRrEVUmZYMN7uFvSiB2BlKWNRY"
+			(at 153.67 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TAIYO YUDEN"
+			(at 153.67 33.02 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MLASU168SB5105KTNA01"
 			(at 153.67 33.02 0)
 			(effects
 				(font
@@ -2707,6 +2923,33 @@
 				(hide yes)
 			)
 		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/TAIYO-YUDEN/MLASU168SB5105KTNA01?qs=tlsG%2FOw5FFhPjKzzJZMnOQ%3D%3D&srsltid=AfmBOorcMlsFle3SkG0XtJIKbOuFrpMRrEVUmZYMN7uFvSiB2BlKWNRY"
+			(at 137.16 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TAIYO YUDEN"
+			(at 137.16 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MLASU168SB5105KTNA01"
+			(at 137.16 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "3abc083f-e9ed-480c-9e8f-a5eea865f6f5")
 		)
@@ -2861,6 +3104,33 @@
 			)
 		)
 		(property "STANDARD" ""
+			(at 124.46 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/TAIYO-YUDEN/MCJCT21GCB7225MTPA1J?qs=tlsG%2FOw5FFibxYyppCjHtg%3D%3D"
+			(at 124.46 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TAIYO YUDEN"
+			(at 124.46 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MCJCT21GCB7225MTPA1J"
 			(at 124.46 49.53 90)
 			(effects
 				(font
@@ -3082,6 +3352,24 @@
 				(hide yes)
 			)
 		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Newhaven-Display/NHD-C12832A1Z-FSB-FBW-3V3?qs=krDt2o00aZcpVcOy6FZsbw%3D%3D&srsltid=AfmBOoqTXc2Zqm894qb62ns1GkCitQTlBQfuoObuN4ebm__PlSpIFPKz"
+			(at 119.38 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Newhaven Display"
+			(at 119.38 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "MH2"
 			(uuid "02fd0205-ebec-49e6-9623-e9f24fcf26b6")
 		)
@@ -3153,6 +3441,10 @@
 		)
 		(instances
 			(project ""
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
+					(reference "DS1")
+					(unit 1)
+				)
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/eaa01ebb-42bc-4c5b-a5da-d0a713cda722"
 					(reference "DS1")
 					(unit 1)
@@ -3374,6 +3666,33 @@
 				(hide yes)
 			)
 		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/KYOCERA-AVX/08055D475KAT4A?qs=PzGy0jfpSMuyn0pbDu%252BoOA%3D%3D&srsltid=AfmBOorXZcETH66axENnwQCcTWAxvbA4rmjMqlUnDtfS739X24-feZjL"
+			(at 29.21 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "KYOCERA AVX"
+			(at 29.21 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "08055D475KAT4A"
+			(at 29.21 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "ce5b27d2-39fc-4423-bc02-6941d3702e23")
 		)
@@ -3528,6 +3847,33 @@
 			)
 		)
 		(property "STANDARD" ""
+			(at 132.08 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/TAIYO-YUDEN/MCJCT21GCB7225MTPA1J?qs=tlsG%2FOw5FFibxYyppCjHtg%3D%3D"
+			(at 132.08 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "TAIYO YUDEN"
+			(at 132.08 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "MCJCT21GCB7225MTPA1J"
 			(at 132.08 58.42 0)
 			(effects
 				(font
