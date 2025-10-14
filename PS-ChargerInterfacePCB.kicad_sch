@@ -9706,7 +9706,7 @@
 		(uuid "444c0620-8846-495c-86a8-be5bbc955bae")
 	)
 	(label "LED_FAULT"
-		(at 87.63 170.18 180)
+		(at 87.63 177.8 180)
 		(effects
 			(font
 				(size 0.889 0.889)
@@ -9716,7 +9716,7 @@
 		(uuid "45304815-fc56-42c6-9f1e-97a1cbf21619")
 	)
 	(label "LED_CHARGE"
-		(at 87.63 177.8 180)
+		(at 87.63 170.18 180)
 		(effects
 			(font
 				(size 0.889 0.889)
@@ -9756,7 +9756,7 @@
 		(uuid "5700a980-9e9e-45ad-a19d-73aca31fdc51")
 	)
 	(label "LED_HV"
-		(at 87.63 172.72 180)
+		(at 87.63 175.26 180)
 		(effects
 			(font
 				(size 0.889 0.889)
@@ -10056,7 +10056,7 @@
 		(uuid "f4baa099-2e70-4f3d-8e4c-3fea0698a863")
 	)
 	(label "LED_HEART"
-		(at 87.63 175.26 180)
+		(at 87.63 172.72 180)
 		(effects
 			(font
 				(size 0.889 0.889)
@@ -10950,7 +10950,7 @@
 		(at 55.88 86.36 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(uuid "3cb31328-01b0-4280-9d89-cd4cb161a569")
@@ -11256,7 +11256,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0402_1005Metric"
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
 			(at 247.396 84.074 90)
 			(effects
 				(font
@@ -12471,7 +12471,7 @@
 		(at 113.03 88.9 0)
 		(unit 2)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
