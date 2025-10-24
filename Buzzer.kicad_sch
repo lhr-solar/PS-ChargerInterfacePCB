@@ -1503,16 +1503,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "PSMN8R5-40MSDX"
-			(at 106.045 851.435 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
 		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Nexperia/PSMN8R5-40MSDX?qs=vHuUswq2%252BswjdnYdBdHaPw%3D%3D&srsltid=AfmBOoqfk8rzjvl6Boo70jTxvjxp_5zF02h80jXmt8EqD9mSqXKDmpWA"
 			(at 84.455 56.515 0)
 			(effects
@@ -1523,6 +1513,15 @@
 			)
 		)
 		(property "Manufacturer" "Nexperia"
+			(at 84.455 56.515 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "P/N" "PSMN8R5-40MSDX"
 			(at 84.455 56.515 0)
 			(effects
 				(font
@@ -1647,7 +1646,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CRCW0603100KFKEE"
+		(property "P/N" "CRCW0603100KFKEE"
 			(at 53.34 67.31 0)
 			(effects
 				(font
@@ -1838,7 +1837,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GRM21BR61H106KE43K"
+		(property "P/N" "GRM21BR61H106KE43K"
 			(at 92.71 35.56 0)
 			(effects
 				(font
@@ -1962,7 +1961,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MLASH168SB7104KTNA01"
+		(property "P/N" "MLASH168SB7104KTNA01"
 			(at 105.41 35.56 0)
 			(effects
 				(font
@@ -2084,7 +2083,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "SK32A-LTP"
+		(property "P/N" "SK32A-LTP"
 			(at 121.92 49.53 90)
 			(effects
 				(font
@@ -2187,7 +2186,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distrbutor Link" "https://www.digikey.com/en/products/detail/molex/1053091202/6131607"
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Molex/105309-1202?qs=PqFvFmEiOr43z2VKs7gb%2Fg%3D%3D"
 			(at 135.89 49.53 0)
 			(effects
 				(font
@@ -2205,7 +2204,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "1053091202"
+		(property "P/N" "1053091202"
 			(at 135.89 49.53 0)
 			(effects
 				(font

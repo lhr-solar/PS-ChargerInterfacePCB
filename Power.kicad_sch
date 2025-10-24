@@ -1771,7 +1771,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MLASH168SB7104KTNA01"
+		(property "P/N" "MLASH168SB7104KTNA01"
 			(at 127 36.83 0)
 			(effects
 				(font
@@ -1899,7 +1899,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CRCW060310K0FKEI"
+		(property "P/N" "CRCW060310K0FKEI"
 			(at 41.91 48.26 0)
 			(effects
 				(font
@@ -2028,7 +2028,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MLASU168SB5105KTNA01"
+		(property "P/N" "MLASU168SB5105KTNA01"
 			(at 34.29 68.58 0)
 			(effects
 				(font
@@ -2150,16 +2150,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "LM74502HDDFR"
-			(at 80.01 859.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
 		(property "MANUFACTURER" ""
 			(at 50.8 64.77 0)
 			(effects
@@ -2197,6 +2187,15 @@
 			)
 		)
 		(property "Manufacturer" "Texas Instruments"
+			(at 50.8 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "P/N" "LM74502HDDFR"
 			(at 50.8 64.77 0)
 			(effects
 				(font
@@ -2337,16 +2336,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "PSMN8R5-40MSDX"
-			(at 46.355 823.495 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
 		(property "MANUFACTURER" ""
 			(at 67.945 28.575 0)
 			(effects
@@ -2384,6 +2373,15 @@
 			)
 		)
 		(property "Manufacturer" "Nexperia"
+			(at 67.945 28.575 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "P/N" "PSMN8R5-40MSDX"
 			(at 67.945 28.575 0)
 			(effects
 				(font
@@ -2514,7 +2512,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MLASH168SB7104KTNA01"
+		(property "P/N" "MLASH168SB7104KTNA01"
 			(at 137.16 36.83 0)
 			(effects
 				(font
@@ -2782,7 +2780,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GRM21BR61H106KE43K"
+		(property "P/N" "GRM21BR61H106KE43K"
 			(at 88.9 43.18 0)
 			(effects
 				(font
@@ -2981,7 +2979,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MSASU168SB7224KTNB25"
+		(property "P/N" "MSASU168SB7224KTNB25"
 			(at 41.91 68.58 0)
 			(effects
 				(font
@@ -3179,7 +3177,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GRM21BR61H106KE43K"
+		(property "P/N" "GRM21BR61H106KE43K"
 			(at 114.3 36.83 0)
 			(effects
 				(font

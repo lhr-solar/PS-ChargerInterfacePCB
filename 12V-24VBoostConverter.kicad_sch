@@ -3193,7 +3193,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GCJ188R71E222KA01D"
+		(property "P/N" "GCJ188R71E222KA01D"
 			(at 97.79 82.55 0)
 			(effects
 				(font
@@ -3381,7 +3381,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "08055D475KAT4A"
+		(property "P/N" "08055D475KAT4A"
 			(at 87.63 73.66 0)
 			(effects
 				(font
@@ -3502,7 +3502,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "0603N150J250CT"
+		(property "P/N" "0603N150J250CT"
 			(at 92.71 73.66 0)
 			(effects
 				(font
@@ -3692,7 +3692,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CRCW06031K00FKEI"
+		(property "P/N" "CRCW06031K00FKEI"
 			(at 54.61 48.26 0)
 			(effects
 				(font
@@ -3815,7 +3815,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CRCW060310K0FKEI"
+		(property "P/N" "CRCW060310K0FKEI"
 			(at 54.61 38.1 0)
 			(effects
 				(font
@@ -4004,7 +4004,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CRCW06031M50JNTA"
+		(property "P/N" "CRCW06031M50JNTA"
 			(at 119.38 50.8 0)
 			(effects
 				(font
@@ -4107,7 +4107,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distrbutor Link" "https://www.digikey.com/en/products/detail/coilcraft/XGL4020-472MEC/12714544"
+		(property "Distrbutor Link" "https://www.digikey.com/en/products/detail/coilcraft/xgl4020-472mec/12714544"
 			(at 90.17 29.21 90)
 			(effects
 				(font
@@ -4125,7 +4125,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "XGL4020-472MEC"
+		(property "P/N" "XGL4020-472MEC"
 			(at 90.17 29.21 90)
 			(effects
 				(font
@@ -4248,7 +4248,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GRM21BR61E226ME44L "
+		(property "P/N" "GRM21BR61E226ME44L "
 			(at 67.31 34.29 0)
 			(effects
 				(font
@@ -4365,16 +4365,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "TPS613771RYHR"
-			(at 110.49 833.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
 		(property "MANUFACTURER" ""
 			(at 76.2 38.1 0)
 			(effects
@@ -4412,6 +4402,15 @@
 			)
 		)
 		(property "Manufacturer" "Texas Instruments"
+			(at 76.2 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "P/N" "TPS613771RYHR"
 			(at 76.2 38.1 0)
 			(effects
 				(font
@@ -4567,7 +4566,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CRCW060364K9FKEA"
+		(property "P/N" "CRCW060364K9FKEA"
 			(at 119.38 67.31 0)
 			(effects
 				(font
@@ -4755,7 +4754,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "0603B474K500CT"
+		(property "P/N" "0603B474K500CT"
 			(at 100.33 29.21 90)
 			(effects
 				(font
@@ -4878,7 +4877,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CRCW060380K6FKEA"
+		(property "P/N" "CRCW060380K6FKEA"
 			(at 97.79 73.66 0)
 			(effects
 				(font
@@ -5001,7 +5000,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CRCW060329K4FKEAC"
+		(property "P/N" "CRCW060329K4FKEAC"
 			(at 67.31 57.15 0)
 			(effects
 				(font
@@ -5123,7 +5122,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "SK32A-LTP"
+		(property "P/N" "SK32A-LTP"
 			(at 135.89 43.18 0)
 			(effects
 				(font
@@ -5246,7 +5245,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GRM21BR61E226ME44L "
+		(property "P/N" "GRM21BR61E226ME44L "
 			(at 138.43 55.88 0)
 			(effects
 				(font
@@ -5436,7 +5435,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GRM21BR61E226ME44L "
+		(property "P/N" "GRM21BR61E226ME44L "
 			(at 128.27 55.88 0)
 			(effects
 				(font
@@ -5559,7 +5558,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GRM21BR61E226ME44L "
+		(property "P/N" "GRM21BR61E226ME44L "
 			(at 148.59 55.88 0)
 			(effects
 				(font
@@ -5745,17 +5744,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "3568"
-			(at 162.56 836.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
-		(property "Distrbutor Link" "https://www.digikey.com/en/products/detail/keystone-electronics/3568/2137306"
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Keystone-Electronics/3568?qs=fP5bVVCrK%2Fd7nbA%2FPpwnKw%3D%3D"
 			(at 146.05 41.91 0)
 			(effects
 				(font
@@ -5765,6 +5754,15 @@
 			)
 		)
 		(property "Manufacturer" "Keystone Electronics"
+			(at 146.05 41.91 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "P/N" "3568"
 			(at 146.05 41.91 0)
 			(effects
 				(font
@@ -5960,7 +5958,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "GRM21BR61E226ME44L "
+		(property "P/N" "GRM21BR61E226ME44L "
 			(at 158.75 55.88 0)
 			(effects
 				(font

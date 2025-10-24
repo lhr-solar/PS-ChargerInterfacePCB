@@ -735,7 +735,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CRCW0402590RFKED"
+		(property "P/N" "CRCW0402590RFKED"
 			(at 50.8 45.72 90)
 			(effects
 				(font
@@ -889,7 +889,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distrbutor Link" "https://jlcpcb.com/partdetail/85432-NCD0603R1/C84263"
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/ams-OSRAM/LS-Q976.01-N1Q2-1?qs=HoCaDK9Nz5ctGgaETs5C5Q%3D%3D"
 			(at 43.18 22.86 0)
 			(effects
 				(font
@@ -943,7 +943,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "NCD0603R1"
+		(property "P/N" "LS Q976.01-N1Q2-1"
 			(at 43.18 22.86 0)
 			(effects
 				(font
@@ -1074,7 +1074,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CRCW0402590RFKED"
+		(property "P/N" "CRCW0402590RFKED"
 			(at 50.8 30.48 90)
 			(effects
 				(font
@@ -1161,7 +1161,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distrbutor Link" "https://jlcpcb.com/partdetail/85432-NCD0603R1/C84263"
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/ams-OSRAM/LS-Q976.01-N1Q2-1?qs=HoCaDK9Nz5ctGgaETs5C5Q%3D%3D"
 			(at 43.18 38.1 0)
 			(effects
 				(font
@@ -1215,7 +1215,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "NCD0603R1"
+		(property "P/N" "LS Q976.01-N1Q2-1"
 			(at 43.18 38.1 0)
 			(effects
 				(font
@@ -1369,7 +1369,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distrbutor Link" "https://jlcpcb.com/partdetail/85432-NCD0603R1/C84263"
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/ams-OSRAM/LS-Q976.01-N1Q2-1?qs=HoCaDK9Nz5ctGgaETs5C5Q%3D%3D"
 			(at 43.18 45.72 0)
 			(effects
 				(font
@@ -1423,7 +1423,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "NCD0603R1"
+		(property "P/N" "LS Q976.01-N1Q2-1"
 			(at 43.18 45.72 0)
 			(effects
 				(font
@@ -1554,7 +1554,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CRCW0402590RFKED"
+		(property "P/N" "CRCW0402590RFKED"
 			(at 50.8 22.86 90)
 			(effects
 				(font
@@ -1685,7 +1685,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "CRCW0402590RFKED"
+		(property "P/N" "CRCW0402590RFKED"
 			(at 50.8 38.1 90)
 			(effects
 				(font
@@ -1839,7 +1839,7 @@
 				(hide yes)
 			)
 		)
-		(property "Distrbutor Link" "https://jlcpcb.com/partdetail/85432-NCD0603R1/C84263"
+		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/ams-OSRAM/LS-Q976.01-N1Q2-1?qs=HoCaDK9Nz5ctGgaETs5C5Q%3D%3D"
 			(at 43.18 30.48 0)
 			(effects
 				(font
@@ -1893,7 +1893,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "NCD0603R1"
+		(property "P/N" "LS Q976.01-N1Q2-1"
 			(at 43.18 30.48 0)
 			(effects
 				(font

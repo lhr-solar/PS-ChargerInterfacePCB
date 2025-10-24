@@ -1895,7 +1895,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MLASU168SB5105KTNA01"
+		(property "P/N" "MLASU168SB5105KTNA01"
 			(at 148.59 38.1 0)
 			(effects
 				(font
@@ -2017,7 +2017,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MLASU168SB5105KTNA01"
+		(property "P/N" "MLASU168SB5105KTNA01"
 			(at 140.97 48.26 0)
 			(effects
 				(font
@@ -2139,7 +2139,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MCJCT21GCB7225MTPA1J"
+		(property "P/N" "MCJCT21GCB7225MTPA1J"
 			(at 124.46 41.91 90)
 			(effects
 				(font
@@ -2261,7 +2261,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MLASU168SB5105KTNA01"
+		(property "P/N" "MLASU168SB5105KTNA01"
 			(at 144.78 43.18 0)
 			(effects
 				(font
@@ -2384,7 +2384,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MLASH168SB7104KTNA01"
+		(property "P/N" "MLASH168SB7104KTNA01"
 			(at 76.2 68.58 0)
 			(effects
 				(font
@@ -2507,7 +2507,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MLASH168SB7104KTNA01"
+		(property "P/N" "MLASH168SB7104KTNA01"
 			(at 41.91 68.58 0)
 			(effects
 				(font
@@ -2630,7 +2630,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "08055D475KAT4A"
+		(property "P/N" "08055D475KAT4A"
 			(at 63.5 68.58 0)
 			(effects
 				(font
@@ -2752,7 +2752,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MLASU168SB5105KTNA01"
+		(property "P/N" "MLASU168SB5105KTNA01"
 			(at 153.67 33.02 0)
 			(effects
 				(font
@@ -2941,7 +2941,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MLASU168SB5105KTNA01"
+		(property "P/N" "MLASU168SB5105KTNA01"
 			(at 137.16 53.34 0)
 			(effects
 				(font
@@ -3130,7 +3130,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MCJCT21GCB7225MTPA1J"
+		(property "P/N" "MCJCT21GCB7225MTPA1J"
 			(at 124.46 49.53 90)
 			(effects
 				(font
@@ -3315,16 +3315,6 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "NHD-C12832A1Z-FSB-FBW-3V3"
-			(at 95.25 824.13 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-				(hide yes)
-			)
-		)
 		(property "MANUFACTURER" ""
 			(at 119.38 29.21 0)
 			(effects
@@ -3362,6 +3352,15 @@
 			)
 		)
 		(property "Manufacturer" "Newhaven Display"
+			(at 119.38 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "P/N" "NHD-C12832A1Z-FSB-FBW-3V3"
 			(at 119.38 29.21 0)
 			(effects
 				(font
@@ -3684,7 +3683,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "08055D475KAT4A"
+		(property "P/N" "08055D475KAT4A"
 			(at 29.21 68.58 0)
 			(effects
 				(font
@@ -3873,7 +3872,7 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer_Part_Number" "MCJCT21GCB7225MTPA1J"
+		(property "P/N" "MCJCT21GCB7225MTPA1J"
 			(at 132.08 58.42 0)
 			(effects
 				(font
