@@ -1,0 +1,47 @@
+EESchema-LIBRARY Version 2.4
+#encoding utf-8
+#
+# Coilcraft XGL6060-103MEC
+#
+DEF XGL6060-103MEC L 0 40 Y Y 1 L N
+F0 "L" 0 200 50 H V L CNN 
+F1 "XGL6060-103MEC" 0 300 50 H V L CNN 
+F2 "Coilcraft-XGL6060-0-0-*" 0 400 50 H I L CNN 
+F3 "https://www.coilcraft.com/getmedia/329fe97c-7311-4726-9bf3-37718f42b168/xgl6060.pdf" 0 500 50 H I L CNN 
+F4 "9.1A" 0 600 50 H I L CNN "RMS current"
+F5 "+125°C" 0 700 50 H I L CNN "ambient temperature range high"
+F6 "-40°C" 0 800 50 H I L CNN "ambient temperature range low"
+F7 "Yes" 0 900 50 H I L CNN "automotive"
+F8 "Grade 1" 0 1000 50 H I L CNN "automotive grade"
+F9 "Ind" 0 1100 50 H I L CNN "category"
+F10 "Molded" 0 1200 50 H I L CNN "composition"
+F11 "Composite" 0 1300 50 H I L CNN "core material"
+F12 "Passive Components" 0 1400 50 H I L CNN "device class L1"
+F13 "Inductors" 0 1500 50 H I L CNN "device class L2"
+F14 "Fixed Inductors" 0 1600 50 H I L CNN "device class L3"
+F15 "6.1mm" 0 1700 50 H I L CNN "height"
+F16 "10uH" 0 1800 50 H I L CNN "inductance"
+F17 "Yes" 0 1900 50 H I L CNN "lead free"
+F18 "1de5fb73fcd85f48" 0 2000 50 H I L CNN "library id"
+F19 "Coilcraft" 0 2100 50 H I L CNN "manufacturer"
+F20 "SMT_INDUCTOR" 0 2200 50 H I L CNN "package"
+F21 "Yes" 0 2300 50 H I L CNN "rohs"
+F22 "3.6A" 0 2400 50 H I L CNN "saturation current"
+F23 "14MHz" 0 2500 50 H I L CNN "self resonant frequency"
+F24 "20.4mΩ" 0 2600 50 H I L CNN "series resistance"
+F25 "true" 0 2700 50 H I L CNN "shielding"
+F26 "+165°C" 0 2800 50 H I L CNN "temperature range high"
+F27 "1MHz" 0 2900 50 H I L CNN "test frequency"
+F28 "20%" 0 3000 50 H I L CNN "tolerance"
+DRAW
+X 1 1 0 0 50 R 40 0 1 1 P 
+X 2 2 400 0 50 L 40 0 1 1 P 
+A 100 0 50 0 1799 1 1 0 N 150 0 50 0
+A 200 0 50 0 1799 1 1 0 N 250 0 150 0
+A 300 0 50 0 1799 1 1 0 N 350 0 250 0
+C 100 0 10 1 1 0 N
+C 100 0 0 1 1 0 N
+ENDDRAW
+ENDDEF
+#
+# End Library
