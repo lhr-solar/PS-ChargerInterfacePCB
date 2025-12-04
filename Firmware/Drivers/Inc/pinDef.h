@@ -19,7 +19,6 @@
 #define BUZZER_PORT GPIOB
 #define BUZZER_PIN GPIO_PIN_12
 
-
 //EStop
 #define ESTOP_PORT GPIOC
 #define ESTOP_PIN GPIO_PIN_3

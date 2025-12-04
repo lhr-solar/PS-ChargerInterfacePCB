@@ -1,5 +1,5 @@
 #include "FreeRTOS.h"
-#include "stm32xx_hal.h"
+#include "stm32g4xx_hal.h"
 #include "common.h"
 #include "pinDef.h"
 #include "StatusLED.h"

@@ -1083,7 +1083,7 @@
 		)
 		(uuid "60d06a60-b1cf-4ff5-b937-97e39b7b7779")
 	)
-	(text "Bypass Cap"
+	(text " Bah\n"
 		(exclude_from_sim no)
 		(at 117.094 58.674 0)
 		(effects
@@ -2074,7 +2074,7 @@
 			)
 		)
 		(property "Value" "LM74502HDDFR"
-			(at 67.31 60.325 0)
+			(at 85.09 58.42 0)
 			(effects
 				(font
 					(size 1.27 1.27)
