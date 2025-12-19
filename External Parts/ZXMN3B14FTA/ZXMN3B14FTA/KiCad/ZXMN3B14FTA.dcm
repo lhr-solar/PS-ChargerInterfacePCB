@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP ZXMN3B14FTA
+D MOSFET N-Channel 30V 3.5A SOT23 Diodes Inc ZXMN3B14FTA N-channel MOSFET Transistor, 3.5 A, 30 V, 3-Pin SOT-23
+K
+F https://www.diodes.com/assets/Datasheets/ZXMN3B14F.pdf
+$ENDCMP
+#
+#End Doc Library

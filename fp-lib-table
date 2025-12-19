@@ -19,4 +19,5 @@
   (lib (name "XGL6060-103ME")(type "KiCad")(uri "${KIPRJMOD}/External Parts/XGL6060-103ME/eec.pretty")(options "")(descr ""))
   (lib (name "XGL4020-472MEC")(type "KiCad")(uri "${KIPRJMOD}/External Parts/XGL4020_472MEC/KiCADv6/footprints.pretty")(options "")(descr ""))
   (lib (name "3568")(type "KiCad")(uri "${KIPRJMOD}/External Parts/3568/3568/KiCad")(options "")(descr ""))
+  (lib (name "1053101210")(type "KiCad")(uri "${KIPRJMOD}/External Parts/1053101210/footprints.pretty")(options "")(descr ""))
 )

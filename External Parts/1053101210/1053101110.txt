@@ -1,0 +1,10 @@
+﻿"Symbol";"Value";"Unit";
+"TraceParts.PartNumber";"90-09042024-050555";"";
+"REFERENCE";"1053101110";"";
+"TraceParts.PartTitle";"Nano-Fit";"";
+"TraceParts.InstanceId";"90-09042024-0505552N3XX9WWY2MK673V115V3T3RA";"";
+"SUPPLIER";"Molex";"";
+"DESIGN";"Nano-Fit Vertical Header, Through Hole, 2.50mm Pitch, Dual Row, 10 Circuits, with Kinked Pins, Tin (Sn) Plating, Black, Glow-Wire Capable, Tray";"";
+"TRACEPARTS";"TRACEPARTS";"";
+"TraceParts.PartLanguage";"en";"";
+"TraceParts.PartVersion";"1.0.4";"";
