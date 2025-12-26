@@ -1,0 +1,9 @@
+Manufacturer=onsemi
+PartNumber=NVMFWS1D7N04XMT1G
+PartCategory=MOSFET (N-Channel)
+PackageCategory=Other
+PinCount=9
+Version=2.1
+Released=2025-06-12 15:49:59
+Downloaded=2025-12-24 05:18:10
+3D=Y

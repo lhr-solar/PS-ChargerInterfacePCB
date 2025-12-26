@@ -1,0 +1,9 @@
+Manufacturer=Infineon
+PartNumber=IRLML0030TRPBF
+PartCategory=Transistor
+PackageCategory=SOT23 (3-Pin)
+PinCount=3
+Version=2.1
+Released=2016-11-21 11:04:00
+Downloaded=2025-12-24 05:34:20
+3D=Y

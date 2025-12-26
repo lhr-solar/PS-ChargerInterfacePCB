@@ -456,13 +456,13 @@
       "bus_to_net_conflict": "error",
       "different_unit_footprint": "error",
       "different_unit_net": "error",
-      "duplicate_reference": "error",
+      "duplicate_reference": "warning",
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
-      "footprint_filter": "ignore",
+      "footprint_filter": "warning",
       "footprint_link_issues": "warning",
-      "four_way_junction": "ignore",
+      "four_way_junction": "warning",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
@@ -485,8 +485,8 @@
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
-      "simulation_model_issue": "ignore",
-      "single_global_label": "ignore",
+      "simulation_model_issue": "warning",
+      "single_global_label": "warning",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
       "undefined_netclass": "error",
@@ -834,7 +834,7 @@
     ],
     [
       "a5946dd4-2cac-491d-9b85-f213ab9011e7",
-      "12V-24V Boost Converter"
+      "14V-24V Boost Converter"
     ],
     [
       "f4ec1410-3a5f-45f2-a31b-30d8be6fbeab",
@@ -851,6 +851,10 @@
     [
       "eaa01ebb-42bc-4c5b-a5da-d0a713cda722",
       "SPI_display"
+    ],
+    [
+      "ebfb1e9b-212e-4bda-bede-5250a5b1aee3",
+      "EVCharger"
     ],
     [
       "bb9f496a-74d6-44ce-af81-3e80cd51536d",
