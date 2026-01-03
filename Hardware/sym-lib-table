@@ -18,4 +18,5 @@
   (lib (name "NVMFWS1D7N04XMT1G")(type "KiCad")(uri "${KIPRJMOD}/External Parts/NVMFWS1D7N04XMT1G/NVMFWS1D7N04XMT1G/KiCad/NVMFWS1D7N04XMT1G.kicad_sym")(options "")(descr ""))
   (lib (name "IRLML0030TRPBF")(type "KiCad")(uri "${KIPRJMOD}/External Parts/IRLML0030TRPBF/IRLML0030TRPBF/KiCad/IRLML0030TRPBF.kicad_sym")(options "")(descr ""))
   (lib (name "0022284030")(type "KiCad")(uri "${KIPRJMOD}/External Parts/22284030/KiCADv6/2025-12-25_04-07-39.kicad_sym")(options "")(descr ""))
+  (lib (name "105314-1110")(type "KiCad")(uri "${KIPRJMOD}/External Parts/105314-1110/105314-1110/KiCad/105314-1110.kicad_sym")(options "")(descr ""))
 )

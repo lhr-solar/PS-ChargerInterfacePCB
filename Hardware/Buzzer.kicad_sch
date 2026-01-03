@@ -2135,6 +2135,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part #" ""
+			(at 53.34 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 53.34 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "25d6b545-9cb4-4ade-95e7-a587b047db4e")
 		)
@@ -2326,6 +2344,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part #" ""
+			(at 92.71 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 92.71 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "83b85f21-9b02-4127-97ca-e4b4c20eef2e")
 		)
@@ -2369,7 +2405,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "CONN_SD-42375-001_M240_03_MOL"
+		(property "Footprint" "22284030:CONN_SD-42375-001_M240_03_MOL"
 			(at 38.1 26.67 0)
 			(effects
 				(font
@@ -2390,6 +2426,33 @@
 			)
 		)
 		(property "Description" ""
+			(at 38.1 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 38.1 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 38.1 26.67 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "P/N" "22-28-4030"
 			(at 38.1 26.67 0)
 			(effects
 				(font
@@ -2525,6 +2588,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part #" ""
+			(at 105.41 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 105.41 35.56 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "f868e875-50be-4417-9aa9-6ba2a3224927")
 		)
@@ -2647,6 +2728,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part #" ""
+			(at 121.92 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 121.92 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "e9a6f75c-cac0-4293-9720-2816733b5f0c")
 		)
@@ -2759,7 +2858,25 @@
 				(hide yes)
 			)
 		)
-		(property "P/N" "1053091202"
+		(property "P/N" "105309-1202"
+			(at 135.89 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 135.89 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 135.89 49.53 0)
 			(effects
 				(font
@@ -2808,7 +2925,7 @@
 				)
 			)
 		)
-		(property "Footprint" "SOT95P237X112-3N"
+		(property "Footprint" "IRLML0030TRPBF:SOT95P237X112-3N"
 			(at 95.25 148.26 0)
 			(effects
 				(font
@@ -2884,6 +3001,33 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 78.74 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 78.74 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "P/N" "IRLML0030TRPBF:SOT95P237X112-3N"
+			(at 78.74 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
 				(hide yes)
 			)
 		)

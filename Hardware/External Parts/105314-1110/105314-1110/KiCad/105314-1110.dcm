@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP 105314-1110
+D NANOFIT HDR RA DLR 10CKT TIN BLK
+K
+F https://www.molex.com/pdm_docs/sd/1053141110_sd.pdf
+$ENDCMP
+#
+#End Doc Library
