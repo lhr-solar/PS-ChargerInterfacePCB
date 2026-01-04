@@ -3318,7 +3318,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "UTSVT_Special:TestPoint_HEX_3mmID"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 33.02 78.74 0)
 			(effects
 				(font
@@ -3497,7 +3497,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "UTSVT_Special:TestPoint_HEX_3mmID"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 34.29 93.98 0)
 			(effects
 				(font
@@ -3748,7 +3748,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "UTSVT_Special:TestPoint_HEX_3mmID"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 22.86 127 0)
 			(effects
 				(font
@@ -5761,7 +5761,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "UTSVT_Special:TestPoint_HEX_3mmID"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 44.45 78.74 0)
 			(effects
 				(font
@@ -6571,7 +6571,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "UTSVT_Special:TestPoint_HEX_3mmID"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 22.86 93.98 0)
 			(effects
 				(font
@@ -6683,7 +6683,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "UTSVT_Special:TestPoint_HEX_3mmID"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 21.59 110.49 0)
 			(effects
 				(font
@@ -6960,7 +6960,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "UTSVT_Special:TestPoint_HEX_3mmID"
+		(property "Footprint" "TestPoint:TestPoint_Pad_D1.5mm"
 			(at 45.72 93.98 0)
 			(effects
 				(font
