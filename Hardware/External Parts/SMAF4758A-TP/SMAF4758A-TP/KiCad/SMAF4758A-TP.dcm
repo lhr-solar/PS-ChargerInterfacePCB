@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SMAF4758A-TP
+D 1.0 Watt Zener Diodes 6.2V to 100V
+K
+F https://www.mccsemi.com/pdf/Products/SMAF4735A_SMAF4764A(DO-221AC).pdf
+$ENDCMP
+#
+#End Doc Library

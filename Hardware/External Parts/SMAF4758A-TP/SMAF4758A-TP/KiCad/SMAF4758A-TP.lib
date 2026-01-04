@@ -1,0 +1,28 @@
+EESchema-LIBRARY Version 2.3
+#encoding utf-8
+#SamacSys ECAD Model SMAF4758A-TP
+#/20031958/1776227/2.50/2/2/Zener Diode
+DEF SMAF4758A-TP Z 0 30 Y Y 1 F N
+F0 "Z" 400 350 50 H V L CNN
+F1 "SMAF4758A-TP" 400 250 50 H V L CNN
+F2 "SODFL5026X125N" 400 150 50 H I L CNN
+F3 "https://www.mccsemi.com/pdf/Products/SMAF4735A_SMAF4764A(DO-221AC).pdf" 400 50 50 H I L CNN
+F4 "1.0 Watt Zener Diodes 6.2V to 100V" 400 -50 50 H I L CNN "Description"
+F5 "1.25" 400 -150 50 H I L CNN "Height"
+F6 "" 400 -250 50 H I L CNN "Mouser Part Number"
+F7 "" 400 -350 50 H I L CNN "Mouser Price/Stock"
+F8 "MCC" 400 -450 50 H I L CNN "Manufacturer_Name"
+F9 "SMAF4758A-TP" 400 -550 50 H I L CNN "Manufacturer_Part_Number"
+DRAW
+X ~ 1 0 0 100 R 50 50 0 0 P
+X ~ 2 600 0 100 L 50 50 0 0 P
+P 2 0 1 6 200 80 200 -80 N
+P 2 0 1 6 200 80 240 100 N
+P 2 0 1 6 160 -100 200 -80 N
+P 2 0 1 6 100 0 200 0 N
+P 2 0 1 6 500 0 400 0 N
+P 4 0 1 10 200 0 400 100 400 -100 200 0 F
+ENDDRAW
+ENDDEF
+#
+#End Library
