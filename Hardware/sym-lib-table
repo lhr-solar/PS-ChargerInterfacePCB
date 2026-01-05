@@ -19,4 +19,5 @@
   (lib (name "0022284030")(type "KiCad")(uri "${KIPRJMOD}/External Parts/22284030/KiCADv6/2025-12-25_04-07-39.kicad_sym")(options "")(descr ""))
   (lib (name "105314-1110")(type "KiCad")(uri "${KIPRJMOD}/External Parts/105314-1110/105314-1110/KiCad/105314-1110.kicad_sym")(options "")(descr ""))
   (lib (name "SMAF4758A-TP")(type "KiCad")(uri "${KIPRJMOD}/External Parts/SMAF4758A-TP/SMAF4758A-TP/KiCad/SMAF4758A-TP.kicad_sym")(options "")(descr ""))
+  (lib (name "1N5819HW-7-F")(type "KiCad")(uri "${KIPRJMOD}/External Parts/1N5819HW-7-F/1N5819HW-7-F/KiCad/1N5819HW-7-F.kicad_sym")(options "")(descr ""))
 )

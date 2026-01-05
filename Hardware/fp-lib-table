@@ -26,4 +26,5 @@
   (lib (name "22284030")(type "KiCad")(uri "${KIPRJMOD}/External Parts/22284030/KiCADv6/footprints.pretty")(options "")(descr ""))
   (lib (name "105309-1303")(type "KiCad")(uri "${KIPRJMOD}/External Parts/1053091303/KiCADv6/footprints.pretty")(options "")(descr ""))
   (lib (name "105314-1110")(type "KiCad")(uri "${KIPRJMOD}/External Parts/105314-1110/105314-1110/KiCad/footprints.pretty")(options "")(descr ""))
+  (lib (name "1N5819HW-7-F")(type "KiCad")(uri "${KIPRJMOD}/External Parts/1N5819HW-7-F/1N5819HW-7-F/KiCad")(options "")(descr ""))
 )

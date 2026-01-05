@@ -5620,10 +5620,9 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "f7b2918c-a0d5-4b92-96fa-57d06b429347")
-		(property "Reference" "J7"
-			(at 74.93 11.43 0)
+		(property "Reference" "Panel_LED801"
+			(at 75.184 33.274 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5750,7 +5749,7 @@
 		(instances
 			(project ""
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
-					(reference "J7")
+					(reference "Panel_LED801")
 					(unit 1)
 				)
 			)

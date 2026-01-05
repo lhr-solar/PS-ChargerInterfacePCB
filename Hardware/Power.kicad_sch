@@ -4803,8 +4803,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "4420050c-40b2-47e1-af88-e908bb358d96")
-		(property "Reference" "TP_Gate1"
-			(at 28.448 104.902 0)
+		(property "Reference" "Gate1"
+			(at 27.432 104.902 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4900,11 +4900,11 @@
 		(instances
 			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/ac7656e7-8ca1-4189-8850-b703de13aef3"
-					(reference "TP_Gate2")
+					(reference "Gate2")
 					(unit 1)
 				)
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/f4ec1410-3a5f-45f2-a31b-30d8be6fbeab"
-					(reference "TP_Gate1")
+					(reference "Gate1")
 					(unit 1)
 				)
 			)
@@ -6231,8 +6231,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "d9208b2d-335e-42dd-a3c6-de32d6659f6e")
-		(property "Reference" "TP_OV1"
-			(at 41.148 120.142 0)
+		(property "Reference" "OV1"
+			(at 38.862 119.888 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6328,11 +6328,11 @@
 		(instances
 			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/ac7656e7-8ca1-4189-8850-b703de13aef3"
-					(reference "TP_OV2")
+					(reference "OV2")
 					(unit 1)
 				)
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/f4ec1410-3a5f-45f2-a31b-30d8be6fbeab"
-					(reference "TP_OV1")
+					(reference "OV1")
 					(unit 1)
 				)
 			)
@@ -6417,8 +6417,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "e5bf2099-63c4-446b-95f6-b0746cebc408")
-		(property "Reference" "TP_Drain1"
-			(at 38.608 104.902 0)
+		(property "Reference" "RPP_EN1"
+			(at 38.862 104.394 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6514,11 +6514,11 @@
 		(instances
 			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/ac7656e7-8ca1-4189-8850-b703de13aef3"
-					(reference "TP_24VOUT1")
+					(reference "+24V_IN1")
 					(unit 1)
 				)
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/f4ec1410-3a5f-45f2-a31b-30d8be6fbeab"
-					(reference "TP_Drain1")
+					(reference "RPP_EN1")
 					(unit 1)
 				)
 			)
@@ -6533,7 +6533,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "ef89f0a0-b42e-4bea-ac7c-2ec65ce70cf6")
-		(property "Reference" "TP_Vcap1"
+		(property "Reference" "Vcap1"
 			(at 28.448 120.142 0)
 			(effects
 				(font
@@ -6630,11 +6630,11 @@
 		(instances
 			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/ac7656e7-8ca1-4189-8850-b703de13aef3"
-					(reference "TP_Vcap2")
+					(reference "Vcap2")
 					(unit 1)
 				)
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/f4ec1410-3a5f-45f2-a31b-30d8be6fbeab"
-					(reference "TP_Vcap1")
+					(reference "Vcap1")
 					(unit 1)
 				)
 			)

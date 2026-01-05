@@ -2958,7 +2958,7 @@
 		)
 		(uuid "0a710f3f-519d-416d-865e-9fd543e41112")
 	)
-	(label "PostL1"
+	(label "SW"
 		(at 38.1 72.39 180)
 		(effects
 			(font
@@ -2978,7 +2978,7 @@
 		)
 		(uuid "473fce60-4469-43f5-a86e-cf6d45bf33b7")
 	)
-	(label "PostL1"
+	(label "SW"
 		(at 95.25 29.21 90)
 		(effects
 			(font
@@ -3299,8 +3299,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "0f15e4ef-2735-4c67-9e6d-a6aa00d5dcbf")
-		(property "Reference" "TP_SW2"
-			(at 40.132 84.582 0)
+		(property "Reference" "SW1"
+			(at 39.116 84.582 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3396,7 +3396,7 @@
 		(instances
 			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
-					(reference "TP_SW2")
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -3478,8 +3478,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "2d63f963-b27f-4359-886d-f942eeff5383")
-		(property "Reference" "TP_ILIM1"
-			(at 43.18 99.822 0)
+		(property "Reference" "ILIM1"
+			(at 41.402 99.568 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3575,7 +3575,7 @@
 		(instances
 			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
-					(reference "TP_ILIM1")
+					(reference "ILIM1")
 					(unit 1)
 				)
 			)
@@ -3729,7 +3729,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "36957123-5f38-4e20-a432-814d5157665c")
-		(property "Reference" "TP_BOOT1"
+		(property "Reference" "BOOT1"
 			(at 29.972 132.842 0)
 			(effects
 				(font
@@ -3826,7 +3826,7 @@
 		(instances
 			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
-					(reference "TP_BOOT1")
+					(reference "BOOT1")
 					(unit 1)
 				)
 			)
@@ -4047,7 +4047,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "3b7668f6-6661-4084-b953-3817c14daf2e")
-		(property "Reference" "TP_OUT1"
+		(property "Reference" "24V_OUT1"
 			(at 43.18 116.332 0)
 			(effects
 				(font
@@ -4144,7 +4144,7 @@
 		(instances
 			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
-					(reference "TP_OUT1")
+					(reference "24V_OUT1")
 					(unit 1)
 				)
 			)
@@ -4507,8 +4507,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "566643bd-da9c-40cb-81d3-f14fe4312ee9")
-		(property "Reference" "TP_IN1"
-			(at 30.988 84.582 0)
+		(property "Reference" "+14V2"
+			(at 28.702 84.582 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4604,7 +4604,7 @@
 		(instances
 			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
-					(reference "TP_IN1")
+					(reference "+14V2")
 					(unit 1)
 				)
 			)
@@ -5742,7 +5742,7 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "98f66c58-8980-4527-a6cf-d65e40f47461")
-		(property "Reference" "TP_SW1"
+		(property "Reference" "EN/UVLO1"
 			(at 51.562 84.582 0)
 			(effects
 				(font
@@ -5839,7 +5839,7 @@
 		(instances
 			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
-					(reference "TP_SW1")
+					(reference "EN/UVLO1")
 					(unit 1)
 				)
 			)
@@ -6552,8 +6552,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c46f82b9-914a-4e0b-9b35-ccaecca027a6")
-		(property "Reference" "TP_COMP1"
-			(at 31.75 99.822 0)
+		(property "Reference" "COMP1"
+			(at 30.226 100.076 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6649,7 +6649,7 @@
 		(instances
 			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
-					(reference "TP_COMP1")
+					(reference "COMP1")
 					(unit 1)
 				)
 			)
@@ -6664,8 +6664,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "c530115a-5405-406b-8cbd-987d29ccafc1")
-		(property "Reference" "TP_FB1"
-			(at 30.48 116.332 0)
+		(property "Reference" "FB1"
+			(at 27.432 116.078 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -6761,7 +6761,7 @@
 		(instances
 			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
-					(reference "TP_FB1")
+					(reference "FB1")
 					(unit 1)
 				)
 			)
@@ -6941,8 +6941,8 @@
 		(on_board yes)
 		(dnp no)
 		(uuid "dc9900ce-dd5a-4138-88f7-ad2c66511df1")
-		(property "Reference" "TP_VCC1"
-			(at 54.61 99.822 0)
+		(property "Reference" "VCC1"
+			(at 52.578 99.822 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -7038,7 +7038,7 @@
 		(instances
 			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
-					(reference "TP_VCC1")
+					(reference "VCC1")
 					(unit 1)
 				)
 			)
