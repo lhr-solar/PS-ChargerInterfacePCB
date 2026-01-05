@@ -2436,6 +2436,15 @@
 				(hide yes)
 			)
 		)
+		(property "P/N" "1N5819HW-7-F"
+			(at 40.64 29.21 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "b4789bae-620f-44d7-805c-6fd8abe00871")
 		)

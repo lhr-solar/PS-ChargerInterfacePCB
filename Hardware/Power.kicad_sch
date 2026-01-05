@@ -6746,6 +6746,15 @@
 				(hide yes)
 			)
 		)
+		(property "P/N" "SMAF4758A-TP"
+			(at 33.02 69.85 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "cb3916f6-86b6-48a2-be95-a8e651b314f7")
 		)

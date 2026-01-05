@@ -5716,6 +5716,15 @@
 				(hide yes)
 			)
 		)
+		(property "P/N" "105314-1110"
+			(at 63.5 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "3"
 			(uuid "3d9da172-f4f0-4346-b058-6ce54ba0d3ca")
 		)

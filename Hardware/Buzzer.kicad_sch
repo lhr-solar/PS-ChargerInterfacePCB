@@ -1778,6 +1778,15 @@
 				(hide yes)
 			)
 		)
+		(property "P/N" "1N5819HW-7-F"
+			(at 120.65 49.53 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "86b73252-ebc7-4a24-b0d2-6e0622a971f6")
 		)
