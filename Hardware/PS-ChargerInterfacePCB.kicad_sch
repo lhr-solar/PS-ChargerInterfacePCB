@@ -46930,7 +46930,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "UTSVT_Special:TestPoint_HEX_3mmID"
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm"
 			(at 189.23 110.49 0)
 			(effects
 				(font
@@ -47164,7 +47164,7 @@
 				)
 			)
 		)
-		(property "Value" "22k"
+		(property "Value" "10k"
 			(at 187.198 141.986 0)
 			(effects
 				(font
@@ -47545,7 +47545,7 @@
 				(hide yes)
 			)
 		)
-		(property "P/N" "LTST-C193TBKT-5A"
+		(property "P/N" "XL-1608UBC-06A"
 			(at 184.15 149.86 90)
 			(effects
 				(font
@@ -48030,7 +48030,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "UTSVT_Special:TestPoint_HEX_3mmID"
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm"
 			(at 208.28 110.49 0)
 			(effects
 				(font
@@ -48498,7 +48498,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "4.3k"
 			(at 212.598 141.986 0)
 			(effects
 				(font
@@ -48683,7 +48683,7 @@
 				(hide yes)
 			)
 		)
-		(property "P/N" "LTST-C193TBKT-5A"
+		(property "P/N" "XL-1608UBC-06A"
 			(at 193.04 149.86 90)
 			(effects
 				(font
@@ -48724,7 +48724,7 @@
 				)
 			)
 		)
-		(property "Value" "10k"
+		(property "Value" "4.3k"
 			(at 203.708 141.986 0)
 			(effects
 				(font
@@ -49215,7 +49215,7 @@
 				)
 			)
 		)
-		(property "Value" "22k"
+		(property "Value" "10k"
 			(at 196.088 141.986 0)
 			(effects
 				(font
@@ -49365,7 +49365,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "UTSVT_Special:TestPoint_HEX_3mmID"
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm"
 			(at 195.58 110.49 0)
 			(effects
 				(font
@@ -49512,7 +49512,7 @@
 				(hide yes)
 			)
 		)
-		(property "P/N" "LS Q976.01-N1Q2-1"
+		(property "P/N" "NCD0603R1"
 			(at 200.66 149.86 90)
 			(effects
 				(font
@@ -49619,7 +49619,7 @@
 				)
 			)
 		)
-		(property "Value" "2.2k"
+		(property "Value" "10k"
 			(at 252.73 68.326 0)
 			(effects
 				(font
@@ -49978,7 +49978,7 @@
 				(hide yes)
 			)
 		)
-		(property "Footprint" "UTSVT_Special:TestPoint_HEX_3mmID"
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm"
 			(at 201.93 110.49 0)
 			(effects
 				(font
@@ -50485,7 +50485,7 @@
 				)
 			)
 		)
-		(property "Value" "ElconConn"
+		(property "Value" "ElconCANConn"
 			(at 95.25 77.47 0)
 			(effects
 				(font
@@ -51700,7 +51700,7 @@
 				(hide yes)
 			)
 		)
-		(property "P/N" "LS Q976.01-N1Q2-1"
+		(property "P/N" "NCD0603R1"
 			(at 209.55 149.86 90)
 			(effects
 				(font

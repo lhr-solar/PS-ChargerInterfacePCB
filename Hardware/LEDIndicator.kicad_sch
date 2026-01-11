@@ -2410,7 +2410,7 @@
 				(hide yes)
 			)
 		)
-		(property "P/N" "LS Q976.01-N1Q2-1"
+		(property "P/N" "NCD0603R1"
 			(at 31.75 76.2 90)
 			(effects
 				(font
@@ -2822,7 +2822,7 @@
 				(hide yes)
 			)
 		)
-		(property "P/N" "LS Q976.01-N1Q2-1"
+		(property "P/N" "NCD0603R1"
 			(at 52.07 100.33 90)
 			(effects
 				(font
@@ -3124,7 +3124,7 @@
 				(hide yes)
 			)
 		)
-		(property "P/N" "LS Q976.01-N1Q2-1"
+		(property "P/N" "NCD0603R1"
 			(at 153.67 73.66 90)
 			(effects
 				(font
@@ -3553,7 +3553,7 @@
 				(hide yes)
 			)
 		)
-		(property "P/N" "LS Q976.01-N1Q2-1"
+		(property "P/N" "NCD0603R1"
 			(at 92.71 74.93 90)
 			(effects
 				(font
@@ -3640,7 +3640,7 @@
 				(hide yes)
 			)
 		)
-		(property "P/N" "LS Q976.01-N1Q2-1"
+		(property "P/N" "NCD0603R1"
 			(at 116.84 100.33 90)
 			(effects
 				(font
