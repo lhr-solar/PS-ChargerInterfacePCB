@@ -46376,6 +46376,16 @@
 		)
 		(uuid "20a9ccda-8760-4e5a-ac68-87fb19551241")
 	)
+	(label "BuzzPWM"
+		(at 170.18 140.97 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "226e2a7b-286b-4592-bb37-85d3a2cd07a8")
+	)
 	(label "LED_CHARGE"
 		(at 229.87 101.6 0)
 		(effects
@@ -46415,16 +46425,6 @@
 			(justify right bottom)
 		)
 		(uuid "46831a9d-79e4-4b0f-8854-5e94567c82ed")
-	)
-	(label "BuzzPWM"
-		(at 170.18 151.13 180)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify right bottom)
-		)
-		(uuid "4c96788f-dad3-49a8-b24e-b25bb53a4d07")
 	)
 	(label "Display_NSS"
 		(at 134.62 149.86 180)
@@ -46666,6 +46666,16 @@
 		)
 		(uuid "a1acd46a-9931-4289-8d4d-ff52de684f7f")
 	)
+	(label "Estop"
+		(at 170.18 151.13 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "aa3928a9-4ea6-4f62-a82d-e7d8260057a0")
+	)
 	(label "24V_OUT"
 		(at 193.04 125.73 270)
 		(effects
@@ -46785,16 +46795,6 @@
 			(justify right bottom)
 		)
 		(uuid "f2db3eda-261c-423f-85d0-d23bdb27a698")
-	)
-	(label "Estop"
-		(at 170.18 140.97 180)
-		(effects
-			(font
-				(size 1.016 1.016)
-			)
-			(justify right bottom)
-		)
-		(uuid "f48972cf-6743-4beb-9cda-8cada9170f87")
 	)
 	(label "Display_SCLK"
 		(at 231.14 140.97 0)
@@ -49945,6 +49945,88 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244"
 					(reference "Estop1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 153.67 113.03 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b5a77e8c-e829-416e-b7ea-c0f9bd6bc447")
+		(property "Reference" "H4"
+			(at 156.21 111.7599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole"
+			(at 156.21 114.2999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_3mm_Pad_TopBottom"
+			(at 153.67 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 153.67 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 153.67 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 153.67 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 153.67 113.03 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244"
+					(reference "H4")
 					(unit 1)
 				)
 			)

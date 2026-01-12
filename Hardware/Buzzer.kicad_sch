@@ -2111,7 +2111,7 @@
 				)
 			)
 		)
-		(property "Footprint" "153091202:1053091202"
+		(property "Footprint" "UTSVT_Connectors:Molex_Nano-Fit_105309-xx02_1x02_P2.50mm_Vertical"
 			(at 135.89 49.53 0)
 			(effects
 				(font
