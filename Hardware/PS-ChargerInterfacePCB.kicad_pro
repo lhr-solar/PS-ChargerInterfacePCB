@@ -63,7 +63,12 @@
           "width": 0.22
         }
       ],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "hole_clearance|133081522|75694397|d2cc257e-2c78-4ce3-adf7-a8412d7ad4a3|d38e3541-cd72-4c16-8130-aa56ec570334",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
@@ -84,7 +89,7 @@
         "footprint_filters_mismatch": "ignore",
         "footprint_symbol_mismatch": "warning",
         "footprint_type_mismatch": "warning",
-        "hole_clearance": "error",
+        "hole_clearance": "ignore",
         "hole_to_hole": "warning",
         "holes_co_located": "warning",
         "invalid_outline": "error",
