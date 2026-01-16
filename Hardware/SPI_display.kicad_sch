@@ -3426,7 +3426,7 @@
 				)
 			)
 		)
-		(property "Footprint" "NHD-C12832A1Z-FSB-FBW-3V3:NHDC12832A1ZFSBFBW3V3"
+		(property "Footprint" "External Parts Mod:NHD-C12832A1ZFSBFBW3V3"
 			(at 95.25 124.13 0)
 			(effects
 				(font

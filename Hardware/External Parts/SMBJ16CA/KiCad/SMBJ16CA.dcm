@@ -1,9 +1,0 @@
-EESchema-DOCLIB  Version 2.0
-#
-$CMP SMBJ16CA
-D ESD Suppressors / TVS Diodes 16volts 5uA 23.1 Amps Bi-Dir
-K
-F https://componentsearchengine.com/Datasheets/2/SMBJ16CA.pdf
-$ENDCMP
-#
-#End Doc Library

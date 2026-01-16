@@ -4776,7 +4776,7 @@
 				)
 			)
 		)
-		(property "Footprint" "XGL4020-472MEC:IND_XGL4020_COC"
+		(property "Footprint" "External Parts Mod:XGL4020_COC"
 			(at 90.17 29.21 0)
 			(effects
 				(font

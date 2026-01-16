@@ -51010,7 +51010,7 @@
 				)
 			)
 		)
-		(property "Footprint" "1053091303:CONN_SD-105309-100_03_MOL"
+		(property "Footprint" "External Parts Mod:105309-1303"
 			(at 20.32 81.28 0)
 			(effects
 				(font
@@ -52006,7 +52006,7 @@
 				(hide yes)
 			)
 		)
-		(property "P/N" "CRCW06030000Z0EE"
+		(property "P/N" ""
 			(at 68.58 17.78 90)
 			(effects
 				(font

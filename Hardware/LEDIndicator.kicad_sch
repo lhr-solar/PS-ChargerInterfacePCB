@@ -2871,7 +2871,7 @@
 				)
 			)
 		)
-		(property "Footprint" "IRLML0030TRPBF:SOT95P237X112-3N"
+		(property "Footprint" "External Parts Mod:IRLML0030TRPBF"
 			(at 172.72 152.07 0)
 			(effects
 				(font
@@ -3366,7 +3366,7 @@
 				)
 			)
 		)
-		(property "Footprint" "IRLML0030TRPBF:SOT95P237X112-3N"
+		(property "Footprint" "External Parts Mod:IRLML0030TRPBF"
 			(at 69.85 178.74 0)
 			(effects
 				(font
@@ -3887,7 +3887,7 @@
 				)
 			)
 		)
-		(property "Footprint" "IRLML0030TRPBF:SOT95P237X112-3N"
+		(property "Footprint" "External Parts Mod:IRLML0030TRPBF"
 			(at 57.15 153.34 0)
 			(effects
 				(font
@@ -4263,7 +4263,7 @@
 				)
 			)
 		)
-		(property "Footprint" "IRLML0030TRPBF:SOT95P237X112-3N"
+		(property "Footprint" "External Parts Mod:IRLML0030TRPBF"
 			(at 110.49 153.34 0)
 			(effects
 				(font
@@ -5422,7 +5422,7 @@
 				)
 			)
 		)
-		(property "Footprint" "IRLML0030TRPBF:SOT95P237X112-3N"
+		(property "Footprint" "External Parts Mod:IRLML0030TRPBF"
 			(at 135.89 178.74 0)
 			(effects
 				(font
@@ -5637,7 +5637,7 @@
 				)
 			)
 		)
-		(property "Footprint" "105314-1110:CONN_SD-105314-100_10_MOL"
+		(property "Footprint" "External Parts Mod:105314-1110"
 			(at 82.55 113.97 0)
 			(effects
 				(font

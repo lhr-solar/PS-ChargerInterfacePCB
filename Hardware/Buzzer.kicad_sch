@@ -1699,7 +1699,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "SOD3716X145N"
+		(property "Footprint" "External Parts Mod:1N5819HW-7-F"
 			(at 23.19 60.96 0)
 			(effects
 				(font
@@ -2250,7 +2250,7 @@
 				)
 			)
 		)
-		(property "Footprint" "IRLML0030TRPBF:SOT95P237X112-3N"
+		(property "Footprint" "External Parts Mod:IRLML0030TRPBF"
 			(at 95.25 148.26 0)
 			(effects
 				(font
