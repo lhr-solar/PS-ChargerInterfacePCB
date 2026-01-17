@@ -2357,7 +2357,7 @@
 				)
 			)
 		)
-		(property "Footprint" "1N5819HW-7-F:1N5819HW-7-F"
+		(property "Footprint" "charger_parts:1N5819HW-7-F"
 			(at 29.21 -68.25 0)
 			(effects
 				(font

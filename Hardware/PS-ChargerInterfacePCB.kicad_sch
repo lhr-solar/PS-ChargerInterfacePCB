@@ -51010,7 +51010,7 @@
 				)
 			)
 		)
-		(property "Footprint" "External Parts Mod:105309-1303"
+		(property "Footprint" "charger_parts:105309-1303"
 			(at 20.32 81.28 0)
 			(effects
 				(font

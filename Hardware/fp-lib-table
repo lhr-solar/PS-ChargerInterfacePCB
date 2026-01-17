@@ -7,5 +7,5 @@
   (lib (name "UTSVT_Passives")(type "KiCad")(uri "${KIPRJMOD}/KiCAD-Sharepoint/UTSVT_Passives.pretty")(options "")(descr ""))
   (lib (name "UTSVT_Power")(type "KiCad")(uri "${KIPRJMOD}/KiCAD-Sharepoint/UTSVT_Power.pretty")(options "")(descr ""))
   (lib (name "UTSVT_Special")(type "KiCad")(uri "${KIPRJMOD}/KiCAD-Sharepoint/UTSVT_Special.pretty")(options "")(descr ""))
-  (lib (name "External Parts Mod")(type "KiCad")(uri "${KIPRJMOD}/External Parts/External Parts Mod")(options "")(descr ""))
+  (lib (name "charger_parts")(type "KiCad")(uri "${KIPRJMOD}/External Parts/charger_parts.pretty")(options "")(descr ""))
 )
