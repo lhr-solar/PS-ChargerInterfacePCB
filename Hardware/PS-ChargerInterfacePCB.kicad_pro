@@ -37,9 +37,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 0.254,
-          "width": 0.5334
+          "drill": 1.2,
+          "height": 1.7,
+          "width": 2.2
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -83,7 +83,7 @@
         "footprint": "error",
         "footprint_filters_mismatch": "ignore",
         "footprint_symbol_mismatch": "warning",
-        "footprint_type_mismatch": "ignore",
+        "footprint_type_mismatch": "warning",
         "hole_clearance": "ignore",
         "hole_to_hole": "warning",
         "holes_co_located": "warning",
@@ -101,9 +101,9 @@
         "missing_footprint": "warning",
         "net_conflict": "warning",
         "nonmirrored_text_on_back_layer": "warning",
-        "npth_inside_courtyard": "ignore",
+        "npth_inside_courtyard": "warning",
         "padstack": "warning",
-        "pth_inside_courtyard": "ignore",
+        "pth_inside_courtyard": "warning",
         "shorting_items": "error",
         "silk_edge_clearance": "warning",
         "silk_over_copper": "warning",
@@ -456,13 +456,13 @@
       "bus_to_net_conflict": "error",
       "different_unit_footprint": "error",
       "different_unit_net": "error",
-      "duplicate_reference": "error",
+      "duplicate_reference": "warning",
       "duplicate_sheet_names": "error",
       "endpoint_off_grid": "warning",
       "extra_units": "error",
-      "footprint_filter": "ignore",
+      "footprint_filter": "warning",
       "footprint_link_issues": "warning",
-      "four_way_junction": "ignore",
+      "four_way_junction": "warning",
       "global_label_dangling": "warning",
       "hier_label_mismatch": "error",
       "label_dangling": "error",
@@ -485,8 +485,8 @@
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
-      "simulation_model_issue": "ignore",
-      "single_global_label": "ignore",
+      "simulation_model_issue": "warning",
+      "single_global_label": "warning",
       "unannotated": "error",
       "unconnected_wire_endpoint": "warning",
       "undefined_netclass": "error",
@@ -624,7 +624,7 @@
       "plot": "",
       "pos_files": "",
       "specctra_dsn": "",
-      "step": "",
+      "step": "PS-ChargerInterfacePCB.step",
       "svg": "",
       "vrml": ""
     },
@@ -753,7 +753,7 @@
           "group_by": false,
           "label": "Description",
           "name": "Description",
-          "show": false
+          "show": true
         },
         {
           "group_by": false,
@@ -778,6 +778,24 @@
           "label": "MANUFACTURER",
           "name": "MANUFACTURER",
           "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Part_Number",
+          "name": "Manufacturer_Part_Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Max Vgs",
+          "name": "Max Vgs",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC P/N",
+          "name": "LCSC P/N",
+          "show": false
         }
       ],
       "filter_string": "",
@@ -785,7 +803,7 @@
       "include_excluded_from_bom": true,
       "name": "",
       "sort_asc": false,
-      "sort_field": "P/N"
+      "sort_field": "Reference"
     },
     "connection_grid_size": 50.0,
     "drawing": {
@@ -815,6 +833,14 @@
       "version": 1
     },
     "net_format_name": "",
+    "ngspice": {
+      "fix_include_paths": true,
+      "meta": {
+        "version": 0
+      },
+      "model_mode": 4,
+      "workbook_filename": ""
+    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "space_save_all_events": true,
@@ -834,11 +860,11 @@
     ],
     [
       "a5946dd4-2cac-491d-9b85-f213ab9011e7",
-      "12V-24V Boost Converter"
+      "14V-24V Boost Converter"
     ],
     [
       "f4ec1410-3a5f-45f2-a31b-30d8be6fbeab",
-      "Power12V"
+      "Power14V"
     ],
     [
       "ac7656e7-8ca1-4189-8850-b703de13aef3",
@@ -851,6 +877,10 @@
     [
       "eaa01ebb-42bc-4c5b-a5da-d0a713cda722",
       "SPI_display"
+    ],
+    [
+      "ebfb1e9b-212e-4bda-bede-5250a5b1aee3",
+      "EVCharger"
     ],
     [
       "bb9f496a-74d6-44ce-af81-3e80cd51536d",

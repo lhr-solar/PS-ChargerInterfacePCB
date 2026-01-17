@@ -5,6 +5,302 @@
 	(uuid "dea03860-5e76-496d-81bd-4bce85e24874")
 	(paper "A4")
 	(lib_symbols
+		(symbol "105314-1110:105314-1110"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 19.05 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Value" "105314-1110"
+				(at 19.05 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+				)
+			)
+			(property "Footprint" "1053141110"
+				(at 19.05 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "https://www.molex.com/pdm_docs/sd/1053141110_sd.pdf"
+				(at 19.05 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "NANOFIT HDR RA DLR 10CKT TIN BLK"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "9.34"
+				(at 19.05 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "538-105314-1110"
+				(at 19.05 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Molex/105314-1110?qs=5aG0NVq1C4wHjjc39sQ6ZQ%3D%3D"
+				(at 19.05 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Molex"
+				(at 19.05 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "105314-1110"
+				(at 19.05 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "105314-1110_1_1"
+				(rectangle
+					(start 5.08 2.54)
+					(end 17.78 -12.7)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin passive line
+					(at 0 0 0)
+					(length 5.08)
+					(name "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "10"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -2.54 0)
+					(length 5.08)
+					(name "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "9"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -5.08 0)
+					(length 5.08)
+					(name "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "8"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -7.62 0)
+					(length 5.08)
+					(name "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -10.16 0)
+					(length 5.08)
+					(name "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 0 180)
+					(length 5.08)
+					(name "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 -2.54 180)
+					(length 5.08)
+					(name "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 -5.08 180)
+					(length 5.08)
+					(name "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 -7.62 180)
+					(length 5.08)
+					(name "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 22.86 -10.16 180)
+					(length 5.08)
+					(name "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Device:LED"
 			(pin_numbers
 				(hide yes)
@@ -188,7 +484,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:R"
+		(symbol "Device:R_US"
 			(pin_numbers
 				(hide yes)
 			)
@@ -199,15 +495,15 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "R"
-				(at 2.032 0 90)
+				(at 2.54 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "R"
-				(at 0 0 90)
+			(property "Value" "R_US"
+				(at -2.54 0 90)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -215,7 +511,7 @@
 				)
 			)
 			(property "Footprint" ""
-				(at -1.778 0 90)
+				(at 1.016 -0.254 90)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -232,7 +528,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Resistor"
+			(property "Description" "Resistor, US symbol"
 				(at 0 0 0)
 				(effects
 					(font
@@ -259,12 +555,61 @@
 					(hide yes)
 				)
 			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
+			(symbol "R_US_0_1"
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 0 2.54)
+					)
 					(stroke
-						(width 0.254)
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.286) (xy 1.016 1.905) (xy 0 1.524) (xy -1.016 1.143) (xy 0 0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0.762) (xy 1.016 0.381) (xy 0 0) (xy -1.016 -0.381) (xy 0 -0.762)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -0.762) (xy 1.016 -1.143) (xy 0 -1.524) (xy -1.016 -1.905) (xy 0 -2.286)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 -2.286) (xy 0 -2.54)
+					)
+					(stroke
+						(width 0)
 						(type default)
 					)
 					(fill
@@ -272,7 +617,7 @@
 					)
 				)
 			)
-			(symbol "R_1_1"
+			(symbol "R_US_1_1"
 				(pin passive line
 					(at 0 3.81 270)
 					(length 1.27)
@@ -302,6 +647,431 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "IRLML0030TRPBF:IRLML0030TRPBF"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "Q12"
+				(at 10.16 7.62 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "IRLML0030TRPBF"
+				(at 10.16 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "SOT95P237X112-3N"
+				(at 16.51 -94.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "http://www.infineon.com/dgdl/irlml0030pbf.pdf?fileId=5546d462533600a401535664773825df"
+				(at 16.51 -194.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Description" "INFINEON - IRLML0030TRPBF - MOSFET, N CH, 30V, 5.3A, SOT23-3"
+				(at -0.254 12.446 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Height" "1.12"
+				(at 16.51 -394.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Part Number" "942-IRLML0030TRPBF"
+				(at 16.51 -494.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/IRLML0030TRPBF?qs=9%252BKlkBgLFf0lLJi3xz1alg%3D%3D"
+				(at 16.51 -594.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Name" "Infineon"
+				(at 16.51 -694.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(property "Manufacturer_Part_Number" "IRLML0030TRPBF"
+				(at 16.51 -794.92 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left top)
+					(hide yes)
+				)
+			)
+			(symbol "IRLML0030TRPBF_1_1"
+				(polyline
+					(pts
+						(xy 5.08 -3.81) (xy 7.62 -3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 7.62 1.27) (xy 7.62 -3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.382 1.778) (xy 8.382 0.762)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.382 -1.27) (xy 9.398 -0.762) (xy 9.398 -1.778) (xy 8.382 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.382 -1.778) (xy 8.382 -0.762)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.382 -3.81) (xy 10.16 -3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 8.382 -4.318) (xy 8.382 -3.302)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(circle
+					(center 8.89 -1.27)
+					(radius 3.81)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 1.27) (xy 8.382 1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 1.27) (xy 10.16 3.81)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -1.27) (xy 8.382 -1.27)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 10.16 -1.27) (xy 10.16 -6.35)
+					)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 2.54 -3.81 0)
+					(length 2.54)
+					(name "G"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 6.35 270)
+					(length 2.54)
+					(name "D"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 10.16 -8.89 90)
+					(length 2.54)
+					(name "S"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:+12V"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "+12V"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"+12V\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "+12V_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "+12V_1_1"
+				(pin power_in line
+					(at 0 0 90)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -415,8 +1185,8 @@
 		)
 	)
 	(rectangle
-		(start 15.24 15.24)
-		(end 81.28 50.8)
+		(start 13.716 12.7)
+		(end 136.398 42.926)
 		(stroke
 			(width 0)
 			(type default)
@@ -424,11 +1194,34 @@
 		(fill
 			(type none)
 		)
-		(uuid 8c6a04c7-6eba-4e9a-94c3-9a24dd623343)
+		(uuid c00c4b08-b924-461a-9fca-21a7fc7f8160)
 	)
-	(text "R = (3.3V- Vf)/I\n590 = (3.3V - 2.12)/0.002\nI = 2mA (port limit?)\n\nVf = 2.2V (red leds?)\n"
+	(rectangle
+		(start 15.24 44.45)
+		(end 186.69 111.506)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(fill
+			(type none)
+		)
+		(uuid f9432f43-dbe9-4e70-bfe5-7d007687cc72)
+	)
+	(text "LED_HV = HV active or not\nLED_Fault = fault indicator\nLED_Heart = power up for 14v/24v\nLED_Charge = Charging Active or Not\nLED_EVSE = EVSE detected + pilot ready"
 		(exclude_from_sim no)
-		(at 62.992 30.48 0)
+		(at 140.97 23.114 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "0eb8f5a0-6047-4a37-a5a2-72422671f9bc")
+	)
+	(text "LEDS: https://www.amazon.com/Gebildet-12-24V-Indicator-Waterproof-Directional/dp/B088D1M47R\n12-24V, 0.02 amps"
+		(exclude_from_sim no)
+		(at 140.97 15.24 0)
 		(effects
 			(font
 				(size 0.762 0.762)
@@ -437,89 +1230,939 @@
 		)
 		(uuid "f816d6d7-d5d8-46bb-8384-46466613d5f0")
 	)
-	(wire
-		(pts
-			(xy 31.75 38.1) (xy 39.37 38.1)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1717dde7-21a0-4344-9167-2faec74f7654")
+	(junction
+		(at 92.71 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "209ae441-db17-4f70-9017-e71c8a87a59f")
+	)
+	(junction
+		(at 106.68 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "5a804225-d848-4a80-8ad9-60aa10ec820f")
+	)
+	(junction
+		(at 41.91 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6a390821-be04-4432-a624-cf21f320f94a")
+	)
+	(junction
+		(at 82.55 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "836266db-4362-41f3-b6a2-a03967925737")
+	)
+	(junction
+		(at 52.07 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "b2f89033-6f56-44cb-a1cc-c31bed210250")
+	)
+	(junction
+		(at 116.84 87.63)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bc15bb32-8d53-4c36-9089-83b08008b0c9")
+	)
+	(junction
+		(at 143.51 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cc9ce1f7-4cc1-4afc-929f-f720ac03c1a5")
+	)
+	(junction
+		(at 153.67 60.96)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "eb5b8c8c-96c4-4e8f-9544-3527ed2c9812")
+	)
+	(junction
+		(at 20.32 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "efac74e6-65e0-477b-a0b3-7096566c768f")
+	)
+	(junction
+		(at 31.75 62.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "fb9118be-e7e6-4820-9951-f1a50957a0f1")
 	)
 	(wire
 		(pts
-			(xy 59.69 38.1) (xy 54.61 38.1)
+			(xy 95.25 26.67) (xy 86.36 26.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "3cb6a7d4-e83f-4d7a-9f7d-242d22296374")
+		(uuid "02a34076-ca70-4976-ba3c-4bf109ba31aa")
 	)
 	(wire
 		(pts
-			(xy 59.69 22.86) (xy 54.61 22.86)
+			(xy 52.324 26.67) (xy 63.5 26.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "5cd72643-6db1-4c72-9644-0f582058d74a")
+		(uuid "0a8c30b0-d152-4421-be64-dc858b46eef9")
 	)
 	(wire
 		(pts
-			(xy 31.75 30.48) (xy 39.37 30.48)
+			(xy 82.55 62.23) (xy 92.71 62.23)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6c73a929-2893-4d38-8d73-0f543d670133")
+		(uuid "14e9404d-c860-49fe-a6c9-a00b82354b4c")
 	)
 	(wire
 		(pts
-			(xy 31.75 45.72) (xy 39.37 45.72)
+			(xy 116.84 104.14) (xy 116.84 105.41)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9411a89f-9e93-4ec2-bbc9-48e7a4ff70fc")
+		(uuid "191c79bb-8bd2-4653-8450-f15dd87acf73")
 	)
 	(wire
 		(pts
-			(xy 31.75 22.86) (xy 39.37 22.86)
+			(xy 52.324 29.21) (xy 63.5 29.21)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9ce716b7-add9-417a-adaa-ac237f4aef13")
+		(uuid "1c08cc64-0ad9-4c0f-90bc-494671cb6a91")
 	)
 	(wire
 		(pts
-			(xy 59.69 45.72) (xy 54.61 45.72)
+			(xy 52.324 19.05) (xy 63.5 19.05)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a2bdedb6-6590-4883-a9d5-530e40610c96")
+		(uuid "2190db9b-f4c9-4f87-9ebd-0be69a0cbaf2")
 	)
 	(wire
 		(pts
-			(xy 59.69 30.48) (xy 54.61 30.48)
+			(xy 39.37 87.63) (xy 41.91 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e756a068-4c73-4f04-bf32-91749ec25975")
+		(uuid "260f006f-c8d6-473b-9951-44c62ee407f4")
+	)
+	(wire
+		(pts
+			(xy 129.54 73.66) (xy 129.54 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "395c837a-0bfd-4e53-a65a-b1fb1e0ea0bd")
+	)
+	(wire
+		(pts
+			(xy 27.94 21.59) (xy 39.37 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "40392144-cb17-43b5-a32e-fc398c531abb")
+	)
+	(wire
+		(pts
+			(xy 106.68 87.63) (xy 116.84 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "42ed5297-5066-4bb4-b394-99b21a47d2d2")
+	)
+	(wire
+		(pts
+			(xy 97.79 87.63) (xy 106.68 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "475b0340-dfef-42f3-844d-d13479213254")
+	)
+	(wire
+		(pts
+			(xy 27.94 40.64) (xy 39.37 40.64)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "47fea168-b83d-4c9b-a0a3-8cf549f12a12")
+	)
+	(wire
+		(pts
+			(xy 31.75 71.12) (xy 31.75 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4ba9cac2-5056-41d4-9a28-5ec113c00941")
+	)
+	(wire
+		(pts
+			(xy 95.25 21.59) (xy 86.36 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e27292a-7043-4483-b89d-13ab6732bd7b")
+	)
+	(wire
+		(pts
+			(xy 52.324 24.13) (xy 63.5 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51c86e8e-efd0-4bdd-b653-afa32c82871b")
+	)
+	(wire
+		(pts
+			(xy 52.07 95.25) (xy 52.07 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5276f98d-10eb-4e5e-9598-54d54104a97b")
+	)
+	(wire
+		(pts
+			(xy 76.2 62.23) (xy 82.55 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "54c1416d-ef34-4740-9ab1-c7b78cdef523")
+	)
+	(wire
+		(pts
+			(xy 50.8 49.53) (xy 50.8 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5cc7fbc4-d076-4fc1-97a9-5267a1b0bfe4")
+	)
+	(wire
+		(pts
+			(xy 166.37 46.99) (xy 166.37 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f33736c-4ec3-4988-8370-a257746af697")
+	)
+	(wire
+		(pts
+			(xy 27.94 34.29) (xy 39.37 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6503ab64-1dbe-4161-83da-d14479cb4946")
+	)
+	(wire
+		(pts
+			(xy 106.68 20.32) (xy 106.68 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7358f589-7aa6-4c9c-b8ce-8883da8781e7")
+	)
+	(wire
+		(pts
+			(xy 50.8 67.31) (xy 50.8 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "797f0062-f92c-48d3-be1a-5509c19ad5e8")
+	)
+	(wire
+		(pts
+			(xy 106.68 88.9) (xy 106.68 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7bf0acb9-d5b5-428d-a22e-81ada38c7565")
+	)
+	(wire
+		(pts
+			(xy 20.32 63.5) (xy 20.32 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7fe9081b-6ec4-46c0-ab80-c78cc26baae7")
+	)
+	(wire
+		(pts
+			(xy 132.08 20.32) (xy 132.08 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "840244c0-b4ee-497d-904b-4849fab31bee")
+	)
+	(wire
+		(pts
+			(xy 41.91 90.17) (xy 41.91 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "872fa1ae-c7ab-445f-b584-dd04f2d3fc92")
+	)
+	(wire
+		(pts
+			(xy 31.75 62.23) (xy 43.18 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87c297b1-9c11-4274-a65c-9f9566cb0864")
+	)
+	(wire
+		(pts
+			(xy 52.07 104.14) (xy 52.07 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "98b6200b-1d68-45d6-8fab-cea7c9be47e9")
+	)
+	(wire
+		(pts
+			(xy 82.55 63.5) (xy 82.55 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9d05f625-d2d7-44c9-b505-c9fa2bab14a7")
+	)
+	(wire
+		(pts
+			(xy 27.94 15.24) (xy 39.37 15.24)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9f4f9f36-d64c-4096-a05d-3aec9cd6cd5c")
+	)
+	(wire
+		(pts
+			(xy 125.73 20.32) (xy 125.73 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a03ac2e5-e9ad-48b1-824a-8612a7f032e6")
+	)
+	(wire
+		(pts
+			(xy 104.14 48.26) (xy 104.14 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a15f600f-ce01-43ef-8e3b-6fd9f70baca4")
+	)
+	(wire
+		(pts
+			(xy 27.94 27.94) (xy 39.37 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a5f29455-703f-4366-9185-4a129de1c73d")
+	)
+	(wire
+		(pts
+			(xy 143.51 60.96) (xy 153.67 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a927d28e-666b-4c8e-926c-59f0ee4f220b")
+	)
+	(wire
+		(pts
+			(xy 31.75 80.01) (xy 31.75 81.28)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ac267c55-774c-4d26-b7d3-870512bfa2ce")
+	)
+	(wire
+		(pts
+			(xy 153.67 77.47) (xy 153.67 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b4aa4117-1cfe-4d78-b45a-91735d603aa5")
+	)
+	(wire
+		(pts
+			(xy 116.84 87.63) (xy 121.92 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b88cbdb0-1322-48c0-8e33-5dca3d58f946")
+	)
+	(wire
+		(pts
+			(xy 113.03 20.32) (xy 113.03 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bf463e92-2230-4d02-a1a6-e4ac2cd9c0a4")
+	)
+	(wire
+		(pts
+			(xy 52.324 21.59) (xy 63.5 21.59)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c0ae0f7e-785f-46c7-9e80-e54f72789e6a")
+	)
+	(wire
+		(pts
+			(xy 153.67 68.58) (xy 153.67 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c10bf39d-afcc-49f3-ad85-ba13861e6ba8")
+	)
+	(wire
+		(pts
+			(xy 92.71 78.74) (xy 92.71 80.01)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5545c48-f618-401a-ac9a-73a0a6d140ee")
+	)
+	(wire
+		(pts
+			(xy 116.84 95.25) (xy 116.84 96.52)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c8553883-9bca-44f1-8267-4ea230ba2654")
+	)
+	(wire
+		(pts
+			(xy 153.67 60.96) (xy 158.75 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cb2cb81b-a1a3-4b62-abcd-79a93844bd9a")
+	)
+	(wire
+		(pts
+			(xy 31.75 62.23) (xy 31.75 63.5)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d32f299d-4f83-4485-965c-e10ed01a32d9")
+	)
+	(wire
+		(pts
+			(xy 143.51 62.23) (xy 143.51 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6cd5f6d-da1e-4ee0-9bdb-ffe8e6a30c89")
+	)
+	(wire
+		(pts
+			(xy 137.16 60.96) (xy 143.51 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d722b717-4128-4079-9e5e-b5f7763e12c2")
+	)
+	(wire
+		(pts
+			(xy 95.25 29.21) (xy 86.36 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d85c06a2-1833-4cc6-9265-f0a4fca45204")
+	)
+	(wire
+		(pts
+			(xy 95.25 19.05) (xy 86.36 19.05)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "defc616b-16a3-460f-8d44-ff208e214802")
+	)
+	(wire
+		(pts
+			(xy 92.71 69.85) (xy 92.71 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e1b021b3-5805-439f-9cda-02cd894ee330")
+	)
+	(wire
+		(pts
+			(xy 119.38 20.32) (xy 119.38 27.94)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea1e894a-f134-4db3-8fc5-92420d38bad3")
+	)
+	(wire
+		(pts
+			(xy 95.25 24.13) (xy 86.36 24.13)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee02f1ea-a39b-4e74-9146-ae293b3d4ff2")
+	)
+	(wire
+		(pts
+			(xy 17.78 62.23) (xy 20.32 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef027096-68cc-450d-8c3f-ee2bfa746488")
+	)
+	(wire
+		(pts
+			(xy 63.5 73.66) (xy 63.5 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2375d00-81af-4449-8619-c186a44cc37f")
+	)
+	(wire
+		(pts
+			(xy 20.32 62.23) (xy 31.75 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f2e087e3-3bc1-48f1-9544-8796fee2f0ca")
+	)
+	(wire
+		(pts
+			(xy 92.71 62.23) (xy 96.52 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f3cf6f4e-6b67-4a60-8455-6d1f4bd83fb9")
+	)
+	(wire
+		(pts
+			(xy 41.91 87.63) (xy 52.07 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f52b7f55-2943-4602-ba4a-0099a3592cc3")
+	)
+	(wire
+		(pts
+			(xy 52.07 87.63) (xy 55.88 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fef27aab-df2b-4014-a254-d0ec7d4bed42")
+	)
+	(label "LED_HEART"
+		(at 39.37 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "085e17eb-2e7d-4aba-af50-8460267ffbba")
+	)
+	(label "FAULT-"
+		(at 104.14 48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "0ad74596-8231-4ec5-83a3-a628dc843dd8")
+	)
+	(label "LED_HEART"
+		(at 39.37 27.94 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1cf4b179-9b96-4d5c-8a1a-a1eb00023645")
+	)
+	(label "LED_HV"
+		(at 39.37 15.24 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "27d8b519-62e3-4e7c-900a-a6e72e07547a")
+	)
+	(label "HEART+"
+		(at 52.324 24.13 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left bottom)
+		)
+		(uuid "35222723-ed58-4bd4-8aeb-e585dda64a37")
+	)
+	(label "EVSE+"
+		(at 132.08 27.94 90)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left bottom)
+		)
+		(uuid "3ecf7725-580f-4b76-b46a-95927da6bbde")
+	)
+	(label "CHARGE+"
+		(at 125.73 27.94 90)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left bottom)
+		)
+		(uuid "489b07f8-1051-4304-bdc2-0a8c1138e361")
+	)
+	(label "EVSE+"
+		(at 52.324 29.21 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left bottom)
+		)
+		(uuid "49c20b91-00c9-4f17-9d98-d072195b06b4")
+	)
+	(label "LED_FAULT"
+		(at 39.37 21.59 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4b22dbb3-d3e1-46c9-a473-fe3ca14cf42f")
+	)
+	(label "FAULT+"
+		(at 113.03 27.94 90)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left bottom)
+		)
+		(uuid "4dafb22d-e579-411b-8932-d55db618eefb")
+	)
+	(label "EVSE-"
+		(at 95.25 29.21 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "5c2e1c29-68ff-47f1-a46e-2de1e3618fae")
+	)
+	(label "HEART-"
+		(at 63.5 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5d4999ae-3884-4e57-9497-0fa41ba9bd6a")
+	)
+	(label "LED_CHARGE"
+		(at 39.37 34.29 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "79c85129-6f33-4578-aeb6-0b2b6ea6ab50")
+	)
+	(label "LED_EVSE"
+		(at 39.37 40.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "8b197b6b-541a-4b14-90e6-c393d2609eff")
+	)
+	(label "HV+"
+		(at 52.324 19.05 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left bottom)
+		)
+		(uuid "9036cde9-8e2f-434e-8f0b-0b52511c8f2c")
+	)
+	(label "CHARGE-"
+		(at 129.54 73.66 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9a568531-a2db-4208-b537-49aafc2493f4")
+	)
+	(label "LED_EVSE"
+		(at 137.16 60.96 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a357178e-2993-4227-a8e4-d1b9992fe199")
+	)
+	(label "HV-"
+		(at 95.25 19.05 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "a37e2d41-55a3-47d3-8951-834e8c9010c9")
+	)
+	(label "HV+"
+		(at 106.68 27.94 90)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left bottom)
+		)
+		(uuid "a512c063-6da3-4503-8abb-a57395129fd4")
+	)
+	(label "FAULT+"
+		(at 52.324 21.59 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left bottom)
+		)
+		(uuid "b0e348ac-cdb6-435b-a70d-356ddfdae8d6")
+	)
+	(label "HEART-"
+		(at 95.25 24.13 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "b3b6a235-6417-438f-8654-65c17ac54386")
+	)
+	(label "LED_FAULT"
+		(at 76.2 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b548ecf6-eb7e-4684-bfcd-a80d41afb280")
+	)
+	(label "FAULT-"
+		(at 95.25 21.59 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "cd2fe931-d8f9-45c1-ac06-289c83468299")
+	)
+	(label "HV-"
+		(at 50.8 49.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ce0b9413-243c-42de-abb4-29d97da83fbb")
+	)
+	(label "LED_CHARGE"
+		(at 97.79 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "d287ce22-bca1-4de4-9d03-17c9c122771c")
+	)
+	(label "LED_HV"
+		(at 17.78 62.23 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ec1b5ad0-bbc0-4ea7-87cb-430acca01d45")
+	)
+	(label "CHARGE+"
+		(at 52.324 26.67 0)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left bottom)
+		)
+		(uuid "eff6d5cb-3733-458b-8af3-0c17388a7f83")
+	)
+	(label "CHARGE-"
+		(at 95.25 26.67 180)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify right bottom)
+		)
+		(uuid "f06f3351-48b2-497a-8aa2-b54a2fe62e8b")
+	)
+	(label "HEART+"
+		(at 119.38 27.94 90)
+		(effects
+			(font
+				(size 1.016 1.016)
+			)
+			(justify left bottom)
+		)
+		(uuid "f64e19a6-5b72-40ea-b025-35dd8129af7f")
+	)
+	(label "EVSE-"
+		(at 166.37 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "fba4044e-797b-4136-838b-5acf8f6d5736")
 	)
 	(hierarchical_label "LED_HEART"
 		(shape input)
-		(at 31.75 45.72 180)
+		(at 27.94 27.94 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -530,7 +2173,7 @@
 	)
 	(hierarchical_label "LED_FAULT"
 		(shape input)
-		(at 31.75 30.48 180)
+		(at 27.94 21.59 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -539,9 +2182,20 @@
 		)
 		(uuid "6321b652-d730-4c3e-a1ea-a0de52bf0603")
 	)
+	(hierarchical_label "LED_EVSE"
+		(shape input)
+		(at 27.94 40.64 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "95c9a940-ea64-40f6-8c72-3d999c29fc53")
+	)
 	(hierarchical_label "LED_HV"
 		(shape input)
-		(at 31.75 22.86 180)
+		(at 27.94 15.24 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -552,7 +2206,7 @@
 	)
 	(hierarchical_label "LED_CHARGE"
 		(shape input)
-		(at 31.75 38.1 180)
+		(at 27.94 34.29 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -563,16 +2217,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 59.69 45.72 0)
-		(mirror y)
+		(at 63.5 92.71 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "08404b03-af50-4227-806a-a83af9545e2b")
-		(property "Reference" "#PWR051"
-			(at 59.69 52.07 0)
+		(fields_autoplaced yes)
+		(uuid "00653de1-b13f-4d62-bbde-3dd24bccb94c")
+		(property "Reference" "#PWR059"
+			(at 63.5 99.06 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -581,16 +2235,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 59.69 49.276 0)
+			(at 63.5 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 59.69 45.72 0)
+			(at 63.5 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -599,7 +2252,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 45.72 0)
+			(at 63.5 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -608,7 +2261,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 59.69 45.72 0)
+			(at 63.5 92.71 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -617,143 +2270,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "9b605a21-1a3c-41e2-90e0-2eb2bc90f1d6")
+			(uuid "f2941801-3ac4-48d9-825a-ed3ccdf82920")
 		)
 		(instances
 			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
-					(reference "#PWR051")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 50.8 45.72 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "0ed1d541-e9d4-4be5-a1e0-a5526232e123")
-		(property "Reference" "R18"
-			(at 50.8 41.656 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "590R"
-			(at 50.8 43.688 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 50.8 47.498 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 50.8 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 50.8 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Vishay/CRCW0402590RFKED?qs=sGAEpiMZZMvdGkrng054txEw7b1YnvGup5OXobtv2Yw%3D"
-			(at 50.8 45.72 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Vishay"
-			(at 50.8 45.72 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part #" "RC0402FR-0722RL "
-			(at 50.8 45.72 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 50.8 45.72 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 50.8 45.72 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 50.8 45.72 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "P/N" "CRCW0402590RFKED"
-			(at 50.8 45.72 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "6dff33d1-aefc-43fe-8dd6-946dfcae9b22")
-		)
-		(pin "1"
-			(uuid "da93fbb5-5a12-4087-8012-a862b3270317")
-		)
-		(instances
-			(project "PS-ChargerInterfacePCB"
-				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
-					(reference "R18")
+					(reference "#PWR059")
 					(unit 1)
 				)
 			)
@@ -761,16 +2283,16 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 59.69 38.1 0)
-		(mirror y)
+		(at 41.91 97.79 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "494048d9-03c3-4890-8da3-7fd628fef6b2")
+		(fields_autoplaced yes)
+		(uuid "036a09f2-be82-43b2-9109-63820b9366f6")
 		(property "Reference" "#PWR050"
-			(at 59.69 44.45 0)
+			(at 41.91 104.14 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -779,16 +2301,15 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 59.69 41.656 0)
+			(at 41.91 102.87 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 59.69 38.1 0)
+			(at 41.91 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -797,7 +2318,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 38.1 0)
+			(at 41.91 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -806,7 +2327,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 59.69 38.1 0)
+			(at 41.91 97.79 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -815,7 +2336,7 @@
 			)
 		)
 		(pin "1"
-			(uuid "4e27cf66-9cc7-436a-94c4-dc4214bad87b")
+			(uuid "997eb1a9-a9e1-41fa-8090-80eef30c282f")
 		)
 		(instances
 			(project "PS-ChargerInterfacePCB"
@@ -828,513 +2349,33 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 43.18 22.86 0)
-		(mirror y)
+		(at 31.75 76.2 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "5fdc7061-f02b-4a69-bda3-333f67481603")
-		(property "Reference" "D3"
-			(at 42.672 20.066 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 42.926 20.32 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 43.18 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 43.18 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 43.18 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 43.18 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/ams-OSRAM/LS-Q976.01-N1Q2-1?qs=HoCaDK9Nz5ctGgaETs5C5Q%3D%3D"
-			(at 43.18 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Foshan NationStar Optoelectronics"
-			(at 43.18 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part #" "150040RS73240"
-			(at 43.18 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 43.18 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 43.18 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 43.18 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "P/N" "LS Q976.01-N1Q2-1"
-			(at 43.18 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "9510a9b5-461b-4bf5-9ec0-043fecb1f89a")
-		)
-		(pin "2"
-			(uuid "83c75c61-6bf5-48af-8b8d-5cc2ad4bc788")
-		)
-		(instances
-			(project "PS-ChargerInterfacePCB"
-				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
-					(reference "D3")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 50.8 30.48 270)
-		(mirror x)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "627655ee-1bc2-4ce5-a9a5-ec9c2e1a9c22")
-		(property "Reference" "R16"
-			(at 50.8 26.416 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "590R"
-			(at 50.8 28.448 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 50.8 32.258 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 50.8 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 50.8 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Vishay/CRCW0402590RFKED?qs=sGAEpiMZZMvdGkrng054txEw7b1YnvGup5OXobtv2Yw%3D"
-			(at 50.8 30.48 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Vishay"
-			(at 50.8 30.48 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part #" "RC0402FR-0722RL "
-			(at 50.8 30.48 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 50.8 30.48 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 50.8 30.48 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 50.8 30.48 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "P/N" "CRCW0402590RFKED"
-			(at 50.8 30.48 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "3d8617f8-db58-49c8-ab07-63d42a215ba4")
-		)
-		(pin "1"
-			(uuid "54e2a77c-b582-4f6a-823e-4e7dd863c572")
-		)
-		(instances
-			(project "PS-ChargerInterfacePCB"
-				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
-					(reference "R16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 43.18 38.1 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "691b6b29-baef-4d90-b959-e4c8b05c1655")
-		(property "Reference" "D5"
-			(at 42.672 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "LED"
-			(at 42.926 35.56 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 43.18 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 43.18 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Light emitting diode"
-			(at 43.18 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 43.18 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/ams-OSRAM/LS-Q976.01-N1Q2-1?qs=HoCaDK9Nz5ctGgaETs5C5Q%3D%3D"
-			(at 43.18 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Foshan NationStar Optoelectronics"
-			(at 43.18 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part #" "150040RS73240"
-			(at 43.18 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 43.18 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 43.18 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 43.18 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "P/N" "LS Q976.01-N1Q2-1"
-			(at 43.18 38.1 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "8f7efb6d-1018-4f70-a557-d34fec79814c")
-		)
-		(pin "2"
-			(uuid "85043455-37bf-4551-b9aa-a18795701a8c")
-		)
-		(instances
-			(project "PS-ChargerInterfacePCB"
-				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
-					(reference "D5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 59.69 22.86 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "6d079b99-027c-4abe-9520-9c6396024d08")
-		(property "Reference" "#PWR048"
-			(at 59.69 29.21 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 59.69 26.416 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Footprint" ""
-			(at 59.69 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 59.69 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 59.69 22.86 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "22150d26-edac-43ed-a501-50b507ad057f")
-		)
-		(instances
-			(project "PS-ChargerInterfacePCB"
-				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
-					(reference "#PWR048")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:LED")
-		(at 43.18 45.72 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "8368575f-6632-4065-b624-177904ad241a")
+		(uuid "147ee81e-3c85-4f7b-a896-9e6e96ef85ec")
 		(property "Reference" "D6"
-			(at 42.672 43.18 0)
+			(at 34.036 75.438 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify right)
 			)
 		)
 		(property "Value" "LED"
-			(at 42.926 43.18 0)
+			(at 34.036 77.216 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+				(justify right)
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 43.18 45.72 0)
+			(at 31.75 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1343,7 +2384,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 43.18 45.72 0)
+			(at 31.75 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1352,7 +2393,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 43.18 45.72 0)
+			(at 31.75 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1361,7 +2402,7 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
-			(at 43.18 45.72 0)
+			(at 31.75 76.2 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1369,74 +2410,20 @@
 				(hide yes)
 			)
 		)
-		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/ams-OSRAM/LS-Q976.01-N1Q2-1?qs=HoCaDK9Nz5ctGgaETs5C5Q%3D%3D"
-			(at 43.18 45.72 0)
+		(property "P/N" "NCD0603R1"
+			(at 31.75 76.2 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "Manufacturer" "Foshan NationStar Optoelectronics"
-			(at 43.18 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part #" "150040RS73240"
-			(at 43.18 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 43.18 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 43.18 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 43.18 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "P/N" "LS Q976.01-N1Q2-1"
-			(at 43.18 45.72 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "bb636bfc-9f70-412b-8cef-96e9da2d3010")
 		)
 		(pin "2"
-			(uuid "aaad7b63-b0d5-4e1e-8f17-99060dfaf2fd")
+			(uuid "508f7231-24d3-425d-a66c-d2f8271db898")
+		)
+		(pin "1"
+			(uuid "c4c30571-d5c1-4ea5-a2aa-56bbec2bcf8e")
 		)
 		(instances
 			(project "PS-ChargerInterfacePCB"
@@ -1448,33 +2435,17 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 50.8 22.86 270)
-		(mirror x)
+		(lib_id "power:GND")
+		(at 52.07 105.41 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b36f2469-4405-4156-8b6c-32a15c4e9d70")
-		(property "Reference" "R15"
-			(at 50.8 18.796 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "590R"
-			(at 50.8 20.828 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 50.8 24.638 90)
+		(fields_autoplaced yes)
+		(uuid "18b4cfce-ae3e-4801-ba47-2fd0c97ef8b3")
+		(property "Reference" "#PWR076"
+			(at 52.07 111.76 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1482,8 +2453,16 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
-			(at 50.8 22.86 0)
+		(property "Value" "GND"
+			(at 52.07 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 52.07 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1491,8 +2470,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 50.8 22.86 0)
+		(property "Datasheet" ""
+			(at 52.07 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1500,112 +2479,57 @@
 				(hide yes)
 			)
 		)
-		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Vishay/CRCW0402590RFKED?qs=sGAEpiMZZMvdGkrng054txEw7b1YnvGup5OXobtv2Yw%3D"
-			(at 50.8 22.86 90)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 52.07 105.41 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "Manufacturer" "Vishay"
-			(at 50.8 22.86 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part #" "RC0402FR-0722RL "
-			(at 50.8 22.86 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 50.8 22.86 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 50.8 22.86 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 50.8 22.86 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "P/N" "CRCW0402590RFKED"
-			(at 50.8 22.86 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "8dee3df4-06b6-4996-adfc-19d447d6aed1")
 		)
 		(pin "1"
-			(uuid "4155cd50-6723-4758-aa64-c7a726a35d8f")
+			(uuid "4730c7ec-73a0-4378-bfd6-fead3a5e4379")
 		)
 		(instances
 			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
-					(reference "R15")
+					(reference "#PWR076")
 					(unit 1)
 				)
 			)
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 50.8 38.1 270)
-		(mirror x)
+		(lib_id "Device:R_US")
+		(at 41.91 93.98 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "b5c6a30d-ed73-40a8-b874-0be0f8b18275")
+		(fields_autoplaced yes)
+		(uuid "1a715782-042e-42e6-8c4a-10c82fed8f77")
 		(property "Reference" "R17"
-			(at 50.8 34.036 90)
+			(at 44.45 92.7099 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "590R"
-			(at 50.8 36.068 90)
+		(property "Value" "100k"
+			(at 44.45 95.2499 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 50.8 39.878 90)
+			(at 40.132 93.98 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1614,7 +2538,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 50.8 38.1 0)
+			(at 41.91 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1623,7 +2547,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 50.8 38.1 0)
+			(at 41.91 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1631,8 +2555,8 @@
 				(hide yes)
 			)
 		)
-		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Vishay/CRCW0402590RFKED?qs=sGAEpiMZZMvdGkrng054txEw7b1YnvGup5OXobtv2Yw%3D"
-			(at 50.8 38.1 90)
+		(property "Part #" ""
+			(at 41.91 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1640,8 +2564,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Vishay"
-			(at 50.8 38.1 90)
+		(property "Sim.Pins" ""
+			(at 41.91 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1649,56 +2573,20 @@
 				(hide yes)
 			)
 		)
-		(property "Part #" "RC0402FR-0722RL "
-			(at 50.8 38.1 90)
+		(property "P/N" "CRCW0603100KFKEE"
+			(at 41.91 93.98 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(hide yes)
 			)
-		)
-		(property "MANUFACTURER" ""
-			(at 50.8 38.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 50.8 38.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 50.8 38.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "P/N" "CRCW0402590RFKED"
-			(at 50.8 38.1 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "c9a66b94-89ce-406b-92f2-5e02c98bec38")
 		)
 		(pin "1"
-			(uuid "b3de2d96-6dd2-42e8-b23b-839f6b0c3cc1")
+			(uuid "19d1a86a-d6b7-4131-86d1-a3ae8aeeb36a")
+		)
+		(pin "2"
+			(uuid "e5743344-8426-40ce-b42f-a1b4a950a385")
 		)
 		(instances
 			(project "PS-ChargerInterfacePCB"
@@ -1710,17 +2598,17 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 59.69 30.48 0)
-		(mirror y)
+		(lib_id "power:+12V")
+		(at 106.68 20.32 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "d98394cd-9484-4968-ab7b-d1649cef42ff")
-		(property "Reference" "#PWR049"
-			(at 59.69 36.83 0)
+		(fields_autoplaced yes)
+		(uuid "22316630-8108-4352-9b84-0317b948d110")
+		(property "Reference" "#PWR053"
+			(at 106.68 24.13 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1728,17 +2616,16 @@
 				(hide yes)
 			)
 		)
-		(property "Value" "GND"
-			(at 59.69 34.036 0)
+		(property "Value" "+14V"
+			(at 106.68 15.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
 			)
 		)
 		(property "Footprint" ""
-			(at 59.69 30.48 0)
+			(at 106.68 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1747,7 +2634,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 59.69 30.48 0)
+			(at 106.68 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1755,8 +2642,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 59.69 30.48 0)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 106.68 20.32 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1765,7 +2652,2024 @@
 			)
 		)
 		(pin "1"
-			(uuid "c3ba2f59-20ef-40f7-8d66-792e7443048d")
+			(uuid "63cef348-f974-4014-b743-e98437092c13")
+		)
+		(instances
+			(project ""
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "#PWR053")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 92.71 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2749bba7-74fd-44de-9cba-5cbc709153f2")
+		(property "Reference" "R34"
+			(at 94.742 65.278 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "470"
+			(at 94.742 67.818 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 90.932 66.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 92.71 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 92.71 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 92.71 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "P/N" "CRCW0603100KFKEE"
+			(at 92.71 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7512dbb6-23f6-4da2-a7ef-5a4d2c8f7752")
+		)
+		(pin "2"
+			(uuid "378c9f9f-d3ea-4f1b-b651-6a9f3e956eb7")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "R34")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 52.07 100.33 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "296f3501-f1a7-4d2f-abbc-a0396ba398b6")
+		(property "Reference" "D7"
+			(at 54.356 99.568 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 54.356 101.346 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 52.07 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 52.07 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 52.07 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 52.07 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "P/N" "NCD0603R1"
+			(at 52.07 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "ade4921d-d05e-4b80-ac5e-de841f6030f7")
+		)
+		(pin "1"
+			(uuid "3c149381-4a83-4c5f-8902-bf71c7f90be9")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "D7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "IRLML0030TRPBF:IRLML0030TRPBF")
+		(at 156.21 57.15 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "2a44444a-fde7-4390-84d7-30ff07bc082f")
+		(property "Reference" "Q13"
+			(at 172.466 57.404 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IRLML0030TRPBF"
+			(at 177.038 60.198 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "charger_parts:IRLML0030TRPBF"
+			(at 172.72 152.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.infineon.com/dgdl/irlml0030pbf.pdf?fileId=5546d462533600a401535664773825df"
+			(at 172.72 252.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "INFINEON - IRLML0030TRPBF - MOSFET, N CH, 30V, 5.3A, SOT23-3"
+			(at 155.956 44.704 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.12"
+			(at 172.72 452.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "942-IRLML0030TRPBF"
+			(at 172.72 552.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/IRLML0030TRPBF?qs=9%252BKlkBgLFf0lLJi3xz1alg%3D%3D"
+			(at 172.72 652.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Infineon"
+			(at 172.72 752.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "IRLML0030TRPBF"
+			(at 172.72 852.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 156.21 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 156.21 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "P/N" "IRLML0030TRPBF:SOT95P237X112-3N"
+			(at 156.21 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "48d19727-7b01-4903-85f0-1e6462fb8ef8")
+		)
+		(pin "1"
+			(uuid "a71f53dc-64fe-4e96-ada4-c4dcb3ad1bd8")
+		)
+		(pin "3"
+			(uuid "0b1331c4-b285-4e55-8d84-b3ef3978d749")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "Q13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 106.68 96.52 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "31c246a8-c26c-41ba-95e1-f65639e3f364")
+		(property "Reference" "#PWR051"
+			(at 106.68 102.87 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 106.68 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 106.68 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 106.68 96.52 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5b73d64c-ff1c-453a-843f-b82fc0d17023")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "#PWR051")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 153.67 73.66 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "404cad85-a497-497e-ac04-6958948a6de6")
+		(property "Reference" "D10"
+			(at 155.956 72.898 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 155.956 74.676 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 153.67 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 153.67 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 153.67 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 153.67 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "P/N" "NCD0603R1"
+			(at 153.67 73.66 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "42ef4815-4d7a-4fcb-aa31-88193b8b8904")
+		)
+		(pin "1"
+			(uuid "d1e168a4-d133-4663-be33-cf53ce25c6b1")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "D10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 31.75 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "40ff3185-ffaf-47bf-a0b5-5df992e3a39a")
+		(property "Reference" "R32"
+			(at 33.782 66.548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "470"
+			(at 33.782 69.088 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 29.972 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 31.75 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 31.75 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 31.75 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 31.75 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "P/N" "CRCW0603100KFKEE"
+			(at 31.75 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5b1f7166-eff0-4756-bd29-4ffa19cacbb9")
+		)
+		(pin "2"
+			(uuid "d16f65d2-d6ca-4c07-b2b8-7d23dda006e0")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "R32")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 106.68 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "458960f5-f0f3-4abe-91ac-2ea7ecad2e81")
+		(property "Reference" "R18"
+			(at 109.22 91.4399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 109.22 93.9799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 104.902 92.71 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 106.68 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 106.68 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 106.68 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 106.68 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "P/N" "CRCW0603100KFKEE"
+			(at 106.68 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "429f1665-be90-40d0-bb3a-18e08771e39d")
+		)
+		(pin "2"
+			(uuid "fd4b35ed-419d-4d10-95a1-6f0d86d0f1a3")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "R18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "IRLML0030TRPBF:IRLML0030TRPBF")
+		(at 53.34 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "465973a5-6e50-434f-91a5-e30a87f2c5cc")
+		(property "Reference" "Q6"
+			(at 68.326 83.566 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IRLML0030TRPBF"
+			(at 74.168 86.868 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "charger_parts:IRLML0030TRPBF"
+			(at 69.85 178.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.infineon.com/dgdl/irlml0030pbf.pdf?fileId=5546d462533600a401535664773825df"
+			(at 69.85 278.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "INFINEON - IRLML0030TRPBF - MOSFET, N CH, 30V, 5.3A, SOT23-3"
+			(at 53.086 71.374 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.12"
+			(at 69.85 478.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "942-IRLML0030TRPBF"
+			(at 69.85 578.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/IRLML0030TRPBF?qs=9%252BKlkBgLFf0lLJi3xz1alg%3D%3D"
+			(at 69.85 678.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Infineon"
+			(at 69.85 778.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "IRLML0030TRPBF"
+			(at 69.85 878.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 53.34 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 53.34 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "P/N" "IRLML0030TRPBF:SOT95P237X112-3N"
+			(at 53.34 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "670da13c-7919-493c-b0f8-1dda127be60e")
+		)
+		(pin "1"
+			(uuid "0aba1d13-0949-4e3c-ae5a-e342d8e2105a")
+		)
+		(pin "3"
+			(uuid "711fa140-8ed6-447d-ae0d-b30965715bc0")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "Q6")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 92.71 74.93 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5258414d-698f-43ec-b305-1644d8588014")
+		(property "Reference" "D8"
+			(at 94.996 74.168 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 94.996 75.946 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 92.71 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 92.71 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 92.71 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 92.71 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "P/N" "NCD0603R1"
+			(at 92.71 74.93 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "cf1f5dad-341c-45a9-a35a-b7ed8ccb4b2e")
+		)
+		(pin "1"
+			(uuid "20cec65e-bacd-41e4-9fb0-f567ba316c57")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "D8")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 116.84 100.33 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "53664249-8e97-429c-b5aa-eb9729de54ce")
+		(property "Reference" "D9"
+			(at 119.126 99.568 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 119.126 101.346 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 116.84 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 116.84 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" "1=K 2=A"
+			(at 116.84 100.33 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "P/N" "NCD0603R1"
+			(at 116.84 100.33 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "24968fd0-dbfe-4e7c-a12d-fc8cb74b62cc")
+		)
+		(pin "1"
+			(uuid "2801cdb3-2087-4028-b7a8-e4fe16fb2d8a")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 125.73 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5868c8df-6d02-4885-9756-5e7010b283e3")
+		(property "Reference" "#PWR056"
+			(at 125.73 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+14V"
+			(at 125.73 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 125.73 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 125.73 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 125.73 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5fdc059c-c25e-4a94-b403-fb116ce66083")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "#PWR056")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 104.14 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5b1c0537-d6c8-4678-8832-a457940da3b2")
+		(property "Reference" "#PWR058"
+			(at 104.14 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 104.14 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 104.14 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 104.14 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "4befc16c-634d-44be-906d-2506b88a2727")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "#PWR058")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 113.03 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "5cfaf00d-0d2c-4698-9297-73571badc57a")
+		(property "Reference" "#PWR054"
+			(at 113.03 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+14V"
+			(at 113.03 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 113.03 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 113.03 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 113.03 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fa3cbe45-8556-4a06-94ea-3a8f600f2075")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "#PWR054")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "IRLML0030TRPBF:IRLML0030TRPBF")
+		(at 40.64 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "5de4f9e3-b345-4b78-90cf-209a498b1d24")
+		(property "Reference" "Q7"
+			(at 56.896 58.674 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IRLML0030TRPBF"
+			(at 61.468 61.468 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "charger_parts:IRLML0030TRPBF"
+			(at 57.15 153.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.infineon.com/dgdl/irlml0030pbf.pdf?fileId=5546d462533600a401535664773825df"
+			(at 57.15 253.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "INFINEON - IRLML0030TRPBF - MOSFET, N CH, 30V, 5.3A, SOT23-3"
+			(at 40.386 45.974 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.12"
+			(at 57.15 453.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "942-IRLML0030TRPBF"
+			(at 57.15 553.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/IRLML0030TRPBF?qs=9%252BKlkBgLFf0lLJi3xz1alg%3D%3D"
+			(at 57.15 653.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Infineon"
+			(at 57.15 753.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "IRLML0030TRPBF"
+			(at 57.15 853.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 40.64 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 40.64 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "P/N" "IRLML0030TRPBF:SOT95P237X112-3N"
+			(at 40.64 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d305d381-c358-4cfe-987e-b1c07f5b5918")
+		)
+		(pin "1"
+			(uuid "bb5d1fd6-2d18-4f47-a1ca-d6effb48f766")
+		)
+		(pin "3"
+			(uuid "472b8e82-b94b-4640-8c55-dcd62c2a2aeb")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "Q7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 116.84 91.44 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "6436d46d-60ca-485f-8777-618fb1b09d6e")
+		(property "Reference" "R35"
+			(at 118.872 90.678 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "470"
+			(at 118.872 93.218 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 115.062 91.44 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 116.84 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 116.84 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 116.84 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 116.84 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "P/N" "CRCW0603100KFKEE"
+			(at 116.84 91.44 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b89621ef-4e3f-413f-97c5-7ceb7721bd8c")
+		)
+		(pin "2"
+			(uuid "1dba1fcf-da4c-4da6-875d-95cf171290e1")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "R35")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 143.51 69.85 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "72e7f6c5-97f0-4440-ab2f-86ba0f76326d")
+		(property "Reference" "#PWR062"
+			(at 143.51 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 143.764 74.422 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 143.51 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 143.51 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 143.51 69.85 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0e56de2b-68c9-4f78-b534-b9df6b6e40b2")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "#PWR062")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 20.32 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "76d982cc-00f2-4d55-b089-56cea73734c7")
+		(property "Reference" "#PWR048"
+			(at 20.32 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 20.32 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 20.32 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 20.32 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 20.32 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7cfb551d-b674-4e02-b1b2-85dac82f030f")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "#PWR048")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "IRLML0030TRPBF:IRLML0030TRPBF")
+		(at 93.98 58.42 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "76e0d9c8-59c5-4ff2-b46a-55dbd20431d9")
+		(property "Reference" "Q4"
+			(at 110.236 58.674 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IRLML0030TRPBF"
+			(at 114.808 61.468 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "charger_parts:IRLML0030TRPBF"
+			(at 110.49 153.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.infineon.com/dgdl/irlml0030pbf.pdf?fileId=5546d462533600a401535664773825df"
+			(at 110.49 253.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "INFINEON - IRLML0030TRPBF - MOSFET, N CH, 30V, 5.3A, SOT23-3"
+			(at 93.726 45.974 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.12"
+			(at 110.49 453.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "942-IRLML0030TRPBF"
+			(at 110.49 553.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/IRLML0030TRPBF?qs=9%252BKlkBgLFf0lLJi3xz1alg%3D%3D"
+			(at 110.49 653.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Infineon"
+			(at 110.49 753.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "IRLML0030TRPBF"
+			(at 110.49 853.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 93.98 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 93.98 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "P/N" "IRLML0030TRPBF:SOT95P237X112-3N"
+			(at 93.98 58.42 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "09e72bb2-1cfd-485d-8a10-40b3c6462061")
+		)
+		(pin "1"
+			(uuid "435db782-6864-47f8-87c8-cf4e98633dd6")
+		)
+		(pin "3"
+			(uuid "863b9e54-866c-4153-a61a-49f41cb07d00")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "Q4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 50.8 68.58 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7827fc51-1550-489e-9d5f-fee437b295ae")
+		(property "Reference" "#PWR052"
+			(at 50.8 74.93 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 50.8 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 50.8 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 50.8 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 50.8 68.58 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9330ab92-d50e-404e-8b4d-1d2f3beffb20")
+		)
+		(instances
+			(project ""
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "#PWR052")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 119.38 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "7b8c5301-ed56-4a07-bbf3-89e1f370aded")
+		(property "Reference" "#PWR055"
+			(at 119.38 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+14V"
+			(at 119.38 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 119.38 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 119.38 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 119.38 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2dfb433b-f751-4347-8391-6f8c01c70481")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 153.67 64.77 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7fc63eba-0a55-49ea-945c-efe48375b116")
+		(property "Reference" "R36"
+			(at 155.702 64.008 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "470"
+			(at 155.702 66.548 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 151.892 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 153.67 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 153.67 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 153.67 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 153.67 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "P/N" "CRCW0603100KFKEE"
+			(at 153.67 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0ae9d0de-9124-476e-ab39-f9f9e9f92890")
+		)
+		(pin "2"
+			(uuid "ffcad8c1-ac7c-4343-95ee-212bfed9da2d")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "R36")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 82.55 71.12 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "808d917b-e56d-481c-be19-bde9b91c87c0")
+		(property "Reference" "#PWR049"
+			(at 82.55 77.47 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 82.55 76.2 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 82.55 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 82.55 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 82.55 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "d1de366b-752e-45de-865f-cb3627bb1ac7")
 		)
 		(instances
 			(project "PS-ChargerInterfacePCB"
@@ -1777,34 +4681,34 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED")
-		(at 43.18 30.48 0)
-		(mirror y)
+		(lib_id "Device:R_US")
+		(at 52.07 91.44 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "e8a9073d-3753-42d5-8a9c-7e6aff13df54")
-		(property "Reference" "D4"
-			(at 42.672 27.94 0)
+		(uuid "8d6ebb9b-4dbd-4fd3-980d-58a40ccbc261")
+		(property "Reference" "R33"
+			(at 54.102 90.678 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "LED"
-			(at 42.926 27.94 0)
+		(property "Value" "470"
+			(at 54.102 93.218 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(hide yes)
+				(justify left)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 43.18 30.48 0)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 50.292 91.44 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1813,7 +4717,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 43.18 30.48 0)
+			(at 52.07 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1821,8 +4725,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Light emitting diode"
-			(at 43.18 30.48 0)
+		(property "Description" "Resistor"
+			(at 52.07 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1830,8 +4734,8 @@
 				(hide yes)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 43.18 30.48 0)
+		(property "Part #" ""
+			(at 52.07 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1839,8 +4743,8 @@
 				(hide yes)
 			)
 		)
-		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/ams-OSRAM/LS-Q976.01-N1Q2-1?qs=HoCaDK9Nz5ctGgaETs5C5Q%3D%3D"
-			(at 43.18 30.48 0)
+		(property "Sim.Pins" ""
+			(at 52.07 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1848,53 +4752,8 @@
 				(hide yes)
 			)
 		)
-		(property "Manufacturer" "Foshan NationStar Optoelectronics"
-			(at 43.18 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Part #" "150040RS73240"
-			(at 43.18 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 43.18 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 43.18 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 43.18 30.48 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "P/N" "LS Q976.01-N1Q2-1"
-			(at 43.18 30.48 0)
+		(property "P/N" "CRCW0603100KFKEE"
+			(at 52.07 91.44 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1903,15 +4762,1069 @@
 			)
 		)
 		(pin "1"
-			(uuid "ff66b1b6-d7dd-4cac-85bb-8c7c2dcb22ba")
+			(uuid "9321b9a6-34bf-46e6-a667-a8534ab17015")
 		)
 		(pin "2"
-			(uuid "9aa392d2-f667-4eda-a329-07edff0c4085")
+			(uuid "a80e2a07-fe01-49f2-b9c3-380661c48bae")
 		)
 		(instances
 			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
-					(reference "D4")
+					(reference "R33")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 20.32 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8e39890b-0084-436b-bf09-407c238c3004")
+		(property "Reference" "R15"
+			(at 22.86 66.0399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 22.86 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 18.542 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 20.32 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 20.32 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 20.32 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 20.32 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "P/N" "CRCW0603100KFKEE"
+			(at 20.32 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "65b5830a-44a0-4e12-8f02-32bb0d1b15b3")
+		)
+		(pin "2"
+			(uuid "247edf14-9e45-4cb3-a409-83a138ec3358")
+		)
+		(instances
+			(project ""
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "R15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 31.75 81.28 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "91f5e902-44f9-4b98-83e0-4132e8d82af3")
+		(property "Reference" "#PWR073"
+			(at 31.75 87.63 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 31.75 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 31.75 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 31.75 81.28 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "0a4707c4-0520-44e1-93d8-1cb0b4e1af2a")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "#PWR073")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 143.51 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "96710414-4c4d-4ee0-bcdd-f58ec6fa6e26")
+		(property "Reference" "R19"
+			(at 146.05 64.7699 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 146.05 67.3099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 141.732 66.04 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 143.51 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 143.51 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 143.51 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 143.51 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "P/N" "CRCW0603100KFKEE"
+			(at 143.51 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "34a38578-9941-41a6-9ba1-e3fa3b5d3ca9")
+		)
+		(pin "2"
+			(uuid "b1a658ab-c768-4ded-a8ff-b92f2b7ebaf7")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "R19")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+12V")
+		(at 132.08 20.32 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a02095ba-cbf0-48bc-961f-8d2655b586e2")
+		(property "Reference" "#PWR057"
+			(at 132.08 24.13 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+14V"
+			(at 132.08 15.24 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 132.08 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 132.08 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+12V\""
+			(at 132.08 20.32 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9ecb3b03-5784-48e3-a6c8-233f3696f4e3")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "#PWR057")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 82.55 67.31 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a335e267-3808-4650-bbb7-e91418373802")
+		(property "Reference" "R16"
+			(at 85.09 66.0399 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 85.09 68.5799 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 80.772 67.31 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 82.55 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 82.55 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 82.55 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 82.55 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "P/N" "CRCW0603100KFKEE"
+			(at 82.55 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "28b5c719-bee5-4253-8c67-aabcc1cac86b")
+		)
+		(pin "2"
+			(uuid "f1a1af72-956e-4a7b-8812-1deb3e8f92b2")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "R16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 166.37 66.04 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "af35ad20-e557-456e-8762-dadf88cc66fd")
+		(property "Reference" "#PWR061"
+			(at 166.37 72.39 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 166.37 71.12 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 166.37 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 166.37 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 166.37 66.04 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "bc16916a-9473-4d5c-9b44-c187b62d79c4")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "#PWR061")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 116.84 105.41 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "affa29d3-66a5-4840-83f1-2ab5e8b16cc6")
+		(property "Reference" "#PWR078"
+			(at 116.84 111.76 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 116.84 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 116.84 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 116.84 105.41 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "e2cdf443-43a1-4847-8f28-33ca3350052c")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "#PWR078")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 129.54 92.71 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b64fa5d9-74b7-4e83-ab6d-faadaec0bfc6")
+		(property "Reference" "#PWR060"
+			(at 129.54 99.06 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 129.54 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 129.54 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 129.54 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 129.54 92.71 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8b51c342-78d6-43dc-9d0e-03d53f5117db")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "#PWR060")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "IRLML0030TRPBF:IRLML0030TRPBF")
+		(at 119.38 83.82 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f2a09382-fefe-4e2e-a55f-fdb734201c3d")
+		(property "Reference" "Q5"
+			(at 135.636 84.074 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IRLML0030TRPBF"
+			(at 140.208 86.868 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "charger_parts:IRLML0030TRPBF"
+			(at 135.89 178.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "http://www.infineon.com/dgdl/irlml0030pbf.pdf?fileId=5546d462533600a401535664773825df"
+			(at 135.89 278.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "INFINEON - IRLML0030TRPBF - MOSFET, N CH, 30V, 5.3A, SOT23-3"
+			(at 119.126 71.374 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "1.12"
+			(at 135.89 478.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "942-IRLML0030TRPBF"
+			(at 135.89 578.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/IRLML0030TRPBF?qs=9%252BKlkBgLFf0lLJi3xz1alg%3D%3D"
+			(at 135.89 678.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Infineon"
+			(at 135.89 778.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "IRLML0030TRPBF"
+			(at 135.89 878.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 119.38 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 119.38 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "P/N" "IRLML0030TRPBF:SOT95P237X112-3N"
+			(at 119.38 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "71b684ce-56a3-490d-b001-fe18a2ba007c")
+		)
+		(pin "1"
+			(uuid "d347ee50-2b56-4947-a825-f8fd04847464")
+		)
+		(pin "3"
+			(uuid "824565ea-74d8-49b3-ad39-5e90074503e3")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "Q5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 92.71 80.01 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f58b3e3c-ed7e-457d-8b1d-597692d42f04")
+		(property "Reference" "#PWR077"
+			(at 92.71 86.36 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 92.71 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 92.71 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 92.71 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 92.71 80.01 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5a8a21b2-98f8-4d83-b3d7-cb84629198cb")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "#PWR077")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "105314-1110:105314-1110")
+		(at 63.5 19.05 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "f7b2918c-a0d5-4b92-96fa-57d06b429347")
+		(property "Reference" "Panel_LED801"
+			(at 75.184 33.274 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "105314-1110"
+			(at 74.93 13.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "charger_parts:105314-1110"
+			(at 82.55 113.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "https://www.molex.com/pdm_docs/sd/1053141110_sd.pdf"
+			(at 82.55 213.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Description" "NANOFIT HDR RA DLR 10CKT TIN BLK"
+			(at 63.5 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" "9.34"
+			(at 82.55 413.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Part Number" "538-105314-1110"
+			(at 82.55 513.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Molex/105314-1110?qs=5aG0NVq1C4wHjjc39sQ6ZQ%3D%3D"
+			(at 82.55 613.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Name" "Molex"
+			(at 82.55 713.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer_Part_Number" "105314-1110"
+			(at 82.55 813.97 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
+		)
+		(property "P/N" "105314-1110"
+			(at 63.5 19.05 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "3"
+			(uuid "3d9da172-f4f0-4346-b058-6ce54ba0d3ca")
+		)
+		(pin "7"
+			(uuid "0369819c-2d9a-470d-933a-694cddb9fdd0")
+		)
+		(pin "8"
+			(uuid "3e673464-1e0f-4870-833c-6f88b6814313")
+		)
+		(pin "9"
+			(uuid "e7fac819-daec-4c2d-909e-8fbd5a638b2b")
+		)
+		(pin "10"
+			(uuid "03fb5f78-ea2d-4316-907a-eb5988d8d305")
+		)
+		(pin "5"
+			(uuid "82f78cd1-8734-43df-b38d-7785628c2694")
+		)
+		(pin "4"
+			(uuid "7f1f81fc-013a-4ec0-b643-322cfd1d75e4")
+		)
+		(pin "6"
+			(uuid "d80a0df3-2d79-41ce-93a0-e04c1be55477")
+		)
+		(pin "2"
+			(uuid "362e9ea5-5fd4-4fe7-884f-ce923bbd73d1")
+		)
+		(pin "1"
+			(uuid "d117fc9b-38eb-4865-92b7-ff19071f0caa")
+		)
+		(instances
+			(project ""
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "Panel_LED801")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 153.67 78.74 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f947cce8-358a-46a6-b999-c366d3fbd2eb")
+		(property "Reference" "#PWR079"
+			(at 153.67 85.09 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 153.67 83.82 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 153.67 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 153.67 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 153.67 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "8c5f54f5-cd4e-4adf-9b7e-de555cf26e8b")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/bb9f496a-74d6-44ce-af81-3e80cd51536d"
+					(reference "#PWR079")
 					(unit 1)
 				)
 			)

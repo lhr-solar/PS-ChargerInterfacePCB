@@ -5,49 +5,52 @@
 	(uuid "3f6fc310-a492-4736-9ba1-8454b7f9af32")
 	(paper "A4")
 	(lib_symbols
-		(symbol "3568:3568"
+		(symbol "Connector:TestPoint"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0.762)
+				(hide yes)
+			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "U"
-				(at 16.51 7.62 0)
+			(property "Reference" "TP"
+				(at 0 6.858 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 				)
 			)
-			(property "Value" "3568"
-				(at 16.51 5.08 0)
+			(property "Value" "TestPoint"
+				(at 0 5.08 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 				)
 			)
-			(property "Footprint" "3568"
-				(at 16.51 -94.92 0)
+			(property "Footprint" ""
+				(at 5.08 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "Datasheet" ""
-				(at 16.51 -194.92 0)
+			(property "Datasheet" "~"
+				(at 5.08 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "Description" "Fuse Holder 30A 500V 1 Circuit Blade Through Hole"
+			(property "Description" "test point"
 				(at 0 0 0)
 				(effects
 					(font
@@ -56,89 +59,41 @@
 					(hide yes)
 				)
 			)
-			(property "Height" "7.5"
-				(at 16.51 -394.92 0)
+			(property "ki_keywords" "test point tp"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "Mouser Part Number" "534-3568"
-				(at 16.51 -494.92 0)
+			(property "ki_fp_filters" "Pin* Test*"
+				(at 0 0 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
-					(justify left top)
 					(hide yes)
 				)
 			)
-			(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/3568?qs=fP5bVVCrK%2Fd7nbA%2FPpwnKw%3D%3D"
-				(at 16.51 -594.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Name" "Keystone Electronics"
-				(at 16.51 -694.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer_Part_Number" "3568"
-				(at 16.51 -794.92 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left top)
-					(hide yes)
-				)
-			)
-			(symbol "3568_1_1"
-				(rectangle
-					(start 5.08 2.54)
-					(end 15.24 -5.08)
+			(symbol "TestPoint_0_1"
+				(circle
+					(center 0 3.302)
+					(radius 0.762)
 					(stroke
-						(width 0.254)
+						(width 0)
 						(type default)
 					)
 					(fill
-						(type background)
+						(type none)
 					)
 				)
+			)
+			(symbol "TestPoint_1_1"
 				(pin passive line
-					(at 0 0 0)
-					(length 5.08)
-					(name "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -2.54 0)
-					(length 5.08)
+					(at 0 0 90)
+					(length 2.54)
 					(name "1"
 						(effects
 							(font
@@ -147,42 +102,6 @@
 						)
 					)
 					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 20.32 0 180)
-					(length 5.08)
-					(name "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 20.32 -2.54 180)
-					(length 5.08)
-					(name "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -315,155 +234,6 @@
 					(at 0 -3.81 90)
 					(length 2.794)
 					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:D_Schottky"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 1.016)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "D6"
-				(at -0.3175 6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "D_Schottky"
-				(at -0.3175 3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "SK32A_LTP:SDO_DO-214AC-SMA_MCE"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://www.mouser.com/datasheet/3/225/1/SK32A-L-SK310A-L(SMA).pdf"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Schottky diode"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "diode Schottky"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "TO-???* *_Diode_* *SingleDiode* D_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "D_Schottky_0_1"
-				(polyline
-					(pts
-						(xy -1.905 0.635) (xy -1.905 1.27) (xy -1.27 1.27) (xy -1.27 -1.27) (xy -0.635 -1.27) (xy -0.635 -0.635)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "D_Schottky_1_1"
-				(pin passive line
-					(at -3.81 0 0)
-					(length 2.54)
-					(name "K"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 3.81 0 180)
-					(length 2.54)
-					(name "A"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -757,6 +527,142 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Fuse_1"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "F"
+				(at 0.127 -2.159 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Fuse"
+				(at 0.127 1.778 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0.127 -0.127 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Fuse"
+				(at 0.127 -0.127 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "fuse"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "*Fuse*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Fuse_1_0_1"
+				(rectangle
+					(start -2.413 0.635)
+					(end 2.667 -0.889)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 2.667 -0.127) (xy -2.413 -0.127)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "Fuse_1_1_1"
+				(pin passive line
+					(at -3.683 -0.127 0)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 3.937 -0.127 180)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1221,7 +1127,7 @@
 	)
 	(rectangle
 		(start 15.24 16.51)
-		(end 197.358 129.54)
+		(end 197.358 168.91)
 		(stroke
 			(width 0)
 			(type default)
@@ -1243,7 +1149,7 @@
 	)
 	(text "Ipeak = 0.54 * 160k/29.4k (standard component)\nIpeak = 2.938 A"
 		(exclude_from_sim no)
-		(at 101.854 109.728 0)
+		(at 141.224 110.998 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1253,7 +1159,7 @@
 	)
 	(text "Vin = Vuvlo (1+R1/R2)\nVin = 0.813 (1+R1/R2)\n8.943 = 0.813 (1+R1/R2)\nR1=10,000\nR2=1,000\n\n\nVuvlo = 0.813V"
 		(exclude_from_sim no)
-		(at 43.942 114.808 0)
+		(at 83.312 116.078 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1263,7 +1169,7 @@
 	)
 	(text "R1 = R11\nR2 = R12\nR12 < 500k ohms\nCurrent of R12 x100 of FB pin leak current\nFB pin leak current = 16nA\nVref = 1\n\nR11 = ((24-1)*64.9k)/1\nR11 = 1.49M --> 1.5M"
 		(exclude_from_sim no)
-		(at 156.21 115.57 0)
+		(at 115.57 144.78 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1362,12 +1268,6 @@
 		(uuid "8eb69b9a-2859-41da-8beb-b8dbc90beba5")
 	)
 	(junction
-		(at 144.78 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "95ad445a-2127-4e6c-9699-6911014d2c8c")
-	)
-	(junction
 		(at 92.71 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -1384,12 +1284,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "da706438-0cf9-491c-93ad-9535243cd67e")
-	)
-	(junction
-		(at 168.91 43.18)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "de66ce47-ab39-4385-8338-3909e3b693f4")
 	)
 	(junction
 		(at 104.14 87.63)
@@ -1419,6 +1313,16 @@
 	)
 	(wire
 		(pts
+			(xy 39.37 107.95) (xy 39.37 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "15379a89-527b-4b85-b865-aebb36da1603")
+	)
+	(wire
+		(pts
 			(xy 114.3 53.34) (xy 116.84 53.34)
 		)
 		(stroke
@@ -1426,6 +1330,16 @@
 			(type default)
 		)
 		(uuid "1683b0c1-bbb7-49e9-a963-c6cb55561a3c")
+	)
+	(wire
+		(pts
+			(xy 39.37 91.44) (xy 39.37 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "18346437-9e6a-4516-8c8d-ec2816dcc966")
 	)
 	(wire
 		(pts
@@ -1449,6 +1363,16 @@
 	)
 	(wire
 		(pts
+			(xy 38.1 72.39) (xy 38.1 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f7f1c8f-60b1-4693-9c6c-ed77a87ce420")
+	)
+	(wire
+		(pts
 			(xy 158.75 59.69) (xy 158.75 62.23)
 		)
 		(stroke
@@ -1469,7 +1393,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 43.18) (xy 132.08 43.18)
+			(xy 128.27 43.18) (xy 149.86 43.18)
 		)
 		(stroke
 			(width 0)
@@ -1509,13 +1433,13 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 43.18) (xy 175.26 43.18)
+			(xy 26.67 107.95) (xy 26.67 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "31895641-30bf-4914-a99b-bba514b06c7d")
+		(uuid "32eca755-2753-429f-a253-b6512bbcf14a")
 	)
 	(wire
 		(pts
@@ -1609,13 +1533,13 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 43.18) (xy 144.78 41.91)
+			(xy 27.94 120.65) (xy 27.94 127)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "52f7b8e1-50fd-4914-963e-86e4bbb408a5")
+		(uuid "5a40a088-a734-42b9-8cb1-8338aa75b4dd")
 	)
 	(wire
 		(pts
@@ -1649,13 +1573,13 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 44.45) (xy 144.78 43.18)
+			(xy 27.94 71.12) (xy 27.94 78.74)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "634e15bc-27c3-4871-b019-19f105ce5733")
+		(uuid "615f08e5-0347-497a-8e1f-aa1aa9c8ec2f")
 	)
 	(wire
 		(pts
@@ -1666,6 +1590,16 @@
 			(type default)
 		)
 		(uuid "64284371-dbd2-4347-bfa5-454553f1952b")
+	)
+	(wire
+		(pts
+			(xy 157.48 43.18) (xy 162.56 43.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6505680f-fe21-4bbc-a89f-0401a9fcea08")
 	)
 	(wire
 		(pts
@@ -1686,6 +1620,16 @@
 			(type default)
 		)
 		(uuid "6eb3a0eb-bb77-4c40-bdfe-c1f99789efb6")
+	)
+	(wire
+		(pts
+			(xy 27.94 91.44) (xy 27.94 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7d71bf15-a2ae-4871-97fc-351b96f167d0")
 	)
 	(wire
 		(pts
@@ -1719,13 +1663,13 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 44.45) (xy 144.78 44.45)
+			(xy 50.8 91.44) (xy 50.8 93.98)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "8b33c456-0ae0-4f72-b2b5-617c3cb60d1b")
+		(uuid "88feeaba-a06f-48ed-856a-284220a1ad38")
 	)
 	(wire
 		(pts
@@ -1789,16 +1733,6 @@
 	)
 	(wire
 		(pts
-			(xy 166.37 44.45) (xy 168.91 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a57ccd50-138d-4694-8ec6-83a8223d23e2")
-	)
-	(wire
-		(pts
 			(xy 97.79 67.31) (xy 97.79 69.85)
 		)
 		(stroke
@@ -1829,16 +1763,6 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 41.91) (xy 168.91 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ab46395e-6a29-4c02-a278-50d566d2fc6f")
-	)
-	(wire
-		(pts
 			(xy 119.38 43.18) (xy 128.27 43.18)
 		)
 		(stroke
@@ -1856,6 +1780,16 @@
 			(type default)
 		)
 		(uuid "acfc8c6e-a666-4a1c-a0f3-73f9ad918e09")
+	)
+	(wire
+		(pts
+			(xy 49.53 72.39) (xy 49.53 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b003f2ff-2ff5-4420-b9dc-862ee8c32216")
 	)
 	(wire
 		(pts
@@ -1936,16 +1870,6 @@
 			(type default)
 		)
 		(uuid "bca97d94-0042-4249-9bcb-37c9c5838998")
-	)
-	(wire
-		(pts
-			(xy 166.37 41.91) (xy 168.91 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c3c4f4b0-6f85-439d-801e-017eba3cb709")
 	)
 	(wire
 		(pts
@@ -2069,16 +1993,6 @@
 	)
 	(wire
 		(pts
-			(xy 168.91 44.45) (xy 168.91 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "e102ed46-42b2-4fbd-9811-8a6ac7abac33")
-	)
-	(wire
-		(pts
 			(xy 92.71 87.63) (xy 97.79 87.63)
 		)
 		(stroke
@@ -2086,26 +2000,6 @@
 			(type default)
 		)
 		(uuid "e7708d46-a565-4d11-9747-4f7338081150")
-	)
-	(wire
-		(pts
-			(xy 139.7 43.18) (xy 144.78 43.18)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec0e82dc-c58e-4fcd-8b80-70a4c90f2d78")
-	)
-	(wire
-		(pts
-			(xy 144.78 41.91) (xy 146.05 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f7cff112-3edc-4d71-ad57-740f7b407efe")
 	)
 	(wire
 		(pts
@@ -2118,7 +2012,7 @@
 		(uuid "fbbbae10-e595-4ac9-ba00-f7cd90cfda6a")
 	)
 	(image
-		(at 157.988 99.568)
+		(at 117.348 128.778)
 		(scale 0.386397)
 		(uuid "059605ab-2179-425b-a96e-7249112ae7b6")
 		(data "iVBORw0KGgoAAAANSUhEUgAAAfoAAACuCAYAAADefc8cAAAMS2lDQ1BJQ0MgUHJvZmlsZQAASImV"
@@ -2372,7 +2266,7 @@
 		)
 	)
 	(image
-		(at 102.108 99.568)
+		(at 141.478 100.838)
 		(scale 0.44302)
 		(uuid "4589b0f7-7e0e-4a69-b608-037a70ed5ee5")
 		(data "iVBORw0KGgoAAAANSUhEUgAAAbQAAAB8CAYAAAAB+EUrAAAMS2lDQ1BJQ0MgUHJvZmlsZQAASImV"
@@ -2712,7 +2606,7 @@
 		)
 	)
 	(image
-		(at 54.864 99.314)
+		(at 94.234 100.584)
 		(scale 0.505299)
 		(uuid "77370bac-6d4f-4285-acf2-eaa71e67d2ec")
 		(data "iVBORw0KGgoAAAANSUhEUgAAAjYAAACECAYAAACDK2FiAAAMS2lDQ1BJQ0MgUHJvZmlsZQAASImV"
@@ -3054,29 +2948,190 @@
 			"gg=="
 		)
 	)
-	(label "24V_Out_Fuse"
-		(at 143.51 43.18 90)
+	(label "VCC"
+		(at 87.63 68.58 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "0a710f3f-519d-416d-865e-9fd543e41112")
+	)
+	(label "SW"
+		(at 38.1 72.39 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "35614977-a692-4297-aa9c-fd00de92f0fb")
+	)
+	(label "COMP"
+		(at 92.71 67.31 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "e4031e28-4746-48a3-93ef-d15f84ee7f1a")
+		(uuid "473fce60-4469-43f5-a86e-cf6d45bf33b7")
 	)
-	(label "24VOut_B4Diodes"
-		(at 120.65 43.18 0)
+	(label "SW"
+		(at 95.25 29.21 90)
 		(effects
 			(font
-				(size 0.762 0.762)
+				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "e7b0fc95-3ff8-44dc-8772-6941de30753a")
+		(uuid "573dec2e-427b-42dd-a437-63f1b2d49318")
+	)
+	(label "VCC"
+		(at 50.8 91.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "5bfbfe51-3e69-4b61-ba0d-57fb1627d354")
+	)
+	(label "COMP"
+		(at 27.94 91.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "63d666ca-136d-4c36-ab69-3bef3491c9b6")
+	)
+	(label "ILIM"
+		(at 67.31 53.34 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "651dd8b1-6b95-42a6-9ad2-b283de855808")
+	)
+	(label "FB"
+		(at 26.67 107.95 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "69aab4b6-f367-45fd-9f53-97109d9748c5")
+	)
+	(label "BOOT"
+		(at 27.94 120.65 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "78b86f64-0cae-487f-957f-cea52b099b7d")
+	)
+	(label "BOOT"
+		(at 104.14 29.21 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7fe0dffb-c25f-4e9f-8624-ee61209e2c4e")
+	)
+	(label "24V_Out_Fuse"
+		(at 39.37 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a93d9bcd-477f-46ba-8d1e-2cbb0af4a6e1")
+	)
+	(label "EN{slash}UVLO"
+		(at 49.53 72.39 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "cb3ffa0a-072a-4f91-a574-adcfd5ed6dfb")
+	)
+	(label "FB"
+		(at 116.84 55.88 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "ceb85ded-3964-4511-84e5-a904928586b8")
+	)
+	(label "MODE"
+		(at 68.58 48.26 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "dc447edf-6241-4156-9325-05e77dbfda1b")
+	)
+	(label "24V_Out_Fuse"
+		(at 143.51 43.18 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e4031e28-4746-48a3-93ef-d15f84ee7f1a")
+	)
+	(label "ILIM"
+		(at 39.37 91.44 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e57f64a4-6c99-482a-8978-22578b58652d")
+	)
+	(label "EN{slash}UVLO"
+		(at 68.58 43.18 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f5029fe9-ba87-4e5c-85b3-1fc9994fd012")
+	)
+	(hierarchical_label "14V_IN_BC"
+		(shape input)
+		(at 27.94 71.12 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "18bdddd4-12cf-4e12-bb29-95d57f1563d1")
 	)
 	(hierarchical_label "24V_OUT_BC"
 		(shape output)
-		(at 175.26 43.18 0)
+		(at 162.56 43.18 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3085,7 +3140,7 @@
 		)
 		(uuid "57f237aa-f321-48ec-90ad-1b02cd0b5576")
 	)
-	(hierarchical_label "12V_IN_BC"
+	(hierarchical_label "14V_IN_BC"
 		(shape input)
 		(at 33.02 29.21 180)
 		(effects
@@ -3193,7 +3248,25 @@
 				(hide yes)
 			)
 		)
-		(property "P/N" "GCJ188R71E222KA01D"
+		(property "P/N" "0603B222K500NT"
+			(at 97.79 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 97.79 82.55 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 97.79 82.55 0)
 			(effects
 				(font
@@ -3212,6 +3285,118 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 38.1 78.74 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "0f15e4ef-2735-4c67-9e6d-a6aa00d5dcbf")
+		(property "Reference" "SW1"
+			(at 39.116 84.582 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 35.56 80.7721 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 33.02 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 33.02 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 38.1 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 38.1 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 38.1 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 38.1 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 38.1 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 38.1 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "c20f77c1-9dd2-43a9-afc8-ba55edc99553")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
+					(reference "SW1")
 					(unit 1)
 				)
 			)
@@ -3279,6 +3464,118 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
 					(reference "#PWR022")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 39.37 93.98 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "2d63f963-b27f-4359-886d-f942eeff5383")
+		(property "Reference" "ILIM1"
+			(at 41.402 99.568 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 36.83 96.0121 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 34.29 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 39.37 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 39.37 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 39.37 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 39.37 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 39.37 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 39.37 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "599be517-6c16-4b74-b538-adbbca4fe55a")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
+					(reference "ILIM1")
 					(unit 1)
 				)
 			)
@@ -3390,6 +3687,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part #" ""
+			(at 87.63 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 87.63 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "579c1d30-7f7c-446f-90c3-76554dd8cc9b")
 		)
@@ -3400,6 +3715,118 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
 					(reference "C2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 27.94 127 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "36957123-5f38-4e20-a432-814d5157665c")
+		(property "Reference" "BOOT1"
+			(at 29.972 132.842 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 25.4 129.0321 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 22.86 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 22.86 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 27.94 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 27.94 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 27.94 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 27.94 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 27.94 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 27.94 127 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "be79f772-52be-4971-b2fb-d47fbe233cdd")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
+					(reference "BOOT1")
 					(unit 1)
 				)
 			)
@@ -3511,6 +3938,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part #" ""
+			(at 92.71 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 92.71 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "dd8b7a9d-d511-4458-9c16-3768ce4ed274")
 		)
@@ -3588,6 +4033,118 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
 					(reference "#PWR020")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 39.37 110.49 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "3b7668f6-6661-4084-b953-3817c14daf2e")
+		(property "Reference" "24V_OUT1"
+			(at 43.18 116.332 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 36.83 112.5221 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm"
+			(at 34.29 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 34.29 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 39.37 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 39.37 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 39.37 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 39.37 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 39.37 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 39.37 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "7004c476-b043-46d5-ad88-85997163ecd4")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
+					(reference "24V_OUT1")
 					(unit 1)
 				)
 			)
@@ -3693,6 +4250,24 @@
 			)
 		)
 		(property "P/N" "CRCW06031K00FKEI"
+			(at 54.61 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 54.61 48.26 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 54.61 48.26 0)
 			(effects
 				(font
@@ -3815,7 +4390,25 @@
 				(hide yes)
 			)
 		)
-		(property "P/N" "CRCW060310K0FKEI"
+		(property "P/N" "CRCW060310K0FKEI "
+			(at 54.61 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 54.61 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 54.61 38.1 0)
 			(effects
 				(font
@@ -3900,6 +4493,118 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
 					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 27.94 78.74 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "566643bd-da9c-40cb-81d3-f14fe4312ee9")
+		(property "Reference" "+14V2"
+			(at 28.702 84.582 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 25.4 80.7721 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D3.0mm_Drill1.5mm"
+			(at 22.86 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 22.86 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 27.94 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 27.94 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 27.94 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 27.94 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 27.94 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 27.94 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2a2120dd-70eb-4f2f-8847-5109a532c05c")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
+					(reference "+14V2")
 					(unit 1)
 				)
 			)
@@ -4013,6 +4718,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part #" ""
+			(at 119.38 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 119.38 50.8 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "7e2dc7c0-b3b7-470b-b73a-c72283b5f6b4")
 		)
@@ -4053,7 +4776,7 @@
 				)
 			)
 		)
-		(property "Footprint" "XGL4020-472MEC:IND_XGL4020_COC"
+		(property "Footprint" "charger_parts:XGL4020_COC"
 			(at 90.17 29.21 0)
 			(effects
 				(font
@@ -4062,7 +4785,7 @@
 				(hide yes)
 			)
 		)
-		(property "Datasheet" "~"
+		(property "Datasheet" "https://www.coilcraft.com/getmedia/76c9c081-4945-4c85-9129-9356e1ad6734/xgl4020.pdf"
 			(at 90.17 29.21 0)
 			(effects
 				(font
@@ -4126,6 +4849,24 @@
 			)
 		)
 		(property "P/N" "XGL4020-472MEC"
+			(at 90.17 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 90.17 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 90.17 29.21 90)
 			(effects
 				(font
@@ -4257,6 +4998,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part #" ""
+			(at 67.31 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 67.31 34.29 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "101e7b10-ba4e-491a-9933-41219c65fed3")
 		)
@@ -4304,6 +5063,7 @@
 					(size 1.27 1.27)
 				)
 				(justify left top)
+				(hide yes)
 			)
 		)
 		(property "Datasheet" "https://www.ti.com/lit/ds/symlink/tps61377.pdf"
@@ -4411,6 +5171,24 @@
 			)
 		)
 		(property "P/N" "TPS613771RYHR"
+			(at 76.2 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 76.2 38.1 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 76.2 38.1 0)
 			(effects
 				(font
@@ -4567,6 +5345,24 @@
 			)
 		)
 		(property "P/N" "CRCW060364K9FKEA"
+			(at 119.38 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 119.38 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 119.38 67.31 0)
 			(effects
 				(font
@@ -4763,6 +5559,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part #" ""
+			(at 100.33 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 100.33 29.21 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "979e6fc6-951a-48d7-8018-5df3a2ba7da0")
 		)
@@ -4886,6 +5700,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part #" ""
+			(at 97.79 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 97.79 73.66 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "2"
 			(uuid "ea3836d7-af29-4cfb-a3fe-43c8507c297d")
 		)
@@ -4896,6 +5728,118 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
 					(reference "R9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 49.53 78.74 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "98f66c58-8980-4527-a6cf-d65e40f47461")
+		(property "Reference" "EN/UVLO1"
+			(at 51.562 84.582 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 46.99 80.7721 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 44.45 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 44.45 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 49.53 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 49.53 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 49.53 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 49.53 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 49.53 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 49.53 78.74 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "2aac9885-f028-4553-b83d-5f12cb07c695")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
+					(reference "EN/UVLO1")
 					(unit 1)
 				)
 			)
@@ -5009,6 +5953,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part #" ""
+			(at 67.31 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 67.31 57.15 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "4ffb28c6-0dee-4b69-b7fb-496165b2d3f3")
 		)
@@ -5019,128 +5981,6 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
 					(reference "R8")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:D_Schottky")
-		(at 135.89 43.18 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "9fd14b9a-6d87-4d73-89ae-7d6f357b4250")
-		(property "Reference" "D1"
-			(at 136.2075 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "D_Schottky"
-			(at 136.2075 39.37 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "SK32A_LTP:SDO_DO-214AC-SMA_MCE"
-			(at 135.89 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.com/datasheet/3/225/1/SK32A-L-SK310A-L(SMA).pdf"
-			(at 135.89 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Schottky diode"
-			(at 135.89 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "MANUFACTURER" ""
-			(at 135.89 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "PARTREV" ""
-			(at 135.89 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "STANDARD" ""
-			(at 135.89 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Micro-Commercial-Components-MCC/SK32A-LTP?qs=JeAkOuORR2U5XhGW5SLK2g%3D%3D&srsltid=AfmBOoqFiyx6irMBt28Q3Vo65pAmn7yAO98wOsjACKNj2Ab_fSU83u8p"
-			(at 135.89 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "Micro Commercial Components (MCC)"
-			(at 135.89 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "P/N" "SK32A-LTP"
-			(at 135.89 43.18 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "499ba073-2003-41da-ad9b-22234689a000")
-		)
-		(pin "2"
-			(uuid "b9496c76-cc9c-4e70-a2c2-ead7f83931ff")
-		)
-		(instances
-			(project ""
-				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
-					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -5246,6 +6086,24 @@
 			)
 		)
 		(property "P/N" "GRM21BR61E226ME44L "
+			(at 138.43 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 138.43 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 138.43 55.88 0)
 			(effects
 				(font
@@ -5444,6 +6302,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part #" ""
+			(at 128.27 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 128.27 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "5b83799d-0973-4365-a9c5-f9ba13ddd765")
 		)
@@ -5567,6 +6443,24 @@
 				(hide yes)
 			)
 		)
+		(property "Part #" ""
+			(at 148.59 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 148.59 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
 		(pin "1"
 			(uuid "c5ac80b8-d415-48c3-a16f-f9c6f1294c57")
 		)
@@ -5650,25 +6544,249 @@
 		)
 	)
 	(symbol
-		(lib_id "3568:3568")
-		(at 146.05 41.91 0)
+		(lib_id "Connector:TestPoint")
+		(at 27.94 93.98 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "c46f82b9-914a-4e0b-9b35-ccaecca027a6")
+		(property "Reference" "COMP1"
+			(at 30.226 100.076 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 25.4 96.0121 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 22.86 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 22.86 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 27.94 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 27.94 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 27.94 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 27.94 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 27.94 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 27.94 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "fc979959-0e92-41dc-9517-84b25a05400f")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
+					(reference "COMP1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 26.67 110.49 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "c530115a-5405-406b-8cbd-987d29ccafc1")
+		(property "Reference" "FB1"
+			(at 27.432 116.078 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 24.13 112.5221 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 21.59 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 21.59 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 26.67 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 26.67 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 26.67 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 26.67 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 26.67 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 26.67 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "5367968e-8ba7-43ee-bfc2-1a92bcfd4e0e")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
+					(reference "FB1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "Fuse_1")
+		(lib_id "Device:Fuse")
+		(at 153.543 43.053 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c7d9e8b7-7325-4d5c-9fb7-667b2146a66f")
 		(property "Reference" "U2"
-			(at 156.21 34.29 0)
+			(at 153.67 38.354 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "3568"
-			(at 156.21 36.83 0)
+		(property "Value" "4A"
+			(at 153.67 40.894 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5676,7 +6794,7 @@
 			)
 		)
 		(property "Footprint" "3568:3568"
-			(at 162.56 136.83 0)
+			(at 170.053 137.973 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5686,7 +6804,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.keyelco.com/userAssets/file/M65p42.pdf"
-			(at 162.56 236.83 0)
+			(at 170.053 237.973 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5696,7 +6814,7 @@
 			)
 		)
 		(property "Description" "Fuse Holder 30A 500V 1 Circuit Blade Through Hole"
-			(at 146.05 41.91 0)
+			(at 153.543 43.053 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5705,7 +6823,7 @@
 			)
 		)
 		(property "Height" "7.5"
-			(at 162.56 436.83 0)
+			(at 170.053 437.973 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5715,7 +6833,7 @@
 			)
 		)
 		(property "Mouser Part Number" "534-3568"
-			(at 162.56 536.83 0)
+			(at 170.053 537.973 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5725,7 +6843,7 @@
 			)
 		)
 		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Keystone-Electronics/3568?qs=fP5bVVCrK%2Fd7nbA%2FPpwnKw%3D%3D"
-			(at 162.56 636.83 0)
+			(at 170.053 637.973 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5735,7 +6853,7 @@
 			)
 		)
 		(property "Manufacturer_Name" "Keystone Electronics"
-			(at 162.56 736.83 0)
+			(at 170.053 737.973 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5745,7 +6863,7 @@
 			)
 		)
 		(property "Distrbutor Link" "https://www.mouser.com/ProductDetail/Keystone-Electronics/3568?qs=fP5bVVCrK%2Fd7nbA%2FPpwnKw%3D%3D"
-			(at 146.05 41.91 0)
+			(at 153.543 43.053 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5754,7 +6872,7 @@
 			)
 		)
 		(property "Manufacturer" "Keystone Electronics"
-			(at 146.05 41.91 0)
+			(at 153.543 43.053 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5763,7 +6881,7 @@
 			)
 		)
 		(property "P/N" "3568"
-			(at 146.05 41.91 0)
+			(at 153.543 43.053 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5771,11 +6889,33 @@
 				(hide yes)
 			)
 		)
-		(pin "3"
-			(uuid "7ea88603-8669-4b14-9440-3c70a55b154a")
+		(property "Manufacturer_Part_Number" "3568"
+			(at 170.053 837.973 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+				(hide yes)
+			)
 		)
-		(pin "4"
-			(uuid "b4cae4a8-3aa8-4de2-8f49-60ca9a414f6b")
+		(property "Part #" ""
+			(at 153.543 43.053 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 153.543 43.053 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "1"
 			(uuid "44e1177b-1d9e-4fd5-8688-504457249120")
@@ -5787,6 +6927,118 @@
 			(project ""
 				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
 					(reference "U2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 50.8 93.98 180)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(uuid "dc9900ce-dd5a-4138-88f7-ad2c66511df1")
+		(property "Reference" "VCC1"
+			(at 52.578 99.822 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "TestPoint"
+			(at 48.26 96.0121 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+				(hide yes)
+			)
+		)
+		(property "Footprint" "TestPoint:TestPoint_THTPad_D1.5mm_Drill0.7mm"
+			(at 45.72 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 45.72 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "test point"
+			(at 50.8 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 50.8 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "PARTREV" ""
+			(at 50.8 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "STANDARD" ""
+			(at 50.8 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 50.8 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
+			(at 50.8 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "33985891-c320-4996-87ea-46ad245a6609")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/d45494af-ff47-4110-bed2-dd613b557244/a5946dd4-2cac-491d-9b85-f213ab9011e7"
+					(reference "VCC1")
 					(unit 1)
 				)
 			)
@@ -5959,6 +7211,24 @@
 			)
 		)
 		(property "P/N" "GRM21BR61E226ME44L "
+			(at 158.75 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Part #" ""
+			(at 158.75 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Pins" ""
 			(at 158.75 55.88 0)
 			(effects
 				(font
