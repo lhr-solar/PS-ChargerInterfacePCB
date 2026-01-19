@@ -1,0 +1,46 @@
+site_name: Embedded Sharepoint Documentation
+site_description: Software library shared among LHRS embedded systems
+site_author: LHR - Solar
+
+theme:
+  name: material
+  favicon: LHRs.ico
+  palette:
+  - scheme: slate
+    primary: blue
+
+nav:
+  - Home: 'README.md'
+  - Installation: 'Installation.md'
+  - Flashing and Debugging: 'FlashAndTheBug.md'
+  - Adding Embedded Sharepoint: 'SharepointSubmodule.md'
+  - CubeMX: 'CubeMX.md'
+  - STM32 Ports: 'STM32_Ports.md'
+
+  - CAN Messages:
+      - Signals & Messages: 'DBC.md'
+
+plugins:
+  - macros:
+      include_dir: docs/ 
+  - search:
+      prebuild_index: true
+      lang: en
+  - mkdoxy:
+      projects:
+      full-doc: True
+      save-api: .mkdoxy
+      BSP:
+          src-dirs: bsp/Src/* bsp/Inc/*
+          full-doc: True
+          GENERATE_MARKDOWN: YES
+          nav-title: BSP
+          doxy-cfg:
+            FILE_PATTERNS: "*.c *.h*"
+            RECURSIVE: True
+
+  - redirects:
+      redirect_maps: {}
+
+extra_javascript: []
+extra_css: []

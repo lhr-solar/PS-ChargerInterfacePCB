@@ -1,0 +1,29 @@
+#ifndef pinDef_H
+#define pinDef_H
+
+
+//LEDs
+#define HV_ACTIVE_LED_PORT GPIOB
+#define HV_ACTIVE_LED_PIN GPIO_PIN_1
+
+#define HEART_LED_PORT GPIOA
+#define HEART_LED_PIN GPIO_PIN_2
+
+#define FAULT_LED_PORT GPIOB
+#define FAULT_LED_PIN GPIO_PIN_0
+
+#define CHARGE_ACTIVE_LED_PORT GPIOA
+#define CHARGE_ACTIVE_LED_PIN GPIO_PIN_1
+
+#define EVSE_ACTIVE_LED_PORT GPIOA
+#define EVSE_ACTIVE_LED_PIN GPIO_PIN_0
+
+//Buzzer
+#define BUZZER_PORT GPIOB
+#define BUZZER_PIN GPIO_PIN_2
+
+//EStop
+#define ESTOP_PORT GPIOB
+#define ESTOP_PIN GPIO_PIN_13
+
+#endif
