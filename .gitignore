@@ -39,3 +39,7 @@ Production/
 
 # Backups
 *-backups/*
+
+.venv/
+build/
+.vscode/
