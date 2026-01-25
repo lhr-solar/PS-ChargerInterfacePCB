@@ -19,7 +19,7 @@
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
 #include "tim.h"
-#include "gpio.h"
+#include "Buzzer1.h"
 
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
@@ -86,14 +86,11 @@ int main(void)
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
-  MX_GPIO_Init();
-  MX_TIM2_Init();
+  MX_TIM5_Init();
   /* USER CODE BEGIN 2 */
 
-  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);
-  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 500); // 50%duty cycle
+  Buzzer_Init();
 
-  
 
   /* USER CODE END 2 */
 
@@ -102,8 +99,10 @@ int main(void)
   while (1)
   {
     /* USER CODE END WHILE */
-    
-    
+
+
+  
+
 
     
     /* USER CODE BEGIN 3 */
@@ -137,6 +136,7 @@ void SystemClock_Config(void)
   RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
   RCC_OscInitStruct.PLL.PLLQ = RCC_PLLQ_DIV2;
   RCC_OscInitStruct.PLL.PLLR = RCC_PLLR_DIV2;
+  
   if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
   {
     Error_Handler();
@@ -159,17 +159,7 @@ void SystemClock_Config(void)
 
 /* USER CODE BEGIN 4 */
 
-void user_pwm_setvalue(uint16_t value)
-{
-    TIM_OC_InitTypeDef sConfigOC;
-  
-    sConfigOC.OCMode = TIM_OCMODE_PWM1;
-    sConfigOC.Pulse = value;
-    sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
-    sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
-    HAL_TIM_PWM_ConfigChannel(&htim2, &sConfigOC, TIM_CHANNEL_1);
-    HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);  
-}
+
 
 /* USER CODE END 4 */
 

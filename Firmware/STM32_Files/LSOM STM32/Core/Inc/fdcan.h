@@ -1,9 +1,9 @@
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
-  * @file    gpio.c
-  * @brief   This file provides code for the configuration
-  *          of all used GPIO pins.
+  * @file    fdcan.h
+  * @brief   This file contains all the function prototypes for
+  *          the fdcan.c file
   ******************************************************************************
   * @attention
   *
@@ -17,31 +17,39 @@
   ******************************************************************************
   */
 /* USER CODE END Header */
+/* Define to prevent recursive inclusion -------------------------------------*/
+#ifndef __FDCAN_H__
+#define __FDCAN_H__
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "gpio.h"
+#include "main.h"
 
-/* USER CODE BEGIN 0 */
+/* USER CODE BEGIN Includes */
 
-/* USER CODE END 0 */
+/* USER CODE END Includes */
 
-/*----------------------------------------------------------------------------*/
-/* Configure GPIO                                                             */
-/*----------------------------------------------------------------------------*/
-/* USER CODE BEGIN 1 */
+extern FDCAN_HandleTypeDef hfdcan1;
 
-/* USER CODE END 1 */
+extern FDCAN_HandleTypeDef hfdcan3;
 
-/** Pinout Configuration
-*/
-void MX_GPIO_Init(void)
-{
+/* USER CODE BEGIN Private defines */
 
-  /* GPIO Ports Clock Enable */
-  __HAL_RCC_GPIOA_CLK_ENABLE();
+/* USER CODE END Private defines */
 
+void MX_FDCAN1_Init(void);
+void MX_FDCAN3_Init(void);
+
+/* USER CODE BEGIN Prototypes */
+
+/* USER CODE END Prototypes */
+
+#ifdef __cplusplus
 }
+#endif
 
-/* USER CODE BEGIN 2 */
+#endif /* __FDCAN_H__ */
 
-/* USER CODE END 2 */

@@ -18,6 +18,9 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "main.h"
+#include "cmsis_os.h"
+#include "fdcan.h"
+#include "spi.h"
 #include "tim.h"
 #include "gpio.h"
 
@@ -49,6 +52,7 @@
 
 /* Private function prototypes -----------------------------------------------*/
 void SystemClock_Config(void);
+void MX_FREERTOS_Init(void);
 /* USER CODE BEGIN PFP */
 
 /* USER CODE END PFP */
@@ -87,25 +91,30 @@ int main(void)
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
+  MX_FDCAN1_Init();
+  MX_FDCAN3_Init();
+  MX_SPI3_Init();
   MX_TIM2_Init();
+  MX_TIM5_Init();
   /* USER CODE BEGIN 2 */
 
-  HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);
-  __HAL_TIM_SET_COMPARE(&htim2, TIM_CHANNEL_1, 500); // 50%duty cycle
-
-  
-
   /* USER CODE END 2 */
+
+  /* Init scheduler */
+  osKernelInitialize();  /* Call init function for freertos objects (in cmsis_os2.c) */
+  MX_FREERTOS_Init();
+
+  /* Start scheduler */
+  osKernelStart();
+
+  /* We should never get here as control is now taken by the scheduler */
 
   /* Infinite loop */
   /* USER CODE BEGIN WHILE */
   while (1)
   {
     /* USER CODE END WHILE */
-    
-    
 
-    
     /* USER CODE BEGIN 3 */
   }
   /* USER CODE END 3 */
@@ -159,19 +168,29 @@ void SystemClock_Config(void)
 
 /* USER CODE BEGIN 4 */
 
-void user_pwm_setvalue(uint16_t value)
-{
-    TIM_OC_InitTypeDef sConfigOC;
-  
-    sConfigOC.OCMode = TIM_OCMODE_PWM1;
-    sConfigOC.Pulse = value;
-    sConfigOC.OCPolarity = TIM_OCPOLARITY_HIGH;
-    sConfigOC.OCFastMode = TIM_OCFAST_DISABLE;
-    HAL_TIM_PWM_ConfigChannel(&htim2, &sConfigOC, TIM_CHANNEL_1);
-    HAL_TIM_PWM_Start(&htim2, TIM_CHANNEL_1);  
-}
-
 /* USER CODE END 4 */
+
+/**
+  * @brief  Period elapsed callback in non blocking mode
+  * @note   This function is called  when TIM6 interrupt took place, inside
+  * HAL_TIM_IRQHandler(). It makes a direct call to HAL_IncTick() to increment
+  * a global variable "uwTick" used as application time base.
+  * @param  htim : TIM handle
+  * @retval None
+  */
+void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim)
+{
+  /* USER CODE BEGIN Callback 0 */
+
+  /* USER CODE END Callback 0 */
+  if (htim->Instance == TIM6)
+  {
+    HAL_IncTick();
+  }
+  /* USER CODE BEGIN Callback 1 */
+
+  /* USER CODE END Callback 1 */
+}
 
 /**
   * @brief  This function is executed in case of error occurrence.

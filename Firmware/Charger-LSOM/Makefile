@@ -25,7 +25,7 @@ TEST ?= main
 # If it's a PSOM then do - stm32l431cbt
 # Else pick whatever STM32 p/n it is (all options are in docs/STM32_Ports.md)
 ####
-PROJECT_TARGET ?= stm32g474xx
+PROJECT_TARGET ?= stm32g473xx
 ####
 
 # ❗ CHANGE THIS ❗
@@ -54,7 +54,7 @@ MAKEFILE_DIR = $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 # Define where the main function is relative to the Makefile
 # It's suggested to create a core or apps directory where high level code is placed
 ####
-PROJECT_MAIN_DIR ?= core/Src/main
+PROJECT_MAIN_DIR ?= Core/Src/main
 ####
 
 ifneq ($(TEST), main)

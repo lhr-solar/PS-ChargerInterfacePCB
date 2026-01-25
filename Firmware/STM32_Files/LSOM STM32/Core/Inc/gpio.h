@@ -1,9 +1,9 @@
 /* USER CODE BEGIN Header */
 /**
   ******************************************************************************
-  * @file    gpio.c
-  * @brief   This file provides code for the configuration
-  *          of all used GPIO pins.
+  * @file    gpio.h
+  * @brief   This file contains all the function prototypes for
+  *          the gpio.c file
   ******************************************************************************
   * @attention
   *
@@ -17,31 +17,33 @@
   ******************************************************************************
   */
 /* USER CODE END Header */
+/* Define to prevent recursive inclusion -------------------------------------*/
+#ifndef __GPIO_H__
+#define __GPIO_H__
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 
 /* Includes ------------------------------------------------------------------*/
-#include "gpio.h"
+#include "main.h"
 
-/* USER CODE BEGIN 0 */
+/* USER CODE BEGIN Includes */
 
-/* USER CODE END 0 */
+/* USER CODE END Includes */
 
-/*----------------------------------------------------------------------------*/
-/* Configure GPIO                                                             */
-/*----------------------------------------------------------------------------*/
-/* USER CODE BEGIN 1 */
+/* USER CODE BEGIN Private defines */
 
-/* USER CODE END 1 */
+/* USER CODE END Private defines */
 
-/** Pinout Configuration
-*/
-void MX_GPIO_Init(void)
-{
+void MX_GPIO_Init(void);
 
-  /* GPIO Ports Clock Enable */
-  __HAL_RCC_GPIOA_CLK_ENABLE();
+/* USER CODE BEGIN Prototypes */
 
+/* USER CODE END Prototypes */
+
+#ifdef __cplusplus
 }
+#endif
+#endif /*__ GPIO_H__ */
 
-/* USER CODE BEGIN 2 */
-
-/* USER CODE END 2 */

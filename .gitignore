@@ -43,3 +43,5 @@ Production/
 .venv/
 build/
 .vscode/
+
+/STM32_Files
