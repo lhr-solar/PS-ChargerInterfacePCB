@@ -1,81 +1,39 @@
-#include "Buzzer.h"
+#ifndef COMMON_H
+#define COMMON_H
+
+#include "stm32xx_hal.h"
 #include "tim.h"
-#include <stdlib.h>
-#include "pinDef.h"
-#include "FreeRTOS.h"
-#include "task.h"
+
+#define FAULT_MESSAGE_DELAY pdMS_TO_TICKS(200)
+
+extern uint32_t fault_bitmap;
+
+typedef enum {
+    FAULT_NONE = 0,
+
+    FAULT_ESTOP = 1 << 1,
+
+    FAULT_ELCON_UV = 1 << 2,
+    FAULT_ELCON_OV = 1 << 3,
+    FAULT_ELCON_OC = 1 << 4,
+
+    FAULT_BPS_OV = 1 << 8,
+    FAULT_BPS_OC = 1 << 9,
+
+    FAULT_DISPLAY = 1 << 10,
+    FAULT_BUZZER = 1 << 11,
+
+    FAULT_HEARTBEAT_MISSED = 1 << 12
+} fault_state_t;
 
 
-StaticTask_t initTaskBuffer;
-StackType_t initTaskStack[configMINIMAL_STACK_SIZE];
-StaticTask_t BuzzerTask_Charging_Buffer;
-StackType_t BuzzerTask_ChargingStack[configMINIMAL_STACK_SIZE];
-StaticTask_t BuzzerTask_Alarm_Buffer;
-StackType_t BuzzerTask_AlarmStack[configMINIMAL_STACK_SIZE];
-
-
-
-void BuzzerTask_Charging(void* argument){
-    
-    while(1){
-        ChargeStart();
-        vTaskDelay(pdMS_TO_TICKS(2000));
-        ChargeStop();
-        vTaskDelay(pdMS_TO_TICKS(2000));
-    }
-}
-
-void BuzzerTask_Alarm(void* argument){
-    
-
-    while(1){
-        Alarm();
-        vTaskDelay(pdMS_TO_TICKS(2000));
-    }
-}
-
-
-int main (void) {
-
-    HAL_Init();
-    SystemClock_Config();
-    MX_TIM5_Init();
-    Buzzer_Init();
-
-     xTaskCreateStatic(BuzzerTask_Alarm,
-        "Buzzer Task Alarm",
-        configMINIMAL_STACK_SIZE,
-        NULL,
-        tskIDLE_PRIORITY + 2,
-        BuzzerTask_AlarmStack,
-        &BuzzerTask_Alarm_Buffer);
-
-    xTaskCreateStatic(BuzzerTask_Charging,
-        "Buzzer Task Charging",
-        configMINIMAL_STACK_SIZE,
-        NULL,
-        tskIDLE_PRIORITY + 5,
-        BuzzerTask_ChargingStack,
-        &BuzzerTask_Charging_Buffer);
-
-    vTaskStartScheduler();
-
-    while (1){
-
-
-    }
-
-    return 0; 
-
-}
 
 void SystemClock_Config(void)
 {
   RCC_OscInitTypeDef RCC_OscInitStruct = {0};
   RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
 
-  /** Configure the main internal regulator output voltage
-  */
+
   HAL_PWREx_ControlVoltageScaling(PWR_REGULATOR_VOLTAGE_SCALE1);
 
   /** Initializes the RCC Oscillators according to the specified parameters
@@ -111,3 +69,5 @@ void SystemClock_Config(void)
     Error_Handler();
   }
 }
+
+#endif

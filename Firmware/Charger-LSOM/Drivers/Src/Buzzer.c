@@ -1,8 +1,16 @@
-#include "Buzzer1.h"
+
+/* Copyright (c) 2018-2026 UT Longhorn Racing Solar */
+/** Buzzer.c
+ * Wrapper that holds all buzzer/PWM related functionality.
+ */
+
+#include "Buzzer.h"
 #include "common.h"
 #include "tim.h"
 #include <stdlib.h>
 #include "pinDef.h"
+
+
 
 //states of variables
 bool buzzer_active = false;
@@ -77,7 +85,7 @@ void ChargeStop(void)
 }
 
 // kaboom sound: fast variable between 2.4 kHz and 1.8 kHz
-void Alarm(void) 
+void ChargeAlarm(void) 
 {
     
     s_alarm = true;

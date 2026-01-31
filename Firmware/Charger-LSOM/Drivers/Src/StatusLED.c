@@ -5,8 +5,6 @@
 
 void Status_Leds_Init(void){
 
-
-    
       // Initialize GPIO pins on GPIO A for Status LEDs
     GPIO_InitTypeDef led_a_init = {
       led_a_init.Mode = GPIO_MODE_OUTPUT_PP,
@@ -33,12 +31,7 @@ typedef struct {
     uint16_t pin;
 } LEDPins;
 
-static const LEDPins LEDMaps[NUM_STATUS_LED] = {
-    [CHARGE_FAULT_LED] = {CHARGE_FAULT_LED, CHARGE_FAULT_LED},  
-    [HEARTBEAT_SENSE_LED] = {HEARTBEAT_SENSE_LED, HEARTBEAT_SENSE_LED},
-    [BPS_SENSE_LED] = {BPS_SENSE_LED, BPS_SENSE_LED},
-    [ELCON_SENSE_LED] = {ELCON_SENSE_LED, ELCON_SENSE_LED},
-}
+
 
 void Status_Leds_Write(status_led_t led, bool state){
 

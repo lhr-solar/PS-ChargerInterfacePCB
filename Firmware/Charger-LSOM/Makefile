@@ -1,7 +1,4 @@
 
-# ❗ CHANGE THIS ❗
-# anything with the "CHANGE THIS" line you should change
-# please delete them after :(
 
 # crazy colors ------------------
 RED=\033[0;31m
@@ -20,53 +17,36 @@ NC=\033[0m # No Color
 # Project Configuration ----------
 TEST ?= main
 
-# ❗ CHANGE THIS ❗
-# If it's an LSOM then do - stm32g473xx
-# If it's a PSOM then do - stm32l431cbt
-# Else pick whatever STM32 p/n it is (all options are in docs/STM32_Ports.md)
-####
-PROJECT_TARGET ?= stm32g473xx
-####
 
-# ❗ CHANGE THIS ❗
-# This is where you define where c files are, by default it's all C files in Src and H files in Inc
-# If you don't want to change this then leave as is
-####
-# source and include directories
+
+# LSOM - stm32g473xx
+# PSOM - stm32l431cbt
+PROJECT_TARGET ?= stm32g473xx
+
+
+# generate source and include file lists
 PROJECT_C_INCLUDES = $(wildcard */Inc)
 PROJECT_C_SOURCES = $(wildcard */Src/*.c)
-####
 
 # build directories
 PROJECT_BUILD_DIR = build
 
-# ❗ CHANGE THIS ❗
-# Define where Embedded-Sharepoint is relative to this makefile
-# Shouldn't need to change
-####
+# embedded sharepoint relative to this Makefile
 BUILD_MAKEFILE_DIR ?= ../Embedded-Sharepoint
-####
 
-# generate paths
+# generated paths
 MAKEFILE_DIR = $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
 
-# ❗ CHANGE THIS ❗
-# Define where the main function is relative to the Makefile
-# It's suggested to create a core or apps directory where high level code is placed
-####
+# main function relative to the Makefil
 PROJECT_MAIN_DIR ?= Core/Src/main
-####
+
 
 ifneq ($(TEST), main)
 PROJECT_C_SOURCES := $(filter-out $(PROJECT_MAIN_DIR).c, $(PROJECT_C_SOURCES))
 
-# ❗ CHANGE THIS ❗
-# This is where you store your test files. By default, it's in a directory called tests/
-# Would recommend following this directory strcture, so you don't need to change
-# Else update this portion: " tests/$(TEST).c"
-####
+#storage for test files
 PROJECT_C_SOURCES := $(addprefix $(MAKEFILE_DIR)/, $(PROJECT_C_SOURCES) tests/$(TEST).c)
-####
+
 else
 PROJECT_C_SOURCES := $(addprefix $(MAKEFILE_DIR)/, $(PROJECT_C_SOURCES))
 endif

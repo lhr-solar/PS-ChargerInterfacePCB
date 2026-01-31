@@ -16,6 +16,13 @@ typedef enum {
     NUM_STATUS_LED
 } status_led_t;
 
+static const LEDPins LEDMaps[NUM_STATUS_LED] = {
+    [CHARGE_FAULT_LED] = {CHARGE_FAULT_LED, CHARGE_FAULT_LED},  
+    [HEARTBEAT_SENSE_LED] = {HEARTBEAT_SENSE_LED, HEARTBEAT_SENSE_LED},
+    [BPS_SENSE_LED] = {BPS_SENSE_LED, BPS_SENSE_LED},
+    [ELCON_SENSE_LED] = {ELCON_SENSE_LED, ELCON_SENSE_LED},
+}
+
 //Status LED Pin Init
 
 void Status_Leds_Init(void);
