@@ -12,12 +12,7 @@
 #define BUZZER_TIMER_HANDLE (&BUZZER_TIMER)
 #define BUZZER_TIMER_CLK_HZ 80000000UL
 
-typedef enum {
-    BUZZER_PATTERN_NONE = 0,
-    BUZZER_PATTERN_KABOOM,
-    BUZZER_PATTERN_FINISH,
-    BUZZER_PATTERN_START,
-} buzzer_pattern_t;
+
 
 
 void Buzzer_Init(void);
@@ -29,7 +24,7 @@ void PWM_Stop(void);
 
 void ChargeStart(void);
 void ChargeStop(void);
-void Alarm(void);
+void ChargeAlarm(void);
 
 
 #endif

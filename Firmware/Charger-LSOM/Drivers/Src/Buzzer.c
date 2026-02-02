@@ -44,6 +44,7 @@ static void Buzzer_SetTone(uint16_t freq_hz, uint8_t duty_pct) {
 void Buzzer_Tone(uint16_t freq_hz, uint8_t duty_pct, uint32_t duration_ms)
 {
     Buzzer_SetTone(freq_hz, duty_pct);
+    vTaskDelay(pdMS_TO_TICKS(duration_ms));
     Buzzer_Off();
 }
 
@@ -67,9 +68,12 @@ void Buzzer_Off(void)
 // starting charging sound: 
 void ChargeStart(void)
 {
+    
+ 
     Buzzer_Tone(200, 25, 2000); 
 
     Buzzer_Tone(1000, 75, 2000); 
+
 
 }
 
@@ -87,26 +91,19 @@ void ChargeStop(void)
 // kaboom sound: fast variable between 2.4 kHz and 1.8 kHz
 void ChargeAlarm(void) 
 {
-    
-    s_alarm = true;
-
-    static bool hi = true;
-
-    if (hi) {
-        Buzzer_Tone(2400, 90, 500); 
-        hi = false;
-    } else {
-        Buzzer_Tone(1800, 90, 500); 
-        hi = true;
-    }
-
-}
-
-/*
-
-while (s_alarm) {
+    HAL_GPIO_WritePin(Buzzer_GPIO_Port, Buzzer_Pin, GPIO_PIN_SET);
 
 
+    /*
+    bool s_alarm = false;
+    estop_state = HAL_GPIO_ReadPin(Estop_GPIO_Port, Estop_Pin);
+
+
+   if (estop_state == GPIO_PIN_RESET) {
+        s_alarm = true;
+   }
+   
+   while (s_alarm) {
         Buzzer_Tone(2400, 90, 500); 
 
         Buzzer_Tone(1800, 90, 500); 
@@ -119,11 +116,15 @@ while (s_alarm) {
             s_alarm = false;
             Buzzer_Off();
         }
-    }
 
+   }
+    
+    
+    */
+    
 
-
-*/
+   
+}
 
 
 //final PWM killer

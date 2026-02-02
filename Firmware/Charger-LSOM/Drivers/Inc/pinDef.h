@@ -19,6 +19,7 @@
 #define LED_Charge_GPIO_Port GPIOA
 #define LED_Heart_Pin GPIO_PIN_2
 #define LED_Heart_GPIO_Port GPIOA
+
 #define LED_Fault_Pin GPIO_PIN_0
 #define LED_Fault_GPIO_Port GPIOB
 #define LED_HV_Pin GPIO_PIN_1

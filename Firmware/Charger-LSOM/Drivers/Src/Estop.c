@@ -1,3 +1,10 @@
+/* Copyright (c) 2018-2026 UT Longhorn Racing Solar */
+/** Estop.c
+ * Wrapper that holds Estop functionality
+ */
+
+
+
 #include "stm32xx_hal.h"
 #include "pinDef.h"
 #include "Estop.h"
