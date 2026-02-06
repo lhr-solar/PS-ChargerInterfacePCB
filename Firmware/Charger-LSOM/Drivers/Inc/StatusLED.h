@@ -8,6 +8,7 @@ extern bool buzzer_active;
 extern bool s_alarm;
 
 
+
 typedef enum {
     LED_EVSE = 0,
     LED_CHARGE,

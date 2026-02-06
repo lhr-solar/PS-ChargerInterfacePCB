@@ -44,4 +44,4 @@ Production/
 build/
 .vscode/
 
-/STM32_Files
+STM32_Files/

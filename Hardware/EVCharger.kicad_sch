@@ -798,7 +798,7 @@
 	)
 	(text "Current draw (worst case)\nI = 3.3/2.2k+220 = 1mA"
 		(exclude_from_sim no)
-		(at 160.782 59.182 0)
+		(at 161.798 58.674 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -818,7 +818,7 @@
 	)
 	(text "VPP MCU reading: \n32A cable: ~220Ω \n\nVpp = 3.3 (Rcabel/Rpull up + Rcabel)\nVpp = 3.3 (220/2.2k+220)\nVpp = 0.3V"
 		(exclude_from_sim no)
-		(at 161.29 49.784 0)
+		(at 162.306 49.276 0)
 		(effects
 			(font
 				(size 1.27 1.27)
