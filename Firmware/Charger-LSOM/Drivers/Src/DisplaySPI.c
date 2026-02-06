@@ -4,8 +4,6 @@
 
 
 
-// NOTE: Hardcode glyph dimensions to match this table (5x7).
-// If FONT_WIDTH/FONT_HEIGHT macros are wrong in the header, text rendering can silently draw nothing.
 enum { GLYPH_W = 5, GLYPH_H = 7, CELL_W = 6, CELL_H = 8 };
 
 static const uint8_t font5x7[][GLYPH_W] = {
@@ -107,7 +105,7 @@ static const uint8_t font5x7[][GLYPH_W] = {
     {0x08,0x1C,0x2A,0x08,0x08}, /* 127 DEL */
 };
 
-/* ===== Framebuffer ===== */
+//frame buffers for display data; each byte corresponds to a vertical column of 8 pixels, so 4 pages of 128 bytes for 128x32 display
 static uint8_t framebuffer[DISPLAY_BUF_SIZE];
 
 
@@ -250,16 +248,13 @@ void Display_SetPixel(uint8_t x, uint8_t y, bool on)
 
 void Display_DrawChar(uint8_t x, uint8_t y, char c)
 {
-    // Treat c as unsigned so values >= 128 don't become negative on platforms where char is signed.
     uint8_t uc = (uint8_t)c;
     if (uc < 32 || uc > 127) uc = (uint8_t)'?';
 
-    // Basic bounds: if starting point is off-screen, nothing to do.
     if (x >= DISPLAY_WIDTH || y >= DISPLAY_HEIGHT) return;
 
     const uint8_t *glyph = font5x7[uc - 32];
 
-    // Draw with clipping so partial glyphs near the right/bottom edge still render.
     for (uint8_t col = 0; col < GLYPH_W; col++) {
         uint16_t px = (uint16_t)x + col;
         if (px >= DISPLAY_WIDTH) break;
@@ -289,12 +284,10 @@ void Display_DrawString(uint8_t x, uint8_t y, const char *str)
             continue;
         }
 
-        // Stop if there is no room for at least one glyph column.
         if (x >= DISPLAY_WIDTH) break;
 
         Display_DrawChar(x, y, c);
 
-        // Advance to next character cell.
         if ((uint16_t)x + (uint16_t)CELL_W >= (uint16_t)DISPLAY_WIDTH) break;
         x = (uint8_t)(x + CELL_W);
     }
@@ -311,7 +304,6 @@ void Display_TestPattern(void)
     Display_Update();
 }
 
-// Debug: draws a 10x10 "X" at the top-left.
 void Display_DebugMark(void)
 {
     for (uint8_t i = 0; i < 10; i++) {
