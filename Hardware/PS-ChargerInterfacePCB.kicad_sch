@@ -48336,12 +48336,12 @@
 		(uuid "f21e6844-9f7b-4b1c-bcb6-5d7a23e6ebc5")
 	)
 	(label "LED_HV"
-		(at 132.08 111.76 0)
+		(at 132.08 111.76 180)
 		(effects
 			(font
 				(size 0.762 0.762)
 			)
-			(justify left bottom)
+			(justify right bottom)
 		)
 		(uuid "f2db3eda-261c-423f-85d0-d23bdb27a698")
 	)

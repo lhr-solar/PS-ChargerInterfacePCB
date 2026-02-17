@@ -50,17 +50,7 @@ static const LEDPins LEDMaps[] = {
 
 //Status LED Pin Init
 
-void Status_Leds_Init(void);
-
-// utilized to turn LED on/off
-void Status_Leds_Write(status_led_t led, bool state);
-
-
-// utilized to toggle LED states such as flashing
-void Status_Leds_Toggle(status_led_t led);
-
-//turn all LEDs on for validation
-void Status_Leds_All_On(void);
+void HeartBeat(void);
 
 
 #endif

@@ -7,6 +7,9 @@
 #include <stdint.h>
 
 //LCD Display Controller Commands
+//lowk will delete some commands that will never be used
+
+
 //turns display on and off
 #define CMD_DISPLAY_OFF             0xAE
 #define CMD_DISPLAY_ON              0xAF

@@ -1,10 +1,12 @@
 #include "DisplaySPI.h"
 #include "spi.h"
 #include <string.h>
-
-
+#include "stm32g4xx_hal.h"
+#include "gpio.h"
+#include "StatusLED.h"
 
 enum { GLYPH_W = 5, GLYPH_H = 7, CELL_W = 6, CELL_H = 8 };
+
 
 static const uint8_t font5x7[][GLYPH_W] = {
     {0x00,0x00,0x00,0x00,0x00}, /* 32 ' ' */
@@ -121,16 +123,28 @@ static void Display_SendCommand(uint8_t cmd)
 {
     Display_A0_Low();
     Display_CS_Low();
-    HAL_SPI_Transmit(&hspi2, &cmd, 1, HAL_MAX_DELAY);
+    
+
+    HAL_SPI_Transmit(&hspi3, &cmd, 1, HAL_MAX_DELAY);
+
+    for(volatile int i=0; i<100; i++) __NOP();
+
     Display_CS_High();
+
 }
 
 static void Display_SendData(uint8_t *data, uint16_t len)
 {
     Display_A0_High();
     Display_CS_Low();
-    HAL_SPI_Transmit(&hspi2, data, len, HAL_MAX_DELAY);
+
+    HAL_SPI_Transmit(&hspi3, data, len, HAL_MAX_DELAY);
+
+    for(volatile int i=0; i<100; i++) __NOP();
+    
     Display_CS_High();
+
+    
 }
 
 static void Display_Reset(void)
@@ -138,42 +152,49 @@ static void Display_Reset(void)
     Display_RES_High();
     vTaskDelay(pdMS_TO_TICKS(5));
     Display_RES_Low();
-    vTaskDelay(pdMS_TO_TICKS(5));
+   vTaskDelay(pdMS_TO_TICKS(20));
     Display_RES_High();
-    vTaskDelay(pdMS_TO_TICKS(5));
+    vTaskDelay(pdMS_TO_TICKS(50));
 }
 
 //init functions 
-static void Display_GPIO_Init(void)
+void Display_GPIO_Init(void)
 {
-    GPIO_InitTypeDef gpio = {0};
+    GPIO_InitTypeDef GPIO_InitStruct = {0};
 
+
+    __HAL_RCC_GPIOA_CLK_ENABLE();
     __HAL_RCC_GPIOB_CLK_ENABLE();
+    __HAL_RCC_GPIOC_CLK_ENABLE();
 
-    //MISO (A0), RES, and NSS pins start in known states as 
-    HAL_GPIO_WritePin(Display_NSS_GPIO_Port, Display_NSS_Pin, GPIO_PIN_SET);    //CS = high
+    //MISO (A0), RES, and NSS pins start in known states
+    HAL_GPIO_WritePin(Display_NSS_GPIO_Port, Display_NSS_Pin, GPIO_PIN_SET);      //CS = high (deselected)
     HAL_GPIO_WritePin(Display_RES_GPIO_Port, Display_RES_Pin, GPIO_PIN_SET);    // RES = high (not in reset)
     HAL_GPIO_WritePin(Display_MISO_GPIO_Port, Display_MISO_Pin, GPIO_PIN_RESET); // A0 = low (command mode by default)
 
     //A0 pin init
-    gpio.Pin   = Display_MISO_Pin;
-    gpio.Mode  = GPIO_MODE_OUTPUT_PP;
-    gpio.Pull  = GPIO_NOPULL;
-    gpio.Speed = GPIO_SPEED_FREQ_HIGH;
-    HAL_GPIO_Init(Display_MISO_GPIO_Port, &gpio);
+
+    GPIO_InitStruct.Pin = Display_MISO_Pin;
+    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
+    GPIO_InitStruct.Pull = GPIO_NOPULL;
+    GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
+    HAL_GPIO_Init(Display_MISO_GPIO_Port, &GPIO_InitStruct);
+
 
     //RES pin init
-    gpio.Pin = Display_RES_Pin;
-    HAL_GPIO_Init(Display_RES_GPIO_Port, &gpio);
+    GPIO_InitStruct.Pin = Display_RES_Pin;
+    HAL_GPIO_Init(Display_RES_GPIO_Port, &GPIO_InitStruct);
 
     //NSS pin init
-    gpio.Pin = Display_NSS_Pin;
-    HAL_GPIO_Init(Display_NSS_GPIO_Port, &gpio);
+    GPIO_InitStruct.Pin = Display_NSS_Pin;
+    HAL_GPIO_Init(Display_NSS_GPIO_Port, &GPIO_InitStruct);
+    
 }
 
 
 void Display_Init(void)
 {
+
     Display_GPIO_Init();
     Display_Reset();
 
@@ -182,9 +203,9 @@ void Display_Init(void)
     Display_SendCommand(CMD_COM_REVERSE);
     Display_SendCommand(CMD_BIAS_1_7);
     Display_SendCommand(CMD_POWER_ALL_ON);
-    Display_SendCommand(CMD_RESISTOR_RATIO | 6);
+    Display_SendCommand(CMD_RESISTOR_RATIO | 1);
     Display_SendCommand(CMD_SET_VOLUME);
-    Display_SendCommand(0x10);  // contrast value: 16
+    Display_SendCommand(0x10);  // contrast value: 32
     Display_SendCommand(CMD_START_LINE | 0);
     Display_SendCommand(CMD_DISPLAY_NORMAL);
     Display_SendCommand(CMD_DISPLAY_ON);
@@ -227,8 +248,6 @@ void Display_Off(void)
     Display_SendCommand(CMD_DISPLAY_OFF);
 }
 
-
-
 //drawing functions for display
 
 void Display_SetPixel(uint8_t x, uint8_t y, bool on)
@@ -250,22 +269,14 @@ void Display_DrawChar(uint8_t x, uint8_t y, char c)
 {
     uint8_t uc = (uint8_t)c;
     if (uc < 32 || uc > 127) uc = (uint8_t)'?';
-
-    if (x >= DISPLAY_WIDTH || y >= DISPLAY_HEIGHT) return;
+    if (x + GLYPH_W > DISPLAY_WIDTH || y >= DISPLAY_HEIGHT) return;
 
     const uint8_t *glyph = font5x7[uc - 32];
+    uint8_t page = y / 8;
+    uint16_t base = page * DISPLAY_WIDTH + x;
 
     for (uint8_t col = 0; col < GLYPH_W; col++) {
-        uint16_t px = (uint16_t)x + col;
-        if (px >= DISPLAY_WIDTH) break;
-
-        uint8_t col_bits = glyph[col];
-        for (uint8_t row = 0; row < GLYPH_H; row++) {
-            uint16_t py = (uint16_t)y + row;
-            if (py >= DISPLAY_HEIGHT) break;
-
-            Display_SetPixel((uint8_t)px, (uint8_t)py, (col_bits >> row) & 0x01);
-        }
+        framebuffer[base + col] = glyph[col];
     }
 }
 
@@ -284,13 +295,24 @@ void Display_DrawString(uint8_t x, uint8_t y, const char *str)
             continue;
         }
 
+        // dont draw off da screen
         if (x >= DISPLAY_WIDTH) break;
 
         Display_DrawChar(x, y, c);
 
+        HAL_GPIO_TogglePin(LEDMaps[LED_CHARGE].port, LEDMaps[LED_CHARGE].pin);
+
+        Display_Update();
+
+        vTaskDelay(pdMS_TO_TICKS(200));
+
         if ((uint16_t)x + (uint16_t)CELL_W >= (uint16_t)DISPLAY_WIDTH) break;
         x = (uint8_t)(x + CELL_W);
     }
+    
+    Display_Update();
+    HAL_GPIO_WritePin(LEDMaps[LED_CHARGE].port, LEDMaps[LED_CHARGE].pin, GPIO_PIN_RESET);
+
 }
 
 

@@ -59,7 +59,7 @@ void Buzzer_Init(void)
 void Buzzer_Off(void)
 {
     __HAL_TIM_SET_COMPARE(BUZZER_TIMER_HANDLE, BUZZER_CHANNEL, 0);
-    HAL_GPIO_WritePin(Buzzer_GPIO_Port, Buzzer_Pin, GPIO_PIN_RESET);
+    HAL_GPIO_WritePin(BuzzPWM_GPIO_Port, BuzzPWM_Pin, GPIO_PIN_RESET);
     buzzer_active = false;
 
 }
@@ -91,7 +91,7 @@ void ChargeStop(void)
 // kaboom sound: fast variable between 2.4 kHz and 1.8 kHz
 void ChargeAlarm(void) 
 {
-    HAL_GPIO_WritePin(Buzzer_GPIO_Port, Buzzer_Pin, GPIO_PIN_SET);
+    HAL_GPIO_WritePin(BuzzPWM_GPIO_Port, BuzzPWM_Pin, GPIO_PIN_SET);
 
 
     /*
