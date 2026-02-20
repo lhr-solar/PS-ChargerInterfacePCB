@@ -1,8 +1,10 @@
 #ifndef COMMON_H
 #define COMMON_H
 
-#include "stm32xx_hal.h"
+#include "stm32g4xx_hal.h"
 #include "tim.h"
+#include "FreeRTOS.h"
+#include "task.h"
 
 #define FAULT_MESSAGE_DELAY pdMS_TO_TICKS(200)
 
