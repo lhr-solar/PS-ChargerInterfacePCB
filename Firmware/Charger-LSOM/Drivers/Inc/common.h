@@ -1,75 +1,63 @@
-#ifndef COMMON_H
-#define COMMON_H
+#pragma once
 
+#include <stdint.h>
+#include <stdbool.h>
 #include "stm32g4xx_hal.h"
 #include "tim.h"
 #include "FreeRTOS.h"
 #include "task.h"
+#include "StatusLED.h"
 
 #define FAULT_MESSAGE_DELAY pdMS_TO_TICKS(200)
 
-extern uint32_t fault_bitmap;
+typedef enum
+{
+  FAULT_NONE = 0, // no active faults
 
-typedef enum {
-    FAULT_NONE = 0,
+  FAULT_ESTOP = 1 << 1, // estop pressed
 
-    FAULT_ESTOP = 1 << 1,
+  FAULT_ELCON_UV = 1 << 2, // elcon undervoltage
+  FAULT_ELCON_OV = 1 << 3, // elcon overvoltage
+  FAULT_ELCON_OC = 1 << 4, // elcon overcurrent
 
-    FAULT_ELCON_UV = 1 << 2,
-    FAULT_ELCON_OV = 1 << 3,
-    FAULT_ELCON_OC = 1 << 4,
+  FAULT_BPS_OV = 1 << 8, // bps overvoltage
+  FAULT_BPS_OC = 1 << 9, // bps overcurrent
 
-    FAULT_BPS_OV = 1 << 8,
-    FAULT_BPS_OC = 1 << 9,
+  FAULT_DISPLAY = 1 << 10, // display failure (SPI failures)
+  FAULT_BUZZER = 1 << 11,  // buzzer driver malfunction (PWM/timer failures)
 
-    FAULT_DISPLAY = 1 << 10,
-    FAULT_BUZZER = 1 << 11,
-
-    FAULT_HEARTBEAT_MISSED = 1 << 12
+  FAULT_HEARTBEAT_MISSED = 1 << 12 // missed heartbeat from car (no CAN messages received for a certain period)
 } fault_state_t;
 
+/**
+ * @brief   Utilize the fault enum to set fault to a certain state. This function can be used to set multiple faults.
+ * @param   fault The fault state(s) to set
+ * @return  Sets the specified fault(s) in the system fault state
+ */
 
+void Fault_Set(fault_state_t fault);
 
-void SystemClock_Config(void)
-{
-  RCC_OscInitTypeDef RCC_OscInitStruct = {0};
-  RCC_ClkInitTypeDef RCC_ClkInitStruct = {0};
+/**
+ * @brief   Utilize the fault enum to clear fault to a certain state. This function can be used to clear multiple faults.
+ * @param   fault The fault state(s) to clear
+ * @return  Clears the specified fault(s) in the system fault state
+ */
+void Fault_Clear(fault_state_t fault);
 
+/**
+ * @brief   Checks if a specific fault is currently set
+ * @param   fault The fault state to check
+ * @return  true if the specified fault is currently set, false otherwise
+ */
+bool Fault_IsSet(fault_state_t fault);
 
-  HAL_PWREx_ControlVoltageScaling(PWR_REGULATOR_VOLTAGE_SCALE1);
+/**
+ * @brief   Retrieves the current fault bitmap representing all active faults in the system
+ * @param   none
+ * @return  A 32-bit unsigned integer where each bit represents a different fault state. A bit value of 1 indicates the corresponding fault is active, while a bit value of 0 indicates it is not.
+ */
+uint32_t Fault_GetAll(void);
 
-  /** Initializes the RCC Oscillators according to the specified parameters
-  * in the RCC_OscInitTypeDef structure.
-  */
-  RCC_OscInitStruct.OscillatorType = RCC_OSCILLATORTYPE_HSI;
-  RCC_OscInitStruct.HSIState = RCC_HSI_ON;
-  RCC_OscInitStruct.HSICalibrationValue = RCC_HSICALIBRATION_DEFAULT;
-  RCC_OscInitStruct.PLL.PLLState = RCC_PLL_ON;
-  RCC_OscInitStruct.PLL.PLLSource = RCC_PLLSOURCE_HSI;
-  RCC_OscInitStruct.PLL.PLLM = RCC_PLLM_DIV1;
-  RCC_OscInitStruct.PLL.PLLN = 10;
-  RCC_OscInitStruct.PLL.PLLP = RCC_PLLP_DIV2;
-  RCC_OscInitStruct.PLL.PLLQ = RCC_PLLQ_DIV2;
-  RCC_OscInitStruct.PLL.PLLR = RCC_PLLR_DIV2;
-  
-  if (HAL_RCC_OscConfig(&RCC_OscInitStruct) != HAL_OK)
-  {
-    Error_Handler();
-  }
+void SystemClock_Config(void);
 
-  /** Initializes the CPU, AHB and APB buses clocks
-  */
-  RCC_ClkInitStruct.ClockType = RCC_CLOCKTYPE_HCLK|RCC_CLOCKTYPE_SYSCLK
-                              |RCC_CLOCKTYPE_PCLK1|RCC_CLOCKTYPE_PCLK2;
-  RCC_ClkInitStruct.SYSCLKSource = RCC_SYSCLKSOURCE_PLLCLK;
-  RCC_ClkInitStruct.AHBCLKDivider = RCC_SYSCLK_DIV1;
-  RCC_ClkInitStruct.APB1CLKDivider = RCC_HCLK_DIV1;
-  RCC_ClkInitStruct.APB2CLKDivider = RCC_HCLK_DIV1;
-
-  if (HAL_RCC_ClockConfig(&RCC_ClkInitStruct, FLASH_LATENCY_2) != HAL_OK)
-  {
-    Error_Handler();
-  }
-}
-
-#endif
+void Error_Handler(void);

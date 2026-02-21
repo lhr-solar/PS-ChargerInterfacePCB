@@ -3,37 +3,38 @@
  * Wrapper that holds Estop functionality
  */
 
-
-
 #include "stm32xx_hal.h"
 #include "pinDef.h"
 #include "Estop.h"
+#include <stdio.h>
+#include "DisplaySPI.h"
+#include "StatusLED.h"
 
-
-void EStop_Init(void)
+Estop_status_t Estop_State(void)
 {
-    // Configure the GPIO pin as output push-pull
-    GPIO_InitTypeDef GPIO_InitStruct = {0};
-    GPIO_InitStruct.Pin = Estop_Pin;
-    GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;
-    GPIO_InitStruct.Pull = GPIO_PULLDOWN;
-    HAL_GPIO_Init(Estop_GPIO_Port, &GPIO_InitStruct);
+
+    GPIO_PinState pin_state = HAL_GPIO_ReadPin(ESTOP_PORT, ESTOP_PIN);
+
+    // Active Low
+    if (pin_state == GPIO_PIN_RESET)
+    {
+        printf("EStop Pressed!\n");
+        Display_DrawString(0, 0, "EStop Pressed!");
+        Fault_Indicator(true);
+
+        return ESTOP_PRESSED;
+    }
+
+    if (pin_state == GPIO_PIN_SET)
+    {
+
+        printf("EStop NOT PRESSED, THUS RELEASED!\n");
+        Display_DrawString(0, 0, "Estop Released");
+
+        Fault_Indicator(false);
+
+        return ESTOP_RELEASED;
+    }
+        return ESTOP_RELEASED; 
 
 }
-
-
-bool Estop_State (void){
-
-    GPIO_PinState pin_state = HAL_GPIO_ReadPin(Estop_GPIO_Port, Estop_Pin);
-
-    //Active Low
-    if (pin_state == GPIO_PIN_SET){
-        return true; //EStop Pressed
-    }
-    else {
-        return false; //EStop Not Pressed
-    }
-}
-
-//if true, send CAN msg to indicate Estop pressed to BPS or CarCAN
-//if false, normal state

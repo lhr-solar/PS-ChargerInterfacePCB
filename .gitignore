@@ -44,9 +44,9 @@ Production/
 build/
 .vscode/
 
+Hardware/
+
 Firmware/STM32/
-
-
 
 # Build Files
 build/

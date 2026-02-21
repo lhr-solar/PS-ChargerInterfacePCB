@@ -14,36 +14,54 @@
 #include "semphr.h"
 #include "common.h"
 #include "StatusLED.h"
+#include "DisplaySPI.h"
+#include "Estop.h"
+#include "gpio.h"
 
-TaskHandle_t BuzzerTask_Charging_Handle = NULL;
-TaskHandle_t BuzzerTask_Alarm_Handle = NULL;
+TaskHandle_t Estop_Handle = NULL;
 TaskHandle_t HeartBeatTask_Handle = NULL;
+TaskHandle_t FaultLEDTask_Handle = NULL;
 
-StaticTask_t BuzzerTask_Charging_Buffer;
-StackType_t BuzzerTask_ChargingStack[configMINIMAL_STACK_SIZE];
-
-StaticTask_t BuzzerTask_Alarm_Buffer;
-StackType_t BuzzerTask_AlarmStack[configMINIMAL_STACK_SIZE];
+StaticTask_t Estop_Buffer;
+StackType_t EstopStack[configMINIMAL_STACK_SIZE];
 
 StaticTask_t HeartBeatTask_Buffer;
 StackType_t HeartBeatTaskStack[configMINIMAL_STACK_SIZE];
 
+StaticTask_t FaultLEDTask_Buffer;
+StackType_t FaultLEDTaskStack[configMINIMAL_STACK_SIZE];
 
-void BuzzerTask_Charging(void *argument)
+void EstopTask(void *argument)
 {
 
+    Display_Init();
+    Display_Clear();
+    vTaskDelay(pdMS_TO_TICKS(200));
 
-    Display_DrawString(0, 0, "lil shah");
-    
     while (1)
     {
-        ChargeStart();
-        vTaskDelay(pdMS_TO_TICKS(2000));
-        ChargeStop();
-
+        Estop_State();
+        vTaskDelay(pdMS_TO_TICKS(50));
     }
 }
 
+
+
+void FaultLEDTask(void *argument)
+{
+    while (1)
+    {
+        if (is_fault_active == true)
+        {
+            HAL_GPIO_TogglePin(LEDMaps[LED_FAULT].port, LEDMaps[LED_FAULT].pin);
+            vTaskDelay(pdMS_TO_TICKS(250));
+        }
+        else
+        {
+            vTaskDelay(pdMS_TO_TICKS(50));
+        }
+    }
+}
 
 void HeartBeatTask(void *argument)
 {
@@ -57,28 +75,26 @@ int main(void)
     SystemClock_Config();
     MX_TIM5_Init();
 
-    Buzzer_Init();
+    MX_GPIO_Init();
 
-
-
-
-    BuzzerTask_Alarm_Handle = xTaskCreateStatic(
-        BuzzerTask_Alarm,
-        "Buzzer Task Alarm",
+    FaultLEDTask_Handle = xTaskCreateStatic(
+        FaultLEDTask,
+        "Fault LED Task",
         configMINIMAL_STACK_SIZE,
         NULL,
         tskIDLE_PRIORITY + 2,
-        BuzzerTask_AlarmStack,
-        &BuzzerTask_Alarm_Buffer);
+        FaultLEDTaskStack,
+        &FaultLEDTask_Buffer);
 
-    BuzzerTask_Charging_Handle = xTaskCreateStatic(
-        BuzzerTask_Charging,
-        "Buzzer Task Charging",
+
+    Estop_Handle = xTaskCreateStatic(
+        EstopTask,
+        "Estop Task",
         configMINIMAL_STACK_SIZE,
         NULL,
-        tskIDLE_PRIORITY + 3,
-        BuzzerTask_ChargingStack,
-        &BuzzerTask_Charging_Buffer);
+        tskIDLE_PRIORITY + 2,
+        EstopStack,
+        &Estop_Buffer);
 
     HeartBeatTask_Handle = xTaskCreateStatic(
         HeartBeatTask,

@@ -1,15 +1,14 @@
-#ifndef STATUSLEDS_H
-#define STATUSLEDS_H
+#pragma once
 
 #include "stm32xx_hal.h"
 #include "pinDef.h"
 
-extern bool buzzer_active;
-extern bool s_alarm;
+
+extern bool is_fault_active;
 
 
-
-typedef enum {
+typedef enum
+{
     LED_EVSE = 0,
     LED_CHARGE,
     LED_HEART,
@@ -17,40 +16,34 @@ typedef enum {
     LED_HV
 } status_led_t;
 
-typedef struct {
-    GPIO_TypeDef* port;
+typedef struct
+{
+    GPIO_TypeDef *port;
     uint16_t pin;
-} LEDPins;
+} LED_pin_t;
 
-static const LEDPins LEDMaps[] = {
-    [LED_EVSE] = {
-        .port = LED_EVSE_GPIO_Port,
-        .pin  = LED_EVSE_Pin
-    },
-    [LED_CHARGE] = {
-        .port = LED_Charge_GPIO_Port,
-        .pin  = LED_Charge_Pin
-    },
-    [LED_HEART] = {
-        .port = LED_Heart_GPIO_Port,
-        .pin  = LED_Heart_Pin
-    },
-    [LED_FAULT] = {
-        .port = LED_Fault_GPIO_Port,
-        .pin  = LED_Fault_Pin
-    },
-    [LED_HV] = {
-        .port = LED_HV_GPIO_Port,
-        .pin  = LED_HV_Pin
-    },
+static const LED_pin_t LEDMaps[] = {
+    [LED_EVSE] = {.port = LED_EVSE_PORT, .pin = LED_EVSE_PIN},
+    [LED_CHARGE] = {.port = LED_CHARGE_PORT, .pin = LED_CHARGE_PIN},
+    [LED_HEART] = {.port = LED_HEART_PORT, .pin = LED_HEART_PIN},
+    [LED_FAULT] = {.port = LED_FAULT_PORT, .pin = LED_FAULT_PIN},
+    [LED_HV] = {.port = LED_HV_PORT, .pin = LED_HV_PIN},
 };
 
+// Status LED Pin Init
 
 
-
-//Status LED Pin Init
-
+/**
+ * @brief   Heartbeat LED to showcase RTOS is working
+ * @param   None
+ * @return  None
+ */
 void HeartBeat(void);
 
+void Fault_Indicator(bool fault);
 
-#endif
+void Charging_Indicator(bool charging);
+
+void HV_Indicator(bool hv_active);
+
+void EVSE_Indicator(bool evse_present);

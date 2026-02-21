@@ -1,11 +1,9 @@
 
 #include "spi.h"
 
-
-
 SPI_HandleTypeDef hspi3;
 
-//SPI init
+// SPI init
 void MX_SPI3_Init(void)
 {
 
@@ -27,40 +25,36 @@ void MX_SPI3_Init(void)
   {
     Error_Handler();
   }
-
 }
 
-void HAL_SPI_MspInit(SPI_HandleTypeDef* spiHandle)
+void HAL_SPI_MspInit(SPI_HandleTypeDef *spiHandle)
 {
 
   GPIO_InitTypeDef GPIO_InitStruct = {0};
-  if(spiHandle->Instance==SPI3)
+  if (spiHandle->Instance == SPI3)
   {
 
     __HAL_RCC_SPI3_CLK_ENABLE();
 
     __HAL_RCC_GPIOB_CLK_ENABLE();
-  
-    GPIO_InitStruct.Pin = Display_SCK_Pin|Display_MOSI_Pin;
+
+    GPIO_InitStruct.Pin = DISPLAY_SCK_PIN | DISPLAY_MOSI_PIN;
     GPIO_InitStruct.Mode = GPIO_MODE_AF_PP;
     GPIO_InitStruct.Pull = GPIO_NOPULL;
     GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_HIGH;
     GPIO_InitStruct.Alternate = GPIO_AF6_SPI3;
     HAL_GPIO_Init(GPIOB, &GPIO_InitStruct);
-
   }
 }
 
-void HAL_SPI_MspDeInit(SPI_HandleTypeDef* spiHandle)
+void HAL_SPI_MspDeInit(SPI_HandleTypeDef *spiHandle)
 {
 
-  if(spiHandle->Instance==SPI3)
+  if (spiHandle->Instance == SPI3)
   {
 
     __HAL_RCC_SPI3_CLK_DISABLE();
 
-    HAL_GPIO_DeInit(GPIOB, Display_SCK_Pin|Display_MISO_Pin|Display_MOSI_Pin);
-
-
+    HAL_GPIO_DeInit(GPIOB, DISPLAY_SCK_PIN | DISPLAY_MISO_PIN | DISPLAY_MOSI_PIN);
   }
 }
