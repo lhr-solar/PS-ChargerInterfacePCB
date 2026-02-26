@@ -22,7 +22,7 @@ TaskHandle_t DisplayTestTask_Handle = NULL;
 TaskHandle_t HeartBeatTask_Handle = NULL;
 
 StaticTask_t DisplayTestTask_Buffer;
-StackType_t DisplayTestTaskStack[512];
+StackType_t DisplayTestTaskStack[configMINIMAL_STACK_SIZE];
 
 StaticTask_t HeartBeatTask_Buffer;
 StackType_t HeartBeatTaskStack[configMINIMAL_STACK_SIZE];
@@ -41,7 +41,7 @@ void DisplayTestTask(void *argument)
     Display_Clear();
     vTaskDelay(pdMS_TO_TICKS(500));
 
-    Display_DrawString(0, 0, "lil shah");
+    Display_DrawString(0, 0, "big dick bee");
     Display_Update();
 
     while (1)

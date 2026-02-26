@@ -19,7 +19,7 @@ Estop_status_t Estop_State(void)
     if (pin_state == GPIO_PIN_RESET)
     {
         printf("EStop Pressed!\n");
-        Display_DrawString(0, 0, "EStop Pressed!");
+        Display_DrawString(0, 0, "EStop Pressed!@!");
         Fault_Indicator(true);
 
         return ESTOP_PRESSED;
@@ -29,7 +29,7 @@ Estop_status_t Estop_State(void)
     {
 
         printf("EStop NOT PRESSED, THUS RELEASED!\n");
-        Display_DrawString(0, 0, "Estop Released");
+        Display_DrawString(0, 0, "Estop Released!@@@!");
 
         Fault_Indicator(false);
 

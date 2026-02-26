@@ -6,3 +6,4 @@
 extern SPI_HandleTypeDef hspi3;
 
 void MX_SPI3_Init(void);
+void SPI3_IRQHandler(void);

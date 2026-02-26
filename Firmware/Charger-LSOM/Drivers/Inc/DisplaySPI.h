@@ -113,6 +113,7 @@ typedef enum {
 void Display_Init(void);
 
 
+
 /**
  * @brief   Clears the display by setting all pixels in the framebuffer to off and updating the display.
  */
@@ -168,4 +169,10 @@ void Display_DrawChar(uint8_t x, uint8_t y, char c);
  */
 Display_status_t Display_DrawString(uint8_t x, uint8_t y, const char *str);
 
+/**
+ * @brief   Draws a test pattern on the display (checkerboard) for testing and debugging purposes.
+ * @return  Renders a checkerboard pattern on the display by setting pixels on and off
+ */
 void Display_TestPattern(void);
+
+

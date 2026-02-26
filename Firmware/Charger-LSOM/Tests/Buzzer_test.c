@@ -59,9 +59,8 @@ int main(void)
 
     Buzzer_Init();
 
-
-
-
+    //Leaving out for now for clean testing
+    /*
     BuzzerTask_Alarm_Handle = xTaskCreateStatic(
         BuzzerTask_Alarm,
         "Buzzer Task Alarm",
@@ -70,6 +69,8 @@ int main(void)
         tskIDLE_PRIORITY + 2,
         BuzzerTask_AlarmStack,
         &BuzzerTask_Alarm_Buffer);
+    */
+    
 
     BuzzerTask_Charging_Handle = xTaskCreateStatic(
         BuzzerTask_Charging,

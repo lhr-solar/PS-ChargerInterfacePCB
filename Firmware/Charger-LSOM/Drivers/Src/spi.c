@@ -4,6 +4,12 @@
 SPI_HandleTypeDef hspi3;
 
 // SPI init
+
+void SPI3_IRQHandler(void)
+{
+    HAL_SPI_IRQHandler(&hspi3);
+}
+
 void MX_SPI3_Init(void)
 {
 
@@ -25,6 +31,8 @@ void MX_SPI3_Init(void)
   {
     Error_Handler();
   }
+  HAL_NVIC_SetPriority(SPI3_IRQn, 5, 0);
+  HAL_NVIC_EnableIRQ(SPI3_IRQn);
 }
 
 void HAL_SPI_MspInit(SPI_HandleTypeDef *spiHandle)

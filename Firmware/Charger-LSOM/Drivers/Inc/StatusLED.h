@@ -4,9 +4,6 @@
 #include "pinDef.h"
 
 
-extern bool is_fault_active;
-
-
 typedef enum
 {
     LED_EVSE = 0,
@@ -15,6 +12,7 @@ typedef enum
     LED_FAULT,
     LED_HV
 } status_led_t;
+
 
 typedef struct
 {
@@ -30,8 +28,6 @@ static const LED_pin_t LEDMaps[] = {
     [LED_HV] = {.port = LED_HV_PORT, .pin = LED_HV_PIN},
 };
 
-// Status LED Pin Init
-
 
 /**
  * @brief   Heartbeat LED to showcase RTOS is working
@@ -40,10 +36,36 @@ static const LED_pin_t LEDMaps[] = {
  */
 void HeartBeat(void);
 
+
+/**
+ * @brief   Fault Indicator LED to show any fault within the system (should never reach this state)
+ * @param   fault true if a fault condition is present, false otherwise
+ * @return  None
+ */
 void Fault_Indicator(bool fault);
+
+
+
+/**
+ * @brief   Charging Indicator LED to present when system is actively charging, usually off otherwise
+ * @param   charging true if the system is currently charging, false otherwise
+ * @return  None
+ */
 
 void Charging_Indicator(bool charging);
 
+/**
+ * @brief   HV Indicator LED to present when system is actively charging, usually off otherwise
+ * @param   hv_active defaults to true if the system is currently charging, false otherwise
+ * @return  None
+ */
+
 void HV_Indicator(bool hv_active);
 
+
+/**
+ * @brief   EVSE LED to present when the EVSE system is detected and ready to go, off otherwise
+ * @param   evse_present true if EVSE is present, false otherwise
+ * @return  None
+ */
 void EVSE_Indicator(bool evse_present);

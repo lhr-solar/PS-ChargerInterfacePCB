@@ -4,7 +4,6 @@
 #include "gpio.h"
 #include "Estop.h"
 
-
 /**
  * @brief   Indicates the presence of a high voltage condition by controlling the corresponding LED.
  * @param   hv_active true if a high voltage condition is present, false otherwise
@@ -32,10 +31,14 @@ void HV_Indicator(bool hv_active)
 
 void Fault_Indicator(bool fault)
 {
-    
-    is_fault_active = fault;
-
-    if (fault == false)
+    if (fault)
+    {
+        HAL_GPIO_WritePin(LEDMaps[LED_FAULT].port, LEDMaps[LED_FAULT].pin, GPIO_PIN_SET);
+        vTaskDelay(pdMS_TO_TICKS(200));
+        HAL_GPIO_WritePin(LEDMaps[LED_FAULT].port, LEDMaps[LED_FAULT].pin, GPIO_PIN_RESET);
+        vTaskDelay(pdMS_TO_TICKS(200));
+    }
+    else
     {
         HAL_GPIO_WritePin(LEDMaps[LED_FAULT].port, LEDMaps[LED_FAULT].pin, GPIO_PIN_RESET);
     }

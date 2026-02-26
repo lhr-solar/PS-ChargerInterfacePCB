@@ -8,7 +8,6 @@
 #include "task.h"
 #include "semphr.h"
 
-
 enum
 {
     GLYPH_W = 5,
@@ -116,11 +115,21 @@ static const uint8_t font5x7[][GLYPH_W] = {
     {0x08, 0x1C, 0x2A, 0x08, 0x08}, /* 127 DEL */
 };
 
-
-
 SemaphoreHandle_t DisplayMutex;
 StaticSemaphore_t DisplayMutexBuffer;
 
+static SemaphoreHandle_t spiTXDone;
+static StaticSemaphore_t spiTXDoneBuffer;
+
+void HAL_SPI_TxCpltCallback(SPI_HandleTypeDef *hspi)
+{
+    if (hspi->Instance == SPI3) //only signal spiTXDone for SPI3
+    {
+        BaseType_t xHigherPriorityTaskWoken = pdFALSE; 
+        xSemaphoreGiveFromISR(spiTXDone, &xHigherPriorityTaskWoken); //gives semaphore and sets xHigherPriorityTaskWoken to true if a higher priority task was woken by the operation
+        portYIELD_FROM_ISR(xHigherPriorityTaskWoken); // switch to the higher priority task if needed
+    }
+}
 
 // frame buffers for display data; each byte corresponds to a vertical column of 8 pixels, so 4 pages of 128 bytes for 128x32 display
 static uint8_t framebuffer[DISPLAY_BUF_SIZE];
@@ -135,11 +144,13 @@ static void Display_RES_High(void) { HAL_GPIO_WritePin(DISPLAY_RES_PORT, DISPLAY
 
 static void Display_SendCommand(uint8_t cmd)
 {
+    static uint8_t cmdBuf;
+    cmdBuf = cmd;
     Display_A0_Low();
     Display_CS_Low();
 
-    HAL_SPI_Transmit_IT(&hspi3, &cmd, 1); // 1: transmit one byte (a command is always a single byte)
-
+    HAL_SPI_Transmit_IT(&hspi3, &cmdBuf, 1); // 1: transmit one byte (a command is always a single byte)
+    xSemaphoreTake(spiTXDone, portMAX_DELAY); // wait for transmission to complete before returning (important to avoid
     Display_CS_High();
 }
 
@@ -148,13 +159,10 @@ static void Display_SendData(uint8_t *data, uint16_t len)
     Display_A0_High();
     Display_CS_Low();
 
-
     HAL_SPI_Transmit_IT(&hspi3, data, len);
-
+    xSemaphoreTake(spiTXDone, portMAX_DELAY); // wait for transmission to complete before returning (important to avoid
     Display_CS_High();
 }
-
-
 
 static void Display_Reset(void)
 {
@@ -219,6 +227,7 @@ void Display_GPIO_Init(void)
 void Display_Init(void)
 {
 
+    spiTXDone = xSemaphoreCreateBinaryStatic(&spiTXDoneBuffer);
     DisplayMutex = xSemaphoreCreateMutexStatic(&DisplayMutexBuffer);
 
     if (xSemaphoreTake(DisplayMutex, portMAX_DELAY) == pdTRUE)
@@ -326,13 +335,13 @@ void Display_SetPixel(uint8_t x, uint8_t y, bool on)
 
 void Display_DrawChar(uint8_t x, uint8_t y, char c)
 {
-    uint8_t uc = (uint8_t)c;
-    if (uc < 32 || uc > 127) // 32: first printable ASCII (space); 127: DEL — last entry in font table
-        uc = (uint8_t)'?';
+    c = (uint8_t)c;
+    if (c < 32 || c > 127) // 32: first printable ASCII (space); 127: DEL — last entry in font table
+        c = (uint8_t)'?';
     if (x + GLYPH_W > DISPLAY_WIDTH || y >= DISPLAY_HEIGHT)
         return;
 
-    const uint8_t *glyph = font5x7[uc - 32];
+    const uint8_t *glyph = font5x7[c - 32];
     uint8_t page = y / 8;
     uint16_t base = page * DISPLAY_WIDTH + x;
 
@@ -365,25 +374,24 @@ Display_status_t Display_DrawString(uint8_t x, uint8_t y, const char *str)
 
             if (c == '\n')
             {
+
                 x = 0;
                 y = (uint8_t)(y + CELL_H);
-                if (y >= DISPLAY_HEIGHT)
+                if (y > DISPLAY_HEIGHT - CELL_H)
                     break;
                 continue;
             }
 
             // dont draw off da screen
-            if (x >= DISPLAY_WIDTH)
+            if (x > DISPLAY_WIDTH - CELL_W || y >= DISPLAY_HEIGHT - CELL_H)
                 break;
 
             Display_DrawChar(x, y, c);
 
-            HAL_GPIO_TogglePin(LEDMaps[LED_CHARGE].port, LEDMaps[LED_CHARGE].pin);
+            // HAL_GPIO_TogglePin(LEDMaps[LED_CHARGE].port, LEDMaps[LED_CHARGE].pin);
 
             Display_Update_Internal();
 
-            if ((uint16_t)x + (uint16_t)CELL_W >= (uint16_t)DISPLAY_WIDTH)
-                break;
             x = (uint8_t)(x + CELL_W);
         }
 
@@ -391,8 +399,6 @@ Display_status_t Display_DrawString(uint8_t x, uint8_t y, const char *str)
         HAL_GPIO_WritePin(LEDMaps[LED_CHARGE].port, LEDMaps[LED_CHARGE].pin, GPIO_PIN_RESET);
 
         xSemaphoreGive(DisplayMutex);
-        
-        
     }
     return DISPLAY_OK;
 }
@@ -407,12 +413,12 @@ void Display_DebugMark(void)
     Display_Update();
 }
 
-
-
 void Display_TestPattern(void)
 {
-    for (uint8_t y = 0; y < DISPLAY_HEIGHT; y++) {
-        for (uint8_t x = 0; x < DISPLAY_WIDTH; x++) {
+    for (uint8_t y = 0; y < DISPLAY_HEIGHT; y++)
+    {
+        for (uint8_t x = 0; x < DISPLAY_WIDTH; x++)
+        {
             Display_SetPixel(x, y, ((x + y) % 2) == 0);
         }
     }

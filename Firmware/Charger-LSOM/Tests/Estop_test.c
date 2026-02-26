@@ -17,6 +17,7 @@
 #include "DisplaySPI.h"
 #include "Estop.h"
 #include "gpio.h"
+#include "spi.h"
 
 TaskHandle_t Estop_Handle = NULL;
 TaskHandle_t HeartBeatTask_Handle = NULL;
@@ -33,7 +34,7 @@ StackType_t FaultLEDTaskStack[configMINIMAL_STACK_SIZE];
 
 void EstopTask(void *argument)
 {
-
+    vTaskDelay(pdMS_TO_TICKS(200));
     Display_Init();
     Display_Clear();
     vTaskDelay(pdMS_TO_TICKS(200));
@@ -45,21 +46,20 @@ void EstopTask(void *argument)
     }
 }
 
-
-
 void FaultLEDTask(void *argument)
 {
     while (1)
     {
-        if (is_fault_active == true)
+
+        if (HAL_GPIO_ReadPin(ESTOP_PORT, ESTOP_PIN) == GPIO_PIN_RESET)
         {
-            HAL_GPIO_TogglePin(LEDMaps[LED_FAULT].port, LEDMaps[LED_FAULT].pin);
-            vTaskDelay(pdMS_TO_TICKS(250));
+            Fault_Indicator(true);
         }
         else
         {
-            vTaskDelay(pdMS_TO_TICKS(50));
+            Fault_Indicator(false);
         }
+        vTaskDelay(pdMS_TO_TICKS(50));
     }
 }
 
@@ -74,6 +74,7 @@ int main(void)
     HAL_Init();
     SystemClock_Config();
     MX_TIM5_Init();
+    MX_SPI3_Init();
 
     MX_GPIO_Init();
 
@@ -86,13 +87,12 @@ int main(void)
         FaultLEDTaskStack,
         &FaultLEDTask_Buffer);
 
-
     Estop_Handle = xTaskCreateStatic(
         EstopTask,
         "Estop Task",
         configMINIMAL_STACK_SIZE,
         NULL,
-        tskIDLE_PRIORITY + 2,
+        tskIDLE_PRIORITY + 3,
         EstopStack,
         &Estop_Buffer);
 
