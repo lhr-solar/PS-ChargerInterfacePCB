@@ -44,7 +44,7 @@ def find_tests(tests_dir: Path):
         # Write the code to clean the filename here then apppend to tests list
         # The string you append should match what you'd put into make TEST=[]
         ####
-        test_name = cfile.stem
+        test_name = cfile.stem.strip()
         tests.append(test_name)
 
         ###
