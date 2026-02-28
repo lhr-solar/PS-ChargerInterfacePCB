@@ -32,7 +32,7 @@ PROJECT_C_SOURCES = $(wildcard */Src/*.c)
 PROJECT_BUILD_DIR = build
 
 # embedded sharepoint relative to this Makefile
-BUILD_MAKEFILE_DIR ?= ../Embedded-Sharepoint
+BUILD_MAKEFILE_DIR ?= Embedded-Sharepoint
 
 # generated paths
 MAKEFILE_DIR = $(shell dirname $(realpath $(lastword $(MAKEFILE_LIST))))
