@@ -180,10 +180,10 @@ static void Display_Update_Internal(void)
     const uint8_t col_offset = 4; // ST7565R has 132 columns; display starts at column 4
     for (uint8_t page = 0; page < DISPLAY_PAGES; page++)
     {
-        Display_SendCommand(CMD_PAGE_ADDR | page);
-        Display_SendCommand(CMD_COL_ADDR_HI | (col_offset >> 4));   // >> 4: extract upper nibble of column address (ST7565R uses split hi/lo nibble format)
-        Display_SendCommand(CMD_COL_ADDR_LO | (col_offset & 0x0F)); // 0x0F: mask lower nibble of column address
-        Display_SendData(&framebuffer[page * DISPLAY_WIDTH], DISPLAY_WIDTH);
+        Display_SendCommand(CMD_PAGE_ADDR | page, SPI_TRANSMIT_COMMAND_TIME);
+        Display_SendCommand(CMD_COL_ADDR_HI | (col_offset >> 4), SPI_TRANSMIT_COMMAND_TIME);   // >> 4: extract upper nibble of column address (ST7565R uses split hi/lo nibble format)
+        Display_SendCommand(CMD_COL_ADDR_LO | (col_offset & 0x0F), SPI_TRANSMIT_COMMAND_TIME); // 0x0F: mask lower nibble of column address
+        Display_SendData(&framebuffer[page * DISPLAY_WIDTH], DISPLAY_WIDTH, SPI_TRANSMIT_DATA_TIME);
     }
 }
 
@@ -241,16 +241,16 @@ void Display_Init(void)
         // ST7565R internal initialization sequence from datasheet
 
         // Page 36: https://support.newhavendisplay.com/hc/en-us/article_attachments/26189026785559
-        Display_SendCommand(CMD_ADC_NORMAL);
-        Display_SendCommand(CMD_COM_REVERSE);
-        Display_SendCommand(CMD_BIAS_1_7);
-        Display_SendCommand(CMD_POWER_ALL_ON);
-        Display_SendCommand(CMD_RESISTOR_RATIO | 1); // ratio 1 of 7: tuned for 3.3V VCC; higher = more voltage = brighter/more contrast
-        Display_SendCommand(CMD_SET_VOLUME);
-        Display_SendCommand(DISPLAY_START_CONTRAST_VAL); // contrast value: 0x10 = 32
-        Display_SendCommand(CMD_START_LINE | 0);         // 0: start display output from RAM row 0 (top of screen)
-        Display_SendCommand(CMD_DISPLAY_NORMAL);
-        Display_SendCommand(CMD_DISPLAY_ON);
+        Display_SendCommand(CMD_ADC_NORMAL, SPI_TRANSMIT_COMMAND_TIME); // ADC select: normal
+        Display_SendCommand(CMD_COM_REVERSE, SPI_TRANSMIT_COMMAND_TIME);
+        Display_SendCommand(CMD_BIAS_1_7, SPI_TRANSMIT_COMMAND_TIME);
+        Display_SendCommand(CMD_POWER_ALL_ON, SPI_TRANSMIT_COMMAND_TIME);
+        Display_SendCommand(CMD_RESISTOR_RATIO | 1, SPI_TRANSMIT_COMMAND_TIME); // ratio 1 of 7: tuned for 3.3V VCC; higher = more voltage = brighter/more contrast
+        Display_SendCommand(CMD_SET_VOLUME, SPI_TRANSMIT_COMMAND_TIME);
+        Display_SendCommand(DISPLAY_START_CONTRAST_VAL, SPI_TRANSMIT_COMMAND_TIME); // contrast value: 0x10 = 32
+        Display_SendCommand(CMD_START_LINE | 0, SPI_TRANSMIT_COMMAND_TIME);         // 0: start display output from RAM row 0 (top of screen)
+        Display_SendCommand(CMD_DISPLAY_NORMAL, SPI_TRANSMIT_COMMAND_TIME);
+        Display_SendCommand(CMD_DISPLAY_ON, SPI_TRANSMIT_COMMAND_TIME);
 
         Display_Clear_Internal();
 
@@ -282,10 +282,10 @@ void Display_Update(void)
         const uint8_t col_offset = 4; // ST7565R has 132 columns; display starts at column 4
         for (uint8_t page = 0; page < DISPLAY_PAGES; page++)
         {
-            Display_SendCommand(CMD_PAGE_ADDR | page);
-            Display_SendCommand(CMD_COL_ADDR_HI | (col_offset >> 4));   // >> 4: extract upper nibble of column address (ST7565R uses split hi/lo nibble format)
-            Display_SendCommand(CMD_COL_ADDR_LO | (col_offset & 0x0F)); // 0x0F: mask lower nibble of column address
-            Display_SendData(&framebuffer[page * DISPLAY_WIDTH], DISPLAY_WIDTH);
+            Display_SendCommand(CMD_PAGE_ADDR | page, SPI_TRANSMIT_COMMAND_TIME);
+            Display_SendCommand(CMD_COL_ADDR_HI | (col_offset >> 4), SPI_TRANSMIT_COMMAND_TIME);   // >> 4: extract upper nibble of column address (ST7565R uses split hi/lo nibble format)
+            Display_SendCommand(CMD_COL_ADDR_LO | (col_offset & 0x0F), SPI_TRANSMIT_COMMAND_TIME); // 0x0F: mask lower nibble of column address
+            Display_SendData(&framebuffer[page * DISPLAY_WIDTH], DISPLAY_WIDTH, SPI_TRANSMIT_DATA_TIME);
         }
 
         xSemaphoreGive(DisplayMutex);
@@ -300,20 +300,20 @@ void Display_SetContrast(uint8_t val)
     {
         if (val > 63) // 63: contrast register is 6-bit (0–63 = 2^6 - 1); values above this are invalid
             val = 63;
-        Display_SendCommand(CMD_SET_VOLUME);
-        Display_SendCommand(val);
+        Display_SendCommand(CMD_SET_VOLUME, SPI_TRANSMIT_COMMAND_TIME);
+        Display_SendCommand(val, SPI_TRANSMIT_COMMAND_TIME);
         xSemaphoreGive(DisplayMutex);
     }
 }
 
 void Display_On(void)
 {
-    Display_SendCommand(CMD_DISPLAY_ON);
+    Display_SendCommand(CMD_DISPLAY_ON, SPI_TRANSMIT_COMMAND_TIME);
 }
 
 void Display_Off(void)
 {
-    Display_SendCommand(CMD_DISPLAY_OFF);
+    Display_SendCommand(CMD_DISPLAY_OFF, SPI_TRANSMIT_COMMAND_TIME);
 }
 
 // drawing functions for display

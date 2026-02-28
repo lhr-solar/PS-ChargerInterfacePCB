@@ -9,6 +9,10 @@
 // lowk will delete some commands that will never be used
 // Data sheet for commands: https://newhavendisplay.com/content/specs/NHD-C12832A1Z-FSB-FBW-3V3.pdf
 
+#define SPI_TRANSMIT_COMMAND_TIME pdMS_TO_TICKS(5)
+#define SPI_TRANSMIT_DATA_TIME pdMS_TO_TICKS(50)
+
+
 typedef enum
 {
     DISPLAY_OK = 0,

@@ -20,7 +20,13 @@ Estop_status_t Estop_State(void)
     {
         printf("EStop Pressed!\n");
         Display_DrawString(0, 0, "EStop Pressed!@!");
-        Fault_Indicator(true);
+        LED_State_t leds = {
+            .evse_present = false,
+            .charging = false,
+            .fault = true,
+            .hv_active = false,
+        };
+        LEDSet(&leds);
 
         return ESTOP_PRESSED;
     }
@@ -31,7 +37,14 @@ Estop_status_t Estop_State(void)
         printf("EStop NOT PRESSED, THUS RELEASED!\n");
         Display_DrawString(0, 0, "Estop Released!@@@!");
 
-        Fault_Indicator(false);
+
+        LED_State_t leds = {
+            .evse_present = false,
+            .charging = false,
+            .fault = false,
+            .hv_active = false,
+        };
+        LEDSet(&leds);
 
         return ESTOP_RELEASED;
     }

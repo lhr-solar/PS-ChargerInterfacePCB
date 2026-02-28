@@ -100,7 +100,13 @@ void SystemClock_Config(void)
 void Error_Handler(void)
 {
 
-    Fault_Indicator(true);
+    LED_State_t leds = {
+        .evse_present = false,
+        .charging = false,
+        .fault = true,
+        .hv_active = false,
+    };
+    LEDSet(&leds);
     HAL_TIM_PWM_MspDeInit(&htim5); // stop buzzer PWM
 
     // TODO: send CAN messages about fault for telemetry, later

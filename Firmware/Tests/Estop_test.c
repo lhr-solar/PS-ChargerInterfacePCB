@@ -57,11 +57,23 @@ void FaultLEDTask(void *argument)
 
         if (HAL_GPIO_ReadPin(ESTOP_PORT, ESTOP_PIN) == GPIO_PIN_RESET)
         {
-            Fault_Indicator(true);
+            LED_State_t leds = {
+            .evse_present = false,
+            .charging = false,
+            .fault = true,
+            .hv_active = false,
+        };
+        LEDSet(&leds);
         }
         else
         {
-            Fault_Indicator(false);
+            LED_State_t leds = {
+                .evse_present = false,
+                .charging = false,
+                .fault = false,
+                .hv_active = false,
+            };
+            LEDSet(&leds);
         }
         vTaskDelay(pdMS_TO_TICKS(100));
     }

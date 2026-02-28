@@ -4,7 +4,7 @@
  */
 
 #include "tim.h"
-#include "buzzer.h"
+#include "Buzzer.h"
 #include "common.h"
 
 #include "stm32xx_hal.h"
