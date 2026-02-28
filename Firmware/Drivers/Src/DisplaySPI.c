@@ -144,7 +144,7 @@ void HAL_SPI_TxCpltCallback(SPI_HandleTypeDef *hspi)
     }
 }
 
-static void Display_SendCommand(uint8_t cmd)
+static void Display_SendCommand(uint8_t cmd, TickType_t timeout)
 {
     static uint8_t cmdBuf;
     cmdBuf = cmd;
@@ -152,16 +152,16 @@ static void Display_SendCommand(uint8_t cmd)
     Display_CS_Low();
 
     HAL_SPI_Transmit_IT(&hspi3, &cmdBuf, 1); // 1: transmit one byte (a command is always a single byte)
-    xSemaphoreTake(spiTXDone, portMAX_DELAY);
+    xSemaphoreTake(spiTXDone, timeout);
 }
 
-static void Display_SendData(uint8_t *data, uint16_t len)
+static void Display_SendData(uint8_t *data, uint16_t len, TickType_t timeout)
 {
     Display_A0_High();
     Display_CS_Low();
 
     HAL_SPI_Transmit_IT(&hspi3, data, len);
-    xSemaphoreTake(spiTXDone, portMAX_DELAY); // wait for transmission to complete before returning
+    xSemaphoreTake(spiTXDone, timeout); // wait for transmission to complete before returning
    
 }
 

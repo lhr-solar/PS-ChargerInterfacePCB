@@ -1,4 +1,4 @@
-A#!/usr/bin/env python3
+#!/usr/bin/env python3
 import argparse
 import os
 import sys
@@ -44,7 +44,8 @@ def find_tests(tests_dir: Path):
         # Write the code to clean the filename here then apppend to tests list
         # The string you append should match what you'd put into make TEST=[]
         ####
-        tests.append(cfile)
+        test_name = cfile.stem
+        tests.append(test_name)
 
         ###
 
@@ -105,22 +106,18 @@ def main():
         make_flags = ["-B"]
 
 
-    #defines what MCU it is using
+   
     ####
-    ports = ["stm32g473xx"]
+    ports = ["stm32l431cbt"]
     ####
 
-    # ❗ CHANGE THIS ❗
-    # Change tests_dir to wherever your tests live relative to your top-level git repo directory
     ####
-    tests_dir = Path("Software/Tests")
+    tests_dir = Path("Firmware/Tests")
     ####
     tests = find_tests(git_dir / tests_dir)
 
-    # ❗ CHANGE THIS ❗
-    # Change makefile_dir to wherever your software Makefile lives relative to your top-level git repo directory
     ####
-    makefile_dir = Path("Software")
+    makefile_dir = Path("Firmware")
     ####
     script_dir = git_dir / makefile_dir
 
@@ -159,4 +156,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-

@@ -45,22 +45,45 @@ typedef enum
 #define FAULT_BIT(fault) (1UL << (fault)) // macro to convert fault enum value to corresponding bit position in the fault bitmap
 _Static_assert(NUM_FAULTS <= MAX_FAULT_BITS, "too many fault bits");
 
+
+//TODO: test all event bits and fault bits 
+
 uint8_t faultBits_init(void);
 
 
 /**
  * @brief   Utilize the fault enum to set fault to a certain state. This function can be used to set multiple faults.
- * @param   fault The fault state(s) to set
+ * @param   inputBit The fault state(s) to set
  * @return  Sets the specified fault(s) in the system fault state
  */
 
 void faultBits_set(fault_state_t inputBit);
 
+
+/**
+ * @brief   wait for the specified fault bit(s) to be set. This function can be used to wait for multiple faults.
+ * @param   inputBit The fault state(s) to set
+ * @param   xTicksToWait The maximum time to wait for the fault bit(s) to be set, in ticks.
+ * @return  true if the specified fault bit(s) were set within the timeout period, false otherwise
+ */
+
 bool faultBit_wait(fault_state_t inputBit, TickType_t xTicksToWait);
 
-bool faultBits_isSet(fault_state_t fault);
+/**
+ * @brief   Check if the specified fault bit(s) are set. This function can be used to check multiple faults.
+ * @param   inputBit The fault state(s) to check
+ * @return  true if the specified fault bit(s) are set, false otherwise
+ */
 
-void faultBits_clear(fault_state_t fault);
+bool faultBits_isSet(fault_state_t inputBit);
+
+
+/**
+ * @brief   Clear the specified fault bit(s). This function can be used to clear multiple faults.
+ * @param   inputBit The fault state(s) to clear
+ */
+
+void faultBits_clear(fault_state_t inputBit);
 
 
 
