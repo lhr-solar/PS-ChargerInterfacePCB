@@ -1,26 +1,60 @@
 #include "common.h"
 #include "StatusLED.h"
 
-static uint32_t fault_bitmap = 0;
+EventGroupHandle_t faultStateBits;
+StaticEventGroup_t faultStateBitsBuffer;
 
-void Fault_Set(fault_state_t fault)
+uint8_t faultBits_init(void)
 {
-    fault_bitmap |= (uint32_t)fault;
+    faultStateBits = xEventGroupCreateStatic(&faultStateBitsBuffer);
+    if (faultStateBits == NULL)
+    {
+        return 0;
+    }
+    return 1;
 }
 
-void Fault_Clear(fault_state_t fault)
+void faultBits_set(fault_state_t bit)
 {
-    fault_bitmap &= ~(uint32_t)fault;
+    if (bit >= NUM_FAULTS)
+    {
+        return;
+    }
+
+    xEventGroupSetBits(faultStateBits, FAULT_BIT(bit));
+
+    return;
 }
 
-bool Fault_IsSet(fault_state_t fault)
+bool faultBit_wait(fault_state_t fault, TickType_t xTicksToWait)
 {
-    return (fault_bitmap & (uint32_t)fault) != 0;
+    if (fault >= NUM_FAULTS)
+    {
+        return false;
+    }
+
+    EventBits_t bits = xEventGroupWaitBits(faultStateBits, FAULT_BIT(fault), pdFALSE, pdFALSE, xTicksToWait);
+    return (bits & FAULT_BIT(fault)) != 0;
 }
 
-uint32_t Fault_GetAll(void)
+bool faultBits_isSet(fault_state_t fault)
 {
-    return fault_bitmap;
+    if (fault >= NUM_FAULTS)
+    {
+        return false;
+    }
+
+    return (xEventGroupGetBits(faultStateBits) & FAULT_BIT(fault)) != 0;
+}
+
+void faultBits_clear(fault_state_t fault)
+{
+    if (fault >= NUM_FAULTS)
+    {
+        return;
+    }
+
+    xEventGroupClearBits(faultStateBits, FAULT_BIT(fault));
 }
 
 void SystemClock_Config(void)
@@ -66,13 +100,12 @@ void SystemClock_Config(void)
 void Error_Handler(void)
 {
 
-  Fault_Indicator(true);
-  HAL_TIM_PWM_MspDeInit(&htim5); // stop buzzer PWM
+    Fault_Indicator(true);
+    HAL_TIM_PWM_MspDeInit(&htim5); // stop buzzer PWM
 
-  // TODO: send CAN messages about fault for telemetry
+    // TODO: send CAN messages about fault for telemetry, later
 
-
-  while (1)
-  {
-  }
+    while (1)
+    {
+    }
 }

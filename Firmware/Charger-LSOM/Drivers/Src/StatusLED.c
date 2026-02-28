@@ -1,6 +1,6 @@
 #include "StatusLED.h"
 #include "pinDef.h"
-#include "stm32g4xx_hal.h"
+#include "stm32xx_hal.h"
 #include "gpio.h"
 #include "Estop.h"
 
@@ -31,14 +31,8 @@ void HV_Indicator(bool hv_active)
 
 void Fault_Indicator(bool fault)
 {
-    if (fault)
-    {
-        HAL_GPIO_WritePin(LEDMaps[LED_FAULT].port, LEDMaps[LED_FAULT].pin, GPIO_PIN_SET);
-        vTaskDelay(pdMS_TO_TICKS(200));
-        HAL_GPIO_WritePin(LEDMaps[LED_FAULT].port, LEDMaps[LED_FAULT].pin, GPIO_PIN_RESET);
-        vTaskDelay(pdMS_TO_TICKS(200));
-    }
-    else
+    HAL_GPIO_WritePin(LEDMaps[LED_FAULT].port, LEDMaps[LED_FAULT].pin, GPIO_PIN_SET);
+    if (!fault)
     {
         HAL_GPIO_WritePin(LEDMaps[LED_FAULT].port, LEDMaps[LED_FAULT].pin, GPIO_PIN_RESET);
     }
@@ -55,10 +49,10 @@ void HeartBeat(void)
     {
 
         HAL_GPIO_WritePin(LEDMaps[LED_HEART].port, LEDMaps[LED_HEART].pin, GPIO_PIN_SET);
-        vTaskDelay(pdMS_TO_TICKS(500));
+        vTaskDelay(pdMS_TO_TICKS(3000));
 
         HAL_GPIO_WritePin(LEDMaps[LED_HEART].port, LEDMaps[LED_HEART].pin, GPIO_PIN_RESET);
-        vTaskDelay(pdMS_TO_TICKS(500));
+        vTaskDelay(pdMS_TO_TICKS(3000));
     }
 }
 
@@ -69,15 +63,7 @@ void HeartBeat(void)
  */
 void Charging_Indicator(bool charging)
 {
-    while (charging)
-    {
-        HAL_GPIO_WritePin(LEDMaps[LED_CHARGE].port, LEDMaps[LED_CHARGE].pin, GPIO_PIN_SET);
-        vTaskDelay(pdMS_TO_TICKS(1000));
-        HAL_GPIO_WritePin(LEDMaps[LED_CHARGE].port, LEDMaps[LED_CHARGE].pin, GPIO_PIN_RESET);
-        vTaskDelay(pdMS_TO_TICKS(1000));
-    }
-
-    HAL_GPIO_WritePin(LEDMaps[LED_CHARGE].port, LEDMaps[LED_CHARGE].pin, GPIO_PIN_RESET);
+    HAL_GPIO_TogglePin(LEDMaps[LED_CHARGE].port, LEDMaps[LED_CHARGE].pin);
 }
 
 /**

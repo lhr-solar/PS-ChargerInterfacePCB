@@ -9,28 +9,26 @@
 // lowk will delete some commands that will never be used
 // Data sheet for commands: https://newhavendisplay.com/content/specs/NHD-C12832A1Z-FSB-FBW-3V3.pdf
 
-
-
-typedef enum {
+typedef enum
+{
     DISPLAY_OK = 0,
     DISPLAY_ERROR_INVALID_PARAM,
     DISPLAY_ERROR_HW_FAILURE,
     DISPLAY_ERROR_OUT_OF_BOUNDS,
 } Display_status_t;
 
-//Start up values
-#define DISPLAY_RESET_LOW_DELAY_MS      20      // hold RES low for 20ms to guarantee full controller reset
-#define DISPLAY_RESET_HIGH_DELAY_MS     5       // bring RES high 5ms before sending commands (setup time)
-#define DISPLAY_STARTUP_DELAY_MS        50      // wait 50ms after reset before first command (controller stabilization)
-#define DISPLAY_START_CONTRAST_VAL      0x10    // initial contrast: 16/63, safe mid-low value to prevent burn-in at startup
+// Start up values
+#define DISPLAY_RESET_LOW_DELAY_MS 20   // hold RES low for 20ms to guarantee full controller reset
+#define DISPLAY_RESET_HIGH_DELAY_MS 5   // bring RES high 5ms before sending commands (setup time)
+#define DISPLAY_STARTUP_DELAY_MS 50     // wait 50ms after reset before first command (controller stabilization)
+#define DISPLAY_START_CONTRAST_VAL 0x10 // initial contrast: 16/63, safe mid-low value to prevent burn-in at startup
 
 // ST7565R has 132 column drivers but the NHD-C12832 display panel only uses 128.
 // The panel is centered, so pixel 0 maps to column driver 4.
-#define DISPLAY_COL_OFFSET              4
+#define DISPLAY_COL_OFFSET 4
 
 // CMD_SET_VOLUME accepts a 6-bit value (0-63). Values above 63 are clamped to 63.
-#define DISPLAY_CONTRAST_MAX            63
-
+#define DISPLAY_CONTRAST_MAX 63
 
 // turns display on and off
 #define CMD_DISPLAY_OFF 0xAE
@@ -67,7 +65,7 @@ typedef enum {
 // software reset
 #define CMD_RESET 0xE2
 
-// verticlal ADC flips to rotate displays
+// vertical ADC flips to rotate displays
 #define CMD_COM_NORMAL 0xC0  // COM0 -> COM63
 #define CMD_COM_REVERSE 0xC8 // COM63 -> COM0
 
@@ -106,13 +104,10 @@ typedef enum {
 #define DISPLAY_MAX_COLS (DISPLAY_WIDTH / FONT_CELL_W)
 #define DISPLAY_MAX_ROWS (DISPLAY_HEIGHT / FONT_CELL_H)
 
-
 /**
- * @brief   Initalizes the display by configuring GPIO pins, resetting the controller, and sending the required initialization command sequence. 
+ * @brief   Initalizes the display by configuring GPIO pins, resetting the controller, and sending the required initialization command sequence.
  */
 void Display_Init(void);
-
-
 
 /**
  * @brief   Clears the display by setting all pixels in the framebuffer to off and updating the display.
@@ -141,7 +136,6 @@ void Display_On(void);
  * @brief   Turns the display off by sending the appropriate command to the controller
  */
 void Display_Off(void);
-
 
 /**
  * @brief   Sets pixel at (x,y) to on or off
@@ -174,5 +168,3 @@ Display_status_t Display_DrawString(uint8_t x, uint8_t y, const char *str);
  * @return  Renders a checkerboard pattern on the display by setting pixels on and off
  */
 void Display_TestPattern(void);
-
-

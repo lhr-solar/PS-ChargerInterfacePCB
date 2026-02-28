@@ -7,7 +7,7 @@ SPI_HandleTypeDef hspi3;
 
 void SPI3_IRQHandler(void)
 {
-    HAL_SPI_IRQHandler(&hspi3);
+  HAL_SPI_IRQHandler(&hspi3);
 }
 
 void MX_SPI3_Init(void)
@@ -31,7 +31,7 @@ void MX_SPI3_Init(void)
   {
     Error_Handler();
   }
-  HAL_NVIC_SetPriority(SPI3_IRQn, 5, 0);
+  HAL_NVIC_SetPriority(SPI3_IRQn, configLIBRARY_MAX_SYSCALL_INTERRUPT_PRIORITY, 0);
   HAL_NVIC_EnableIRQ(SPI3_IRQn);
 }
 

@@ -18,8 +18,6 @@ SemaphoreHandle_t BuzzerMutex = NULL;
 
 StaticSemaphore_t BuzzerMutexBuffer;
 
-
-
 // states of variables
 bool alarm_status = false;
 GPIO_PinState estop_state = GPIO_PIN_RESET;
@@ -28,7 +26,7 @@ static Buzzer_status_t Buzzer_SetTone(uint16_t freq_hz, uint8_t duty_pct)
 {
     if (freq_hz == 0 || duty_pct == 0 || duty_pct > 100)
     {
-        printf("Invalid buzzer parameters: freq=%u Hz, duty=%u%%\n", freq_hz, duty_pct);
+        printf("Invalid buzzer parameters: freq=%u Hz, duty=%u%%\r\n", freq_hz, duty_pct);
 
         Buzzer_Off();
         return BUZZER_ERROR_INVALID_PARAM;
@@ -83,53 +81,51 @@ void Buzzer_Off(void)
 }
 
 // starting charging sound:
-void ChargeStart(void)
+void Buzzer_ChargeStart(void)
 {
 
     if (xSemaphoreTake(BuzzerMutex, portMAX_DELAY) == pdTRUE)
     {
-        Buzzer_Tone(200, 25, 2000);
+        Buzzer_Tone(BUZZER_CHARGE_START_FREQ_HZ, BUZZER_CHARGE_START_DUTY_PCT, BUZZER_CHARGE_START_DURATION_MS);
 
-        Buzzer_Tone(1000, 75, 2000);
+        Buzzer_Tone(BUZZER_CHARGE_START_FREQ_HZ_2, BUZZER_CHARGE_START_DUTY_PCT_2, BUZZER_CHARGE_START_DURATION_MS_2);
 
-        vTaskDelay(pdMS_TO_TICKS(2000));
+
 
         xSemaphoreGive(BuzzerMutex);
     }
 }
 
 // finished charging:
-void ChargeStop(void)
+void Buzzer_ChargeStop(void)
 {
 
     if (xSemaphoreTake(BuzzerMutex, portMAX_DELAY) == pdTRUE)
     {
-        Buzzer_Tone(800, 50, 5000);
+        Buzzer_Tone(BUZZER_CHARGE_STOP_FREQ_HZ_1, BUZZER_CHARGE_STOP_DUTY_PCT_1, BUZZER_CHARGE_STOP_DURATION_MS_1);
 
-        Buzzer_Tone(1200, 60, 5000);
+        Buzzer_Tone(BUZZER_CHARGE_STOP_FREQ_HZ_2, BUZZER_CHARGE_STOP_DUTY_PCT_2, BUZZER_CHARGE_STOP_DURATION_MS_2);
 
-        Buzzer_Tone(1600, 70, 5000);
-
-        vTaskDelay(pdMS_TO_TICKS(2000));
-
+        Buzzer_Tone(BUZZER_CHARGE_STOP_FREQ_HZ_3, BUZZER_CHARGE_STOP_DUTY_PCT_3, BUZZER_CHARGE_STOP_DURATION_MS_3);
         xSemaphoreGive(BuzzerMutex);
     }
 }
 
 // kaboom sound: fast variable between 2.4 kHz and 1.8 kHz
-void ChargeAlarm(void)
+void Buzzer_ChargeAlarm(void)
 {
 
     estop_state = HAL_GPIO_ReadPin(ESTOP_PORT, ESTOP_PIN);
+    //TODO: Update to have more fault states that will cause an alarm and not just Estop, later
     alarm_status = (estop_state == GPIO_PIN_RESET) ? true : false; // active low
 
     while (alarm_status)
     {
         if (xSemaphoreTake(BuzzerMutex, portMAX_DELAY) == pdTRUE)
         {
-            Buzzer_Tone(2400, 90, 500);
+            Buzzer_Tone(BUZZER_CHARGE_ALARM_FREQ_HZ_1, BUZZER_CHARGE_ALARM_DUTY_PCT_1, BUZZER_CHARGE_ALARM_DURATION_MS_1);
 
-            Buzzer_Tone(1800, 90, 500);
+            Buzzer_Tone(BUZZER_CHARGE_ALARM_FREQ_HZ_2, BUZZER_CHARGE_ALARM_DUTY_PCT_2, BUZZER_CHARGE_ALARM_DURATION_MS_2);
 
             xSemaphoreGive(BuzzerMutex);
         }

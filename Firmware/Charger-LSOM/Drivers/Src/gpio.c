@@ -1,7 +1,7 @@
 
 #include "gpio.h"
 #include "pinDef.h"
-#include "stm32g4xx_hal.h"
+#include "stm32xx_hal.h"
 
 void MX_GPIO_Init(void)
 {
@@ -34,7 +34,7 @@ void MX_GPIO_Init(void)
   GPIO_InitStruct.Pull = GPIO_NOPULL;
   GPIO_InitStruct.Speed = GPIO_SPEED_FREQ_LOW;
   HAL_GPIO_Init(DISPLAY_RES_PORT, &GPIO_InitStruct);
-  
+
   /*Configure GPIO pins : LED_EVSE_Pin LED_Charge_Pin LED_Heart_Pin DIsplay_NSS_Pin */
   GPIO_InitStruct.Pin = LED_EVSE_PIN | LED_CHARGE_PIN | LED_HEART_PIN | DISPLAY_NSS_PIN;
   GPIO_InitStruct.Mode = GPIO_MODE_OUTPUT_PP;

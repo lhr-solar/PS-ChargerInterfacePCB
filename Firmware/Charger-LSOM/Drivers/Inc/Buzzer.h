@@ -11,16 +11,46 @@
 #define BUZZER_TIMER_HANDLE (&BUZZER_TIMER)
 #define BUZZER_TIMER_CLK_HZ 80000000UL
 
-typedef enum {
+// Listed below are the macros for charger sounds
+// Buzzer Charger Starting Sound
+#define BUZZER_CHARGE_START_FREQ_HZ 200
+#define BUZZER_CHARGE_START_DUTY_PCT 25
+#define BUZZER_CHARGE_START_DURATION_MS 2000
+
+#define BUZZER_CHARGE_START_FREQ_HZ_2 1000
+#define BUZZER_CHARGE_START_DUTY_PCT_2 75
+#define BUZZER_CHARGE_START_DURATION_MS_2 2000
+
+// Buzzer Charger Stopping Sound
+#define BUZZER_CHARGE_STOP_FREQ_HZ_1 800
+#define BUZZER_CHARGE_STOP_DUTY_PCT_1 50
+#define BUZZER_CHARGE_STOP_DURATION_MS_1 5000
+
+#define BUZZER_CHARGE_STOP_FREQ_HZ_2 1200
+#define BUZZER_CHARGE_STOP_DUTY_PCT_2 60
+#define BUZZER_CHARGE_STOP_DURATION_MS_2 5000
+
+#define BUZZER_CHARGE_STOP_FREQ_HZ_3 1600
+#define BUZZER_CHARGE_STOP_DUTY_PCT_3 70
+#define BUZZER_CHARGE_STOP_DURATION_MS_3 5000
+
+// Buzzer Charger Alarm Sound
+#define BUZZER_CHARGE_ALARM_FREQ_HZ_1 2400
+#define BUZZER_CHARGE_ALARM_DUTY_PCT_1 90
+#define BUZZER_CHARGE_ALARM_DURATION_MS_1 500
+
+#define BUZZER_CHARGE_ALARM_FREQ_HZ_2 1800
+#define BUZZER_CHARGE_ALARM_DUTY_PCT_2 90
+#define BUZZER_CHARGE_ALARM_DURATION_MS_2 500
+
+typedef enum
+{
 
     BUZZER_OK = 0,
     BUZZER_ERROR_INVALID_PARAM,
     BUZZER_ERROR_HW_FAILURE
 
-}Buzzer_status_t; 
-
-
-
+} Buzzer_status_t;
 
 /**
  * @brief   Starts the PWM signal for the buzzer and turns it off by default
@@ -43,7 +73,6 @@ Buzzer_status_t Buzzer_Tone(uint16_t freq_hz, uint8_t duty_pct, uint32_t duratio
  */
 void Buzzer_Off(void);
 
-
 /**
  * @brief   Stops all PWM output immediately
  */
@@ -52,14 +81,14 @@ void PWM_Stop(void);
 /**
  * @brief   Starts the charging sound sequence
  */
-void ChargeStart(void);
+void Buzzer_ChargeStart(void);
 
 /**
  * @brief   Starts the charging stop sound sequence
  */
-void ChargeStop(void);
+void Buzzer_ChargeStop(void);
 
 /**
  * @brief   Starts the charging alarm sound sequence
  */
-void ChargeAlarm(void);
+void Buzzer_ChargeAlarm(void);

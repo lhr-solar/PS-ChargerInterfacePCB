@@ -1,8 +1,8 @@
 /* Copyright (c) 2018-2026 UT Longhorn Racing Solar */
-/** Buzzer_test.c
- * Description: Test file for buzzer driver. Tests all buzzer functions and patterns.
- * Hardware: tests should be run with an active buzzer connected to the buzzer output pin
- * The heartbeat LED should also be observed to ensure the system is still responsive while the buzzer is active.
+/** Estop_test.c
+ * Description: Test file for Estop driver. Tests all Estop functions and its PWM patternsp.
+ * Hardware: tests should be run with an active Estop connected to the Estop output pin and buzzer lowk will make
+ * The heartbeat LED should also be observed to ensure the system is still responsive while the Estop is active.
  */
 
 #include "Buzzer.h"
@@ -22,6 +22,7 @@
 TaskHandle_t Estop_Handle = NULL;
 TaskHandle_t HeartBeatTask_Handle = NULL;
 TaskHandle_t FaultLEDTask_Handle = NULL;
+TaskHandle_t InitTask_Handle = NULL;
 
 StaticTask_t Estop_Buffer;
 StackType_t EstopStack[configMINIMAL_STACK_SIZE];
@@ -31,6 +32,9 @@ StackType_t HeartBeatTaskStack[configMINIMAL_STACK_SIZE];
 
 StaticTask_t FaultLEDTask_Buffer;
 StackType_t FaultLEDTaskStack[configMINIMAL_STACK_SIZE];
+
+StaticTask_t InitTask_Buffer;
+StackType_t InitTaskStack[configMINIMAL_STACK_SIZE];
 
 void EstopTask(void *argument)
 {
@@ -59,7 +63,7 @@ void FaultLEDTask(void *argument)
         {
             Fault_Indicator(false);
         }
-        vTaskDelay(pdMS_TO_TICKS(50));
+        vTaskDelay(pdMS_TO_TICKS(100));
     }
 }
 
@@ -68,15 +72,19 @@ void HeartBeatTask(void *argument)
     HeartBeat();
 }
 
-int main(void)
+void InitTask(void *argument)
 {
-
     HAL_Init();
     SystemClock_Config();
     MX_TIM5_Init();
     MX_SPI3_Init();
-
     MX_GPIO_Init();
+
+    vTaskDelete(NULL);
+}
+
+int main(void)
+{
 
     FaultLEDTask_Handle = xTaskCreateStatic(
         FaultLEDTask,
@@ -104,6 +112,15 @@ int main(void)
         tskIDLE_PRIORITY + 1,
         HeartBeatTaskStack,
         &HeartBeatTask_Buffer);
+
+    InitTask_Handle = xTaskCreateStatic(
+        InitTask,
+        "Init Task",
+        configMINIMAL_STACK_SIZE,
+        NULL,
+        tskIDLE_PRIORITY + 4,
+        InitTaskStack,
+        &InitTask_Buffer);
 
     vTaskStartScheduler();
 

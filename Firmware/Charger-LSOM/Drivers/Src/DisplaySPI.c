@@ -1,7 +1,7 @@
 #include "DisplaySPI.h"
 #include "spi.h"
 #include <string.h>
-#include "stm32g4xx_hal.h"
+#include "stm32xx_hal.h"
 #include "gpio.h"
 #include "StatusLED.h"
 #include "FreeRTOS.h"
@@ -121,15 +121,6 @@ StaticSemaphore_t DisplayMutexBuffer;
 static SemaphoreHandle_t spiTXDone;
 static StaticSemaphore_t spiTXDoneBuffer;
 
-void HAL_SPI_TxCpltCallback(SPI_HandleTypeDef *hspi)
-{
-    if (hspi->Instance == SPI3) //only signal spiTXDone for SPI3
-    {
-        BaseType_t xHigherPriorityTaskWoken = pdFALSE; 
-        xSemaphoreGiveFromISR(spiTXDone, &xHigherPriorityTaskWoken); //gives semaphore and sets xHigherPriorityTaskWoken to true if a higher priority task was woken by the operation
-        portYIELD_FROM_ISR(xHigherPriorityTaskWoken); // switch to the higher priority task if needed
-    }
-}
 
 // frame buffers for display data; each byte corresponds to a vertical column of 8 pixels, so 4 pages of 128 bytes for 128x32 display
 static uint8_t framebuffer[DISPLAY_BUF_SIZE];
@@ -142,6 +133,17 @@ static void Display_A0_High(void) { HAL_GPIO_WritePin(DISPLAY_MISO_PORT, DISPLAY
 static void Display_RES_Low(void) { HAL_GPIO_WritePin(DISPLAY_RES_PORT, DISPLAY_RES_PIN, GPIO_PIN_RESET); }
 static void Display_RES_High(void) { HAL_GPIO_WritePin(DISPLAY_RES_PORT, DISPLAY_RES_PIN, GPIO_PIN_SET); }
 
+void HAL_SPI_TxCpltCallback(SPI_HandleTypeDef *hspi)
+{
+    if (hspi->Instance == SPI3) // only signal spiTXDone for SPI3
+    {
+        Display_CS_High();
+        BaseType_t xHigherPriorityTaskWoken = pdFALSE;
+        xSemaphoreGiveFromISR(spiTXDone, &xHigherPriorityTaskWoken); // gives semaphore and sets xHigherPriorityTaskWoken to true if a higher priority task was woken by the operation
+        portYIELD_FROM_ISR(xHigherPriorityTaskWoken);                // switch to the higher priority task if needed
+    }
+}
+
 static void Display_SendCommand(uint8_t cmd)
 {
     static uint8_t cmdBuf;
@@ -150,8 +152,7 @@ static void Display_SendCommand(uint8_t cmd)
     Display_CS_Low();
 
     HAL_SPI_Transmit_IT(&hspi3, &cmdBuf, 1); // 1: transmit one byte (a command is always a single byte)
-    xSemaphoreTake(spiTXDone, portMAX_DELAY); // wait for transmission to complete before returning (important to avoid
-    Display_CS_High();
+    xSemaphoreTake(spiTXDone, portMAX_DELAY);
 }
 
 static void Display_SendData(uint8_t *data, uint16_t len)
@@ -160,8 +161,8 @@ static void Display_SendData(uint8_t *data, uint16_t len)
     Display_CS_Low();
 
     HAL_SPI_Transmit_IT(&hspi3, data, len);
-    xSemaphoreTake(spiTXDone, portMAX_DELAY); // wait for transmission to complete before returning (important to avoid
-    Display_CS_High();
+    xSemaphoreTake(spiTXDone, portMAX_DELAY); // wait for transmission to complete before returning
+   
 }
 
 static void Display_Reset(void)
@@ -227,6 +228,7 @@ void Display_GPIO_Init(void)
 void Display_Init(void)
 {
 
+    //TODO: implement function that display error if this fails instead of just hanging indefinitely
     spiTXDone = xSemaphoreCreateBinaryStatic(&spiTXDoneBuffer);
     DisplayMutex = xSemaphoreCreateMutexStatic(&DisplayMutexBuffer);
 
@@ -252,7 +254,6 @@ void Display_Init(void)
 
         Display_Clear_Internal();
 
-        vTaskDelay(pdMS_TO_TICKS(2000));
 
         xSemaphoreGive(DisplayMutex);
     }
@@ -387,8 +388,6 @@ Display_status_t Display_DrawString(uint8_t x, uint8_t y, const char *str)
                 break;
 
             Display_DrawChar(x, y, c);
-
-            // HAL_GPIO_TogglePin(LEDMaps[LED_CHARGE].port, LEDMaps[LED_CHARGE].pin);
 
             Display_Update_Internal();
 

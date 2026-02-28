@@ -2,32 +2,51 @@
 
 #include <stdint.h>
 #include <stdbool.h>
-#include "stm32g4xx_hal.h"
+#include "stm32xx_hal.h"
 #include "tim.h"
 #include "FreeRTOS.h"
 #include "task.h"
+#include "event_groups.h"
 #include "StatusLED.h"
 
 #define FAULT_MESSAGE_DELAY pdMS_TO_TICKS(200)
+#define ALL_FAULT_BITS ((1UL << NUM_FAULTS) - 1UL); // creates a bitmask with all fault bits set to 1 based on the total number of faults defined in the enum
+#define MAX_FAULT_BITS 24U // use 32-bit unsigned integer for fault state to allow for more than 8 faults
+
 
 typedef enum
 {
-  FAULT_NONE = 0, // no active faults
+  FAULT_ESTOP, // estop pressed
 
-  FAULT_ESTOP = 1 << 1, // estop pressed
+  FAULT_ELCON_UV,         // elcon undervoltage
+  FAULT_ELCON_OV,         // elcon overvoltage
+  FAULT_ELCON_OC,         // elcon overcurrent
+  FAULT_ELCON_HARDWARE,   // elcon hardware failure (over temp, fan failure, etc)
+  FAULT_ELCON_OVERTEMP,   // elcon over temperature
+  FAULT_ELCON_INPUT_VOLT, // elcon input voltage wrong
 
-  FAULT_ELCON_UV = 1 << 2, // elcon undervoltage
-  FAULT_ELCON_OV = 1 << 3, // elcon overvoltage
-  FAULT_ELCON_OC = 1 << 4, // elcon overcurrent
+  FAULT_BPS_OV,        // bps overvoltage
+  FAULT_BPS_OC,        // bps overcurrent
+  FAULT_BPS_UV,       // bps undervoltage
+  FAULT_BPS_OVERTEMP, // bps over temperature
 
-  FAULT_BPS_OV = 1 << 8, // bps overvoltage
-  FAULT_BPS_OC = 1 << 9, // bps overcurrent
+  FAULT_DISPLAY, // display failure (SPI failures)
+  FAULT_BUZZER,  // buzzer driver malfunction (PWM/timer failures)
 
-  FAULT_DISPLAY = 1 << 10, // display failure (SPI failures)
-  FAULT_BUZZER = 1 << 11,  // buzzer driver malfunction (PWM/timer failures)
+  FAULT_CARCAN_HEARTBEAT_MISSED,  // missed heartbeat from carCAN
+  FAULT_ELCONCAN_HEARTBEAT_MISSED, // missed heartbeat from elconCAN
 
-  FAULT_HEARTBEAT_MISSED = 1 << 12 // missed heartbeat from car (no CAN messages received for a certain period)
-} fault_state_t;
+  NUM_FAULTS //to check total # of faults 
+
+} fault_state_t;  
+
+
+
+#define FAULT_BIT(fault) (1UL << (fault)) // macro to convert fault enum value to corresponding bit position in the fault bitmap
+_Static_assert(NUM_FAULTS <= MAX_FAULT_BITS, "too many fault bits");
+
+uint8_t faultBits_init(void);
+
 
 /**
  * @brief   Utilize the fault enum to set fault to a certain state. This function can be used to set multiple faults.
@@ -35,28 +54,16 @@ typedef enum
  * @return  Sets the specified fault(s) in the system fault state
  */
 
-void Fault_Set(fault_state_t fault);
+void faultBits_set(fault_state_t inputBit);
 
-/**
- * @brief   Utilize the fault enum to clear fault to a certain state. This function can be used to clear multiple faults.
- * @param   fault The fault state(s) to clear
- * @return  Clears the specified fault(s) in the system fault state
- */
-void Fault_Clear(fault_state_t fault);
+bool faultBit_wait(fault_state_t inputBit, TickType_t xTicksToWait);
 
-/**
- * @brief   Checks if a specific fault is currently set
- * @param   fault The fault state to check
- * @return  true if the specified fault is currently set, false otherwise
- */
-bool Fault_IsSet(fault_state_t fault);
+bool faultBits_isSet(fault_state_t fault);
 
-/**
- * @brief   Retrieves the current fault bitmap representing all active faults in the system
- * @param   none
- * @return  A 32-bit unsigned integer where each bit represents a different fault state. A bit value of 1 indicates the corresponding fault is active, while a bit value of 0 indicates it is not.
- */
-uint32_t Fault_GetAll(void);
+void faultBits_clear(fault_state_t fault);
+
+
+
 
 void SystemClock_Config(void);
 

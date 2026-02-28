@@ -35,6 +35,5 @@ Estop_status_t Estop_State(void)
 
         return ESTOP_RELEASED;
     }
-        return ESTOP_RELEASED; 
-
+    return ESTOP_RELEASED;
 }
