@@ -107,8 +107,9 @@ def main():
 
 
    
+  ### CHANGE THIS DEPENDING ON WHICH MCU IS BEING USED
     ####
-    ports = ["stm32l431cbt", "stm32g473xx"]
+    ports = ["stm32g473xx"]
     ####
 
     ####
