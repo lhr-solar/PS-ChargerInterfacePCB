@@ -108,7 +108,7 @@ def main():
 
    
     ####
-    ports = ["stm32l431cbt"]
+    ports = ["stm32l431cbt", "stm32g473xx"]
     ####
 
     ####
