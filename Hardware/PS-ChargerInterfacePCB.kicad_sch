@@ -40400,6 +40400,16 @@
 		)
 		(uuid "81b14811-f640-480b-bb8b-b00a7a6e4142")
 	)
+	(text "Part B CARCAN is now ElconCAN\n\nElconCAN = CAN3\n"
+		(exclude_from_sim no)
+		(at 84.074 104.394 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "857023f5-0919-437e-8bef-38955651b3ab")
+	)
 	(text "Bzz Bzz"
 		(exclude_from_sim no)
 		(at 229.362 14.478 0)
