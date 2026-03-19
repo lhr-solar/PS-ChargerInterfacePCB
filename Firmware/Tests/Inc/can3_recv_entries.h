@@ -1,0 +1,3 @@
+//Car CAN = CAN3
+
+CAN_RECV_ENTRY(0x18FF50E5, 8, true)

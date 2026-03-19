@@ -5,7 +5,7 @@ FDCAN_HandleTypeDef CarCAN;
 void CarCAN_Init(void)
 {
 
-    CarCAN.Instance = FDCAN1;
+    CarCAN.Instance = FDCAN3;
     CarCAN.Init.ClockDivider = FDCAN_CLOCK_DIV1;
     CarCAN.Init.FrameFormat = FDCAN_FRAME_CLASSIC;
     CarCAN.Init.Mode = FDCAN_MODE_NORMAL;

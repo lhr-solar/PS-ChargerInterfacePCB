@@ -19,6 +19,7 @@
 #include "StatusLED.h"
 #include "DisplaySPI.h"
 #include "ElconCAN.h"
+#include "CAN_FD.h"
 
 TaskHandle_t ElconCAN_Handle = NULL;
 TaskHandle_t HeartBeatTask_Handle = NULL;
@@ -35,34 +36,49 @@ StackType_t InitTaskStack[configMINIMAL_STACK_SIZE];
 
 void ElconCAN_TXTask(void *argument)
 {
-    Display_DrawString(0, 0, "trying to send shit");
+    Display_DrawString(0, 0, "i think its sending");
 
     ElconStatus_t status;
     uint8_t rx_data[8];
+    char buf[32];
+
+    TickType_t xLastWakeTime = xTaskGetTickCount();
+    const TickType_t xPeriod = pdMS_TO_TICKS(500);
 
     while (1)
     {
+        vTaskDelayUntil(&xLastWakeTime, xPeriod);
 
-        // output 0B B8 00 C8 00 00 00 00
-        ElconCAN_Send(300, 20, 0, portMAX_DELAY);
-        vTaskDelay(pdMS_TO_TICKS(2000));
+        // Flush any stale RX messages that arrived since last loop
+        while (ElconCAN_Recieve(&status, ELCONCAN_RX_ID, rx_data, 0) == CAN_OK) {}
 
-        char buf[32];
-        if (ElconCAN_Recieve(&status, ELCONCAN_RX_ID, rx_data, portMAX_DELAY) == CAN_OK)
+        // output: 01 F4 00 14 00 00 00 00 (50V, 2A)
+        ElconCAN_Send(50, 2, 0, portMAX_DELAY);
+
+        // Wait for fresh response — 400ms gives plenty of margin within the 500ms period
+        if (ElconCAN_Recieve(&status, ELCONCAN_RX_ID, rx_data, pdMS_TO_TICKS(400)) == CAN_OK)
         {
-            printf(buf, sizeof(buf), "V:%.1f I:%.1f", status.output_voltage, status.output_current);
-            Display_DrawString(0, 10, buf);
+            snprintf(buf, sizeof(buf), "V:%.1fV  I:%.1fA",
+                     status.output_voltage, status.output_current);
+            Display_DrawString(0, 8, buf);
 
-            printf(buf, sizeof(buf), "HW:%d OT:%d IV:%d",
+            snprintf(buf, sizeof(buf), "HW:%d OT:%d IV:%d",
                      status.flag_hw_failure, status.flag_over_temp, status.flag_input_voltage_wrong);
-            Display_DrawString(0, 20, buf);
+            Display_DrawString(0, 16, buf);
+
+            HAL_GPIO_WritePin(LED_CHARGE_PORT, LED_CHARGE_PIN, GPIO_PIN_SET);
+            HAL_GPIO_WritePin(LED_FAULT_PORT,  LED_FAULT_PIN,  GPIO_PIN_RESET);
         }
         else
         {
-            Display_DrawString(0, 10, "RX monkey balls");
+            Display_Clear();
+            Display_DrawString(0, 10, "RX is on monkey balls");
+
+            HAL_GPIO_WritePin(LED_CHARGE_PORT, LED_CHARGE_PIN, GPIO_PIN_RESET);
+            HAL_GPIO_WritePin(LED_FAULT_PORT,  LED_FAULT_PIN,  GPIO_PIN_SET);
         }
 
-        HAL_GPIO_TogglePin(LED_HV_PORT, LED_HV_PIN);
+        HAL_GPIO_WritePin(LED_HV_PORT, LED_HV_PIN, GPIO_PIN_SET);
     }
 }
 

@@ -25,5 +25,13 @@ typedef struct {
 
 
 can_status_t ElconCAN_Init(void);
+
+/*
+ * Packs the 8-byte payload for CAN ID 0x1806E5F4
+ * target_voltage_v: Desired voltage in Volts (e.g., 320.1)
+ * target_current_a: Desired current in Amps (e.g., 58.2)
+ * stop_charging: 0 = Open/Charging, 1 = BPS/stop
+ * payload: Pointer to an 8-byte array to store the result
+ */
 can_status_t ElconCAN_Send(float voltage_v, float current_a, uint8_t stop, TickType_t delay_ticks);
 can_status_t ElconCAN_Recieve(ElconStatus_t* status, uint32_t id, uint8_t *data, TickType_t delay_ticks);

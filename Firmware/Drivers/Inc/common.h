@@ -47,6 +47,7 @@ _Static_assert(NUM_FAULTS <= MAX_FAULT_BITS, "too many fault bits");
 
 
 //TODO: test all event bits and fault bits 
+//TODO: add comments for each functions
 
 uint8_t faultBits_init(void);
 
@@ -85,9 +86,10 @@ bool faultBits_isSet(fault_state_t inputBit);
 
 void faultBits_clear(fault_state_t inputBit);
 
-
-
-
 void SystemClock_Config(void);
+
+void HAL_FDCAN_MspInit(FDCAN_HandleTypeDef *fdcanHandle);
+
+void HAL_FDCAN_MspDeInit(FDCAN_HandleTypeDef *fdcanHandle);
 
 void Error_Handler(void);
