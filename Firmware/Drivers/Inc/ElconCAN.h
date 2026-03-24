@@ -23,7 +23,6 @@ typedef struct {
 } ElconStatus_t;
 
 
-
 can_status_t ElconCAN_Init(void);
 
 /*
@@ -33,5 +32,7 @@ can_status_t ElconCAN_Init(void);
  * stop_charging: 0 = Open/Charging, 1 = BPS/stop
  * payload: Pointer to an 8-byte array to store the result
  */
+
+
 can_status_t ElconCAN_Send(float voltage_v, float current_a, uint8_t stop, TickType_t delay_ticks);
 can_status_t ElconCAN_Recieve(ElconStatus_t* status, uint32_t id, uint8_t *data, TickType_t delay_ticks);

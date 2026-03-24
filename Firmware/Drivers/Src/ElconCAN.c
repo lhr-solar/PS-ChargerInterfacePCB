@@ -45,14 +45,16 @@ can_status_t ElconCAN_Init(void)
     ElconCAN->Init.ExtFiltersNbr = 1;
     ElconCAN->Init.TxFifoQueueMode = FDCAN_TX_FIFO_OPERATION;
 
-    // only accept CAN ID: 0x1806E5F4
+    //TODO: accept only 1 CAN ID and test that with HW later
+
+    // only accept CAN ID: 0x1806E5F4 (add back later)
     FDCAN_FilterTypeDef sFilterConfig = {0};
     sFilterConfig.IdType = FDCAN_EXTENDED_ID;
     sFilterConfig.FilterIndex = 0;
     sFilterConfig.FilterType = FDCAN_FILTER_MASK;
     sFilterConfig.FilterConfig = FDCAN_FILTER_TO_RXFIFO0;
 
-    // Accept all incoming messages (mask = 0 means all bits are don't-care)
+    //accepting all incoming messages
     sFilterConfig.FilterID1 = 0x00000000;
     sFilterConfig.FilterID2 = 0x00000000;
 
