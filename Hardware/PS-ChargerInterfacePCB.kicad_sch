@@ -40402,7 +40402,7 @@
 	)
 	(text "Part B CARCAN is now ElconCAN\n\nElconCAN = CAN3\n"
 		(exclude_from_sim no)
-		(at 84.074 104.394 0)
+		(at 79.756 103.886 0)
 		(effects
 			(font
 				(size 1.27 1.27)

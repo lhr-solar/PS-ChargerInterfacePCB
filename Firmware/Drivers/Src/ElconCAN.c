@@ -52,9 +52,9 @@ can_status_t ElconCAN_Init(void)
     sFilterConfig.FilterType = FDCAN_FILTER_MASK;
     sFilterConfig.FilterConfig = FDCAN_FILTER_TO_RXFIFO0;
 
-    // Incoming Elcon to board ID: 0x18FF50E5
-    sFilterConfig.FilterID1 = ELCONCAN_RX_ID;
-    sFilterConfig.FilterID2 = 0x1FFFFFFF;
+    // Accept all incoming messages (mask = 0 means all bits are don't-care)
+    sFilterConfig.FilterID1 = 0x00000000;
+    sFilterConfig.FilterID2 = 0x00000000;
 
     if (can_fd_init(ElconCAN, &sFilterConfig) != CAN_OK)
     {
@@ -95,9 +95,12 @@ can_status_t ElconCAN_Send(float target_voltage_v, float target_current_a, uint8
 
     if (can_fd_send(ElconCAN, &elcon_tx_header, payload, delay_ticks) == CAN_ERR)
     {
+        HAL_GPIO_WritePin(LED_HV_PORT, LED_HV_PIN, GPIO_PIN_RESET);
 
         return CAN_ERR;
     }
+
+    HAL_GPIO_WritePin(LED_HV_PORT, LED_HV_PIN, GPIO_PIN_SET);
 
     return CAN_OK;
 }
@@ -105,10 +108,16 @@ can_status_t ElconCAN_Send(float target_voltage_v, float target_current_a, uint8
 can_status_t ElconCAN_Recieve(ElconStatus_t *status, uint32_t id, uint8_t data[], TickType_t delay_ticks)
 {
 
-    if (can_fd_recv(ElconCAN, id, &elcon_rx_header, data, delay_ticks) != CAN_OK)
+    can_status_t result = can_fd_recv(ElconCAN, id, &elcon_rx_header, data, delay_ticks);
+    if (result == CAN_EMPTY)
+    {
+        return CAN_EMPTY;
+    }
+    if (result != CAN_OK)
     {
         return CAN_ERR;
     }
+
 
     // byte 1/2 = actual voltage output
     uint16_t v_raw = ((uint16_t)data[0] << 8) | data[1];
@@ -135,7 +144,6 @@ can_status_t ElconCAN_Recieve(ElconStatus_t *status, uint32_t id, uint8_t data[]
 
     // Bit 4: 1 = Communication receive time-out (bad bad stuff)
     status->flag_comm_timeout = (data[4] & 0x10) ? 1 : 0;
-
 
     return CAN_OK;
 }

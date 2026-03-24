@@ -49,14 +49,13 @@ void ElconCAN_TXTask(void *argument)
     {
         vTaskDelayUntil(&xLastWakeTime, xPeriod);
 
-        // Flush any stale RX messages that arrived since last loop
-        while (ElconCAN_Recieve(&status, ELCONCAN_RX_ID, rx_data, 0) == CAN_OK) {}
-
         // output: 01 F4 00 14 00 00 00 00 (50V, 2A)
-        ElconCAN_Send(50, 2, 0, portMAX_DELAY);
+        // output: 04 B0 00 32 00 00 00 00 (120V, 5A)
+        ElconCAN_Send(120, 5, 0, portMAX_DELAY);
 
-        // Wait for fresh response — 400ms gives plenty of margin within the 500ms period
-        if (ElconCAN_Recieve(&status, ELCONCAN_RX_ID, rx_data, pdMS_TO_TICKS(400)) == CAN_OK)
+        can_status_t recv_result = ElconCAN_Recieve(&status, ELCONCAN_RX_ID, rx_data, 0);
+
+        if (recv_result == CAN_OK)
         {
             snprintf(buf, sizeof(buf), "V:%.1fV  I:%.1fA",
                      status.output_voltage, status.output_current);
@@ -66,19 +65,22 @@ void ElconCAN_TXTask(void *argument)
                      status.flag_hw_failure, status.flag_over_temp, status.flag_input_voltage_wrong);
             Display_DrawString(0, 16, buf);
 
+
             HAL_GPIO_WritePin(LED_CHARGE_PORT, LED_CHARGE_PIN, GPIO_PIN_SET);
-            HAL_GPIO_WritePin(LED_FAULT_PORT,  LED_FAULT_PIN,  GPIO_PIN_RESET);
+            HAL_GPIO_WritePin(LED_FAULT_PORT, LED_FAULT_PIN, GPIO_PIN_RESET);
+            vTaskDelay(pdMS_TO_TICKS(500));
         }
-        else
+        else if (recv_result == CAN_ERR)
         {
+            // fault state
             Display_Clear();
-            Display_DrawString(0, 10, "RX is on monkey balls");
-
+            Display_DrawString(0, 10, "CAN ERR");
             HAL_GPIO_WritePin(LED_CHARGE_PORT, LED_CHARGE_PIN, GPIO_PIN_RESET);
-            HAL_GPIO_WritePin(LED_FAULT_PORT,  LED_FAULT_PIN,  GPIO_PIN_SET);
+            HAL_GPIO_WritePin(LED_FAULT_PORT, LED_FAULT_PIN, GPIO_PIN_SET);
         }
+        // CAN_EMPTY: no messages, keep previous screen
 
-        HAL_GPIO_WritePin(LED_HV_PORT, LED_HV_PIN, GPIO_PIN_SET);
+        //HAL_GPIO_WritePin(LED_EVSE_PORT, LED_EVSE_PIN, GPIO_PIN_SET);
     }
 }
 

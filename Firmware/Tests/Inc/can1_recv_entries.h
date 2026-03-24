@@ -1,1 +1,2 @@
 //Elcon CAN = CAN1
+CAN_RECV_ENTRY(0x18FF50E5, 5, false)
