@@ -34,5 +34,5 @@ jobs:
       - name: Build a test on Mac
         run: |
           nix develop ./Firmware/Embedded-Sharepoint --accept-flake-config --command bash -c "
-            cd test && make TEST=blinky
+            cd Firmware/Embedded-Sharepoint/test && make TEST=blinky
           "
