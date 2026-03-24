@@ -33,7 +33,6 @@ jobs:
 
       - name: Build a test on Mac
         run: |
-          . /nix/var/nix/profiles/default/etc/profile.d/nix-daemon.sh
           nix develop ./Firmware/Embedded-Sharepoint --accept-flake-config --command bash -c "
             cd test && make TEST=blinky
           "
