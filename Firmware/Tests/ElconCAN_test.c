@@ -1,12 +1,13 @@
 /* Copyright (c) 2018-2026 UT Longhorn Racing Solar */
-/** Buzzer_test.c
- * Description: Test file for buzzer driver. Tests all buzzer functions and patterns.
- * Hardware: tests should be run with an active buzzer connected to the buzzer output pin
- * The heartbeat LED should also be observed to ensure the system is still responsive while the buzzer is active.
+/** ElconCAN_test.c
+ * Description: Test file for communicating with the Elcon Charger
+ * Hardware: tests should be run with the Elcon plugged in from its LV output and its HV output connected to an battery pack
+ * The heartbeat LED should also be observed to ensure the system is still responsive while the system is active and the HV and Charge LED will be continously active while CAN messages are being communicated
  */
 
 #include "Buzzer.h"
 #include "tim.h"
+#include <stdbool.h>
 #include <stdlib.h>
 #include <stdio.h>
 #include "gpio.h"
@@ -34,9 +35,31 @@ StackType_t HeartBeatTaskStack[configMINIMAL_STACK_SIZE];
 StaticTask_t InitTask_Buffer;
 StackType_t InitTaskStack[configMINIMAL_STACK_SIZE];
 
-void ElconCAN_TXTask(void *argument)
+// wrapper for packing and sending a charge command to the Elcon charger (CAN ID 0x1806E5F4)
+static can_status_t Elcon_SendChargeCommand(float voltage_v, float current_a, bool stop, TickType_t delay_ticks)
 {
-    Display_DrawString(0, 0, "i think its sending");
+    if (voltage_v < 0.0f || voltage_v > 6553.5f ||
+        current_a < 0.0f || current_a > 6553.5f)
+    {
+        return CAN_ERR;
+    }
+
+    uint16_t v_scaled = (uint16_t)(voltage_v * 10.0f);
+    uint16_t c_scaled = (uint16_t)(current_a * 10.0f);
+
+    uint8_t tx_data[8] = {0};
+    tx_data[0] = (uint8_t)(v_scaled >> 8);   // voltage high byte
+    tx_data[1] = (uint8_t)(v_scaled & 0xFF); // voltage low byte
+    tx_data[2] = (uint8_t)(c_scaled >> 8);   // current high byte
+    tx_data[3] = (uint8_t)(c_scaled & 0xFF); // current low byte
+    tx_data[4] = (uint8_t)stop;              // stop flag (bytes 5-7 reserved, zero)
+
+    return ElconCAN_Send(ELCONCAN_TX_ID, tx_data, delay_ticks);
+}
+
+void ElconCAN_Task(void *argument)
+{
+    Display_DrawString(0, 0, "Sending Elcon CAN");
 
     ElconStatus_t status;
     uint8_t rx_data[8];
@@ -51,9 +74,17 @@ void ElconCAN_TXTask(void *argument)
 
         // output: 01 F4 00 14 00 00 00 00 (50V, 2A)
         // output: 04 B0 00 32 00 00 00 00 (120V, 5A)
-        ElconCAN_Send(120, 5, 0, portMAX_DELAY);
+        Elcon_SendChargeCommand(120, 5, 0, portMAX_DELAY);
 
-        can_status_t recv_result = ElconCAN_Recieve(&status, ELCONCAN_RX_ID, rx_data, 0);
+        LED_State_t leds = {
+            .evse_present = false,
+            .charging = false,
+            .fault = false,
+            .hv_active = true,
+        };
+        LEDSet(&leds);
+
+        can_status_t recv_result = ElconCAN_Receive(&status, ELCONCAN_RX_ID, rx_data, 0);
 
         if (recv_result == CAN_OK)
         {
@@ -65,9 +96,13 @@ void ElconCAN_TXTask(void *argument)
                      status.flag_hw_failure, status.flag_over_temp, status.flag_input_voltage_wrong);
             Display_DrawString(0, 16, buf);
 
-
-            HAL_GPIO_WritePin(LED_CHARGE_PORT, LED_CHARGE_PIN, GPIO_PIN_SET);
-            HAL_GPIO_WritePin(LED_FAULT_PORT, LED_FAULT_PIN, GPIO_PIN_RESET);
+            LED_State_t leds = {
+                .evse_present = false,
+                .charging = true,
+                .fault = false,
+                .hv_active = false,
+            };
+            LEDSet(&leds);
             vTaskDelay(pdMS_TO_TICKS(500));
         }
         else if (recv_result == CAN_ERR)
@@ -75,12 +110,18 @@ void ElconCAN_TXTask(void *argument)
             // fault state
             Display_Clear();
             Display_DrawString(0, 10, "CAN ERR");
-            HAL_GPIO_WritePin(LED_CHARGE_PORT, LED_CHARGE_PIN, GPIO_PIN_RESET);
-            HAL_GPIO_WritePin(LED_FAULT_PORT, LED_FAULT_PIN, GPIO_PIN_SET);
+
+            LED_State_t leds = {
+                .evse_present = false,
+                .charging = false,
+                .fault = true,
+                .hv_active = false,
+            };
+            LEDSet(&leds);
         }
         // CAN_EMPTY: no messages, keep previous screen
 
-        //HAL_GPIO_WritePin(LED_EVSE_PORT, LED_EVSE_PIN, GPIO_PIN_SET);
+        // HAL_GPIO_WritePin(LED_EVSE_PORT, LED_EVSE_PIN, GPIO_PIN_SET);
     }
 }
 
@@ -108,8 +149,8 @@ int main(void)
 {
 
     ElconCAN_Handle = xTaskCreateStatic(
-        ElconCAN_TXTask,
-        "ElconCAN tryna send",
+        ElconCAN_Task,
+        "ElconCAN Tasks",
         configMINIMAL_STACK_SIZE,
         NULL,
         tskIDLE_PRIORITY + 1,

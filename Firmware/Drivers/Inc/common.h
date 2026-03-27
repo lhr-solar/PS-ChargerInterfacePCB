@@ -8,6 +8,10 @@
 #include "task.h"
 #include "event_groups.h"
 #include "StatusLED.h"
+#include "UART.h"
+#include "projdefs.h"
+#include "printf.h"
+
 
 #define FAULT_MESSAGE_DELAY pdMS_TO_TICKS(200)
 #define ALL_FAULT_BITS ((1UL << NUM_FAULTS) - 1UL); // creates a bitmask with all fault bits set to 1 based on the total number of faults defined in the enum
@@ -86,7 +90,12 @@ bool faultBits_isSet(fault_state_t inputBit);
 
 void faultBits_clear(fault_state_t inputBit);
 
-void SystemClock_Config(void);
+
+/**
+ * @brief run to init prinf
+ */
+
+void debugPrintf_init();
 
 void HAL_FDCAN_MspInit(FDCAN_HandleTypeDef *fdcanHandle);
 
