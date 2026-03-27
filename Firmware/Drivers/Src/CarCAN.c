@@ -1,13 +1,12 @@
 #include "CarCAN.h"
 #include "stm32xx_hal.h"
-#include "ElconCAN.h"
 #include "common.h"
 #include "CAN_FD.h"
 
 static FDCAN_HandleTypeDef *CarCAN = NULL;
 
 static FDCAN_TxHeaderTypeDef carCAN_tx_header = {
-    .Identifier = ELCONCAN_TX_ID,
+    .Identifier = BPS_Status_ID,
     .IdType = FDCAN_STANDARD_ID,
     .TxFrameType = FDCAN_DATA_FRAME,
     .DataLength = FDCAN_DLC_BYTES_8,
@@ -20,7 +19,7 @@ static FDCAN_TxHeaderTypeDef carCAN_tx_header = {
 
 static FDCAN_RxHeaderTypeDef carCAN_rx_header;
 
-void CarCAN_Init(void)
+can_status_t CarCAN_Init(void)
 {
     CarCAN = hfdcan3;
 
@@ -53,12 +52,12 @@ void CarCAN_Init(void)
     sFilterConfig.FilterID1 = 0x00000000;
     sFilterConfig.FilterID2 = 0x00000000;
 
-    if (can_fd_init(ElconCAN, &sFilterConfig) != CAN_OK)
+    if (can_fd_init(CarCAN, &sFilterConfig) != CAN_OK)
     {
         return CAN_ERR;
     }
 
-    if (can_fd_start(ElconCAN) != CAN_OK)
+    if (can_fd_start(CarCAN) != CAN_OK)
     {
         return CAN_ERR;
     }
@@ -80,7 +79,7 @@ can_status_t CarCAN_Send(uint32_t id, uint8_t data[8], TickType_t delay_ticks)
     return CAN_OK;
 }
 
-can_status_t CarCAN_Recieve(BPS_Status_t *status, uint32_t id, uint8_t *data, TickType_t delay_ticks)
+can_status_t CarCAN_Recieve(carCAN_Status_t *status, uint32_t id, uint8_t *data, TickType_t delay_ticks)
 {
 
     can_status_t result = can_fd_recv(CarCAN, id, &carCAN_rx_header, data, delay_ticks);
@@ -101,6 +100,6 @@ can_status_t CarCAN_Recieve(BPS_Status_t *status, uint32_t id, uint8_t *data, Ti
     //TODO: implement unpacking function based on carCAN DBC
 
 
-
+    return CAN_OK;
 
 }

@@ -1,5 +1,6 @@
 #include "common.h"
 #include "StatusLED.h"
+#include <stdio.h>
 
 EventGroupHandle_t faultStateBits;
 StaticEventGroup_t faultStateBitsBuffer;
@@ -56,7 +57,6 @@ void faultBits_clear(fault_state_t fault)
 
     xEventGroupClearBits(faultStateBits, FAULT_BIT(fault));
 }
-
 
 void Error_Handler(void)
 {
@@ -147,4 +147,58 @@ void HAL_FDCAN_MspDeInit(FDCAN_HandleTypeDef *fdcanHandle)
     {
         HAL_GPIO_DeInit(GPIOA, CARCAN_RX_PIN | CARCAN_TX_PIN);
     }
+}
+
+HAL_StatusTypeDef HAL_UART_MspGPIOInit(UART_HandleTypeDef *huart)
+{
+
+    GPIO_InitTypeDef init = {0};
+    RCC_PeriphCLKInitTypeDef PeriphClkInit = {0};
+
+    PeriphClkInit.PeriphClockSelection = RCC_PERIPHCLK_USART3;
+    PeriphClkInit.Usart3ClockSelection = RCC_USART3CLKSOURCE_PCLK1;
+    if (HAL_RCCEx_PeriphCLKConfig(&PeriphClkInit) != HAL_OK)
+    {
+        Error_Handler();
+    }
+
+    __HAL_RCC_USART3_CLK_ENABLE();
+    __HAL_RCC_GPIOC_CLK_ENABLE();
+
+    init.Pin = GPIO_PIN_10 | GPIO_PIN_11;
+    init.Mode = GPIO_MODE_AF_PP;
+    init.Pull = GPIO_NOPULL;
+    init.Speed = GPIO_SPEED_FREQ_VERY_HIGH;
+    init.Alternate = GPIO_AF7_USART3;
+    HAL_GPIO_Init(GPIOC, &init);
+
+    return HAL_OK;
+}
+
+uart_status_t debugPrintf_init()
+{
+
+    if (HAL_UART_MspGPIOInit(husart3) != HAL_OK)
+    {
+        return UART_ERR;
+    }
+
+    if (HAL_UART_Init(husart3) != HAL_OK)
+    {
+        return UART_ERR;
+    }
+
+    husart3->Init.BaudRate = 115200;
+    husart3->Init.WordLength = UART_WORDLENGTH_8B;
+    husart3->Init.StopBits = UART_STOPBITS_1;
+    husart3->Init.Parity = UART_PARITY_NONE;
+    husart3->Init.Mode = UART_MODE_TX_RX;
+    husart3->Init.HwFlowCtl = UART_HWCONTROL_NONE;
+    husart3->Init.OverSampling = UART_OVERSAMPLING_16;
+
+    setvbuf(stdout, NULL, _IONBF, 0);
+
+    printf_init(husart3);
+
+    return UART_OK;
 }

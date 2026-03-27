@@ -13,6 +13,8 @@
 #include "printf.h"
 
 
+
+
 #define FAULT_MESSAGE_DELAY pdMS_TO_TICKS(200)
 #define ALL_FAULT_BITS ((1UL << NUM_FAULTS) - 1UL); // creates a bitmask with all fault bits set to 1 based on the total number of faults defined in the enum
 #define MAX_FAULT_BITS 24U // use 32-bit unsigned integer for fault state to allow for more than 8 faults
@@ -43,6 +45,7 @@ typedef enum
   NUM_FAULTS //to check total # of faults 
 
 } fault_state_t;  
+
 
 
 
@@ -95,7 +98,7 @@ void faultBits_clear(fault_state_t inputBit);
  * @brief run to init prinf
  */
 
-void debugPrintf_init();
+uart_status_t debugPrintf_init(void);
 
 void HAL_FDCAN_MspInit(FDCAN_HandleTypeDef *fdcanHandle);
 
