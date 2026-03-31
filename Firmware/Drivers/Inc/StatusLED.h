@@ -4,7 +4,7 @@
 #include "pinDef.h"
 
 
-#define HEARTBEAT_PERIOD 2000 // 3000 ms heartbeat period, can be adjusted as needed
+#define HEARTBEAT_PERIOD 750 // 3000 ms heartbeat period, can be adjusted as needed
 
 typedef enum
 {

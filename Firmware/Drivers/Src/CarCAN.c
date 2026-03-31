@@ -30,10 +30,10 @@ can_status_t CarCAN_Init(void)
     CarCAN->Init.AutoRetransmission = DISABLE;
     CarCAN->Init.TransmitPause = DISABLE;
     CarCAN->Init.ProtocolException = DISABLE;
-    CarCAN->Init.NominalPrescaler = 16;
+    CarCAN->Init.NominalPrescaler = 20;
     CarCAN->Init.NominalSyncJumpWidth = 1;
-    CarCAN->Init.NominalTimeSeg1 = 1;
-    CarCAN->Init.NominalTimeSeg2 = 1;
+    CarCAN->Init.NominalTimeSeg1 = 13;
+    CarCAN->Init.NominalTimeSeg2 = 2;
     CarCAN->Init.DataPrescaler = 1;
     CarCAN->Init.DataSyncJumpWidth = 1;
     CarCAN->Init.DataTimeSeg1 = 1;
@@ -79,27 +79,42 @@ can_status_t CarCAN_Send(uint32_t id, uint8_t data[8], TickType_t delay_ticks)
     return CAN_OK;
 }
 
-can_status_t CarCAN_Recieve(carCAN_Status_t *status, uint32_t id, uint8_t *data, TickType_t delay_ticks)
+can_status_t CarCAN_Receive(uint32_t *id_out, uint8_t data[8], TickType_t delay_ticks)
 {
-
-    can_status_t result = can_fd_recv(CarCAN, id, &carCAN_rx_header, data, delay_ticks);
-    if (result == CAN_EMPTY)
+    // Try each registered BPS ID with no wait, fall through to delay_ticks on the last
+    static const uint32_t bps_ids[] = { BPS_Status_ID, BPS_Aggregate_Arr_ID };
+    for (int i = 0; i < (int)(sizeof(bps_ids) / sizeof(bps_ids[0])); i++)
     {
-        return CAN_EMPTY;
+        TickType_t ticks = (i == (int)(sizeof(bps_ids) / sizeof(bps_ids[0])) - 1) ? delay_ticks : 0;
+        can_status_t result = can_fd_recv(CarCAN, bps_ids[i], &carCAN_rx_header, data, ticks);
+        if (result == CAN_OK)
+        {
+            *id_out = bps_ids[i];
+            return CAN_OK;
+        }
     }
-    if (result != CAN_OK)
+    return CAN_EMPTY;
+}
+
+void CarCAN_Unpack_BPS_Aggregate(const uint8_t data[8], CarCAN_BPS_Aggregate_t *agg)
+{
+    // BPS_Tap_idx: start bit 0, length 5, little-endian unsigned
+    uint8_t idx = data[0] & 0x1F;
+    if (idx >= BPS_TAP_COUNT)
     {
-        return CAN_ERR;
+        return;
     }
 
-    if (carCAN_rx_header.DataLength < FDCAN_DLC_BYTES_5)
-    {
-        return CAN_ERR;
-    }
+    // BPS_Voltage_Tap_Data: start bit 8, length 16, little-endian unsigned, scale 0.001
+    uint16_t raw_v = (uint16_t)data[1] | ((uint16_t)data[2] << 8);
+    agg->taps[idx].voltage = raw_v * 0.001f;
 
-    //TODO: implement unpacking function based on carCAN DBC
+    // BPS_Temperature_Tap_Data: start bit 24, length 32, little-endian signed, scale 0.001
+    int32_t raw_t = (int32_t)data[3]
+                  | ((int32_t)data[4] << 8)
+                  | ((int32_t)data[5] << 16)
+                  | ((int32_t)data[6] << 24);
+    agg->taps[idx].temperature = raw_t * 0.001f;
 
-
-    return CAN_OK;
-
+    agg->last_updated_idx = idx;
 }

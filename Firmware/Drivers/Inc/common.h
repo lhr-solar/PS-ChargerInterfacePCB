@@ -35,6 +35,7 @@ typedef enum
   FAULT_BPS_OC,        // bps overcurrent
   FAULT_BPS_UV,       // bps undervoltage
   FAULT_BPS_OVERTEMP, // bps over temperature
+  FAULT_BPS_CHARGE_NOT_OK,
 
   FAULT_DISPLAY, // display failure (SPI failures)
   FAULT_BUZZER,  // buzzer driver malfunction (PWM/timer failures)
