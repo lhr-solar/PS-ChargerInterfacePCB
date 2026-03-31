@@ -19,13 +19,15 @@
 
 #define BPS_TAP_COUNT 32
 
-// One entry in the per-tap aggregate array (BO_ 11 BPS_Aggregate_Arr)
+//TODO: implement BPS aggregate logic
+// bps tap data
 typedef struct {
     float voltage;     // V,  scale 0.001
     float temperature; // °C, scale 0.001, signed
 } CarCAN_BPS_Tap_t;
 
-// BPS streams one tap per frame — accumulate into taps[] indexed by BPS_Tap_idx
+//TODO: implement all of this aggregated struct
+// BPS streams one tap per frame and all together in this struct
 typedef struct {
     CarCAN_BPS_Tap_t taps[BPS_TAP_COUNT];
     uint8_t          last_updated_idx;
@@ -35,8 +37,6 @@ can_status_t CarCAN_Init(void);
 
 can_status_t CarCAN_Send(uint32_t id, uint8_t data[8], TickType_t delay_ticks);
 
-// Generic receive — populates data[] and sets *id_out to the received message ID
 can_status_t CarCAN_Receive(uint32_t *id_out, uint8_t data[8], TickType_t delay_ticks);
 
-// Unpack one BPS_Aggregate_Arr frame into the correct tap slot in agg
 void CarCAN_Unpack_BPS_Aggregate(const uint8_t data[8], CarCAN_BPS_Aggregate_t *agg);

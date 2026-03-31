@@ -81,8 +81,8 @@ can_status_t CarCAN_Send(uint32_t id, uint8_t data[8], TickType_t delay_ticks)
 
 can_status_t CarCAN_Receive(uint32_t *id_out, uint8_t data[8], TickType_t delay_ticks)
 {
-    // Try each registered BPS ID with no wait, fall through to delay_ticks on the last
-    static const uint32_t bps_ids[] = { BPS_Status_ID, BPS_Aggregate_Arr_ID };
+    // reads through both BPS Status ID and Aggregated Arr ID
+    static const uint32_t bps_ids[] = {BPS_Status_ID, BPS_Aggregate_Arr_ID};
     for (int i = 0; i < (int)(sizeof(bps_ids) / sizeof(bps_ids[0])); i++)
     {
         TickType_t ticks = (i == (int)(sizeof(bps_ids) / sizeof(bps_ids[0])) - 1) ? delay_ticks : 0;
@@ -96,24 +96,22 @@ can_status_t CarCAN_Receive(uint32_t *id_out, uint8_t data[8], TickType_t delay_
     return CAN_EMPTY;
 }
 
+// TODO: test this with real BPS data
+
 void CarCAN_Unpack_BPS_Aggregate(const uint8_t data[8], CarCAN_BPS_Aggregate_t *agg)
 {
-    // BPS_Tap_idx: start bit 0, length 5, little-endian unsigned
     uint8_t idx = data[0] & 0x1F;
     if (idx >= BPS_TAP_COUNT)
     {
         return;
     }
 
-    // BPS_Voltage_Tap_Data: start bit 8, length 16, little-endian unsigned, scale 0.001
+    // BPS_Voltage_Tap_Data: start bit 8, length 16, scale 0.001
     uint16_t raw_v = (uint16_t)data[1] | ((uint16_t)data[2] << 8);
     agg->taps[idx].voltage = raw_v * 0.001f;
 
-    // BPS_Temperature_Tap_Data: start bit 24, length 32, little-endian signed, scale 0.001
-    int32_t raw_t = (int32_t)data[3]
-                  | ((int32_t)data[4] << 8)
-                  | ((int32_t)data[5] << 16)
-                  | ((int32_t)data[6] << 24);
+    // BPS_Temperature_Tap_Data: start bit 24, length 32, scale 0.001
+    int32_t raw_t = (int32_t)data[3] | ((int32_t)data[4] << 8) | ((int32_t)data[5] << 16) | ((int32_t)data[6] << 24);
     agg->taps[idx].temperature = raw_t * 0.001f;
 
     agg->last_updated_idx = idx;

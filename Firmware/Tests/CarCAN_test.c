@@ -85,12 +85,12 @@ static void CarCAN_BroadcastOK(void)
 void Charger_Task(void *argument)
 {
     ElconStatus_t          elcon_status     = {0};
-    CarCAN_BPS_Aggregate_t bps_agg          = {0};  // populated for future tap-level use
+    CarCAN_BPS_Aggregate_t bps_agg          = {0};  //used later when implemented aggregate arr
     uint8_t  rx_data[8];
     uint32_t rx_id;
     bool     bps_charge_ok      = false;
-    TickType_t xLastBPS_Tick    = xTaskGetTickCount();  // grace period before first message
-    TickType_t xLastElcon_Tick  = xTaskGetTickCount();  // grace period before first Elcon frame
+    TickType_t xLastBPS_Tick    = xTaskGetTickCount();  
+    TickType_t xLastElcon_Tick  = xTaskGetTickCount();  
 
     TickType_t xLastWakeTime = xTaskGetTickCount();
     const TickType_t xPeriod = pdMS_TO_TICKS(CHARGER_TASK_PERIOD_MS);
@@ -99,7 +99,6 @@ void Charger_Task(void *argument)
     {
         vTaskDelayUntil(&xLastWakeTime, xPeriod);
 
-        // --- Drain CarCAN receive queue ---
         while (CarCAN_Receive(&rx_id, rx_data, 0) == CAN_OK)
         {
             if (rx_id == BPS_Status_ID)
@@ -110,7 +109,7 @@ void Charger_Task(void *argument)
             else if (rx_id == BPS_Aggregate_Arr_ID)
             {
                 CarCAN_Unpack_BPS_Aggregate(rx_data, &bps_agg);
-                // TODO: add per-tap processing here (e.g. min/max cell voltage checks)
+                // TODO: min/max cell voltage checks
             }
         }
 
