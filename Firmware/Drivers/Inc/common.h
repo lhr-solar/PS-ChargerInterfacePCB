@@ -8,8 +8,6 @@
 #include "task.h"
 #include "event_groups.h"
 #include "StatusLED.h"
-#include "UART.h"
-#include "projdefs.h"
 #include "printf.h"
 
 
@@ -31,11 +29,11 @@ typedef enum
   FAULT_ELCON_OVERTEMP,   // elcon over temperature
   FAULT_ELCON_INPUT_VOLT, // elcon input voltage wrong
 
-  FAULT_BPS_OV,        // bps overvoltage
-  FAULT_BPS_OC,        // bps overcurrent
-  FAULT_BPS_UV,       // bps undervoltage
-  FAULT_BPS_OVERTEMP, // bps over temperature
-  FAULT_BPS_CHARGE_NOT_OK,
+  FAULT_BPS_OV,           // bps overvoltage
+  FAULT_BPS_OC,           // bps overcurrent
+  FAULT_BPS_UV,           // bps undervoltage
+  FAULT_BPS_OVERTEMP,     // bps over temperature
+  FAULT_BPS_CHARGE_NOT_OK, // bps denied charging permission (BPS_Charge_OK = 0)
 
   FAULT_DISPLAY, // display failure (SPI failures)
   FAULT_BUZZER,  // buzzer driver malfunction (PWM/timer failures)

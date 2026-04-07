@@ -31,8 +31,8 @@ jobs:
       - name: Install Nix Action
         uses: cachix/install-nix-action@v31
 
-      - name: Build a test on Mac
+      - name: Build all tests on Mac
         run: |
           nix develop ./Firmware/Embedded-Sharepoint --accept-flake-config --command bash -c "
-            cd Firmware/Embedded-Sharepoint/test && make TEST=blinky
+            python3 Firmware/Tests/makeAllTests.py
           "

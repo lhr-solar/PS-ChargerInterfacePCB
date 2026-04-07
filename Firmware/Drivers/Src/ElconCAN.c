@@ -4,13 +4,14 @@
 #include "CAN_FD.h"
 #include "common.h"
 
+//TODO: Implement to add Msg 1, 10, 11, 12 addition
+
 static FDCAN_HandleTypeDef *ElconCAN = NULL;
 
 static FDCAN_TxHeaderTypeDef elcon_tx_header = {
-    .Identifier = ELCONCAN_TX_ID,
+    .Identifier = ELCONCAN_MSG_1_ID,
     .IdType = FDCAN_EXTENDED_ID,
     .TxFrameType = FDCAN_DATA_FRAME,
-    .DataLength = FDCAN_DLC_BYTES_8,
     .ErrorStateIndicator = FDCAN_ESI_ACTIVE,
     .BitRateSwitch = FDCAN_BRS_OFF,
     .FDFormat = FDCAN_CLASSIC_CAN,
@@ -70,9 +71,10 @@ can_status_t ElconCAN_Init(void)
     return CAN_OK;
 }
 
-can_status_t ElconCAN_Send(uint32_t id, uint8_t data[8], TickType_t delay_ticks)
+can_status_t ElconCAN_Send(uint32_t id, uint8_t data[8], uint32_t dlc, TickType_t delay_ticks)
 {
     elcon_tx_header.Identifier = id;
+    elcon_tx_header.DataLength = dlc;
 
     if (can_fd_send(ElconCAN, &elcon_tx_header, data, delay_ticks) == CAN_ERR)
     {
@@ -109,9 +111,9 @@ can_status_t ElconCAN_Receive(ElconStatus_t *status, uint32_t id, uint8_t data[]
     // byte 3/4 = actual current output
     uint16_t c_raw = ((uint16_t)data[2] << 8) | data[3];
 
-    // decode to get real Volts and Amps
-    status->output_voltage = (float)v_raw / 10.0f;
-    status->output_current = (float)c_raw / 10.0f;
+    // store raw wire values (0.1V and 0.1A units)
+    status->output_voltage_dv = v_raw;
+    status->output_current_da = c_raw;
 
     // byte 5, all status flags
     //  Bit 0: 1 = Hardware Failure

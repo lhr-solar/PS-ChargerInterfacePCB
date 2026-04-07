@@ -54,7 +54,7 @@ static can_status_t Elcon_SendChargeCommand(float voltage_v, float current_a, bo
     tx_data[3] = (uint8_t)(c_scaled & 0xFF); // current low byte
     tx_data[4] = (uint8_t)stop;              // stop flag (bytes 5-7 reserved, zero)
 
-    return ElconCAN_Send(ELCONCAN_TX_ID, tx_data, delay_ticks);
+    return ElconCAN_Send(ELCONCAN_TX_ID, tx_data, FDCAN_DLC_BYTES_5, delay_ticks);
 }
 
 void ElconCAN_Task(void *argument)

@@ -3,7 +3,8 @@
  * Description: Integration task for CarCAN + ElconCAN charging control.
  *              Charges via Elcon when BPS grants permission (BPS_Charge_OK=1).
  *              Stops immediately and faults on BPS denial or any Elcon fault flag.
- *              Propagates Elcon faults back to CarCAN as BPS_Charge_OK=0.
+ *              Broadcasts charger telemetry and faults to CarCAN on ID 0xE
+ *              (ChargerInterface_Status) instead of spoofing BPS_Status_ID.
  * Hardware: Elcon connected on LV/HV. BPS broadcasting on CarCAN (FDCAN3).
  */
 
@@ -25,72 +26,54 @@
 #include "CarCAN.h"
 #include "CAN_FD.h"
 
-#define CHARGER_TASK_PERIOD_MS   500U
-#define ELCON_TARGET_VOLTAGE_V   120.0f
-#define ELCON_TARGET_CURRENT_A   25.0f
+#define CHARGER_TASK_PERIOD_MS 250U
+// Max time to wait for a free CAN TX mailbox. At 250kbps a frame takes ~0.5ms,
+#define CAN_TX_TIMEOUT_MS 10U
+#define ELCON_TARGET_VOLTAGE_DV 1340U   // 134.0V in 0.1V units
+#define ELCON_TARGET_CURRENT_DA 250U    // 25.0A in 0.1A units
 // BPS broadcasts at 10Hz (100ms). Fault after 3 missed frames.
-#define BPS_STATUS_TIMEOUT_MS    300U
+#define BPS_STATUS_TIMEOUT_MS 300U
 // Elcon broadcasts at ~1Hz (1000ms). Fault after 500ms silence.
-#define ELCON_STATUS_TIMEOUT_MS  500U
+#define ELCON_STATUS_TIMEOUT_MS 1500U
 
-TaskHandle_t ChargerTask_Handle    = NULL;
-TaskHandle_t HeartBeatTask_Handle  = NULL;
-TaskHandle_t InitTask_Handle       = NULL;
+TaskHandle_t ChargerTask_Handle = NULL;
+TaskHandle_t HeartBeatTask_Handle = NULL;
+TaskHandle_t InitTask_Handle = NULL;
 
 StaticTask_t ChargerTask_Buffer;
-StackType_t  ChargerTaskStack[configMINIMAL_STACK_SIZE];
+StackType_t ChargerTaskStack[configMINIMAL_STACK_SIZE];
 
 StaticTask_t HeartBeatTask_Buffer;
-StackType_t  HeartBeatTaskStack[configMINIMAL_STACK_SIZE];
+StackType_t HeartBeatTaskStack[configMINIMAL_STACK_SIZE];
 
 StaticTask_t InitTask_Buffer;
-StackType_t  InitTaskStack[configMINIMAL_STACK_SIZE];
+StackType_t InitTaskStack[configMINIMAL_STACK_SIZE];
 
 // Pack and send a charge command to the Elcon (CAN ID 0x1806E5F4)
-static can_status_t Elcon_SendChargeCommand(float voltage_v, float current_a, bool stop, TickType_t delay_ticks)
+// voltage_dv in 0.1V units, current_da in 0.1A units
+static can_status_t Elcon_SendChargeCommand(uint16_t voltage_dv, uint16_t current_da, bool stop, TickType_t delay_ticks)
 {
-    if (voltage_v < 0.0f || voltage_v > 6553.5f ||
-        current_a < 0.0f || current_a > 6553.5f)
-    {
-        return CAN_ERR;
-    }
-
-    uint16_t v_scaled = (uint16_t)(voltage_v * 10.0f);
-    uint16_t c_scaled = (uint16_t)(current_a * 10.0f);
-
     uint8_t tx_data[8] = {0};
-    tx_data[0] = (uint8_t)(v_scaled >> 8);
-    tx_data[1] = (uint8_t)(v_scaled & 0xFF);
-    tx_data[2] = (uint8_t)(c_scaled >> 8);
-    tx_data[3] = (uint8_t)(c_scaled & 0xFF);
+    tx_data[0] = (uint8_t)(voltage_dv >> 8);
+    tx_data[1] = (uint8_t)(voltage_dv & 0xFF);
+    tx_data[2] = (uint8_t)(current_da >> 8);
+    tx_data[3] = (uint8_t)(current_da & 0xFF);
     tx_data[4] = (uint8_t)stop;
 
-    return ElconCAN_Send(ELCONCAN_TX_ID, tx_data, delay_ticks);
-}
-
-// Broadcast BPS_Charge_OK=0 on CarCAN to notify other nodes of a fault
-static void CarCAN_BroadcastFault(void)
-{
-    uint8_t fault_payload[] = BPS_STATUS_FAULT_PAYLOAD;
-    CarCAN_Send(BPS_Status_ID, fault_payload, portMAX_DELAY);
-}
-
-// Broadcast BPS_Charge_OK=1 on CarCAN to signal healthy charging
-static void CarCAN_BroadcastOK(void)
-{
-    uint8_t ok_payload[] = BPS_STATUS_OK_PAYLOAD;
-    CarCAN_Send(BPS_Status_ID, ok_payload, portMAX_DELAY);
+    return ElconCAN_Send(ELCONCAN_MSG_1_ID, tx_data, FDCAN_DLC_BYTES_5, delay_ticks);
 }
 
 void Charger_Task(void *argument)
 {
-    ElconStatus_t          elcon_status     = {0};
-    CarCAN_BPS_Aggregate_t bps_agg          = {0};  //used later when implemented aggregate arr
-    uint8_t  rx_data[8];
+    ElconStatus_t elcon_status = {0};
+    CarCAN_BPS_Aggregate_t bps_agg = {0}; // used later when implemented aggregate arr
+    uint8_t rx_data[8];
     uint32_t rx_id;
-    bool     bps_charge_ok      = false;
-    TickType_t xLastBPS_Tick    = xTaskGetTickCount();  
-    TickType_t xLastElcon_Tick  = xTaskGetTickCount();  
+    can_status_t carcan_tx;
+    bool bps_charge_ok = false;
+    bool elcon_was_ok = false;
+    TickType_t xLastBPS_Tick = xTaskGetTickCount();
+    TickType_t xLastElcon_Tick = xTaskGetTickCount();
 
     TickType_t xLastWakeTime = xTaskGetTickCount();
     const TickType_t xPeriod = pdMS_TO_TICKS(CHARGER_TASK_PERIOD_MS);
@@ -99,90 +82,118 @@ void Charger_Task(void *argument)
     {
         vTaskDelayUntil(&xLastWakeTime, xPeriod);
 
-        while (CarCAN_Receive(&rx_id, rx_data, 0) == CAN_OK)
+        while (CarCAN_Receive(&rx_id, rx_data, pdMS_TO_TICKS(BPS_STATUS_TIMEOUT_MS)) == CAN_OK)
         {
-            if (rx_id == BPS_Status_ID)
+            if (rx_id == CAN_ID_BPS_STATUS)
             {
-                bps_charge_ok  = (rx_data[BPS_STATUS_FLAGS_BYTE_IDX] & BPS_STATUS_CHARGE_OK_MASK) != 0;
-                xLastBPS_Tick  = xTaskGetTickCount();
+                bps_charge_ok = (rx_data[BPS_STATUS_CHARGE_OK_BYTE] & BPS_STATUS_CHARGE_OK_MASK) == BPS_STATUS_BPS_CHARGE_OK_OK;
+                xLastBPS_Tick = xTaskGetTickCount();
             }
-            else if (rx_id == BPS_Aggregate_Arr_ID)
+            else if (rx_id == CAN_ID_BPS_VOLTAGE_AGGREGATE_ARR)
             {
                 CarCAN_Unpack_BPS_Aggregate(rx_data, &bps_agg);
                 // TODO: min/max cell voltage checks
             }
         }
 
-        //bps timeout calculation
-        if ((xTaskGetTickCount() - xLastBPS_Tick) > pdMS_TO_TICKS(BPS_STATUS_TIMEOUT_MS))
+        // BPS timeout check:
+        // xTaskGetTickCount() returns the current FreeRTOS tick counter.
+        // xLastBPS_Tick holds the tick count at the last received BPS_Status frame.
+        // Subtracting them gives the time passed since last message.
+        // If no BPS frame has arrived in 300ms (3 missed frames at 10Hz), bps_timeout is set.
+        bool bps_timeout = (xTaskGetTickCount() - xLastBPS_Tick) > pdMS_TO_TICKS(BPS_STATUS_TIMEOUT_MS);
+
+        // Charging is only allowed when BPS is alive AND explicitly grants permission.
+        // Both conditions must be true; either failure disallows charging this cycle.
+        bool bps_allow_charge = !bps_timeout && bps_charge_ok;
+
+        // Set the specific fault before the shared stop-charging block below
+        if (bps_timeout)
         {
-            Elcon_SendChargeCommand(0.0f, 0.0f, true, portMAX_DELAY);
-            CarCAN_BroadcastFault();
             faultBits_set(FAULT_CARCAN_HEARTBEAT_MISSED);
-            LED_State_t leds = { .fault = true };
-            LEDSet(&leds);
-            continue;
         }
-
-        // bps charging not okay
-        if (!bps_charge_ok)
+        else if (!bps_charge_ok)
         {
-            Elcon_SendChargeCommand(0.0f, 0.0f, true, portMAX_DELAY);
             faultBits_set(FAULT_BPS_CHARGE_NOT_OK);
-            LED_State_t leds = { .fault = true };
-            LEDSet(&leds);
-            continue;
         }
 
-        //charging allowed
-        Elcon_SendChargeCommand(ELCON_TARGET_VOLTAGE_V, ELCON_TARGET_CURRENT_A, false, portMAX_DELAY);
-
-        //read elcon incoming data
-        can_status_t elcon_result = ElconCAN_Receive(&elcon_status, ELCONCAN_RX_ID, rx_data, 0);
-
-        if (elcon_result == CAN_OK)
+        if (!bps_allow_charge)
         {
-            xLastElcon_Tick = xTaskGetTickCount();
-
-            bool elcon_fault = elcon_status.flag_hw_failure
-                            || elcon_status.flag_over_temp
-                            || elcon_status.flag_input_voltage_wrong
-                            || elcon_status.flag_starting_state
-                            || elcon_status.flag_comm_timeout;
-
-            //if any faults occur from Elcon side
-            if (elcon_fault)
+            // Stop charging, drain any pending Elcon RX, broadcast fault status
+            elcon_was_ok = false;
+            Elcon_SendChargeCommand(0U, 0U, true, pdMS_TO_TICKS(CAN_TX_TIMEOUT_MS));
             {
-                Elcon_SendChargeCommand(0.0f, 0.0f, true, portMAX_DELAY);
-                CarCAN_BroadcastFault();
-                faultBits_set(FAULT_ELCON_HARDWARE);
-                LED_State_t leds = { .fault = true };
-                LEDSet(&leds);
+                ElconStatus_t tmp;
+                uint8_t tmp_data[8];
+                while (ElconCAN_Receive(&tmp, ELCONCAN_RX_ID, tmp_data, 0) == CAN_OK)
+                {
+                }
+            }
+            carcan_tx = CarCAN_Send_ChargerInterface_Status(0U, 0U, ELCON_COMM_OK, ELCON_FAULT, pdMS_TO_TICKS(CAN_TX_TIMEOUT_MS));
+            HAL_GPIO_WritePin(LED_HV_PORT, LED_HV_PIN, (carcan_tx == CAN_OK) ? GPIO_PIN_SET : GPIO_PIN_RESET);
+            LED_State_t fault_leds = {.fault = true};
+            LEDSet(&fault_leds);
+        }
+        else
+        {
+            // charging allowed, only send charge command if Elcon is healthy
+            if (elcon_was_ok)
+            {
+                Elcon_SendChargeCommand(ELCON_TARGET_VOLTAGE_DV, ELCON_TARGET_CURRENT_DA, false, pdMS_TO_TICKS(CAN_TX_TIMEOUT_MS));
             }
             else
             {
-                CarCAN_BroadcastOK();
-                LED_State_t leds = { .charging = true, .hv_active = true };
+                Elcon_SendChargeCommand(0U, 0U, true, pdMS_TO_TICKS(CAN_TX_TIMEOUT_MS));
+            }
+
+            // read elcon incoming data
+            can_status_t elcon_result = ElconCAN_Receive(&elcon_status, ELCONCAN_RX_ID, rx_data, 0);
+
+            if (elcon_result == CAN_OK)
+            {
+                xLastElcon_Tick = xTaskGetTickCount();
+
+                bool elcon_fault = elcon_status.flag_hw_failure || elcon_status.flag_over_temp || elcon_status.flag_input_voltage_wrong || elcon_status.flag_starting_state || elcon_status.flag_comm_timeout;
+
+                // if any faults occur from Elcon side
+                if (elcon_fault)
+                {
+                    elcon_was_ok = false;
+                    carcan_tx = CarCAN_Send_ChargerInterface_Status(elcon_status.output_voltage_dv, elcon_status.output_current_da, ELCON_COMM_OK, ELCON_FAULT, pdMS_TO_TICKS(CAN_TX_TIMEOUT_MS));
+                    HAL_GPIO_WritePin(LED_HV_PORT, LED_HV_PIN, (carcan_tx == CAN_OK) ? GPIO_PIN_SET : GPIO_PIN_RESET);
+                    faultBits_set(FAULT_ELCON_HARDWARE);
+                    LED_State_t leds = {.fault = true};
+                    LEDSet(&leds);
+                }
+                else
+                {
+                    elcon_was_ok = true;
+                    carcan_tx = CarCAN_Send_ChargerInterface_Status(elcon_status.output_voltage_dv, elcon_status.output_current_da, ELCON_COMM_OK, ELCON_NO_FAULT, pdMS_TO_TICKS(CAN_TX_TIMEOUT_MS));
+                    HAL_GPIO_WritePin(LED_HV_PORT, LED_HV_PIN, (carcan_tx == CAN_OK) ? GPIO_PIN_SET : GPIO_PIN_RESET);
+                    LED_State_t leds = {.charging = true, .hv_active = true};
+                    LEDSet(&leds);
+                }
+            }
+            // something is wrong with Elcon CAN communication
+            else if (elcon_result == CAN_ERR)
+            {
+                elcon_was_ok = false;
+                carcan_tx = CarCAN_Send_ChargerInterface_Status(0U, 0U, ELCON_COMM_FAULT, ELCON_FAULT, pdMS_TO_TICKS(CAN_TX_TIMEOUT_MS));
+                HAL_GPIO_WritePin(LED_HV_PORT, LED_HV_PIN, (carcan_tx == CAN_OK) ? GPIO_PIN_SET : GPIO_PIN_RESET);
+                faultBits_set(FAULT_ELCONCAN_HEARTBEAT_MISSED);
+                LED_State_t leds = {.fault = true};
                 LEDSet(&leds);
             }
-        }
-        //something is wrong with Elcon CAN communication
-        else if (elcon_result == CAN_ERR)
-        {
-            Elcon_SendChargeCommand(0.0f, 0.0f, true, portMAX_DELAY);
-            CarCAN_BroadcastFault();
-            faultBits_set(FAULT_ELCONCAN_HEARTBEAT_MISSED);
-            LED_State_t leds = { .fault = true };
-            LEDSet(&leds);
-        }
-        // no message yet — check if Elcon has gone silent too long
-        else if ((xTaskGetTickCount() - xLastElcon_Tick) > pdMS_TO_TICKS(ELCON_STATUS_TIMEOUT_MS))
-        {
-            Elcon_SendChargeCommand(0.0f, 0.0f, true, portMAX_DELAY);
-            CarCAN_BroadcastFault();
-            faultBits_set(FAULT_ELCONCAN_HEARTBEAT_MISSED);
-            LED_State_t leds = { .fault = true };
-            LEDSet(&leds);
+            // no message yet — check if Elcon has gone silent too long
+            else if ((xTaskGetTickCount() - xLastElcon_Tick) > pdMS_TO_TICKS(ELCON_STATUS_TIMEOUT_MS))
+            {
+                elcon_was_ok = false;
+                carcan_tx = CarCAN_Send_ChargerInterface_Status(0U, 0U, ELCON_COMM_FAULT, ELCON_FAULT, pdMS_TO_TICKS(CAN_TX_TIMEOUT_MS));
+                HAL_GPIO_WritePin(LED_HV_PORT, LED_HV_PIN, (carcan_tx == CAN_OK) ? GPIO_PIN_SET : GPIO_PIN_RESET);
+                faultBits_set(FAULT_ELCONCAN_HEARTBEAT_MISSED);
+                LED_State_t leds = {.fault = true};
+                LEDSet(&leds);
+            }
         }
     }
 }
@@ -241,7 +252,9 @@ int main(void)
 
     vTaskStartScheduler();
 
-    while (1) {}
+    while (1)
+    {
+    }
 
     return 0;
 }

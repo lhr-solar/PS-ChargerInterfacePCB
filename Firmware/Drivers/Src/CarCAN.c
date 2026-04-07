@@ -6,10 +6,9 @@
 static FDCAN_HandleTypeDef *CarCAN = NULL;
 
 static FDCAN_TxHeaderTypeDef carCAN_tx_header = {
-    .Identifier = BPS_Status_ID,
+    .Identifier = CAN_ID_BPS_STATUS,
     .IdType = FDCAN_STANDARD_ID,
     .TxFrameType = FDCAN_DATA_FRAME,
-    .DataLength = FDCAN_DLC_BYTES_8,
     .ErrorStateIndicator = FDCAN_ESI_ACTIVE,
     .BitRateSwitch = FDCAN_BRS_OFF,
     .FDFormat = FDCAN_CLASSIC_CAN,
@@ -65,24 +64,25 @@ can_status_t CarCAN_Init(void)
     return CAN_OK;
 }
 
-can_status_t CarCAN_Send(uint32_t id, uint8_t data[8], TickType_t delay_ticks)
+can_status_t CarCAN_Send(uint32_t id, uint8_t data[8], uint32_t dlc, TickType_t delay_ticks)
 {
     carCAN_tx_header.Identifier = id;
+    carCAN_tx_header.DataLength = dlc;
 
     if (can_fd_send(CarCAN, &carCAN_tx_header, data, delay_ticks) == CAN_ERR)
     {
-        HAL_GPIO_WritePin(LED_HV_PORT, LED_HV_PIN, GPIO_PIN_RESET);
         return CAN_ERR;
     }
 
-    HAL_GPIO_WritePin(LED_HV_PORT, LED_HV_PIN, GPIO_PIN_SET);
     return CAN_OK;
 }
 
 can_status_t CarCAN_Receive(uint32_t *id_out, uint8_t data[8], TickType_t delay_ticks)
 {
+
+    //TODO: implement to wait on specific ID and tryout can FD queue
     // reads through both BPS Status ID and Aggregated Arr ID
-    static const uint32_t bps_ids[] = {BPS_Status_ID, BPS_Aggregate_Arr_ID};
+    static const uint32_t bps_ids[] = {CAN_ID_BPS_STATUS, CAN_ID_BPS_VOLTAGE_AGGREGATE_ARR};
     for (int i = 0; i < (int)(sizeof(bps_ids) / sizeof(bps_ids[0])); i++)
     {
         TickType_t ticks = (i == (int)(sizeof(bps_ids) / sizeof(bps_ids[0])) - 1) ? delay_ticks : 0;
@@ -96,6 +96,26 @@ can_status_t CarCAN_Receive(uint32_t *id_out, uint8_t data[8], TickType_t delay_
     return CAN_EMPTY;
 }
 
+can_status_t CarCAN_Send_ChargerInterface_Status(uint16_t output_voltage_dv, uint16_t output_current_da, uint8_t elcon_comm_ok, uint8_t elcon_fault, TickType_t delay_ticks)
+{
+    uint8_t data[8] = {0};
+
+    // bytes 0-1: output voltage, uint16 little-endian, scale 0.1V
+    data[0] = (uint8_t)(output_voltage_dv & 0xFF);
+    data[1] = (uint8_t)(output_voltage_dv >> 8);
+
+    // bytes 2-3: output current, uint16 little-endian, scale 0.1A
+    data[2] = (uint8_t)(output_current_da & 0xFF);
+    data[3] = (uint8_t)(output_current_da >> 8);
+
+    // byte 4: bit 0 = elcon_comm_ok, bit 1 = elcon_fault
+    data[4] = (elcon_comm_ok & 0x01) | ((elcon_fault & 0x01) << 1);
+
+    // bytes 5-7: reserved, already zeroed
+
+    return CarCAN_Send(CAN_ID_CHARGERINTERFACE_STATUS, data, FDCAN_DLC_BYTES_5, delay_ticks);
+}
+
 // TODO: test this with real BPS data
 
 void CarCAN_Unpack_BPS_Aggregate(const uint8_t data[8], CarCAN_BPS_Aggregate_t *agg)
@@ -106,13 +126,13 @@ void CarCAN_Unpack_BPS_Aggregate(const uint8_t data[8], CarCAN_BPS_Aggregate_t *
         return;
     }
 
-    // BPS_Voltage_Tap_Data: start bit 8, length 16, scale 0.001
+    // BPS_Voltage_Tap_Data: start bit 8, length 16, scale 0.001V
     uint16_t raw_v = (uint16_t)data[1] | ((uint16_t)data[2] << 8);
-    agg->taps[idx].voltage = raw_v * 0.001f;
+    agg->taps[idx].voltage_mv = raw_v;
 
-    // BPS_Temperature_Tap_Data: start bit 24, length 32, scale 0.001
+    // BPS_Temperature_Tap_Data: start bit 24, length 32, scale 0.001°C
     int32_t raw_t = (int32_t)data[3] | ((int32_t)data[4] << 8) | ((int32_t)data[5] << 16) | ((int32_t)data[6] << 24);
-    agg->taps[idx].temperature = raw_t * 0.001f;
+    agg->taps[idx].temperature_mdc = raw_t;
 
     agg->last_updated_idx = idx;
 }

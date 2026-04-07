@@ -4,15 +4,15 @@
 #include "pinDef.h"
 
 
-#define HEARTBEAT_PERIOD 750 // 3000 ms heartbeat period, can be adjusted as needed
+#define HEARTBEAT_PERIOD 750 // 750 ms heartbeat period, can be adjusted as needed
 
 typedef enum
 {
-    LED_EVSE = 0,
-    LED_CHARGE,
-    LED_HEART,
-    LED_FAULT,
-    LED_HV
+    LED_EVSE = 0, // ON when the EVSE handshake signal is present (AC supply connected and negotiated)
+    LED_CHARGE,   // ON when actively charging and communicating with BPS (BPS_Charge_OK = 1)
+    LED_HEART,    // Heartbeat — blinks at HEARTBEAT_PERIOD to indicate the RTOS scheduler is running
+    LED_FAULT,    // ON when any fault is active (BPS denial, Elcon fault, CAN timeout, etc.)
+    LED_HV        // ON when HV is present at the Elcon output (charger is energized on the HV side)
 } status_led_t;
 
 typedef struct
@@ -23,10 +23,10 @@ typedef struct
 
 typedef struct
 {
-    bool evse_present;
-    bool charging;
-    bool fault;
-    bool hv_active;
+    bool evse_present; // EVSE handshake signal present
+    bool charging;     // actively charging with BPS permission
+    bool fault;        // any fault is active
+    bool hv_active;    // HV present at Elcon output
 } LED_State_t;
 
 static const LED_pin_t LEDMaps[] = {
