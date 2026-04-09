@@ -14,6 +14,16 @@
 #define BPS_STATUS_CHARGE_OK_BYTE  1U     // byte index of BPS_Charge_OK in the frame
 #define BPS_STATUS_CHARGE_OK_MASK  0x01U  // 1-bit mask at bit 0 of that byte
 
+#define CHARGER_TASK_PERIOD_MS 250U
+// Max time to wait for a free CAN TX mailbox. At 250kbps a frame takes ~0.5ms,
+#define CAN_TX_TIMEOUT_MS 10U
+#define ELCON_TARGET_VOLTAGE_DV 1340U   // 134.0V in 0.1V units
+#define ELCON_TARGET_CURRENT_DA 250U    // 25.0A in 0.1A units
+// BPS broadcasts at 10Hz (100ms). Fault after 3 missed frames.
+#define BPS_STATUS_TIMEOUT_MS 300U
+// Elcon broadcasts at ~1Hz (1000ms). Fault after 500ms silence.
+#define ELCON_STATUS_TIMEOUT_MS 1500U
+
 
 #define BPS_TAP_COUNT 32
 
@@ -43,7 +53,7 @@ typedef struct {
 
 
 /**
- * @brief Initializes the CarCAN (FDCAN3) peripheral with fixed 500 kbps classic CAN settings
+ * @brief Initializes the CarCAN (FDCAN3) peripheral with fixed 250 kbps classic CAN settings
  *        and an open receive filter that accepts all standard IDs.
  * @return CAN_OK on success, CAN_ERR if initialization or start fails.
  */
@@ -61,15 +71,23 @@ can_status_t CarCAN_Init(void);
 can_status_t CarCAN_Send(uint32_t id, uint8_t data[8], uint32_t dlc, TickType_t delay_ticks);
 
 /**
- * @brief Polls the CarCAN RX FIFO for a BPS_Status or BPS_Voltage_Aggregate_Arr frame.
- *        Checks BPS_Status (ID 0x1) first (non-blocking), then BPS_Voltage_Aggregate_Arr
- *        (ID 0xB) with the provided timeout.
- * @param id_out       Set to the ID of the received frame on CAN_OK.
+ * @brief Blocks up to delay_ticks waiting for a BPS_Status frame (ID 0x1).
+ *        BPS_Status carries BPS_CHARGE_OK and fault bits and is the safety gate
+ *        for charging — call this once per task cycle as the primary receive.
  * @param data         8-byte buffer to write the received payload into.
- * @param delay_ticks  FreeRTOS tick timeout applied to the second ID check.
- * @return CAN_OK if a frame was received, CAN_EMPTY if neither ID had data.
+ * @param delay_ticks  FreeRTOS tick timeout to wait for the frame.
+ * @return CAN_OK if a frame was received, CAN_EMPTY if timed out.
  */
-can_status_t CarCAN_Receive(uint32_t *id_out, uint8_t data[8], TickType_t delay_ticks);
+can_status_t CarCAN_Receive_BPS_Status(uint8_t data[8], TickType_t delay_ticks);
+
+/**
+ * @brief Non-blocking check for a BPS_Voltage_Aggregate_Arr frame (ID 0xB).
+ *        Call in a drain loop after CarCAN_Receive_BPS_Status to consume any
+ *        voltage tap frames that arrived during the cycle.
+ * @param data  8-byte buffer to write the received payload into.
+ * @return CAN_OK if a frame was available, CAN_EMPTY if the queue was empty.
+ */
+can_status_t CarCAN_Receive_BPS_Voltage(uint8_t data[8]);
 
 /**
  * @brief Unpacks a BPS_Voltage_Aggregate_Arr frame (ID 0xB) into the aggregate struct.

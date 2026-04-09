@@ -5,4 +5,6 @@
 
 #include "ElconCAN.h"
 #include "CarCAN_can_msgs.h"
-CAN_RECV_ENTRY(ELCONCAN_RX_ID, 5, false)
+
+//TODO: change everything to macros to ElconCAN and CarCAN once done
+CAN_RECV_ENTRY(ELCONCAN_RX_ID, FDCAN_DLC_BYTES_8, false)

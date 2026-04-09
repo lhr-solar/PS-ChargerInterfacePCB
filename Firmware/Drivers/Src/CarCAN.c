@@ -77,23 +77,14 @@ can_status_t CarCAN_Send(uint32_t id, uint8_t data[8], uint32_t dlc, TickType_t 
     return CAN_OK;
 }
 
-can_status_t CarCAN_Receive(uint32_t *id_out, uint8_t data[8], TickType_t delay_ticks)
+can_status_t CarCAN_Receive_BPS_Status(uint8_t data[8], TickType_t delay_ticks)
 {
+    return can_fd_recv(CarCAN, CAN_ID_BPS_STATUS, &carCAN_rx_header, data, delay_ticks);
+}
 
-    //TODO: implement to wait on specific ID and tryout can FD queue
-    // reads through both BPS Status ID and Aggregated Arr ID
-    static const uint32_t bps_ids[] = {CAN_ID_BPS_STATUS, CAN_ID_BPS_VOLTAGE_AGGREGATE_ARR};
-    for (int i = 0; i < (int)(sizeof(bps_ids) / sizeof(bps_ids[0])); i++)
-    {
-        TickType_t ticks = (i == (int)(sizeof(bps_ids) / sizeof(bps_ids[0])) - 1) ? delay_ticks : 0;
-        can_status_t result = can_fd_recv(CarCAN, bps_ids[i], &carCAN_rx_header, data, ticks);
-        if (result == CAN_OK)
-        {
-            *id_out = bps_ids[i];
-            return CAN_OK;
-        }
-    }
-    return CAN_EMPTY;
+can_status_t CarCAN_Receive_BPS_Voltage(uint8_t data[8])
+{
+    return can_fd_recv(CarCAN, CAN_ID_BPS_VOLTAGE_AGGREGATE_ARR, &carCAN_rx_header, data, pdMS_TO_TICKS(CAN_TX_TIMEOUT_MS));
 }
 
 can_status_t CarCAN_Send_ChargerInterface_Status(uint16_t output_voltage_dv, uint16_t output_current_da, uint8_t elcon_comm_ok, uint8_t elcon_fault, TickType_t delay_ticks)
@@ -113,7 +104,9 @@ can_status_t CarCAN_Send_ChargerInterface_Status(uint16_t output_voltage_dv, uin
 
     // bytes 5-7: reserved, already zeroed
 
-    return CarCAN_Send(CAN_ID_CHARGERINTERFACE_STATUS, data, FDCAN_DLC_BYTES_5, delay_ticks);
+    //TODO: update with generated CAN ID once done with Interface DBC
+
+    return CarCAN_Send(CAN_ID_CHARGERINTERFACE_STATUS, data, FDCAN_DLC_BYTES_5, pdMS_TO_TICKS(CAN_TX_TIMEOUT_MS));
 }
 
 // TODO: test this with real BPS data

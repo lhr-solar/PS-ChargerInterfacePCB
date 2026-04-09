@@ -82,7 +82,7 @@ can_status_t ElconCAN_Send(uint32_t id, uint8_t data[8], uint32_t dlc, TickType_
         return CAN_ERR;
     }
 
-    HAL_GPIO_WritePin(LED_HV_PORT, LED_HV_PIN, GPIO_PIN_SET);
+    
     return CAN_OK;
 }
 
