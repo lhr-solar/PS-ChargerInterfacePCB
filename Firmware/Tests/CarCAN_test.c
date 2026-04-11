@@ -25,8 +25,7 @@
 #include "ElconCAN.h"
 #include "CarCAN.h"
 #include "CAN_FD.h"
-
-
+#include "ElconCAN.h"
 
 TaskHandle_t ChargerTask_Handle = NULL;
 TaskHandle_t HeartBeatTask_Handle = NULL;
@@ -57,9 +56,11 @@ static can_status_t Elcon_SendChargeCommand(uint16_t voltage_dv, uint16_t curren
 
 void Charger_Task(void *argument)
 {
+
     ElconStatus_t elcon_status = {0};
     CarCAN_BPS_Aggregate_t bps_agg = {0};
     uint8_t rx_data[8];
+    char buf[32];
     can_status_t carcan_tx;
     bool bps_charge_ok = false;
     bool elcon_was_ok = false;
@@ -139,6 +140,14 @@ void Charger_Task(void *argument)
 
             // read elcon incoming data
             can_status_t elcon_result = ElconCAN_Receive(&elcon_status, ELCONCAN_RX_ID, rx_data, 0);
+            snprintf(buf, sizeof(buf), "V:%u.%uV  I:%u.%uA",
+                     elcon_status.output_voltage_dv / 10, elcon_status.output_voltage_dv % 10,
+                     elcon_status.output_current_da / 10, elcon_status.output_current_da % 10);
+            Display_DrawString(0, 8, buf);
+
+            snprintf(buf, sizeof(buf), "HW:%d OT:%d IV:%d",
+                     elcon_status.flag_hw_failure, elcon_status.flag_over_temp, elcon_status.flag_input_voltage_wrong);
+            Display_DrawString(0, 16, buf);
 
             if (elcon_result == CAN_OK)
             {

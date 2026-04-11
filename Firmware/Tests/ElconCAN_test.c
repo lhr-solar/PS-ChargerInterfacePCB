@@ -59,10 +59,8 @@ static can_status_t Elcon_SendChargeCommand(float voltage_v, float current_a, bo
 
 void ElconCAN_Task(void *argument)
 {
-    Display_DrawString(0, 0, "Sending Elcon CAN");
-
-    ElconStatus_t status;
-    uint8_t rx_data[8];
+    ElconStatus_t status = {0};
+    uint8_t rx_data[8] = {0};
     char buf[32];
 
     TickType_t xLastWakeTime = xTaskGetTickCount();
@@ -72,28 +70,26 @@ void ElconCAN_Task(void *argument)
     {
         vTaskDelayUntil(&xLastWakeTime, xPeriod);
 
-        // output: 01 F4 00 14 00 00 00 00 (50V, 2A)
         // output: 04 B0 00 32 00 00 00 00 (120V, 5A)
         Elcon_SendChargeCommand(120, 5, 0, portMAX_DELAY);
 
-        LED_State_t leds = {
-            .evse_present = false,
-            .charging = false,
-            .fault = false,
-            .hv_active = true,
-        };
-        LEDSet(&leds);
-
         can_status_t recv_result = ElconCAN_Receive(&status, ELCONCAN_RX_ID, rx_data, 0);
+
+        Display_Clear();
 
         if (recv_result == CAN_OK)
         {
-            snprintf(buf, sizeof(buf), "V:%.1fV  I:%.1fA",
-                     status.output_voltage, status.output_current);
-            Display_DrawString(0, 8, buf);
+            snprintf(buf, sizeof(buf), "V:%.1fV I:%.1fA",
+                     status.output_voltage_dv / 10.0f, status.output_current_da / 10.0f);
+            Display_DrawString(0, 0, buf);
 
             snprintf(buf, sizeof(buf), "HW:%d OT:%d IV:%d",
                      status.flag_hw_failure, status.flag_over_temp, status.flag_input_voltage_wrong);
+            Display_DrawString(0, 8, buf);
+
+            snprintf(buf, sizeof(buf), "%02X%02X%02X%02X%02X%02X%02X%02X",
+                     rx_data[0], rx_data[1], rx_data[2], rx_data[3],
+                     rx_data[4], rx_data[5], rx_data[6], rx_data[7]);
             Display_DrawString(0, 16, buf);
 
             LED_State_t leds = {
@@ -103,13 +99,15 @@ void ElconCAN_Task(void *argument)
                 .hv_active = false,
             };
             LEDSet(&leds);
-            vTaskDelay(pdMS_TO_TICKS(500));
         }
         else if (recv_result == CAN_ERR)
         {
-            // fault state
-            Display_Clear();
-            Display_DrawString(0, 10, "CAN ERR");
+            Display_DrawString(0, 0, "CAN ERR");
+
+            snprintf(buf, sizeof(buf), "%02X%02X%02X%02X%02X%02X%02X%02X",
+                     rx_data[0], rx_data[1], rx_data[2], rx_data[3],
+                     rx_data[4], rx_data[5], rx_data[6], rx_data[7]);
+            Display_DrawString(0, 8, buf);
 
             LED_State_t leds = {
                 .evse_present = false,
@@ -119,9 +117,23 @@ void ElconCAN_Task(void *argument)
             };
             LEDSet(&leds);
         }
-        // CAN_EMPTY: no messages, keep previous screen
+        else // CAN_EMPTY
+        {
+            Display_DrawString(0, 0, "Waiting for Elcon");
 
-        // HAL_GPIO_WritePin(LED_EVSE_PORT, LED_EVSE_PIN, GPIO_PIN_SET);
+            snprintf(buf, sizeof(buf), "%02X%02X%02X%02X%02X%02X%02X%02X",
+                     rx_data[0], rx_data[1], rx_data[2], rx_data[3],
+                     rx_data[4], rx_data[5], rx_data[6], rx_data[7]);
+            Display_DrawString(0, 8, buf);
+
+            LED_State_t leds = {
+                .evse_present = false,
+                .charging = false,
+                .fault = false,
+                .hv_active = true,
+            };
+            LEDSet(&leds);
+        }
     }
 }
 
