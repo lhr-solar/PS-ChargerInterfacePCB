@@ -14,13 +14,13 @@
 #define BPS_STATUS_CHARGE_OK_BYTE  1U     // byte index of BPS_Charge_OK in the frame
 #define BPS_STATUS_CHARGE_OK_MASK  0x01U  // 1-bit mask at bit 0 of that byte
 
-#define CHARGER_TASK_PERIOD_MS 250U
+#define CHARGER_TASK_PERIOD_MS 500U
 // Max time to wait for a free CAN TX mailbox. At 250kbps a frame takes ~0.5ms,
 #define CAN_TX_TIMEOUT_MS 10U
 #define ELCON_TARGET_VOLTAGE_DV 1340U   // 134.0V in 0.1V units
-#define ELCON_TARGET_CURRENT_DA 10U    // 10.0A in 0.1A units
-// BPS broadcasts at 10Hz (100ms). Fault after 3 missed frames.
-#define BPS_STATUS_TIMEOUT_MS 300U
+#define ELCON_TARGET_CURRENT_DA 200U    // 10.0A in 0.1A units
+// BPS broadcasts at 500ms. Fault after 3 missed frames.
+#define BPS_STATUS_TIMEOUT_MS 1100U
 // Elcon broadcasts at ~1Hz (1000ms). Fault after 500ms silence.
 #define ELCON_STATUS_TIMEOUT_MS 1500U
 

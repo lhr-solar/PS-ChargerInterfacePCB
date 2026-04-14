@@ -21,6 +21,7 @@ StaticSemaphore_t BuzzerMutexBuffer;
 // states of variables
 bool alarm_status = false;
 GPIO_PinState estop_state = GPIO_PIN_RESET;
+static volatile bool buzzer_stop_requested = false;
 
 static Buzzer_status_t Buzzer_SetTone(uint16_t freq_hz, uint8_t duty_pct)
 {
@@ -80,18 +81,28 @@ void Buzzer_Off(void)
     HAL_GPIO_WritePin(BUZZPWM_PORT, BUZZPWM_PIN, GPIO_PIN_RESET);
 }
 
+void Buzzer_Stop(void)
+{
+    buzzer_stop_requested = true;
+    alarm_status = false;
+    if (xSemaphoreTake(BuzzerMutex, portMAX_DELAY) == pdTRUE)
+    {
+        Buzzer_Off();
+        buzzer_stop_requested = false;
+        xSemaphoreGive(BuzzerMutex);
+    }
+}
+
 // starting charging sound:
 void Buzzer_ChargeStart(void)
 {
 
     if (xSemaphoreTake(BuzzerMutex, portMAX_DELAY) == pdTRUE)
     {
-        Buzzer_Tone(BUZZER_CHARGE_START_FREQ_HZ, BUZZER_CHARGE_START_DUTY_PCT, BUZZER_CHARGE_START_DURATION_MS);
-
-        Buzzer_Tone(BUZZER_CHARGE_START_FREQ_HZ_2, BUZZER_CHARGE_START_DUTY_PCT_2, BUZZER_CHARGE_START_DURATION_MS_2);
-
-
-
+        if (!buzzer_stop_requested)
+            Buzzer_Tone(BUZZER_CHARGE_START_FREQ_HZ, BUZZER_CHARGE_START_DUTY_PCT, BUZZER_CHARGE_START_DURATION_MS);
+        if (!buzzer_stop_requested)
+            Buzzer_Tone(BUZZER_CHARGE_START_FREQ_HZ_2, BUZZER_CHARGE_START_DUTY_PCT_2, BUZZER_CHARGE_START_DURATION_MS_2);
         xSemaphoreGive(BuzzerMutex);
     }
 }
