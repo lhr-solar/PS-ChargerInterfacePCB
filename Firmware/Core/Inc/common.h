@@ -8,6 +8,10 @@
 #include "task.h"
 #include "event_groups.h"
 #include "StatusLED.h"
+#include "printf.h"
+
+
+
 
 #define FAULT_MESSAGE_DELAY pdMS_TO_TICKS(200)
 #define ALL_FAULT_BITS ((1UL << NUM_FAULTS) - 1UL); // creates a bitmask with all fault bits set to 1 based on the total number of faults defined in the enum
@@ -25,10 +29,11 @@ typedef enum
   FAULT_ELCON_OVERTEMP,   // elcon over temperature
   FAULT_ELCON_INPUT_VOLT, // elcon input voltage wrong
 
-  FAULT_BPS_OV,        // bps overvoltage
-  FAULT_BPS_OC,        // bps overcurrent
-  FAULT_BPS_UV,       // bps undervoltage
-  FAULT_BPS_OVERTEMP, // bps over temperature
+  FAULT_BPS_OV,           // bps overvoltage
+  FAULT_BPS_OC,           // bps overcurrent
+  FAULT_BPS_UV,           // bps undervoltage
+  FAULT_BPS_OVERTEMP,     // bps over temperature
+  FAULT_BPS_CHARGE_NOT_OK, // bps denied charging permission (BPS_Charge_OK = 0)
 
   FAULT_DISPLAY, // display failure (SPI failures)
   FAULT_BUZZER,  // buzzer driver malfunction (PWM/timer failures)
@@ -42,11 +47,13 @@ typedef enum
 
 
 
+
 #define FAULT_BIT(fault) (1UL << (fault)) // macro to convert fault enum value to corresponding bit position in the fault bitmap
 _Static_assert(NUM_FAULTS <= MAX_FAULT_BITS, "too many fault bits");
 
 
 //TODO: test all event bits and fault bits 
+//TODO: add comments for each functions
 
 uint8_t faultBits_init(void);
 
@@ -86,8 +93,14 @@ bool faultBits_isSet(fault_state_t inputBit);
 void faultBits_clear(fault_state_t inputBit);
 
 
+/**
+ * @brief run to init prinf
+ */
 
+uart_status_t debugPrintf_init(void);
 
-void SystemClock_Config(void);
+void HAL_FDCAN_MspInit(FDCAN_HandleTypeDef *fdcanHandle);
+
+void HAL_FDCAN_MspDeInit(FDCAN_HandleTypeDef *fdcanHandle);
 
 void Error_Handler(void);

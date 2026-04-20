@@ -79,6 +79,11 @@ void Buzzer_Off(void);
 void PWM_Stop(void);
 
 /**
+ * @brief   Stops any active buzzer sound immediately (safe to call from any task)
+ */
+void Buzzer_Stop(void);
+
+/**
  * @brief   Starts the charging sound sequence
  */
 void Buzzer_ChargeStart(void);

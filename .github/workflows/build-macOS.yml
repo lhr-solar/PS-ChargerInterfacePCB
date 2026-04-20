@@ -1,16 +1,23 @@
-name: Build Tests
+name: Test MacOS compilation
 
 on:
+  pull_request:
   push:
+    paths-ignore:
+      - "**/*.md"
+      - "**/*.dbc"
+      - "**/*.py"
+
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
+
       - name: Initialize Submodules
-        run: git submodule update --init Firmware/Embedded-Sharepoint
+        run: git submodule update --init --recursive
 
       - name: Cache Nix
         uses: actions/cache@v3
@@ -24,8 +31,8 @@ jobs:
       - name: Install Nix Action
         uses: cachix/install-nix-action@v31
 
-      - name: Clean & Build tests
+      - name: Build all tests on Mac
         run: |
           nix develop ./Firmware/Embedded-Sharepoint --accept-flake-config --command bash -c "
-            cd Firmware/ && make clean && python Tests/makeAllTests.py
+            python3 Firmware/Tests/makeAllTests.py
           "

@@ -4,10 +4,7 @@
 #include "gpio.h"
 #include "Estop.h"
 
-/**
- * @brief   Consistent Heartbeat LED to indicate that the system is alive and responsive.
- * @return  Toggles the heartbeat LED on and off at HEARTBEAT_PERIOD intervals.
- */
+
 void HeartBeat(void)
 {
     while (1)
@@ -20,10 +17,8 @@ void HeartBeat(void)
     }
 }
 
-/**
- * @brief   Sets all status LEDs at once using the LED_State_t struct via LEDMaps.
- * @param   state Pointer to LED_State_t containing desired state for each LED.
- */
+
+
 void LEDSet(const LED_State_t *state)
 {
     HAL_GPIO_WritePin(LEDMaps[LED_EVSE].port,   LEDMaps[LED_EVSE].pin,   state->evse_present ? GPIO_PIN_SET : GPIO_PIN_RESET);
