@@ -141,7 +141,7 @@ void Charger_Task(void *argument)
             }
 
             // Drain any voltage tap frames that arrived since last cycle.
-            while (CarCAN_Receive_BPS_Voltage(rx_data) == CAN_OK)
+            while (CarCAN_Receive_BPS_Voltage(rx_data, 0) == CAN_OK)
             {
                 CarCAN_Unpack_BPS_Aggregate(rx_data, &bps_agg);
                 // TODO: min/max cell voltage checks
