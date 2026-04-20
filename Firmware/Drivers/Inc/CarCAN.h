@@ -21,8 +21,8 @@
 #define ELCON_TARGET_CURRENT_DA 200U    // 10.0A in 0.1A units
 // BPS broadcasts at 500ms. Fault after 3 missed frames.
 #define BPS_STATUS_TIMEOUT_MS 1100U
-// Elcon broadcasts at ~1Hz (1000ms). Fault after 500ms silence.
-#define ELCON_STATUS_TIMEOUT_MS 1500U
+// Elcon broadcasts at ~1Hz (1000ms). Fault after 3 frames missed.
+#define ELCON_STATUS_TIMEOUT_MS 3000U
 
 
 #define BPS_TAP_COUNT 32
@@ -87,7 +87,7 @@ can_status_t CarCAN_Receive_BPS_Status(uint8_t data[8], TickType_t delay_ticks);
  * @param data  8-byte buffer to write the received payload into.
  * @return CAN_OK if a frame was available, CAN_EMPTY if the queue was empty.
  */
-can_status_t CarCAN_Receive_BPS_Voltage(uint8_t data[8]);
+can_status_t CarCAN_Receive_BPS_Voltage(uint8_t data[8], TickType_t delay_ticks);
 
 /**
  * @brief Unpacks a BPS_Voltage_Aggregate_Arr frame (ID 0xB) into the aggregate struct.

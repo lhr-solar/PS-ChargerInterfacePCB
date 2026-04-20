@@ -82,9 +82,9 @@ can_status_t CarCAN_Receive_BPS_Status(uint8_t data[8], TickType_t delay_ticks)
     return can_fd_recv(CarCAN, CAN_ID_BPS_STATUS, &carCAN_rx_header, data, delay_ticks);
 }
 
-can_status_t CarCAN_Receive_BPS_Voltage(uint8_t data[8])
+can_status_t CarCAN_Receive_BPS_Voltage(uint8_t data[8], TickType_t delay_ticks)
 {
-    return can_fd_recv(CarCAN, CAN_ID_BPS_VOLTAGE_AGGREGATE_ARR, &carCAN_rx_header, data, pdMS_TO_TICKS(CAN_TX_TIMEOUT_MS));
+    return can_fd_recv(CarCAN, CAN_ID_BPS_VOLTAGE_AGGREGATE_ARR, &carCAN_rx_header, data, delay_ticks);
 }
 
 can_status_t CarCAN_Send_ChargerInterface_Status(uint16_t output_voltage_dv, uint16_t output_current_da, uint8_t elcon_comm_ok, uint8_t elcon_fault, TickType_t delay_ticks)

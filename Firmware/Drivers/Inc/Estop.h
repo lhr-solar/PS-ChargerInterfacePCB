@@ -2,6 +2,9 @@
 #include "stm32xx_hal.h"
 #include "pinDef.h"
 
+#pragma once
+
+
 typedef enum
 {
     ESTOP_PRESSED,
