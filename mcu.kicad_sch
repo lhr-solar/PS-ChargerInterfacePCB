@@ -66,7 +66,7 @@
 			)
 		)
 		(pin "CC1" bidirectional
-			(at 67.31 31.75 0)
+			(at 67.31 35.56 0)
 			(uuid "321c4ad8-6588-4ebc-b5cb-f37b348ed9f8")
 			(effects
 				(font
@@ -76,7 +76,7 @@
 			)
 		)
 		(pin "CC2" bidirectional
-			(at 67.31 34.29 0)
+			(at 67.31 38.1 0)
 			(uuid "edb9c153-d3f4-4521-af51-4197f1accd0a")
 			(effects
 				(font
@@ -86,7 +86,7 @@
 			)
 		)
 		(pin "GND" input
-			(at 24.13 45.72 180)
+			(at 24.13 35.56 180)
 			(uuid "596b748c-e69a-4e91-9d50-e71f20047e18")
 			(effects
 				(font
@@ -96,7 +96,7 @@
 			)
 		)
 		(pin "USB_5V" output
-			(at 24.13 49.53 180)
+			(at 24.13 41.91 180)
 			(uuid "0b33e0b3-04b9-4bcc-a142-8772ba4ef379")
 			(effects
 				(font
@@ -106,7 +106,7 @@
 			)
 		)
 		(pin "USB_DM" bidirectional
-			(at 67.31 41.91 0)
+			(at 67.31 45.72 0)
 			(uuid "1186f32f-b670-4207-9b2c-a5b2991d5e70")
 			(effects
 				(font
@@ -116,7 +116,7 @@
 			)
 		)
 		(pin "USB_DP" bidirectional
-			(at 67.31 39.37 0)
+			(at 67.31 43.18 0)
 			(uuid "3a660785-74ee-4fde-9069-e6e714859dc6")
 			(effects
 				(font
@@ -134,7 +134,7 @@
 		)
 	)
 	(sheet
-		(at 99.06 27.94)
+		(at 92.71 27.94)
 		(size 43.18 24.13)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -148,9 +148,9 @@
 		(fill
 			(color 0 0 0 0)
 		)
-		(uuid "b8c537be-fbf8-4de8-96ad-42186be7e85c")
+		(uuid "f5cc2a58-65f2-4743-a268-5d11d85c52f6")
 		(property "Sheetname" "48PinMCU"
-			(at 99.06 27.2284 0)
+			(at 92.71 27.2284 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -161,7 +161,7 @@
 			)
 		)
 		(property "Sheetfile" "48PinMCU.kicad_sch"
-			(at 99.06 52.6546 0)
+			(at 92.71 52.6546 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -172,7 +172,7 @@
 			)
 		)
 		(property "Date Modified" "5/3/2026"
-			(at -63.5 -13.97 0)
+			(at 68.58 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -183,7 +183,7 @@
 			)
 		)
 		(property "Author" "Sathvik Yechuri"
-			(at -63.5 -13.97 0)
+			(at 68.58 0 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -191,6 +191,26 @@
 				(font
 					(size 1.27 1.27)
 				)
+			)
+		)
+		(pin "USB_DM" bidirectional
+			(at 92.71 35.56 180)
+			(uuid "c491d3a2-9daa-4953-aaee-ffbf0385348b")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "USB_DP" bidirectional
+			(at 92.71 38.1 180)
+			(uuid "ff91f414-d293-4739-94b3-4ac566e237d6")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
