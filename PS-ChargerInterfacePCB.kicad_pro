@@ -427,29 +427,9 @@
         "filename": "PS-ChargerInterfacePCB.kicad_sch",
         "name": "PS-ChargerInterfacePCB",
         "uuid": "24809a72-9525-4be8-be3e-46bc27cfe8fb"
-      },
-      {
-        "filename": "can.kicad_sch",
-        "name": "CAN",
-        "uuid": "76be3fbd-da4b-465f-ad8f-cf483283a19d"
-      },
-      {
-        "filename": "shutdown.kicad_sch",
-        "name": "Shutdown",
-        "uuid": "a558638b-ca88-483c-9dfd-e95959fa1c82"
-      },
-      {
-        "filename": "ui.kicad_sch",
-        "name": "UI",
-        "uuid": "d134c3ee-6133-4676-b0a3-c819d61a4fed"
-      },
-      {
-        "filename": "mcu.kicad_sch",
-        "name": "MCU",
-        "uuid": "b7e42da5-6f2f-462d-9722-f11b3aabae29"
       }
     ],
-    "used_designators": "C1-15,C39,D1-3,D6-7,FB1-2,J1-3,#FLG5,R1-8,R21-22,SW1-2,U1,Y1",
+    "used_designators": "C1-15,C20-21,C39,D1-3,D6-7,FB1-2,J1-5,#FLG5,R1-8,R21-24,SW1-2,U1,Y1,#PWR1-6",
     "variants": []
   },
   "sheets": [
@@ -462,36 +442,20 @@
       "Power System"
     ],
     [
-      "b7e42da5-6f2f-462d-9722-f11b3aabae29",
+      "84410e9c-5d36-47d4-a265-5b9dbc512cd8",
       "MCU"
     ],
     [
-      "76be3fbd-da4b-465f-ad8f-cf483283a19d",
+      "ba69df00-9c22-4c65-92b6-b1bd518e51cc",
       "CAN"
     ],
     [
-      "a558638b-ca88-483c-9dfd-e95959fa1c82",
-      "Shutdown"
-    ],
-    [
-      "d134c3ee-6133-4676-b0a3-c819d61a4fed",
+      "f5490d19-683e-40ad-b66e-574af362c37d",
       "UI"
     ],
     [
-      "f5cc2a58-65f2-4743-a268-5d11d85c52f6",
-      "48PinMCU"
-    ],
-    [
-      "222af89b-658e-4ae0-ba05-4c98dc8575da",
-      "USB-C_Connector"
-    ],
-    [
-      "f3193b22-5837-4bd9-9023-4143db12e377",
-      "Charger_CAN_Transceiver"
-    ],
-    [
-      "28c8bb30-5aee-42e2-a184-4f9c3cc306ab",
-      "Elcon_CAN_Transceiver"
+      "90bc28ab-b5b7-47d5-9e6f-752228421e66",
+      "Shutdown"
     ],
     [
       "8c26e1fb-a8ae-4852-ae6e-03a0af74066d",
@@ -504,6 +468,22 @@
     [
       "709d4ceb-022b-4d52-b343-e0e15ffd7d8b",
       "3V3_Regulator"
+    ],
+    [
+      "222af89b-658e-4ae0-ba05-4c98dc8575da",
+      "USB-C_Connector"
+    ],
+    [
+      "f5cc2a58-65f2-4743-a268-5d11d85c52f6",
+      "48PinMCU"
+    ],
+    [
+      "28c8bb30-5aee-42e2-a184-4f9c3cc306ab",
+      "Elcon_CAN_Transceiver"
+    ],
+    [
+      "f3193b22-5837-4bd9-9023-4143db12e377",
+      "Charger_CAN_Transceiver"
     ]
   ],
   "text_variables": {},

@@ -77,8 +77,8 @@
 		)
 		(instances
 			(project "PS-ChargerInterfacePCB"
-				(path "/76be3fbd-da4b-465f-ad8f-cf483283a19d"
-					(page "11")
+				(path "/24809a72-9525-4be8-be3e-46bc27cfe8fb/ba69df00-9c22-4c65-92b6-b1bd518e51cc"
+					(page "20")
 				)
 			)
 		)
@@ -145,8 +145,8 @@
 		)
 		(instances
 			(project "PS-ChargerInterfacePCB"
-				(path "/76be3fbd-da4b-465f-ad8f-cf483283a19d"
-					(page "10")
+				(path "/24809a72-9525-4be8-be3e-46bc27cfe8fb/ba69df00-9c22-4c65-92b6-b1bd518e51cc"
+					(page "21")
 				)
 			)
 		)

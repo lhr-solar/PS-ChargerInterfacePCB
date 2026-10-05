@@ -2171,15 +2171,15 @@
 			(uuid "490d9827-a08f-4ff3-8a4d-44353f0125b2")
 		)
 		(instances
-			(project "usb_conn"
-				(path "/64d5c21e-b85c-41ec-b08c-3556f1a0ecf2"
-					(reference "R1")
+			(project "PS-ChargerInterfacePCB"
+				(path "/24809a72-9525-4be8-be3e-46bc27cfe8fb/84410e9c-5d36-47d4-a265-5b9dbc512cd8/222af89b-658e-4ae0-ba05-4c98dc8575da"
+					(reference "R21")
 					(unit 1)
 				)
 			)
-			(project "PS-ChargerInterfacePCB"
-				(path "/b7e42da5-6f2f-462d-9722-f11b3aabae29/222af89b-658e-4ae0-ba05-4c98dc8575da"
-					(reference "R21")
+			(project "usb_conn"
+				(path "/64d5c21e-b85c-41ec-b08c-3556f1a0ecf2"
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -2278,15 +2278,15 @@
 			(uuid "149f7b0b-6932-404c-8d1a-5eb7b9c7a970")
 		)
 		(instances
-			(project "usb_conn"
-				(path "/64d5c21e-b85c-41ec-b08c-3556f1a0ecf2"
-					(reference "R2")
+			(project "PS-ChargerInterfacePCB"
+				(path "/24809a72-9525-4be8-be3e-46bc27cfe8fb/84410e9c-5d36-47d4-a265-5b9dbc512cd8/222af89b-658e-4ae0-ba05-4c98dc8575da"
+					(reference "R22")
 					(unit 1)
 				)
 			)
-			(project "PS-ChargerInterfacePCB"
-				(path "/b7e42da5-6f2f-462d-9722-f11b3aabae29/222af89b-658e-4ae0-ba05-4c98dc8575da"
-					(reference "R22")
+			(project "usb_conn"
+				(path "/64d5c21e-b85c-41ec-b08c-3556f1a0ecf2"
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -2440,15 +2440,15 @@
 			(uuid "6c7f23cd-67ab-488e-bc40-499c5e2da985")
 		)
 		(instances
-			(project "usb_conn"
-				(path "/64d5c21e-b85c-41ec-b08c-3556f1a0ecf2"
-					(reference "J1")
+			(project "PS-ChargerInterfacePCB"
+				(path "/24809a72-9525-4be8-be3e-46bc27cfe8fb/84410e9c-5d36-47d4-a265-5b9dbc512cd8/222af89b-658e-4ae0-ba05-4c98dc8575da"
+					(reference "J3")
 					(unit 1)
 				)
 			)
-			(project "PS-ChargerInterfacePCB"
-				(path "/b7e42da5-6f2f-462d-9722-f11b3aabae29/222af89b-658e-4ae0-ba05-4c98dc8575da"
-					(reference "J3")
+			(project "usb_conn"
+				(path "/64d5c21e-b85c-41ec-b08c-3556f1a0ecf2"
+					(reference "J1")
 					(unit 1)
 				)
 			)
@@ -2525,15 +2525,15 @@
 			(uuid "973237f8-bc6a-4ed7-9683-7a93c8bc746c")
 		)
 		(instances
-			(project "usb_conn"
-				(path "/64d5c21e-b85c-41ec-b08c-3556f1a0ecf2"
-					(reference "#FLG01")
+			(project "PS-ChargerInterfacePCB"
+				(path "/24809a72-9525-4be8-be3e-46bc27cfe8fb/84410e9c-5d36-47d4-a265-5b9dbc512cd8/222af89b-658e-4ae0-ba05-4c98dc8575da"
+					(reference "#FLG05")
 					(unit 1)
 				)
 			)
-			(project "PS-ChargerInterfacePCB"
-				(path "/b7e42da5-6f2f-462d-9722-f11b3aabae29/222af89b-658e-4ae0-ba05-4c98dc8575da"
-					(reference "#FLG05")
+			(project "usb_conn"
+				(path "/64d5c21e-b85c-41ec-b08c-3556f1a0ecf2"
+					(reference "#FLG01")
 					(unit 1)
 				)
 			)
@@ -2632,15 +2632,15 @@
 			(uuid "bff90740-ea5c-4adc-908e-7fda935954bc")
 		)
 		(instances
-			(project "usb_conn"
-				(path "/64d5c21e-b85c-41ec-b08c-3556f1a0ecf2"
-					(reference "D1")
+			(project "PS-ChargerInterfacePCB"
+				(path "/24809a72-9525-4be8-be3e-46bc27cfe8fb/84410e9c-5d36-47d4-a265-5b9dbc512cd8/222af89b-658e-4ae0-ba05-4c98dc8575da"
+					(reference "D6")
 					(unit 1)
 				)
 			)
-			(project "PS-ChargerInterfacePCB"
-				(path "/b7e42da5-6f2f-462d-9722-f11b3aabae29/222af89b-658e-4ae0-ba05-4c98dc8575da"
-					(reference "D6")
+			(project "usb_conn"
+				(path "/64d5c21e-b85c-41ec-b08c-3556f1a0ecf2"
+					(reference "D1")
 					(unit 1)
 				)
 			)
@@ -2741,15 +2741,15 @@
 			(uuid "2b3a3369-ad2c-4383-a613-de5f0fabd084")
 		)
 		(instances
-			(project "usb_conn"
-				(path "/64d5c21e-b85c-41ec-b08c-3556f1a0ecf2"
-					(reference "C1")
+			(project "PS-ChargerInterfacePCB"
+				(path "/24809a72-9525-4be8-be3e-46bc27cfe8fb/84410e9c-5d36-47d4-a265-5b9dbc512cd8/222af89b-658e-4ae0-ba05-4c98dc8575da"
+					(reference "C39")
 					(unit 1)
 				)
 			)
-			(project "PS-ChargerInterfacePCB"
-				(path "/b7e42da5-6f2f-462d-9722-f11b3aabae29/222af89b-658e-4ae0-ba05-4c98dc8575da"
-					(reference "C39")
+			(project "usb_conn"
+				(path "/64d5c21e-b85c-41ec-b08c-3556f1a0ecf2"
+					(reference "C1")
 					(unit 1)
 				)
 			)
@@ -2854,15 +2854,15 @@
 			(uuid "e75dbdb8-46f6-49b5-b6cc-de9cebd6ae13")
 		)
 		(instances
-			(project "usb_conn"
-				(path "/64d5c21e-b85c-41ec-b08c-3556f1a0ecf2"
-					(reference "D2")
+			(project "PS-ChargerInterfacePCB"
+				(path "/24809a72-9525-4be8-be3e-46bc27cfe8fb/84410e9c-5d36-47d4-a265-5b9dbc512cd8/222af89b-658e-4ae0-ba05-4c98dc8575da"
+					(reference "D7")
 					(unit 1)
 				)
 			)
-			(project "PS-ChargerInterfacePCB"
-				(path "/b7e42da5-6f2f-462d-9722-f11b3aabae29/222af89b-658e-4ae0-ba05-4c98dc8575da"
-					(reference "D7")
+			(project "usb_conn"
+				(path "/64d5c21e-b85c-41ec-b08c-3556f1a0ecf2"
+					(reference "D2")
 					(unit 1)
 				)
 			)
