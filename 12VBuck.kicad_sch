@@ -8004,7 +8004,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "28b1f39e-9c15-4348-af46-f76ae259a754")
-		(property "Reference" "#FLG02"
+		(property "Reference" "#FLG07"
 			(at 149.86 79.375 0)
 			(hide yes)
 			(show_name no)
@@ -8081,6 +8081,12 @@
 					(unit 1)
 				)
 			)
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/8fb4e0f4-a81e-4963-ba02-cb881e23146d"
+					(reference "#FLG07")
+					(unit 1)
+				)
+			)
 			(project "PS-Buck"
 				(path "/ad6c7df0-eb90-4670-9aa8-3e2007aefc2d/41c72b07-cf60-4ca9-96a7-6ae96aaa0c90"
 					(reference "#FLG07")
@@ -8107,7 +8113,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "3ae97d19-6cde-4171-85fa-660ede195ee5")
-		(property "Reference" "C14"
+		(property "Reference" "C45"
 			(at 96.52 85.0962 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8209,6 +8215,12 @@
 					(unit 1)
 				)
 			)
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/8fb4e0f4-a81e-4963-ba02-cb881e23146d"
+					(reference "C45")
+					(unit 1)
+				)
+			)
 			(project "PS-Buck"
 				(path "/ad6c7df0-eb90-4670-9aa8-3e2007aefc2d/41c72b07-cf60-4ca9-96a7-6ae96aaa0c90"
 					(reference "C8")
@@ -8234,7 +8246,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "534903a9-bc70-4eea-8652-865f25dff125")
-		(property "Reference" "TP1"
+		(property "Reference" "TP5"
 			(at 229.87 123.6979 0)
 			(hide yes)
 			(show_name no)
@@ -8306,6 +8318,12 @@
 					(unit 1)
 				)
 			)
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/8fb4e0f4-a81e-4963-ba02-cb881e23146d"
+					(reference "TP5")
+					(unit 1)
+				)
+			)
 			(project "PowerPath"
 				(path "/ad6c7df0-eb90-4670-9aa8-3e2007aefc2d/41c72b07-cf60-4ca9-96a7-6ae96aaa0c90"
 					(reference "TP9")
@@ -8331,7 +8349,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5df58429-09e1-4421-add5-7cb50a95e215")
-		(property "Reference" "L1"
+		(property "Reference" "L2"
 			(at 161.29 87.884 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8431,6 +8449,12 @@
 					(unit 1)
 				)
 			)
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/8fb4e0f4-a81e-4963-ba02-cb881e23146d"
+					(reference "L2")
+					(unit 1)
+				)
+			)
 			(project "PS-Buck"
 				(path "/ad6c7df0-eb90-4670-9aa8-3e2007aefc2d/41c72b07-cf60-4ca9-96a7-6ae96aaa0c90"
 					(reference "L1")
@@ -8456,7 +8480,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "62ac0e0a-b625-451c-8647-39e69a3821d2")
-		(property "Reference" "TP3"
+		(property "Reference" "TP7"
 			(at 242.57 123.6979 0)
 			(hide yes)
 			(show_name no)
@@ -8528,6 +8552,12 @@
 					(unit 1)
 				)
 			)
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/8fb4e0f4-a81e-4963-ba02-cb881e23146d"
+					(reference "TP7")
+					(unit 1)
+				)
+			)
 			(project "PowerPath"
 				(path "/ad6c7df0-eb90-4670-9aa8-3e2007aefc2d/41c72b07-cf60-4ca9-96a7-6ae96aaa0c90"
 					(reference "TP11")
@@ -8553,7 +8583,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "64ce3126-4047-4ded-b1a6-5032d153b3af")
-		(property "Reference" "TP2"
+		(property "Reference" "TP6"
 			(at 229.87 136.3979 0)
 			(hide yes)
 			(show_name no)
@@ -8625,6 +8655,12 @@
 					(unit 1)
 				)
 			)
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/8fb4e0f4-a81e-4963-ba02-cb881e23146d"
+					(reference "TP6")
+					(unit 1)
+				)
+			)
 			(project "PowerPath"
 				(path "/ad6c7df0-eb90-4670-9aa8-3e2007aefc2d/41c72b07-cf60-4ca9-96a7-6ae96aaa0c90"
 					(reference "TP10")
@@ -8651,7 +8687,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "65b27499-2375-4e47-ac1b-2ec7217507d9")
-		(property "Reference" "U3"
+		(property "Reference" "U4"
 			(at 129.54 71.12 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8765,6 +8801,12 @@
 					(unit 1)
 				)
 			)
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/8fb4e0f4-a81e-4963-ba02-cb881e23146d"
+					(reference "U4")
+					(unit 1)
+				)
+			)
 			(project "PS-Buck"
 				(path "/ad6c7df0-eb90-4670-9aa8-3e2007aefc2d/41c72b07-cf60-4ca9-96a7-6ae96aaa0c90"
 					(reference "U3")
@@ -8790,7 +8832,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "675412a8-5687-4eb6-926f-5dd959758475")
-		(property "Reference" "TP4"
+		(property "Reference" "TP8"
 			(at 242.57 136.3979 0)
 			(hide yes)
 			(show_name no)
@@ -8862,6 +8904,12 @@
 					(unit 1)
 				)
 			)
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/8fb4e0f4-a81e-4963-ba02-cb881e23146d"
+					(reference "TP8")
+					(unit 1)
+				)
+			)
 			(project "PowerPath"
 				(path "/ad6c7df0-eb90-4670-9aa8-3e2007aefc2d/41c72b07-cf60-4ca9-96a7-6ae96aaa0c90"
 					(reference "TP12")
@@ -8888,7 +8936,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7855cb12-f127-4b25-95f0-afd5dab05ec0")
-		(property "Reference" "#FLG04"
+		(property "Reference" "#FLG09"
 			(at 179.07 84.455 0)
 			(hide yes)
 			(show_name no)
@@ -8964,6 +9012,12 @@
 					(unit 1)
 				)
 			)
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/8fb4e0f4-a81e-4963-ba02-cb881e23146d"
+					(reference "#FLG09")
+					(unit 1)
+				)
+			)
 			(project "PS-Buck"
 				(path "/ad6c7df0-eb90-4670-9aa8-3e2007aefc2d/41c72b07-cf60-4ca9-96a7-6ae96aaa0c90"
 					(reference "#FLG09")
@@ -8990,7 +9044,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "7a00d41b-8759-4c8c-9944-46e0f416cef4")
-		(property "Reference" "#FLG01"
+		(property "Reference" "#FLG06"
 			(at 88.9 79.375 0)
 			(hide yes)
 			(show_name no)
@@ -9066,6 +9120,12 @@
 					(unit 1)
 				)
 			)
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/8fb4e0f4-a81e-4963-ba02-cb881e23146d"
+					(reference "#FLG06")
+					(unit 1)
+				)
+			)
 			(project "PS-Buck"
 				(path "/ad6c7df0-eb90-4670-9aa8-3e2007aefc2d/41c72b07-cf60-4ca9-96a7-6ae96aaa0c90"
 					(reference "#FLG06")
@@ -9091,7 +9151,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "817e4ae9-6788-4cb4-96fd-a664d009c3eb")
-		(property "Reference" "C17"
+		(property "Reference" "C48"
 			(at 164.084 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9187,6 +9247,12 @@
 					(unit 1)
 				)
 			)
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/8fb4e0f4-a81e-4963-ba02-cb881e23146d"
+					(reference "C48")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9200,7 +9266,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "83c8aacc-7033-4c5e-a893-15cad2be6288")
-		(property "Reference" "C19"
+		(property "Reference" "C50"
 			(at 189.992 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9296,6 +9362,12 @@
 					(unit 1)
 				)
 			)
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/8fb4e0f4-a81e-4963-ba02-cb881e23146d"
+					(reference "C50")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -9309,7 +9381,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8f499efd-8f91-403e-8239-07b7c59cd6ee")
-		(property "Reference" "C16"
+		(property "Reference" "C47"
 			(at 156.718 80.01 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9411,6 +9483,12 @@
 					(unit 1)
 				)
 			)
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/8fb4e0f4-a81e-4963-ba02-cb881e23146d"
+					(reference "C47")
+					(unit 1)
+				)
+			)
 			(project "PS-Buck"
 				(path "/ad6c7df0-eb90-4670-9aa8-3e2007aefc2d/41c72b07-cf60-4ca9-96a7-6ae96aaa0c90"
 					(reference "C9")
@@ -9436,7 +9514,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "986d12fd-760e-47b3-b949-1eff6bbf7e14")
-		(property "Reference" "#FLG03"
+		(property "Reference" "#FLG08"
 			(at 149.86 84.455 0)
 			(hide yes)
 			(show_name no)
@@ -9513,6 +9591,12 @@
 					(unit 1)
 				)
 			)
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/8fb4e0f4-a81e-4963-ba02-cb881e23146d"
+					(reference "#FLG08")
+					(unit 1)
+				)
+			)
 			(project "PS-Buck"
 				(path "/ad6c7df0-eb90-4670-9aa8-3e2007aefc2d/41c72b07-cf60-4ca9-96a7-6ae96aaa0c90"
 					(reference "#FLG08")
@@ -9539,7 +9623,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a2a58f5c-5b53-4bfa-af1c-ad84b32d2305")
-		(property "Reference" "R15"
+		(property "Reference" "R31"
 			(at 227.33 85.0899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9641,6 +9725,12 @@
 					(unit 1)
 				)
 			)
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/8fb4e0f4-a81e-4963-ba02-cb881e23146d"
+					(reference "R31")
+					(unit 1)
+				)
+			)
 			(project "PS-Buck"
 				(path "/ad6c7df0-eb90-4670-9aa8-3e2007aefc2d/41c72b07-cf60-4ca9-96a7-6ae96aaa0c90"
 					(reference "R30")
@@ -9667,7 +9757,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "a5c64f4f-c674-4d50-80a7-5bee03f8aefe")
-		(property "Reference" "C15"
+		(property "Reference" "C46"
 			(at 105.41 87.6362 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9763,6 +9853,12 @@
 					(unit 1)
 				)
 			)
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/8fb4e0f4-a81e-4963-ba02-cb881e23146d"
+					(reference "C46")
+					(unit 1)
+				)
+			)
 			(project "12VBuck"
 				(path "/f2a6729b-b8d5-4133-ae64-a5e680928255"
 					(reference "C5")
@@ -9783,7 +9879,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "c670e479-9032-4930-8709-ad4a3c228811")
-		(property "Reference" "R16"
+		(property "Reference" "R34"
 			(at 227.33 92.7099 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9885,6 +9981,12 @@
 					(unit 1)
 				)
 			)
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/8fb4e0f4-a81e-4963-ba02-cb881e23146d"
+					(reference "R34")
+					(unit 1)
+				)
+			)
 			(project "PS-Buck"
 				(path "/ad6c7df0-eb90-4670-9aa8-3e2007aefc2d/41c72b07-cf60-4ca9-96a7-6ae96aaa0c90"
 					(reference "R31")
@@ -9910,7 +10012,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "cbf0021f-2456-410b-af7a-f5090fbf6009")
-		(property "Reference" "C18"
+		(property "Reference" "C49"
 			(at 173.482 94.234 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -10003,6 +10105,12 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/24809a72-9525-4be8-be3e-46bc27cfe8fb/cd4ac576-e1cf-46c0-a1b5-c681437cfde8/eaf4dc2b-ad73-4e1e-8bba-aa12f0e48269"
 					(reference "C18")
+					(unit 1)
+				)
+			)
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/8fb4e0f4-a81e-4963-ba02-cb881e23146d"
+					(reference "C49")
 					(unit 1)
 				)
 			)
