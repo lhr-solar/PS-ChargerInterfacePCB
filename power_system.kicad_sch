@@ -77,16 +77,6 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 34.29) (xy 83.82 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bf4b02e3-17c0-4da9-adc3-71322469b85e")
-	)
-	(wire
-		(pts
 			(xy 120.65 34.29) (xy 125.73 34.29)
 		)
 		(stroke
@@ -104,16 +94,6 @@
 			(justify right bottom)
 		)
 		(uuid "1005c673-ef86-44ca-be56-406cad96723d")
-	)
-	(label "LV_PROTECTED"
-		(at 83.82 34.29 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "1070adfb-ca50-47be-904c-5c97e6557ec0")
 	)
 	(label "LV_PROTECTED"
 		(at 120.65 34.29 180)
@@ -188,6 +168,17 @@
 			(justify left)
 		)
 		(uuid "f5765a0f-9bd4-47e1-8bde-fa2c7c7ec3df")
+	)
+	(hierarchical_label "LV_PROTECTED"
+		(shape input)
+		(at 78.74 34.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f5cce504-56de-48ba-ba90-a2e5bb7f80e6")
 	)
 	(sheet
 		(at 199.39 27.94)

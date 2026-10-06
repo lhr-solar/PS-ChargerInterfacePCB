@@ -726,7 +726,7 @@
 	)
 	(text "Normally-open soft-shutdown button: released = HIGH; pressed = LOW"
 		(exclude_from_sim no)
-		(at 86.36 102.87 0)
+		(at 59.69 108.204 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -737,7 +737,7 @@
 	)
 	(text "Normally-closed E-stop: normal = LOW; pressed, broken wire, or unplugged = HIGH (FAULT)"
 		(exclude_from_sim no)
-		(at 86.36 57.15 0)
+		(at 35.052 61.468 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -760,7 +760,7 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 114.3) (xy 92.71 114.3)
+			(xy 104.14 114.3) (xy 104.14 119.38)
 		)
 		(stroke
 			(width 0)
@@ -770,33 +770,23 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 68.58) (xy 92.71 73.66)
+			(xy 100.33 111.76) (xy 146.05 111.76)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3e854f19-9dc1-4d0d-9a2a-4e8ec66b8311")
+	)
+	(wire
+		(pts
+			(xy 106.68 68.58) (xy 106.68 73.66)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "40915356-55df-458e-957f-2e2b6c31dc63")
-	)
-	(wire
-		(pts
-			(xy 100.33 68.58) (xy 92.71 68.58)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4a10a3ff-a4d8-4b4f-8bcc-fa16c442f8df")
-	)
-	(wire
-		(pts
-			(xy 100.33 66.04) (xy 146.05 66.04)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "59c4579c-7831-4101-8909-7417c4133dcc")
 	)
 	(wire
 		(pts
@@ -810,13 +800,13 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 114.3) (xy 92.71 119.38)
+			(xy 100.33 66.04) (xy 146.05 66.04)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "87f484c5-5b59-4970-a46c-4287c968c2c6")
+		(uuid "7f44670b-210f-4e14-b030-b71e2a2cf651")
 	)
 	(wire
 		(pts
@@ -830,16 +820,6 @@
 	)
 	(wire
 		(pts
-			(xy 100.33 111.76) (xy 146.05 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a010665d-f850-442b-b47f-941e2dd3e4a5")
-	)
-	(wire
-		(pts
 			(xy 146.05 125.73) (xy 146.05 128.27)
 		)
 		(stroke
@@ -847,6 +827,16 @@
 			(type default)
 		)
 		(uuid "a9e21eac-5a92-4032-82bc-badf15e4ace6")
+	)
+	(wire
+		(pts
+			(xy 106.68 68.58) (xy 100.33 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "add5ee21-52c6-4cb5-93ea-a1f90c47379c")
 	)
 	(wire
 		(pts
@@ -897,6 +887,16 @@
 			(type default)
 		)
 		(uuid "ce9f8290-c050-474d-830b-16d7fbe6b357")
+	)
+	(wire
+		(pts
+			(xy 104.14 114.3) (xy 100.33 114.3)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d62bf4d1-e081-4c57-a368-bc313a664f97")
 	)
 	(hierarchical_label "SOFT_SHUTDOWN"
 		(shape output)
@@ -1000,7 +1000,8 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 105.41 111.76 0)
+		(at 95.25 111.76 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1010,7 +1011,7 @@
 		(dnp no)
 		(uuid "21e0604c-49e5-4b69-854d-26df24c14987")
 		(property "Reference" "J5"
-			(at 107.442 111.9632 0)
+			(at 93.218 111.9632 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1021,7 +1022,7 @@
 			)
 		)
 		(property "Value" "SOFT_SHUTDOWN"
-			(at 107.442 114.2746 0)
+			(at 93.218 114.2746 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1032,7 +1033,7 @@
 			)
 		)
 		(property "Footprint" "UTSVT_Connectors:Molex_Nano-Fit_105309-xx02_1x02_P2.50mm_Vertical"
-			(at 105.41 111.76 0)
+			(at 95.25 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1043,7 +1044,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 105.41 111.76 0)
+			(at 95.25 111.76 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1054,7 +1055,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 105.41 111.76 0)
+			(at 95.25 111.76 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1380,7 +1381,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 92.71 119.38 0)
+		(at 104.14 119.38 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1390,7 +1391,7 @@
 		(dnp no)
 		(uuid "8efac632-51dd-4bb9-8bba-6a1c0b51d190")
 		(property "Reference" "#PWR06"
-			(at 92.71 125.73 0)
+			(at 104.14 125.73 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1401,7 +1402,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 92.837 123.7742 0)
+			(at 104.267 123.7742 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1411,7 +1412,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 92.71 119.38 0)
+			(at 104.14 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1421,7 +1422,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 119.38 0)
+			(at 104.14 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1431,7 +1432,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 92.71 119.38 0)
+			(at 104.14 119.38 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1532,7 +1533,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 92.71 73.66 0)
+		(at 106.68 73.66 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1542,7 +1543,7 @@
 		(dnp no)
 		(uuid "af928764-5158-4343-9303-19afc4fecfee")
 		(property "Reference" "#PWR05"
-			(at 92.71 80.01 0)
+			(at 106.68 80.01 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1553,7 +1554,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 92.837 78.0542 0)
+			(at 106.807 78.0542 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1563,7 +1564,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 92.71 73.66 0)
+			(at 106.68 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1573,7 +1574,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 92.71 73.66 0)
+			(at 106.68 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1583,7 +1584,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 92.71 73.66 0)
+			(at 106.68 73.66 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1680,7 +1681,8 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 105.41 66.04 0)
+		(at 95.25 66.04 0)
+		(mirror y)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1690,7 +1692,7 @@
 		(dnp no)
 		(uuid "b5259897-4024-47a5-80a7-262f79d193f9")
 		(property "Reference" "J4"
-			(at 107.442 66.2432 0)
+			(at 93.218 66.2432 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1701,7 +1703,7 @@
 			)
 		)
 		(property "Value" "E_STOP"
-			(at 107.442 68.5546 0)
+			(at 93.218 68.5546 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1712,7 +1714,7 @@
 			)
 		)
 		(property "Footprint" "UTSVT_Connectors:Molex_Nano-Fit_105309-xx02_1x02_P2.50mm_Vertical"
-			(at 105.41 66.04 0)
+			(at 95.25 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1723,7 +1725,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 105.41 66.04 0)
+			(at 95.25 66.04 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1734,7 +1736,7 @@
 			)
 		)
 		(property "Description" ""
-			(at 105.41 66.04 0)
+			(at 95.25 66.04 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
