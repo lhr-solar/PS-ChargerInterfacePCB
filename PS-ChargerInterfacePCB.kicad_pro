@@ -434,7 +434,7 @@
         "uuid": "894adbd2-6316-426a-afb4-88808e8ec51a"
       }
     ],
-    "used_designators": "C1-15,C20-21,C39,C51-52,D1-3,D6-7,D13-23,FB1-2,#FLG5,R1-8,R21-24,R37-56,J1-10,SW1-2,U1,U5,Y1,#PWR1-15,#PWR63-72,#PWR74-75,#PWR77,#PWR80-104,TP_3.3V2,Panel_LED802-803,Q9-12,Q14-19",
+    "used_designators": "C1-15,C20-21,C39,C51-52,C70-71,D1-3,D6-7,D13-23,FB1-2,#FLG5,R1-8,R21-24,R37-57,J1-10,J14,SW1-2,U1,U5,Y1,#PWR1-15,#PWR23,#PWR38,#PWR40-41,#PWR63-72,#PWR74-75,#PWR77,#PWR80-104,TP_3.3V2,Panel_LED802-803,Q9-12,Q14-19,Buzzer1",
     "variants": []
   },
   "sheets": [
@@ -473,6 +473,10 @@
     [
       "8fb4e0f4-a81e-4963-ba02-cb881e23146d",
       "12VBuck"
+    ],
+    [
+      "5274d517-fa42-4b2f-988d-ae832e7e0f49",
+      "48PinMCU"
     ],
     [
       "f531d34f-a843-4846-a55a-2a1a0e6cd2bb",
