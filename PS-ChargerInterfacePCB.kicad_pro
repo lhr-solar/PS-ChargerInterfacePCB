@@ -434,7 +434,7 @@
         "uuid": "894adbd2-6316-426a-afb4-88808e8ec51a"
       }
     ],
-    "used_designators": "C1-15,C20-21,C39,C51-52,D1-3,D6-7,D13-23,FB1-2,J1-10,J15-18,#FLG5,R1-8,R21-24,R37-56,SW1-2,U1,U5,Y1,#PWR1-15,#PWR63-72,#PWR74-75,#PWR77,#PWR80-104,TP_3.3V2,Panel_LED802-803,Q9-12,Q14-19",
+    "used_designators": "C1-15,C20-21,C39,C51-52,C72,D1-3,D6-7,D13-23,FB1-2,J1-10,J15-18,#FLG5,R1-8,R21-24,R37-56,R58-65,SW1-2,U1,U5,Y1,#PWR1-15,#PWR30,#PWR35-36,#PWR63-72,#PWR74-75,#PWR77,#PWR80-104,TP_3.3V2,Panel_LED802-803,Q9-12,Q14-19,TP9-12",
     "variants": []
   },
   "sheets": [
@@ -525,6 +525,10 @@
     [
       "5f08ee51-8c93-4470-a244-b4e7d8d094f3",
       "LDO"
+    ],
+    [
+      "9c8106c7-a9fc-4373-84fc-e901a27e6dcd",
+      "EVSE"
     ]
   ],
   "text_variables": {},
