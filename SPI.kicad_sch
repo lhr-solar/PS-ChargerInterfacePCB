@@ -631,6 +631,12 @@
 			(uuid "81e90483-504b-4656-a18e-73456c6db1a8")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/d8590700-a995-4af9-a193-f270d7e0e413"
+					(reference "J14")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/d8590700-a995-4af9-a193-f270d7e0e413"
 					(reference "J14")

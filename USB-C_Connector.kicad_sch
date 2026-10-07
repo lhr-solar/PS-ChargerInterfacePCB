@@ -2177,6 +2177,12 @@
 					(unit 1)
 				)
 			)
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/7471ec5a-b7a7-4689-b3ed-35d01baeea54"
+					(reference "R1")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/7471ec5a-b7a7-4689-b3ed-35d01baeea54"
 					(reference "R66")
@@ -2280,6 +2286,12 @@
 		(instances
 			(project "usb_conn"
 				(path "/64d5c21e-b85c-41ec-b08c-3556f1a0ecf2"
+					(reference "R2")
+					(unit 1)
+				)
+			)
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/7471ec5a-b7a7-4689-b3ed-35d01baeea54"
 					(reference "R2")
 					(unit 1)
 				)
@@ -2446,6 +2458,12 @@
 					(unit 1)
 				)
 			)
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/7471ec5a-b7a7-4689-b3ed-35d01baeea54"
+					(reference "J1")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/7471ec5a-b7a7-4689-b3ed-35d01baeea54"
 					(reference "J6")
@@ -2527,6 +2545,12 @@
 		(instances
 			(project "usb_conn"
 				(path "/64d5c21e-b85c-41ec-b08c-3556f1a0ecf2"
+					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/7471ec5a-b7a7-4689-b3ed-35d01baeea54"
 					(reference "#FLG01")
 					(unit 1)
 				)
@@ -2634,6 +2658,12 @@
 		(instances
 			(project "usb_conn"
 				(path "/64d5c21e-b85c-41ec-b08c-3556f1a0ecf2"
+					(reference "D1")
+					(unit 1)
+				)
+			)
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/7471ec5a-b7a7-4689-b3ed-35d01baeea54"
 					(reference "D1")
 					(unit 1)
 				)
@@ -2747,6 +2777,12 @@
 					(unit 1)
 				)
 			)
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/7471ec5a-b7a7-4689-b3ed-35d01baeea54"
+					(reference "C1")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/7471ec5a-b7a7-4689-b3ed-35d01baeea54"
 					(reference "C73")
@@ -2856,6 +2892,12 @@
 		(instances
 			(project "usb_conn"
 				(path "/64d5c21e-b85c-41ec-b08c-3556f1a0ecf2"
+					(reference "D2")
+					(unit 1)
+				)
+			)
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/7471ec5a-b7a7-4689-b3ed-35d01baeea54"
 					(reference "D2")
 					(unit 1)
 				)

@@ -618,30 +618,6 @@
 		(uuid "6f877a3f-5da5-4e92-a04b-5faa990fa554")
 	)
 	(rectangle
-		(start 30.48 58.42)
-		(end 33.02 63.5)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "87cdfe22-c546-4da0-bbc8-c1aa35c926c6")
-	)
-	(rectangle
-		(start 30.48 66.04)
-		(end 33.02 71.12)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(fill
-			(type none)
-		)
-		(uuid "d6a9306f-b1fa-4bc1-b6ad-f07384e87bff")
-	)
-	(rectangle
 		(start 15.24 102.616)
 		(end 95.25 163.576)
 		(stroke
@@ -672,26 +648,6 @@
 			)
 		)
 		(uuid "1415be92-972e-471b-b5ee-654b9fad3ad1")
-	)
-	(text "R2"
-		(exclude_from_sim no)
-		(at 31.75 68.834 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "2b827084-8859-474f-a103-d6607ab4e9e8")
-	)
-	(text "R1"
-		(exclude_from_sim no)
-		(at 31.75 61.214 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "344edcaa-0d81-4ce4-8433-12e000022865")
 	)
 	(text "5v "
 		(exclude_from_sim no)
@@ -760,6 +716,12 @@
 		(uuid "41c953aa-b18a-4534-9eed-07ae81e505c8")
 	)
 	(junction
+		(at 31.75 64.77)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "75d01c61-6a64-45a4-9ec6-17e0c3c88f25")
+	)
+	(junction
 		(at 88.9 54.61)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -776,6 +738,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8da27b7f-3810-429b-8c5d-0d9b191ea7c9")
+	)
+	(junction
+		(at 31.75 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a0bc77e2-d5c3-44f7-a0c5-8ebd1b347370")
 	)
 	(junction
 		(at 31.75 57.15)
@@ -837,7 +805,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 64.77) (xy 39.37 64.77)
+			(xy 30.48 64.77) (xy 31.75 64.77)
 		)
 		(stroke
 			(width 0)
@@ -874,6 +842,16 @@
 			(type default)
 		)
 		(uuid "4c87814d-decb-4363-aa51-22f1ba0b2e83")
+	)
+	(wire
+		(pts
+			(xy 31.75 64.77) (xy 39.37 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "4e3414d2-67de-480d-9257-336d64c26b70")
 	)
 	(wire
 		(pts
@@ -914,6 +892,16 @@
 			(type default)
 		)
 		(uuid "6b1eab44-50c5-47f2-bf9d-405fb5951315")
+	)
+	(wire
+		(pts
+			(xy 31.75 72.39) (xy 39.37 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6bc72017-84f5-44a3-84ab-4fba6a755156")
 	)
 	(wire
 		(pts
@@ -997,7 +985,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 72.39) (xy 39.37 72.39)
+			(xy 30.48 72.39) (xy 31.75 72.39)
 		)
 		(stroke
 			(width 0)
@@ -1879,6 +1867,12 @@
 			(uuid "93a9476c-00b6-4ffd-89a3-c4e89f8f0675")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/81e1c9b9-1f16-4620-9331-536fea3807a2"
+					(reference "C4")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/81e1c9b9-1f16-4620-9331-536fea3807a2"
 					(reference "C4")
@@ -1888,6 +1882,87 @@
 			(project "power-mux-block"
 				(path "/c8207045-8aef-4538-bcc4-1e380c549c2c"
 					(reference "C4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 31.75 60.96 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "20316db5-6287-4e51-afa5-c11f638e7274")
+		(property "Reference" "R2"
+			(at 33.02 59.69 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "16k"
+			(at 33.02 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
+			(at 29.972 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 31.75 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "072095a6-30c7-4988-9acb-236dc17e3f3f")
+		)
+		(pin "2"
+			(uuid "506c2bca-4282-4557-9307-25a32e330980")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/81e1c9b9-1f16-4620-9331-536fea3807a2"
+					(reference "R2")
 					(unit 1)
 				)
 			)
@@ -1975,6 +2050,12 @@
 			(uuid "32f29333-9e92-4270-a61d-dc208db62db0")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/81e1c9b9-1f16-4620-9331-536fea3807a2"
+					(reference "R1")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/81e1c9b9-1f16-4620-9331-536fea3807a2"
 					(reference "R1")
@@ -2084,6 +2165,12 @@
 			(uuid "ab8112d7-4137-4217-a9cc-9d8333976c27")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/81e1c9b9-1f16-4620-9331-536fea3807a2"
+					(reference "C1")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/81e1c9b9-1f16-4620-9331-536fea3807a2"
 					(reference "C1")
@@ -2093,6 +2180,87 @@
 			(project "power-mux-block"
 				(path "/c8207045-8aef-4538-bcc4-1e380c549c2c"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 31.75 68.58 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "409ab3ff-e154-446f-a0e7-c68e2a7e2413")
+		(property "Reference" "R3"
+			(at 33.02 67.31 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7k"
+			(at 33.02 69.85 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 29.972 68.58 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 31.75 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 31.75 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ea07ac20-9e54-47ad-be92-739b39fca57a")
+		)
+		(pin "1"
+			(uuid "d8387cca-2d6e-4252-9d22-d155748a9f6f")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/81e1c9b9-1f16-4620-9331-536fea3807a2"
+					(reference "R3")
 					(unit 1)
 				)
 			)
@@ -2247,6 +2415,12 @@
 			(uuid "15a92dfe-e525-4776-b9da-f1dd7bbc352d")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/81e1c9b9-1f16-4620-9331-536fea3807a2"
+					(reference "U1")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/81e1c9b9-1f16-4620-9331-536fea3807a2"
 					(reference "U1")
@@ -2356,6 +2530,12 @@
 			(uuid "57b62f0e-165c-49b8-9465-a7f35c89d1a2")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/81e1c9b9-1f16-4620-9331-536fea3807a2"
+					(reference "C3")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/81e1c9b9-1f16-4620-9331-536fea3807a2"
 					(reference "C3")
@@ -2465,6 +2645,12 @@
 			(uuid "c01c5550-dc6e-4646-8700-9115763e3ac0")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/81e1c9b9-1f16-4620-9331-536fea3807a2"
+					(reference "C2")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/81e1c9b9-1f16-4620-9331-536fea3807a2"
 					(reference "C2")

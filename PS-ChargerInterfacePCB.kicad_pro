@@ -424,8 +424,8 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "atempt_2.kicad_sch",
-        "name": "atempt 2",
+        "filename": "PS-ChargerInterfacePCB.kicad_sch",
+        "name": "PS-ChargerInterfacePCB",
         "uuid": "894adbd2-6316-426a-afb4-88808e8ec51a"
       }
     ],
@@ -434,8 +434,12 @@
   },
   "sheets": [
     [
+      "81e1c9b9-1f16-4620-9331-536fea3807a2",
+      "Power_Mux"
+    ],
+    [
       "894adbd2-6316-426a-afb4-88808e8ec51a",
-      "atempt 2"
+      "PS-ChargerInterfacePCB"
     ],
     [
       "734086b2-1e51-47d3-b0a3-7759e9e847f1",

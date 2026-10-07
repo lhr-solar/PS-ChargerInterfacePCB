@@ -54854,6 +54854,12 @@
 			(uuid "cdbfa9e3-7e02-4d5c-876b-94e359f74db9")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "C63")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "C63")
@@ -55018,6 +55024,12 @@
 			(uuid "1d99468e-b1d4-4936-bef5-dc1403151124")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "R41")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "R41")
@@ -55125,6 +55137,12 @@
 			(uuid "d882d7d0-39c3-47ae-be3d-65cd12ee6596")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "Y2")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "Y2")
@@ -55286,6 +55304,12 @@
 			(uuid "a185133a-535c-4a08-8561-a37be58a9c98")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "R40")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "R40")
@@ -55418,6 +55442,12 @@
 			(uuid "032e23ba-99c0-4a89-8bec-0d7c5e122307")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "D15")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "D15")
@@ -55667,6 +55697,12 @@
 			(uuid "f8fa8b4e-7bbe-4155-8e39-594e44fe6309")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "U6")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "U6")
@@ -55791,6 +55827,12 @@
 			(uuid "2b9c2ebb-e20f-41f9-914f-1bbb3b7f1c1d")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "J12")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "J12")
@@ -55951,6 +55993,12 @@
 			(uuid "606cadc7-d348-4436-b636-7076f56f273d")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "C68")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "C68")
@@ -56059,6 +56107,12 @@
 			(uuid "240cc3b6-8482-438d-af6e-3d1499202e94")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "FB4")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "FB4")
@@ -56220,6 +56274,12 @@
 			(uuid "d3e9cf72-41bc-4af4-9119-cbfeac58a487")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "C61")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "C61")
@@ -56380,6 +56440,12 @@
 			(uuid "f8a82df4-1cc4-4a54-b85c-b922acc42f2c")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "C60")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "C60")
@@ -56541,6 +56607,12 @@
 			(uuid "2dc39049-bb08-4b3c-9770-cf397e4a6d7f")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "C57")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "C57")
@@ -56651,6 +56723,12 @@
 			(uuid "f0c664d4-e6a6-4a4a-b64f-e1d11f0b5e86")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "C69")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "C69")
@@ -56811,6 +56889,12 @@
 			(uuid "0b8953f8-341a-4ce8-bbcb-8dfc1f8bc3ef")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "C64")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "C64")
@@ -56966,6 +57050,12 @@
 			(uuid "d16fb78f-eda8-4f66-8bf0-fe6dc4a89d6d")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "SW4")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "SW4")
@@ -57127,6 +57217,12 @@
 			(uuid "283eaa66-63b9-477f-9e16-640c9a58e3bf")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "C66")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "C66")
@@ -57262,6 +57358,12 @@
 			(uuid "ffc5ccc5-d426-49c0-87c4-78675973dfcd")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "D14")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "D14")
@@ -57426,6 +57528,12 @@
 			(uuid "06361245-6524-470b-85c6-0bb1213fe08a")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "R42")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "R42")
@@ -57590,6 +57698,12 @@
 			(uuid "2a213d30-224d-442d-952e-cbdbfa68bd80")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "R55")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "R55")
@@ -57697,6 +57811,12 @@
 			(uuid "c8fe5ae7-0f1d-4554-a6a0-bea3881c9645")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "C55")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "C55")
@@ -57857,6 +57977,12 @@
 			(uuid "9f84f5d1-3d4b-487a-b2c1-f9e03803acef")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "C58")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "C58")
@@ -58021,6 +58147,12 @@
 			(uuid "9eee5b82-a377-45fc-bdd5-a14aedba945a")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "R39")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "R39")
@@ -58142,6 +58274,12 @@
 			(uuid "8e1f296f-a82f-4da2-b24a-7f8043d7a4f2")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "D16")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "D16")
@@ -58302,6 +58440,12 @@
 			(uuid "3034c9de-e1ba-43a7-b3fe-f92e7e5aa4d8")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "C65")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "C65")
@@ -58421,6 +58565,12 @@
 			(uuid "6e864be7-8c70-497a-b1b9-77efb9795c43")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "R44")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "R44")
@@ -58581,6 +58731,12 @@
 			(uuid "ed4c53ac-6796-4d5b-b2a2-397ecdc99a49")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "SW3")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "SW3")
@@ -58745,6 +58901,12 @@
 			(uuid "5e5bd3a8-a9df-44bc-be89-d639c89bcc2a")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "C59")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "C59")
@@ -58852,6 +59014,12 @@
 			(uuid "2bb00527-288c-43eb-adc4-a8acd6abb9ba")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "FB3")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "FB3")
@@ -59012,6 +59180,12 @@
 			(uuid "8a6312d7-b0cd-45d0-96c6-e9e42f627714")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "R45")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "R45")
@@ -59172,6 +59346,12 @@
 			(uuid "690ce27f-bccf-4b64-be35-ab2c67bbc10a")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "C62")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "C62")
@@ -59265,6 +59445,12 @@
 			(uuid "d9266d65-7e5e-46ce-bb0a-847fc9f15970")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "J13")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "J13")
@@ -59373,6 +59559,12 @@
 			(uuid "f960b6c8-9f0e-4809-b7e7-f4c61a078fc9")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "C56")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "C56")
@@ -59493,6 +59685,12 @@
 			(uuid "f44bc584-362a-4517-a39d-dc056d9c9947")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "R43")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "R43")
@@ -59653,6 +59851,12 @@
 			(uuid "115d7b9e-9868-4b14-b9d5-670549428bcb")
 		)
 		(instances
+			(project "atempt_2"
+				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/5274d517-fa42-4b2f-988d-ae832e7e0f49"
+					(reference "C67")
+					(unit 1)
+				)
+			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5274d517-fa42-4b2f-988d-ae832e7e0f49"
 					(reference "C67")
