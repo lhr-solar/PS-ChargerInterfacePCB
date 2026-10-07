@@ -5,6 +5,163 @@
 	(uuid "86244622-fc6f-4400-a6c8-ba7d84e5ad42")
 	(paper "A4")
 	(lib_symbols
+		(symbol "CAN_DEBUG_NANO_01x04_1"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J16"
+				(at 5.715 1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "CAN_DEBUG_NANO_01x04"
+				(at 5.715 -1.27 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "LHRS_Connectors:Molex_Nano-Fit_105309-xx05_1x04_P2.50mm_Vertical"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "P/N" "1053091104"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "CAN_DEBUG_NANO_01x04_1_1_1"
+				(rectangle
+					(start 1.27 -3.81)
+					(end 10.16 -20.32)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at -1.27 -6.35 0)
+					(length 2.54)
+					(name "14V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -1.27 -10.16 0)
+					(length 2.54)
+					(name "CAN_H"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -1.27 -13.97 0)
+					(length 2.54)
+					(name "CAN_L"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -1.27 -17.78 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector_Generic:Conn_01x02"
 			(pin_names
 				(offset 1.016)
@@ -553,6 +710,163 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "lhrs_connectors:CAN_DEBUG_NANO_01x04"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "CAN_DEBUG_NANO_01x04"
+				(at 2.032 -2.286 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "LHRS_Connectors:Molex_Nano-Fit_105309-xx05_1x04_P2.50mm_Vertical"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "P/N" "1053091104"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "CAN_DEBUG_NANO_01x04_1_1"
+				(rectangle
+					(start 1.27 -3.81)
+					(end 10.16 -20.32)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at -1.27 -6.35 0)
+					(length 2.54)
+					(name "12V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -1.27 -10.16 0)
+					(length 2.54)
+					(name "CAN_H"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -1.27 -13.97 0)
+					(length 2.54)
+					(name "CAN_L"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -1.27 -17.78 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "lhrs_connectors:CAN_NANO_01x03"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -682,170 +996,6 @@
 						)
 					)
 					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "lhrs_connectors:PeripheralCANConnector"
-			(pin_names
-				(offset 1.016)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0.762 9.144 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify right)
-				)
-			)
-			(property "Value" "PeripheralCAN"
-				(at 8.128 6.858 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-					(justify right)
-				)
-			)
-			(property "Footprint" "LHRS_Connectors:Molex_Nano-Fit_105309-xx04_1x04_P2.50mm_Vertical"
-				(at 0 -8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.mouser.com/ProductDetail/Molex/105309-1204?qs=PqFvFmEiOr6mDAWV2BJKbg%3D%3D&srsltid=AfmBOopk7YsqdMLo2_DAHKaHKt3Hg126ooPXYWv5Q2Pfx6rW7DaYZCT2"
-				(at 5.08 7.62 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.524 1.524)
-					)
-				)
-			)
-			(property "Description" "Connection to the car's Peripheral CAN bus."
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "P/N" "105309-1204 "
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "PeripheralCANConnector_0_1"
-				(rectangle
-					(start -3.81 5.08)
-					(end 5.08 -5.08)
-					(stroke
-						(width 0)
-						(type solid)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "PeripheralCANConnector_1_1"
-				(pin power_in line
-					(at 10.16 3.81 180)
-					(length 5.08)
-					(name "24V"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin power_in line
-					(at 10.16 -3.81 180)
-					(length 5.08)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 10.16 1.27 180)
-					(length 5.08)
-					(name "CAN_H"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin bidirectional line
-					(at 10.16 -1.27 180)
-					(length 5.08)
-					(name "CAN_L"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1433,7 +1583,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 33.02) (xy 74.93 33.02)
+			(xy 80.01 36.83) (xy 77.47 36.83)
 		)
 		(stroke
 			(width 0)
@@ -1473,7 +1623,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 31.75) (xy 50.8 31.75)
+			(xy 45.72 36.83) (xy 48.26 36.83)
 		)
 		(stroke
 			(width 0)
@@ -1523,7 +1673,7 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 29.21) (xy 59.69 29.21)
+			(xy 45.72 33.02) (xy 57.15 33.02)
 		)
 		(stroke
 			(width 0)
@@ -1563,7 +1713,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 30.48) (xy 66.04 30.48)
+			(xy 80.01 33.02) (xy 68.58 33.02)
 		)
 		(stroke
 			(width 0)
@@ -1703,6 +1853,16 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 41.91) (xy 116.84 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "64d83775-be37-46da-a758-221a66b6e5c5")
+	)
+	(wire
+		(pts
 			(xy 69.85 63.5) (xy 74.93 63.5)
 		)
 		(stroke
@@ -1730,16 +1890,6 @@
 			(type default)
 		)
 		(uuid "6e8d0b14-5e03-4810-a836-47ae440f51c4")
-	)
-	(wire
-		(pts
-			(xy 77.47 25.4) (xy 74.93 25.4)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6fb39cbf-b650-491f-8d09-ee3cd3c301b6")
 	)
 	(wire
 		(pts
@@ -1803,16 +1953,6 @@
 	)
 	(wire
 		(pts
-			(xy 50.8 31.75) (xy 50.8 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "92915d1f-cc6e-4aa9-b533-34db7431cb00")
-	)
-	(wire
-		(pts
 			(xy 259.715 71.12) (xy 267.97 71.12)
 		)
 		(stroke
@@ -1833,7 +1973,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 33.02) (xy 74.93 36.83)
+			(xy 77.47 36.83) (xy 77.47 40.64)
 		)
 		(stroke
 			(width 0)
@@ -1860,6 +2000,16 @@
 			(type default)
 		)
 		(uuid "a6f0ff53-b5f4-4692-9f0c-da2a7c452fb6")
+	)
+	(wire
+		(pts
+			(xy 144.78 41.91) (xy 133.35 41.91)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a7972965-5892-4629-b6ed-13ff43b2372b")
 	)
 	(wire
 		(pts
@@ -1943,7 +2093,17 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 24.13) (xy 50.8 24.13)
+			(xy 77.47 25.4) (xy 80.01 25.4)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c3252d78-65d4-40ec-a283-de639ba4e212")
+	)
+	(wire
+		(pts
+			(xy 45.72 25.4) (xy 48.26 25.4)
 		)
 		(stroke
 			(width 0)
@@ -1973,6 +2133,16 @@
 	)
 	(wire
 		(pts
+			(xy 111.76 39.37) (xy 116.84 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cd3fe196-527f-48a4-b4f8-8fbf38c1950b")
+	)
+	(wire
+		(pts
 			(xy 44.45 57.15) (xy 52.07 57.15)
 		)
 		(stroke
@@ -1983,7 +2153,7 @@
 	)
 	(wire
 		(pts
-			(xy 77.47 27.94) (xy 66.04 27.94)
+			(xy 80.01 29.21) (xy 68.58 29.21)
 		)
 		(stroke
 			(width 0)
@@ -2033,6 +2203,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 36.83) (xy 48.26 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df24890d-4016-4f26-b8b8-c13c24320bad")
+	)
+	(wire
+		(pts
 			(xy 199.39 34.29) (xy 201.93 34.29)
 		)
 		(stroke
@@ -2043,7 +2223,17 @@
 	)
 	(wire
 		(pts
-			(xy 48.26 26.67) (xy 59.69 26.67)
+			(xy 144.78 39.37) (xy 133.35 39.37)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e9d1da03-b085-499b-ab8b-091c10144fb6")
+	)
+	(wire
+		(pts
+			(xy 45.72 29.21) (xy 57.15 29.21)
 		)
 		(stroke
 			(width 0)
@@ -2111,8 +2301,18 @@
 		)
 		(uuid "349c0208-2651-417c-8321-9555deb2be46")
 	)
+	(label "BUZ-"
+		(at 116.84 41.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "42fb6178-4eca-4781-925e-a68d95c92d5f")
+	)
 	(label "Car_CAN_L"
-		(at 66.04 30.48 0)
+		(at 68.58 33.02 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2120,6 +2320,16 @@
 			(justify left bottom)
 		)
 		(uuid "47a7022b-552f-4d6e-917d-50912eb23df8")
+	)
+	(label "Elcon_CAN_H"
+		(at 144.78 39.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "492dce90-2566-439b-9056-b39953750148")
 	)
 	(label "ESTOP_BUT"
 		(at 157.48 63.5 0)
@@ -2141,6 +2351,16 @@
 		)
 		(uuid "4c2cf5f7-0442-44d9-b9a3-25a4f5ae6a82")
 	)
+	(label "BUZ+"
+		(at 116.84 39.37 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "607c4daf-3e60-4afa-b94e-4ea4bd8325dc")
+	)
 	(label "EVSE_CP"
 		(at 52.07 57.15 180)
 		(effects
@@ -2152,7 +2372,7 @@
 		(uuid "61bb8617-8e19-432d-ab72-feeea927d611")
 	)
 	(label "Elcon_CAN_H"
-		(at 59.69 26.67 180)
+		(at 57.15 29.21 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2222,7 +2442,7 @@
 		(uuid "b71260fd-6892-4283-b115-0863da8f8482")
 	)
 	(label "Car_CAN_H"
-		(at 66.04 27.94 0)
+		(at 68.58 29.21 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2230,6 +2450,16 @@
 			(justify left bottom)
 		)
 		(uuid "bb4fad16-966f-4160-ae4f-acdecbafce36")
+	)
+	(label "Elcon_CAN_L"
+		(at 144.78 41.91 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c3204222-5031-4392-99e0-2bea92e5c871")
 	)
 	(label "ESTOP_SENSE"
 		(at 214.63 58.42 180)
@@ -2262,7 +2492,7 @@
 		(uuid "d94f951e-2f87-4df8-b3fd-fc07f721b793")
 	)
 	(label "Elcon_CAN_L"
-		(at 59.69 29.21 180)
+		(at 57.15 33.02 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2292,7 +2522,7 @@
 		(uuid "f4871c83-386a-4286-bd5b-d65179161ed1")
 	)
 	(label "Vin"
-		(at 50.8 24.13 180)
+		(at 48.26 25.4 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2381,7 +2611,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 74.93 36.83 0)
+		(at 77.47 40.64 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -2393,7 +2623,7 @@
 		(fields_autoplaced yes)
 		(uuid "1521e217-2f3b-475a-8a09-91b06018b064")
 		(property "Reference" "#PWR08"
-			(at 74.93 43.18 0)
+			(at 77.47 46.99 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2404,7 +2634,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 74.93 41.91 0)
+			(at 77.47 45.72 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2414,7 +2644,7 @@
 			)
 		)
 		(property "Footprint" "LHRS_Connectors:Molex_Nano-Fit_105309-xx04_1x04_P2.50mm_Vertical"
-			(at 74.93 36.83 0)
+			(at 77.47 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2425,7 +2655,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 36.83 0)
+			(at 77.47 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2436,7 +2666,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 74.93 36.83 0)
+			(at 77.47 40.64 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2460,7 +2690,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 50.8 35.56 0)
+		(at 48.26 39.37 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2468,10 +2698,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "1e73c929-9eba-4cfd-98b8-9ea3608972d4")
 		(property "Reference" "#PWR07"
-			(at 50.8 41.91 0)
+			(at 48.26 45.72 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2482,7 +2711,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 50.8 40.64 0)
+			(at 51.308 39.624 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2492,7 +2721,7 @@
 			)
 		)
 		(property "Footprint" "LHRS_Connectors:Molex_Nano-Fit_105309-xx04_1x04_P2.50mm_Vertical"
-			(at 50.8 35.56 0)
+			(at 48.26 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2503,7 +2732,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 35.56 0)
+			(at 48.26 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2514,7 +2743,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 50.8 35.56 0)
+			(at 48.26 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2798,7 +3027,7 @@
 		(dnp no)
 		(uuid "36811bef-c4f0-449b-9642-1a08b363738d")
 		(property "Reference" "J9"
-			(at 81.534 70.104 0)
+			(at 81.534 70.358 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2807,7 +3036,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_02x05_Counter_Clockwise"
+		(property "Value" "LEDS"
 			(at 81.534 68.58 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2884,103 +3113,6 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
 					(reference "J9")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "lhrs_connectors:PeripheralCANConnector")
-		(at 38.1 27.94 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "4ae870b0-18ea-4243-bacc-0126c066011a")
-		(property "Reference" "J6"
-			(at 38.735 17.78 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Value" "Elcon Connector"
-			(at 38.735 20.32 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Footprint" "LHRS_Connectors:Molex_Nano-Fit_105309-xx04_1x04_P2.50mm_Vertical"
-			(at 38.1 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Datasheet" "https://www.mouser.com/ProductDetail/Molex/105309-1204?qs=PqFvFmEiOr6mDAWV2BJKbg%3D%3D&srsltid=AfmBOopk7YsqdMLo2_DAHKaHKt3Hg126ooPXYWv5Q2Pfx6rW7DaYZCT2"
-			(at 43.18 20.32 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Description" "Connection to the car's Peripheral CAN bus."
-			(at 38.1 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "P/N" "105309-1204 "
-			(at 38.1 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "564a88f9-9da4-4b38-a026-29b176d069d0")
-		)
-		(pin "2"
-			(uuid "f2d94544-068c-4cd2-ab17-106eceefc847")
-		)
-		(pin "4"
-			(uuid "5eda57cc-2ed2-459d-b0f5-79521c06b81e")
-		)
-		(pin "3"
-			(uuid "8905b862-bee3-4123-a753-9448735ae228")
-		)
-		(instances
-			(project "PS-ChargerInterfacePCB"
-				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
-					(reference "J6")
 					(unit 1)
 				)
 			)
@@ -3074,7 +3206,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "6cd6b0e7-13d0-439e-819e-693fb602e544")
 		(property "Reference" "#PWR018"
 			(at 134.62 36.83 0)
@@ -3088,7 +3219,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 134.62 35.56 0)
+			(at 137.414 30.988 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3165,7 +3296,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x02"
+		(property "Value" "ESTOP"
 			(at 106.68 21.59 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3224,8 +3355,8 @@
 		)
 	)
 	(symbol
-		(lib_id "lhrs_connectors:PeripheralCANConnector")
-		(at 87.63 29.21 0)
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 128.27 39.37 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -3234,53 +3365,30 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "b7ede61b-44b1-4333-a67d-99cf640b6734")
-		(property "Reference" "J7"
-			(at 84.836 20.066 0)
+		(fields_autoplaced yes)
+		(uuid "8eef6a20-996f-4a7e-b7f8-bfe817dd0000")
+		(property "Reference" "J18"
+			(at 128.27 33.02 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
 				)
-				(justify right)
 			)
 		)
-		(property "Value" "BPSL Connector"
-			(at 76.962 22.606 0)
+		(property "Value" "ELCON_CAN_DEBUG"
+			(at 128.27 35.56 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
-					(size 1.524 1.524)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "LHRS_Connectors:Molex_Nano-Fit_105309-xx04_1x04_P2.50mm_Vertical"
-			(at 87.63 38.1 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
+					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Datasheet" "https://www.mouser.com/ProductDetail/Molex/105309-1204?qs=PqFvFmEiOr6mDAWV2BJKbg%3D%3D&srsltid=AfmBOopk7YsqdMLo2_DAHKaHKt3Hg126ooPXYWv5Q2Pfx6rW7DaYZCT2"
-			(at 82.55 21.59 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.524 1.524)
-				)
-			)
-		)
-		(property "Description" "Connection to the car's Peripheral CAN bus."
-			(at 87.63 29.21 0)
+		(property "Footprint" "Package_DIP:DIP-20_W7.62mm"
+			(at 128.27 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3290,8 +3398,8 @@
 				)
 			)
 		)
-		(property "P/N" "105309-1204 "
-			(at 87.63 29.21 0)
+		(property "Datasheet" ""
+			(at 128.27 39.37 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3301,22 +3409,303 @@
 				)
 			)
 		)
-		(pin "1"
-			(uuid "5e5ffeea-3901-47fb-967d-64fc06f2ac19")
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 128.27 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "2"
-			(uuid "e17d82fb-0b06-4d8d-8d62-4a0f5f7f5aef")
+			(uuid "25cc02a0-125f-4283-b6d4-ca424559b9b1")
 		)
-		(pin "4"
-			(uuid "800b4a21-52ce-41e2-b8c8-02386e04d41c")
-		)
-		(pin "3"
-			(uuid "d59bba7c-d505-4632-98d1-363074a2b075")
+		(pin "1"
+			(uuid "d6f92642-3180-45ec-8293-f976e26d6b63")
 		)
 		(instances
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
-					(reference "J7")
+					(reference "J18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_name "CAN_DEBUG_NANO_01x04_1")
+		(lib_id "lhrs_connectors:CAN_DEBUG_NANO_01x04")
+		(at 44.45 19.05 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "949fba50-67b2-4bfd-b53f-8e74a5dfa123")
+		(property "Reference" "J16"
+			(at 38.735 17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "ELCON_CAN"
+			(at 38.735 20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LHRS_Connectors:Molex_Nano-Fit_105309-xx05_1x04_P2.50mm_Vertical"
+			(at 44.45 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 44.45 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 44.45 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "P/N" "1053091104"
+			(at 44.45 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "95d1f742-24a4-4b1c-8be2-5b377e590708")
+		)
+		(pin "3"
+			(uuid "8bbba752-2c82-471a-a116-a1f0beac9326")
+		)
+		(pin "1"
+			(uuid "972d3b0e-5132-4406-8823-d5512154959c")
+		)
+		(pin "4"
+			(uuid "83084f48-7c85-4d15-8dbe-713d17cdbf32")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
+					(reference "J16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector_Generic:Conn_01x02")
+		(at 106.68 39.37 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "a53f3843-9b95-4d45-9785-31ba9b086687")
+		(property "Reference" "J15"
+			(at 106.68 33.02 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Buzzer"
+			(at 106.68 35.56 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_DIP:DIP-20_W7.62mm"
+			(at 106.68 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 106.68 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
+			(at 106.68 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d028a735-de56-486d-916c-b79b5da7da75")
+		)
+		(pin "1"
+			(uuid "0f2b2ada-ef57-4681-b2f9-031b9a016631")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
+					(reference "J15")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "lhrs_connectors:CAN_DEBUG_NANO_01x04")
+		(at 81.28 19.05 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "b9f3a8c4-ddc8-4857-9cb6-9f6a5027ea10")
+		(property "Reference" "J17"
+			(at 86.995 17.78 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "BPS_CAN"
+			(at 86.995 20.32 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LHRS_Connectors:Molex_Nano-Fit_105309-xx05_1x04_P2.50mm_Vertical"
+			(at 81.28 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 81.28 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 81.28 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "P/N" "1053091104"
+			(at 81.28 19.05 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "34a22692-6b06-4006-a645-fc8ae2d12b51")
+		)
+		(pin "3"
+			(uuid "ae8f22ed-f2c3-4815-a6ce-2dcddf195ebd")
+		)
+		(pin "1"
+			(uuid "16e2c7c7-ec09-43dd-a738-f3fce4c7a733")
+		)
+		(pin "4"
+			(uuid "221c877b-9b8b-4ad1-ab48-6e72829c3ad0")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
+					(reference "J17")
 					(unit 1)
 				)
 			)
@@ -3565,7 +3954,6 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "c6c4cd9d-5e21-422e-8bcd-e26b07991fc7")
 		(property "Reference" "#PWR017"
 			(at 113.03 36.83 0)
@@ -3579,7 +3967,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 113.03 35.56 0)
+			(at 115.57 30.734 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -3733,7 +4121,7 @@
 				)
 			)
 		)
-		(property "Value" "Conn_01x02"
+		(property "Value" "SHUTDOWN"
 			(at 128.778 22.098 0)
 			(show_name no)
 			(do_not_autoplace no)
