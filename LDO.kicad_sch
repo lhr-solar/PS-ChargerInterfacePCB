@@ -2019,12 +2019,6 @@
 		)
 		(instances
 			(project "PS-ChargerInterfacePCB"
-				(path "/24809a72-9525-4be8-be3e-46bc27cfe8fb/cd4ac576-e1cf-46c0-a1b5-c681437cfde8/709d4ceb-022b-4d52-b343-e0e15ffd7d8b"
-					(reference "C13")
-					(unit 1)
-				)
-			)
-			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5f08ee51-8c93-4470-a244-b4e7d8d094f3"
 					(reference "C52")
 					(unit 1)
@@ -2152,12 +2146,6 @@
 			(uuid "01c67387-58e5-48ff-81a2-8ef93a58300b")
 		)
 		(instances
-			(project "PS-ChargerInterfacePCB"
-				(path "/24809a72-9525-4be8-be3e-46bc27cfe8fb/cd4ac576-e1cf-46c0-a1b5-c681437cfde8/709d4ceb-022b-4d52-b343-e0e15ffd7d8b"
-					(reference "TP_3.3V1")
-					(unit 1)
-				)
-			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5f08ee51-8c93-4470-a244-b4e7d8d094f3"
 					(reference "TP_3.3V2")
@@ -2292,12 +2280,6 @@
 		)
 		(instances
 			(project "PS-ChargerInterfacePCB"
-				(path "/24809a72-9525-4be8-be3e-46bc27cfe8fb/cd4ac576-e1cf-46c0-a1b5-c681437cfde8/709d4ceb-022b-4d52-b343-e0e15ffd7d8b"
-					(reference "U2")
-					(unit 1)
-				)
-			)
-			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5f08ee51-8c93-4470-a244-b4e7d8d094f3"
 					(reference "U5")
 					(unit 1)
@@ -2428,12 +2410,6 @@
 		)
 		(instances
 			(project "PS-ChargerInterfacePCB"
-				(path "/24809a72-9525-4be8-be3e-46bc27cfe8fb/cd4ac576-e1cf-46c0-a1b5-c681437cfde8/709d4ceb-022b-4d52-b343-e0e15ffd7d8b"
-					(reference "D8")
-					(unit 1)
-				)
-			)
-			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5f08ee51-8c93-4470-a244-b4e7d8d094f3"
 					(reference "D13")
 					(unit 1)
@@ -2543,12 +2519,6 @@
 			(uuid "7a07c67e-64ee-4191-918c-55b9b7230005")
 		)
 		(instances
-			(project "PS-ChargerInterfacePCB"
-				(path "/24809a72-9525-4be8-be3e-46bc27cfe8fb/cd4ac576-e1cf-46c0-a1b5-c681437cfde8/709d4ceb-022b-4d52-b343-e0e15ffd7d8b"
-					(reference "C12")
-					(unit 1)
-				)
-			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/5f08ee51-8c93-4470-a244-b4e7d8d094f3"
 					(reference "C51")

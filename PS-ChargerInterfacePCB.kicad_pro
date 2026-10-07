@@ -424,11 +424,6 @@
     "subpart_id_separator": 0,
     "top_level_sheets": [
       {
-        "filename": "PS-ChargerInterfacePCB.kicad_sch",
-        "name": "PS-ChargerInterfacePCB",
-        "uuid": "24809a72-9525-4be8-be3e-46bc27cfe8fb"
-      },
-      {
         "filename": "atempt_2.kicad_sch",
         "name": "atempt 2",
         "uuid": "894adbd2-6316-426a-afb4-88808e8ec51a"
@@ -438,30 +433,6 @@
     "variants": []
   },
   "sheets": [
-    [
-      "24809a72-9525-4be8-be3e-46bc27cfe8fb",
-      "PS-ChargerInterfacePCB"
-    ],
-    [
-      "cd4ac576-e1cf-46c0-a1b5-c681437cfde8",
-      "Power System"
-    ],
-    [
-      "84410e9c-5d36-47d4-a265-5b9dbc512cd8",
-      "MCU"
-    ],
-    [
-      "ba69df00-9c22-4c65-92b6-b1bd518e51cc",
-      "CAN"
-    ],
-    [
-      "f5490d19-683e-40ad-b66e-574af362c37d",
-      "UI"
-    ],
-    [
-      "90bc28ab-b5b7-47d5-9e6f-752228421e66",
-      "Shutdown"
-    ],
     [
       "894adbd2-6316-426a-afb4-88808e8ec51a",
       "atempt 2"
@@ -487,40 +458,12 @@
       "Display"
     ],
     [
-      "8c26e1fb-a8ae-4852-ae6e-03a0af74066d",
-      "PowerProtection"
-    ],
-    [
-      "eaf4dc2b-ad73-4e1e-8bba-aa12f0e48269",
-      "5V_Buck"
-    ],
-    [
-      "709d4ceb-022b-4d52-b343-e0e15ffd7d8b",
-      "3V3_Regulator"
-    ],
-    [
       "cc50543f-c5a2-400d-8754-d6e2a0f4c571",
       "Buzzer"
     ],
     [
       "9996de2d-8d86-4ad4-8204-1bedc56aa8e5",
       "BigRedButtons"
-    ],
-    [
-      "222af89b-658e-4ae0-ba05-4c98dc8575da",
-      "USB-C_Connector"
-    ],
-    [
-      "f5cc2a58-65f2-4743-a268-5d11d85c52f6",
-      "48PinMCU"
-    ],
-    [
-      "28c8bb30-5aee-42e2-a184-4f9c3cc306ab",
-      "Elcon_CAN_Transceiver"
-    ],
-    [
-      "f3193b22-5837-4bd9-9023-4143db12e377",
-      "Charger_CAN_Transceiver"
     ],
     [
       "5f08ee51-8c93-4470-a244-b4e7d8d094f3",

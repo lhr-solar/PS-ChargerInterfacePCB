@@ -971,6 +971,16 @@
 	)
 	(wire
 		(pts
+			(xy 29.21 95.25) (xy 30.48 95.2874)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "070d6a3c-8241-44e6-8b1b-7ebaa65e32ef")
+	)
+	(wire
+		(pts
 			(xy 91.44 31.75) (xy 91.44 33.02)
 		)
 		(stroke
@@ -1081,13 +1091,13 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 99.06) (xy 40.64 99.06)
+			(xy 29.21 106.6973) (xy 41.91 106.68)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "40e5d477-6f72-4d74-ab15-120d38c1aeee")
+		(uuid "4befd930-9a3a-4808-ad2b-0d69b0418c60")
 	)
 	(wire
 		(pts
@@ -1128,6 +1138,16 @@
 			(type default)
 		)
 		(uuid "5554ce76-3415-4bd1-951c-c98363824130")
+	)
+	(wire
+		(pts
+			(xy 30.48 95.2874) (xy 29.21 95.2874)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "55568366-1221-4449-870b-38c4f89c6dda")
 	)
 	(wire
 		(pts
@@ -1211,7 +1231,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 106.68) (xy 41.91 106.68)
+			(xy 29.21 106.68) (xy 29.21 106.6973)
 		)
 		(stroke
 			(width 0)
@@ -1231,6 +1251,16 @@
 	)
 	(wire
 		(pts
+			(xy 29.21 95.2874) (xy 36.83 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b347fa2-77f8-49a6-8598-79114339508e")
+	)
+	(wire
+		(pts
 			(xy 49.53 36.83) (xy 49.53 38.1)
 		)
 		(stroke
@@ -1238,6 +1268,16 @@
 			(type default)
 		)
 		(uuid "820f892f-0c51-4753-b92a-48de05976d4d")
+	)
+	(wire
+		(pts
+			(xy 29.21 99.06) (xy 29.21 99.0974)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8385eb69-f121-4118-b59e-e4ede7cd4012")
 	)
 	(wire
 		(pts
@@ -1361,6 +1401,16 @@
 	)
 	(wire
 		(pts
+			(xy 29.21 99.0974) (xy 40.64 99.06)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d454fa12-92d4-4ff0-861f-b8448c100e95")
+	)
+	(wire
+		(pts
 			(xy 165.1 16.51) (xy 165.1 20.32)
 		)
 		(stroke
@@ -1411,7 +1461,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 95.25) (xy 36.83 95.25)
+			(xy 29.21 95.25) (xy 29.21 95.2874)
 		)
 		(stroke
 			(width 0)
@@ -1632,7 +1682,7 @@
 	)
 	(hierarchical_label "LED_HEART"
 		(shape input)
-		(at 29.21 102.9688 180)
+		(at 29.21 102.87 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1676,7 +1726,7 @@
 	)
 	(hierarchical_label "LED_CHARGE"
 		(shape input)
-		(at 29.21 106.6973 180)
+		(at 29.21 106.68 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1687,7 +1737,7 @@
 	)
 	(hierarchical_label "LED_HV"
 		(shape input)
-		(at 29.21 95.2874 180)
+		(at 29.21 95.25 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1720,7 +1770,7 @@
 	)
 	(hierarchical_label "LED_FAULT"
 		(shape input)
-		(at 29.21 99.0974 180)
+		(at 29.21 99.06 180)
 		(effects
 			(font
 				(size 1.27 1.27)
