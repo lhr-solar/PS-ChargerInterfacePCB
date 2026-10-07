@@ -1934,7 +1934,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "2b102e1c-01e8-4653-92eb-2045626b696c")
-		(property "Reference" "C13"
+		(property "Reference" "C52"
 			(at 168.275 68.5735 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2055,7 +2055,7 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "5f10b56c-7496-424f-a7ed-4cbbd3fc3660")
-		(property "Reference" "TP_3.3V1"
+		(property "Reference" "TP_3.3V2"
 			(at 166.624 54.356 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2184,7 +2184,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "766d371a-42b5-499b-b058-ab8f85cbe506")
-		(property "Reference" "U2"
+		(property "Reference" "U5"
 			(at 152.4 56.515 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2323,7 +2323,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "adbd74cf-e28f-4fcb-b636-d956609f6a8d")
-		(property "Reference" "D8"
+		(property "Reference" "D13"
 			(at 133.604 57.15 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2459,7 +2459,7 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f96e3358-3125-41a4-8f93-006fa6c5f6b9")
-		(property "Reference" "C12"
+		(property "Reference" "C51"
 			(at 142.875 68.5735 0)
 			(show_name no)
 			(do_not_autoplace no)
