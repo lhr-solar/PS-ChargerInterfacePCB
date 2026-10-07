@@ -1,0 +1,426 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "9745e4ff-ab54-4d12-9f56-a8fae62334ee")
+	(paper "A4")
+	(lib_symbols)
+	(wire
+		(pts
+			(xy 27.94 46.99) (xy 33.02 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "163574cf-117b-469d-8ef1-15a55122f438")
+	)
+	(wire
+		(pts
+			(xy 194.31 35.56) (xy 199.39 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "16c54872-0df7-45e9-9366-7d39d41b5591")
+	)
+	(wire
+		(pts
+			(xy 194.31 48.26) (xy 199.39 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b5d3bdf-cf7e-44fa-b966-8d56b88497f3")
+	)
+	(wire
+		(pts
+			(xy 120.65 46.99) (xy 125.73 46.99)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "486680ec-43e9-40a2-9fed-6f776947360b")
+	)
+	(wire
+		(pts
+			(xy 27.94 34.29) (xy 33.02 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "65325e32-fdd2-4b5a-8696-b61f5bd94a7c")
+	)
+	(wire
+		(pts
+			(xy 171.45 34.29) (xy 176.53 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "66634a42-26e7-434e-a872-935a1aa42ae1")
+	)
+	(wire
+		(pts
+			(xy 245.11 35.56) (xy 250.19 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c579a93-8a5b-43b3-84ae-033a477e7e24")
+	)
+	(wire
+		(pts
+			(xy 120.65 34.29) (xy 125.73 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dcaca3b5-fffa-41c1-8a9c-a16daa5cb517")
+	)
+	(label "GND"
+		(at 194.31 48.26 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "1005c673-ef86-44ca-be56-406cad96723d")
+	)
+	(label "LV_PROTECTED"
+		(at 120.65 34.29 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "2d7021f8-16f1-471c-9106-65608e1bafc1")
+	)
+	(label "GND"
+		(at 120.65 46.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "4aa87ffb-85e9-450f-94d8-897815238dbc")
+	)
+	(label "+5V"
+		(at 194.31 35.56 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c6799e6e-0139-4f5d-948c-3a51f7a0805c")
+	)
+	(hierarchical_label "GND"
+		(shape bidirectional)
+		(at 27.94 46.99 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "58a2c094-8b10-4e4d-8442-7f7925f3e5bf")
+	)
+	(hierarchical_label "+3V3"
+		(shape output)
+		(at 250.19 35.56 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "ea284845-0ab4-4671-b174-73928e0be6c5")
+	)
+	(hierarchical_label "LV_INPUT"
+		(shape input)
+		(at 27.94 34.29 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ebf7a1e8-2d2c-4ce7-9be2-e8185e3708c3")
+	)
+	(hierarchical_label "+5V"
+		(shape output)
+		(at 176.53 34.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f5765a0f-9bd4-47e1-8bde-fa2c7c7ec3df")
+	)
+	(hierarchical_label "LV_PROTECTED"
+		(shape input)
+		(at 78.74 34.29 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f5cce504-56de-48ba-ba90-a2e5bb7f80e6")
+	)
+	(sheet
+		(at 199.39 27.94)
+		(size 45.72 27.94)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "709d4ceb-022b-4d52-b343-e0e15ffd7d8b")
+		(property "Sheetname" "3V3_Regulator"
+			(at 199.39 27.2284 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "LDO.kicad_sch"
+			(at 199.39 56.4646 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "+5V" input
+			(at 199.39 35.56 180)
+			(uuid "e10ba3f2-cad4-43ca-9474-51591d0500ef")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+3V3" output
+			(at 245.11 35.56 0)
+			(uuid "85b000f2-8d55-4deb-9224-79877bc3c520")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GND" input
+			(at 199.39 48.26 180)
+			(uuid "f6f9d3ca-88ec-4dc4-860d-ee5f642512a1")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/24809a72-9525-4be8-be3e-46bc27cfe8fb/cd4ac576-e1cf-46c0-a1b5-c681437cfde8"
+					(page "15")
+				)
+			)
+			(project ""
+				(path "/cd4ac576-e1cf-46c0-a1b5-c681437cfde8"
+					(page "12")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 33.02 26.67)
+		(size 45.72 27.94)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "8c26e1fb-a8ae-4852-ae6e-03a0af74066d")
+		(property "Sheetname" "PowerProtection"
+			(at 33.02 25.9584 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "PowerProtection.kicad_sch"
+			(at 33.02 55.1946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "LV_INPUT" input
+			(at 33.02 34.29 180)
+			(uuid "a475a27c-903f-4c2e-9cf3-96cf1cfd6409")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "LV_PROTECTED" output
+			(at 78.74 34.29 0)
+			(uuid "87840649-34b9-45c3-ad6f-3b6fdb36a0f0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GND" input
+			(at 33.02 46.99 180)
+			(uuid "d4b7beb9-b1f5-4d3a-b72f-ad0040ca2391")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/24809a72-9525-4be8-be3e-46bc27cfe8fb/cd4ac576-e1cf-46c0-a1b5-c681437cfde8"
+					(page "13")
+				)
+			)
+			(project ""
+				(path "/cd4ac576-e1cf-46c0-a1b5-c681437cfde8"
+					(page "8")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 125.73 26.67)
+		(size 45.72 27.94)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "eaf4dc2b-ad73-4e1e-8bba-aa12f0e48269")
+		(property "Sheetname" "5V_Buck"
+			(at 125.73 25.9584 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "12VBuck.kicad_sch"
+			(at 125.73 55.1946 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "LV_PROTECTED" input
+			(at 125.73 34.29 180)
+			(uuid "63eb5286-9062-4b1b-8985-0e67bc30a344")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "+5V" output
+			(at 171.45 34.29 0)
+			(uuid "68e0e70d-d82b-4e79-9550-f712b23d51c7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(pin "GND" bidirectional
+			(at 125.73 46.99 180)
+			(uuid "ebb9ad6a-27e7-40c9-bb61-d581ca937b1a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/24809a72-9525-4be8-be3e-46bc27cfe8fb/cd4ac576-e1cf-46c0-a1b5-c681437cfde8"
+					(page "14")
+				)
+			)
+			(project ""
+				(path "/cd4ac576-e1cf-46c0-a1b5-c681437cfde8"
+					(page "9")
+				)
+			)
+		)
+	)
+)

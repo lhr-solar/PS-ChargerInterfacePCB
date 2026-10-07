@@ -2183,6 +2183,12 @@
 					(unit 1)
 				)
 			)
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/7471ec5a-b7a7-4689-b3ed-35d01baeea54"
+					(reference "R66")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2287,6 +2293,12 @@
 			(project "usb_conn"
 				(path "/64d5c21e-b85c-41ec-b08c-3556f1a0ecf2"
 					(reference "R2")
+					(unit 1)
+				)
+			)
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/7471ec5a-b7a7-4689-b3ed-35d01baeea54"
+					(reference "R67")
 					(unit 1)
 				)
 			)
@@ -2452,6 +2464,12 @@
 					(unit 1)
 				)
 			)
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/7471ec5a-b7a7-4689-b3ed-35d01baeea54"
+					(reference "J6")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2534,6 +2552,12 @@
 			(project "usb_conn"
 				(path "/64d5c21e-b85c-41ec-b08c-3556f1a0ecf2"
 					(reference "#FLG01")
+					(unit 1)
+				)
+			)
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/7471ec5a-b7a7-4689-b3ed-35d01baeea54"
+					(reference "#FLG010")
 					(unit 1)
 				)
 			)
@@ -2644,6 +2668,12 @@
 					(unit 1)
 				)
 			)
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/7471ec5a-b7a7-4689-b3ed-35d01baeea54"
+					(reference "D24")
+					(unit 1)
+				)
+			)
 		)
 	)
 	(symbol
@@ -2750,6 +2780,12 @@
 			(project "usb_conn"
 				(path "/64d5c21e-b85c-41ec-b08c-3556f1a0ecf2"
 					(reference "C1")
+					(unit 1)
+				)
+			)
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/7471ec5a-b7a7-4689-b3ed-35d01baeea54"
+					(reference "C73")
 					(unit 1)
 				)
 			)
@@ -2863,6 +2899,12 @@
 			(project "usb_conn"
 				(path "/64d5c21e-b85c-41ec-b08c-3556f1a0ecf2"
 					(reference "D2")
+					(unit 1)
+				)
+			)
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/7471ec5a-b7a7-4689-b3ed-35d01baeea54"
+					(reference "D25")
 					(unit 1)
 				)
 			)

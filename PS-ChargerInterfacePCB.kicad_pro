@@ -434,7 +434,7 @@
         "uuid": "894adbd2-6316-426a-afb4-88808e8ec51a"
       }
     ],
-    "used_designators": "C1-15,C20-21,C39,C51-52,C72,D1-3,D6-7,D13-23,FB1-2,J1-10,J15-18,#FLG5,R1-8,R21-24,R37-56,R58-65,SW1-2,U1,U5,Y1,#PWR1-15,#PWR30,#PWR35-36,#PWR63-72,#PWR74-75,#PWR77,#PWR80-104,TP_3.3V2,Panel_LED802-803,Q9-12,Q14-19,TP9-12",
+    "used_designators": "C1-15,C20-21,C39,C51-52,C70-71,D1-3,D6-7,D13-23,FB1-2,#FLG5,R1-8,R21-24,R37-57,J1-10,J14,SW1-2,U1,U5,Y1,#PWR1-15,#PWR23-24,#PWR29,#PWR31,#PWR38,#PWR40-41,#PWR63-72,#PWR74-75,#PWR77,#PWR80-104,TP_3.3V2,Panel_LED802-803,Q9-12,Q14-19,Buzzer1",
     "variants": []
   },
   "sheets": [
@@ -529,6 +529,18 @@
     [
       "9c8106c7-a9fc-4373-84fc-e901a27e6dcd",
       "EVSE"
+    ],
+    [
+      "7471ec5a-b7a7-4689-b3ed-35d01baeea54",
+      "USB-C_Connector"
+    ],
+    [
+      "81765068-fdb4-4597-b152-1bdbee76bdd3",
+      "BPS_CAN"
+    ],
+    [
+      "8db51039-8582-4b38-8dd1-de26f5d2196c",
+      "ELCON_CAN"
     ]
   ],
   "text_variables": {},
