@@ -379,14 +379,188 @@
           "label": "Datasheet",
           "name": "Datasheet",
           "show": true
+        },
+        {
+          "group_by": false,
+          "label": "Height",
+          "name": "Height",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "If",
+          "name": "If",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC MFG P/N",
+          "name": "LCSC MFG P/N",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LCSC P/N",
+          "name": "LCSC P/N",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "LSCS P/N",
+          "name": "LSCS P/N",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MANUFACTURER",
+          "name": "MANUFACTURER",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "MAXIMUM_PACKAGE_HEIGHT",
+          "name": "MAXIMUM_PACKAGE_HEIGHT",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer",
+          "name": "Manufacturer",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Name",
+          "name": "Manufacturer_Name",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Manufacturer_Part_Number",
+          "name": "Manufacturer_Part_Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mfg",
+          "name": "Mfg",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser P/N",
+          "name": "Mouser P/N",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Part Number",
+          "name": "Mouser Part Number",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Mouser Price/Stock",
+          "name": "Mouser Price/Stock",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Old LCSC P/N",
+          "name": "Old LCSC P/N",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Old P/N",
+          "name": "Old P/N",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "P/N",
+          "name": "P/N",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "PARTREV",
+          "name": "PARTREV",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Part #",
+          "name": "Part #",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "STANDARD",
+          "name": "STANDARD",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Device",
+          "name": "Sim.Device",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Pins",
+          "name": "Sim.Pins",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Sim.Type",
+          "name": "Sim.Type",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Vf",
+          "name": "Vf",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Distrbutor Link",
+          "name": "Distrbutor Link",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Description",
+          "name": "Description",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Datasheet Embed",
+          "name": "Datasheet Embed",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "#",
+          "name": "${ITEM_NUMBER}",
+          "show": false
+        },
+        {
+          "group_by": false,
+          "label": "Color",
+          "name": "Color",
+          "show": false
         }
       ],
       "filter_string": "",
       "group_symbols": true,
       "include_excluded_from_bom": true,
-      "name": "Default Editing",
+      "name": "",
       "sort_asc": true,
-      "sort_field": "Reference"
+      "sort_field": "Value"
     },
     "bus_aliases": {},
     "connection_grid_size": 50.0,
@@ -429,7 +603,7 @@
         "uuid": "894adbd2-6316-426a-afb4-88808e8ec51a"
       }
     ],
-    "used_designators": "C1-15,C20-21,C39,C51-52,C70-71,D1-3,D6-7,D13-23,FB1-2,#FLG5,R1-8,R21-24,R37-57,J1-10,J14,SW1-2,U1,U5,Y1,#PWR1-15,#PWR23-24,#PWR29,#PWR31,#PWR38,#PWR40-41,#PWR63-72,#PWR74-75,#PWR77,#PWR80-104,TP_3.3V2,Panel_LED802-803,Q9-12,Q14-19,Buzzer1",
+    "used_designators": "C1-15,C20-21,C39,C51-52,C70-71,D1-3,D6-7,D13-23,FB1-2,J1-10,J14,#FLG5,R1-8,R21-24,R37-57,SW1-2,U1-2,U5,Y1,#PWR1-15,#PWR23-24,#PWR29,#PWR31-34,#PWR37-38,#PWR40-41,#PWR63-72,#PWR74-75,#PWR77,#PWR80-104,TP_3.3V2,Panel_LED802-803,Q9-12,Q14-19,Buzzer1",
     "variants": []
   },
   "sheets": [
