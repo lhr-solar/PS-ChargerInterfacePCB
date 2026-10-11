@@ -1311,26 +1311,6 @@
 		)
 		(uuid "fc41cd51-d61d-4aa9-bbcb-36a4477e6bd0")
 	)
-	(label "Buzz_Drain"
-		(at 82.55 45.72 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "202c0dea-b591-4e82-bb24-4b1f29da66b7")
-	)
-	(label "Buzz_Source"
-		(at 82.55 63.5 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "69ebb7fb-e80e-4a26-a7a2-309a4e946b93")
-	)
 	(hierarchical_label "BUZ+"
 		(shape input)
 		(at 124.46 48.26 0)
@@ -1341,6 +1321,28 @@
 			(justify left)
 		)
 		(uuid "20249af8-d08a-459f-b866-5d20499fc8e3")
+	)
+	(hierarchical_label "Buzz_Source"
+		(shape input)
+		(at 82.55 63.5 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "37507f28-afcb-43d5-8509-ee5b063393cb")
+	)
+	(hierarchical_label "Buzz_Drain"
+		(shape input)
+		(at 82.55 45.72 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "8794f967-927b-4fb5-82d0-f701c7056bf3")
 	)
 	(hierarchical_label "BUZ-"
 		(shape input)

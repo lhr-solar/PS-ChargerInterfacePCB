@@ -31839,8 +31839,8 @@
 		)
 	)
 	(rectangle
-		(start 166.37 40.64)
-		(end 227.33 71.12)
+		(start 177.8 55.88)
+		(end 238.76 86.36)
 		(stroke
 			(width 0)
 			(type default)
@@ -31851,8 +31851,8 @@
 		(uuid "3b4100a3-bbf0-46c4-b8f7-040bd2249cf8")
 	)
 	(rectangle
-		(start 166.37 73.66)
-		(end 226.06 109.22)
+		(start 177.8 88.9)
+		(end 237.49 124.46)
 		(stroke
 			(width 0)
 			(type default)
@@ -31863,8 +31863,8 @@
 		(uuid "b3caedac-de22-46e7-9643-c5c9196010b4")
 	)
 	(rectangle
-		(start 57.15 45.72)
-		(end 161.29 106.68)
+		(start 68.58 60.96)
+		(end 172.72 121.92)
 		(stroke
 			(width 0)
 			(type default)
@@ -31876,7 +31876,7 @@
 	)
 	(text "CAN Transceiver\n"
 		(exclude_from_sim no)
-		(at 69.596 49.784 0)
+		(at 81.026 65.024 0)
 		(effects
 			(font
 				(size 1.778 1.778)
@@ -31886,7 +31886,7 @@
 	)
 	(text "Try to keep CDSOT23 near bus conn"
 		(exclude_from_sim no)
-		(at 197.866 64.008 0)
+		(at 209.296 79.248 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -31896,7 +31896,7 @@
 	)
 	(text "CAN Protection"
 		(exclude_from_sim no)
-		(at 177.546 43.942 0)
+		(at 188.976 59.182 0)
 		(effects
 			(font
 				(size 1.778 1.778)
@@ -31906,7 +31906,7 @@
 	)
 	(text "CAN Bus Termination\n"
 		(exclude_from_sim no)
-		(at 181.864 76.454 0)
+		(at 193.294 91.694 0)
 		(effects
 			(font
 				(size 1.778 1.778)
@@ -31915,44 +31915,44 @@
 		(uuid "f28cb6b3-08af-4a21-962e-c691a9e4d85a")
 	)
 	(junction
-		(at 147.32 71.12)
+		(at 158.75 86.36)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "18a7dca3-e6ee-4f48-9c9e-fc76fa664e75")
 	)
 	(junction
-		(at 189.23 85.09)
+		(at 200.66 100.33)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "457dd79d-04ce-4791-9e74-72678c3e65d8")
 	)
 	(junction
-		(at 73.66 81.28)
+		(at 85.09 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "7443ee25-b112-418a-a19e-16b199a8fe5b")
 	)
 	(junction
-		(at 85.09 81.28)
+		(at 96.52 96.52)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "76db90f1-78d8-4e5d-9cce-f6cfc8c68aa6")
 	)
 	(junction
-		(at 85.09 68.58)
+		(at 96.52 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a3b72bfe-2a6f-42d8-b935-ec83e721d0d8")
 	)
 	(junction
-		(at 73.66 68.58)
+		(at 85.09 83.82)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d0cd01de-532c-4881-bbfa-68dada0141bd")
 	)
 	(wire
 		(pts
-			(xy 189.23 97.79) (xy 190.5 97.79)
+			(xy 200.66 113.03) (xy 201.93 113.03)
 		)
 		(stroke
 			(width 0)
@@ -31962,7 +31962,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 73.66) (xy 147.32 71.12)
+			(xy 158.75 88.9) (xy 158.75 86.36)
 		)
 		(stroke
 			(width 0)
@@ -31972,7 +31972,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 71.12) (xy 111.76 71.12)
+			(xy 119.38 86.36) (xy 123.19 86.36)
 		)
 		(stroke
 			(width 0)
@@ -31982,7 +31982,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 83.82) (xy 128.27 87.63)
+			(xy 139.7 99.06) (xy 139.7 102.87)
 		)
 		(stroke
 			(width 0)
@@ -31992,7 +31992,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 78.74) (xy 73.66 81.28)
+			(xy 85.09 93.98) (xy 85.09 96.52)
 		)
 		(stroke
 			(width 0)
@@ -32002,7 +32002,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 92.71) (xy 189.23 97.79)
+			(xy 200.66 107.95) (xy 200.66 113.03)
 		)
 		(stroke
 			(width 0)
@@ -32012,7 +32012,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 68.58) (xy 85.09 71.12)
+			(xy 96.52 83.82) (xy 96.52 86.36)
 		)
 		(stroke
 			(width 0)
@@ -32022,7 +32022,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 67.31) (xy 147.32 71.12)
+			(xy 158.75 82.55) (xy 158.75 86.36)
 		)
 		(stroke
 			(width 0)
@@ -32032,7 +32032,7 @@
 	)
 	(wire
 		(pts
-			(xy 144.78 73.66) (xy 147.32 73.66)
+			(xy 156.21 88.9) (xy 158.75 88.9)
 		)
 		(stroke
 			(width 0)
@@ -32042,7 +32042,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 78.74) (xy 146.05 82.55)
+			(xy 157.48 93.98) (xy 157.48 97.79)
 		)
 		(stroke
 			(width 0)
@@ -32052,7 +32052,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 78.74) (xy 62.23 81.28)
+			(xy 73.66 93.98) (xy 73.66 96.52)
 		)
 		(stroke
 			(width 0)
@@ -32062,7 +32062,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 85.09) (xy 189.23 85.09)
+			(xy 191.77 100.33) (xy 200.66 100.33)
 		)
 		(stroke
 			(width 0)
@@ -32072,7 +32072,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 63.5) (xy 85.09 68.58)
+			(xy 96.52 78.74) (xy 96.52 83.82)
 		)
 		(stroke
 			(width 0)
@@ -32082,7 +32082,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 86.36) (xy 87.63 86.36)
+			(xy 96.52 101.6) (xy 99.06 101.6)
 		)
 		(stroke
 			(width 0)
@@ -32092,7 +32092,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 82.55) (xy 149.86 82.55)
+			(xy 157.48 97.79) (xy 161.29 97.79)
 		)
 		(stroke
 			(width 0)
@@ -32102,7 +32102,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 54.61) (xy 210.82 59.69)
+			(xy 222.25 69.85) (xy 222.25 74.93)
 		)
 		(stroke
 			(width 0)
@@ -32112,7 +32112,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 81.28) (xy 73.66 81.28)
+			(xy 73.66 96.52) (xy 85.09 96.52)
 		)
 		(stroke
 			(width 0)
@@ -32122,7 +32122,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 85.09) (xy 172.72 85.09)
+			(xy 181.61 100.33) (xy 184.15 100.33)
 		)
 		(stroke
 			(width 0)
@@ -32132,7 +32132,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 54.61) (xy 185.42 54.61)
+			(xy 194.31 69.85) (xy 196.85 69.85)
 		)
 		(stroke
 			(width 0)
@@ -32142,7 +32142,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 87.63) (xy 129.54 87.63)
+			(xy 139.7 102.87) (xy 140.97 102.87)
 		)
 		(stroke
 			(width 0)
@@ -32152,7 +32152,7 @@
 	)
 	(wire
 		(pts
-			(xy 208.28 54.61) (xy 210.82 54.61)
+			(xy 219.71 69.85) (xy 222.25 69.85)
 		)
 		(stroke
 			(width 0)
@@ -32162,7 +32162,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 76.2) (xy 111.76 76.2)
+			(xy 119.38 91.44) (xy 123.19 91.44)
 		)
 		(stroke
 			(width 0)
@@ -32172,7 +32172,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 68.58) (xy 85.09 68.58)
+			(xy 85.09 83.82) (xy 96.52 83.82)
 		)
 		(stroke
 			(width 0)
@@ -32182,7 +32182,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 71.12) (xy 62.23 68.58)
+			(xy 73.66 86.36) (xy 73.66 83.82)
 		)
 		(stroke
 			(width 0)
@@ -32192,7 +32192,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 81.28) (xy 85.09 81.28)
+			(xy 85.09 96.52) (xy 96.52 96.52)
 		)
 		(stroke
 			(width 0)
@@ -32202,7 +32202,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 85.09) (xy 210.82 85.09)
+			(xy 217.17 100.33) (xy 222.25 100.33)
 		)
 		(stroke
 			(width 0)
@@ -32212,7 +32212,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 73.66) (xy 111.76 73.66)
+			(xy 119.38 88.9) (xy 123.19 88.9)
 		)
 		(stroke
 			(width 0)
@@ -32222,7 +32222,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 67.31) (xy 149.86 67.31)
+			(xy 158.75 82.55) (xy 161.29 82.55)
 		)
 		(stroke
 			(width 0)
@@ -32232,7 +32232,7 @@
 	)
 	(wire
 		(pts
-			(xy 189.23 85.09) (xy 198.12 85.09)
+			(xy 200.66 100.33) (xy 209.55 100.33)
 		)
 		(stroke
 			(width 0)
@@ -32242,7 +32242,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 81.28) (xy 85.09 86.36)
+			(xy 96.52 96.52) (xy 96.52 101.6)
 		)
 		(stroke
 			(width 0)
@@ -32252,7 +32252,7 @@
 	)
 	(wire
 		(pts
-			(xy 73.66 68.58) (xy 73.66 71.12)
+			(xy 85.09 83.82) (xy 85.09 86.36)
 		)
 		(stroke
 			(width 0)
@@ -32262,7 +32262,7 @@
 	)
 	(wire
 		(pts
-			(xy 210.82 59.69) (xy 213.36 59.69)
+			(xy 222.25 74.93) (xy 224.79 74.93)
 		)
 		(stroke
 			(width 0)
@@ -32272,7 +32272,7 @@
 	)
 	(wire
 		(pts
-			(xy 107.95 78.74) (xy 111.76 78.74)
+			(xy 119.38 93.98) (xy 123.19 93.98)
 		)
 		(stroke
 			(width 0)
@@ -32282,7 +32282,7 @@
 	)
 	(wire
 		(pts
-			(xy 170.18 85.09) (xy 170.18 96.52)
+			(xy 181.61 100.33) (xy 181.61 111.76)
 		)
 		(stroke
 			(width 0)
@@ -32292,7 +32292,7 @@
 	)
 	(wire
 		(pts
-			(xy 147.32 71.12) (xy 144.78 71.12)
+			(xy 158.75 86.36) (xy 156.21 86.36)
 		)
 		(stroke
 			(width 0)
@@ -32302,7 +32302,7 @@
 	)
 	(wire
 		(pts
-			(xy 182.88 57.15) (xy 185.42 57.15)
+			(xy 194.31 72.39) (xy 196.85 72.39)
 		)
 		(stroke
 			(width 0)
@@ -32312,7 +32312,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 85.09) (xy 220.98 85.09)
+			(xy 234.95 100.33) (xy 232.41 100.33)
 		)
 		(stroke
 			(width 0)
@@ -32322,7 +32322,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 63.5) (xy 85.09 63.5)
+			(xy 99.06 78.74) (xy 96.52 78.74)
 		)
 		(stroke
 			(width 0)
@@ -32332,7 +32332,7 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 97.79) (xy 223.52 85.09)
+			(xy 234.95 113.03) (xy 234.95 100.33)
 		)
 		(stroke
 			(width 0)
@@ -32342,7 +32342,7 @@
 	)
 	(wire
 		(pts
-			(xy 146.05 78.74) (xy 144.78 78.74)
+			(xy 157.48 93.98) (xy 156.21 93.98)
 		)
 		(stroke
 			(width 0)
@@ -32352,7 +32352,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 81.28) (xy 85.09 78.74)
+			(xy 96.52 96.52) (xy 96.52 93.98)
 		)
 		(stroke
 			(width 0)
@@ -32362,7 +32362,7 @@
 	)
 	(wire
 		(pts
-			(xy 62.23 68.58) (xy 73.66 68.58)
+			(xy 73.66 83.82) (xy 85.09 83.82)
 		)
 		(stroke
 			(width 0)
@@ -32371,7 +32371,7 @@
 		(uuid "fe08bceb-d9f3-4168-a413-0146d6218e26")
 	)
 	(image
-		(at 125.73 99.06)
+		(at 137.16 114.3)
 		(uuid "48b6a63b-2433-49e2-af21-5e7116c95b39")
 		(data "iVBORw0KGgoAAAANSUhEUgAAAtIAAABjCAYAAAC2Y+dTAAABYGlDQ1BJQ0MgUHJvZmlsZQAAKJFt"
 			"kM9KAlEUxr8pxUr7s4igaOGiTWBhkyQtWphGBUKDJVm78TqNgU6XmYlo56oniF4gsJ5AKwp6hCAq"
@@ -33062,7 +33062,7 @@
 		)
 	)
 	(image
-		(at 123.19 50.8)
+		(at 134.62 66.04)
 		(uuid "917c37b0-a50f-41a8-b594-d9c0c3e21ae7")
 		(data "iVBORw0KGgoAAAANSUhEUgAAArgAAABACAYAAADxngRyAAABYGlDQ1BJQ0MgUHJvZmlsZQAAKJFt"
 			"kM9KAlEUxr8pxUr7s4igaOGiTWBhkyQtWphGBUKDJVm78TqNgU6XmYlo56oniF4gsJ5AKwp6hCAq"
@@ -33499,9 +33499,9 @@
 			"gEBAICAQEAgMPQL/D3SdeAReOj/fAAAAAElFTkSuQmCC"
 		)
 	)
-	(hierarchical_label "3.3v"
+	(hierarchical_label "3V3"
 		(shape input)
-		(at 149.86 67.31 0)
+		(at 161.29 82.55 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -33512,7 +33512,7 @@
 	)
 	(hierarchical_label "CAN_L"
 		(shape bidirectional)
-		(at 182.88 57.15 180)
+		(at 194.31 72.39 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -33523,7 +33523,7 @@
 	)
 	(hierarchical_label "CAN_H"
 		(shape bidirectional)
-		(at 182.88 54.61 180)
+		(at 194.31 69.85 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -33534,7 +33534,7 @@
 	)
 	(hierarchical_label "CAN_H"
 		(shape bidirectional)
-		(at 107.95 76.2 180)
+		(at 119.38 91.44 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -33545,7 +33545,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 87.63 86.36 0)
+		(at 99.06 101.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -33556,7 +33556,7 @@
 	)
 	(hierarchical_label "CAN_L"
 		(shape bidirectional)
-		(at 223.52 97.79 270)
+		(at 234.95 113.03 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -33567,7 +33567,7 @@
 	)
 	(hierarchical_label "CAN_TX"
 		(shape input)
-		(at 107.95 71.12 180)
+		(at 119.38 86.36 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -33578,7 +33578,7 @@
 	)
 	(hierarchical_label "CAN_RX"
 		(shape output)
-		(at 107.95 73.66 180)
+		(at 119.38 88.9 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -33589,7 +33589,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 213.36 59.69 0)
+		(at 224.79 74.93 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -33600,7 +33600,7 @@
 	)
 	(hierarchical_label "CAN_L"
 		(shape bidirectional)
-		(at 107.95 78.74 180)
+		(at 119.38 93.98 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -33611,7 +33611,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 190.5 97.79 0)
+		(at 201.93 113.03 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -33620,9 +33620,9 @@
 		)
 		(uuid "deaa5507-d4de-4c93-9ade-af6e02b24328")
 	)
-	(hierarchical_label "3.3v"
+	(hierarchical_label "3V3"
 		(shape input)
-		(at 87.63 63.5 0)
+		(at 99.06 78.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -33633,7 +33633,7 @@
 	)
 	(hierarchical_label "CAN_H"
 		(shape bidirectional)
-		(at 170.18 96.52 270)
+		(at 181.61 111.76 270)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -33644,7 +33644,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 129.54 87.63 0)
+		(at 140.97 102.87 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -33655,7 +33655,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 149.86 82.55 0)
+		(at 161.29 97.79 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -33666,7 +33666,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 73.66 74.93 0)
+		(at 85.09 90.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -33675,8 +33675,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "11fc3897-418c-456a-8fd5-75858f7bdad9")
-		(property "Reference" "C79"
-			(at 76.2 73.66 0)
+		(property "Reference" "C28"
+			(at 87.63 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33687,7 +33687,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 75.946 75.946 0)
+			(at 87.376 91.186 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33698,7 +33698,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 74.6252 78.74 0)
+			(at 86.0552 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33709,7 +33709,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 73.66 74.93 0)
+			(at 85.09 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33720,7 +33720,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 73.66 74.93 0)
+			(at 85.09 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33731,7 +33731,7 @@
 			)
 		)
 		(property "LCSC P/N" "C14663"
-			(at 73.66 74.93 0)
+			(at 85.09 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33742,7 +33742,7 @@
 			)
 		)
 		(property "P/N" "MLASH168SB7104KTNA01"
-			(at 73.66 74.93 0)
+			(at 85.09 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33765,15 +33765,9 @@
 					(unit 1)
 				)
 			)
-			(project "atempt_2"
-				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/8db51039-8582-4b38-8dd1-de26f5d2196c"
-					(reference "C6")
-					(unit 1)
-				)
-			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/8db51039-8582-4b38-8dd1-de26f5d2196c"
-					(reference "C79")
+					(reference "C28")
 					(unit 1)
 				)
 			)
@@ -33787,7 +33781,7 @@
 	)
 	(symbol
 		(lib_id "ECE319K:C")
-		(at 189.23 88.9 180)
+		(at 200.66 104.14 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -33796,8 +33790,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "269c1b14-22dd-4a9f-bc64-46d9c4d23a1e")
-		(property "Reference" "C81"
-			(at 194.564 88.646 0)
+		(property "Reference" "C30"
+			(at 205.994 103.886 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33807,7 +33801,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 194.564 91.186 0)
+			(at 205.994 106.426 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33817,7 +33811,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 188.2648 85.09 0)
+			(at 199.6948 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33828,7 +33822,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 189.23 88.9 0)
+			(at 200.66 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33839,7 +33833,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 189.23 88.9 0)
+			(at 200.66 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33850,7 +33844,7 @@
 			)
 		)
 		(property "LCSC P/N" "C14663"
-			(at 189.23 88.9 0)
+			(at 200.66 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33861,7 +33855,7 @@
 			)
 		)
 		(property "P/N" "MLASH168SB7104KTNA01"
-			(at 189.23 88.9 0)
+			(at 200.66 104.14 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33884,15 +33878,9 @@
 					(unit 1)
 				)
 			)
-			(project "atempt_2"
-				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/8db51039-8582-4b38-8dd1-de26f5d2196c"
-					(reference "C8")
-					(unit 1)
-				)
-			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/8db51039-8582-4b38-8dd1-de26f5d2196c"
-					(reference "C81")
+					(reference "C30")
 					(unit 1)
 				)
 			)
@@ -33906,7 +33894,7 @@
 	)
 	(symbol
 		(lib_id "Jumper:Jumper_2_Open")
-		(at 215.9 85.09 0)
+		(at 227.33 100.33 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -33916,8 +33904,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "418918ed-79a5-4844-a068-77984ff1998e")
-		(property "Reference" "JP3"
-			(at 215.9 78.74 0)
+		(property "Reference" "JP2"
+			(at 227.33 93.98 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33927,7 +33915,7 @@
 			)
 		)
 		(property "Value" "TRM"
-			(at 215.9 81.28 0)
+			(at 227.33 96.52 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -33937,7 +33925,7 @@
 			)
 		)
 		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x02_P2.54mm_Vertical"
-			(at 215.9 85.09 0)
+			(at 227.33 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33948,7 +33936,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 215.9 85.09 0)
+			(at 227.33 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33959,7 +33947,7 @@
 			)
 		)
 		(property "Description" "Jumper, 2-pole, open"
-			(at 215.9 85.09 0)
+			(at 227.33 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -33988,15 +33976,9 @@
 					(unit 1)
 				)
 			)
-			(project "atempt_2"
-				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/8db51039-8582-4b38-8dd1-de26f5d2196c"
-					(reference "JP2")
-					(unit 1)
-				)
-			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/8db51039-8582-4b38-8dd1-de26f5d2196c"
-					(reference "JP3")
+					(reference "JP2")
 					(unit 1)
 				)
 			)
@@ -34010,7 +33992,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 85.09 74.93 0)
+		(at 96.52 90.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -34019,8 +34001,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "7484bcdc-1ddf-4a31-9ac2-deff0b8d2fc5")
-		(property "Reference" "C80"
-			(at 88.138 73.66 0)
+		(property "Reference" "C29"
+			(at 99.568 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -34031,7 +34013,7 @@
 			)
 		)
 		(property "Value" "0.1u"
-			(at 88.138 76.2 0)
+			(at 99.568 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -34042,7 +34024,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 86.0552 78.74 0)
+			(at 97.4852 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34053,7 +34035,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 85.09 74.93 0)
+			(at 96.52 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34064,7 +34046,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 85.09 74.93 0)
+			(at 96.52 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34075,7 +34057,7 @@
 			)
 		)
 		(property "LCSC P/N" "C14663"
-			(at 85.09 74.93 0)
+			(at 96.52 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34086,7 +34068,7 @@
 			)
 		)
 		(property "P/N" "MLASH168SB7104KTNA01"
-			(at 85.09 74.93 0)
+			(at 96.52 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34109,15 +34091,9 @@
 					(unit 1)
 				)
 			)
-			(project "atempt_2"
-				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/8db51039-8582-4b38-8dd1-de26f5d2196c"
-					(reference "C7")
-					(unit 1)
-				)
-			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/8db51039-8582-4b38-8dd1-de26f5d2196c"
-					(reference "C80")
+					(reference "C29")
 					(unit 1)
 				)
 			)
@@ -34131,7 +34107,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 62.23 74.93 0)
+		(at 73.66 90.17 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -34140,8 +34116,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "8bc6d0f8-90a9-4a3e-bd4c-4f1d37db40e4")
-		(property "Reference" "C78"
-			(at 65.278 73.66 0)
+		(property "Reference" "C27"
+			(at 76.708 88.9 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -34152,7 +34128,7 @@
 			)
 		)
 		(property "Value" "10u"
-			(at 65.278 76.2 0)
+			(at 76.708 91.44 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -34163,7 +34139,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
-			(at 63.1952 78.74 0)
+			(at 74.6252 93.98 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34174,7 +34150,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 62.23 74.93 0)
+			(at 73.66 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34185,7 +34161,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 62.23 74.93 0)
+			(at 73.66 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34196,7 +34172,7 @@
 			)
 		)
 		(property "LCSC P/N" "C440198"
-			(at 62.23 74.93 0)
+			(at 73.66 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34207,7 +34183,7 @@
 			)
 		)
 		(property "P/N" "GRM21BR61H106KE43K"
-			(at 62.23 74.93 0)
+			(at 73.66 90.17 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34236,15 +34212,9 @@
 					(unit 1)
 				)
 			)
-			(project "atempt_2"
-				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/8db51039-8582-4b38-8dd1-de26f5d2196c"
-					(reference "C5")
-					(unit 1)
-				)
-			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/8db51039-8582-4b38-8dd1-de26f5d2196c"
-					(reference "C78")
+					(reference "C27")
 					(unit 1)
 				)
 			)
@@ -34258,7 +34228,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 201.93 85.09 90)
+		(at 213.36 100.33 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -34267,8 +34237,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "d3dc1093-5927-44fd-b183-035a11ec5677")
-		(property "Reference" "R71"
-			(at 201.93 80.01 90)
+		(property "Reference" "R33"
+			(at 213.36 95.25 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -34278,7 +34248,7 @@
 			)
 		)
 		(property "Value" "60"
-			(at 201.93 82.55 90)
+			(at 213.36 97.79 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -34288,7 +34258,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 201.93 86.868 90)
+			(at 213.36 102.108 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34299,7 +34269,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 201.93 85.09 0)
+			(at 213.36 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34310,7 +34280,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 201.93 85.09 0)
+			(at 213.36 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34321,7 +34291,7 @@
 			)
 		)
 		(property "LCSC P/N" "C166918"
-			(at 201.93 85.09 90)
+			(at 213.36 100.33 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34332,7 +34302,7 @@
 			)
 		)
 		(property "P/N" "CRCW060360R4FKEA"
-			(at 201.93 85.09 90)
+			(at 213.36 100.33 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34355,15 +34325,9 @@
 					(unit 1)
 				)
 			)
-			(project "atempt_2"
-				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/8db51039-8582-4b38-8dd1-de26f5d2196c"
-					(reference "R23")
-					(unit 1)
-				)
-			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/8db51039-8582-4b38-8dd1-de26f5d2196c"
-					(reference "R71")
+					(reference "R33")
 					(unit 1)
 				)
 			)
@@ -34377,7 +34341,7 @@
 	)
 	(symbol
 		(lib_id "CDSOT23-T24CAN:CDSOT23-T24CAN")
-		(at 185.42 54.61 0)
+		(at 196.85 69.85 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -34387,8 +34351,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "d7bbf058-1019-472a-b210-c9dc6eda02c8")
-		(property "Reference" "D27"
-			(at 196.85 46.99 0)
+		(property "Reference" "D15"
+			(at 208.28 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -34398,7 +34362,7 @@
 			)
 		)
 		(property "Value" "CDSOT23-T24CAN"
-			(at 196.85 49.53 0)
+			(at 208.28 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -34408,7 +34372,7 @@
 			)
 		)
 		(property "Footprint" "LHRS_Passives:CDSOT23-T24CAN"
-			(at 204.47 149.53 0)
+			(at 215.9 164.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34420,7 +34384,7 @@
 			)
 		)
 		(property "Datasheet" "kicad-embed://cdsot23-t24can.pdf"
-			(at 204.47 249.53 0)
+			(at 215.9 264.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34432,7 +34396,7 @@
 			)
 		)
 		(property "Description" "Bourns CDSOT23-T24CAN, Dual Bi-Directional ESD Protection Diode, 3-Pin SOT-23"
-			(at 186.69 62.738 0)
+			(at 198.12 77.978 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34440,58 +34404,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "Height" "1.17"
-			(at 204.47 449.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "652-CDSOT23-T24CAN"
-			(at 204.47 549.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Bourns/CDSOT23-T24CAN?qs=Z7P4xsdcg2LuAOb%2FzQ7xoQ%3D%3D"
-			(at 204.47 649.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "Bourns"
-			(at 204.47 749.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
 			)
 		)
 		(property "P/N" "CDSOT23-T24CAN"
-			(at 204.47 849.53 0)
+			(at 215.9 864.77 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34503,7 +34419,7 @@
 			)
 		)
 		(property "LCSC P/N" "C2959841"
-			(at 185.42 54.61 0)
+			(at 196.85 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34529,15 +34445,9 @@
 					(unit 1)
 				)
 			)
-			(project "atempt_2"
-				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/8db51039-8582-4b38-8dd1-de26f5d2196c"
-					(reference "D8")
-					(unit 1)
-				)
-			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/8db51039-8582-4b38-8dd1-de26f5d2196c"
-					(reference "D27")
+					(reference "D15")
 					(unit 1)
 				)
 			)
@@ -34551,7 +34461,7 @@
 	)
 	(symbol
 		(lib_id "TCAN3413DR:TCAN3413DR")
-		(at 111.76 71.12 0)
+		(at 123.19 86.36 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -34561,8 +34471,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "f525b581-e914-48f3-856d-b707a04117a7")
-		(property "Reference" "IC5"
-			(at 128.27 63.5 0)
+		(property "Reference" "IC3"
+			(at 139.7 78.74 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -34572,7 +34482,7 @@
 			)
 		)
 		(property "Value" "TCAN3413DR"
-			(at 128.27 66.04 0)
+			(at 139.7 81.28 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -34582,7 +34492,7 @@
 			)
 		)
 		(property "Footprint" "LHRS_Passives:TCAN3413DR"
-			(at 140.97 166.04 0)
+			(at 152.4 181.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34594,7 +34504,7 @@
 			)
 		)
 		(property "Datasheet" "kicad-embed://tcan3413.pdf"
-			(at 140.97 266.04 0)
+			(at 152.4 281.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34606,7 +34516,7 @@
 			)
 		)
 		(property "Description" "1/1 Transceiver Half CANbus 8-SOIC"
-			(at 129.286 91.948 0)
+			(at 140.716 107.188 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34614,58 +34524,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "Height" "1.75"
-			(at 140.97 466.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "595-TCAN3413DR"
-			(at 140.97 566.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "-"
-			(at 140.97 666.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "Texas Instruments"
-			(at 140.97 766.04 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
 			)
 		)
 		(property "P/N" "TCAN3413DR"
-			(at 140.97 866.04 0)
+			(at 152.4 881.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34677,7 +34539,7 @@
 			)
 		)
 		(property "LCSC P/N" "C22433320"
-			(at 111.76 71.12 0)
+			(at 123.19 86.36 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34718,15 +34580,9 @@
 					(unit 1)
 				)
 			)
-			(project "atempt_2"
-				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/8db51039-8582-4b38-8dd1-de26f5d2196c"
-					(reference "IC1")
-					(unit 1)
-				)
-			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/8db51039-8582-4b38-8dd1-de26f5d2196c"
-					(reference "IC5")
+					(reference "IC3")
 					(unit 1)
 				)
 			)
@@ -34740,7 +34596,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 176.53 85.09 90)
+		(at 187.96 100.33 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -34749,8 +34605,8 @@
 		(in_pos_files yes)
 		(dnp no)
 		(uuid "f905bbd5-25e3-4518-9a89-c3e959777327")
-		(property "Reference" "R70"
-			(at 176.53 80.01 90)
+		(property "Reference" "R32"
+			(at 187.96 95.25 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -34760,7 +34616,7 @@
 			)
 		)
 		(property "Value" "60"
-			(at 176.53 82.55 90)
+			(at 187.96 97.79 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -34770,7 +34626,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 176.53 86.868 90)
+			(at 187.96 102.108 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34781,7 +34637,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 176.53 85.09 0)
+			(at 187.96 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34792,7 +34648,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 176.53 85.09 0)
+			(at 187.96 100.33 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34803,7 +34659,7 @@
 			)
 		)
 		(property "LCSC P/N" "C166918"
-			(at 176.53 85.09 90)
+			(at 187.96 100.33 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34814,7 +34670,7 @@
 			)
 		)
 		(property "P/N" "CRCW060360R4FKEA"
-			(at 176.53 85.09 90)
+			(at 187.96 100.33 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34843,15 +34699,9 @@
 					(unit 1)
 				)
 			)
-			(project "atempt_2"
-				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/8db51039-8582-4b38-8dd1-de26f5d2196c"
-					(reference "R22")
-					(unit 1)
-				)
-			)
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/8db51039-8582-4b38-8dd1-de26f5d2196c"
-					(reference "R70")
+					(reference "R32")
 					(unit 1)
 				)
 			)
@@ -34861,6 +34711,52 @@
 					(unit 1)
 				)
 			)
+		)
+	)
+	(group "CAN_Transceiver"
+		(uuid "2595835b-8967-4ab5-9ea2-148da091d28a")
+		(lib_id "LHRS_Design_Blocks:CAN_Transceiver")
+		(members "02dc0498-fa0a-4af4-999d-cc09ce2f8eed" "03ac9165-2ea4-425b-a3a2-2a3ac86ba5ac"
+			"0aab3452-ca44-4153-98ab-a4260fdc2c76" "0fcf45b8-2eeb-4956-88e8-96a8f3be2fc2"
+			"11fc3897-418c-456a-8fd5-75858f7bdad9" "14f6a92d-e85d-4654-93c9-436d0a52c752"
+			"16805fa4-525f-4785-8211-5b63dd1de1ce" "16ba06cb-8cbf-4ba2-8961-aabeac5c19e1"
+			"18a7dca3-e6ee-4f48-9c9e-fc76fa664e75" "1c957308-eb52-4c84-9d6f-48ae590d99d5"
+			"257454c3-1cbb-49bf-ac29-55b2bfc39800" "269c1b14-22dd-4a9f-bc64-46d9c4d23a1e"
+			"281fa88c-8ae1-4054-a13f-0c13c1d01bee" "2e405b7a-06f0-48f6-9cb5-8f138f157a54"
+			"34e9e19a-645e-4817-a53b-11ea4ec15937" "35735da6-cd68-4170-b8db-e419be0a1130"
+			"370fd011-4489-4130-aa09-5d1b9e226549" "3b4100a3-bbf0-46c4-b8f7-040bd2249cf8"
+			"3f3478ae-d264-4a67-9c59-7de031940324" "418918ed-79a5-4844-a068-77984ff1998e"
+			"43f094ec-461c-47c8-8122-1579148b6876" "45287061-c17c-4466-8f07-f5b0dbdf1e9e"
+			"457dd79d-04ce-4791-9e74-72678c3e65d8" "46a5c127-3bac-418c-9a75-8e883898b804"
+			"48b6a63b-2433-49e2-af21-5e7116c95b39" "4988521a-bb8e-4fb6-9e79-ab3f0d7c608b"
+			"4ed1fe97-086c-4c08-b22d-2fb1ba74a4d8" "53fc980d-cf29-4e0c-92a6-a4c6e65a77b0"
+			"70dac787-f0ab-4692-8f06-9e8bac98967d" "7443ee25-b112-418a-a19e-16b199a8fe5b"
+			"7460588d-8899-4373-b50b-fb0610e09f09" "7484bcdc-1ddf-4a31-9ac2-deff0b8d2fc5"
+			"76db90f1-78d8-4e5d-9cce-f6cfc8c68aa6" "7da5c6ca-1f5e-4e0c-9ed1-f5b25519203e"
+			"7fbf7d87-9fc4-40ea-820f-437fbcd62764" "80bc5ad1-4fbc-4a16-aff6-a41b50d0d5ed"
+			"89eda2dc-1a3a-4862-9057-2a53d23dc041" "8bc6d0f8-90a9-4a3e-bd4c-4f1d37db40e4"
+			"8cc7381c-268a-4e89-868e-d70c2ee1b2cf" "8d41f674-d426-4441-aa5f-d30bc0e8d498"
+			"8df04a62-6241-4b31-a5a9-801f1c6fce5c" "8e0b5df4-2cb8-49e3-8752-25e60af29d36"
+			"917c37b0-a50f-41a8-b594-d9c0c3e21ae7" "91f995af-5ad6-4388-b5d2-2ba28b704c70"
+			"920219a8-99ce-41b7-b456-4157126609a6" "92d7acaa-73a4-4711-9c6e-9d6f8e4b6bdf"
+			"97b807a7-2a0f-4f78-9be9-1b8fd00655be" "a20ab9fc-69aa-4ee0-93d6-3059b329d369"
+			"a3b72bfe-2a6f-42d8-b935-ec83e721d0d8" "a9bf4fee-14de-4ca1-87dd-71b6c8614922"
+			"aa55e51e-ff1d-4754-99e3-0cbf4fe8be3f" "adda2c19-4d52-4a5f-bfa0-e29c5e28dc27"
+			"b3caedac-de22-46e7-9643-c5c9196010b4" "b8ab2e19-3037-4588-b198-c07c4e77bc05"
+			"bb14a602-1916-4238-a873-64ed2a18b066" "c47537e4-6cb2-42bd-9e36-f2fdbbd88467"
+			"c568e6ca-7f97-4122-a9d3-1ff49abf5acc" "c6b18540-3af2-482b-b230-c7c3e88c1c2b"
+			"c72b6064-24ff-42cf-85a2-5f319e80bac0" "c84a68a2-25c9-4949-9cd3-564dce7f418d"
+			"c8de0135-271c-4834-b458-949e66171a03" "d0cd01de-532c-4881-bbfa-68dada0141bd"
+			"d3dc1093-5927-44fd-b183-035a11ec5677" "d72421b8-96df-4d96-96de-366e757e0c7f"
+			"d7bbf058-1019-472a-b210-c9dc6eda02c8" "deaa5507-d4de-4c93-9ade-af6e02b24328"
+			"e3b93d3c-a2e0-469f-9761-2465843355a0" "e61835ce-d874-4c37-a616-6e7e018e402e"
+			"e95fa83f-96e3-4782-8016-c95c1e9ac089" "e9ec658b-ebce-4051-855c-5a456c917486"
+			"eb3c1286-6fe4-4dc7-afe3-b68d2675cf98" "ef028e55-728d-474b-8b10-caf293163e9f"
+			"f1342c2b-b829-43d4-8ac0-e31472078542" "f1545d5e-e8b8-4f5b-9625-3f5248400e82"
+			"f28cb6b3-08af-4a21-962e-c691a9e4d85a" "f525b581-e914-48f3-856d-b707a04117a7"
+			"f6b33fcd-5bfe-4b47-8ac1-5aada0c5cd35" "f905bbd5-25e3-4518-9a89-c3e959777327"
+			"f97194eb-8b04-459a-bd92-5670cfc15c32" "f98052f3-8ad3-423e-8537-c8cb59b58c1e"
+			"fe08bceb-d9f3-4168-a413-0146d6218e26"
 		)
 	)
 )

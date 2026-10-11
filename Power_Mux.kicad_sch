@@ -582,8 +582,8 @@
 		)
 	)
 	(rectangle
-		(start 13.97 80.01)
-		(end 83.82 91.44)
+		(start 16.4193 79.2125)
+		(end 86.2693 90.6425)
 		(stroke
 			(width 0)
 			(type default)
@@ -594,8 +594,8 @@
 		(uuid "07231356-fc8a-4de2-bec2-ddfcfb324b40")
 	)
 	(rectangle
-		(start 45.72 30.48)
-		(end 101.6 38.1)
+		(start 48.1693 29.6825)
+		(end 104.0493 37.3025)
 		(stroke
 			(width 0)
 			(type default)
@@ -606,8 +606,8 @@
 		(uuid "15dd65bd-6625-40b7-9d1f-abb9e2a05654")
 	)
 	(rectangle
-		(start 13.97 30.48)
-		(end 101.6 91.44)
+		(start 16.4193 29.6825)
+		(end 104.0493 90.6425)
 		(stroke
 			(width 0)
 			(type default)
@@ -618,8 +618,8 @@
 		(uuid "6f877a3f-5da5-4e92-a04b-5faa990fa554")
 	)
 	(rectangle
-		(start 29.21 57.15)
-		(end 31.75 62.23)
+		(start 31.6593 56.3525)
+		(end 34.1993 61.4325)
 		(stroke
 			(width 0)
 			(type default)
@@ -630,8 +630,8 @@
 		(uuid "87cdfe22-c546-4da0-bbc8-c1aa35c926c6")
 	)
 	(rectangle
-		(start 29.21 64.77)
-		(end 31.75 69.85)
+		(start 31.6593 63.9725)
+		(end 34.1993 69.0525)
 		(stroke
 			(width 0)
 			(type default)
@@ -642,8 +642,8 @@
 		(uuid "d6a9306f-b1fa-4bc1-b6ad-f07384e87bff")
 	)
 	(rectangle
-		(start 13.97 101.346)
-		(end 93.98 162.306)
+		(start 16.4193 100.5485)
+		(end 96.4293 161.5085)
 		(stroke
 			(width 0)
 			(type default)
@@ -655,7 +655,7 @@
 	)
 	(text "Max and min threshold voltage calculations for 3v3 and 5v\n[delete this if you want :^)]"
 		(exclude_from_sim no)
-		(at 53.594 105.664 0)
+		(at 56.0433 104.8665 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -665,7 +665,7 @@
 	)
 	(text "3v3\n"
 		(exclude_from_sim no)
-		(at 19.05 114.3 0)
+		(at 21.4993 113.5025 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -675,7 +675,7 @@
 	)
 	(text "R2"
 		(exclude_from_sim no)
-		(at 30.48 67.564 0)
+		(at 32.9293 66.7665 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -685,7 +685,7 @@
 	)
 	(text "R1"
 		(exclude_from_sim no)
-		(at 30.48 59.944 0)
+		(at 32.9293 59.1465 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -695,7 +695,7 @@
 	)
 	(text "5v "
 		(exclude_from_sim no)
-		(at 57.15 114.046 0)
+		(at 59.5993 113.2485 0)
 		(effects
 			(font
 				(size 2.54 2.54)
@@ -705,7 +705,7 @@
 	)
 	(text "Configured to use automatic switching mode: VIN_1 is prioritized"
 		(exclude_from_sim no)
-		(at 46.228 28.194 0)
+		(at 48.6773 27.3965 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -715,7 +715,7 @@
 	)
 	(text "Acceptable input range is 1.6 to 5.5 volts\nResistor divider needs to be tuned depending on input\n"
 		(exclude_from_sim no)
-		(at 46.736 34.798 0)
+		(at 49.1853 34.0005 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -726,7 +726,7 @@
 	)
 	(text "Resistor divider to meet Vref \nUser needs to set resistors!\nExample values:\nFor 5v:  R1 = 16k R2 = 4.7k   (Max threshold = 4.76, min = 4.05)\nFor 3v3: R1 = 18k R2 = 10k   (Max threshold = 3.02, min = 2.58)"
 		(exclude_from_sim no)
-		(at 14.732 86.106 0)
+		(at 17.1813 85.3085 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -737,7 +737,7 @@
 	)
 	(text "5V/3V3 Power Mux"
 		(exclude_from_sim no)
-		(at 50.546 19.304 0)
+		(at 52.9953 18.5065 0)
 		(effects
 			(font
 				(size 5.08 5.08)
@@ -748,56 +748,56 @@
 		(uuid "c56cc5a1-785f-4d69-84d4-8277c5583f4a")
 	)
 	(junction
-		(at 38.1 71.12)
+		(at 40.5493 70.3225)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "0a5badbc-b208-4fbe-b516-8b97f49be2be")
 	)
 	(junction
-		(at 20.32 40.64)
+		(at 22.7693 39.8425)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "41c953aa-b18a-4534-9eed-07ae81e505c8")
 	)
 	(junction
-		(at 87.63 53.34)
+		(at 90.0793 52.5425)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "88424130-d1d6-400c-9226-728c7b467b21")
 	)
 	(junction
-		(at 38.1 55.88)
+		(at 40.5493 55.0825)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8d51b46b-3f88-4f09-8e44-d0e099c9e433")
 	)
 	(junction
-		(at 78.74 53.34)
+		(at 81.1893 52.5425)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8da27b7f-3810-429b-8c5d-0d9b191ea7c9")
 	)
 	(junction
-		(at 30.48 55.88)
+		(at 32.9293 55.0825)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bc4c3532-7cfe-4612-9164-379d19874e78")
 	)
 	(junction
-		(at 38.1 63.5)
+		(at 40.5493 62.7025)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "cba910e3-1c08-4d2c-a2bd-d4a8ca4fd90b")
 	)
 	(junction
-		(at 34.29 40.64)
+		(at 36.7393 39.8425)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e44377cd-47f4-4fdf-903d-488ba51ba0b8")
 	)
 	(wire
 		(pts
-			(xy 38.1 71.12) (xy 44.45 71.12)
+			(xy 40.5493 70.3225) (xy 46.8993 70.3225)
 		)
 		(stroke
 			(width 0)
@@ -807,7 +807,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 59.69) (xy 38.1 55.88)
+			(xy 40.5493 58.8925) (xy 40.5493 55.0825)
 		)
 		(stroke
 			(width 0)
@@ -817,7 +817,7 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 40.64) (xy 30.48 40.64)
+			(xy 22.7693 39.8425) (xy 32.9293 39.8425)
 		)
 		(stroke
 			(width 0)
@@ -827,7 +827,7 @@
 	)
 	(wire
 		(pts
-			(xy 20.32 39.37) (xy 20.32 40.64)
+			(xy 22.7693 38.5725) (xy 22.7693 39.8425)
 		)
 		(stroke
 			(width 0)
@@ -837,7 +837,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 63.5) (xy 38.1 63.5)
+			(xy 31.6593 62.7025) (xy 40.5493 62.7025)
 		)
 		(stroke
 			(width 0)
@@ -847,7 +847,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 53.34) (xy 78.74 53.34)
+			(xy 77.3793 52.5425) (xy 81.1893 52.5425)
 		)
 		(stroke
 			(width 0)
@@ -857,7 +857,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 39.37) (xy 34.29 40.64)
+			(xy 36.7393 38.5725) (xy 36.7393 39.8425)
 		)
 		(stroke
 			(width 0)
@@ -867,7 +867,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 55.88) (xy 78.74 53.34)
+			(xy 81.1893 55.0825) (xy 81.1893 52.5425)
 		)
 		(stroke
 			(width 0)
@@ -877,7 +877,7 @@
 	)
 	(wire
 		(pts
-			(xy 78.74 53.34) (xy 87.63 53.34)
+			(xy 81.1893 52.5425) (xy 90.0793 52.5425)
 		)
 		(stroke
 			(width 0)
@@ -887,7 +887,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 55.88) (xy 30.48 40.64)
+			(xy 32.9293 55.0825) (xy 32.9293 39.8425)
 		)
 		(stroke
 			(width 0)
@@ -897,7 +897,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 63.5) (xy 44.45 63.5)
+			(xy 40.5493 62.7025) (xy 46.8993 62.7025)
 		)
 		(stroke
 			(width 0)
@@ -907,7 +907,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 59.69) (xy 38.1 59.69)
+			(xy 46.8993 58.8925) (xy 40.5493 58.8925)
 		)
 		(stroke
 			(width 0)
@@ -917,7 +917,7 @@
 	)
 	(wire
 		(pts
-			(xy 30.48 55.88) (xy 38.1 55.88)
+			(xy 32.9293 55.0825) (xy 40.5493 55.0825)
 		)
 		(stroke
 			(width 0)
@@ -927,7 +927,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 55.88) (xy 30.48 55.88)
+			(xy 31.6593 55.0825) (xy 32.9293 55.0825)
 		)
 		(stroke
 			(width 0)
@@ -937,7 +937,7 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 40.64) (xy 44.45 40.64)
+			(xy 36.7393 39.8425) (xy 46.8993 39.8425)
 		)
 		(stroke
 			(width 0)
@@ -947,7 +947,7 @@
 	)
 	(wire
 		(pts
-			(xy 44.45 53.34) (xy 44.45 40.64)
+			(xy 46.8993 52.5425) (xy 46.8993 39.8425)
 		)
 		(stroke
 			(width 0)
@@ -957,7 +957,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 62.23) (xy 87.63 60.96)
+			(xy 90.0793 61.4325) (xy 90.0793 60.1625)
 		)
 		(stroke
 			(width 0)
@@ -967,7 +967,7 @@
 	)
 	(wire
 		(pts
-			(xy 74.93 55.88) (xy 78.74 55.88)
+			(xy 77.3793 55.0825) (xy 81.1893 55.0825)
 		)
 		(stroke
 			(width 0)
@@ -977,7 +977,7 @@
 	)
 	(wire
 		(pts
-			(xy 87.63 50.8) (xy 87.63 53.34)
+			(xy 90.0793 50.0025) (xy 90.0793 52.5425)
 		)
 		(stroke
 			(width 0)
@@ -987,7 +987,7 @@
 	)
 	(wire
 		(pts
-			(xy 38.1 55.88) (xy 44.45 55.88)
+			(xy 40.5493 55.0825) (xy 46.8993 55.0825)
 		)
 		(stroke
 			(width 0)
@@ -997,7 +997,7 @@
 	)
 	(wire
 		(pts
-			(xy 29.21 71.12) (xy 38.1 71.12)
+			(xy 31.6593 70.3225) (xy 40.5493 70.3225)
 		)
 		(stroke
 			(width 0)
@@ -1006,7 +1006,7 @@
 		(uuid "e8cc8498-c0dc-4fac-8fb8-41a4cfe2200c")
 	)
 	(image
-		(at 34.29 135.128)
+		(at 36.7393 134.3305)
 		(scale 0.364641)
 		(uuid "a9d73a7b-c99c-4d07-8c0e-da81a799d630")
 		(data "iVBORw0KGgoAAAANSUhEUgAAAX4AAAGJCAIAAAACL88KAAAAA3NCSVQICAjb4U/gAAAACXBIWXMA"
@@ -1324,7 +1324,7 @@
 		)
 	)
 	(image
-		(at 72.39 135.128)
+		(at 74.8393 134.3305)
 		(scale 0.363383)
 		(uuid "e5c374f8-6e66-412e-8355-5d0fa790a1c5")
 		(data "iVBORw0KGgoAAAANSUhEUgAAAYAAAAGICAIAAADH9qCFAAAAA3NCSVQICAjb4U/gAAAACXBIWXMA"
@@ -1676,7 +1676,7 @@
 	)
 	(hierarchical_label "MX_GND"
 		(shape input)
-		(at 87.63 62.23 0)
+		(at 90.0793 61.4325 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1687,7 +1687,7 @@
 	)
 	(hierarchical_label "VIN_1"
 		(shape input)
-		(at 20.32 39.37 0)
+		(at 22.7693 38.5725 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1698,7 +1698,7 @@
 	)
 	(hierarchical_label "PR1"
 		(shape input)
-		(at 29.21 63.5 180)
+		(at 31.6593 62.7025 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1709,7 +1709,7 @@
 	)
 	(hierarchical_label "MX_GND"
 		(shape input)
-		(at 29.21 71.12 180)
+		(at 31.6593 70.3225 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1720,7 +1720,7 @@
 	)
 	(hierarchical_label "VIN_1"
 		(shape input)
-		(at 29.21 55.88 180)
+		(at 31.6593 55.0825 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1731,7 +1731,7 @@
 	)
 	(hierarchical_label "MX_GND"
 		(shape input)
-		(at 34.29 48.26 0)
+		(at 36.7393 47.4625 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1742,7 +1742,7 @@
 	)
 	(hierarchical_label "MX_GND"
 		(shape input)
-		(at 20.32 48.26 0)
+		(at 22.7693 47.4625 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1753,7 +1753,7 @@
 	)
 	(hierarchical_label "VIN_1"
 		(shape input)
-		(at 74.93 63.5 0)
+		(at 77.3793 62.7025 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1764,7 +1764,7 @@
 	)
 	(hierarchical_label "VIN_2"
 		(shape input)
-		(at 34.29 39.37 0)
+		(at 36.7393 38.5725 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1775,7 +1775,7 @@
 	)
 	(hierarchical_label "MUX_OUT"
 		(shape output)
-		(at 87.63 50.8 0)
+		(at 90.0793 50.0025 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1786,7 +1786,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 87.63 57.15 0)
+		(at 90.0793 56.3525 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1796,7 +1796,7 @@
 		(dnp no)
 		(uuid "01ead70c-0165-4879-828f-f34459038239")
 		(property "Reference" "C4"
-			(at 90.6272 55.9816 0)
+			(at 93.0765 55.1841 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1806,8 +1806,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
-			(at 90.6272 58.293 0)
+		(property "Value" "0.1u"
+			(at 93.0765 57.4955 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1818,7 +1818,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 88.5952 60.96 0)
+			(at 91.0445 60.1625 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1829,7 +1829,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 87.63 57.15 0)
+			(at 90.0793 56.3525 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1840,7 +1840,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 87.63 57.15 0)
+			(at 90.0793 56.3525 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1851,18 +1851,7 @@
 			)
 		)
 		(property "P/N" "MLASH168SB7104KTNA01"
-			(at 87.63 57.15 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mfg" "MLASH168SB7104KTNA01"
-			(at 87.63 57.15 0)
+			(at 90.0793 56.3525 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1885,7 +1874,7 @@
 					(unit 1)
 				)
 			)
-			(project "power-mux-block"
+			(project "Power_Mux"
 				(path "/c8207045-8aef-4538-bcc4-1e380c549c2c"
 					(reference "C4")
 					(unit 1)
@@ -1895,7 +1884,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 74.93 67.31 0)
+		(at 77.3793 66.5125 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -1905,7 +1894,7 @@
 		(dnp no)
 		(uuid "2b5b7fd6-b1a2-49bf-aab6-5b1c87c9f917")
 		(property "Reference" "R1"
-			(at 77.724 66.294 0)
+			(at 80.1733 65.4965 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1915,7 +1904,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 78.232 68.326 0)
+			(at 80.6813 67.5285 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1925,7 +1914,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 73.152 67.31 90)
+			(at 75.6013 66.5125 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1936,7 +1925,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 74.93 67.31 0)
+			(at 77.3793 66.5125 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1947,7 +1936,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 74.93 67.31 0)
+			(at 77.3793 66.5125 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1958,7 +1947,7 @@
 			)
 		)
 		(property "P/N" "CRCW060310K0FKEI "
-			(at 74.93 67.31 90)
+			(at 77.3793 66.5125 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -1981,7 +1970,7 @@
 					(unit 1)
 				)
 			)
-			(project "power-mux-block"
+			(project "Power_Mux"
 				(path "/c8207045-8aef-4538-bcc4-1e380c549c2c"
 					(reference "R1")
 					(unit 1)
@@ -1991,7 +1980,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 20.32 44.45 0)
+		(at 22.7693 43.6525 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2001,7 +1990,7 @@
 		(dnp no)
 		(uuid "34e6f2ae-d271-4a6d-9148-a06a796ccc05")
 		(property "Reference" "C1"
-			(at 23.3172 43.2816 0)
+			(at 25.7665 42.4841 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2011,8 +2000,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
-			(at 23.3172 45.593 0)
+		(property "Value" "0.1u"
+			(at 25.7665 44.7955 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2023,7 +2012,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 21.2852 48.26 0)
+			(at 23.7345 47.4625 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2034,7 +2023,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 20.32 44.45 0)
+			(at 22.7693 43.6525 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2045,7 +2034,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 20.32 44.45 0)
+			(at 22.7693 43.6525 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2056,18 +2045,7 @@
 			)
 		)
 		(property "P/N" "MLASH168SB7104KTNA01"
-			(at 20.32 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mfg" "MLASH168SB7104KTNA01"
-			(at 20.32 44.45 0)
+			(at 22.7693 43.6525 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2090,7 +2068,7 @@
 					(unit 1)
 				)
 			)
-			(project "power-mux-block"
+			(project "Power_Mux"
 				(path "/c8207045-8aef-4538-bcc4-1e380c549c2c"
 					(reference "C1")
 					(unit 1)
@@ -2100,7 +2078,7 @@
 	)
 	(symbol
 		(lib_id "mux:TPS2117DRLR")
-		(at 59.69 60.96 0)
+		(at 62.1393 60.1625 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2110,8 +2088,8 @@
 		(dnp no)
 		(fields_autoplaced yes)
 		(uuid "8edbd683-d226-4095-b4a7-38849f22f4d9")
-		(property "Reference" "U1"
-			(at 59.69 43.18 0)
+		(property "Reference" "U3"
+			(at 62.1393 42.3825 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2121,7 +2099,7 @@
 			)
 		)
 		(property "Value" "TPS2117DRLR"
-			(at 59.69 45.72 0)
+			(at 62.1393 44.9225 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2131,7 +2109,7 @@
 			)
 		)
 		(property "Footprint" "LHRS_Power:TPS2117DRLR"
-			(at 59.69 60.96 0)
+			(at 62.1393 60.1625 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2143,7 +2121,7 @@
 			)
 		)
 		(property "Datasheet" "kicad-embed://tps2117-datasheet.pdf"
-			(at 59.69 60.96 0)
+			(at 62.1393 60.1625 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2154,7 +2132,7 @@
 			)
 		)
 		(property "Description" "Power Mux"
-			(at 59.69 60.96 0)
+			(at 62.1393 60.1625 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2162,58 +2140,10 @@
 				(font
 					(size 1.27 1.27)
 				)
-			)
-		)
-		(property "PARTREV" "A"
-			(at 59.69 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "STANDARD" "IPC-7351B"
-			(at 59.69 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MAXIMUM_PACKAGE_HEIGHT" "0.6mm"
-			(at 59.69 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
-			)
-		)
-		(property "MANUFACTURER" "Texas Instruments"
-			(at 59.69 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify bottom)
 			)
 		)
 		(property "P/N" "TPS2117DRLR"
-			(at 59.69 48.26 0)
+			(at 62.1393 47.4625 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2249,11 +2179,11 @@
 		(instances
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/81e1c9b9-1f16-4620-9331-536fea3807a2"
-					(reference "U1")
+					(reference "U3")
 					(unit 1)
 				)
 			)
-			(project ""
+			(project "Power_Mux"
 				(path "/c8207045-8aef-4538-bcc4-1e380c549c2c"
 					(reference "U1")
 					(unit 1)
@@ -2263,7 +2193,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 38.1 67.31 0)
+		(at 40.5493 66.5125 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2273,7 +2203,7 @@
 		(dnp no)
 		(uuid "b11a1149-af1e-4d2e-b9ef-9558fb40c6e9")
 		(property "Reference" "C3"
-			(at 41.0972 66.1416 0)
+			(at 43.5465 65.3441 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2283,8 +2213,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
-			(at 41.0972 68.453 0)
+		(property "Value" "0.1u"
+			(at 43.5465 67.6555 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2295,7 +2225,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 39.0652 71.12 0)
+			(at 41.5145 70.3225 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2306,7 +2236,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 38.1 67.31 0)
+			(at 40.5493 66.5125 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2317,7 +2247,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 38.1 67.31 0)
+			(at 40.5493 66.5125 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2328,18 +2258,7 @@
 			)
 		)
 		(property "P/N" "MLASH168SB7104KTNA01"
-			(at 38.1 67.31 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mfg" "MLASH168SB7104KTNA01"
-			(at 38.1 67.31 0)
+			(at 40.5493 66.5125 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2362,7 +2281,7 @@
 					(unit 1)
 				)
 			)
-			(project "power-mux-block"
+			(project "Power_Mux"
 				(path "/c8207045-8aef-4538-bcc4-1e380c549c2c"
 					(reference "C3")
 					(unit 1)
@@ -2372,7 +2291,7 @@
 	)
 	(symbol
 		(lib_id "Device:C")
-		(at 34.29 44.45 0)
+		(at 36.7393 43.6525 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2382,7 +2301,7 @@
 		(dnp no)
 		(uuid "fffce44d-6a2f-431a-a7e0-1c503bf34ef7")
 		(property "Reference" "C2"
-			(at 37.2872 43.2816 0)
+			(at 39.7365 42.4841 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2392,8 +2311,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "0.1uF"
-			(at 37.2872 45.593 0)
+		(property "Value" "0.1u"
+			(at 39.7365 44.7955 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2404,7 +2323,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric_Pad1.08x0.95mm_HandSolder"
-			(at 35.2552 48.26 0)
+			(at 37.7045 47.4625 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2415,7 +2334,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 34.29 44.45 0)
+			(at 36.7393 43.6525 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2426,7 +2345,7 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor"
-			(at 34.29 44.45 0)
+			(at 36.7393 43.6525 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2437,18 +2356,7 @@
 			)
 		)
 		(property "P/N" "MLASH168SB7104KTNA01"
-			(at 34.29 44.45 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mfg" "MLASH168SB7104KTNA01"
-			(at 34.29 44.45 0)
+			(at 36.7393 43.6525 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2471,48 +2379,12 @@
 					(unit 1)
 				)
 			)
-			(project "power-mux-block"
+			(project "Power_Mux"
 				(path "/c8207045-8aef-4538-bcc4-1e380c549c2c"
 					(reference "C2")
 					(unit 1)
 				)
 			)
-		)
-	)
-	(group "Power_Mux"
-		(uuid "88fcf070-da9f-4249-a113-7ed2d4747f3d")
-		(lib_id "LHRS_Design_Blocks:Power_Mux")
-		(members "01ead70c-0165-4879-828f-f34459038239" "07231356-fc8a-4de2-bec2-ddfcfb324b40"
-			"0a09e75c-d9bb-4e91-b027-7ff3f88e964c" "0a5badbc-b208-4fbe-b516-8b97f49be2be"
-			"0eac75f5-bef6-4727-9653-7aa4a7c5b710" "0f5e0e53-cbd0-4e71-afac-7322790913eb"
-			"10926921-5560-4890-95f4-dd7862cd9d49" "11d20102-507e-4d1d-964a-36213a4febf9"
-			"1415be92-972e-471b-b5ee-654b9fad3ad1" "15dd65bd-6625-40b7-9d1f-abb9e2a05654"
-			"18e9d381-b6b1-44ea-beb1-983aa549a22e" "1e66651e-b5a2-4151-96d5-f217289cba01"
-			"27865e15-c1b1-4575-b339-ad26999026db" "2a44a26d-eced-40c0-818a-9477599fce5f"
-			"2aa18271-d1cc-4216-9e3b-518503d28b1e" "2b5b7fd6-b1a2-49bf-aab6-5b1c87c9f917"
-			"2b827084-8859-474f-a103-d6607ab4e9e8" "344edcaa-0d81-4ce4-8433-12e000022865"
-			"34e6f2ae-d271-4a6d-9148-a06a796ccc05" "3976b9c6-a2f9-4b89-8837-fd52cedc08c2"
-			"3fe64785-4190-47db-aa36-87476a6e5c13" "41c953aa-b18a-4534-9eed-07ae81e505c8"
-			"4c87814d-decb-4363-aa51-22f1ba0b2e83" "526fa485-84e1-4b74-a459-d6ecc0f99792"
-			"58de92e7-a18c-4ec6-9f19-0baeb9f1a7ce" "5b97db7a-4164-418f-9c04-04a608989e9c"
-			"5f34e1aa-08af-41a9-a799-efbc22d53be0" "6b1eab44-50c5-47f2-bf9d-405fb5951315"
-			"6b80f9cc-6519-4531-b049-62255c324bde" "6f34b651-8265-4936-bcb7-e9f93cdef111"
-			"6f877a3f-5da5-4e92-a04b-5faa990fa554" "71b55398-e9aa-4236-9349-138c05fc5ecc"
-			"7b1210e9-b041-4146-8b01-f5020d9020fc" "7fd5363e-1276-47f9-8d7f-317cc02bede9"
-			"7fea649c-8e9a-4531-8239-7e436af9c5fb" "87cdfe22-c546-4da0-bbc8-c1aa35c926c6"
-			"87fcfdf4-9dd2-46e6-9754-b1dc663e968a" "88424130-d1d6-400c-9226-728c7b467b21"
-			"8d51b46b-3f88-4f09-8e44-d0e099c9e433" "8da27b7f-3810-429b-8c5d-0d9b191ea7c9"
-			"8edbd683-d226-4095-b4a7-38849f22f4d9" "93ba5909-ee23-40d2-b411-65a09f0cf3cf"
-			"972ef31e-422e-4099-aeae-4df2cf894b64" "9e55c3ca-c4c1-484d-b41f-b9b2357eaa81"
-			"a6621da0-32c4-4600-b828-3f4d4bad709a" "a8be2c7a-2803-4e23-ad9a-59a545425918"
-			"a9d73a7b-c99c-4d07-8c0e-da81a799d630" "aa3dcdc2-4833-4b17-aac2-c16fb8ad9761"
-			"abe64d09-cd59-4250-a35f-bfa4c9a214ee" "b11a1149-af1e-4d2e-b9ef-9558fb40c6e9"
-			"bc4c3532-7cfe-4612-9164-379d19874e78" "c56cc5a1-785f-4d69-84d4-8277c5583f4a"
-			"cba910e3-1c08-4d2c-a2bd-d4a8ca4fd90b" "d54064f6-3b62-45b4-93f7-8daa0b269215"
-			"d6a9306f-b1fa-4bc1-b6ad-f07384e87bff" "e144545a-90e8-43eb-b4f2-3994bace0107"
-			"e44377cd-47f4-4fdf-903d-488ba51ba0b8" "e55064a9-b743-4726-9d42-f473cc4cbe97"
-			"e5c374f8-6e66-412e-8355-5d0fa790a1c5" "e8cc8498-c0dc-4fac-8fb8-41a4cfe2200c"
-			"f92da799-fec1-4273-a1a9-3e7b2bbe1838" "fffce44d-6a2f-431a-a7e0-1c503bf34ef7"
 		)
 	)
 )

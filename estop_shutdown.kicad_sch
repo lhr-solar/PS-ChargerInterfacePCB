@@ -803,6 +803,7 @@
 		)
 		(property "Footprint" ""
 			(at 36.83 97.79 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -887,6 +888,7 @@
 		)
 		(property "Footprint" ""
 			(at 36.83 77.47 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -971,6 +973,7 @@
 		)
 		(property "Footprint" ""
 			(at 33.02 45.72 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1295,6 +1298,7 @@
 		)
 		(property "Footprint" ""
 			(at 33.02 25.4 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
