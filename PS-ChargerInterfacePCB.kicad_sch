@@ -162,6 +162,146 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Connector:Conn_01x01_Pin"
+			(pin_names
+				(offset 1.016)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J"
+				(at 0 2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Conn_01x01_Pin"
+				(at 0 -2.54 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Generic connector, single row, 01x01, script generated"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "connector"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "Conn_01x01_Pin_1_1"
+				(rectangle
+					(start 0.8636 0.127)
+					(end 0 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type outline)
+					)
+				)
+				(polyline
+					(pts
+						(xy 1.27 0) (xy 0.8636 0)
+					)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at 5.08 0 180)
+					(length 3.81)
+					(name "Pin_1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:TestPoint"
 			(pin_numbers
 				(hide yes)
@@ -2814,7 +2954,7 @@
 	)
 	(rectangle
 		(start 242.57 13.97)
-		(end 281.94 81.026)
+		(end 282.956 81.28)
 		(stroke
 			(width 0)
 			(type default)
@@ -2826,7 +2966,7 @@
 	)
 	(rectangle
 		(start 13.716 70.104)
-		(end 104.14 149.352)
+		(end 105.156 149.352)
 		(stroke
 			(width 0)
 			(type default)
@@ -2850,7 +2990,7 @@
 	)
 	(rectangle
 		(start 242.57 83.82)
-		(end 278.638 129.54)
+		(end 282.956 115.062)
 		(stroke
 			(width 0)
 			(type default)
@@ -2909,8 +3049,8 @@
 		(uuid "e3c8df90-0222-4978-bd4f-13ca71123961")
 	)
 	(rectangle
-		(start 106.172 70.104)
-		(end 183.388 157.226)
+		(start 107.442 70.104)
+		(end 184.658 157.226)
 		(stroke
 			(width 0)
 			(type default)
@@ -3002,7 +3142,7 @@
 	)
 	(text "MCU"
 		(exclude_from_sim no)
-		(at 109.728 72.898 0)
+		(at 110.998 72.898 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3021,7 +3161,7 @@
 		(uuid "f2932b7b-56f2-4037-8d95-e7c5d3372f21")
 	)
 	(junction
-		(at 119.38 26.67)
+		(at 116.84 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "19177b73-c877-4684-9de8-784b4e2d93e1")
@@ -3045,10 +3185,28 @@
 		(uuid "3a424825-fbd5-4a46-a7c1-9b7343f4d4e8")
 	)
 	(junction
+		(at 54.61 34.29)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "40a979ee-f310-43b3-bc5e-fea41f4c2b7a")
+	)
+	(junction
+		(at 139.7 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "52f10e6f-e3f9-4bdf-ad49-94056b2d7fbe")
+	)
+	(junction
 		(at 86.36 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5e0636cc-3749-4855-8df7-71d2a6936f80")
+	)
+	(junction
+		(at 16.51 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "62369a7b-7b56-4b3a-aa8e-fa44d5203427")
 	)
 	(junction
 		(at 76.2 87.63)
@@ -3063,10 +3221,22 @@
 		(uuid "78135488-972e-49d9-adae-fc6b9551e7f7")
 	)
 	(junction
+		(at 41.91 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "7cc46755-45e5-442f-95ff-2d884363a08b")
+	)
+	(junction
 		(at 44.45 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "8afcf148-5406-4900-a061-086a4ee385fb")
+	)
+	(junction
+		(at 86.36 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a74e6273-e334-447e-9758-e882d4ac083a")
 	)
 	(junction
 		(at 86.36 26.67)
@@ -3081,15 +3251,15 @@
 		(uuid "f2192142-e1d8-45de-aacb-9397c87ac9fb")
 	)
 	(no_connect
-		(at 127 86.36)
+		(at 128.27 86.36)
 		(uuid "1bf6ca03-82a7-4472-af18-d91e5843ad52")
 	)
 	(no_connect
-		(at 167.64 100.33)
+		(at 168.91 100.33)
 		(uuid "49a895c6-0658-45d5-9b5e-693a1e8b55ba")
 	)
 	(no_connect
-		(at 127 124.46)
+		(at 128.27 124.46)
 		(uuid "4aa7b1d9-4555-4f1e-a6b7-5b90f94c79fe")
 	)
 	(no_connect
@@ -3101,27 +3271,27 @@
 		(uuid "627dd592-0c58-4713-9658-4967629e9509")
 	)
 	(no_connect
-		(at 167.64 96.52)
+		(at 168.91 96.52)
 		(uuid "642852a7-2643-423c-a8b2-76a031c396c6")
 	)
 	(no_connect
-		(at 167.64 88.9)
+		(at 168.91 88.9)
 		(uuid "84c35131-4557-4617-a20b-5808e30a81fd")
 	)
 	(no_connect
-		(at 167.64 92.71)
+		(at 168.91 92.71)
 		(uuid "af9f964f-0458-4a48-88ab-e225f71d38a8")
 	)
 	(no_connect
-		(at 127 90.17)
+		(at 128.27 90.17)
 		(uuid "b1b5f8e4-a2b5-41ba-9987-b27682b83659")
 	)
 	(no_connect
-		(at 127 105.41)
+		(at 128.27 105.41)
 		(uuid "caf9ccd7-a779-4aa6-a7be-4b319c284a67")
 	)
 	(no_connect
-		(at 127 128.27)
+		(at 128.27 128.27)
 		(uuid "ebf0fcd2-e4ff-47db-9813-2f0b729ffc57")
 	)
 	(wire
@@ -3156,26 +3326,6 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 59.69) (xy 16.51 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "06a4ee4f-aa7e-4498-b5aa-249d9a4812b9")
-	)
-	(wire
-		(pts
-			(xy 262.89 120.65) (xy 251.46 120.65)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "075c4052-91d8-4058-8845-d38fa6557264")
-	)
-	(wire
-		(pts
 			(xy 167.64 31.75) (xy 172.72 31.75)
 		)
 		(stroke
@@ -3183,6 +3333,16 @@
 			(type default)
 		)
 		(uuid "0a353a6f-a296-483c-9500-c020ebbaa68d")
+	)
+	(wire
+		(pts
+			(xy 256.54 107.95) (xy 260.35 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0c911a6a-73a4-4e9d-9bca-e412f7eec87d")
 	)
 	(wire
 		(pts
@@ -3216,16 +3376,6 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 45.72) (xy 44.45 45.72)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "16a2e18f-018e-4430-921f-1c3b2bdd9eb8")
-	)
-	(wire
-		(pts
 			(xy 66.04 163.83) (xy 82.55 163.83)
 		)
 		(stroke
@@ -3236,7 +3386,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 147.32) (xy 123.19 149.86)
+			(xy 124.46 147.32) (xy 124.46 149.86)
 		)
 		(stroke
 			(width 0)
@@ -3246,7 +3396,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 26.67) (xy 119.38 26.67)
+			(xy 113.03 26.67) (xy 123.19 26.67)
 		)
 		(stroke
 			(width 0)
@@ -3266,7 +3416,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 138.43) (xy 176.53 138.43)
+			(xy 168.91 138.43) (xy 177.8 138.43)
 		)
 		(stroke
 			(width 0)
@@ -3306,17 +3456,7 @@
 	)
 	(wire
 		(pts
-			(xy 256.54 109.22) (xy 251.46 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2a28c4ae-89ea-4cdf-8e2d-27edac59aa68")
-	)
-	(wire
-		(pts
-			(xy 118.11 113.03) (xy 127 113.03)
+			(xy 119.38 113.03) (xy 128.27 113.03)
 		)
 		(stroke
 			(width 0)
@@ -3346,7 +3486,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 143.51) (xy 127 143.51)
+			(xy 123.19 143.51) (xy 128.27 143.51)
 		)
 		(stroke
 			(width 0)
@@ -3386,13 +3526,23 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 119.38) (xy 167.64 119.38)
+			(xy 179.07 119.38) (xy 168.91 119.38)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "35e44e0a-88a7-4f1a-9633-e4f18a19b85d")
+	)
+	(wire
+		(pts
+			(xy 248.92 104.14) (xy 260.35 104.14)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "364eef03-6bac-4914-9cdb-306f9ab59588")
 	)
 	(wire
 		(pts
@@ -3406,17 +3556,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 101.6) (xy 257.81 101.6)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3712e2d1-9524-4d4d-aca0-b6c910f6a55c")
-	)
-	(wire
-		(pts
-			(xy 247.65 97.79) (xy 257.81 97.79)
+			(xy 249.936 100.33) (xy 260.35 100.33)
 		)
 		(stroke
 			(width 0)
@@ -3426,7 +3566,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 85.09) (xy 167.64 85.09)
+			(xy 180.34 85.09) (xy 168.91 85.09)
 		)
 		(stroke
 			(width 0)
@@ -3456,7 +3596,7 @@
 	)
 	(wire
 		(pts
-			(xy 16.51 33.02) (xy 21.59 33.02)
+			(xy 16.51 34.29) (xy 21.59 34.29)
 		)
 		(stroke
 			(width 0)
@@ -3476,7 +3616,7 @@
 	)
 	(wire
 		(pts
-			(xy 175.26 104.14) (xy 167.64 104.14)
+			(xy 176.53 104.14) (xy 168.91 104.14)
 		)
 		(stroke
 			(width 0)
@@ -3506,7 +3646,7 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 90.17) (xy 257.81 90.17)
+			(xy 252.73 92.71) (xy 260.35 92.71)
 		)
 		(stroke
 			(width 0)
@@ -3536,16 +3676,6 @@
 	)
 	(wire
 		(pts
-			(xy 34.29 60.96) (xy 34.29 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "423a9df4-f791-46f0-affd-f7eda760a573")
-	)
-	(wire
-		(pts
 			(xy 259.08 30.48) (xy 250.19 30.48)
 		)
 		(stroke
@@ -3566,7 +3696,7 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 120.65) (xy 127 120.65)
+			(xy 120.65 120.65) (xy 128.27 120.65)
 		)
 		(stroke
 			(width 0)
@@ -3606,7 +3736,7 @@
 	)
 	(wire
 		(pts
-			(xy 110.49 97.79) (xy 127 97.79)
+			(xy 111.76 97.79) (xy 128.27 97.79)
 		)
 		(stroke
 			(width 0)
@@ -3636,13 +3766,13 @@
 	)
 	(wire
 		(pts
-			(xy 125.73 109.22) (xy 127 109.22)
+			(xy 252.73 96.52) (xy 260.35 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "492282b8-411e-4ee7-a674-9d2eb7a60904")
+		(uuid "48aee257-d0cf-4aa3-8ec9-cfa1e47c5c23")
 	)
 	(wire
 		(pts
@@ -3726,7 +3856,17 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 116.84) (xy 127 116.84)
+			(xy 41.91 26.67) (xy 41.91 29.21)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5459aa3c-0a86-4154-bc10-60a65832be9c")
+	)
+	(wire
+		(pts
+			(xy 120.65 116.84) (xy 128.27 116.84)
 		)
 		(stroke
 			(width 0)
@@ -3746,7 +3886,7 @@
 	)
 	(wire
 		(pts
-			(xy 16.51 33.02) (xy 16.51 35.56)
+			(xy 16.51 34.29) (xy 16.51 35.56)
 		)
 		(stroke
 			(width 0)
@@ -3776,7 +3916,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 139.7) (xy 127 139.7)
+			(xy 115.57 139.7) (xy 128.27 139.7)
 		)
 		(stroke
 			(width 0)
@@ -3846,7 +3986,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 127) (xy 167.64 127)
+			(xy 177.8 127) (xy 168.91 127)
 		)
 		(stroke
 			(width 0)
@@ -3866,7 +4006,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 142.24) (xy 93.98 142.24)
+			(xy 88.9 140.97) (xy 93.98 140.97)
 		)
 		(stroke
 			(width 0)
@@ -3916,17 +4056,7 @@
 	)
 	(wire
 		(pts
-			(xy 251.46 93.98) (xy 257.81 93.98)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6f5898cb-d7ef-4655-8c07-fc2f898b899c")
-	)
-	(wire
-		(pts
-			(xy 118.11 101.6) (xy 127 101.6)
+			(xy 119.38 101.6) (xy 128.27 101.6)
 		)
 		(stroke
 			(width 0)
@@ -3936,7 +4066,7 @@
 	)
 	(wire
 		(pts
-			(xy 167.64 142.24) (xy 176.53 142.24)
+			(xy 168.91 142.24) (xy 177.8 142.24)
 		)
 		(stroke
 			(width 0)
@@ -3963,6 +4093,16 @@
 			(type default)
 		)
 		(uuid "75b24558-5538-4a28-a729-59c007e7473e")
+	)
+	(wire
+		(pts
+			(xy 49.53 34.29) (xy 54.61 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "761b29aa-2474-4aa8-b980-d619d5c7d132")
 	)
 	(wire
 		(pts
@@ -4056,7 +4196,7 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 107.95) (xy 167.64 107.95)
+			(xy 180.34 107.95) (xy 168.91 107.95)
 		)
 		(stroke
 			(width 0)
@@ -4096,7 +4236,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 81.28) (xy 123.19 82.55)
+			(xy 124.46 81.28) (xy 124.46 82.55)
 		)
 		(stroke
 			(width 0)
@@ -4126,7 +4266,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 130.81) (xy 167.64 130.81)
+			(xy 177.8 130.81) (xy 168.91 130.81)
 		)
 		(stroke
 			(width 0)
@@ -4156,7 +4296,7 @@
 	)
 	(wire
 		(pts
-			(xy 114.3 135.89) (xy 127 135.89)
+			(xy 115.57 135.89) (xy 128.27 135.89)
 		)
 		(stroke
 			(width 0)
@@ -4196,7 +4336,7 @@
 	)
 	(wire
 		(pts
-			(xy 123.19 82.55) (xy 127 82.55)
+			(xy 124.46 82.55) (xy 128.27 82.55)
 		)
 		(stroke
 			(width 0)
@@ -4256,7 +4396,7 @@
 	)
 	(wire
 		(pts
-			(xy 121.92 132.08) (xy 127 132.08)
+			(xy 123.19 132.08) (xy 128.27 132.08)
 		)
 		(stroke
 			(width 0)
@@ -4286,16 +4426,6 @@
 	)
 	(wire
 		(pts
-			(xy 276.86 109.22) (xy 265.43 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "af2d1b32-5f07-4cd5-8051-598f83d3be25")
-	)
-	(wire
-		(pts
 			(xy 205.74 26.67) (xy 190.5 26.67)
 		)
 		(stroke
@@ -4306,7 +4436,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 26.67) (xy 44.45 26.67)
+			(xy 40.64 26.67) (xy 41.91 26.67)
 		)
 		(stroke
 			(width 0)
@@ -4326,7 +4456,7 @@
 	)
 	(wire
 		(pts
-			(xy 113.03 93.98) (xy 127 93.98)
+			(xy 114.3 93.98) (xy 128.27 93.98)
 		)
 		(stroke
 			(width 0)
@@ -4356,7 +4486,7 @@
 	)
 	(wire
 		(pts
-			(xy 176.53 134.62) (xy 167.64 134.62)
+			(xy 177.8 134.62) (xy 168.91 134.62)
 		)
 		(stroke
 			(width 0)
@@ -4506,16 +4636,6 @@
 	)
 	(wire
 		(pts
-			(xy 119.38 26.67) (xy 123.19 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cb242293-5ef1-4b86-92b8-c886e0d02ec8")
-	)
-	(wire
-		(pts
 			(xy 212.09 41.91) (xy 220.98 41.91)
 		)
 		(stroke
@@ -4536,7 +4656,7 @@
 	)
 	(wire
 		(pts
-			(xy 88.9 139.7) (xy 93.98 139.7)
+			(xy 88.9 138.43) (xy 93.98 138.43)
 		)
 		(stroke
 			(width 0)
@@ -4616,7 +4736,7 @@
 	)
 	(wire
 		(pts
-			(xy 180.34 115.57) (xy 167.64 115.57)
+			(xy 181.61 115.57) (xy 168.91 115.57)
 		)
 		(stroke
 			(width 0)
@@ -4656,7 +4776,7 @@
 	)
 	(wire
 		(pts
-			(xy 109.22 109.22) (xy 118.11 109.22)
+			(xy 118.11 109.22) (xy 128.27 109.22)
 		)
 		(stroke
 			(width 0)
@@ -4666,23 +4786,13 @@
 	)
 	(wire
 		(pts
-			(xy 179.07 111.76) (xy 167.64 111.76)
+			(xy 180.34 111.76) (xy 168.91 111.76)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "db380173-6e68-4bfb-82f8-2dde65d13abb")
-	)
-	(wire
-		(pts
-			(xy 41.91 63.5) (xy 41.91 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "dba75276-f041-4b53-8d47-edb1f8af7b84")
 	)
 	(wire
 		(pts
@@ -4696,7 +4806,7 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 146.05) (xy 167.64 146.05)
+			(xy 179.07 146.05) (xy 168.91 146.05)
 		)
 		(stroke
 			(width 0)
@@ -4806,33 +4916,13 @@
 	)
 	(wire
 		(pts
-			(xy 26.67 60.96) (xy 26.67 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f287b35d-ec1c-469d-8165-e71b7a51940b")
-	)
-	(wire
-		(pts
-			(xy 123.19 147.32) (xy 127 147.32)
+			(xy 124.46 147.32) (xy 128.27 147.32)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
 		(uuid "f2aa599d-e5de-44c9-a041-210f7de8d320")
-	)
-	(wire
-		(pts
-			(xy 26.67 48.26) (xy 26.67 49.53)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f74a2104-73b1-4ba5-8242-7a9b526c7a5c")
 	)
 	(wire
 		(pts
@@ -4846,7 +4936,17 @@
 	)
 	(wire
 		(pts
-			(xy 177.8 123.19) (xy 167.64 123.19)
+			(xy 101.6 105.41) (xy 90.17 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fc9de49b-db12-4433-92cc-705f69083057")
+	)
+	(wire
+		(pts
+			(xy 179.07 123.19) (xy 168.91 123.19)
 		)
 		(stroke
 			(width 0)
@@ -4856,17 +4956,17 @@
 	)
 	(wire
 		(pts
-			(xy 21.59 45.72) (xy 20.32 45.72)
+			(xy 41.91 26.67) (xy 44.45 26.67)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fd3f630f-271b-4a0d-9066-43f455352e17")
+		(uuid "fd3d8a09-d282-4f5f-892e-280aedfd3cd6")
 	)
 	(image
-		(at 211.074 132.588)
-		(scale 0.816385)
+		(at 212.2775 128.0473)
+		(scale 0.935784)
 		(uuid "0d6ee284-1047-46c3-8048-7b8292e656ee")
 		(data "iVBORw0KGgoAAAANSUhEUgAAAp4AAAKyCAYAAAB8GN7eAAAABHNCSVQICAgIfAhkiAAAIABJREFU"
 			"eJzs3Xd8VHW+//HX9MmkNxJICB2kg8AK2HGtSBRWwLWwq+v1ul7R/emKelcRLKAXdVfEK6LYWCWo"
@@ -6364,7 +6464,7 @@
 		)
 	)
 	(label "BUZ-"
-		(at 251.46 93.98 0)
+		(at 252.73 96.52 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6372,16 +6472,6 @@
 			(justify left bottom)
 		)
 		(uuid "03398e90-7982-409b-b3c5-aaf99b2a7ce4")
-	)
-	(label "Vin"
-		(at 20.32 45.72 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "05b9db74-7ca6-4ea8-b8ee-75cbc4e0000c")
 	)
 	(label "Charger_CAN_H"
 		(at 45.72 118.11 0)
@@ -6414,7 +6504,7 @@
 		(uuid "0b22f517-8e95-42ce-8f3e-998734e463d4")
 	)
 	(label "ESTOP_SENSE"
-		(at 113.03 93.98 0)
+		(at 114.3 93.98 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6434,7 +6524,7 @@
 		(uuid "0eac9593-a36d-4025-ac2b-dcb5911091b8")
 	)
 	(label "USB_D+"
-		(at 176.53 127 180)
+		(at 177.8 127 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6454,7 +6544,7 @@
 		(uuid "12b11d98-7779-4178-9816-feeb3a752b75")
 	)
 	(label "DEBUG_LED"
-		(at 179.07 85.09 180)
+		(at 180.34 85.09 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6464,7 +6554,7 @@
 		(uuid "13e0346a-531c-4ad6-93e9-a549f14ed3fb")
 	)
 	(label "LED_CHARGE"
-		(at 180.34 115.57 180)
+		(at 181.61 115.57 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6514,7 +6604,7 @@
 		(uuid "1b1eadae-b67b-41dd-b6fc-4f488de616a2")
 	)
 	(label "CHARGER_TX"
-		(at 114.3 139.7 0)
+		(at 115.57 139.7 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6524,7 +6614,7 @@
 		(uuid "1f1616d6-d0f1-4d92-a182-67c143f8aa75")
 	)
 	(label "ELCON_TX"
-		(at 177.8 123.19 180)
+		(at 179.07 123.19 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6553,8 +6643,18 @@
 		)
 		(uuid "2945ee66-3b87-4f3e-a583-f78fe7e85045")
 	)
+	(label "BUZ_DRAIN"
+		(at 248.92 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2e694713-8567-42f1-9645-284230a91138")
+	)
 	(label "SPI_SCK"
-		(at 118.11 101.6 0)
+		(at 119.38 101.6 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6572,16 +6672,6 @@
 			(justify right bottom)
 		)
 		(uuid "349c0208-2651-417c-8321-9555deb2be46")
-	)
-	(label "5V_USB"
-		(at 44.45 45.72 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "3805b6db-87ba-461a-b5e8-44deefc9688a")
 	)
 	(label "MCP"
 		(at 45.72 182.88 180)
@@ -6623,16 +6713,6 @@
 		)
 		(uuid "3d49b130-670a-4f67-80ae-1c3056610a88")
 	)
-	(label "BUZ_SOURCE"
-		(at 245.11 101.6 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3eedebe8-326d-4f52-a09b-f9fc13983a0d")
-	)
 	(label "SPI_RES"
 		(at 73.66 120.65 0)
 		(effects
@@ -6644,7 +6724,7 @@
 		(uuid "40d3fb93-0cef-4b2c-a3e4-82f75a6eabbe")
 	)
 	(label "BUZ-"
-		(at 93.98 142.24 180)
+		(at 93.98 140.97 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6704,7 +6784,7 @@
 		(uuid "4c2cf5f7-0442-44d9-b9a3-25a4f5ae6a82")
 	)
 	(label "SOFT_SHUTDOWN"
-		(at 110.49 97.79 0)
+		(at 111.76 97.79 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6714,7 +6794,7 @@
 		(uuid "4db69438-c3d3-4221-9029-cc8ef8581abe")
 	)
 	(label "SPI_DC"
-		(at 119.38 116.84 0)
+		(at 120.65 116.84 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6734,7 +6814,7 @@
 		(uuid "51a5773d-b8ca-4dd9-aaaf-8dcdf8380b8d")
 	)
 	(label "ELCON_RX"
-		(at 177.8 119.38 180)
+		(at 179.07 119.38 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6744,7 +6824,7 @@
 		(uuid "5253d357-e986-48c5-b756-32df8c2626b4")
 	)
 	(label "SPI_MOSI"
-		(at 109.22 109.22 0)
+		(at 118.11 109.22 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6764,7 +6844,7 @@
 		(uuid "605ee0e2-b28d-41c4-9cf5-7c9deca19d3f")
 	)
 	(label "BUZ+"
-		(at 93.98 139.7 180)
+		(at 93.98 138.43 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6774,7 +6854,7 @@
 		(uuid "607c4daf-3e60-4afa-b94e-4ea4bd8325dc")
 	)
 	(label "BUZ_PWM"
-		(at 177.8 146.05 180)
+		(at 179.07 146.05 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6794,7 +6874,7 @@
 		(uuid "61bb8617-8e19-432d-ab72-feeea927d611")
 	)
 	(label "BUZ+"
-		(at 251.46 90.17 0)
+		(at 252.73 92.71 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6804,7 +6884,7 @@
 		(uuid "62e4e77a-b45f-42e5-84c9-6e95bfd5d942")
 	)
 	(label "EVSE_R"
-		(at 176.53 142.24 180)
+		(at 177.8 142.24 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6894,7 +6974,7 @@
 		(uuid "70676ca6-e77b-4719-9df3-8f6ee708d3eb")
 	)
 	(label "EVSE_G"
-		(at 176.53 138.43 180)
+		(at 177.8 138.43 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6924,7 +7004,7 @@
 		(uuid "7e14a6aa-a1de-4169-96c1-62654aeb3f38")
 	)
 	(label "MCP"
-		(at 121.92 132.08 0)
+		(at 123.19 132.08 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6944,7 +7024,7 @@
 		(uuid "802d2fd9-c0c9-4995-b70b-62caedeeab80")
 	)
 	(label "USB_D-"
-		(at 176.53 130.81 180)
+		(at 177.8 130.81 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6954,7 +7034,7 @@
 		(uuid "80c3cfb4-1d7e-4d27-8d20-70a83479658c")
 	)
 	(label "SPI_CS"
-		(at 119.38 120.65 0)
+		(at 120.65 120.65 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6984,7 +7064,7 @@
 		(uuid "87991e6d-ba31-42e2-be49-accee7491a7a")
 	)
 	(label "EVSE_B"
-		(at 176.53 134.62 180)
+		(at 177.8 134.62 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6994,7 +7074,7 @@
 		(uuid "883706f5-300e-4c49-ae27-822a14e3b99a")
 	)
 	(label "BUZ_PWM"
-		(at 247.65 97.79 0)
+		(at 249.936 100.33 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7002,26 +7082,6 @@
 			(justify left bottom)
 		)
 		(uuid "892cb948-d7ea-4f92-910c-1269216be7f9")
-	)
-	(label "12v5"
-		(at 83.82 26.67 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "8c2d9284-4afc-4c74-9074-0647d43ad143")
-	)
-	(label "BUZ_PWM"
-		(at 262.89 120.65 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "8d3ce003-ff18-418d-89b2-af9d826e8d57")
 	)
 	(label "FAULT-"
 		(at 101.6 85.09 180)
@@ -7053,28 +7113,8 @@
 		)
 		(uuid "a2185102-b783-4d5e-a372-450e7ce2962b")
 	)
-	(label "12v5"
-		(at 16.51 59.69 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "a436deaf-57df-463b-ac9e-ba0acaec7deb")
-	)
-	(label "BUZ_SOURCE"
-		(at 276.86 109.22 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "abeb8b90-b67b-4cf2-8069-23a140c3414a")
-	)
 	(label "SPI_RES"
-		(at 118.11 113.03 0)
+		(at 119.38 113.03 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7084,7 +7124,7 @@
 		(uuid "aebddf1d-ec49-4f26-8a0e-f509b865530e")
 	)
 	(label "MPP"
-		(at 121.92 143.51 0)
+		(at 123.19 143.51 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7092,16 +7132,6 @@
 			(justify left bottom)
 		)
 		(uuid "b1f8db49-1138-43d2-ad02-1216e57e59fa")
-	)
-	(label "BUZ-"
-		(at 256.54 109.22 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b55fb8b6-697a-4ffc-a19a-e16ab15e2d65")
 	)
 	(label "MPP"
 		(at 45.72 186.69 180)
@@ -7144,7 +7174,7 @@
 		(uuid "be992865-5a65-48dd-bc0f-e5175509053c")
 	)
 	(label "LED_HV"
-		(at 175.26 104.14 180)
+		(at 176.53 104.14 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7162,6 +7192,16 @@
 			(justify left bottom)
 		)
 		(uuid "c4aad4ce-c3ab-48a1-b51d-7d8c032bbf59")
+	)
+	(label "BUZ_PWM"
+		(at 101.6 105.41 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "c6e15d0d-ce7c-4944-8595-1f469c8dc775")
 	)
 	(label "EVSE_R"
 		(at 101.6 95.25 180)
@@ -7194,7 +7234,7 @@
 		(uuid "cfb857b9-85ec-4d65-9391-15f421935ba4")
 	)
 	(label "LED_FAULT"
-		(at 179.07 111.76 180)
+		(at 180.34 111.76 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7284,7 +7324,7 @@
 		(uuid "ed1a1d1d-9bb4-45b9-b762-2a3e8b611d37")
 	)
 	(label "LED_HEART"
-		(at 179.07 107.95 180)
+		(at 180.34 107.95 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7314,7 +7354,7 @@
 		(uuid "f354dfed-4d32-472a-a16d-95ab54db6ad3")
 	)
 	(label "CHARGER_RX"
-		(at 114.3 135.89 0)
+		(at 115.57 135.89 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7374,8 +7414,8 @@
 		(uuid "fe8aab48-a96d-4b9a-a4de-12db58d59b7c")
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 36.83 45.72 180)
+		(lib_id "Connector:Conn_01x01_Pin")
+		(at 85.09 105.41 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -7383,31 +7423,29 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "07fbb73d-f525-4381-978d-9fda89e6cc42")
-		(property "Reference" "TP3"
-			(at 35.56 48.514 0)
+		(uuid "05f6f420-4f3e-49f5-afd0-d5cb62746648")
+		(property "Reference" "J9"
+			(at 82.042 104.902 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "5_USB"
-			(at 38.862 51.054 0)
+		(property "Value" "BUZ_PWM"
+			(at 83.312 106.934 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "LHRS_Connectors:5754"
-			(at 31.75 45.72 0)
+		(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_1x01_P2.54mm_Vertical"
+			(at 85.09 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7418,7 +7456,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 31.75 45.72 0)
+			(at 85.09 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7428,8 +7466,8 @@
 				)
 			)
 		)
-		(property "Description" "test point"
-			(at 36.83 45.72 0)
+		(property "Description" "Generic connector, single row, 01x01, script generated"
+			(at 85.09 105.41 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7440,12 +7478,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "61d1c241-8ba9-4ff3-af32-c6bc0540db1a")
+			(uuid "a1946d4f-36ae-4776-90b5-d0df00e5a7d9")
 		)
 		(instances
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
-					(reference "TP3")
+					(reference "J9")
 					(unit 1)
 				)
 			)
@@ -7604,83 +7642,6 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
 					(reference "#PWR06")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+15V")
-		(at 34.29 60.96 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "09f1e1f3-bfb1-4acb-830d-2e31cb65b0a1")
-		(property "Reference" "#PWR049"
-			(at 34.29 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 33.528 57.404 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 34.29 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 34.29 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+15V\""
-			(at 34.29 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "686bb004-0bf8-4f44-ace5-2d20823fcfe0")
-		)
-		(instances
-			(project "PS-ChargerInterfacePCB"
-				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
-					(reference "#PWR049")
 					(unit 1)
 				)
 			)
@@ -8009,83 +7970,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 26.67 60.96 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "18d47e97-9d12-48bc-bcd9-f4acad4a6674")
-		(property "Reference" "#PWR048"
-			(at 26.67 64.77 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+5V"
-			(at 26.416 57.404 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Package_LCC:PLCC-84_29.3x29.3mm_P1.27mm"
-			(at 26.67 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 26.67 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 26.67 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f94da78f-0f72-4f63-a3a1-0e2cbb76f6f0")
-		)
-		(instances
-			(project "PS-ChargerInterfacePCB"
-				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
-					(reference "#PWR048")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 38.1 96.52 0)
 		(unit 1)
@@ -8163,83 +8047,6 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
 					(reference "#PWR07")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 41.91 63.5 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "1ef7c01b-ca87-4673-8279-fb376f443fc3")
-		(property "Reference" "#PWR051"
-			(at 41.91 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 44.704 63.5 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 41.91 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 41.91 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 41.91 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "a61911b3-91e2-4679-9fc2-04b0582346bf")
-		)
-		(instances
-			(project "PS-ChargerInterfacePCB"
-				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
-					(reference "#PWR051")
 					(unit 1)
 				)
 			)
@@ -8504,162 +8311,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 34.29 62.23 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "2bda3b48-f938-4763-8e19-9c6c8c673c05")
-		(property "Reference" "TP14"
-			(at 39.878 65.278 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3V3"
-			(at 38.354 62.738 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "LHRS_Connectors:5754"
-			(at 29.21 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 29.21 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 34.29 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f06ac5df-5845-4878-9d8a-7fd42a754fe5")
-		)
-		(instances
-			(project "PS-ChargerInterfacePCB"
-				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
-					(reference "TP14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 265.43 109.22 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "317a1f88-cac4-493a-8c2e-eef311e1770b")
-		(property "Reference" "TP17"
-			(at 264.414 112.522 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BUZ_SOURCE"
-			(at 268.478 114.554 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "LHRS_Connectors:5754"
-			(at 260.35 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 260.35 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 265.43 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "8427ba61-60b8-43b3-a5e7-183a2e8e1b4d")
-		)
-		(instances
-			(project "PS-ChargerInterfacePCB"
-				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
-					(reference "TP17")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 167.64 44.45 0)
 		(unit 1)
@@ -8744,7 +8395,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 41.91 62.23 0)
+		(at 116.84 26.67 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8752,9 +8403,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "40e7595c-a6c7-4311-89e6-1d932d3748f7")
-		(property "Reference" "TP15"
-			(at 39.116 55.372 0)
+		(uuid "3a9292ef-f7b0-4742-9352-772b3ecdfff2")
+		(property "Reference" "TP13"
+			(at 119.38 32.004 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8764,8 +8415,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "GND"
-			(at 40.132 57.15 0)
+		(property "Value" "5V"
+			(at 119.634 28.448 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8776,7 +8427,7 @@
 			)
 		)
 		(property "Footprint" "LHRS_Connectors:5754"
-			(at 46.99 62.23 0)
+			(at 111.76 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8787,7 +8438,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 46.99 62.23 0)
+			(at 111.76 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8798,7 +8449,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 41.91 62.23 0)
+			(at 116.84 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8809,90 +8460,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "4b8e3dc4-6349-4258-aedf-44c24aad777a")
+			(uuid "4b033559-c452-4952-975a-0c5f998c5a0c")
 		)
 		(instances
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
-					(reference "TP15")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 21.59 45.72 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "4a3347d4-c8f4-48ac-b10e-24966178f28c")
-		(property "Reference" "TP1"
-			(at 20.32 48.514 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "PRE_PP"
-			(at 24.892 50.8 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "LHRS_Connectors:5754"
-			(at 16.51 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 16.51 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 21.59 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b489e1b4-aa98-465a-9bba-0b0db9b0ea27")
-		)
-		(instances
-			(project "PS-ChargerInterfacePCB"
-				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
-					(reference "TP1")
+					(reference "TP13")
 					(unit 1)
 				)
 			)
@@ -8977,7 +8550,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 123.19 149.86 0)
+		(at 124.46 149.86 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -8988,7 +8561,7 @@
 		(fields_autoplaced yes)
 		(uuid "4d1e0250-7b67-424c-ac5b-c7148ef43feb")
 		(property "Reference" "#PWR02"
-			(at 123.19 156.21 0)
+			(at 124.46 156.21 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8999,7 +8572,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 123.19 154.94 0)
+			(at 124.46 154.94 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9009,7 +8582,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 123.19 149.86 0)
+			(at 124.46 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9020,7 +8593,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 149.86 0)
+			(at 124.46 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9031,7 +8604,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 123.19 149.86 0)
+			(at 124.46 149.86 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9402,8 +8975,9 @@
 		)
 	)
 	(symbol
-		(lib_id "power:+5V")
-		(at 119.38 26.67 0)
+		(lib_id "Connector:TestPoint")
+		(at 252.73 92.71 90)
+		(mirror x)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -9411,31 +8985,31 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "57cef69d-f130-4342-b0f7-dba49baab1a2")
-		(property "Reference" "#PWR03"
-			(at 119.38 30.48 0)
-			(hide yes)
+		(uuid "544047b9-01fe-4797-b2e1-eba4b576c0e4")
+		(property "Reference" "TP17"
+			(at 248.412 91.186 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Value" "+5V"
-			(at 119.38 21.59 0)
+		(property "Value" "BUZ+"
+			(at 248.666 93.218 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
-		(property "Footprint" "Package_LCC:PLCC-84_29.3x29.3mm_P1.27mm"
-			(at 119.38 26.67 0)
+		(property "Footprint" "LHRS_Connectors:5754"
+			(at 252.73 97.79 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9446,7 +9020,85 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 119.38 26.67 0)
+			(at 252.73 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 252.73 92.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "35026285-2b74-4a71-a1c2-70e0a74cab7d")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
+					(reference "TP17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+5V")
+		(at 116.84 26.67 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "57cef69d-f130-4342-b0f7-dba49baab1a2")
+		(property "Reference" "#PWR03"
+			(at 116.84 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+5V"
+			(at 116.84 21.59 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_LCC:PLCC-84_29.3x29.3mm_P1.27mm"
+			(at 116.84 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 116.84 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9457,7 +9109,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+5V\""
-			(at 119.38 26.67 0)
+			(at 116.84 26.67 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9552,6 +9204,84 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
 					(reference "#PWR032")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 86.36 26.67 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5ad71bda-ef9f-41f6-99e6-b2b0b4add255")
+		(property "Reference" "TP4"
+			(at 87.376 23.368 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "12v5"
+			(at 85.344 21.336 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "LHRS_Connectors:5754"
+			(at 91.44 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 91.44 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 86.36 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d8d40943-4d61-4de0-b65b-164934311cb1")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
+					(reference "TP4")
 					(unit 1)
 				)
 			)
@@ -10130,6 +9860,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 41.91 29.21 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "68c362b0-abb1-4f5c-acdc-82178d6329c1")
+		(property "Reference" "TP2"
+			(at 46.736 32.512 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "14V"
+			(at 46.736 29.972 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "LHRS_Connectors:5754"
+			(at 36.83 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 41.91 29.21 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "553565d3-cb03-438e-9d68-2a87117ed532")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
+					(reference "TP2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 26.67 143.51 0)
 		(unit 1)
@@ -10244,7 +10052,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105309-xx02_1x02_P2.50mm_Vertical"
+		(property "Footprint" "LHRS_Connectors:Molex_Nano-Fit_105309-xx02_1x02_P2.50mm_Vertical"
 			(at 62.23 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -10293,6 +10101,84 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
 					(reference "J10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 86.36 48.26 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7218e1c9-1118-472b-9e2e-0b4c988e179f")
+		(property "Reference" "TP3"
+			(at 84.836 50.292 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "5_USB"
+			(at 87.122 46.228 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "LHRS_Connectors:5754"
+			(at 86.36 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 86.36 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0a227d26-0644-4be4-abe1-b6dc26271797")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
+					(reference "TP3")
 					(unit 1)
 				)
 			)
@@ -11059,7 +10945,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105310-xx12_2x06_P2.50mm_Vertical"
+		(property "Footprint" "LHRS_Connectors:Molex_Nano-Fit_105310-xx12_2x06_P2.50mm_Vertical"
 			(at 86.36 87.63 0)
 			(hide yes)
 			(show_name no)
@@ -11132,84 +11018,6 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
 					(reference "J13")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 26.67 49.53 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "8e0e2f4c-f5fa-4d71-bca5-65328876383a")
-		(property "Reference" "TP2"
-			(at 31.496 52.832 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "14V"
-			(at 31.496 50.292 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "LHRS_Connectors:5754"
-			(at 21.59 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 21.59 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 26.67 49.53 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0ba7f58b-3df3-49e8-be5d-7040922fc304")
-		)
-		(instances
-			(project "PS-ChargerInterfacePCB"
-				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
-					(reference "TP2")
 					(unit 1)
 				)
 			)
@@ -11388,6 +11196,84 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
 					(reference "R5")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 16.51 26.67 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "9aed2afe-0a6f-4ef5-a9f1-af4ddf88ee92")
+		(property "Reference" "TP1"
+			(at 20.574 28.448 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "PRE_PP"
+			(at 21.59 31.75 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "LHRS_Connectors:5754"
+			(at 11.43 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 11.43 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 16.51 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b11e58e7-5e88-47c7-98e1-e35af3b8bfa1")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
+					(reference "TP1")
 					(unit 1)
 				)
 			)
@@ -11706,87 +11592,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 121.92 109.22 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a2630dea-a10c-4c99-a25d-061394d5f225")
-		(property "Reference" "R4"
-			(at 120.396 107.188 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "22"
-			(at 123.444 107.188 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 121.92 110.998 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 121.92 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 121.92 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "2"
-			(uuid "04d1263a-d260-4153-b599-79f283aed75a")
-		)
-		(pin "1"
-			(uuid "28f63443-b8b9-48aa-83b8-d29ebb6e2b5a")
-		)
-		(instances
-			(project "PS-ChargerInterfacePCB"
-				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
-					(reference "R4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Connector_Generic:Conn_01x02")
-		(at 83.82 139.7 0)
+		(at 83.82 138.43 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -11798,7 +11605,7 @@
 		(fields_autoplaced yes)
 		(uuid "a53f3843-9b95-4d45-9785-31ba9b086687")
 		(property "Reference" "J15"
-			(at 83.82 133.35 0)
+			(at 83.82 132.08 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11808,7 +11615,7 @@
 			)
 		)
 		(property "Value" "Buzzer"
-			(at 83.82 135.89 0)
+			(at 83.82 134.62 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11817,8 +11624,8 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105309-xx02_1x02_P2.50mm_Vertical"
-			(at 83.82 139.7 0)
+		(property "Footprint" "LHRS_Connectors:Molex_Nano-Fit_105309-xx02_1x02_P2.50mm_Vertical"
+			(at 83.82 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11829,7 +11636,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 83.82 139.7 0)
+			(at 83.82 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11840,7 +11647,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x02, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 83.82 139.7 0)
+			(at 83.82 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11873,7 +11680,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 21.59 59.69 180)
+		(at 49.53 34.29 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11881,9 +11688,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(uuid "a62d20d1-3545-47b3-ae9f-57ed9126e5d8")
-		(property "Reference" "TP4"
-			(at 20.574 62.992 0)
+		(uuid "a62253a4-9acd-4992-9900-0ef592743f3b")
+		(property "Reference" "TP15"
+			(at 53.086 39.878 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11893,8 +11700,8 @@
 				(justify left)
 			)
 		)
-		(property "Value" "12v5"
-			(at 22.606 65.024 0)
+		(property "Value" "GND"
+			(at 49.53 36.068 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11905,7 +11712,7 @@
 			)
 		)
 		(property "Footprint" "LHRS_Connectors:5754"
-			(at 16.51 59.69 0)
+			(at 44.45 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11916,7 +11723,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 16.51 59.69 0)
+			(at 44.45 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11927,7 +11734,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 21.59 59.69 0)
+			(at 49.53 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11938,12 +11745,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "1767cffe-c259-4075-b873-32b3dc3732fd")
+			(uuid "8a95c7a1-46b7-4d3c-9b7c-9218cbb6364c")
 		)
 		(instances
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
-					(reference "TP4")
+					(reference "TP15")
 					(unit 1)
 				)
 			)
@@ -12022,239 +11829,6 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
 					(reference "#PWR033")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 251.46 120.65 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a7e9ba08-4faa-4e7c-bb80-0513bcb49345")
-		(property "Reference" "TP18"
-			(at 250.444 123.952 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BUZ_DRAIN"
-			(at 254.508 125.984 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "LHRS_Connectors:5754"
-			(at 246.38 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 246.38 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 251.46 120.65 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0f6905d6-84fa-4e9b-931a-29da1ce84066")
-		)
-		(instances
-			(project "PS-ChargerInterfacePCB"
-				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
-					(reference "TP18")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 251.46 109.22 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a881193e-9c90-4e48-9c80-ab6bd2a72574")
-		(property "Reference" "TP16"
-			(at 250.444 112.522 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "BUZ_DRAIN"
-			(at 254.508 114.554 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "LHRS_Connectors:5754"
-			(at 246.38 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 246.38 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 251.46 109.22 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "b11ec6d1-b25f-4874-b251-b11279a93097")
-		)
-		(instances
-			(project "PS-ChargerInterfacePCB"
-				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
-					(reference "TP16")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+15V")
-		(at 26.67 48.26 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "af0a626b-4ee2-43eb-b880-f298c3709532")
-		(property "Reference" "#PWR047"
-			(at 26.67 52.07 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+14V"
-			(at 25.908 44.704 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Converter_ACDC:Converter_ACDC_Hahn_HS-400xx_THT"
-			(at 26.67 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 26.67 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+15V\""
-			(at 26.67 48.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "7819349d-a8f9-4c18-9c69-d64fb58f37f2")
-		)
-		(instances
-			(project "PS-ChargerInterfacePCB"
-				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
-					(reference "#PWR047")
 					(unit 1)
 				)
 			)
@@ -12429,6 +12003,84 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
 					(reference "D4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 139.7 26.67 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ba2456a4-ef4d-46b7-a415-878b1a09dfef")
+		(property "Reference" "TP14"
+			(at 145.288 29.718 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "3V3"
+			(at 143.764 27.178 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "LHRS_Connectors:5754"
+			(at 134.62 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 134.62 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 139.7 26.67 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "818020b9-68c4-4c70-87b3-21120b3e9ecc")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
+					(reference "TP14")
 					(unit 1)
 				)
 			)
@@ -12916,6 +12568,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 256.54 107.95 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "ce54aad2-5a03-462a-8ba0-1d54dae9b58e")
+		(property "Reference" "#PWR023"
+			(at 256.54 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 256.794 111.76 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 256.54 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 256.54 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 256.54 107.95 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "d2693c77-0fbb-4b81-ac62-56eccbd20a0a")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
+					(reference "#PWR023")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "lhrs_connectors:CAN_NANO_01x05")
 		(at 27.94 74.93 0)
 		(mirror y)
@@ -13096,6 +12825,84 @@
 		)
 	)
 	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 252.73 96.52 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d5bb4057-b8be-4216-84ff-8e6df2e0b9a5")
+		(property "Reference" "TP16"
+			(at 248.412 96.52 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BUZ-"
+			(at 249.682 98.298 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "LHRS_Connectors:5754"
+			(at 252.73 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 252.73 91.44 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 252.73 96.52 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f3876741-8fda-4f59-8688-8b06fd499f30")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
+					(reference "TP16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 217.17 49.53 0)
 		(unit 1)
@@ -13167,6 +12974,85 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Connector:TestPoint")
+		(at 248.92 104.14 0)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "e23adc56-6e03-493e-93b2-b2c2eca0a9f5")
+		(property "Reference" "TP18"
+			(at 249.936 105.918 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "BUZ_DRAIN"
+			(at 244.348 109.474 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "LHRS_Connectors:5754"
+			(at 254 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 254 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "test point"
+			(at 248.92 104.14 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "0d00d5a3-3d48-4eb6-9c17-30552ee2f535")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
+					(reference "TP18")
 					(unit 1)
 				)
 			)
@@ -13277,6 +13163,7 @@
 		)
 		(property "Value" "PWR_FLAG"
 			(at 51.562 30.734 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13332,7 +13219,7 @@
 	)
 	(symbol
 		(lib_id "power:+15V")
-		(at 123.19 81.28 0)
+		(at 124.46 81.28 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -13343,7 +13230,7 @@
 		(fields_autoplaced yes)
 		(uuid "ee71b850-8ba4-4556-af24-4f143ed655fd")
 		(property "Reference" "#PWR031"
-			(at 123.19 85.09 0)
+			(at 124.46 85.09 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13354,7 +13241,7 @@
 			)
 		)
 		(property "Value" "+3V3"
-			(at 123.19 76.2 0)
+			(at 124.46 76.2 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13364,7 +13251,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 123.19 81.28 0)
+			(at 124.46 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13375,7 +13262,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 123.19 81.28 0)
+			(at 124.46 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13386,7 +13273,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+15V\""
-			(at 123.19 81.28 0)
+			(at 124.46 81.28 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13440,7 +13327,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Connector_Molex:Molex_Nano-Fit_105309-xx02_1x02_P2.50mm_Vertical"
+		(property "Footprint" "LHRS_Connectors:Molex_Nano-Fit_105309-xx02_1x02_P2.50mm_Vertical"
 			(at 20.32 138.43 0)
 			(hide yes)
 			(show_name no)
@@ -13672,87 +13559,9 @@
 			)
 		)
 	)
-	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 26.67 62.23 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "fea0346a-8771-43aa-98ff-79d6181bd7d0")
-		(property "Reference" "TP13"
-			(at 32.512 65.532 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "5V"
-			(at 29.464 62.992 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "LHRS_Connectors:5754"
-			(at 21.59 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 21.59 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 26.67 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "6b798199-92b2-4207-aa8f-e77f734df41d")
-		)
-		(instances
-			(project "PS-ChargerInterfacePCB"
-				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
-					(reference "TP13")
-					(unit 1)
-				)
-			)
-		)
-	)
 	(sheet
-		(at 257.81 87.63)
-		(size 14.986 16.256)
+		(at 260.35 90.17)
+		(size 19.05 21.59)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -13766,7 +13575,7 @@
 		)
 		(uuid "1e0af71f-bf17-4100-bd00-6669d1612ced")
 		(property "Sheetname" "Buzzer"
-			(at 257.81 86.9184 0)
+			(at 260.35 89.4584 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13777,7 +13586,7 @@
 			)
 		)
 		(property "Sheetfile" "Buzzer.kicad_sch"
-			(at 252.476 104.394 0)
+			(at 260.096 112.522 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13788,7 +13597,7 @@
 			)
 		)
 		(pin "BUZ+" input
-			(at 257.81 90.17 180)
+			(at 260.35 92.71 180)
 			(uuid "906be78f-5486-4b3d-94dc-a150639e70a3")
 			(effects
 				(font
@@ -13798,7 +13607,7 @@
 			)
 		)
 		(pin "BUZ-" input
-			(at 257.81 93.98 180)
+			(at 260.35 96.52 180)
 			(uuid "18c446ed-faca-4426-9237-cd5c83f0bdcf")
 			(effects
 				(font
@@ -13808,7 +13617,7 @@
 			)
 		)
 		(pin "BuzzPWM" input
-			(at 257.81 97.79 180)
+			(at 260.35 100.33 180)
 			(uuid "4a96eaa3-6402-4c81-b71f-17993d7579c8")
 			(effects
 				(font
@@ -13817,9 +13626,19 @@
 				(justify left)
 			)
 		)
-		(pin "Buzz_Source" input
-			(at 257.81 101.6 180)
-			(uuid "6fd7e44e-1ef8-4dbc-8cad-f369380cb777")
+		(pin "BUZ_DRAIN" output
+			(at 260.35 104.14 180)
+			(uuid "36049c8e-2d9f-45e4-adfa-275712a36aae")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "BUZ_GND" input
+			(at 260.35 107.95 180)
+			(uuid "f7fe20a1-44c9-4957-af3e-b579b73c54d7")
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -13836,7 +13655,7 @@
 		)
 	)
 	(sheet
-		(at 127 80.01)
+		(at 128.27 80.01)
 		(size 40.64 71.12)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -13851,7 +13670,7 @@
 		)
 		(uuid "5274d517-fa42-4b2f-988d-ae832e7e0f49")
 		(property "Sheetname" "48PinMCU"
-			(at 127 79.2984 0)
+			(at 128.27 79.2984 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13862,7 +13681,7 @@
 			)
 		)
 		(property "Sheetfile" "48PinMCU.kicad_sch"
-			(at 127 151.5876 0)
+			(at 128.27 151.5876 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -13873,7 +13692,7 @@
 			)
 		)
 		(property "Date Modified" "5/3/2026"
-			(at 100.33 -14.605 0)
+			(at 101.6 -14.605 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13884,7 +13703,7 @@
 			)
 		)
 		(property "Author" "Sathvik Yechuri"
-			(at 100.33 -14.605 0)
+			(at 101.6 -14.605 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -13895,7 +13714,7 @@
 			)
 		)
 		(pin "+3V3" input
-			(at 127 82.55 180)
+			(at 128.27 82.55 180)
 			(uuid "3392b6bd-d231-40cd-be9a-e01ba29f87fb")
 			(effects
 				(font
@@ -13905,7 +13724,7 @@
 			)
 		)
 		(pin "NRST" input
-			(at 127 90.17 180)
+			(at 128.27 90.17 180)
 			(uuid "365a4c0a-17da-407d-b78d-f17f16ea097b")
 			(effects
 				(font
@@ -13915,7 +13734,7 @@
 			)
 		)
 		(pin "PA9" bidirectional
-			(at 167.64 138.43 0)
+			(at 168.91 138.43 0)
 			(uuid "b0e212f8-8966-4f0c-85a3-826ac7139661")
 			(effects
 				(font
@@ -13925,7 +13744,7 @@
 			)
 		)
 		(pin "PA6" bidirectional
-			(at 127 105.41 180)
+			(at 128.27 105.41 180)
 			(uuid "996f88de-d5a2-4ad4-a8e7-0dab45a4a19a")
 			(effects
 				(font
@@ -13935,7 +13754,7 @@
 			)
 		)
 		(pin "PB10" bidirectional
-			(at 127 128.27 180)
+			(at 128.27 128.27 180)
 			(uuid "78d18eae-48e0-4002-8edf-7067c7718f27")
 			(effects
 				(font
@@ -13945,7 +13764,7 @@
 			)
 		)
 		(pin "PB9" bidirectional
-			(at 167.64 96.52 0)
+			(at 168.91 96.52 0)
 			(uuid "f68b57a0-d963-4631-b820-55924e39cd35")
 			(effects
 				(font
@@ -13955,7 +13774,7 @@
 			)
 		)
 		(pin "USB_DP" bidirectional
-			(at 167.64 127 0)
+			(at 168.91 127 0)
 			(uuid "bfb4c76a-0645-400c-b710-5bd26c1c36d1")
 			(effects
 				(font
@@ -13965,7 +13784,7 @@
 			)
 		)
 		(pin "PB6" bidirectional
-			(at 167.64 107.95 0)
+			(at 168.91 107.95 0)
 			(uuid "99c7302c-d7fb-4c70-8eb4-1d29b65cc525")
 			(effects
 				(font
@@ -13975,7 +13794,7 @@
 			)
 		)
 		(pin "USB_DM" bidirectional
-			(at 167.64 130.81 0)
+			(at 168.91 130.81 0)
 			(uuid "2e63a250-d766-4198-b6cc-6cd2a47b6e57")
 			(effects
 				(font
@@ -13985,7 +13804,7 @@
 			)
 		)
 		(pin "PB11" bidirectional
-			(at 127 132.08 180)
+			(at 128.27 132.08 180)
 			(uuid "53ca4cd0-6a0d-4afa-a2fb-b3ac11b7c430")
 			(effects
 				(font
@@ -13995,7 +13814,7 @@
 			)
 		)
 		(pin "PB12" bidirectional
-			(at 127 135.89 180)
+			(at 128.27 135.89 180)
 			(uuid "404154e1-8e94-4d61-8a13-817cde650ec7")
 			(effects
 				(font
@@ -14005,7 +13824,7 @@
 			)
 		)
 		(pin "PB14" bidirectional
-			(at 127 143.51 180)
+			(at 128.27 143.51 180)
 			(uuid "f60b9e22-cab3-44e4-bbaf-8899ab3b47eb")
 			(effects
 				(font
@@ -14015,7 +13834,7 @@
 			)
 		)
 		(pin "VDDA" input
-			(at 127 124.46 180)
+			(at 128.27 124.46 180)
 			(uuid "b5227097-7f34-4ef5-b465-3d461369cd13")
 			(effects
 				(font
@@ -14025,7 +13844,7 @@
 			)
 		)
 		(pin "PC15" bidirectional
-			(at 167.64 85.09 0)
+			(at 168.91 85.09 0)
 			(uuid "7c9cc76c-9b3a-4e89-a817-1c7f5bad9ecc")
 			(effects
 				(font
@@ -14035,7 +13854,7 @@
 			)
 		)
 		(pin "PB2" bidirectional
-			(at 127 120.65 180)
+			(at 128.27 120.65 180)
 			(uuid "70a6a8e4-ff7a-4a2a-a5cf-f1bc61623fe1")
 			(effects
 				(font
@@ -14045,7 +13864,7 @@
 			)
 		)
 		(pin "PC14" bidirectional
-			(at 167.64 88.9 0)
+			(at 168.91 88.9 0)
 			(uuid "e11cc85b-e243-4005-9f59-27e2479d8daa")
 			(effects
 				(font
@@ -14055,7 +13874,7 @@
 			)
 		)
 		(pin "PB3" bidirectional
-			(at 167.64 119.38 0)
+			(at 168.91 119.38 0)
 			(uuid "b95aa99e-0f11-401b-92ab-914315f79737")
 			(effects
 				(font
@@ -14065,7 +13884,7 @@
 			)
 		)
 		(pin "PC13" bidirectional
-			(at 167.64 92.71 0)
+			(at 168.91 92.71 0)
 			(uuid "174eabc1-74ba-47a8-9ed8-cfca5c284d2d")
 			(effects
 				(font
@@ -14075,7 +13894,7 @@
 			)
 		)
 		(pin "PB15" bidirectional
-			(at 167.64 146.05 0)
+			(at 168.91 146.05 0)
 			(uuid "4ff0b8e7-9a60-439c-9a5a-2641bb76a1bd")
 			(effects
 				(font
@@ -14085,7 +13904,7 @@
 			)
 		)
 		(pin "PB7" bidirectional
-			(at 167.64 104.14 0)
+			(at 168.91 104.14 0)
 			(uuid "bf5f4454-d6e4-4b9c-9c6b-c0817ebe7718")
 			(effects
 				(font
@@ -14095,7 +13914,7 @@
 			)
 		)
 		(pin "PB4" bidirectional
-			(at 167.64 115.57 0)
+			(at 168.91 115.57 0)
 			(uuid "15961457-98d4-41fe-b79e-0a0fdb1b3c02")
 			(effects
 				(font
@@ -14105,7 +13924,7 @@
 			)
 		)
 		(pin "PA7" bidirectional
-			(at 127 109.22 180)
+			(at 128.27 109.22 180)
 			(uuid "0f73d5d7-fbfe-4628-996a-532e721aaba8")
 			(effects
 				(font
@@ -14115,7 +13934,7 @@
 			)
 		)
 		(pin "PB13" bidirectional
-			(at 127 139.7 180)
+			(at 128.27 139.7 180)
 			(uuid "94b4999d-25cc-45a3-9b50-5d92ed35630a")
 			(effects
 				(font
@@ -14125,7 +13944,7 @@
 			)
 		)
 		(pin "PA10" bidirectional
-			(at 167.64 134.62 0)
+			(at 168.91 134.62 0)
 			(uuid "54be3cee-4b32-45a4-8e0e-7cbfb2a05f92")
 			(effects
 				(font
@@ -14135,7 +13954,7 @@
 			)
 		)
 		(pin "PA5" bidirectional
-			(at 127 101.6 180)
+			(at 128.27 101.6 180)
 			(uuid "ac318755-56c9-4743-a7ef-b349e55a877b")
 			(effects
 				(font
@@ -14145,7 +13964,7 @@
 			)
 		)
 		(pin "PB0" bidirectional
-			(at 127 113.03 180)
+			(at 128.27 113.03 180)
 			(uuid "f9174c75-3b2d-467d-8357-70c4bad84778")
 			(effects
 				(font
@@ -14155,7 +13974,7 @@
 			)
 		)
 		(pin "PA15" bidirectional
-			(at 167.64 123.19 0)
+			(at 168.91 123.19 0)
 			(uuid "c3cd9c96-3097-40be-8ea9-5055975ff0b4")
 			(effects
 				(font
@@ -14165,7 +13984,7 @@
 			)
 		)
 		(pin "GNDA" input
-			(at 127 86.36 180)
+			(at 128.27 86.36 180)
 			(uuid "2fed6359-a2c0-486f-aad8-ab0604a5fdb2")
 			(effects
 				(font
@@ -14175,7 +13994,7 @@
 			)
 		)
 		(pin "BOOT0" input
-			(at 167.64 100.33 0)
+			(at 168.91 100.33 0)
 			(uuid "dd7c7e02-534e-4135-a52b-fef87fa1c005")
 			(effects
 				(font
@@ -14185,7 +14004,7 @@
 			)
 		)
 		(pin "PA8" bidirectional
-			(at 167.64 142.24 0)
+			(at 168.91 142.24 0)
 			(uuid "5a047dfa-936f-4c81-a5d6-fa878d267bfc")
 			(effects
 				(font
@@ -14195,7 +14014,7 @@
 			)
 		)
 		(pin "GND" input
-			(at 127 147.32 180)
+			(at 128.27 147.32 180)
 			(uuid "a9862453-63f9-4681-8450-88df9ffc3550")
 			(effects
 				(font
@@ -14205,7 +14024,7 @@
 			)
 		)
 		(pin "PB5" bidirectional
-			(at 167.64 111.76 0)
+			(at 168.91 111.76 0)
 			(uuid "4a9c8cf9-444f-48b5-8422-992473feba72")
 			(effects
 				(font
@@ -14215,7 +14034,7 @@
 			)
 		)
 		(pin "PB1" bidirectional
-			(at 127 116.84 180)
+			(at 128.27 116.84 180)
 			(uuid "c7806303-0677-4adc-9df5-cd71aaa4a080")
 			(effects
 				(font
@@ -14225,7 +14044,7 @@
 			)
 		)
 		(pin "PA4" bidirectional
-			(at 127 97.79 180)
+			(at 128.27 97.79 180)
 			(uuid "f636a58a-ad4e-4d27-8d25-3317aee5d5e5")
 			(effects
 				(font
@@ -14235,7 +14054,7 @@
 			)
 		)
 		(pin "PA3" bidirectional
-			(at 127 93.98 180)
+			(at 128.27 93.98 180)
 			(uuid "867913aa-1b44-4590-abca-9227a3fc5998")
 			(effects
 				(font
@@ -14492,7 +14311,7 @@
 			)
 		)
 		(property "Sheetfile" "PowerProtection.kicad_sch"
-			(at 21.336 38.608 0)
+			(at 17.018 38.608 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14503,7 +14322,7 @@
 			)
 		)
 		(pin "GND" input
-			(at 21.59 33.02 180)
+			(at 21.59 34.29 180)
 			(uuid "eacc6aee-c52a-422f-b334-0207b5da4b00")
 			(effects
 				(font

@@ -337,10 +337,150 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Device:R"
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name ""
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 	)
 	(rectangle
 		(start 15.24 15.875)
-		(end 39.37 46.355)
+		(end 48.514 46.355)
 		(stroke
 			(width 0)
 			(type default)
@@ -352,7 +492,7 @@
 	)
 	(text "GND: Common ground connection\n\nVCC: Power supply for the display\n\nSCL: SPI clock signal\n\nSDA: SPI data signal\n\nRES: Hardware reset for the display\n\nDC: Selects between command and display data\n\nCS: Enables or selects the display on the SPI bus\n\nBLK: Backlight power or brightness control"
 		(exclude_from_sim no)
-		(at 42.926 31.242 0)
+		(at 49.276 31.242 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -384,7 +524,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 29.21) (xy 31.75 29.21)
+			(xy 24.13 29.21) (xy 27.94 29.21)
 		)
 		(stroke
 			(width 0)
@@ -394,7 +534,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 24.13) (xy 31.75 24.13)
+			(xy 24.13 24.13) (xy 27.94 24.13)
 		)
 		(stroke
 			(width 0)
@@ -404,7 +544,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 34.29) (xy 31.75 34.29)
+			(xy 24.13 34.29) (xy 27.94 34.29)
 		)
 		(stroke
 			(width 0)
@@ -414,7 +554,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 26.67) (xy 31.75 26.67)
+			(xy 24.13 26.67) (xy 27.94 26.67)
 		)
 		(stroke
 			(width 0)
@@ -424,17 +564,17 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 31.75) (xy 31.75 31.75)
+			(xy 24.13 31.75) (xy 33.02 31.75)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "768b2e55-bdbf-4793-b2e9-c11a231af4d6")
+		(uuid "7158b7ea-8f92-46d4-a1f5-e6ab6e6c2061")
 	)
 	(wire
 		(pts
-			(xy 27.94 39.37) (xy 31.75 39.37)
+			(xy 24.13 39.37) (xy 27.94 39.37)
 		)
 		(stroke
 			(width 0)
@@ -444,7 +584,7 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 36.83) (xy 31.75 36.83)
+			(xy 24.13 36.83) (xy 27.94 36.83)
 		)
 		(stroke
 			(width 0)
@@ -454,7 +594,17 @@
 	)
 	(wire
 		(pts
-			(xy 27.94 41.91) (xy 31.75 41.91)
+			(xy 40.64 31.75) (xy 41.91 31.75)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f15c8dcf-117d-4fd7-9649-130b6da9d779")
+	)
+	(wire
+		(pts
+			(xy 24.13 41.91) (xy 27.94 41.91)
 		)
 		(stroke
 			(width 0)
@@ -8854,7 +9004,7 @@
 	)
 	(hierarchical_label "RES"
 		(shape input)
-		(at 31.75 34.29 0)
+		(at 27.94 34.29 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8865,7 +9015,7 @@
 	)
 	(hierarchical_label "VCC"
 		(shape input)
-		(at 31.75 26.67 0)
+		(at 27.94 26.67 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8876,7 +9026,7 @@
 	)
 	(hierarchical_label "GND"
 		(shape input)
-		(at 31.75 24.13 0)
+		(at 27.94 24.13 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8887,7 +9037,7 @@
 	)
 	(hierarchical_label "SCL"
 		(shape input)
-		(at 31.75 29.21 0)
+		(at 27.94 29.21 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8898,7 +9048,7 @@
 	)
 	(hierarchical_label "DC"
 		(shape input)
-		(at 31.75 36.83 0)
+		(at 27.94 36.83 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8909,7 +9059,7 @@
 	)
 	(hierarchical_label "CS"
 		(shape input)
-		(at 31.75 39.37 0)
+		(at 27.94 39.37 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8920,7 +9070,7 @@
 	)
 	(hierarchical_label "SDA"
 		(shape input)
-		(at 31.75 31.75 0)
+		(at 41.91 31.75 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8931,7 +9081,7 @@
 	)
 	(hierarchical_label "BLK"
 		(shape input)
-		(at 31.75 41.91 0)
+		(at 27.94 41.91 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8942,7 +9092,7 @@
 	)
 	(symbol
 		(lib_id "Connector_Generic:Conn_01x08")
-		(at 22.86 31.75 0)
+		(at 19.05 31.75 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -8953,7 +9103,7 @@
 		(dnp no)
 		(uuid "6f380373-e214-4b30-b8d7-f79e8cf78fc5")
 		(property "Reference" "J14"
-			(at 24.638 18.034 0)
+			(at 20.828 18.034 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8964,7 +9114,7 @@
 			)
 		)
 		(property "Value" "Conn_01x08"
-			(at 28.448 21.082 0)
+			(at 28.956 21.082 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8975,7 +9125,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-20_W7.62mm"
-			(at 22.86 31.75 0)
+			(at 19.05 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8986,7 +9136,7 @@
 			)
 		)
 		(property "Datasheet" "kicad-embed://ST7789V.pdf"
-			(at 22.86 31.75 0)
+			(at 19.05 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -8997,7 +9147,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x08, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 22.86 31.75 0)
+			(at 19.05 31.75 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9041,6 +9191,85 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/d8590700-a995-4af9-a193-f270d7e0e413"
 					(reference "J14")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 36.83 31.75 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f4de5c06-d7c6-4890-b5b2-cc6738d767ea")
+		(property "Reference" "R4"
+			(at 35.306 29.718 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "22"
+			(at 38.354 29.718 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 36.83 33.528 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 36.83 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 36.83 31.75 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "2e7432a2-8a0e-4245-a487-db2aa7f96e18")
+		)
+		(pin "1"
+			(uuid "ae2102d8-efa3-45cf-9901-2b712b65fd85")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/d8590700-a995-4af9-a193-f270d7e0e413"
+					(reference "R4")
 					(unit 1)
 				)
 			)
