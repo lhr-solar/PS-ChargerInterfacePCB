@@ -1264,17 +1264,6 @@
 		)
 		(uuid "37507f28-afcb-43d5-8509-ee5b063393cb")
 	)
-	(hierarchical_label "Buzz_Drain"
-		(shape input)
-		(at 58.42 45.72 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "8794f967-927b-4fb5-82d0-f701c7056bf3")
-	)
 	(hierarchical_label "BuzzPWM"
 		(shape input)
 		(at 33.02 55.88 180)

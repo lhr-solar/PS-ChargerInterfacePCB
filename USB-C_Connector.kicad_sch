@@ -2326,20 +2326,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "b38703e6-2a93-4c75-901a-3d4c44a0ef75")
+			(uuid "d36586f0-0d4a-4479-bb66-153a7ebbd5a8")
 		)
 		(pin "2"
-			(uuid "490d9827-a08f-4ff3-8a4d-44353f0125b2")
+			(uuid "7a4f8708-eb6e-41e1-adfe-dfddc27b725f")
 		)
 		(instances
-			(project "USB-C_Connector"
-				(path "/64d5c21e-b85c-41ec-b08c-3556f1a0ecf2"
-					(reference "R1")
-					(unit 1)
-				)
-			)
 			(project "PS-ChargerInterfacePCB"
-				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/7471ec5a-b7a7-4689-b3ed-35d01baeea54"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/656dd0f0-4b0e-4dba-a66b-20f2cc6b72e1"
 					(reference "R21")
 					(unit 1)
 				)
@@ -2433,20 +2427,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "fa534472-9dd0-4838-8e65-6de41aa77ce7")
+			(uuid "145fcd5c-1e7f-43c6-9a3f-7d1d4e17d61a")
 		)
 		(pin "2"
-			(uuid "149f7b0b-6932-404c-8d1a-5eb7b9c7a970")
+			(uuid "d2d53320-5fae-4d06-bb24-6d85b288a91c")
 		)
 		(instances
-			(project "USB-C_Connector"
-				(path "/64d5c21e-b85c-41ec-b08c-3556f1a0ecf2"
-					(reference "R2")
-					(unit 1)
-				)
-			)
 			(project "PS-ChargerInterfacePCB"
-				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/7471ec5a-b7a7-4689-b3ed-35d01baeea54"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/656dd0f0-4b0e-4dba-a66b-20f2cc6b72e1"
 					(reference "R22")
 					(unit 1)
 				)
@@ -2553,26 +2541,20 @@
 			)
 		)
 		(pin "3"
-			(uuid "f2b0943a-c88d-4ae4-a926-696dd7d5c259")
+			(uuid "38cdf9ca-1c47-4d49-b755-1889525e284b")
 		)
 		(pin "4"
-			(uuid "5aa6afba-dd1f-40ed-960b-c5c01c3c2405")
+			(uuid "4f7be341-194c-4bf5-9862-95aaf7a98ae0")
 		)
 		(pin "1"
-			(uuid "a97c3b19-1db8-48e2-9fb5-6814eb35dcba")
+			(uuid "c892a2de-8031-4b1e-a117-7a6071abfb68")
 		)
 		(pin "2"
-			(uuid "f1eb3957-ab20-40fb-a422-153c1fd53c7c")
+			(uuid "8fb99bf4-5104-40c0-9a71-59f00587c40d")
 		)
 		(instances
-			(project "USB-C_Connector"
-				(path "/64d5c21e-b85c-41ec-b08c-3556f1a0ecf2"
-					(reference "D3")
-					(unit 1)
-				)
-			)
 			(project "PS-ChargerInterfacePCB"
-				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/7471ec5a-b7a7-4689-b3ed-35d01baeea54"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/656dd0f0-4b0e-4dba-a66b-20f2cc6b72e1"
 					(reference "D10")
 					(unit 1)
 				)
@@ -2667,74 +2649,68 @@
 			)
 		)
 		(pin "B9"
-			(uuid "395bce07-9bbf-45e7-a7fe-f680404a7bc5")
+			(uuid "5d822ea2-ffc0-4653-8d60-14098ac4a6dd")
 		)
 		(pin "B4"
-			(uuid "cd0c0508-ba0f-46b9-b9a2-5746de633160")
+			(uuid "8382d50a-2340-4f51-b523-7fa4aaf5b5a0")
 		)
 		(pin "B7"
-			(uuid "cd924928-8359-4432-8e7a-33af4ad7a123")
+			(uuid "a8fc3b86-7b3e-436b-b812-8a6c1b104cdd")
 		)
 		(pin "A6"
-			(uuid "6e525721-8d9c-42b8-a11d-ed67a53f272f")
+			(uuid "b727c2b2-3269-4232-86b3-2c2eb6e4401b")
 		)
 		(pin "B1"
-			(uuid "994a70ab-3e16-437a-9516-625beb91318d")
+			(uuid "a64a171c-e607-4003-bde7-81bab462d02b")
 		)
 		(pin "B6"
-			(uuid "086b8679-9573-4c62-b0f3-2ac5444ddca9")
+			(uuid "cb2c3c41-8098-4e72-99dc-60712fe06af9")
 		)
 		(pin "A7"
-			(uuid "35ab6817-43c7-4811-97d5-4284f5f93a2e")
+			(uuid "bbf9fb4d-f2d7-4ca0-9215-9435a0615114")
 		)
 		(pin "A9"
-			(uuid "b52cf569-0b33-4de9-ab76-0477068bdebb")
+			(uuid "b2c3a2b8-5378-4d12-bb43-d8b8a3cdfc12")
 		)
 		(pin "B5"
-			(uuid "a4f9516f-c240-4ba2-8abb-416dc9b788a4")
+			(uuid "15e7a8ff-60fb-49e9-a742-1cc8ae19feb7")
 		)
 		(pin "B8"
-			(uuid "5d712ff7-a5a1-4d0e-a3f2-bf681fb48bdc")
+			(uuid "257fd9d7-94af-4952-aa06-d9ecea871cfc")
 		)
 		(pin "A12"
-			(uuid "185d18f2-56d7-4eae-8021-117b54ba0a06")
+			(uuid "a57efe46-39a4-429f-b236-13bfe51ef906")
 		)
 		(pin "A8"
-			(uuid "47208bb2-28e0-4d24-beaf-8f3ed96268c1")
+			(uuid "a5cf6cfa-1f70-4343-b163-2ca572f2c912")
 		)
 		(pin "A1"
-			(uuid "f627eaa9-8a8e-471b-978e-bb62ae4b6521")
+			(uuid "788f2a79-31f4-41cf-8655-8e05625081ce")
 		)
 		(pin "A4"
-			(uuid "bb66b512-60f8-4860-a721-9f8949bde2e6")
+			(uuid "cedb1cc3-cfe0-4ac6-8e25-5ea41899b738")
 		)
 		(pin "A5"
-			(uuid "38cb31ca-5cfc-4995-9775-248431ac939b")
+			(uuid "6d1cea6c-a687-44f7-88e7-5e5aad75bd34")
 		)
 		(pin "S4"
-			(uuid "82d035c4-ac54-4a2e-93a8-47b977772b8a")
+			(uuid "86992653-7ac6-4a8b-b32b-85dc8af8ec52")
 		)
 		(pin "S1"
-			(uuid "aef86434-3f65-477c-bd84-8ad59a6455fd")
+			(uuid "3d9efa0a-4769-4ca6-8d3a-de875fbfe480")
 		)
 		(pin "B12"
-			(uuid "0f5c20ef-f9eb-4da7-9d08-35cff07061be")
+			(uuid "94d10d01-5b14-4ae8-884f-2f03deab6cdf")
 		)
 		(pin "S3"
-			(uuid "ff7a5148-f669-46ba-ab4e-4144acde1cc6")
+			(uuid "883771dc-ee14-4473-9dc0-3114fea79526")
 		)
 		(pin "S2"
-			(uuid "6c7f23cd-67ab-488e-bc40-499c5e2da985")
+			(uuid "94ca319c-6885-4bb2-82a9-218c179ed526")
 		)
 		(instances
-			(project "USB-C_Connector"
-				(path "/64d5c21e-b85c-41ec-b08c-3556f1a0ecf2"
-					(reference "J1")
-					(unit 1)
-				)
-			)
 			(project "PS-ChargerInterfacePCB"
-				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/7471ec5a-b7a7-4689-b3ed-35d01baeea54"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/656dd0f0-4b0e-4dba-a66b-20f2cc6b72e1"
 					(reference "J6")
 					(unit 1)
 				)
@@ -2809,17 +2785,11 @@
 			)
 		)
 		(pin "1"
-			(uuid "973237f8-bc6a-4ed7-9683-7a93c8bc746c")
+			(uuid "7ad4e53c-49ca-442c-aada-9f895b732c98")
 		)
 		(instances
-			(project "USB-C_Connector"
-				(path "/64d5c21e-b85c-41ec-b08c-3556f1a0ecf2"
-					(reference "#FLG01")
-					(unit 1)
-				)
-			)
 			(project "PS-ChargerInterfacePCB"
-				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/7471ec5a-b7a7-4689-b3ed-35d01baeea54"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/656dd0f0-4b0e-4dba-a66b-20f2cc6b72e1"
 					(reference "#FLG02")
 					(unit 1)
 				)
@@ -2913,20 +2883,14 @@
 			)
 		)
 		(pin "2"
-			(uuid "b8e2f111-c860-4cc0-9990-ef644527661a")
+			(uuid "753644bf-f522-4d90-9868-e95be5bec9fa")
 		)
 		(pin "1"
-			(uuid "bff90740-ea5c-4adc-908e-7fda935954bc")
+			(uuid "ce1e2109-8565-4ba3-8b61-f1fad2ce4404")
 		)
 		(instances
-			(project "USB-C_Connector"
-				(path "/64d5c21e-b85c-41ec-b08c-3556f1a0ecf2"
-					(reference "D1")
-					(unit 1)
-				)
-			)
 			(project "PS-ChargerInterfacePCB"
-				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/7471ec5a-b7a7-4689-b3ed-35d01baeea54"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/656dd0f0-4b0e-4dba-a66b-20f2cc6b72e1"
 					(reference "D9")
 					(unit 1)
 				)
@@ -3022,20 +2986,14 @@
 			)
 		)
 		(pin "1"
-			(uuid "876b4e5c-87f3-417c-8bd4-ed7bf469b5bc")
+			(uuid "e012cb97-b38c-4024-80cf-ae94d315acf7")
 		)
 		(pin "2"
-			(uuid "2b3a3369-ad2c-4383-a613-de5f0fabd084")
+			(uuid "017b34a4-b2b5-4723-bc21-1ba9bd0a8966")
 		)
 		(instances
-			(project "USB-C_Connector"
-				(path "/64d5c21e-b85c-41ec-b08c-3556f1a0ecf2"
-					(reference "C1")
-					(unit 1)
-				)
-			)
 			(project "PS-ChargerInterfacePCB"
-				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/7471ec5a-b7a7-4689-b3ed-35d01baeea54"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/656dd0f0-4b0e-4dba-a66b-20f2cc6b72e1"
 					(reference "C20")
 					(unit 1)
 				)
