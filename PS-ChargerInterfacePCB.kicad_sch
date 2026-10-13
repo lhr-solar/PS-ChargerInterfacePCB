@@ -3466,6 +3466,16 @@
 	)
 	(wire
 		(pts
+			(xy 21.59 189.23) (xy 24.13 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "30ecebbb-d5b5-49ea-b9f2-3b2b73c93100")
+	)
+	(wire
+		(pts
 			(xy 48.26 143.51) (xy 50.8 143.51)
 		)
 		(stroke
@@ -4526,7 +4536,7 @@
 	)
 	(wire
 		(pts
-			(xy 45.72 186.69) (xy 40.64 186.69)
+			(xy 45.72 185.42) (xy 40.64 185.42)
 		)
 		(stroke
 			(width 0)
@@ -4556,7 +4566,7 @@
 	)
 	(wire
 		(pts
-			(xy 15.24 182.88) (xy 24.13 182.88)
+			(xy 15.24 181.61) (xy 24.13 181.61)
 		)
 		(stroke
 			(width 0)
@@ -4666,7 +4676,7 @@
 	)
 	(wire
 		(pts
-			(xy 15.24 186.69) (xy 24.13 186.69)
+			(xy 15.24 185.42) (xy 24.13 185.42)
 		)
 		(stroke
 			(width 0)
@@ -4766,7 +4776,7 @@
 	)
 	(wire
 		(pts
-			(xy 40.64 182.88) (xy 45.72 182.88)
+			(xy 40.64 181.61) (xy 45.72 181.61)
 		)
 		(stroke
 			(width 0)
@@ -6584,7 +6594,7 @@
 		(uuid "182e0393-1671-42e8-b0eb-849d0486e164")
 	)
 	(label "EVSE_PP"
-		(at 15.24 186.69 0)
+		(at 15.24 185.42 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6674,7 +6684,7 @@
 		(uuid "349c0208-2651-417c-8321-9555deb2be46")
 	)
 	(label "MCP"
-		(at 45.72 182.88 180)
+		(at 45.72 181.61 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -6994,7 +7004,7 @@
 		(uuid "76db9cd2-0e7b-4fbb-8770-7920c485c654")
 	)
 	(label "EVSE_CP"
-		(at 15.24 182.88 0)
+		(at 15.24 181.61 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7134,7 +7144,7 @@
 		(uuid "b1f8db49-1138-43d2-ad02-1216e57e59fa")
 	)
 	(label "MPP"
-		(at 45.72 186.69 180)
+		(at 45.72 185.42 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7720,6 +7730,83 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
 					(reference "#PWR014")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 21.59 189.23 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "0dc6137d-476d-4ba8-8a92-11c9a6d433b1")
+		(property "Reference" "#PWR030"
+			(at 21.59 195.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 19.05 189.484 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 21.59 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 21.59 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 21.59 189.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ae80f692-573a-48a2-93dd-e95ce1c5b1a8")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
+					(reference "#PWR030")
 					(unit 1)
 				)
 			)
@@ -14725,8 +14812,8 @@
 		)
 	)
 	(sheet
-		(at 24.13 177.8)
-		(size 16.51 13.97)
+		(at 24.13 176.53)
+		(size 16.51 16.51)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -14740,7 +14827,7 @@
 		)
 		(uuid "9c8106c7-a9fc-4373-84fc-e901a27e6dcd")
 		(property "Sheetname" "EVSE"
-			(at 24.13 177.0884 0)
+			(at 24.13 175.8184 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14751,7 +14838,7 @@
 			)
 		)
 		(property "Sheetfile" "EVSE.kicad_sch"
-			(at 22.606 192.532 0)
+			(at 22.352 193.294 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14762,7 +14849,7 @@
 			)
 		)
 		(pin "CP" input
-			(at 24.13 182.88 180)
+			(at 24.13 181.61 180)
 			(uuid "661cda16-7b28-4dc9-be45-bc953354620d")
 			(effects
 				(font
@@ -14772,7 +14859,7 @@
 			)
 		)
 		(pin "PP" input
-			(at 24.13 186.69 180)
+			(at 24.13 185.42 180)
 			(uuid "f99848a7-67bf-4745-88f0-0ac143b0284f")
 			(effects
 				(font
@@ -14782,7 +14869,7 @@
 			)
 		)
 		(pin "MCU_CP" output
-			(at 40.64 182.88 0)
+			(at 40.64 181.61 0)
 			(uuid "f2e180ca-68be-4854-8606-ed328cc74ae5")
 			(effects
 				(font
@@ -14792,13 +14879,23 @@
 			)
 		)
 		(pin "MCU_PP" output
-			(at 40.64 186.69 0)
+			(at 40.64 185.42 0)
 			(uuid "d74f0e07-fb97-4e6c-a5df-02f4fa50f4c8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "GND" input
+			(at 24.13 189.23 180)
+			(uuid "08fa5de7-ddc4-422d-accb-35eb0988c9b0")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances
