@@ -626,6 +626,16 @@
 	)
 	(wire
 		(pts
+			(xy 45.72 87.63) (xy 46.99 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17bce856-bec4-4f24-8e72-a3049c6ee62c")
+	)
+	(wire
+		(pts
 			(xy 36.83 81.28) (xy 36.83 93.98)
 		)
 		(stroke
@@ -633,6 +643,16 @@
 			(type default)
 		)
 		(uuid "30a15fb1-4b39-46cf-b09b-df737654ab03")
+	)
+	(wire
+		(pts
+			(xy 41.91 35.56) (xy 43.18 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a933fc4-507a-41c4-afb7-b807e14ca090")
 	)
 	(wire
 		(pts
@@ -666,13 +686,13 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 87.63) (xy 46.99 87.63)
+			(xy 38.1 87.63) (xy 36.83 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "9d4fa2be-aff1-49e2-ab9b-581a2c381f2a")
+		(uuid "81b7bfd1-fc7d-4744-8601-47d9c6499135")
 	)
 	(wire
 		(pts
@@ -683,6 +703,16 @@
 			(type default)
 		)
 		(uuid "9dd68bf5-9420-45c8-a5c3-d1fa8ec21652")
+	)
+	(wire
+		(pts
+			(xy 34.29 35.56) (xy 33.02 35.56)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2fb1e24-7dd4-473c-a9ba-6c2f6e5f432e")
 	)
 	(wire
 		(pts
@@ -713,16 +743,6 @@
 			(type default)
 		)
 		(uuid "f04392a6-8967-4723-982f-4a8e13f9c3c5")
-	)
-	(wire
-		(pts
-			(xy 33.02 35.56) (xy 43.18 35.56)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "f8a73667-f83a-4e6a-9ede-9bfb666938f9")
 	)
 	(hierarchical_label "ESTOP"
 		(shape input)
@@ -801,7 +821,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
 			(at 36.83 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -886,7 +906,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 36.83 77.47 0)
 			(hide yes)
 			(show_name no)
@@ -939,6 +959,85 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 41.91 87.63 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "29e58343-e4e6-4f09-9954-7d7a0d2b6969")
+		(property "Reference" "R52"
+			(at 41.91 85.598 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 41.91 89.916 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
+			(at 41.91 89.408 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 41.91 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 41.91 87.63 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "46c34d58-040f-407a-9b92-c7efe3490618")
+		)
+		(pin "2"
+			(uuid "e0215c4b-4c81-4fb5-820c-4008a352585a")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/9996de2d-8d86-4ad4-8204-1bedc56aa8e5"
+					(reference "R52")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C")
 		(at 33.02 45.72 0)
 		(unit 1)
@@ -971,7 +1070,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Capacitor_SMD:C_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
 			(at 33.02 45.72 0)
 			(hide yes)
 			(show_name no)
@@ -1018,6 +1117,85 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/9996de2d-8d86-4ad4-8204-1bedc56aa8e5"
 					(reference "C53")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 38.1 35.56 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5d7bd79b-e7ad-415b-bd55-8d1f33043135")
+		(property "Reference" "R53"
+			(at 38.1 33.528 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1k"
+			(at 38.1 37.846 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0201_0603Metric_Pad0.64x0.40mm_HandSolder"
+			(at 38.1 37.338 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 38.1 35.56 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "3d7ab3eb-65a7-47b5-8ffa-1950024cd116")
+		)
+		(pin "2"
+			(uuid "ca04a7f1-8ccd-43d8-82d6-62e5b4929147")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/9996de2d-8d86-4ad4-8204-1bedc56aa8e5"
+					(reference "R53")
 					(unit 1)
 				)
 			)
@@ -1296,7 +1474,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 33.02 25.4 0)
 			(hide yes)
 			(show_name no)

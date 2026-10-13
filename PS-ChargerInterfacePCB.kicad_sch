@@ -4965,8 +4965,8 @@
 		(uuid "fd3d8a09-d282-4f5f-892e-280aedfd3cd6")
 	)
 	(image
-		(at 212.2775 128.0473)
-		(scale 0.935784)
+		(at 213.5475 128.0473)
+		(scale 0.941546)
 		(uuid "0d6ee284-1047-46c3-8048-7b8292e656ee")
 		(data "iVBORw0KGgoAAAANSUhEUgAAAp4AAAKyCAYAAAB8GN7eAAAABHNCSVQICAgIfAhkiAAAIABJREFU"
 			"eJzs3Xd8VHW+//HX9MmkNxJICB2kg8AK2HGtSBRWwLWwq+v1ul7R/emKelcRLKAXdVfEK6LYWCWo"
@@ -7522,7 +7522,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 129.54 65.278 90)
 			(hide yes)
 			(show_name no)
@@ -8117,17 +8117,6 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 137.16 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "2"
 			(uuid "4a2ff4f5-b7c0-4286-b837-1db8fe50b4f9")
 		)
@@ -8681,17 +8670,6 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 107.95 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
 			(at 107.95 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -9648,7 +9626,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 30.48 20.828 90)
 			(hide yes)
 			(show_name no)
@@ -10217,7 +10195,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 129.54 47.498 90)
 			(hide yes)
 			(show_name no)
@@ -10398,17 +10376,6 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 137.16 54.61 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
 			(at 137.16 54.61 0)
 			(hide yes)
 			(show_name no)
@@ -10700,7 +10667,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 48.26 28.448 90)
 			(hide yes)
 			(show_name no)
@@ -11312,7 +11279,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
 			(at 129.54 56.388 90)
 			(hide yes)
 			(show_name no)
@@ -11972,17 +11939,6 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 137.16 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" "1=K 2=A"
 			(at 137.16 45.72 0)
 			(hide yes)
 			(show_name no)

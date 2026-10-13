@@ -2507,17 +2507,6 @@
 				)
 			)
 		)
-		(property "Mouser Part Number" "576-SP0503BAHTG "
-			(at 77.4198 81.7763 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "P/N" "SP0503BAHTG"
 			(at 77.4198 81.7763 0)
 			(hide yes)
@@ -2930,7 +2919,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 61.2146 33.5163 0)
 			(hide yes)
 			(show_name no)
@@ -2998,42 +2987,6 @@
 					(unit 1)
 				)
 			)
-		)
-	)
-	(group "USB-C_Connector"
-		(uuid "8c750c3d-e691-4616-a00a-0b7aacd22cf7")
-		(lib_id "LHRS_Design_Blocks:USB-C_Connector")
-		(members "04fcef97-89c4-4537-93b4-3c86159ab421" "0727745f-19bf-4925-85c4-dd8f7685525d"
-			"0c6766ab-f5e4-4ea1-aa18-b77d4fb016d9" "10f106ca-d900-4670-b207-c9eb3ed23f0b"
-			"11166e4d-ed43-481f-b5d0-bf4780e18aa9" "1574fbd0-4d82-4f5b-b7fc-72523f779461"
-			"1930a8c6-0dbc-4b73-84c9-9e39e936dff7" "1be4ba29-309d-4466-aa64-bd1c3c9fb213"
-			"1c6676d9-655e-47b0-993b-851f93b29be0" "1e4802a2-1696-4f84-a997-10989ac104a8"
-			"1f25a7a1-3996-4447-8050-4b3ac7a95bf9" "1fe3fa78-8c96-4fec-92a4-65d0f069d53a"
-			"22e3b80d-58af-4dbf-a1b7-78f5a2f207aa" "23158f13-92ad-4941-93b0-f1b8cff4aef4"
-			"2a48ed1f-dc7d-4c38-bbcc-b1417c5f4741" "2b7acb43-51eb-4fa4-9f12-1927ee42daf1"
-			"31c1c8b0-f199-43b5-8a72-395cd877a32e" "33f91bc2-235d-4c59-8c12-7fb804a19a6f"
-			"38cfcb3e-cf11-4d3d-b993-b5e9d40c61db" "3dd8b24a-ee6e-4824-9390-9c9f75b69509"
-			"4d9e1693-38c4-48c2-97ae-99445c572898" "5267cea2-22b6-4dd5-b54b-587e459b53db"
-			"54d253f2-7913-42ba-ad0d-7fd8d87d8c1a" "55ebce0d-f91e-4ae9-a250-6b724ee2f0e7"
-			"5cb5db20-c658-4655-b1f8-be4d049dfe5d" "5df1d662-b892-424e-ad96-12cc856e36bc"
-			"5f8ebd46-e768-42a2-8166-0ebf166f18c1" "65186f5e-89c9-40b3-814d-2cf851585342"
-			"65336ee7-49d4-4f3a-a16f-d1f78edab5fe" "68179028-fd32-48bf-b395-75eff4b0affa"
-			"728034de-1f4f-43c4-b764-799f66fbad77" "7efbf9ae-a4bd-411a-bd4f-73e22aa56aa3"
-			"87665ee5-842f-4ab8-b4ef-f09e77cb2a70" "8b7605fe-b6c6-4d30-93a4-c62c835ad448"
-			"8c836a32-9398-46ee-a6a0-aaffb1454707" "8e96c2fd-ebbf-4b3c-8059-00ac1477b0f5"
-			"9075ed5e-cbfb-486f-b1fc-3da50c5cd78a" "90e8ec2f-5095-48d1-819b-b485cf0227c1"
-			"97558857-315f-4441-9f30-523800dc3185" "98c5750f-70e6-4fa2-8eb9-777cf9081d1e"
-			"a0373b3d-e712-493b-b572-5da529970808" "a1333329-f4e2-40f5-9812-35a41f66040e"
-			"a81e821b-87aa-475b-bf58-767a3467050c" "b55e0efa-0cd1-43ab-ab03-928614063bd2"
-			"b6c62b86-d9aa-427b-880f-12480ba24203" "b89dd526-8205-4c51-a632-c4e8f4251bd1"
-			"bb253572-93fa-4369-bbf7-5f45d193f6ff" "c072b2d4-24ef-4397-8af9-5c401c4916c0"
-			"c2ea544c-0d4a-4c83-a51a-44bd5212c87e" "c3a8983e-39ad-4f32-83a9-160df684dd0a"
-			"c9339f37-f006-4dc3-be37-72e28a4df71e" "cd1c2b74-2fcc-404c-94d7-1e57e98b6cfa"
-			"d3989971-ceab-4208-a34b-81b2d047226d" "da76b70d-1d08-42fa-9779-e2d100318d24"
-			"ddd5b2e9-7de5-4c9f-ae2c-dd8ab09fd01e" "e879a343-4040-44ca-859b-5c53011819aa"
-			"f4c3dd7f-84ec-4dcb-899f-0b4a41d3690f" "f4ec8c7e-18bb-4be1-a89d-65ff20130820"
-			"f534bb3b-6b47-4793-bfca-fc1faeca945d" "f5ff9e18-5e74-4d5f-8fdc-2ac8288475eb"
-			"f870526d-8e11-4cdd-9f5e-df7546f56408" "f9f29e46-bcf2-4cdd-8cbd-013cb79f55a6"
 		)
 	)
 )

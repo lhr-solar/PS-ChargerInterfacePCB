@@ -206,665 +206,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Device:LED_RGBA"
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "D"
-				(at 0 9.398 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "LED_RGBA"
-				(at 0 -8.89 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 -1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 -1.27 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "RGB LED, red/green/blue/anode"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "LED RGB diode"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "LED* LED_SMD:* LED_THT:*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "LED_RGBA_0_0"
-				(text "R"
-					(at -1.905 3.81 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(text "G"
-					(at -1.905 -1.27 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-				(text "B"
-					(at -1.905 -6.35 0)
-					(effects
-						(font
-							(size 1.27 1.27)
-						)
-					)
-				)
-			)
-			(symbol "LED_RGBA_0_1"
-				(polyline
-					(pts
-						(xy -1.27 6.35) (xy -1.27 3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 6.35) (xy -1.27 3.81) (xy -1.27 3.81)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 5.08) (xy -2.54 5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 5.08) (xy 1.27 5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 1.27) (xy -1.27 -1.27) (xy -1.27 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 0) (xy -2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -3.81) (xy -1.27 -6.35)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -5.08) (xy -2.54 -5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.27 -5.08) (xy 1.27 -5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.016 6.35) (xy 0.508 7.874) (xy -0.254 7.874) (xy 0.508 7.874) (xy 0.508 7.112)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.016 1.27) (xy 0.508 2.794) (xy -0.254 2.794) (xy 0.508 2.794) (xy 0.508 2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -1.016 -3.81) (xy 0.508 -2.286) (xy -0.254 -2.286) (xy 0.508 -2.286) (xy 0.508 -3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 6.35) (xy 1.524 7.874) (xy 0.762 7.874) (xy 1.524 7.874) (xy 1.524 7.112)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 1.27) (xy 1.524 2.794) (xy 0.762 2.794) (xy 1.524 2.794) (xy 1.524 2.032)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 -3.81) (xy 1.524 -2.286) (xy 0.762 -2.286) (xy 1.524 -2.286) (xy 1.524 -3.048)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 6.35) (xy 1.27 3.81) (xy -1.27 5.08) (xy 1.27 6.35)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 1.27 6.35)
-					(end 1.27 6.35)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 1.27 3.81)
-					(end 1.27 6.35)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 1.27) (xy 1.27 -1.27) (xy -1.27 0) (xy 1.27 1.27)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 1.27 1.27)
-					(end 1.27 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy -1.27 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0) (xy 2.54 0)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start 1.27 -1.27)
-					(end 1.27 1.27)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -3.81) (xy 1.27 -6.35) (xy -1.27 -5.08) (xy 1.27 -3.81)
-					)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -5.08) (xy 2.032 -5.08) (xy 2.032 5.08) (xy 1.27 5.08)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center 2.032 0)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(rectangle
-					(start 2.794 8.382)
-					(end -2.794 -7.62)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-			)
-			(symbol "LED_RGBA_1_1"
-				(pin passive line
-					(at -5.08 5.08 0)
-					(length 2.54)
-					(name "RK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 0 0)
-					(length 2.54)
-					(name "GK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -5.08 -5.08 0)
-					(length 2.54)
-					(name "BK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 5.08 0 180)
-					(length 2.54)
-					(name "A"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:R"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "Device:R_US"
 			(pin_numbers
 				(hide yes)
@@ -1379,7 +720,7 @@
 	)
 	(rectangle
 		(start 13.97 13.97)
-		(end 185.42 81.026)
+		(end 148.59 147.32)
 		(stroke
 			(width 0)
 			(type default)
@@ -1389,9 +730,19 @@
 		)
 		(uuid "8d34d525-d957-43aa-b677-af515d1290ef")
 	)
+	(text "LEDS"
+		(exclude_from_sim no)
+		(at 18.288 17.018 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "203968b9-0cf0-4927-a48e-827f31f7909b")
+	)
 	(text "LEDS: https://www.amazon.com/Gebildet-12-24V-Indicator-Waterproof-Directional/dp/B088D1M47R\n12-24V, 0.02 amps"
 		(exclude_from_sim no)
-		(at 193.802 19.304 0)
+		(at 194.31 19.05 0)
 		(effects
 			(font
 				(size 0.762 0.762)
@@ -1400,9 +751,19 @@
 		)
 		(uuid "d2d76db5-bff3-452a-b0c3-ad29121b0cd9")
 	)
+	(text "External Leds"
+		(exclude_from_sim no)
+		(at 23.368 95.25 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "d4f9043b-131c-4b20-b08b-68ee0c211aba")
+	)
 	(text "LED_HV = HV active or not\nLED_FAULT = external siren / beacon on FAULT+ and FAULT-\nLED_Heart = power up for 14v/24v\nLED_Charge = Charging Active or Not\nLED_EVSE = EVSE detected + pilot ready"
 		(exclude_from_sim no)
-		(at 193.802 27.178 0)
+		(at 194.31 26.67 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -1416,6 +777,30 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "18360f2a-b35e-4525-87d3-4e7f3156662b")
+	)
+	(junction
+		(at 67.31 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1e774450-e29e-4186-9bed-babff021753d")
+	)
+	(junction
+		(at 27.94 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "23330085-168a-4c7c-b4d1-185a87f6ed77")
+	)
+	(junction
+		(at 104.14 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "363f27de-2504-44c0-a4d5-202ea8acb456")
+	)
+	(junction
+		(at 38.1 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4ef86603-31d1-487a-9583-288639b7a690")
 	)
 	(junction
 		(at 50.8 57.15)
@@ -1459,6 +844,18 @@
 		(color 0 0 0 0)
 		(uuid "a67f5658-7513-4d84-9f92-b812a2a6ab29")
 	)
+	(junction
+		(at 57.15 125.73)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ac26227d-7a06-4550-b1eb-51aa9b10fd0a")
+	)
+	(junction
+		(at 114.3 101.6)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f9c71b17-0a91-4ec8-98ba-41eb8c8fda14")
+	)
 	(wire
 		(pts
 			(xy 96.52 57.15) (xy 105.41 57.15)
@@ -1501,7 +898,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 43.18) (xy 129.54 41.91)
+			(xy 128.27 43.18) (xy 130.048 41.91)
 		)
 		(stroke
 			(width 0)
@@ -1521,6 +918,16 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 87.63) (xy 50.8 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "117cbd37-8079-4c78-a68d-855200359344")
+	)
+	(wire
+		(pts
 			(xy 38.1 40.64) (xy 38.1 41.91)
 		)
 		(stroke
@@ -1528,6 +935,16 @@
 			(type default)
 		)
 		(uuid "133e0644-aabb-4cc0-ae52-32e4fdaa9629")
+	)
+	(wire
+		(pts
+			(xy 95.25 101.6) (xy 104.14 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1aa0d280-96ac-4a2b-9146-45b81679c51b")
 	)
 	(wire
 		(pts
@@ -1541,6 +958,16 @@
 	)
 	(wire
 		(pts
+			(xy 80.01 111.76) (xy 80.01 115.57)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1f08162e-0d30-44fd-b14c-38929b33a406")
+	)
+	(wire
+		(pts
 			(xy 102.87 36.83) (xy 102.87 40.64)
 		)
 		(stroke
@@ -1548,6 +975,16 @@
 			(type default)
 		)
 		(uuid "20c2bb05-1cf6-4bd8-b68a-760ea772c73f")
+	)
+	(wire
+		(pts
+			(xy 104.14 102.87) (xy 104.14 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "23421ec9-9270-4d05-b2e4-819c49a5b872")
 	)
 	(wire
 		(pts
@@ -1581,13 +1018,13 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 25.4) (xy 175.26 25.4)
+			(xy 38.1 101.6) (xy 43.18 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "33d886d3-2c11-4c6f-a1da-ba3aa104daab")
+		(uuid "389c9a86-051b-4d05-8fa7-0ce8c3cf30c8")
 	)
 	(wire
 		(pts
@@ -1601,13 +1038,43 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 35.56) (xy 175.26 35.56)
+			(xy 67.31 133.35) (xy 67.31 134.62)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "42fa7516-1791-4466-b84b-4c45a416d538")
+		(uuid "44a00118-db05-4d01-aeb9-a115b82f892b")
+	)
+	(wire
+		(pts
+			(xy 127 87.63) (xy 128.27 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "466c702e-c2a9-4aa5-b83f-43eb378c3076")
+	)
+	(wire
+		(pts
+			(xy 50.8 87.63) (xy 52.07 86.36)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "46a8b0b4-df8f-42a8-85be-67c13d77eee1")
+	)
+	(wire
+		(pts
+			(xy 27.94 111.76) (xy 27.94 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "51b33f5b-86cd-4b65-9c19-693279893193")
 	)
 	(wire
 		(pts
@@ -1618,6 +1085,16 @@
 			(type default)
 		)
 		(uuid "51ee1119-ca99-4155-87df-95a5a377be5f")
+	)
+	(wire
+		(pts
+			(xy 50.8 107.95) (xy 50.8 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "531b496f-2efb-4f25-85ae-42fa1a9d27d7")
 	)
 	(wire
 		(pts
@@ -1638,6 +1115,16 @@
 			(type default)
 		)
 		(uuid "5554ce76-3415-4bd1-951c-c98363824130")
+	)
+	(wire
+		(pts
+			(xy 80.01 132.08) (xy 80.01 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "564c6171-88a2-4b24-bc9c-78d755e8613d")
 	)
 	(wire
 		(pts
@@ -1681,6 +1168,16 @@
 	)
 	(wire
 		(pts
+			(xy 27.94 102.87) (xy 27.94 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a66acb6-0d08-4b88-a8a2-02ef810ef3ad")
+	)
+	(wire
+		(pts
 			(xy 50.8 73.66) (xy 50.8 76.2)
 		)
 		(stroke
@@ -1698,6 +1195,16 @@
 			(type default)
 		)
 		(uuid "6f046bd1-72eb-45a7-979d-1aa1c5d1f655")
+	)
+	(wire
+		(pts
+			(xy 38.1 109.22) (xy 38.1 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6f0acc93-aa98-4b29-959a-615d46757ac0")
 	)
 	(wire
 		(pts
@@ -1731,6 +1238,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 118.11) (xy 114.3 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7ed1d196-f4c9-4021-af0d-3d4c48d087b2")
+	)
+	(wire
+		(pts
 			(xy 57.15 36.83) (xy 57.15 39.37)
 		)
 		(stroke
@@ -1738,6 +1255,26 @@
 			(type default)
 		)
 		(uuid "820f892f-0c51-4753-b92a-48de05976d4d")
+	)
+	(wire
+		(pts
+			(xy 52.07 125.73) (xy 57.15 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8c0e069a-e831-4eac-986d-96abd66c4d8c")
+	)
+	(wire
+		(pts
+			(xy 127 87.63) (xy 127 91.44)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "92e2246e-add1-4e58-b2e9-c8f43a08bff3")
 	)
 	(wire
 		(pts
@@ -1751,6 +1288,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 127) (xy 57.15 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "977259cb-cc25-4cec-88e7-6fda2991d730")
+	)
+	(wire
+		(pts
 			(xy 102.87 17.78) (xy 104.14 16.51)
 		)
 		(stroke
@@ -1758,6 +1305,36 @@
 			(type default)
 		)
 		(uuid "9e83554b-4052-48a0-8a2f-ab6811b26028")
+	)
+	(wire
+		(pts
+			(xy 67.31 125.73) (xy 72.39 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9fa74dca-8f0e-4a77-8a3e-540d9d451f99")
+	)
+	(wire
+		(pts
+			(xy 38.1 118.11) (xy 38.1 120.65)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a200a7d3-03f6-474e-99a3-3674ce8f9ad8")
+	)
+	(wire
+		(pts
+			(xy 80.01 111.76) (xy 81.28 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a26d5920-604f-487d-b2a0-0c6143ec796d")
 	)
 	(wire
 		(pts
@@ -1781,6 +1358,16 @@
 	)
 	(wire
 		(pts
+			(xy 114.3 101.6) (xy 119.38 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bafe7f3a-6818-433f-b32c-ded628e26356")
+	)
+	(wire
+		(pts
 			(xy 24.13 31.75) (xy 26.67 31.75)
 		)
 		(stroke
@@ -1788,6 +1375,36 @@
 			(type default)
 		)
 		(uuid "bb43843b-4150-4424-b48e-751726bfd2e0")
+	)
+	(wire
+		(pts
+			(xy 22.86 101.6) (xy 27.94 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c2da810d-640d-4188-b08a-e4627279ceb8")
+	)
+	(wire
+		(pts
+			(xy 57.15 135.89) (xy 57.15 134.62)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5d1cdd3-e51d-41a1-9641-d1786bccd8a5")
+	)
+	(wire
+		(pts
+			(xy 104.14 101.6) (xy 114.3 101.6)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c5e792c7-75d3-4dca-9324-450e4e8b23e9")
 	)
 	(wire
 		(pts
@@ -1851,6 +1468,26 @@
 	)
 	(wire
 		(pts
+			(xy 127 107.95) (xy 127 106.68)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de43e719-6fa3-4374-b69b-2e2bdfc32819")
+	)
+	(wire
+		(pts
+			(xy 104.14 111.76) (xy 104.14 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "df040691-84b3-43f9-a3ac-24d78a8c7a67")
+	)
+	(wire
+		(pts
 			(xy 105.41 67.31) (xy 105.41 66.04)
 		)
 		(stroke
@@ -1861,13 +1498,13 @@
 	)
 	(wire
 		(pts
-			(xy 149.86 30.48) (xy 153.67 30.48)
+			(xy 114.3 109.22) (xy 114.3 110.49)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e11dbd6b-620e-4fed-9436-4ed23e2bf581")
+		(uuid "e2d18523-ef59-464b-a91f-191069fb7be7")
 	)
 	(wire
 		(pts
@@ -1891,13 +1528,23 @@
 	)
 	(wire
 		(pts
-			(xy 171.45 30.48) (xy 175.26 30.48)
+			(xy 27.94 101.6) (xy 38.1 101.6)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "ed1f4aff-24f2-444c-b4a5-3a4f6c8cfc4f")
+		(uuid "e74b973c-af0d-4ca0-aa2f-c94cb9aa7068")
+	)
+	(wire
+		(pts
+			(xy 57.15 125.73) (xy 67.31 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ee42b26d-2eb9-41a0-895a-f517016fc556")
 	)
 	(wire
 		(pts
@@ -1909,8 +1556,18 @@
 		)
 		(uuid "fa595b0d-0da2-4e26-af5a-edb60f876198")
 	)
+	(wire
+		(pts
+			(xy 67.31 142.24) (xy 67.31 144.78)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fae98075-1747-445d-9721-57389496e443")
+	)
 	(image
-		(at 173.99 41.91)
+		(at 136.652 26.924)
 		(uuid "e8208bfd-a01b-4544-84ca-dc0c405e8f45")
 		(data "iVBORw0KGgoAAAANSUhEUgAAAIcAAAA/CAYAAADKftsSAAAABHNCSVQICAgIfAhkiAAABqFJREFU"
 			"eJzt3E1o024cB/Bvtj89VAdleHHgqqdiblIPTmStMB3KXg6KoEI8eNLSIuygCGMHBTtwCJPiqUKl"
@@ -1946,6 +1603,28 @@
 			"QmCC"
 		)
 	)
+	(hierarchical_label "ANODE_IN"
+		(shape input)
+		(at 52.07 86.36 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "00f7ae25-4b03-4146-8e7a-db68a947b763")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 127 107.95 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "020698ee-5dc7-427d-be43-c786f5208dad")
+	)
 	(hierarchical_label "GND"
 		(shape input)
 		(at 115.57 76.2 0)
@@ -1956,6 +1635,17 @@
 			(justify left)
 		)
 		(uuid "02ac79b0-0743-4422-85f1-ce8dd342e2ee")
+	)
+	(hierarchical_label "MCU_G"
+		(shape input)
+		(at 52.07 125.73 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "11236036-647c-4405-abc9-d551c2494fee")
 	)
 	(hierarchical_label "LED_CHARGE"
 		(shape input)
@@ -1968,16 +1658,38 @@
 		)
 		(uuid "11fefb1f-5a4a-4243-bf7a-f04f7a685944")
 	)
-	(hierarchical_label "MCU_B"
+	(hierarchical_label "GND"
 		(shape input)
-		(at 175.26 25.4 0)
+		(at 114.3 120.65 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "23962b89-1433-4a2f-8d99-3bcba2ff2028")
+		(uuid "1999c903-0d62-4481-957c-95e88eb63eed")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 38.1 120.65 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "1c373952-79f6-406d-839f-4c7994de157e")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 57.15 135.89 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "24b79062-f54d-4aff-b052-a8277cf2df15")
 	)
 	(hierarchical_label "GND"
 		(shape input)
@@ -1992,7 +1704,7 @@
 	)
 	(hierarchical_label "CHARGE-"
 		(shape input)
-		(at 129.54 41.91 0)
+		(at 130.048 41.91 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2011,6 +1723,17 @@
 			(justify left)
 		)
 		(uuid "2bdf98a7-c18a-402e-bb47-ec4f76d89e63")
+	)
+	(hierarchical_label "MCU_R"
+		(shape input)
+		(at 95.25 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "40b1e77b-d92b-412e-9139-f5aeb5c96101")
 	)
 	(hierarchical_label "GND"
 		(shape input)
@@ -2045,16 +1768,16 @@
 		)
 		(uuid "51a7e7f8-c61d-41cd-af00-d7aefa2cbe07")
 	)
-	(hierarchical_label "MCU_R"
+	(hierarchical_label "ANODE_IN"
 		(shape input)
-		(at 175.26 35.56 0)
+		(at 128.27 86.36 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "5687a3be-af17-40ad-84a1-1496ac3d3ca7")
+		(uuid "522faa23-1528-427d-af67-bc6d88d6ec2c")
 	)
 	(hierarchical_label "GND"
 		(shape input)
@@ -2078,16 +1801,16 @@
 		)
 		(uuid "7bc1cb02-ede9-49b0-9000-4b5a7d06958b")
 	)
-	(hierarchical_label "ANODE_IN"
+	(hierarchical_label "GND"
 		(shape input)
-		(at 149.86 30.48 180)
+		(at 27.94 111.76 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right)
+			(justify left)
 		)
-		(uuid "7f34b7da-a599-4e58-bc5f-5cb6c05f0579")
+		(uuid "7d40a7c0-cd90-4c5a-815d-89fc0975867e")
 	)
 	(hierarchical_label "LED_FAULT"
 		(shape input)
@@ -2122,16 +1845,27 @@
 		)
 		(uuid "a078c0e9-a869-4d34-823c-059028f4418c")
 	)
-	(hierarchical_label "MCU_G"
+	(hierarchical_label "GND"
 		(shape input)
-		(at 175.26 30.48 0)
+		(at 50.8 107.95 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left)
 		)
-		(uuid "bd69c280-6945-4a50-acb9-b8da881e7310")
+		(uuid "b6114526-f685-4457-866d-49dfe50f64f2")
+	)
+	(hierarchical_label "MCU_B"
+		(shape input)
+		(at 22.86 101.6 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "bc1b2a57-0684-4f94-b32d-2833f33d3467")
 	)
 	(hierarchical_label "GND"
 		(shape input)
@@ -2157,6 +1891,17 @@
 	)
 	(hierarchical_label "GND"
 		(shape input)
+		(at 104.14 111.76 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "d2bb3891-8be0-4387-bd02-be4cd4a4ffe6")
+	)
+	(hierarchical_label "GND"
+		(shape input)
 		(at 91.44 53.34 0)
 		(effects
 			(font
@@ -2176,6 +1921,17 @@
 			(justify right)
 		)
 		(uuid "dc4f2f49-332c-4bb9-84a9-4ea1cc5e723d")
+	)
+	(hierarchical_label "ANODE_IN"
+		(shape input)
+		(at 81.28 110.49 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "e0667d42-16c6-4995-80c8-41d289dcc3e5")
 	)
 	(hierarchical_label "HEART-"
 		(shape input)
@@ -2209,6 +1965,28 @@
 			(justify left)
 		)
 		(uuid "f598a400-123b-499d-a27e-2d4dcddda4d4")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 67.31 144.78 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f6514486-8335-4267-a41b-657a62c1feb6")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 80.01 132.08 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "f68c8765-e795-4690-bea9-eadda22f9091")
 	)
 	(symbol
 		(lib_id "IRLML0030TRPBF:IRLML0030TRPBF")
@@ -2276,88 +2054,6 @@
 				)
 			)
 		)
-		(property "Height" "1.12"
-			(at 109.22 422.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "942-IRLML0030TRPBF"
-			(at 109.22 522.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/IRLML0030TRPBF?qs=9%252BKlkBgLFf0lLJi3xz1alg%3D%3D"
-			(at 109.22 622.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "Infineon"
-			(at 109.22 722.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "IRLML0030TRPBF"
-			(at 109.22 822.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Part #" ""
-			(at 92.71 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 92.71 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "P/N" "IRLML0030TRPBF:SOT95P237X112-3N"
 			(at 92.71 27.94 0)
 			(hide yes)
@@ -2394,8 +2090,8 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:LED_RGBA")
-		(at 158.75 30.48 180)
+		(lib_id "IRLML0030TRPBF:IRLML0030TRPBF")
+		(at 69.85 121.92 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -2403,10 +2099,9 @@
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "22c0b150-9513-4226-98b0-ed67cf2d2824")
-		(property "Reference" "D20"
-			(at 158.75 17.78 0)
+		(uuid "320ef326-9e35-4e4b-9931-ac13c16e05da")
+		(property "Reference" "Q9"
+			(at 86.106 122.682 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2415,8 +2110,8 @@
 				)
 			)
 		)
-		(property "Value" "LED_RGBA"
-			(at 158.75 20.32 0)
+		(property "Value" "IRLML0030TRPBF"
+			(at 90.678 124.968 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -2425,8 +2120,105 @@
 				)
 			)
 		)
-		(property "Footprint" "LED_SMD:LED_Cree-XHP50_3V_HighDensity"
-			(at 158.75 29.21 0)
+		(property "Footprint" "charger_parts:IRLML0030TRPBF"
+			(at 86.36 216.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "http://www.infineon.com/dgdl/irlml0030pbf.pdf?fileId=5546d462533600a401535664773825df"
+			(at 86.36 316.84 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "INFINEON - IRLML0030TRPBF - MOSFET, N CH, 30V, 5.3A, SOT23-3"
+			(at 69.596 109.474 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "P/N" "IRLML0030TRPBF:SOT95P237X112-3N"
+			(at 69.85 121.92 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "99c8b5c7-f104-450e-8f71-95e553a05556")
+		)
+		(pin "1"
+			(uuid "7543e210-e511-42a5-b19b-dea9ea4c6585")
+		)
+		(pin "3"
+			(uuid "320e6bea-e9c4-4617-86ec-34390a7b209e")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/bee5c61a-f058-4607-9a84-1edb0b41c252"
+					(reference "Q9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 67.31 138.43 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "35bdf8cf-743d-44ff-8122-ca66d270e2f8")
+		(property "Reference" "D21"
+			(at 69.596 137.668 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 69.596 139.446 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 67.31 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2437,7 +2229,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 158.75 29.21 0)
+			(at 67.31 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2447,8 +2239,8 @@
 				)
 			)
 		)
-		(property "Description" "RGB LED, red/green/blue/anode"
-			(at 158.75 30.48 0)
+		(property "Description" "Light emitting diode"
+			(at 67.31 138.43 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2458,22 +2250,27 @@
 				)
 			)
 		)
-		(pin "4"
-			(uuid "d420c72e-c4e4-42ed-974f-e5a451eadaef")
+		(property "P/N" "NCD0603R1"
+			(at 67.31 138.43 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
 		)
 		(pin "2"
-			(uuid "8939f4c2-c94a-4949-b32c-589d445351b3")
-		)
-		(pin "3"
-			(uuid "aa966de7-40d1-4507-92ee-4c8d8134f926")
+			(uuid "69db09a7-da25-4b91-818c-88de1988e6e9")
 		)
 		(pin "1"
-			(uuid "841c3d29-78a5-4bc7-98a4-c029a117dbf8")
+			(uuid "b01d7ac8-8e5b-4bf8-b710-c6d88e2593c6")
 		)
 		(instances
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/bee5c61a-f058-4607-9a84-1edb0b41c252"
-					(reference "D20")
+					(reference "D21")
 					(unit 1)
 				)
 			)
@@ -2545,88 +2342,6 @@
 				)
 			)
 		)
-		(property "Height" "1.12"
-			(at 63.5 422.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "942-IRLML0030TRPBF"
-			(at 63.5 522.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/IRLML0030TRPBF?qs=9%252BKlkBgLFf0lLJi3xz1alg%3D%3D"
-			(at 63.5 622.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "Infineon"
-			(at 63.5 722.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "IRLML0030TRPBF"
-			(at 63.5 822.86 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Part #" ""
-			(at 46.99 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 46.99 27.94 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "P/N" "IRLML0030TRPBF:SOT95P237X112-3N"
 			(at 46.99 27.94 0)
 			(hide yes)
@@ -2657,85 +2372,6 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/bee5c61a-f058-4607-9a84-1edb0b41c252"
 					(reference "Q2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 167.64 35.56 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "3e83bac3-a26d-42b2-8e0d-07e3b22a18e6")
-		(property "Reference" "R48"
-			(at 166.624 33.782 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "330"
-			(at 171.196 33.528 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 167.64 37.338 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 167.64 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 167.64 35.56 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "0f3b82b8-e7ee-4097-8bfd-0d56b3e85d5f")
-		)
-		(pin "2"
-			(uuid "9ad05bca-72d8-4bec-b85e-8665ef79203d")
-		)
-		(instances
-			(project "PS-ChargerInterfacePCB"
-				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/bee5c61a-f058-4607-9a84-1edb0b41c252"
-					(reference "R48")
 					(unit 1)
 				)
 			)
@@ -2797,28 +2433,6 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 38.1 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part #" ""
-			(at 38.1 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
 			(at 38.1 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -2928,28 +2542,6 @@
 				)
 			)
 		)
-		(property "Part #" ""
-			(at 81.28 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 81.28 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "P/N" "CRCW0603100KFKEE"
 			(at 81.28 36.83 0)
 			(hide yes)
@@ -3048,17 +2640,6 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 50.8 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "P/N" "NCD0603R1"
 			(at 50.8 69.85 90)
 			(hide yes)
@@ -3086,6 +2667,190 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/bee5c61a-f058-4607-9a84-1edb0b41c252"
 					(reference "D17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 38.1 105.41 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "47591985-f08c-4439-9514-699d35081a66")
+		(property "Reference" "R47"
+			(at 40.132 104.648 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "30"
+			(at 40.132 107.188 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 36.322 105.41 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 38.1 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "P/N" "CRCW0603100KFKEE"
+			(at 38.1 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "61f89ba3-f8b5-454b-9110-7849ec60f9bb")
+		)
+		(pin "2"
+			(uuid "5ead7c4b-8271-42cc-a776-09cfb1313a2f")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/bee5c61a-f058-4607-9a84-1edb0b41c252"
+					(reference "R47")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 114.3 105.41 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "4f6cb30c-be2b-4e82-8040-ad36cd4abc2e")
+		(property "Reference" "R51"
+			(at 116.332 104.648 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "150"
+			(at 116.332 107.188 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 112.522 105.41 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 114.3 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "P/N" "CRCW0603100KFKEE"
+			(at 114.3 105.41 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ebc63deb-ed74-4d4b-a935-40240a0f43be")
+		)
+		(pin "2"
+			(uuid "e49f4184-181f-469e-a2a2-dd654442a21b")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/bee5c61a-f058-4607-9a84-1edb0b41c252"
+					(reference "R51")
 					(unit 1)
 				)
 			)
@@ -3157,17 +2922,6 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 38.1 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "P/N" "NCD0603R1"
 			(at 38.1 45.72 90)
 			(hide yes)
@@ -3195,6 +2949,193 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/bee5c61a-f058-4607-9a84-1edb0b41c252"
 					(reference "D16")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 67.31 129.54 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5b410670-d507-41a3-ac32-4533e74872f2")
+		(property "Reference" "R49"
+			(at 69.342 128.778 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "30"
+			(at 69.342 131.318 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 65.532 129.54 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 67.31 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 67.31 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "P/N" "CRCW0603100KFKEE"
+			(at 67.31 129.54 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "4371b2f1-ec53-49d2-8d5e-852c07db924d")
+		)
+		(pin "2"
+			(uuid "4efcd768-a9b3-4ced-a09f-7bf2b7e9d5a8")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/bee5c61a-f058-4607-9a84-1edb0b41c252"
+					(reference "R49")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "IRLML0030TRPBF:IRLML0030TRPBF")
+		(at 116.84 97.79 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "5ecd9de0-5f94-4a27-9a15-82895cb438a3")
+		(property "Reference" "Q10"
+			(at 133.096 98.552 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IRLML0030TRPBF"
+			(at 137.668 100.838 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "charger_parts:IRLML0030TRPBF"
+			(at 133.35 192.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "http://www.infineon.com/dgdl/irlml0030pbf.pdf?fileId=5546d462533600a401535664773825df"
+			(at 133.35 292.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "INFINEON - IRLML0030TRPBF - MOSFET, N CH, 30V, 5.3A, SOT23-3"
+			(at 116.586 85.344 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "P/N" "IRLML0030TRPBF:SOT95P237X112-3N"
+			(at 116.84 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "e5162531-08ed-4003-987a-7e16f94dac0b")
+		)
+		(pin "1"
+			(uuid "fdce3ae6-f3ba-407d-ae80-3afd5f5a5185")
+		)
+		(pin "3"
+			(uuid "ef26e90d-044a-4d20-88a6-f6e550aa8907")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/bee5c61a-f058-4607-9a84-1edb0b41c252"
+					(reference "Q10")
 					(unit 1)
 				)
 			)
@@ -3257,28 +3198,6 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 40.64 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part #" ""
-			(at 40.64 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
 			(at 40.64 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -3387,28 +3306,6 @@
 				)
 			)
 		)
-		(property "Part #" ""
-			(at 50.8 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 50.8 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "P/N" "CRCW0603100KFKEE"
 			(at 50.8 60.96 0)
 			(hide yes)
@@ -3436,6 +3333,98 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/bee5c61a-f058-4607-9a84-1edb0b41c252"
 					(reference "R41")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 38.1 114.3 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "900004ba-2553-4239-8067-3b96b20b97e2")
+		(property "Reference" "D20"
+			(at 40.386 113.538 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 40.386 115.316 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 38.1 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 38.1 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 38.1 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "P/N" "NCD0603R1"
+			(at 38.1 114.3 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "663ea308-6a27-44c0-8f1f-2a8d41b32247")
+		)
+		(pin "1"
+			(uuid "2f232e81-be48-42b4-897f-ea769c8ac745")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/bee5c61a-f058-4607-9a84-1edb0b41c252"
+					(reference "D20")
 					(unit 1)
 				)
 			)
@@ -3498,28 +3487,6 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 105.41 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part #" ""
-			(at 105.41 62.23 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
 			(at 105.41 62.23 0)
 			(hide yes)
 			(show_name no)
@@ -3629,28 +3596,6 @@
 				)
 			)
 		)
-		(property "Part #" ""
-			(at 26.67 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 26.67 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "P/N" "CRCW0603100KFKEE"
 			(at 26.67 36.83 0)
 			(hide yes)
@@ -3678,85 +3623,6 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/bee5c61a-f058-4607-9a84-1edb0b41c252"
 					(reference "R36")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 167.64 30.48 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "95a40911-7e7d-493e-b2d5-71c3bf56d275")
-		(property "Reference" "R47"
-			(at 166.624 28.448 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100"
-			(at 171.196 28.448 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 167.64 32.258 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 167.64 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 167.64 30.48 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "e9ae379d-d5f4-4d82-8c89-2c9491f5ae10")
-		)
-		(pin "2"
-			(uuid "05d2168c-25ef-4eea-b6f4-ac149d9c23a9")
-		)
-		(instances
-			(project "PS-ChargerInterfacePCB"
-				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/bee5c61a-f058-4607-9a84-1edb0b41c252"
-					(reference "R47")
 					(unit 1)
 				)
 			)
@@ -3828,88 +3694,6 @@
 				)
 			)
 		)
-		(property "Height" "1.12"
-			(at 68.58 448.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "942-IRLML0030TRPBF"
-			(at 68.58 548.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/IRLML0030TRPBF?qs=9%252BKlkBgLFf0lLJi3xz1alg%3D%3D"
-			(at 68.58 648.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "Infineon"
-			(at 68.58 748.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "IRLML0030TRPBF"
-			(at 68.58 848.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Part #" ""
-			(at 52.07 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 52.07 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "P/N" "IRLML0030TRPBF:SOT95P237X112-3N"
 			(at 52.07 53.34 0)
 			(hide yes)
@@ -3940,85 +3724,6 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/bee5c61a-f058-4607-9a84-1edb0b41c252"
 					(reference "Q5")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 167.64 25.4 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "a638f9ff-3af9-4eb1-b281-33b82640865e")
-		(property "Reference" "R46"
-			(at 166.624 23.368 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "100"
-			(at 171.196 23.368 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 167.64 27.178 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 167.64 25.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 167.64 25.4 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "2379463c-4386-4304-a7d9-d1c488567d32")
-		)
-		(pin "2"
-			(uuid "1fc9071a-1455-4a8e-b820-c7f331031fac")
-		)
-		(instances
-			(project "PS-ChargerInterfacePCB"
-				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/bee5c61a-f058-4607-9a84-1edb0b41c252"
-					(reference "R46")
 					(unit 1)
 				)
 			)
@@ -4080,28 +3785,6 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 115.57 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part #" ""
-			(at 115.57 60.96 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
 			(at 115.57 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -4210,17 +3893,6 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 115.57 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "P/N" "NCD0603R1"
 			(at 115.57 69.85 90)
 			(hide yes)
@@ -4309,28 +3981,6 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 91.44 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Part #" ""
-			(at 91.44 36.83 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
 			(at 91.44 36.83 0)
 			(hide yes)
 			(show_name no)
@@ -4430,88 +4080,6 @@
 		)
 		(property "Description" "INFINEON - IRLML0030TRPBF - MOSFET, N CH, 30V, 5.3A, SOT23-3"
 			(at 117.856 40.894 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Height" "1.12"
-			(at 134.62 448.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Part Number" "942-IRLML0030TRPBF"
-			(at 134.62 548.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Mouser Price/Stock" "https://www.mouser.co.uk/ProductDetail/Infineon-Technologies/IRLML0030TRPBF?qs=9%252BKlkBgLFf0lLJi3xz1alg%3D%3D"
-			(at 134.62 648.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Name" "Infineon"
-			(at 134.62 748.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Manufacturer_Part_Number" "IRLML0030TRPBF"
-			(at 134.62 848.26 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left top)
-			)
-		)
-		(property "Part #" ""
-			(at 118.11 53.34 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Sim.Pins" ""
-			(at 118.11 53.34 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4622,17 +4190,6 @@
 				)
 			)
 		)
-		(property "Sim.Pins" "1=K 2=A"
-			(at 91.44 45.72 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "P/N" "NCD0603R1"
 			(at 91.44 45.72 90)
 			(hide yes)
@@ -4660,6 +4217,472 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/bee5c61a-f058-4607-9a84-1edb0b41c252"
 					(reference "D18")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 114.3 114.3 90)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d45e1b6a-3cd5-46cc-bef4-e8c987a5b90c")
+		(property "Reference" "D23"
+			(at 116.586 113.538 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Value" "LED"
+			(at 116.586 115.316 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 114.3 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 114.3 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 114.3 114.3 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "P/N" "NCD0603R1"
+			(at 114.3 114.3 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "3ded7134-f048-41d0-91c8-29563c8e7080")
+		)
+		(pin "1"
+			(uuid "333b2309-58ca-4236-86d4-cc11959b2fe3")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/bee5c61a-f058-4607-9a84-1edb0b41c252"
+					(reference "D23")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 104.14 106.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "dc3a8ba2-04a9-431c-8158-911144586f53")
+		(property "Reference" "R50"
+			(at 106.68 105.4099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 106.68 107.9499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 102.362 106.68 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 104.14 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 104.14 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "P/N" "CRCW0603100KFKEE"
+			(at 104.14 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "38112080-e154-403a-a1b8-599dfeb0ff15")
+		)
+		(pin "2"
+			(uuid "d6a53616-a09b-43a9-a461-d26be8050687")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/bee5c61a-f058-4607-9a84-1edb0b41c252"
+					(reference "R50")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 57.15 130.81 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ef18823b-d429-479f-b811-138843452169")
+		(property "Reference" "R48"
+			(at 59.69 129.5399 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 59.69 132.0799 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 55.372 130.81 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 57.15 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "P/N" "CRCW0603100KFKEE"
+			(at 57.15 130.81 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "589fb2d0-1ed2-4958-9d8b-a2676b9f7ee9")
+		)
+		(pin "2"
+			(uuid "e87093c1-bd41-4713-9d94-f9eb41d45bc5")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/bee5c61a-f058-4607-9a84-1edb0b41c252"
+					(reference "R48")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R_US")
+		(at 27.94 106.68 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "f7ba6d2e-a6d1-46e2-8a06-cff5aca51474")
+		(property "Reference" "R46"
+			(at 30.48 105.4099 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100k"
+			(at 30.48 107.9499 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 26.162 106.68 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 27.94 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 27.94 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "P/N" "CRCW0603100KFKEE"
+			(at 27.94 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "dccd4e11-e326-4b38-814e-0b568a1792f0")
+		)
+		(pin "2"
+			(uuid "c1a9558c-5670-4ba2-afe5-65aaace4f3e8")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/bee5c61a-f058-4607-9a84-1edb0b41c252"
+					(reference "R46")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "IRLML0030TRPBF:IRLML0030TRPBF")
+		(at 40.64 97.79 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "fd5dabf2-d014-4e87-9adc-853e0fbcbddc")
+		(property "Reference" "Q8"
+			(at 56.896 98.552 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "IRLML0030TRPBF"
+			(at 61.468 100.838 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "charger_parts:IRLML0030TRPBF"
+			(at 57.15 192.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Datasheet" "http://www.infineon.com/dgdl/irlml0030pbf.pdf?fileId=5546d462533600a401535664773825df"
+			(at 57.15 292.71 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(property "Description" "INFINEON - IRLML0030TRPBF - MOSFET, N CH, 30V, 5.3A, SOT23-3"
+			(at 40.386 85.344 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "P/N" "IRLML0030TRPBF:SOT95P237X112-3N"
+			(at 40.64 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "63b3f99d-6395-4684-b24e-f5c58c77a7e3")
+		)
+		(pin "1"
+			(uuid "b2839563-6c0e-441f-9359-85512796ab80")
+		)
+		(pin "3"
+			(uuid "7642d30a-3e12-4acf-a7f2-bf4e4d8e9151")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/bee5c61a-f058-4607-9a84-1edb0b41c252"
+					(reference "Q8")
 					(unit 1)
 				)
 			)

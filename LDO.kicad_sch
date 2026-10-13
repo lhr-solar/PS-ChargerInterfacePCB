@@ -1989,17 +1989,6 @@
 				)
 			)
 		)
-		(property "Mouser P/N" "GRM21BR61H106KE43K"
-			(at 165.1 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "LCSC P/N" "C440198"
 			(at 165.1 69.85 0)
 			(hide yes)
@@ -2108,46 +2097,6 @@
 				)
 			)
 		)
-		(property "Color" ""
-			(at 165.1 63.5 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "If" ""
-			(at 165.1 63.5 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mfg" ""
-			(at 165.1 63.5 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Vf" ""
-			(at 165.1 63.5 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "01c67387-58e5-48ff-81a2-8ef93a58300b")
 		)
@@ -2237,17 +2186,6 @@
 				)
 			)
 		)
-		(property "Datasheet Embed" "kicad-embed://22057B.pdf"
-			(at 152.4 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(property "P/N" "MCP1826S-3302E/DB"
 			(at 152.4 63.5 0)
 			(hide yes)
@@ -2260,17 +2198,6 @@
 			)
 		)
 		(property "LCSC P/N" "C126055"
-			(at 152.4 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC MFG P/N" "LM39100S-3.3"
 			(at 152.4 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -2398,28 +2325,6 @@
 				)
 			)
 		)
-		(property "Old P/N" "BAT760-7"
-			(at 133.35 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Old LCSC P/N" "C124187"
-			(at 133.35 63.5 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
 		(pin "1"
 			(uuid "07949f2e-a083-4273-9382-0b69eba2a8a9")
 		)
@@ -2504,17 +2409,6 @@
 			)
 		)
 		(property "Description" "Unpolarized capacitor, small symbol"
-			(at 139.7 69.85 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Mouser P/N" "GRM21BR61H106KE43K"
 			(at 139.7 69.85 0)
 			(hide yes)
 			(show_name no)
