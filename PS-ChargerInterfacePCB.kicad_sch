@@ -8425,8 +8425,8 @@
 				)
 			)
 		)
-		(property "Value" "LED"
-			(at 140.2715 60.706 0)
+		(property "Value" "14V"
+			(at 141.732 60.706 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8988,8 +8988,8 @@
 				)
 			)
 		)
-		(property "Value" "LED"
-			(at 111.0615 60.706 0)
+		(property "Value" "Fault"
+			(at 111.506 60.706 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10694,7 +10694,7 @@
 				)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "3V3"
 			(at 139.192 51.816 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12257,7 +12257,7 @@
 				)
 			)
 		)
-		(property "Value" "LED"
+		(property "Value" "5V"
 			(at 140.2715 42.926 0)
 			(show_name no)
 			(do_not_autoplace no)
