@@ -514,23 +514,23 @@
       },
       {
         "name": "14V",
-        "pcb_color": "rgb(255, 229, 65)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
-        "schematic_color": "rgb(255, 16, 20)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": ""
       },
       {
         "name": "GND",
-        "pcb_color": "rgb(50, 45, 50)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 2,
-        "schematic_color": "rgb(4, 4, 4)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": ""
       },
       {
         "name": "Vin",
-        "pcb_color": "rgb(255, 39, 31)",
+        "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 1,
-        "schematic_color": "rgb(255, 205, 100)",
+        "schematic_color": "rgba(0, 0, 0, 0.000)",
         "tuning_profile": ""
       }
     ],
