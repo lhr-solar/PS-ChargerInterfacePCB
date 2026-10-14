@@ -755,7 +755,7 @@
 	)
 	(text "Vout = Vin* ((R13+R21)/(R13+R21+R12))\nVout/Vin = 3/12 = 0.25\nVin = 12V\nVout = 3V\n\n\nR12 = \n0.25(R12+R13+R21)=R13+R21\nR12 = 3(R13+R21)\nR13 + R21 = 15.1k ohms, R12 = 45.3\n\nVout = 12*(15.1k/45.3k+15.1k) = 3V"
 		(exclude_from_sim no)
-		(at 39.878 67.31 0)
+		(at 39.37 67.31 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -765,7 +765,7 @@
 	)
 	(text "12V"
 		(exclude_from_sim no)
-		(at 53.848 28.702 0)
+		(at 53.34 29.21 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -775,7 +775,7 @@
 	)
 	(text "Current draw (worst case)\nI = 3.3/2.2k+220 = 1mA"
 		(exclude_from_sim no)
-		(at 159.512 60.452 0)
+		(at 160.02 60.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -785,7 +785,7 @@
 	)
 	(text "VPP MCU reading: \n32A cable: ~220Ω \n\nVpp = 3.3 (Rcabel/Rpull up + Rcabel)\nVpp = 3.3 (220/2.2k+220)\nVpp = 0.3V"
 		(exclude_from_sim no)
-		(at 160.02 51.054 0)
+		(at 160.02 50.8 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -795,7 +795,7 @@
 	)
 	(text "State A = no EV (12V)\nState C  = ready to charge (3V)\n"
 		(exclude_from_sim no)
-		(at 58.674 18.288 0)
+		(at 58.42 17.78 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -805,7 +805,7 @@
 	)
 	(text "3V"
 		(exclude_from_sim no)
-		(at 80.01 40.894 0)
+		(at 80.01 40.64 0)
 		(effects
 			(font
 				(size 1.27 1.27)

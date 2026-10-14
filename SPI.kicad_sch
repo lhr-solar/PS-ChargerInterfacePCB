@@ -492,7 +492,7 @@
 	)
 	(text "GND: Common ground connection\n\nVCC: Power supply for the display\n\nSCL: SPI clock signal\n\nSDA: SPI data signal\n\nRES: Hardware reset for the display\n\nDC: Selects between command and display data\n\nCS: Enables or selects the display on the SPI bus\n\nBLK: Backlight power or brightness control"
 		(exclude_from_sim no)
-		(at 49.276 31.242 0)
+		(at 49.53 31.75 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -503,7 +503,7 @@
 	)
 	(text "Display\n\n"
 		(exclude_from_sim no)
-		(at 18.796 15.748 0)
+		(at 19.05 15.24 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -513,7 +513,7 @@
 	)
 	(text "https://manuals.plus/asin/B0DN9NMBFW\n\nhttps://a.co/d/0g1hqcGD"
 		(exclude_from_sim no)
-		(at 15.494 117.602 0)
+		(at 15.24 118.11 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -9124,7 +9124,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Package_DIP:DIP-20_W7.62mm"
+		(property "Footprint" "Connector_PinSocket_2.54mm:PinSocket_1x08_P2.54mm_Vertical"
 			(at 19.05 31.75 0)
 			(hide yes)
 			(show_name no)

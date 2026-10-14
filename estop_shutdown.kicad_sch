@@ -439,121 +439,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:GND"
-			(power global)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(in_pos_files yes)
-			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(symbol "GND_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name ""
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(rectangle
 		(start 13.97 13.97)
@@ -581,7 +466,7 @@
 	)
 	(text "GPIO inputs are 3.3 V only.\n E-stop sensing does not replace the independent\n hardware shutdown path."
 		(exclude_from_sim no)
-		(at 61.214 58.42 0)
+		(at 60.96 58.42 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -592,7 +477,7 @@
 	)
 	(text "Normally-closed E-stop: normal = LOW\nPressed, broken wire, or unplugged = HIGH (FAULT)"
 		(exclude_from_sim no)
-		(at 60.96 18.796 0)
+		(at 60.96 19.05 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -603,7 +488,7 @@
 	)
 	(text "Normally-open soft-shutdown button:\n released = HIGH; pressed = LOW"
 		(exclude_from_sim no)
-		(at 67.056 70.866 0)
+		(at 67.31 71.12 0)
 		(effects
 			(font
 				(size 1.524 1.524)
@@ -765,6 +650,28 @@
 			(justify left)
 		)
 		(uuid "80eb6b2b-e32f-451a-9b88-6fc5fe1ad1cb")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 33.02 52.07 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "a9f8b6ce-3381-4aa5-a595-75efcc7a5923")
+	)
+	(hierarchical_label "GND"
+		(shape input)
+		(at 36.83 104.14 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "b656fa2d-2dcf-4876-933d-50fff36c5e6c")
 	)
 	(hierarchical_label "ESTOP_SENSE"
 		(shape output)
@@ -1362,86 +1269,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 36.83 104.14 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "b48002b0-561b-4508-936e-5b95fc9dfd98")
-		(property "Reference" "#PWR022"
-			(at 36.83 110.49 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 36.957 108.5342 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 36.83 104.14 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 36.83 104.14 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 36.83 104.14 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "877664ce-ca7c-44a0-9076-79c3c110e3c9")
-		)
-		(instances
-			(project "atempt_2"
-				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/9996de2d-8d86-4ad4-8204-1bedc56aa8e5"
-					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-			(project "PS-ChargerInterfacePCB"
-				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/9996de2d-8d86-4ad4-8204-1bedc56aa8e5"
-					(reference "#PWR022")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "Device:R")
 		(at 33.02 25.4 0)
 		(unit 1)
@@ -1521,86 +1348,6 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/9996de2d-8d86-4ad4-8204-1bedc56aa8e5"
 					(reference "R37")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 33.02 52.07 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "cc8f5d5b-3d55-40c9-b57a-e93cb9afcca1")
-		(property "Reference" "#PWR020"
-			(at 33.02 58.42 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "GND"
-			(at 36.068 52.07 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 33.02 52.07 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 33.02 52.07 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" ""
-			(at 33.02 52.07 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "1a382091-4394-4f8d-b14f-6959ef3a10fe")
-		)
-		(instances
-			(project "atempt_2"
-				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42/9996de2d-8d86-4ad4-8204-1bedc56aa8e5"
-					(reference "#PWR020")
-					(unit 1)
-				)
-			)
-			(project "PS-ChargerInterfacePCB"
-				(path "/894adbd2-6316-426a-afb4-88808e8ec51a/9996de2d-8d86-4ad4-8204-1bedc56aa8e5"
-					(reference "#PWR020")
 					(unit 1)
 				)
 			)

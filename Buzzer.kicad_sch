@@ -942,7 +942,7 @@
 	)
 	(text "BUZZZZZZZZZZZZZZZZ\n"
 		(exclude_from_sim no)
-		(at 24.892 14.224 0)
+		(at 25.4 13.97 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -979,15 +979,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e68db5b2-641b-4e0a-a25c-b9d0b007a849")
-	)
-	(bus_entry
-		(at 129.54 69.85)
-		(size 2.54 2.54)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7f7b9092-8147-4c43-bcd9-379b3cd5980d")
 	)
 	(wire
 		(pts

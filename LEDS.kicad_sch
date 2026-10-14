@@ -732,7 +732,7 @@
 	)
 	(text "LEDS"
 		(exclude_from_sim no)
-		(at 18.288 17.018 0)
+		(at 17.78 16.51 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -753,7 +753,7 @@
 	)
 	(text "External Leds"
 		(exclude_from_sim no)
-		(at 23.368 95.25 0)
+		(at 22.86 95.25 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -898,7 +898,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 43.18) (xy 130.048 41.91)
+			(xy 128.27 43.18) (xy 129.54 41.91)
 		)
 		(stroke
 			(width 0)
@@ -1704,7 +1704,7 @@
 	)
 	(hierarchical_label "CHARGE-"
 		(shape input)
-		(at 130.048 41.91 0)
+		(at 129.54 41.91 0)
 		(effects
 			(font
 				(size 1.27 1.27)

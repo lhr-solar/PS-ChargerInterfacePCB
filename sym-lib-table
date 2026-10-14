@@ -5,4 +5,5 @@
 	(lib (name "lhrs_misc") (type "KiCad") (uri "${KIPRJMOD}/KiCAD-Sharepoint/lhrs_misc.kicad_sym") (options "") (descr ""))
 	(lib (name "lhrs_power") (type "KiCad") (uri "${KIPRJMOD}/KiCAD-Sharepoint/lhrs_power.kicad_sym") (options "") (descr ""))
 	(lib (name "lhrs_special") (type "KiCad") (uri "${KIPRJMOD}/KiCAD-Sharepoint/lhrs_special.kicad_sym") (options "") (descr ""))
+	(lib (name "charger_parts") (type "KiCad") (uri "${KIPRJMOD}/Hardware") (options "") (descr ""))
 )

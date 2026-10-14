@@ -162,6 +162,183 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "CAN_NANO_01x05_1"
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(in_pos_files yes)
+			(duplicate_pin_numbers_are_jumpers no)
+			(property "Reference" "J3"
+				(at 1.778 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Value" "CHARGER_CAN"
+				(at -3.048 -2.032 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(justify left)
+				)
+			)
+			(property "Footprint" "LHRS_Connectors:Molex_Nano-Fit_105309-xx05_1x05_P2.50mm_Vertical"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "P/N" "1053091105"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(symbol "CAN_NANO_01x05_1_1_1"
+				(rectangle
+					(start 1.27 -3.81)
+					(end 10.16 -22.86)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(pin power_in line
+					(at -1.27 -6.35 0)
+					(length 2.54)
+					(name "14V"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -1.27 -10.16 0)
+					(length 2.54)
+					(name "CAN_H"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin bidirectional line
+					(at -1.27 -13.97 0)
+					(length 2.54)
+					(name "CAN_L"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin power_in line
+					(at -1.27 -17.78 0)
+					(length 2.54)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -1.27 -21.59 0)
+					(length 2.54)
+					(name "SHIELD"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Connector:Conn_01x01_Pin"
 			(pin_names
 				(offset 1.016)
@@ -1839,8 +2016,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 0 0)
+			(property "Reference" "J4"
+				(at 5.08 -0.254 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1849,8 +2026,8 @@
 					)
 				)
 			)
-			(property "Value" "CAN_DEBUG_NANO_01x04"
-				(at 2.032 -2.286 0)
+			(property "Value" "CHARGER_CAN_DEBUG0"
+				(at -0.508 -2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -1918,7 +2095,7 @@
 				(pin power_in line
 					(at -1.27 -6.35 0)
 					(length 2.54)
-					(name "12V"
+					(name "14V"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3376,7 +3553,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 163.83) (xy 82.55 163.83)
+			(xy 67.31 162.56) (xy 83.82 162.56)
 		)
 		(stroke
 			(width 0)
@@ -3646,6 +3823,16 @@
 	)
 	(wire
 		(pts
+			(xy 33.02 165.1) (xy 35.56 165.1)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3eb8db01-9995-420f-8cae-1b242dabb081")
+	)
+	(wire
+		(pts
 			(xy 59.69 88.9) (xy 44.45 88.9)
 		)
 		(stroke
@@ -3786,7 +3973,7 @@
 	)
 	(wire
 		(pts
-			(xy 22.86 163.83) (xy 34.29 163.83)
+			(xy 24.13 161.29) (xy 35.56 161.29)
 		)
 		(stroke
 			(width 0)
@@ -4216,7 +4403,7 @@
 	)
 	(wire
 		(pts
-			(xy 19.05 158.75) (xy 34.29 158.75)
+			(xy 20.32 157.48) (xy 35.56 157.48)
 		)
 		(stroke
 			(width 0)
@@ -4376,7 +4563,7 @@
 	)
 	(wire
 		(pts
-			(xy 66.04 158.75) (xy 80.01 158.75)
+			(xy 67.31 157.48) (xy 81.28 157.48)
 		)
 		(stroke
 			(width 0)
@@ -6774,7 +6961,7 @@
 		(uuid "4a16d119-f3c9-4130-bb64-2a576e4d0f0b")
 	)
 	(label "ESTOP_BUT"
-		(at 22.86 163.83 0)
+		(at 24.13 161.29 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7224,7 +7411,7 @@
 		(uuid "c87a29c4-010b-46ca-bf6e-18e809b715d5")
 	)
 	(label "ESTOP_SENSE"
-		(at 80.01 158.75 180)
+		(at 81.28 157.48 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7234,7 +7421,7 @@
 		(uuid "cc449e51-71f2-42b4-b754-9cc6fa7c1ad1")
 	)
 	(label "SHUTDOWN_BUT"
-		(at 19.05 158.75 0)
+		(at 20.32 157.48 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7284,7 +7471,7 @@
 		(uuid "e006e26c-cf41-480c-935b-040016db0d2d")
 	)
 	(label "SOFT_SHUTDOWN"
-		(at 82.55 163.83 180)
+		(at 83.82 162.56 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8134,6 +8321,83 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
 					(reference "#PWR07")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 33.02 165.1 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "22eb8e5a-989a-47d6-a95d-3b614268142e")
+		(property "Reference" "#PWR020"
+			(at 33.02 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 29.718 166.37 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 33.02 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 33.02 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 33.02 165.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "ce500764-c2e3-4b6b-bf32-5e7b150f6ef5")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
+					(reference "#PWR020")
 					(unit 1)
 				)
 			)
@@ -9713,7 +9977,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+		(property "Footprint" "Resistor_SMD:R_1206_3216Metric_Pad1.30x1.75mm_HandSolder"
 			(at 30.48 20.828 90)
 			(hide yes)
 			(show_name no)
@@ -13425,6 +13689,7 @@
 		)
 	)
 	(symbol
+		(lib_name "CAN_NANO_01x05_1")
 		(lib_id "lhrs_connectors:CAN_NANO_01x05")
 		(at 60.96 74.93 0)
 		(unit 1)
@@ -14721,8 +14986,8 @@
 		)
 	)
 	(sheet
-		(at 34.29 156.21)
-		(size 31.75 10.16)
+		(at 35.56 154.94)
+		(size 31.75 12.7)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -14737,7 +15002,7 @@
 		)
 		(uuid "9996de2d-8d86-4ad4-8204-1bedc56aa8e5")
 		(property "Sheetname" "BigRedButtons"
-			(at 34.29 155.4984 0)
+			(at 35.56 154.2284 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14748,7 +15013,7 @@
 			)
 		)
 		(property "Sheetfile" "estop_shutdown.kicad_sch"
-			(at 34.29 166.9546 0)
+			(at 35.56 168.2246 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -14759,7 +15024,7 @@
 			)
 		)
 		(pin "ESTOP" input
-			(at 34.29 158.75 180)
+			(at 35.56 157.48 180)
 			(uuid "c43c2106-d29e-4bf1-8cdb-293b3dbc7f69")
 			(effects
 				(font
@@ -14769,7 +15034,7 @@
 			)
 		)
 		(pin "SOFT_SHUT" input
-			(at 34.29 163.83 180)
+			(at 35.56 161.29 180)
 			(uuid "a32faa35-dfcf-4fda-99cd-956bd916804d")
 			(effects
 				(font
@@ -14779,7 +15044,7 @@
 			)
 		)
 		(pin "ESTOP_SENSE" output
-			(at 66.04 158.75 0)
+			(at 67.31 157.48 0)
 			(uuid "d872af7c-78da-4b02-8b68-b09d65edad21")
 			(effects
 				(font
@@ -14789,13 +15054,23 @@
 			)
 		)
 		(pin "SOFT_SHUTDOWN" output
-			(at 66.04 163.83 0)
+			(at 67.31 162.56 0)
 			(uuid "b2fc6cd4-63cd-4f76-afd9-173115aef1f8")
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 				(justify right)
+			)
+		)
+		(pin "GND" input
+			(at 35.56 165.1 180)
+			(uuid "3b6472f6-ba39-4e8f-8a24-168f6423cbb7")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
 			)
 		)
 		(instances

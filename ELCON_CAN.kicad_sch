@@ -31876,7 +31876,7 @@
 	)
 	(text "CAN Transceiver\n"
 		(exclude_from_sim no)
-		(at 81.026 65.024 0)
+		(at 81.28 64.77 0)
 		(effects
 			(font
 				(size 1.778 1.778)
@@ -31886,7 +31886,7 @@
 	)
 	(text "Try to keep CDSOT23 near bus conn"
 		(exclude_from_sim no)
-		(at 209.296 79.248 0)
+		(at 209.55 78.74 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -31896,7 +31896,7 @@
 	)
 	(text "CAN Protection"
 		(exclude_from_sim no)
-		(at 188.976 59.182 0)
+		(at 189.23 59.69 0)
 		(effects
 			(font
 				(size 1.778 1.778)
@@ -31906,7 +31906,7 @@
 	)
 	(text "CAN Bus Termination\n"
 		(exclude_from_sim no)
-		(at 193.294 91.694 0)
+		(at 193.04 91.44 0)
 		(effects
 			(font
 				(size 1.778 1.778)
@@ -34711,52 +34711,6 @@
 					(unit 1)
 				)
 			)
-		)
-	)
-	(group "CAN_Transceiver"
-		(uuid "2595835b-8967-4ab5-9ea2-148da091d28a")
-		(lib_id "LHRS_Design_Blocks:CAN_Transceiver")
-		(members "02dc0498-fa0a-4af4-999d-cc09ce2f8eed" "03ac9165-2ea4-425b-a3a2-2a3ac86ba5ac"
-			"0aab3452-ca44-4153-98ab-a4260fdc2c76" "0fcf45b8-2eeb-4956-88e8-96a8f3be2fc2"
-			"11fc3897-418c-456a-8fd5-75858f7bdad9" "14f6a92d-e85d-4654-93c9-436d0a52c752"
-			"16805fa4-525f-4785-8211-5b63dd1de1ce" "16ba06cb-8cbf-4ba2-8961-aabeac5c19e1"
-			"18a7dca3-e6ee-4f48-9c9e-fc76fa664e75" "1c957308-eb52-4c84-9d6f-48ae590d99d5"
-			"257454c3-1cbb-49bf-ac29-55b2bfc39800" "269c1b14-22dd-4a9f-bc64-46d9c4d23a1e"
-			"281fa88c-8ae1-4054-a13f-0c13c1d01bee" "2e405b7a-06f0-48f6-9cb5-8f138f157a54"
-			"34e9e19a-645e-4817-a53b-11ea4ec15937" "35735da6-cd68-4170-b8db-e419be0a1130"
-			"370fd011-4489-4130-aa09-5d1b9e226549" "3b4100a3-bbf0-46c4-b8f7-040bd2249cf8"
-			"3f3478ae-d264-4a67-9c59-7de031940324" "418918ed-79a5-4844-a068-77984ff1998e"
-			"43f094ec-461c-47c8-8122-1579148b6876" "45287061-c17c-4466-8f07-f5b0dbdf1e9e"
-			"457dd79d-04ce-4791-9e74-72678c3e65d8" "46a5c127-3bac-418c-9a75-8e883898b804"
-			"48b6a63b-2433-49e2-af21-5e7116c95b39" "4988521a-bb8e-4fb6-9e79-ab3f0d7c608b"
-			"4ed1fe97-086c-4c08-b22d-2fb1ba74a4d8" "53fc980d-cf29-4e0c-92a6-a4c6e65a77b0"
-			"70dac787-f0ab-4692-8f06-9e8bac98967d" "7443ee25-b112-418a-a19e-16b199a8fe5b"
-			"7460588d-8899-4373-b50b-fb0610e09f09" "7484bcdc-1ddf-4a31-9ac2-deff0b8d2fc5"
-			"76db90f1-78d8-4e5d-9cce-f6cfc8c68aa6" "7da5c6ca-1f5e-4e0c-9ed1-f5b25519203e"
-			"7fbf7d87-9fc4-40ea-820f-437fbcd62764" "80bc5ad1-4fbc-4a16-aff6-a41b50d0d5ed"
-			"89eda2dc-1a3a-4862-9057-2a53d23dc041" "8bc6d0f8-90a9-4a3e-bd4c-4f1d37db40e4"
-			"8cc7381c-268a-4e89-868e-d70c2ee1b2cf" "8d41f674-d426-4441-aa5f-d30bc0e8d498"
-			"8df04a62-6241-4b31-a5a9-801f1c6fce5c" "8e0b5df4-2cb8-49e3-8752-25e60af29d36"
-			"917c37b0-a50f-41a8-b594-d9c0c3e21ae7" "91f995af-5ad6-4388-b5d2-2ba28b704c70"
-			"920219a8-99ce-41b7-b456-4157126609a6" "92d7acaa-73a4-4711-9c6e-9d6f8e4b6bdf"
-			"97b807a7-2a0f-4f78-9be9-1b8fd00655be" "a20ab9fc-69aa-4ee0-93d6-3059b329d369"
-			"a3b72bfe-2a6f-42d8-b935-ec83e721d0d8" "a9bf4fee-14de-4ca1-87dd-71b6c8614922"
-			"aa55e51e-ff1d-4754-99e3-0cbf4fe8be3f" "adda2c19-4d52-4a5f-bfa0-e29c5e28dc27"
-			"b3caedac-de22-46e7-9643-c5c9196010b4" "b8ab2e19-3037-4588-b198-c07c4e77bc05"
-			"bb14a602-1916-4238-a873-64ed2a18b066" "c47537e4-6cb2-42bd-9e36-f2fdbbd88467"
-			"c568e6ca-7f97-4122-a9d3-1ff49abf5acc" "c6b18540-3af2-482b-b230-c7c3e88c1c2b"
-			"c72b6064-24ff-42cf-85a2-5f319e80bac0" "c84a68a2-25c9-4949-9cd3-564dce7f418d"
-			"c8de0135-271c-4834-b458-949e66171a03" "d0cd01de-532c-4881-bbfa-68dada0141bd"
-			"d3dc1093-5927-44fd-b183-035a11ec5677" "d72421b8-96df-4d96-96de-366e757e0c7f"
-			"d7bbf058-1019-472a-b210-c9dc6eda02c8" "deaa5507-d4de-4c93-9ade-af6e02b24328"
-			"e3b93d3c-a2e0-469f-9761-2465843355a0" "e61835ce-d874-4c37-a616-6e7e018e402e"
-			"e95fa83f-96e3-4782-8016-c95c1e9ac089" "e9ec658b-ebce-4051-855c-5a456c917486"
-			"eb3c1286-6fe4-4dc7-afe3-b68d2675cf98" "ef028e55-728d-474b-8b10-caf293163e9f"
-			"f1342c2b-b829-43d4-8ac0-e31472078542" "f1545d5e-e8b8-4f5b-9625-3f5248400e82"
-			"f28cb6b3-08af-4a21-962e-c691a9e4d85a" "f525b581-e914-48f3-856d-b707a04117a7"
-			"f6b33fcd-5bfe-4b47-8ac1-5aada0c5cd35" "f905bbd5-25e3-4518-9a89-c3e959777327"
-			"f97194eb-8b04-459a-bd92-5670cfc15c32" "f98052f3-8ad3-423e-8537-c8cb59b58c1e"
-			"fe08bceb-d9f3-4168-a413-0146d6218e26"
 		)
 	)
 )

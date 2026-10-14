@@ -611,7 +611,7 @@
 	)
 	(text "5V Nominal"
 		(exclude_from_sim no)
-		(at 127 66.675 0)
+		(at 127 67.31 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -621,7 +621,7 @@
 	)
 	(text "Input Nominal: 5V\nDiode Forward Voltage: 500-600 mV\nLDO Dropout Voltage Max: 400 mV\n-> ~0.7V headroom on input"
 		(exclude_from_sim no)
-		(at 172.72 116.205 0)
+		(at 172.72 116.84 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -632,7 +632,7 @@
 	)
 	(text "VR=regulated output voltage=3.3V"
 		(exclude_from_sim no)
-		(at 261.62 102.235 0)
+		(at 261.62 102.87 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -642,7 +642,7 @@
 	)
 	(text "3.3V Nominal"
 		(exclude_from_sim no)
-		(at 173.355 60.96 0)
+		(at 173.99 60.96 0)
 		(effects
 			(font
 				(size 1.27 1.27)
