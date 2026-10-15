@@ -2173,8 +2173,8 @@
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "J"
-				(at 0 0 0)
+			(property "Reference" "J2"
+				(at 3.302 0.254 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -2183,8 +2183,8 @@
 					)
 				)
 			)
-			(property "Value" "CAN_NANO_01x05"
-				(at 2.032 -2.286 0)
+			(property "Value" "ELCON_CAN"
+				(at 5.334 -2.286 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
@@ -2252,7 +2252,7 @@
 				(pin power_in line
 					(at -1.27 -6.35 0)
 					(length 2.54)
-					(name "12V"
+					(name "14V"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -3267,6 +3267,16 @@
 		)
 		(uuid "2cf2af9b-7543-4760-9486-c2d951548d0b")
 	)
+	(text "make it a test point\nadd to buzzer on right\n"
+		(exclude_from_sim no)
+		(at 88.646 102.362 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "33788f92-ad7c-437d-89a2-d9da4fc266d5")
+	)
 	(text "Power\n"
 		(exclude_from_sim no)
 		(at 19.05 17.018 0)
@@ -3276,6 +3286,16 @@
 			)
 		)
 		(uuid "45ccf127-a2b2-421f-9ff4-81b4e12ddef3")
+	)
+	(text "add 3A fuse\n"
+		(exclude_from_sim no)
+		(at 3.556 23.368 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "64fa8476-ac01-43ed-b755-99c60d56458b")
 	)
 	(text "BUTTONS"
 		(exclude_from_sim no)
@@ -3317,6 +3337,16 @@
 		)
 		(uuid "b236c888-8c5b-45ba-beb1-33c7920db438")
 	)
+	(text "change test point footprint\n"
+		(exclude_from_sim no)
+		(at 38.862 43.942 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c8ba468b-0ee6-4cc6-913e-7533bf053109")
+	)
 	(text "MCU"
 		(exclude_from_sim no)
 		(at 110.998 72.898 0)
@@ -3336,12 +3366,6 @@
 			)
 		)
 		(uuid "f2932b7b-56f2-4037-8d95-e7c5d3372f21")
-	)
-	(junction
-		(at 116.84 26.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "19177b73-c877-4684-9de8-784b4e2d93e1")
 	)
 	(junction
 		(at 76.2 85.09)
@@ -3368,12 +3392,6 @@
 		(uuid "40a979ee-f310-43b3-bc5e-fea41f4c2b7a")
 	)
 	(junction
-		(at 139.7 26.67)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "52f10e6f-e3f9-4bdf-ad49-94056b2d7fbe")
-	)
-	(junction
 		(at 86.36 34.29)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3392,6 +3410,12 @@
 		(uuid "6fd93121-a060-4466-8315-1cfa9704a5d5")
 	)
 	(junction
+		(at 116.84 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "777410ed-de0b-444c-8901-7b2d5b7fb977")
+	)
+	(junction
 		(at 20.32 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3404,16 +3428,22 @@
 		(uuid "7cc46755-45e5-442f-95ff-2d884363a08b")
 	)
 	(junction
-		(at 44.45 26.67)
+		(at 86.36 41.91)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "8afcf148-5406-4900-a061-086a4ee385fb")
+		(uuid "9126bb22-59b7-4441-9f9b-85c872cf8876")
 	)
 	(junction
 		(at 86.36 48.26)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a74e6273-e334-447e-9758-e882d4ac083a")
+	)
+	(junction
+		(at 139.7 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "bdecef5b-5c4c-4048-9aa0-1e7e5fa6550e")
 	)
 	(junction
 		(at 86.36 26.67)
@@ -3426,6 +3456,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f2192142-e1d8-45de-aacb-9397c87ac9fb")
+	)
+	(junction
+		(at 44.45 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f4c20b05-744c-4e93-ada1-58281268edf9")
 	)
 	(no_connect
 		(at 128.27 86.36)
@@ -3570,16 +3606,6 @@
 			(type default)
 		)
 		(uuid "17b89838-03cc-408e-bb7b-bdb769985dea")
-	)
-	(wire
-		(pts
-			(xy 113.03 26.67) (xy 123.19 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "19459c0f-8426-4f2f-b936-27b0c949c15c")
 	)
 	(wire
 		(pts
@@ -3740,16 +3766,6 @@
 			(type default)
 		)
 		(uuid "36cddf00-dc7e-4f61-ba32-1fb874382585")
-	)
-	(wire
-		(pts
-			(xy 249.936 100.33) (xy 260.35 100.33)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "375c7c84-70bb-421d-a5c5-64162222f972")
 	)
 	(wire
 		(pts
@@ -4073,7 +4089,7 @@
 	)
 	(wire
 		(pts
-			(xy 85.09 63.5) (xy 96.52 63.5)
+			(xy 190.5 92.71) (xy 201.93 92.71)
 		)
 		(stroke
 			(width 0)
@@ -4160,6 +4176,16 @@
 			(type default)
 		)
 		(uuid "61845035-8bf5-4176-aae8-debd219616f9")
+	)
+	(wire
+		(pts
+			(xy 116.84 26.67) (xy 123.19 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6185af1e-fdb3-493e-b377-b56dac96279f")
 	)
 	(wire
 		(pts
@@ -4403,6 +4429,16 @@
 	)
 	(wire
 		(pts
+			(xy 113.03 26.67) (xy 116.84 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8982efa1-1927-42f7-a2bc-17ad6b088e0c")
+	)
+	(wire
+		(pts
 			(xy 20.32 157.48) (xy 35.56 157.48)
 		)
 		(stroke
@@ -4410,6 +4446,16 @@
 			(type default)
 		)
 		(uuid "90064389-b17f-413f-bd64-6c87ab6ce7e1")
+	)
+	(wire
+		(pts
+			(xy 250.19 100.33) (xy 260.35 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "93b9d19d-52df-4081-b325-7281a0a4bb46")
 	)
 	(wire
 		(pts
@@ -4603,16 +4649,6 @@
 	)
 	(wire
 		(pts
-			(xy 52.07 26.67) (xy 54.61 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ad7bdee1-edf2-47f7-a00b-609d37424117")
-	)
-	(wire
-		(pts
 			(xy 167.64 44.45) (xy 172.72 44.45)
 		)
 		(stroke
@@ -4663,16 +4699,6 @@
 	)
 	(wire
 		(pts
-			(xy 136.906 26.67) (xy 139.7 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b423f097-b888-4530-8cce-cadf58ca83f0")
-	)
-	(wire
-		(pts
 			(xy 29.21 114.3) (xy 31.75 114.3)
 		)
 		(stroke
@@ -4720,6 +4746,16 @@
 			(type default)
 		)
 		(uuid "bc4269eb-ffaf-4fb4-a23e-fb1db4a53367")
+	)
+	(wire
+		(pts
+			(xy 44.45 26.67) (xy 54.61 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "bd58c49f-4075-4c2e-aa9e-9acdd714005a")
 	)
 	(wire
 		(pts
@@ -5023,7 +5059,7 @@
 	)
 	(wire
 		(pts
-			(xy 111.76 63.5) (xy 116.84 63.5)
+			(xy 217.17 92.71) (xy 222.25 92.71)
 		)
 		(stroke
 			(width 0)
@@ -5070,6 +5106,16 @@
 			(type default)
 		)
 		(uuid "ea0943fe-3ebe-4c6c-b30d-eff2d2a0cf4d")
+	)
+	(wire
+		(pts
+			(xy 137.16 26.67) (xy 139.7 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ea799584-172f-4f8b-84d0-00dd91cfef31")
 	)
 	(wire
 		(pts
@@ -6731,7 +6777,7 @@
 		(uuid "1297cca1-ded3-47b9-89fb-096649840dd2")
 	)
 	(label "DEBUG_LED"
-		(at 85.09 63.5 0)
+		(at 190.5 92.71 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -7271,7 +7317,7 @@
 		(uuid "883706f5-300e-4c49-ae27-822a14e3b99a")
 	)
 	(label "BUZ_PWM"
-		(at 249.936 100.33 0)
+		(at 250.19 100.33 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -8766,7 +8812,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LHRS_Connectors:5754"
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
 			(at 111.76 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -8968,7 +9014,7 @@
 	)
 	(symbol
 		(lib_id "Device:LED")
-		(at 107.95 63.5 0)
+		(at 213.36 92.71 0)
 		(mirror y)
 		(unit 1)
 		(body_style 1)
@@ -8979,7 +9025,7 @@
 		(dnp no)
 		(uuid "4e26fc97-3988-43b7-9565-20d72756778c")
 		(property "Reference" "D2"
-			(at 107.5055 60.706 0)
+			(at 212.9155 89.916 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8989,7 +9035,7 @@
 			)
 		)
 		(property "Value" "Fault"
-			(at 111.506 60.706 0)
+			(at 216.916 89.916 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -8999,7 +9045,7 @@
 			)
 		)
 		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
-			(at 107.95 63.5 0)
+			(at 213.36 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9010,7 +9056,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 107.95 63.5 0)
+			(at 213.36 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9021,7 +9067,7 @@
 			)
 		)
 		(property "Description" "Light emitting diode"
-			(at 107.95 63.5 0)
+			(at 213.36 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9337,7 +9383,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LHRS_Connectors:5754"
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
 			(at 252.73 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -9493,7 +9539,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LHRS_Connectors:Molex_Nano-Fit_105309-xx05_1x04_P2.50mm_Vertical"
+		(property "Footprint" ""
 			(at 57.15 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -9571,7 +9617,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LHRS_Connectors:5754"
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
 			(at 91.44 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -9618,7 +9664,7 @@
 	)
 	(symbol
 		(lib_id "Device:R")
-		(at 100.33 63.5 270)
+		(at 205.74 92.71 270)
 		(mirror x)
 		(unit 1)
 		(body_style 1)
@@ -9629,7 +9675,7 @@
 		(dnp no)
 		(uuid "5bd9d1d8-b583-4b1e-aa27-b13955a810c6")
 		(property "Reference" "R8"
-			(at 101.854 61.468 90)
+			(at 207.264 90.678 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9639,7 +9685,7 @@
 			)
 		)
 		(property "Value" "1k"
-			(at 98.298 61.468 90)
+			(at 203.708 90.678 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -9649,7 +9695,7 @@
 			)
 		)
 		(property "Footprint" "Package_DIP:DIP-8_W7.62mm"
-			(at 100.33 65.278 90)
+			(at 205.74 94.488 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9660,7 +9706,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 100.33 63.5 0)
+			(at 205.74 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9671,7 +9717,7 @@
 			)
 		)
 		(property "Description" "Resistor"
-			(at 100.33 63.5 0)
+			(at 205.74 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -9881,7 +9927,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LHRS_Connectors:Molex_Nano-Fit_105309-xx05_1x04_P2.50mm_Vertical"
+		(property "Footprint" "LHRS_Connectors:Molex_Nano-Fit_105309-xx04_1x04_P2.50mm_Vertical"
 			(at 60.96 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -10221,7 +10267,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LHRS_Connectors:5754"
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
 			(at 36.83 29.21 0)
 			(hide yes)
 			(show_name no)
@@ -10468,7 +10514,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LHRS_Connectors:5754"
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
 			(at 86.36 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -10988,85 +11034,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 48.26 26.67 90)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp yes)
-		(uuid "861a3d77-8eb7-4528-90ca-6cf9e393b8a1")
-		(property "Reference" "R6"
-			(at 46.736 24.384 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0"
-			(at 50.038 24.384 90)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
-			(at 48.26 28.448 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 48.26 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 48.26 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "f7ab5df0-5504-4645-8733-c8c3bdc6720c")
-		)
-		(pin "2"
-			(uuid "fdf8da03-c7f2-4faf-a3ca-9e420f510ffd")
-		)
-		(instances
-			(project "PS-ChargerInterfacePCB"
-				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
-					(reference "R6")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+3V3")
 		(at 217.17 22.86 0)
 		(unit 1)
@@ -11374,7 +11341,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LHRS_Connectors:Molex_Nano-Fit_105309-xx05_1x04_P2.50mm_Vertical"
+		(property "Footprint" "LHRS_Connectors:Molex_Nano-Fit_105309-xx04_1x04_P2.50mm_Vertical"
 			(at 27.94 107.95 0)
 			(hide yes)
 			(show_name no)
@@ -11552,7 +11519,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LHRS_Connectors:5754"
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
 			(at 11.43 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -11673,6 +11640,85 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
 					(reference "R12")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 86.36 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "9d7bbe6b-a735-46eb-b8b7-ae34bc7832b1")
+		(property "Reference" "#PWR022"
+			(at 86.36 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 86.36 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LHRS_Connectors:Molex_Nano-Fit_105309-xx04_1x04_P2.50mm_Vertical"
+			(at 86.36 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 86.36 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 86.36 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "659c4e2d-9eae-4129-b99f-ae85e9855035")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
+					(reference "#PWR022")
 					(unit 1)
 				)
 			)
@@ -11834,7 +11880,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 116.84 63.5 0)
+		(at 222.25 92.71 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -11844,7 +11890,7 @@
 		(dnp no)
 		(uuid "9e12dc5c-b5f8-4ee2-bc99-dd1529b6cc0a")
 		(property "Reference" "#PWR037"
-			(at 116.84 69.85 0)
+			(at 222.25 99.06 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11855,7 +11901,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 119.888 63.754 0)
+			(at 225.298 92.964 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11865,7 +11911,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 116.84 63.5 0)
+			(at 222.25 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11876,7 +11922,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 116.84 63.5 0)
+			(at 222.25 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -11887,7 +11933,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 116.84 63.5 0)
+			(at 222.25 92.71 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12029,7 +12075,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LHRS_Connectors:5754"
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
 			(at 44.45 34.29 0)
 			(hide yes)
 			(show_name no)
@@ -12348,7 +12394,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LHRS_Connectors:5754"
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
 			(at 134.62 26.67 0)
 			(hide yes)
 			(show_name no)
@@ -12586,7 +12632,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LHRS_Connectors:Molex_Nano-Fit_105309-xx05_1x04_P2.50mm_Vertical"
+		(property "Footprint" ""
 			(at 31.75 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -13164,7 +13210,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LHRS_Connectors:5754"
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
 			(at 252.73 91.44 0)
 			(hide yes)
 			(show_name no)
@@ -13320,7 +13366,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LHRS_Connectors:5754"
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
 			(at 254 104.14 0)
 			(hide yes)
 			(show_name no)
@@ -14386,7 +14432,7 @@
 	)
 	(sheet
 		(at 123.19 22.86)
-		(size 13.716 11.43)
+		(size 13.97 11.43)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -14443,7 +14489,7 @@
 			)
 		)
 		(pin "+3V3" output
-			(at 136.906 26.67 0)
+			(at 137.16 26.67 0)
 			(uuid "d12fceec-698c-4165-86fb-1d059259adf0")
 			(effects
 				(font
@@ -14674,7 +14720,7 @@
 	)
 	(sheet
 		(at 92.71 22.86)
-		(size 20.32 26.924)
+		(size 20.32 27.94)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -14699,7 +14745,7 @@
 			)
 		)
 		(property "Sheetfile" "Power_Mux.kicad_sch"
-			(at 90.17 50.8 0)
+			(at 89.408 51.562 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

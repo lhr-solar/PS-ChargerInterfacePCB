@@ -1562,7 +1562,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric_Pad1.18x1.45mm_HandSolder"
 			(at 89.8652 50.8 0)
 			(hide yes)
 			(show_name no)
@@ -1758,7 +1758,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LHRS_Connectors:5754"
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
 			(at 43.18 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -1843,7 +1843,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LHRS_Connectors:5754"
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
 			(at 127 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -1928,7 +1928,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "LHRS_Connectors:5754"
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
 			(at 22.86 30.48 0)
 			(hide yes)
 			(show_name no)
@@ -2508,7 +2508,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "LHRS_Connectors:5754"
+		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
 			(at 88.9 41.91 0)
 			(hide yes)
 			(show_name no)
