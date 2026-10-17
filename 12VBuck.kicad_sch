@@ -8359,7 +8359,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 176.2252 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -9190,7 +9190,7 @@
 				(justify left)
 			)
 		)
-		(property "Footprint" "Capacitor_SMD:C_1210_3225Metric_Pad1.33x2.70mm_HandSolder"
+		(property "Footprint" "Capacitor_SMD:C_1206_3216Metric_Pad1.33x1.80mm_HandSolder"
 			(at 185.1152 101.6 0)
 			(hide yes)
 			(show_name no)
@@ -9304,7 +9304,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LHRS_ICs:DDC0006A-MFG"
 			(at 119.38 83.82 0)
 			(hide yes)
 			(show_name no)
