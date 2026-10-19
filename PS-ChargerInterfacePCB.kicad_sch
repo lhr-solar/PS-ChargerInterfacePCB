@@ -3524,6 +3524,12 @@
 		(uuid "25d313c0-e6b7-480b-a048-415b34fb5f6b")
 	)
 	(junction
+		(at 88.9 26.67)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "2e4b2db5-3bc9-46b6-ac13-d1dedd556754")
+	)
+	(junction
 		(at 76.2 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3540,6 +3546,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "40a979ee-f310-43b3-bc5e-fea41f4c2b7a")
+	)
+	(junction
+		(at 95.25 48.26)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4d7d2566-0af1-419c-b86d-3b8ac5aeadfe")
 	)
 	(junction
 		(at 92.71 34.29)
@@ -3680,6 +3692,16 @@
 			(type default)
 		)
 		(uuid "0632f2d3-ab65-4756-873e-27ff9bc3fc5b")
+	)
+	(wire
+		(pts
+			(xy 88.9 26.67) (xy 92.71 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "074371f7-7df1-402d-b19c-2f282a537b2d")
 	)
 	(wire
 		(pts
@@ -3963,6 +3985,16 @@
 	)
 	(wire
 		(pts
+			(xy 95.25 63.5) (xy 95.25 64.77)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "39fbebaa-c6a1-431c-9907-29facf0621fc")
+	)
+	(wire
+		(pts
 			(xy 22.86 34.29) (xy 27.94 34.29)
 		)
 		(stroke
@@ -4083,7 +4115,7 @@
 	)
 	(wire
 		(pts
-			(xy 86.36 26.67) (xy 92.71 26.67)
+			(xy 86.36 26.67) (xy 88.9 26.67)
 		)
 		(stroke
 			(width 0)
@@ -4463,7 +4495,7 @@
 	)
 	(wire
 		(pts
-			(xy 92.71 48.26) (xy 99.06 48.26)
+			(xy 92.71 48.26) (xy 95.25 48.26)
 		)
 		(stroke
 			(width 0)
@@ -4473,7 +4505,7 @@
 	)
 	(wire
 		(pts
-			(xy 55.88 34.29) (xy 60.96 34.29)
+			(xy 58.42 34.29) (xy 60.96 34.29)
 		)
 		(stroke
 			(width 0)
@@ -4883,6 +4915,16 @@
 	)
 	(wire
 		(pts
+			(xy 50.8 26.67) (xy 60.96 26.67)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b9992f71-ce1d-4933-a778-cca6130b10d4")
+	)
+	(wire
+		(pts
 			(xy 248.92 64.77) (xy 259.08 64.77)
 		)
 		(stroke
@@ -4890,16 +4932,6 @@
 			(type default)
 		)
 		(uuid "bc4269eb-ffaf-4fb4-a23e-fb1db4a53367")
-	)
-	(wire
-		(pts
-			(xy 50.8 26.67) (xy 60.96 26.67)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bd58c49f-4075-4c2e-aa9e-9acdd714005a")
 	)
 	(wire
 		(pts
@@ -5350,6 +5382,16 @@
 			(type default)
 		)
 		(uuid "fd3d8a09-d282-4f5f-892e-280aedfd3cd6")
+	)
+	(wire
+		(pts
+			(xy 95.25 48.26) (xy 99.06 48.26)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fd743d55-09c1-4e81-831d-71878139c554")
 	)
 	(image
 		(at 213.5475 128.0473)
@@ -9002,6 +9044,87 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R")
+		(at 88.9 30.48 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "3bf0e28b-866e-4fa7-a135-0c94d4896bf3")
+		(property "Reference" "R55"
+			(at 87.122 34.036 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2k"
+			(at 88.9 32.258 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 87.122 30.48 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 88.9 30.48 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "40e19c98-318e-4305-91ea-9822f89ef84f")
+		)
+		(pin "1"
+			(uuid "c28fd076-efa3-475b-8697-dc8eb5573afa")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
+					(reference "R55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+15V")
 		(at 124.46 63.5 0)
 		(unit 1)
@@ -9488,6 +9611,83 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
 					(reference "J7")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 88.9 41.91 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "51ecd81c-6b7b-476d-b369-dc3b244ecbdb")
+		(property "Reference" "#PWR048"
+			(at 88.9 48.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 84.836 43.434 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 88.9 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 88.9 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "62c2c7b0-8a75-429a-9fb1-bfd83b0c8deb")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
+					(reference "#PWR048")
 					(unit 1)
 				)
 			)
@@ -10312,7 +10512,7 @@
 		(dnp no)
 		(uuid "68c362b0-abb1-4f5c-acdc-82178d6329c1")
 		(property "Reference" "TP2"
-			(at 53.086 32.512 0)
+			(at 50.8 34.29 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10323,7 +10523,7 @@
 			)
 		)
 		(property "Value" "14V"
-			(at 53.086 29.972 0)
+			(at 50.8 36.322 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -10943,6 +11143,86 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:LED")
+		(at 95.25 59.69 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7cc2be2f-f059-408a-9cd2-fdeb388b7770")
+		(property "Reference" "D24"
+			(at 98.044 59.2455 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "5V"
+			(at 98.044 62.8015 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 95.25 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 95.25 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ec607296-ef06-4e71-bd81-59334ed44b55")
+		)
+		(pin "1"
+			(uuid "19d14a8d-fe15-44bb-9748-2cea62da4cbf")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
+					(reference "D24")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:+15V")
 		(at 124.46 54.61 0)
 		(unit 1)
@@ -11042,7 +11322,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 61.214 37.846 0)
+			(at 55.372 36.576 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -11709,6 +11989,83 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 95.25 64.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "96b53767-9806-40a4-8d54-679c87715956")
+		(property "Reference" "#PWR047"
+			(at 95.25 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 99.314 66.294 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 95.25 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 95.25 64.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "7a3491ee-c0d3-4832-ac86-50bdaf569562")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
+					(reference "#PWR047")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R")
 		(at 130.81 54.61 90)
 		(unit 1)
@@ -12188,7 +12545,7 @@
 	)
 	(symbol
 		(lib_id "Connector:TestPoint")
-		(at 55.88 34.29 180)
+		(at 58.42 34.29 180)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -12198,7 +12555,7 @@
 		(dnp no)
 		(uuid "a62253a4-9acd-4992-9900-0ef592743f3b")
 		(property "Reference" "TP15"
-			(at 59.436 39.878 0)
+			(at 57.658 34.798 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12209,7 +12566,8 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 55.88 36.068 0)
+			(at 61.214 41.656 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -12220,7 +12578,7 @@
 			)
 		)
 		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
-			(at 50.8 34.29 0)
+			(at 53.34 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12231,7 +12589,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 50.8 34.29 0)
+			(at 53.34 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12242,7 +12600,7 @@
 			)
 		)
 		(property "Description" "test point"
-			(at 55.88 34.29 0)
+			(at 58.42 34.29 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -12337,6 +12695,87 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
 					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 95.25 52.07 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "a77fd509-4b43-481d-b55e-d20129312bed")
+		(property "Reference" "R54"
+			(at 97.282 54.102 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2k"
+			(at 92.964 54.61 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric_Pad0.98x0.95mm_HandSolder"
+			(at 93.472 52.07 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 95.25 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 95.25 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d75ad075-24e8-4fed-9fcc-d44269b3c34c")
+		)
+		(pin "1"
+			(uuid "3c2b19ff-6889-401d-931d-617868cbb2ea")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
+					(reference "R54")
 					(unit 1)
 				)
 			)
@@ -13138,6 +13577,86 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
 					(reference "#PWR046")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:LED")
+		(at 88.9 38.1 270)
+		(mirror x)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "cad3f023-d10c-4c9c-9b63-4363fdcc2635")
+		(property "Reference" "D25"
+			(at 85.598 40.132 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "5V"
+			(at 82.042 40.132 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "LED_SMD:LED_0603_1608Metric"
+			(at 88.9 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 88.9 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Light emitting diode"
+			(at 88.9 38.1 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "a4090532-ac2c-46b0-9b59-e28288ec374f")
+		)
+		(pin "1"
+			(uuid "fdbc6331-fd1e-4beb-af7b-ba5743e807fa")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
+					(reference "D25")
 					(unit 1)
 				)
 			)
@@ -15180,7 +15699,6 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(stroke
 			(width 0.1524)
 			(type solid)
@@ -15201,7 +15719,7 @@
 			)
 		)
 		(property "Sheetfile" "12VBuck.kicad_sch"
-			(at 64.77 39.1926 0)
+			(at 57.912 38.862 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

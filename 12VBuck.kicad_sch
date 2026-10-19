@@ -8028,7 +8028,7 @@
 				)
 			)
 		)
-		(property "Footprint" "LHRS_Power:XAL5050822MEC"
+		(property "Footprint" "LHRS_Passives:74439369082"
 			(at 166.37 88.9 0)
 			(hide yes)
 			(show_name no)
