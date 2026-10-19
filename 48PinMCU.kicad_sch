@@ -55108,7 +55108,7 @@
 				)
 			)
 		)
-		(property "Datasheet" "kicad-embed://TVS.pdf"
+		(property "Datasheet" "kicad-embed://TVeS.pdf"
 			(at 247.65 102.87 0)
 			(hide yes)
 			(show_name no)
