@@ -172,6 +172,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -183,6 +184,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -194,6 +196,7 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
+          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -469,6 +472,7 @@
       "pin_to_pin": "error",
       "power_pin_not_driven": "error",
       "same_local_global_label": "warning",
+      "same_local_global_power": "warning",
       "similar_label_and_power": "warning",
       "similar_labels": "warning",
       "similar_power": "warning",
@@ -537,8 +541,8 @@
     "meta": {
       "version": 5
     },
-    "net_colors": null,
-    "netclass_assignments": null,
+    "net_colors": {},
+    "netclass_assignments": {},
     "netclass_patterns": [
       {
         "netclass": "GND",
@@ -725,7 +729,7 @@
         "uuid": "894adbd2-6316-426a-afb4-88808e8ec51a"
       }
     ],
-    "used_designators": "C1-15,C20-21,C24-26,C31-33,C39,C51-52,C70-71,D1-7,D9-10,D13-25,FB1-2,J1-10,J14,#FLG2,#FLG5,#FLG7-8,R1-12,R21-24,R35-57,SW1-2,U1,U5,Y1,#PWR1-15,#PWR20,#PWR22-24,#PWR29-31,#PWR38-51,#PWR53,#PWR63-72,#PWR74-75,#PWR77,#PWR80-104,TP_3.3V2,Panel_LED802-803,Q1-2,Q5-12,Q14-19,Buzzer1,TP1-4,TP13-18,IC1,JP1",
+    "used_designators": "#FLG2,#FLG5,#FLG7-8,#PWR1-15,#PWR20,#PWR22-24,#PWR29-31,#PWR38-51,#PWR53,#PWR63-72,#PWR74-75,#PWR77,#PWR80-104,Buzzer1,C1-15,C20-21,C24-26,C31-33,C39,C51-52,C70-71,D1-7,D9-10,D13-25,FB1-2,IC1,J1-10,J14,JP1,Panel_LED802-803,Q1-2,Q5-12,Q14-19,R1-12,R21-24,R35-57,SW1-2,TP1-4,TP13-18,TP_3.3V2,U1,U5,Y1",
     "variants": []
   },
   "sheets": [
