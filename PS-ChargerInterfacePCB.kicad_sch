@@ -12975,7 +12975,7 @@
 				)
 			)
 		)
-		(property "Footprint" ""
+		(property "Footprint" "LHRS_Power:Fuse-3557-2"
 			(at 22.86 28.448 90)
 			(hide yes)
 			(show_name no)
