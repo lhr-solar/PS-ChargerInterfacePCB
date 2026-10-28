@@ -1270,14 +1270,15 @@
 				)
 			)
 		)
-		(property "Value" "+3.3V"
-			(at 144.78 16.51 0)
+		(property "Value" "+3v3"
+			(at 147.32 20.3199 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
+				(justify left)
 			)
 		)
 		(property "Footprint" ""
