@@ -10757,7 +10757,7 @@
 			)
 		)
 		(property "Value" "5V"
-			(at 0 2.65 0)
+			(at 0 2.5 0)
 			(layer "F.SilkS")
 			(uuid "1cbcd0c8-b455-49ac-9e62-1632a1ca70be")
 			(effects
@@ -31143,7 +31143,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 0 2.7 0)
+			(at 0 2.5 0)
 			(layer "F.SilkS")
 			(uuid "3f0e2a30-5165-409b-9748-7e4bb81a5a73")
 			(effects
@@ -34720,7 +34720,7 @@
 			)
 		)
 		(property "Value" "3.3V"
-			(at -2.6 0.05 180)
+			(at -2.5 0.05 180)
 			(layer "F.SilkS")
 			(uuid "f341e241-97ff-477d-b886-8bbd52215217")
 			(effects
