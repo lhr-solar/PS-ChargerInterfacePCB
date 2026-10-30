@@ -3401,16 +3401,6 @@
 		)
 		(uuid "eb8ffce6-f951-4663-8576-21c9d24bb5f5")
 	)
-	(text "LED+\n"
-		(exclude_from_sim no)
-		(at 78.74 83.82 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "058f57a2-a896-4476-8e42-5898fcc66a6f")
-	)
 	(text "EVSE"
 		(exclude_from_sim no)
 		(at 17.78 175.26 0)
@@ -3491,6 +3481,16 @@
 		)
 		(uuid "b236c888-8c5b-45ba-beb1-33c7920db438")
 	)
+	(text "LED+\n"
+		(exclude_from_sim no)
+		(at 102.362 84.074 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+		)
+		(uuid "c92cac95-1386-43b1-8143-90a5a9f91d95")
+	)
 	(text "MCU"
 		(exclude_from_sim no)
 		(at 110.49 72.39 0)
@@ -3512,12 +3512,6 @@
 		(uuid "f2932b7b-56f2-4037-8d95-e7c5d3372f21")
 	)
 	(junction
-		(at 76.2 85.09)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "1e90dd83-a284-4217-9f22-f4840437b9d6")
-	)
-	(junction
 		(at 60.96 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -3528,12 +3522,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2e4b2db5-3bc9-46b6-ac13-d1dedd556754")
-	)
-	(junction
-		(at 76.2 82.55)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "3a424825-fbd5-4a46-a7c1-9b7343f4d4e8")
 	)
 	(junction
 		(at 26.67 26.67)
@@ -3560,10 +3548,10 @@
 		(uuid "5e0636cc-3749-4855-8df7-71d2a6936f80")
 	)
 	(junction
-		(at 76.2 87.63)
+		(at 99.06 87.63)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "6fd93121-a060-4466-8315-1cfa9704a5d5")
+		(uuid "696a4076-9969-4536-9909-2697e339ce16")
 	)
 	(junction
 		(at 123.19 26.67)
@@ -3596,16 +3584,22 @@
 		(uuid "a74e6273-e334-447e-9758-e882d4ac083a")
 	)
 	(junction
-		(at 146.05 26.67)
+		(at 99.06 82.55)
 		(diameter 0)
 		(color 0 0 0 0)
-		(uuid "bdecef5b-5c4c-4048-9aa0-1e7e5fa6550e")
+		(uuid "af63c453-6f7b-46f7-8952-dc7689c6871a")
 	)
 	(junction
 		(at 92.71 26.67)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "bfe8724e-52b4-4112-b8de-744f2015005b")
+	)
+	(junction
+		(at 99.06 85.09)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "dd318660-569d-4c81-9f55-eccc3843502e")
 	)
 	(junction
 		(at 217.17 22.86)
@@ -3735,13 +3729,13 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 87.63) (xy 76.2 90.17)
+			(xy 81.28 85.09) (xy 73.66 85.09)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "113f8125-ceee-4ddd-a8c8-83216054779d")
+		(uuid "108af827-fe0a-4401-b273-e6a476949850")
 	)
 	(wire
 		(pts
@@ -3832,6 +3826,16 @@
 			(type default)
 		)
 		(uuid "28a09bdc-a1bf-45f1-89f1-bfb4f7b4e6ef")
+	)
+	(wire
+		(pts
+			(xy 99.06 85.09) (xy 93.98 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2d9ceed1-5226-418d-b0a5-3e935322538f")
 	)
 	(wire
 		(pts
@@ -3935,16 +3939,6 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 82.55) (xy 99.06 82.55)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "36cddf00-dc7e-4f61-ba32-1fb874382585")
-	)
-	(wire
-		(pts
 			(xy 15.24 26.67) (xy 19.05 26.67)
 		)
 		(stroke
@@ -3995,6 +3989,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 90.17) (xy 93.98 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3a32d8e5-2c28-44c4-9c73-629ed178ebf6")
+	)
+	(wire
+		(pts
 			(xy 22.86 34.29) (xy 27.94 34.29)
 		)
 		(stroke
@@ -4002,16 +4006,6 @@
 			(type default)
 		)
 		(uuid "3caa3ee8-39dc-4c9e-874c-01d7594709c4")
-	)
-	(wire
-		(pts
-			(xy 76.2 85.09) (xy 76.2 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3d8ab13b-2f01-4cdc-b358-440fc9426013")
 	)
 	(wire
 		(pts
@@ -4092,16 +4086,6 @@
 			(type default)
 		)
 		(uuid "42c55a8c-f610-4677-9c41-cbbc64e67974")
-	)
-	(wire
-		(pts
-			(xy 93.98 90.17) (xy 102.87 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4308e68d-b2e4-426d-a1c3-dfc2b7055013")
 	)
 	(wire
 		(pts
@@ -4385,16 +4369,6 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 85.09) (xy 81.28 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "61c18eb4-c6cc-4282-8075-2c96edab7c3c")
-	)
-	(wire
-		(pts
 			(xy 177.8 127) (xy 168.91 127)
 		)
 		(stroke
@@ -4425,16 +4399,6 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 90.17) (xy 81.28 90.17)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "67434e7a-71a1-4fdd-aa22-6a796eac1c37")
-	)
-	(wire
-		(pts
 			(xy 124.46 45.72) (xy 127 45.72)
 		)
 		(stroke
@@ -4445,23 +4409,13 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 87.63) (xy 81.28 87.63)
+			(xy 81.28 82.55) (xy 76.2 82.55)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "6b9f4566-88b3-4d1f-bbba-257ffa15afb9")
-	)
-	(wire
-		(pts
-			(xy 76.2 82.55) (xy 76.2 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6e8d0b14-5e03-4810-a836-47ae440f51c4")
+		(uuid "6de07aaf-9a26-41a7-91df-129263b09b89")
 	)
 	(wire
 		(pts
@@ -4562,6 +4516,16 @@
 			(type default)
 		)
 		(uuid "7d79fb49-c42d-43f7-aac0-f7e4cd00d797")
+	)
+	(wire
+		(pts
+			(xy 81.28 90.17) (xy 72.39 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7f41f8ef-5f2c-48fb-bc99-6161fb989f9c")
 	)
 	(wire
 		(pts
@@ -4755,6 +4719,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 82.55) (xy 99.06 85.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4ea549a-4823-44a6-9f4b-3226adede0d9")
+	)
+	(wire
+		(pts
 			(xy 124.46 82.55) (xy 128.27 82.55)
 		)
 		(stroke
@@ -4765,13 +4739,13 @@
 	)
 	(wire
 		(pts
-			(xy 76.2 82.55) (xy 81.28 82.55)
+			(xy 99.06 85.09) (xy 99.06 87.63)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "a6f0ff53-b5f4-4692-9f0c-da2a7c452fb6")
+		(uuid "a76ed670-862f-418d-b93e-d19672859707")
 	)
 	(wire
 		(pts
@@ -4822,6 +4796,16 @@
 			(type default)
 		)
 		(uuid "acc571dc-b90a-40e2-9760-7d2f2f7d5f3d")
+	)
+	(wire
+		(pts
+			(xy 99.06 87.63) (xy 93.98 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "aee54a3b-471b-4a47-b3ff-b48fa022ba90")
 	)
 	(wire
 		(pts
@@ -5065,6 +5049,16 @@
 	)
 	(wire
 		(pts
+			(xy 99.06 82.55) (xy 93.98 82.55)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "cca4fcd5-b24b-42fb-8b23-517f394a0e06")
+	)
+	(wire
+		(pts
 			(xy 88.9 138.43) (xy 93.98 138.43)
 		)
 		(stroke
@@ -5165,16 +5159,6 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 85.09) (xy 101.6 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d9ad74dc-7324-40f2-92da-1ef85ca615aa")
-	)
-	(wire
-		(pts
 			(xy 40.64 181.61) (xy 45.72 181.61)
 		)
 		(stroke
@@ -5212,6 +5196,16 @@
 			(type default)
 		)
 		(uuid "dc202673-4b77-4d1c-b28a-22691d519681")
+	)
+	(wire
+		(pts
+			(xy 81.28 87.63) (xy 73.66 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de2331f1-b28f-4925-bb1a-b9c429035d10")
 	)
 	(wire
 		(pts
@@ -5345,13 +5339,13 @@
 	)
 	(wire
 		(pts
-			(xy 93.98 87.63) (xy 101.6 87.63)
+			(xy 99.06 87.63) (xy 99.06 90.17)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "fad1eca7-21b9-4557-8614-dc92507d8476")
+		(uuid "fc572cd0-25b0-490b-a94f-63e7ba3fa832")
 	)
 	(wire
 		(pts
@@ -6952,6 +6946,16 @@
 		)
 		(uuid "0eac9593-a36d-4025-ac2b-dcb5911091b8")
 	)
+	(label "FAULT-"
+		(at 73.66 85.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "11c68194-ef8c-4cf9-a59b-759b3ff784b6")
+	)
 	(label "USB_D+"
 		(at 177.8 127 180)
 		(effects
@@ -7202,15 +7206,15 @@
 		)
 		(uuid "4aa7284d-f605-4555-8de9-65c36e4605a4")
 	)
-	(label "HV-"
-		(at 99.06 82.55 180)
+	(label "CHARGE-"
+		(at 72.39 90.17 0)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify right bottom)
+			(justify left bottom)
 		)
-		(uuid "4c2cf5f7-0442-44d9-b9a3-25a4f5ae6a82")
+		(uuid "4bec2b95-6276-4816-b141-e52072d7ca00")
 	)
 	(label "SOFT_SHUTDOWN"
 		(at 111.76 97.79 0)
@@ -7482,16 +7486,6 @@
 		)
 		(uuid "8443ce2e-c9f2-4148-9eae-a2237eafe76b")
 	)
-	(label "HEART-"
-		(at 101.6 87.63 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "87991e6d-ba31-42e2-be49-accee7491a7a")
-	)
 	(label "EVSE_B"
 		(at 177.8 134.62 180)
 		(effects
@@ -7512,16 +7506,6 @@
 		)
 		(uuid "892cb948-d7ea-4f92-910c-1269216be7f9")
 	)
-	(label "FAULT-"
-		(at 101.6 85.09 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "929071fc-4d4b-4e8e-aa8c-e884efc6b53b")
-	)
 	(label "LED_HV"
 		(at 250.19 53.34 0)
 		(effects
@@ -7541,6 +7525,16 @@
 			(justify left bottom)
 		)
 		(uuid "a2185102-b783-4d5e-a372-450e7ce2962b")
+	)
+	(label "HV-"
+		(at 76.2 82.55 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "a881052b-0085-4c07-ace2-36fc99d20cb8")
 	)
 	(label "SPI_RES"
 		(at 119.38 113.03 0)
@@ -7571,16 +7565,6 @@
 			(justify right bottom)
 		)
 		(uuid "b5c0fb60-403e-48b8-974e-4c9dc744fd4a")
-	)
-	(label "CHARGE-"
-		(at 102.87 90.17 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "b71260fd-6892-4283-b115-0863da8f8482")
 	)
 	(label "Charger_CAN_H"
 		(at 44.45 85.09 0)
@@ -7741,6 +7725,16 @@
 			(justify left bottom)
 		)
 		(uuid "ec29982c-cd97-48a8-92c3-de21d004b102")
+	)
+	(label "HEART-"
+		(at 73.66 87.63 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ed05ec3c-2a23-4c67-9167-8748a851b59b")
 	)
 	(label "SPI_MOSI"
 		(at 102.87 118.11 180)
@@ -9119,6 +9113,84 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
 					(reference "R55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+15V")
+		(at 99.06 82.55 0)
+		(mirror y)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "478fe149-49b4-4358-9c5e-96d1e9dfa5cf")
+		(property "Reference" "#PWR016"
+			(at 99.06 86.36 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "+14V"
+			(at 96.012 79.756 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Converter_ACDC:Converter_ACDC_Hahn_HS-400xx_THT"
+			(at 99.06 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 99.06 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+15V\""
+			(at 99.06 82.55 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "9d80dc60-2c2a-42c3-9d0f-67c744b17f96")
+		)
+		(instances
+			(project "PS-ChargerInterfacePCB"
+				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
+					(reference "#PWR016")
 					(unit 1)
 				)
 			)
@@ -13024,84 +13096,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Connector:TestPoint")
-		(at 146.05 26.67 180)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "ba2456a4-ef4d-46b7-a415-878b1a09dfef")
-		(property "Reference" "TP14"
-			(at 151.638 29.718 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3V3"
-			(at 150.114 27.178 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "TestPoint:TestPoint_Loop_D1.80mm_Drill1.0mm_Beaded"
-			(at 140.97 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 140.97 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "test point"
-			(at 146.05 26.67 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "818020b9-68c4-4c70-87b3-21120b3e9ecc")
-		)
-		(instances
-			(project "PS-ChargerInterfacePCB"
-				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
-					(reference "TP14")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+15V")
 		(at 60.96 26.67 0)
 		(unit 1)
@@ -13334,89 +13328,6 @@
 			(project "PS-ChargerInterfacePCB"
 				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
 					(reference "#PWR05")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+15V")
-		(at 76.2 82.55 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "c20cbfb8-78a9-4ab9-a56d-eba93126dcc9")
-		(property "Reference" "#PWR016"
-			(at 76.2 86.36 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "+14V"
-			(at 79.248 79.756 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Converter_ACDC:Converter_ACDC_Hahn_HS-400xx_THT"
-			(at 76.2 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 76.2 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+15V\""
-			(at 76.2 82.55 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "1"
-			(uuid "903c555d-6611-42cb-94a1-f94cdc404b47")
-		)
-		(instances
-			(project "atempt_2"
-				(path "/86244622-fc6f-4400-a6c8-ba7d84e5ad42"
-					(reference "#PWR016")
-					(unit 1)
-				)
-			)
-			(project "PS-ChargerInterfacePCB"
-				(path "/894adbd2-6316-426a-afb4-88808e8ec51a"
-					(reference "#PWR016")
 					(unit 1)
 				)
 			)
