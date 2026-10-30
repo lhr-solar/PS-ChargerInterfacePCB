@@ -39,9 +39,9 @@
         "other_text_thickness": 0.15,
         "other_text_upright": false,
         "pads": {
-          "drill": 0.0,
-          "height": 2.4,
-          "width": 1.9
+          "drill": 0.8,
+          "height": 1.27,
+          "width": 1.27
         },
         "silk_line_width": 0.1,
         "silk_text_italic": false,
@@ -60,7 +60,7 @@
           "hatch_smoothing_level": 0,
           "hatch_smoothing_value": 0.1,
           "hatch_thickness": 1.0,
-          "min_clearance": 0.0,
+          "min_clearance": 0.5,
           "min_island_area": 10.0,
           "min_thickness": 0.25,
           "pad_connection": 2,
@@ -146,22 +146,22 @@
       },
       "rules": {
         "max_error": 0.005,
-        "min_clearance": 0.1,
+        "min_clearance": 0.0,
         "min_connection": 0.0,
         "min_copper_edge_clearance": 0.5,
         "min_groove_width": 0.0,
-        "min_hole_clearance": 0.28,
-        "min_hole_to_hole": 0.45,
+        "min_hole_clearance": 0.25,
+        "min_hole_to_hole": 0.25,
         "min_microvia_diameter": 0.2,
         "min_microvia_drill": 0.1,
         "min_resolved_spokes": 2,
-        "min_silk_clearance": 0.15,
-        "min_text_height": 1.0,
-        "min_text_thickness": 0.15,
-        "min_through_hole_diameter": 0.2,
-        "min_track_width": 0.1,
-        "min_via_annular_width": 0.15,
-        "min_via_diameter": 0.4,
+        "min_silk_clearance": 0.0,
+        "min_text_height": 0.8,
+        "min_text_thickness": 0.08,
+        "min_through_hole_diameter": 0.3,
+        "min_track_width": 0.2,
+        "min_via_annular_width": 0.1,
+        "min_via_diameter": 0.5,
         "solder_mask_to_copper_clearance": 0.0,
         "use_height_for_length_calcs": true
       },
@@ -178,7 +178,6 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
-          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -190,7 +189,6 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
-          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -202,7 +200,6 @@
         {
           "td_allow_use_two_tracks": true,
           "td_curve_segcount": 0,
-          "td_enabled": false,
           "td_height_ratio": 1.0,
           "td_length_ratio": 0.5,
           "td_maxheight": 2.0,
@@ -214,7 +211,10 @@
       ],
       "track_widths": [
         0.0,
-        0.3
+        0.2,
+        0.3,
+        0.5,
+        1.0
       ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
@@ -555,8 +555,8 @@
     "meta": {
       "version": 5
     },
-    "net_colors": {},
-    "netclass_assignments": {},
+    "net_colors": null,
+    "netclass_assignments": null,
     "netclass_patterns": [
       {
         "netclass": "GND",
@@ -731,14 +731,6 @@
     "meta": {
       "version": 1
     },
-    "ngspice": {
-      "fix_include_paths": true,
-      "meta": {
-        "version": 0
-      },
-      "model_mode": 4,
-      "workbook_filename": ""
-    },
     "page_layout_descr_file": "",
     "plot_directory": "",
     "reuse_designators": true,
@@ -751,7 +743,7 @@
         "uuid": "894adbd2-6316-426a-afb4-88808e8ec51a"
       }
     ],
-    "used_designators": "#FLG2,#FLG5,#FLG7-8,#PWR1-15,#PWR20,#PWR22-24,#PWR29-31,#PWR38-51,#PWR53,#PWR63-72,#PWR74-75,#PWR77,#PWR80-104,Buzzer1,C1-15,C20-21,C24-26,C31-33,C39,C51-52,C70-71,D1-7,D9-10,D13-25,FB1-2,IC1,J1-10,J14,JP1,Panel_LED802-803,Q1-2,Q5-12,Q14-19,R1-12,R21-24,R35-57,SW1-2,TP1-4,TP13-18,TP_3.3V2,U1,U5,Y1",
+    "used_designators": "R1-12,R21-24,R35-57,#FLG2,#FLG5,#FLG7-8,IC1,J1-10,J14,#PWR1-15,#PWR20,#PWR22-24,#PWR29-31,#PWR38-51,#PWR53,#PWR63-72,#PWR74-75,#PWR77,#PWR80-104,Buzzer1,D1-7,D9-10,D13-25,C1-15,C20-21,C24-26,C31-33,C39,C51-52,C70-71,FB1-2,JP1,Panel_LED802-803,Q1-2,Q5-12,Q14-19,SW1-2,TP1-4,TP13-18,TP_3.3V2,U1,U5,Y1",
     "variants": []
   },
   "sheets": [
