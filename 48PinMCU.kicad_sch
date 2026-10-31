@@ -53931,6 +53931,16 @@
 		)
 		(uuid "3b275a82-ba60-4fe8-b427-83e6b6f7bdd5")
 	)
+	(label "-"
+		(at 72.39 49.53 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "494feece-c684-4d59-b4e0-11417f3a7ac5")
+	)
 	(label "SWCLK"
 		(at 142.24 72.39 0)
 		(effects
@@ -53960,6 +53970,16 @@
 			(justify left bottom)
 		)
 		(uuid "93dfc368-6b63-4c38-be74-2440f40163d9")
+	)
+	(label "+"
+		(at 72.39 46.99 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9a9de15f-4513-46e8-bb65-b43234b53f5d")
 	)
 	(label "PA1"
 		(at 193.04 133.35 0)
