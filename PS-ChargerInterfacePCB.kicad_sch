@@ -10333,7 +10333,7 @@
 				)
 			)
 		)
-		(property "Value" "CHARGER_CAN_DEBUG0"
+		(property "Value" "CHARGER_CAN_DEBUG"
 			(at 60.452 110.49 0)
 			(show_name no)
 			(do_not_autoplace no)
