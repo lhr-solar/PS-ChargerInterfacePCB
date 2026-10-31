@@ -1,3 +1,6 @@
+# -----------------------------------------------------------------------------
+# HARDWARE (KICAD)
+# -----------------------------------------------------------------------------
 # For PCBs designed using KiCad: https://www.kicad.org/
 # Format documentation: https://kicad.org/help/file-formats/
 
@@ -8,17 +11,19 @@
 *.kicad_pcb-bak
 *.kicad_sch-bak
 *-backups
-*.kicad_prl
-*.sch-bak
+*-cache*
+*-bak
+*-bak*
 *~
+~*
 _autosave-*
+\#auto_saved_files\#
 *.tmp
 *-save.pro
 *-save.kicad_pcb
 fp-info-cache
 ~*.lck
 \#auto_saved_files#
-*.log
 
 # Netlist files (exported from Eeschema)
 *.net
@@ -28,39 +33,36 @@ fp-info-cache
 *.ses
 
 # Exported BOM files
-*.xml
-*.csv
 
-#Mac Specific
-.DS_Store
+# Whitelist production files directory
+!**/jlcpcb/production_files/
+!**/jlcpcb/production_files/**
 
-# JLCPCB Production Files
-Production/
+# Archived Backups (KiCad 6.0)
+**/*-backups/*.zip
 
-# Backups
-*-backups/*
+# Local project settings
+*.kicad_prl
 
-.venv/
-build/
+# -----------------------------------------------------------------------------
+# FIRMWARE
+# -----------------------------------------------------------------------------
+
+# VS Code
 .vscode/
+compile_commands.json
 
-
-Firmware/STM32/
-
-# Build Files
-build/
-Build/
+# Build files
+build
+.dockerfile.hash
+.cache
+/can/CANMetaData.*
+Madefile
 
 # Python
 *venv
 __pycache__/
 .env
-
-# Mac specific files
-.DS_Store
-
-# Vim
-*.swp
 
 # Nix
 flake.lock
@@ -71,7 +73,6 @@ site/*
 !site/empty.a
 Zone.Identifier
 
-# VSCode settings
-.vscode/*
-!.vscode/c_cpp_properties.json
-compile_commands.json
+# Mac specific files
+.DS_Store
+.history*
