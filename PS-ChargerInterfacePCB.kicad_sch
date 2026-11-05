@@ -12286,6 +12286,17 @@
 				)
 			)
 		)
+		(property "P/N" "sdfgsdfgsd"
+			(at 54.61 100.33 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "6af3e872-07ca-4dbd-ae09-64b052993f72")
 		)
